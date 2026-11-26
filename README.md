@@ -7,6 +7,8 @@
 |你要找什么|正式入口|
 |---|---|
 |第一问完整中文正文，直接纳入整篇论文第5章|[问题一_中文论文_V2_正式章节版.md](problem1/final/reports/问题一_中文论文_V2_正式章节版.md)|
+|中文正文配全英文图片，供之后翻译正文|[英文配图版章节](problem1/final/reports/问题一_中文论文_V2_英文配图版.md)|
+|英文图片、图注、对应分析与可编辑文件|[English Figure Report](problem1/final/reports/Problem1_English_Figure_Report.md)、[英文图集](problem1/final/figures/english/README.md)|
 |正文每幅图、每张表的位置及数据来源|[问题一_V2_正文图表清单.md](problem1/final/reports/问题一_V2_正文图表清单.md)|
 |摘要素材、假设、统一符号、文献和附录入口|[问题一_V2_全文整合材料.md](problem1/final/reports/问题一_V2_全文整合材料.md)|
 |最终模型、代码、运行顺序、数据字段|[最终研究说明](problem1/final/README.md)|

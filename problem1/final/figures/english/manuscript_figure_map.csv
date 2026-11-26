@@ -1,0 +1,20 @@
+manuscript_figure,english_stem,caption,source
+5-1,main/singular_value_energy,Cumulative singular-value energy of the ten raw spectral matrices.,v3/results/singular_energy.csv
+5-2,main/method_workflow,"Workflow for adaptive anomaly identification, robust point repair, and continuous spectral reconstruction.",final/src/detectors.py; v3/src/model3.py; v3/src/stable_completion.py; v3/src/interface.py
+5-3,main/interpolation_comparison,Held-out reconstruction errors under temporal and wavelength downsampling.,v2/results/interpolation_test.csv; v2/results/interpolation_independent_macro.csv
+5-4,main/end_to_end_comparison,Anomaly detection and end-to-end repair under the paired contamination-confirmation protocol.,final/results/unified_comparison.csv: confirmation
+5-5,main/solver_convergence,Huber objectives and relative iterate changes for four representative full-grid fits.,final/results/6C02057_solver.json; 6C02058_solver.json; 6C02107_solver.json; 6C02108_solver.json
+5-6,main/repair_counts,Numbers and percentages of actual point repairs across the ten heats.,final/results/final_summary.csv
+5-7,main/four_reviewed_spikes,Measured and repaired local spectra at four reviewed statistical spikes.,v3_1/results/high_confidence_statistical_points.csv; final/results/four_reviewed_actual_repairs.csv; final/data/*_interface.npz
+5-8,appendix/6C02058_repair_detail,Local spectral and temporal evidence for a representative actual repair in Heat 6C02058.,final/results/actual_repairs.csv; final/data/6C02058_interface.npz
+5-9,main/all_heats_continuous_surfaces,Recorded-scale reconstructed spectral surfaces for all ten heats.,final/data/*_interface.npz; v3/src/interface.py
+5-10,appendix/6B03205_continuous_surface,Recorded-scale continuous spectral surface for Heat 6B03205.,final/data/6B03205_interface.npz; v3/src/interface.py
+5-11,appendix/6B03206_continuous_surface,Recorded-scale continuous spectral surface for Heat 6B03206.,final/data/6B03206_interface.npz; v3/src/interface.py
+5-12,appendix/6B03270_continuous_surface,Recorded-scale continuous spectral surface for Heat 6B03270.,final/data/6B03270_interface.npz; v3/src/interface.py
+5-13,appendix/6B03271_continuous_surface,Recorded-scale continuous spectral surface for Heat 6B03271.,final/data/6B03271_interface.npz; v3/src/interface.py
+5-14,appendix/6C02057_continuous_surface,Recorded-scale continuous spectral surface for Heat 6C02057.,final/data/6C02057_interface.npz; v3/src/interface.py
+5-15,appendix/6C02058_continuous_surface,Recorded-scale continuous spectral surface for Heat 6C02058.,final/data/6C02058_interface.npz; v3/src/interface.py
+5-16,appendix/6C02059_continuous_surface,Recorded-scale continuous spectral surface for Heat 6C02059.,final/data/6C02059_interface.npz; v3/src/interface.py
+5-17,appendix/6C02060_continuous_surface,Recorded-scale continuous spectral surface for Heat 6C02060.,final/data/6C02060_interface.npz; v3/src/interface.py
+5-18,appendix/6C02107_continuous_surface,Recorded-scale continuous spectral surface for Heat 6C02107.,final/data/6C02107_interface.npz; v3/src/interface.py
+5-19,appendix/6C02108_continuous_surface,Recorded-scale continuous spectral surface for Heat 6C02108.,final/data/6C02108_interface.npz; v3/src/interface.py
