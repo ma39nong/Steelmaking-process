@@ -1,0 +1,29 @@
+\section{Model for Problem 2}
+\label{sec:problem2}
+
+\subsection{Problem analysis and data interface}
+For heat $h$, the raw sequence is denoted by $s_{h,i}$ and the validated time coordinate is $t_{h,i}=0.5(s_{h,i}-s_{h,1})$ s. The three process columns are cumulative oxygen consumption $O_h$ in m$^3$, CO$_2$ instantaneous volumetric flow $C_{2,h}$ in m$^3$/s, and CO instantaneous volumetric flow $C_{1,h}$ in m$^3$/s. The ten XLSB files contain one sheet, 2051 columns, and continuous sequences. The process columns are identified from the actual header of each heat.
+
+\subsection{Robust reconstruction}
+For each process series $x_i$, a Hampel rule compares $x_i$ with the median $m_i$ in a nine-point local window. A point is masked when $|x_i-m_i|>6(1.4826\operatorname{median}|x_j-m_i|)$, or when it is non-finite or negative. The continuous reconstruction is the PCHIP interpolant through the visible samples. This preserves local monotonicity of each interval and avoids the overshoot of an unconstrained cubic spline.
+
+\subsection{Oxygen-lance flow and total emissions}
+The lance flow is the derivative of the reconstructed cumulative oxygen signal. We estimate it with a third-order Savitzky--Golay derivative over 31 samples and project negative values to zero,
+\[
+\widehat q_h(t)=\max\{0,\,\mathrm{SGDeriv}_{31,3}[\widehat O_h](t)\}.
+\]
+The total emissions are obtained by trapezoidal integration,
+\[
+\widehat E_{k,h}(t)=\int_0^t\widehat C_{k,h}(u)\,du,\qquad k\in\{1,2\}.
+\]
+Thus $E_{k,h}$ is in m$^3$ while $C_{k,h}$ is in m$^3$/s.
+
+\subsection{Local time-delay identification}
+To reduce spurious correlation from common trends, we subtract a centered 21-point rolling median from the first difference of each signal. In a 121-point window, the positive lag $\tau$ is selected by maximizing the standardized correlation between the oxygen-flow change and the delayed gas-flow change over $0\leq\tau\leq60$ s. The delay is estimated every five samples and linearly interpolated between valid window centers. We describe its flow dependence with
+\[
+\tau_{h,k}=a_{h,k}+b_{h,k}q_h^{-1/2},
+\]
+which is only accepted as a physical relationship after flow-stratified and leave-one-heat-out validation.
+
+\subsection{Baseline results}
+The ten-heat baseline produced nonnegative finite arrays for all output fields. The median local CO delay ranges from 16.5 to 33.5 s, and the median local CO$_2$ delay ranges from 10.8 to 32.5 s. The mean estimated flow ranges from 4.59 to 9.15 m$^3$/s. These descriptive values are stored in the reproducible JSON summary and are not treated as independent measurements of transport time. Further evaluation uses masked-observation reconstruction error, window sensitivity, and cross-heat validation.
