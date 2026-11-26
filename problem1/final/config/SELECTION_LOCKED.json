@@ -1,0 +1,55 @@
+{
+  "strategy": "D_adaptive4",
+  "confirmation_unopened": true,
+  "protocol_sha256": "f71a749806ce55d3d1500a8d5f9d05e93299731e96a48ded46e5d8499243bf5f",
+  "detector_sha256": "2222b813d8bf7c7846cf6ffc69b7542674d629efca6d1e41e763c1eaa19d0f10",
+  "experiment_sha256": "d89b7853b1b5ae6d23948ac3ad6dac8f4890921b55d0992f69df85d8e2392d14",
+  "rule": "predeclared continuous benefit-cost loss, no absolute gate",
+  "selection_table": [
+    {
+      "strategy": "A_P0",
+      "selection_loss": 1.1889142837871918,
+      "unpolluted_rmse": 0.0,
+      "pollution_rmse": 5957.312136132083,
+      "f1": 0.0,
+      "peak_mean_relative": 0.3489652934902746,
+      "integral_relative_mae": 0.0066918416584921744
+    },
+    {
+      "strategy": "B_V1_MAD",
+      "selection_loss": 1.004465338570642,
+      "unpolluted_rmse": 106.04041949400134,
+      "pollution_rmse": 4593.9349012105695,
+      "f1": 0.4027577854501841,
+      "peak_mean_relative": 0.10708939856098298,
+      "integral_relative_mae": 0.0026160459294497776
+    },
+    {
+      "strategy": "C_V31",
+      "selection_loss": 0.8791049349225133,
+      "unpolluted_rmse": 0.0,
+      "pollution_rmse": 5433.203307325586,
+      "f1": 0.2938362266008362,
+      "peak_mean_relative": 0.15465945676744614,
+      "integral_relative_mae": 0.003552161414981872
+    },
+    {
+      "strategy": "D_adaptive4",
+      "selection_loss": 0.47185078799515834,
+      "unpolluted_rmse": 68.21907972893436,
+      "pollution_rmse": 1933.735216082144,
+      "f1": 0.792351424179943,
+      "peak_mean_relative": 0.014491335409917528,
+      "integral_relative_mae": 0.0006885997235553008
+    },
+    {
+      "strategy": "D_adaptive6",
+      "selection_loss": 0.5487110777014418,
+      "unpolluted_rmse": 31.80408800761005,
+      "pollution_rmse": 2743.950439843572,
+      "f1": 0.6409828522940755,
+      "peak_mean_relative": 0.02382458367259349,
+      "integral_relative_mae": 0.0010151666028667106
+    }
+  ]
+}

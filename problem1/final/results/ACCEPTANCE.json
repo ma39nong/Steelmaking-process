@@ -1,0 +1,43 @@
+{
+  "engineering_passed": true,
+  "historical_files_preserved": 1431,
+  "raw_files_verified": 10,
+  "heats_complete": 10,
+  "actual_statistical_repairs": 1043,
+  "repair_fraction": 3.7495484274670704e-05,
+  "whole_frames_deleted": 0,
+  "unchanged_observation_max_error": 0,
+  "negative_native_and_dense": 0,
+  "recorded_top_code_max_error": 0,
+  "all_native_fits_stop_criterion_met": true,
+  "numerical_fallback_points": 465,
+  "conditional_tiles": 104,
+  "conditional_tiles_refitted": 44,
+  "conditional_tiles_converged": 103,
+  "conditional_lower_violations": 0,
+  "fixed_confirmation_precision": 0.8931398416886543,
+  "fixed_confirmation_recall": 0.7052083333333333,
+  "fixed_confirmation_f1": 0.7881257275902211,
+  "final_pipeline_pollution_rmse": 2359.795301159927,
+  "before_pollution_rmse": 6510.685855540806,
+  "pollution_rmse_reduction": 0.6375504280932762,
+  "overall_rmse_reduction": 0.5696312014156284,
+  "unpolluted_rmse": 66.68249279846924,
+  "introduced_peaks_in_fixed_final_pipeline": 17,
+  "tests": {
+    "tests.log": "8 passed in 8.00s",
+    "v3_regression.log": "10 passed in 7.24s",
+    "v31_regression.log": "8 passed in 7.57s"
+  },
+  "scientific_scope": "Actual statistically justified point repair supported by fixed end-to-end confirmation, plus nonnegative recorded continuous spectra. Tradeoffs and remaining misses are reported.",
+  "independent_external_heats": false,
+  "hardware_fault_accuracy_claim": false,
+  "saturated_true_upper_bound_identified": false,
+  "remaining_limitations": [
+    "same historical heats with new raw-coordinate regions",
+    "missed weak anomalies and possible real-peak modification",
+    "17 introduced peaks in fixed final-pipeline artificial cases",
+    "465 actual repairs use pre-existing numerical fallback",
+    "one conditional tile finite-iteration approximate; quality flag retained"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "strategy": "D_adaptive4",
+  "rank": 4,
+  "eta": 0.003,
+  "score_threshold": 4,
+  "automatic_component_time_span": 3,
+  "automatic_component_wave_span": 7,
+  "interpolation": "bilinear",
+  "saturation": "V3 recorded top codes and identical conditional tile objective",
+  "confirmation_evaluated": true,
+  "threshold_retuned_after_confirmation": false,
+  "reviewed_four_points": "V31 evidence and local continuity; union with automatic repairs",
+  "no_more_detector_search": true,
+  "source_hashes": {
+    "detectors.py": "2222b813d8bf7c7846cf6ffc69b7542674d629efca6d1e41e763c1eaa19d0f10",
+    "experiment_final.py": "d89b7853b1b5ae6d23948ac3ad6dac8f4890921b55d0992f69df85d8e2392d14",
+    "native_masks.py": "e86d180abac5f82b43509b7ca4935506297e637beac7d611539020c09b576329"
+  }
+}
