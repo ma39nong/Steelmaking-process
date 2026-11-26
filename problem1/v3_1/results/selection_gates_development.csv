@@ -1,0 +1,4 @@
+strategy,precision_micro,recall_micro,f1_micro,pollution_rmse,before_pollution_rmse,pollution_reduction,overall_reduction,unpolluted_changed_fraction,unpolluted_to_before_ratio,clean_control_peak_p95_max,clean_control_mask_fraction_max,introduced_unsupported_peak_count,all_kind_strength_not_worse,passed_added_processing
+V3-P0,0.0,0.0,0.0,1416.7184110962132,1416.7184110962132,0.0,0.0,0.0,0.0,0.0,0.0,0,True,False
+conservative,1.0,0.5903125,0.7423855374336805,333.51631856240016,1416.7184110962132,0.7645853149431894,0.7645853149431894,0.0,0.0,0.0,0.0,0,True,True
+V3-P1,0.9861231569817867,0.710625,0.8260079912822375,133.69264369908583,1416.7184110962132,0.9056321689250593,0.9006991443674257,4.906771344455348e-05,0.011859044054859245,0.0643591207769938,0.0003662109375,0,False,False

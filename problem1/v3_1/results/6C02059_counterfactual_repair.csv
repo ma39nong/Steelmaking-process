@@ -1,0 +1,2 @@
+heat_id,row,column,time_s,wavelength_nm,raw,counterfactual_repaired,difference,neighbor_min,neighbor_max,within_neighbor_support,numerical_fallback,lowrank_converged,iterations,seconds,formal_repair_applied
+6C02059,1514,650,757.0,575.499,3078.0,965.5688116694814,-2112.4311883305186,816.0,1313.0,True,False,True,1200,123.39437008602545,False

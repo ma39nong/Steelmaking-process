@@ -1,0 +1,30 @@
+{
+  "engineering_passed": true,
+  "historical_files_unchanged": 1264,
+  "raw_files_verified": 10,
+  "final_heats": 10,
+  "statistical_candidates": 51444,
+  "automatic_strong_proposals": 5,
+  "review_supported_points": 4,
+  "persistent_line_vetoes": 1,
+  "formal_points_repaired": 0,
+  "whole_frames_deleted": 0,
+  "formal_negative_count": 0,
+  "scientific_actual_anomaly_removal_passed": false,
+  "formal_scope": "anomaly diagnosis and faithful continuous reconstruction; NOT completed actual anomaly elimination",
+  "development_strategy": "conservative",
+  "confirmation_recall": 0.0709375,
+  "confirmation_precision": 1.0,
+  "confirmation_pollution_rmse_reduction": 0.039329472289120315,
+  "fallback_frozen": "V3-P0",
+  "thresholds_retuned_after_confirmation": false,
+  "engineering_tests": "8 passed in 7.75s",
+  "V3_regression_tests": "10 passed in 7.37s",
+  "limitations": [
+    "same ten historical heats, new regions not external data",
+    "reference raw spectra are noisy",
+    "very low confirmation recall",
+    "persistent-line ambiguity",
+    "four supported native statistical points retained despite counterfactual feasibility; deployment gates not met"
+  ]
+}

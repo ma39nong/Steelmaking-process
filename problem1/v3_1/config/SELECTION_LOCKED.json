@@ -1,0 +1,11 @@
+{
+  "strategy": "conservative",
+  "utc": "2026-11-26T10:19:08.708930+00:00",
+  "confirmation_unopened": true,
+  "protocol_sha256": "5799439225c29de835d80df64ed25ec43a7a19ad131904c88cc6053881952752",
+  "points_source_sha256": "4bcd2893a343be0e29a608fbb148b6e31897620a0e65ad20f8d86f618ad9e522",
+  "experiments_source_sha256": "03d626f7e821faa894397d8b0ee1ba12c2a1fd5c8697b9e27814056bd13827a1",
+  "selection_source_sha256": "b2520a3ed015cf7c1a52c6464e6cd76f1d6dad40179c89e9113873c4870dcbf8",
+  "review_ledger_sha256": "e01ea2cae20e02ad29bad23d42f49d2deaba77d31b01a1be42811f581ef7160c",
+  "rule": "all gates then least unpolluted change; conservative original proposals additionally veto-reviewed, never added"
+}

@@ -1,0 +1,5 @@
+{
+ "review_scope":"All five native automatic high-statistical proposals inspected before selection/confirmation; no injected truth or final prediction error used. Veto-only, never adds repairs.",
+ "vetoes":[{"heat_id":"6C02108","row":608,"column":1211,"time_s":304.0,"wavelength_nm":766.413,"classification":"suspected_persistent_spectral_feature_retain","reason":"A local line peak at 766.4-766.7nm persists across all four neighboring frames; current enhancement extends across adjacent channels. Automatic median-prominence ratio missed the broad persistent line. Statistical isolated core alone is insufficient to repair. Keep original 39674 counts."}],
+ "hardware_fault_confirmation":false
+}
