@@ -1,0 +1,105 @@
+{
+  "seed": 20261126,
+  "detector_candidates": [
+    {
+      "window": 3,
+      "threshold": 6.0
+    },
+    {
+      "window": 5,
+      "threshold": 6.0
+    },
+    {
+      "window": 5,
+      "threshold": 9.0
+    },
+    {
+      "window": 7,
+      "threshold": 9.0
+    }
+  ],
+  "models": {
+    "A": [
+      {
+        "time_window": 3,
+        "wave_window": 5
+      },
+      {
+        "time_window": 3,
+        "wave_window": 9
+      },
+      {
+        "time_window": 5,
+        "wave_window": 7
+      }
+    ],
+    "B": [
+      {
+        "rank": 4,
+        "eta": 0.003,
+        "max_iter": 120,
+        "preserve_observed": true,
+        "interpolation": "pchip"
+      },
+      {
+        "rank": 12,
+        "eta": 0.003,
+        "max_iter": 120,
+        "preserve_observed": true,
+        "interpolation": "pchip"
+      },
+      {
+        "rank": 12,
+        "eta": 0.01,
+        "max_iter": 120,
+        "preserve_observed": true,
+        "interpolation": "pchip"
+      }
+    ],
+    "C": [
+      {
+        "kt": 64,
+        "kw": 256,
+        "alpha_t": 0.1,
+        "alpha_w": 0.01,
+        "alpha_cross": 0,
+        "delta": 1.345,
+        "irls": 30,
+        "irls_tol": 0.001,
+        "objective_tol": 0.0001
+      },
+      {
+        "kt": 192,
+        "kw": 512,
+        "alpha_t": 0.001,
+        "alpha_w": 0.001,
+        "alpha_cross": 0,
+        "delta": 2.5,
+        "irls": 30,
+        "irls_tol": 0.001,
+        "objective_tol": 0.0001
+      },
+      {
+        "kt": 192,
+        "kw": 512,
+        "alpha_t": 0.03,
+        "alpha_w": 0.01,
+        "alpha_cross": 0.001,
+        "delta": 1.345,
+        "irls": 30,
+        "irls_tol": 0.001,
+        "objective_tol": 0.0001
+      }
+    ]
+  },
+  "test_random_fractions": [
+    0.01,
+    0.05,
+    0.1
+  ],
+  "test_time_block_rows": 6,
+  "test_wavelength_block_channels": 16,
+  "dense_grid_multiplier": 2,
+  "notes": "All candidates are tested per heat. Candidate grid is finite and does not establish global optimality.",
+  "protocol_revision": "v2: frame candidates retained in scoring; solver convergence budgets increased"
+}

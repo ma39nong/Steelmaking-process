@@ -1,0 +1,84 @@
+{
+  "solver": "masked projected alternating rank/S shrinkage; randomized SVD approximation",
+  "converged": true,
+  "history": [
+    {
+      "objective": 5.304131756724424,
+      "relative_change": 0.037941892146260384
+    },
+    {
+      "objective": 3.1875553382385857,
+      "relative_change": 0.006083649910315113
+    },
+    {
+      "objective": 2.8171051851938205,
+      "relative_change": 0.0025172056574105507
+    },
+    {
+      "objective": 2.7303277330925244,
+      "relative_change": 0.0012806167779545769
+    },
+    {
+      "objective": 2.702155345943002,
+      "relative_change": 0.0007508683249836823
+    },
+    {
+      "objective": 2.6910994819099923,
+      "relative_change": 0.00047920624292508096
+    },
+    {
+      "objective": 2.6855970137729233,
+      "relative_change": 0.0003473926503398136
+    },
+    {
+      "objective": 2.682165148627699,
+      "relative_change": 0.00027849725763997305
+    },
+    {
+      "objective": 2.679779569991354,
+      "relative_change": 0.00023353094801322524
+    },
+    {
+      "objective": 2.6780171356189912,
+      "relative_change": 0.00020191961302848296
+    },
+    {
+      "objective": 2.6766291228078476,
+      "relative_change": 0.00017996078368568374
+    },
+    {
+      "objective": 2.675505176421142,
+      "relative_change": 0.00016237344764549115
+    },
+    {
+      "objective": 2.6745804435883507,
+      "relative_change": 0.0001477449816357759
+    },
+    {
+      "objective": 2.6737988620454014,
+      "relative_change": 0.0001361129178592482
+    },
+    {
+      "objective": 2.6731218011701885,
+      "relative_change": 0.00012676776401576907
+    },
+    {
+      "objective": 2.67252504875189,
+      "relative_change": 0.00011909564221737133
+    },
+    {
+      "objective": 2.672000976449215,
+      "relative_change": 0.00011162970438351396
+    },
+    {
+      "objective": 2.6715432594973185,
+      "relative_change": 0.00010433396401428683
+    },
+    {
+      "objective": 2.671142847264306,
+      "relative_change": 9.759835871369756e-05
+    }
+  ],
+  "rank": 4,
+  "observation_projection": true
+}

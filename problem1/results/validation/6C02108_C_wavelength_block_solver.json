@@ -1,0 +1,73 @@
+{
+  "solver": "matrix-free IRLS/PCG",
+  "scale_intensity": 103.78200000001078,
+  "history": [
+    {
+      "irls": 0,
+      "cg_info": 0,
+      "cg_iterations": 12,
+      "linear_relative_residual": 0.00012910170474688084,
+      "objective": 358.4331523563101,
+      "relative_change": 1.0
+    },
+    {
+      "irls": 1,
+      "cg_info": 0,
+      "cg_iterations": 18,
+      "linear_relative_residual": 0.00019707812645477723,
+      "objective": 291.15684260807274,
+      "relative_change": 0.049700324827085314
+    },
+    {
+      "irls": 2,
+      "cg_info": 0,
+      "cg_iterations": 14,
+      "linear_relative_residual": 0.00017405735352517087,
+      "objective": 290.2124117782487,
+      "relative_change": 0.009276536663197292
+    },
+    {
+      "irls": 3,
+      "cg_info": 0,
+      "cg_iterations": 11,
+      "linear_relative_residual": 0.00019153666663974752,
+      "objective": 289.9845367452204,
+      "relative_change": 0.005026974132582199
+    },
+    {
+      "irls": 4,
+      "cg_info": 0,
+      "cg_iterations": 10,
+      "linear_relative_residual": 0.0001669276131496092,
+      "objective": 289.8776911546193,
+      "relative_change": 0.0034787414875668073
+    },
+    {
+      "irls": 5,
+      "cg_info": 0,
+      "cg_iterations": 8,
+      "linear_relative_residual": 0.00019520886174907343,
+      "objective": 289.81978122870913,
+      "relative_change": 0.0025541836854685567
+    },
+    {
+      "irls": 6,
+      "cg_info": 0,
+      "cg_iterations": 8,
+      "linear_relative_residual": 0.000161773614321276,
+      "objective": 289.7860568169545,
+      "relative_change": 0.0019596452177565275
+    },
+    {
+      "irls": 7,
+      "cg_info": 0,
+      "cg_iterations": 7,
+      "linear_relative_residual": 0.0001799738243215069,
+      "objective": 289.76569926181924,
+      "relative_change": 0.0015238298303385613
+    }
+  ],
+  "converged": true,
+  "cg_converged": true,
+  "penalty_scale": 182.53582763671875
+}

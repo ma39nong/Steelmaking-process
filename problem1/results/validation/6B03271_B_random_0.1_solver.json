@@ -1,0 +1,164 @@
+{
+  "solver": "masked projected alternating rank/S shrinkage; randomized SVD approximation",
+  "converged": true,
+  "history": [
+    {
+      "objective": 10.386719575814112,
+      "relative_change": 0.04924567319149053
+    },
+    {
+      "objective": 4.987449353240676,
+      "relative_change": 0.008193624045711369
+    },
+    {
+      "objective": 3.7198251160995928,
+      "relative_change": 0.00464259376705858
+    },
+    {
+      "objective": 3.310713883492739,
+      "relative_change": 0.0026399269414565207
+    },
+    {
+      "objective": 3.167030635402935,
+      "relative_change": 0.0015966412114747507
+    },
+    {
+      "objective": 3.105287003448238,
+      "relative_change": 0.001064642091981407
+    },
+    {
+      "objective": 3.0753696345616346,
+      "relative_change": 0.0007475472063625833
+    },
+    {
+      "objective": 3.0592208580066274,
+      "relative_change": 0.00055331280210781
+    },
+    {
+      "objective": 3.049701254552589,
+      "relative_change": 0.0004281551489313207
+    },
+    {
+      "objective": 3.0435277446029527,
+      "relative_change": 0.0003480798605240723
+    },
+    {
+      "objective": 3.0390373661752283,
+      "relative_change": 0.00029891266817817655
+    },
+    {
+      "objective": 3.0355306943485743,
+      "relative_change": 0.000265234890450271
+    },
+    {
+      "objective": 3.032658785902788,
+      "relative_change": 0.00024081472452689936
+    },
+    {
+      "objective": 3.030239612606656,
+      "relative_change": 0.00022186779891540992
+    },
+    {
+      "objective": 3.0281255462448877,
+      "relative_change": 0.0002077949722355407
+    },
+    {
+      "objective": 3.0262759971060214,
+      "relative_change": 0.00019459572209524223
+    },
+    {
+      "objective": 3.0246316440738283,
+      "relative_change": 0.00018355318365748585
+    },
+    {
+      "objective": 3.0231343594312676,
+      "relative_change": 0.00017518336323506646
+    },
+    {
+      "objective": 3.0217674424354857,
+      "relative_change": 0.00016729621523554786
+    },
+    {
+      "objective": 3.020529545278354,
+      "relative_change": 0.00015936693235352853
+    },
+    {
+      "objective": 3.0194007335793067,
+      "relative_change": 0.00015233715689649526
+    },
+    {
+      "objective": 3.018354354436278,
+      "relative_change": 0.00014662634560960473
+    },
+    {
+      "objective": 3.0173833181380125,
+      "relative_change": 0.00014129063361196118
+    },
+    {
+      "objective": 3.016474788066451,
+      "relative_change": 0.00013671233941223268
+    },
+    {
+      "objective": 3.0156202597885193,
+      "relative_change": 0.00013253804110935756
+    },
+    {
+      "objective": 3.014818445871304,
+      "relative_change": 0.00012839489963905866
+    },
+    {
+      "objective": 3.0140661425959543,
+      "relative_change": 0.0001244551201725151
+    },
+    {
+      "objective": 3.013356831104778,
+      "relative_change": 0.00012085411185724469
+    },
+    {
+      "objective": 3.01268262530121,
+      "relative_change": 0.00011790214236121549
+    },
+    {
+      "objective": 3.012033408756392,
+      "relative_change": 0.00011564504565822138
+    },
+    {
+      "objective": 3.0114072414682,
+      "relative_change": 0.00011355348441404814
+    },
+    {
+      "objective": 3.010802017955807,
+      "relative_change": 0.00011164539203418173
+    },
+    {
+      "objective": 3.010216831491721,
+      "relative_change": 0.00010974194839683298
+    },
+    {
+      "objective": 3.009653445653634,
+      "relative_change": 0.00010770413365494258
+    },
+    {
+      "objective": 3.0091097221158623,
+      "relative_change": 0.00010582323682261124
+    },
+    {
+      "objective": 3.008583963368831,
+      "relative_change": 0.00010406503471579917
+    },
+    {
+      "objective": 3.008073833887227,
+      "relative_change": 0.00010254121978218768
+    },
+    {
+      "objective": 3.0075763019921276,
+      "relative_change": 0.0001012632026748218
+    },
+    {
+      "objective": 3.007094840584365,
+      "relative_change": 9.966672914073896e-05
+    }
+  ],
+  "rank": 4,
+  "observation_projection": true
+}

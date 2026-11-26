@@ -1,0 +1,502 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        7,
+        7
+      ]
+    ],
+    "date-time": "2026-07-07T00:49:45Z",
+    "timestamp": 1783385385840,
+    "version": "3.54.6"
+  },
+  "reference-count": 20,
+  "publisher": "Springer Science and Business Media LLC",
+  "issue": "1",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            2
+          ]
+        ],
+        "date-time": "2023-09-02T00:00:00Z",
+        "timestamp": 1693612800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://creativecommons.org/licenses/by/4.0"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            2
+          ]
+        ],
+        "date-time": "2023-09-02T00:00:00Z",
+        "timestamp": 1693612800000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://creativecommons.org/licenses/by/4.0"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "link.springer.com"
+    ],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Sci Rep"
+  ],
+  "abstract": "<jats:title>Abstract</jats:title><jats:p>The flame of converter mouth can well reflect the change of temperature and composition of molten steel in the furnace. The flame characteristics of converter mouth collected by device can well predict the smelting process of converter. Based on the flame spectrum data set of converter mouth, this paper uses the BEADS algorithm and rough set attribute reduction algorithm optimized by genetic algorithm to extract the features of 2048-dimensional wavelength data. Through the model, eight indexes that contribute greatly to temperature and carbon content are selected, which are<jats:italic>f</jats:italic>-507,<jats:italic>f</jats:italic>-520,<jats:italic>f</jats:italic>-839,<jats:italic>f</jats:italic>-1073,<jats:italic>f</jats:italic>-1371,<jats:italic>f</jats:italic>-1528,<jats:italic>f</jats:italic>-1727 and<jats:italic>f</jats:italic>-1826. The MIC coefficients of the eight indicators with temperature and carbon content are calculated, and the MIC coefficients of the variables is small, and the selected indicators are representative. There was a significant correlation between temperature and C content. In BP neural network of temperature prediction model, it is found that the prediction accuracy of the training set is 0.99, the prediction accuracy of the test set is 0.99, the prediction accuracy of the verification set is 0.99, and the prediction accuracy of the whole set is 0.99. Through statistics, it is found that the hit rate of the temperature model in the range of ± 5 K is 88.7%, and the hit rate in the range of ± 10 K is 98.4%. and the<jats:italic>RMSE</jats:italic>parameter analysis shows that the average prediction error is 3.85 K. In BP neural network of carbon content prediction model, it is found that the prediction accuracy of the training set is 0.99, the prediction accuracy of the test set is 0.99, the prediction accuracy of the verification set is 0.98, and the prediction accuracy of the whole set is 0.99. Through statistics, it is found that the hit rate of the carbon contents model in the range of ± 0.05% is 94.0%, and the hit rate in the range of ± 0.10% is 98.3%, and the<jats:italic>RMSE</jats:italic>parameter analysis shows that the average prediction error is 0.021%. Finally, the universality of the model is verified by MIV algorithm.</jats:p>",
+  "DOI": "10.1038/s41598-023-41751-9",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        2
+      ]
+    ],
+    "date-time": "2023-09-02T10:01:59Z",
+    "timestamp": 1693648919000
+  },
+  "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 12,
+  "title": [
+    "Research on prediction model of converter temperature and carbon content based on spectral feature extraction"
+  ],
+  "prefix": "10.1038",
+  "volume": "13",
+  "author": [
+    {
+      "given": "Bo",
+      "family": "Zhao",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Jinxuan",
+      "family": "Zhao",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Wei",
+      "family": "Wu",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Fei",
+      "family": "Zhang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Tonglu",
+      "family": "Yao",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "297",
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        2
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "41751_CR1",
+      "doi-asserted-by": "publisher",
+      "first-page": "1845",
+      "DOI": "10.2355/isijinternational.ISIJINT-2022-102",
+      "volume": "62",
+      "author": "CH Lv",
+      "year": "2022",
+      "unstructured": "Lv, C. H., Li, J., Yan, W. & Zhang, H. J. Optimization of endpoint control for low carbon and phosphorus steel produced by converter single slag process. ISIJ Int. 62, 1845–1851 (2022).",
+      "journal-title": "ISIJ Int."
+    },
+    {
+      "key": "41751_CR2",
+      "doi-asserted-by": "publisher",
+      "first-page": "862",
+      "DOI": "10.1016/j.apenergy.2018.06.044",
+      "volume": "226",
+      "author": "R An",
+      "year": "2018",
+      "unstructured": "An, R., Yu, B., Li, R. & Wei, Y. M. Potential of energy savings and CO2 emission reduction in China’s iron and steel industry. Appl. Energy 226, 862–880 (2018).",
+      "journal-title": "Appl. Energy"
+    },
+    {
+      "key": "41751_CR3",
+      "doi-asserted-by": "publisher",
+      "first-page": "655",
+      "DOI": "10.2116/analsci.7.Supple_655",
+      "volume": "7",
+      "author": "K Chiba",
+      "year": "1991",
+      "unstructured": "Chiba, K. et al. On-line analysis of molten steel in converter. Anal. Sci. 7, 655–658 (1991).",
+      "journal-title": "Anal. Sci."
+    },
+    {
+      "key": "41751_CR4",
+      "doi-asserted-by": "crossref",
+      "first-page": "2545",
+      "DOI": "10.1016/S1474-6670(17)63850-3",
+      "volume": "14",
+      "author": "T Shokyu",
+      "year": "1981",
+      "unstructured": "Shokyu, T., Fujii, Y., Yoshida, T. & Jono, Y. Total automatic control of bof on a modern control theory. IFAC Proc. 14, 2545–2550 (1981).",
+      "journal-title": "IFAC Proc."
+    },
+    {
+      "key": "41751_CR5",
+      "first-page": "12",
+      "volume": "22",
+      "author": "M Nakatani",
+      "year": "1979",
+      "unstructured": "Nakatani, M. Recent advances in converter steel-making. Sumitomo Search 22, 12–30 (1979).",
+      "journal-title": "Sumitomo Search"
+    },
+    {
+      "key": "41751_CR6",
+      "doi-asserted-by": "publisher",
+      "first-page": "617",
+      "DOI": "10.1002/srin.201000053",
+      "volume": "81",
+      "author": "F Pahlevani",
+      "year": "2010",
+      "unstructured": "Pahlevani, F., Kitamura, S. Y., Shibata, H. & Maruoka, N. Simulation of steel refining process in converter. Steel Res. Int. 81, 617–622 (2010).",
+      "journal-title": "Steel Res. Int."
+    },
+    {
+      "key": "41751_CR7",
+      "doi-asserted-by": "publisher",
+      "first-page": "961",
+      "DOI": "10.1007/s11663-014-0245-2",
+      "volume": "46",
+      "author": "R Sarkar",
+      "year": "2015",
+      "unstructured": "Sarkar, R., Gupta, P., Basu, S. & Ballal, N. B. Dynamic modeling of LD converter steelmaking: Reaction modeling using Gibbs’ free energy minimization. Metall. and Mater. Trans. B. 46, 961–976 (2015).",
+      "journal-title": "Metall. and Mater. Trans. B."
+    },
+    {
+      "key": "41751_CR8",
+      "doi-asserted-by": "publisher",
+      "first-page": "538",
+      "DOI": "10.1007/s42243-020-00491-0",
+      "volume": "28",
+      "author": "N Madhavan",
+      "year": "2021",
+      "unstructured": "Madhavan, N., Brooks, G. A., Rhamdhani, M. A., Rout, B. K. & Overbosch, A. General heat balance for oxygen steelmaking. J. Iron. Steel Res. Int. 28, 538–551 (2021).",
+      "journal-title": "J. Iron. Steel Res. Int."
+    },
+    {
+      "key": "41751_CR9",
+      "doi-asserted-by": "publisher",
+      "first-page": "1378",
+      "DOI": "10.3390/pr10071378",
+      "volume": "10",
+      "author": "M Laciak",
+      "year": "2022",
+      "unstructured": "Laciak, M., Kačur, J., Terpák, J., Durdán, M. & Flegner, P. Comparison of different approaches to the creation of a mathematical model of melt temperature in an LD converter. Processes 10, 1378 (2022).",
+      "journal-title": "Processes"
+    },
+    {
+      "key": "41751_CR10",
+      "doi-asserted-by": "publisher",
+      "first-page": "801",
+      "DOI": "10.3390/met12050801",
+      "volume": "12",
+      "author": "R Wang",
+      "year": "2022",
+      "unstructured": "Wang, R. et al. Hybrid method for endpoint prediction in a basic oxygen furnace. Metals 12, 801 (2022).",
+      "journal-title": "Metals"
+    },
+    {
+      "key": "41751_CR11",
+      "doi-asserted-by": "publisher",
+      "first-page": "995",
+      "DOI": "10.1080/03019233.2020.1850170",
+      "volume": "48",
+      "author": "N Madhavan",
+      "year": "2021",
+      "unstructured": "Madhavan, N., Brooks, G. A., Rhamdhani, M. A., Rout, B. K. & Overbosch, A. Hybrid method for endpoint prediction in a basic oxygen furnace. Ironmak. Steelmak. 48, 995–1000 (2021).",
+      "journal-title": "Ironmak. Steelmak."
+    },
+    {
+      "key": "41751_CR12",
+      "doi-asserted-by": "publisher",
+      "first-page": "4539",
+      "DOI": "10.1016/j.ijleo.2015.08.073",
+      "volume": "126",
+      "author": "Y Shao",
+      "year": "2015",
+      "unstructured": "Shao, Y., Zhao, Q., Chen, Y., Zhang, Q. & Wang, K. Applying flame spectral analysis and multi-class classification algorithm on the BOS endpoint carbon content prediction. Optik 126, 4539–4543 (2015).",
+      "journal-title": "Optik"
+    },
+    {
+      "key": "41751_CR13",
+      "doi-asserted-by": "publisher",
+      "first-page": "575",
+      "DOI": "10.1016/j.ijleo.2018.10.041",
+      "volume": "178",
+      "author": "M Zhou",
+      "year": "2019",
+      "unstructured": "Zhou, M., Zhao, Q. & Chen, Y. Endpoint prediction of BOF by flame spectrum and furnace mouth image based on fuzzy support vector machine. Optik 178, 575–581 (2019).",
+      "journal-title": "Optik"
+    },
+    {
+      "key": "41751_CR14",
+      "doi-asserted-by": "publisher",
+      "first-page": "689",
+      "DOI": "10.4028/www.scientific.net/AMR.139-141.689",
+      "volume": "139",
+      "author": "LF Xu",
+      "year": "2010",
+      "unstructured": "Xu, L. F., Li, W. S., Xu, S. X., Li, J. & Wang, Y. Q. A new spectral analysis technique used in converter steelmaking BOF endpoint control. Adv. Mater. Res. 139, 689–692 (2010).",
+      "journal-title": "Adv. Mater. Res."
+    },
+    {
+      "key": "41751_CR15",
+      "doi-asserted-by": "publisher",
+      "first-page": "2640",
+      "DOI": "10.1109/TII.2019.2948100",
+      "volume": "16",
+      "author": "Y Han",
+      "year": "2019",
+      "unstructured": "Han, Y., Zhang, C. J., Wang, L. & Zhang, Y. C. Industrial IoT for intelligent steelmaking with converter mouth flame spectrum information processed by deep learning. IEEE Trans. Ind. Inf. 16, 2640–2650 (2019).",
+      "journal-title": "IEEE Trans. Ind. Inf."
+    },
+    {
+      "key": "41751_CR16",
+      "volume": "28",
+      "author": "CJ Zhang",
+      "year": "2022",
+      "unstructured": "Zhang, C. J., Zhang, Y. C. & Han, Y. Industrial cyber-physical system driven intelligent prediction model for converter end carbon content in steelmaking plants. J. Ind. Inf. Integr. 28, 100356 (2022).",
+      "journal-title": "J. Ind. Inf. Integr."
+    },
+    {
+      "key": "41751_CR17",
+      "doi-asserted-by": "publisher",
+      "first-page": "5241",
+      "DOI": "10.1016/j.ijleo.2014.05.004",
+      "volume": "125",
+      "author": "H Liu",
+      "year": "2014",
+      "unstructured": "Liu, H., Wang, B. & Xiong, X. Basic oxygen furnace steelmaking end-point prediction based on computer vision and general regression neural network. Optik 125, 5241–5248 (2014).",
+      "journal-title": "Optik"
+    },
+    {
+      "key": "41751_CR18",
+      "doi-asserted-by": "publisher",
+      "first-page": "677",
+      "DOI": "10.1080/03019233.2021.1889907",
+      "volume": "48",
+      "author": "Y Zhang",
+      "year": "2021",
+      "unstructured": "Zhang, Y., Zhang, C. J., Zeng, K., Zhu, L. & Han, Y. Research on terminal control model of intelligent mining of flame spectral information of converter mouth in late smelting stage. Ironmak. Steelmak. 48, 677–684 (2021).",
+      "journal-title": "Ironmak. Steelmak."
+    },
+    {
+      "key": "41751_CR19",
+      "doi-asserted-by": "publisher",
+      "first-page": "430",
+      "DOI": "10.1016/j.asoc.2013.09.012",
+      "volume": "19",
+      "author": "M Han",
+      "year": "2014",
+      "unstructured": "Han, M. & Liu, C. Endpoint prediction model for basic oxygen furnace steel-making based on membrane algorithm evolving extreme learning machine. Appl. Soft Comput. 19, 430–437 (2014).",
+      "journal-title": "Appl. Soft Comput."
+    },
+    {
+      "key": "41751_CR20",
+      "doi-asserted-by": "publisher",
+      "first-page": "156",
+      "DOI": "10.1016/j.chemolab.2014.09.014",
+      "volume": "139",
+      "author": "X Ning",
+      "year": "2014",
+      "unstructured": "Ning, X., Selesnick, I. W. & Duval, L. Chromatogram baseline estimation and denoising using sparsity (BEADS). Chem. Intell. Lab. Syst. 139, 156–167 (2014).",
+      "journal-title": "Chem. Intell. Lab. Syst."
+    }
+  ],
+  "container-title": [
+    "Scientific Reports"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41598-023-41751-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41598-023-41751-9",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41598-023-41751-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        12,
+        20
+      ]
+    ],
+    "date-time": "2023-12-20T22:00:33Z",
+    "timestamp": 1703109633000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41598-023-41751-9"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        2
+      ]
+    ]
+  },
+  "references-count": 20,
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "41751"
+  ],
+  "URL": "https://doi.org/10.1038/s41598-023-41751-9",
+  "relation": {},
+  "ISSN": [
+    "2045-2322"
+  ],
+  "issn-type": [
+    {
+      "value": "2045-2322",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        2
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "10 February 2023",
+      "order": 1,
+      "name": "received",
+      "label": "Received",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "31 August 2023",
+      "order": 2,
+      "name": "accepted",
+      "label": "Accepted",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "2 September 2023",
+      "order": 3,
+      "name": "first_online",
+      "label": "First Online",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "The authors declare no competing interests.",
+      "order": 1,
+      "name": "Ethics",
+      "group": {
+        "name": "EthicsHeading",
+        "label": "Competing interests"
+      }
+    }
+  ],
+  "article-number": "14409"
+}

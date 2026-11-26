@@ -1,0 +1,16 @@
+R06 403 Client Error: Forbidden for url: https://pubs.acs.org/doi/pdf/10.1021/ac60214a047
+R08R07  403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/pdf/10.1155/2018/8682725403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/full/10.1177/03019233241273473
+
+R08 403 Client Error: Forbidden for url: https://downloads.hindawi.com/journals/complexity/2018/8682725.pdf
+R12 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/full/10.1177/03019233251382772
+R11 html 1153
+R11 html 1158
+R01 HTTPSConnectionPool(host='www.ma.hw.ac.uk', port=443): Max retries exceeded with url: /~iain/research/GLAM/CSDA_2006/CSDA.pdf (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_E
+/home/user/APMCM-B/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py:1129: InsecureRequestWarning: Unverified HTTPS request is being made to host '127.0.0.1'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+R05 html 15093
+R10 pdf 594831
+R10 404 Client Error: Not Found for url: https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/49974/versions/3/previews/BEADS_2014.pdf
+R05 html 15089
+R04 pdf 3958762
+R04 html 21303

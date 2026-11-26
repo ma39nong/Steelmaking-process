@@ -1,0 +1,868 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        11,
+        24
+      ]
+    ],
+    "date-time": "2026-11-24T11:37:48Z",
+    "timestamp": 1795520268553,
+    "version": "4.11.0"
+  },
+  "reference-count": 59,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2014,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2014-12-01T00:00:00Z",
+        "timestamp": 1417392000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2014,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2014-12-01T00:00:00Z",
+        "timestamp": 1417392000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Chemometrics and Intelligent Laboratory Systems"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2014,
+        12
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.chemolab.2014.09.014",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2014,
+        9,
+        30
+      ]
+    ],
+    "date-time": "2014-09-30T22:50:20Z",
+    "timestamp": 1412117420000
+  },
+  "page": "156-167",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 215,
+  "special_numbering": "C",
+  "title": [
+    "Chromatogram baseline estimation and denoising using sparsity (BEADS)"
+  ],
+  "prefix": "10.1016",
+  "volume": "139",
+  "author": [
+    {
+      "given": "Xiaoran",
+      "family": "Ning",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Ivan W.",
+      "family": "Selesnick",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Laurent",
+      "family": "Duval",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "issue": "1",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0005",
+      "doi-asserted-by": "crossref",
+      "first-page": "13",
+      "DOI": "10.1016/S0021-9673(99)00537-3",
+      "article-title": "Sources of uncertainty in gas chromatography and high-performance liquid chromatography",
+      "volume": "849",
+      "author": "Barwick",
+      "year": "1999",
+      "journal-title": "J. Chromatogr. A"
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0010",
+      "first-page": "685",
+      "article-title": "An iterative algorithm for linear inverse problems with compound regularizers",
+      "author": "Bioucas-Dias",
+      "year": "2008",
+      "journal-title": "Proc. Int. Conf. Image Process."
+    },
+    {
+      "issue": "1–2",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0015",
+      "doi-asserted-by": "crossref",
+      "first-page": "21",
+      "DOI": "10.1016/j.chroma.2004.09.035",
+      "article-title": "New background correction method for liquid chromatography with diode array detection, infrared spectroscopic detection and Raman spectroscopic detection",
+      "volume": "1057",
+      "author": "Boelens",
+      "year": "2004",
+      "journal-title": "J. Chromatogr. A"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0020",
+      "doi-asserted-by": "crossref",
+      "first-page": "3",
+      "DOI": "10.1007/s10851-010-0243-1",
+      "article-title": "Proximal algorithms for multicomponent image processing",
+      "volume": "41",
+      "author": "Briceño-Arias",
+      "year": "2011",
+      "journal-title": "J. Math. Imaging Vis."
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0025",
+      "doi-asserted-by": "crossref",
+      "first-page": "1055",
+      "DOI": "10.1366/0003702001950571",
+      "article-title": "Derivative preprocessing and optimal corrections for baseline drift in multivariate calibration",
+      "volume": "54",
+      "author": "Brown",
+      "year": "2000",
+      "journal-title": "Appl. Spectrosc."
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0030",
+      "series-title": "Comprehensive Chemometrics: Chemical and Biochemical Data Analysis",
+      "year": "2009"
+    },
+    {
+      "issue": "13",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0035",
+      "doi-asserted-by": "crossref",
+      "first-page": "4960",
+      "DOI": "10.1021/ac800166w",
+      "article-title": "Wavelet-based method for noise characterization and rejection in high-performance liquid chromatography coupled to mass spectrometry",
+      "volume": "80",
+      "author": "Cappadona",
+      "year": "2008",
+      "journal-title": "Anal. Chem."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0040",
+      "doi-asserted-by": "crossref",
+      "first-page": "231",
+      "DOI": "10.1109/83.902288",
+      "article-title": "The digital TV filter and nonlinear denoising",
+      "volume": "10",
+      "author": "Chan",
+      "year": "2001",
+      "journal-title": "IEEE Trans. Image Process."
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0045",
+      "series-title": "Wavelets in Chemistry, Volume 22 of Data Handling in Science and Technology",
+      "first-page": "205",
+      "article-title": "Application of wavelet transform in processing chromatographic data",
+      "author": "Chau",
+      "year": "2000"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0050",
+      "doi-asserted-by": "crossref",
+      "first-page": "33",
+      "DOI": "10.1137/S1064827596304010",
+      "article-title": "Atomic decomposition by basis pursuit",
+      "volume": "20",
+      "author": "Chen",
+      "year": "1998",
+      "journal-title": "SIAM J. Sci. Comput."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0055",
+      "doi-asserted-by": "crossref",
+      "first-page": "167",
+      "DOI": "10.1016/S0003-2670(01)01574-4",
+      "article-title": "Matched filtering with background suppression for improved quality of base peak chromatograms and mass spectra in liquid chromatography–mass spectrometry",
+      "volume": "454",
+      "author": "Danielsson",
+      "year": "2002",
+      "journal-title": "Anal. Chim. Acta."
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0060",
+      "doi-asserted-by": "crossref",
+      "first-page": "56",
+      "DOI": "10.1016/j.chemolab.2011.11.001",
+      "article-title": "Mixture models for baseline estimation",
+      "volume": "117",
+      "author": "de Rooi",
+      "year": "2012",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "issue": "14",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0065",
+      "doi-asserted-by": "crossref",
+      "first-page": "3631",
+      "DOI": "10.1021/ac034173t",
+      "article-title": "A perfect smoother",
+      "volume": "75",
+      "author": "Eilers",
+      "year": "2003",
+      "journal-title": "Anal. Chem."
+    },
+    {
+      "issue": "5–7",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0070",
+      "doi-asserted-by": "crossref",
+      "first-page": "317",
+      "DOI": "10.1002/cem.935",
+      "article-title": "Unimodal smoothing",
+      "volume": "19",
+      "author": "Eilers",
+      "year": "2005",
+      "journal-title": "J. Chemom."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0075",
+      "doi-asserted-by": "crossref",
+      "first-page": "340",
+      "DOI": "10.1016/j.acha.2005.03.005",
+      "article-title": "Simultaneous cartoon and texture image inpainting using morphological component analysis (MCA)",
+      "volume": "19",
+      "author": "Elad",
+      "year": "2005",
+      "journal-title": "Appl. Comp. Harm. Anal."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0080",
+      "doi-asserted-by": "crossref",
+      "first-page": "983",
+      "DOI": "10.1109/JPROC.2009.2024776",
+      "article-title": "Image decomposition and separation using sparse representations: an overview",
+      "volume": "98",
+      "author": "Fadili",
+      "year": "2010",
+      "journal-title": "Proc. IEEE"
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0085",
+      "series-title": "Data Analysis and Signal Processing in Chromatography",
+      "year": "1998"
+    },
+    {
+      "issue": "12",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0090",
+      "doi-asserted-by": "crossref",
+      "first-page": "2980",
+      "DOI": "10.1109/TIP.2007.909318",
+      "article-title": "Majorization–minimization algorithms for wavelet-based image restoration",
+      "volume": "16",
+      "author": "Figueiredo",
+      "year": "2007",
+      "journal-title": "IEEE Trans. Image Process."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0095",
+      "doi-asserted-by": "crossref",
+      "first-page": "1152",
+      "DOI": "10.1103/PhysRevE.61.1152",
+      "article-title": "Background estimation in experimental spectra",
+      "volume": "61",
+      "author": "Fischer",
+      "year": "2000",
+      "journal-title": "Phys. Rev. E."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0100",
+      "doi-asserted-by": "crossref",
+      "first-page": "135",
+      "DOI": "10.1016/j.chroma.2007.09.077",
+      "article-title": "An objective comparison of pre-processing methods for enhancement of liquid chromatography–mass spectrometry data",
+      "volume": "1172",
+      "author": "Fredriksson",
+      "year": "2007",
+      "journal-title": "J. Chromatogr. A"
+    },
+    {
+      "issue": "1–2",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0105",
+      "doi-asserted-by": "crossref",
+      "first-page": "59",
+      "DOI": "10.1016/j.chemolab.2005.08.009",
+      "article-title": "Baseline correction by improved iterative polynomial fitting with automatic threshold",
+      "volume": "82",
+      "author": "Gan",
+      "year": "2006",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0110",
+      "series-title": "IEEE Workshop Multimedia Signal Process., Siena, Italy, 29 Sep.–1 Oct",
+      "first-page": "494",
+      "article-title": "Sparse decomposition over multi-component redundant dictionaries",
+      "author": "Granai",
+      "year": "2004"
+    },
+    {
+      "issue": "2–3",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0115",
+      "doi-asserted-by": "crossref",
+      "first-page": "492",
+      "DOI": "10.1016/S0168-9002(02)01807-7",
+      "article-title": "Bayesian model selection and parameter estimation of nuclear emission spectra using RJMCMC",
+      "volume": "497",
+      "author": "Gulam Razul",
+      "year": "2003",
+      "journal-title": "Nucl. Instrum. Meth. Phys. Res. A"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0120",
+      "doi-asserted-by": "crossref",
+      "first-page": "94",
+      "DOI": "10.1016/j.chemolab.2006.05.004",
+      "article-title": "A background elimination method based on wavelet transform for Raman spectra",
+      "volume": "85",
+      "author": "Hu",
+      "year": "2007",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0125",
+      "doi-asserted-by": "crossref",
+      "first-page": "30",
+      "DOI": "10.1198/0003130042836",
+      "article-title": "A tutorial on MM algorithms",
+      "volume": "58",
+      "author": "Hunter",
+      "year": "2004",
+      "journal-title": "Am. Stat."
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0130",
+      "first-page": "201",
+      "article-title": "Algorithm for fitting XRF, SEM and PIXE X-ray spectra backgrounds",
+      "volume": "109",
+      "author": "Kneen",
+      "year": "1996",
+      "journal-title": "Nucl. Instrum. Methods Phys. Res. Sect. B"
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0135",
+      "doi-asserted-by": "crossref",
+      "first-page": "721",
+      "DOI": "10.1007/s10337-011-1962-1",
+      "article-title": "Comparison of several methods of chromatographic baseline removal with a new approach based on quantile regression",
+      "volume": "73",
+      "author": "Komsta",
+      "year": "2011",
+      "journal-title": "Chromatographia"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0140",
+      "doi-asserted-by": "crossref",
+      "first-page": "23",
+      "DOI": "10.1016/j.acha.2013.02.001",
+      "article-title": "Geometric separation by single-pass alternating thresholding",
+      "volume": "36",
+      "author": "Kutyniok",
+      "year": "2014",
+      "journal-title": "Appl. Comp. Harm. Anal."
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0145",
+      "doi-asserted-by": "crossref",
+      "first-page": "77",
+      "DOI": "10.1016/S0003-2670(00)81636-0",
+      "article-title": "Optimal peak area determination in the presence of noise",
+      "volume": "176",
+      "author": "Laeven",
+      "year": "1985",
+      "journal-title": "Anal. Chim. Acta."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0150",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1080/10618600.2000.10474858",
+      "article-title": "Optimization transfer using surrogate objective functions",
+      "volume": "9",
+      "author": "Lange",
+      "year": "2000",
+      "journal-title": "J. Comput. Graph. Stat."
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0155",
+      "doi-asserted-by": "crossref",
+      "first-page": "11",
+      "DOI": "10.1016/j.chemolab.2013.03.010",
+      "article-title": "Intelligent background correction using an adaptive lifting wavelet",
+      "volume": "125",
+      "author": "Liu",
+      "year": "2013",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0160",
+      "series-title": "Proc. Eur. Sig. Image Proc. Conf., Vienna, Austria",
+      "first-page": "305",
+      "article-title": "Baseline spectrum estimation using half-quadratic minimization",
+      "author": "Mazet",
+      "year": "2004"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0165",
+      "doi-asserted-by": "crossref",
+      "first-page": "121",
+      "DOI": "10.1016/j.chemolab.2004.10.003",
+      "article-title": "Background removal from spectra by designing and minimising a non-quadratic cost function",
+      "volume": "76",
+      "author": "Mazet",
+      "year": "2005",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0170",
+      "series-title": "The “Gold Book”",
+      "article-title": "IUPAC. Compendium of chemical terminology",
+      "author": "Mcnaught",
+      "year": "2009"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0175",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1002/(SICI)1099-128X(199701)11:1<1::AID-CEM429>3.0.CO;2-V",
+      "article-title": "The effect of different baseline estimators on the limit of quantification in chromatography",
+      "volume": "11",
+      "author": "McNulty",
+      "year": "1997",
+      "journal-title": "J. Chemom."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0180",
+      "doi-asserted-by": "crossref",
+      "first-page": "188",
+      "DOI": "10.1021/ac00050a018",
+      "article-title": "Median filtering for removal of low-frequency background drift",
+      "volume": "65",
+      "author": "Moore",
+      "year": "1993",
+      "journal-title": "Anal. Chem."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0185",
+      "doi-asserted-by": "crossref",
+      "first-page": "713",
+      "DOI": "10.1016/j.bspc.2013.06.005",
+      "article-title": "ECG enhancement and QRS detection based on sparse derivatives",
+      "volume": "8",
+      "author": "Ning",
+      "year": "2013",
+      "journal-title": "Biomed. Signal Process. Control"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0190",
+      "first-page": "265",
+      "article-title": "A general baseline-recognition and baseline-flattening algorithm",
+      "volume": "27",
+      "author": "Pearson",
+      "year": "1977",
+      "journal-title": "J. Magn. Reson."
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0195",
+      "series-title": "Numerical Recipes: The Art of Scientific Computing",
+      "author": "Press",
+      "year": "2007"
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0200",
+      "doi-asserted-by": "crossref",
+      "first-page": "21",
+      "DOI": "10.1016/j.chemolab.2012.10.003",
+      "article-title": "A tutorial on the lasso approach to sparse modeling",
+      "volume": "119",
+      "author": "Rasmussen",
+      "year": "2012",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0205",
+      "doi-asserted-by": "crossref",
+      "first-page": "179",
+      "DOI": "10.1016/S0022-4073(00)00021-2",
+      "article-title": "Baseline subtraction using robust local regression estimation",
+      "volume": "68",
+      "author": "Ruckstuhl",
+      "year": "2001",
+      "journal-title": "J. Quant. Spectrosc. Radiat. Transf."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0210",
+      "doi-asserted-by": "crossref",
+      "first-page": "545",
+      "DOI": "10.1366/0003702053945985",
+      "article-title": "Investigation of selected baseline removal techniques as candidates for automated implementation",
+      "volume": "59",
+      "author": "Schulze",
+      "year": "2005",
+      "journal-title": "Appl. Spectrosc."
+    },
+    {
+      "issue": "12",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0215",
+      "doi-asserted-by": "crossref",
+      "first-page": "2793",
+      "DOI": "10.1016/j.sigpro.2010.10.018",
+      "article-title": "Resonance-based signal decomposition: a new sparsity-enabled signal analysis method",
+      "volume": "91",
+      "author": "Selesnick",
+      "year": "2011",
+      "journal-title": "Signal Process."
+    },
+    {
+      "issue": "12",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0220",
+      "doi-asserted-by": "crossref",
+      "first-page": "6305",
+      "DOI": "10.1109/TSP.2012.2214219",
+      "article-title": "Polynomial smoothing of time series with additive step discontinuities",
+      "volume": "60",
+      "author": "Selesnick",
+      "year": "2012",
+      "journal-title": "IEEE Trans. Signal Process."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0225",
+      "doi-asserted-by": "crossref",
+      "first-page": "1109",
+      "DOI": "10.1109/TSP.2014.2298836",
+      "article-title": "Simultaneous low-pass filtering and total variation denoising",
+      "volume": "62",
+      "author": "Selesnick",
+      "year": "2014",
+      "journal-title": "IEEE Trans. Signal Process."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0230",
+      "doi-asserted-by": "crossref",
+      "first-page": "15",
+      "DOI": "10.1016/0169-7439(90)80037-7",
+      "article-title": "Specification and estimation of noisy analytical signals: part I. Characterization, time invariant filtering and signal approximation",
+      "volume": "8",
+      "author": "Smit",
+      "year": "1990",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0235",
+      "doi-asserted-by": "crossref",
+      "first-page": "29",
+      "DOI": "10.1016/0169-7439(90)80038-8",
+      "article-title": "Specification and estimation of noisy analytical signals: part II. Curve fitting, optimum filtering and uncertainty determination",
+      "volume": "8",
+      "author": "Smit",
+      "year": "1990",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0240",
+      "series-title": "Detection in Analytical Chemistry: Importance, Theory, and Practice, ACS Symposium Series, Chapter 7",
+      "first-page": "126",
+      "article-title": "Noise and detection limits in signal-integrating analytical methods",
+      "author": "Smit",
+      "year": "1988"
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0245",
+      "doi-asserted-by": "crossref",
+      "first-page": "1570",
+      "DOI": "10.1109/TIP.2005.852206",
+      "article-title": "Image decomposition via the combination of sparse representations and a variational approach",
+      "volume": "14",
+      "author": "Starck",
+      "year": "2005",
+      "journal-title": "IEEE Trans. Image Process."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0250",
+      "doi-asserted-by": "crossref",
+      "first-page": "267",
+      "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+      "article-title": "Regression shrinkage and selection via the lasso",
+      "volume": "58",
+      "author": "Tibshirani",
+      "year": "1996",
+      "journal-title": "J. R. Stat. Soc. Ser. B"
+    },
+    {
+      "issue": "1–2",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0255",
+      "doi-asserted-by": "crossref",
+      "first-page": "155",
+      "DOI": "10.1016/j.chroma.2004.05.071",
+      "article-title": "Comparison of conventional gas chromatography and comprehensive two-dimensional gas chromatography for the detailed analysis of petrochemical samples",
+      "volume": "1056",
+      "author": "Vendeuvre",
+      "year": "2004",
+      "journal-title": "J. Chromatogr. A"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0260",
+      "doi-asserted-by": "crossref",
+      "first-page": "43",
+      "DOI": "10.2516/ogst:2007004",
+      "article-title": "Comprehensive two-dimensional gas chromatography for detailed characterisation of petroleum products",
+      "volume": "62",
+      "author": "Vendeuvre",
+      "year": "2007",
+      "journal-title": "Oil Gas Sci. Tech."
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0265",
+      "series-title": "Modern Practice of Gas Chromatography",
+      "year": "2004"
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0270",
+      "first-page": "117",
+      "article-title": "Über spontane Stromschwankungen in verschiedenen Elektrizitätsleitern",
+      "volume": "15",
+      "author": "Schottky",
+      "year": "1909",
+      "journal-title": "Proc. Camb. Phil. Soc"
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0275",
+      "first-page": "541",
+      "article-title": "The study of discontinuous phenomena",
+      "volume": "362",
+      "author": "Campbell",
+      "year": "1918",
+      "journal-title": "Ann. Phys."
+    },
+    {
+      "issue": "1–2",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0280",
+      "doi-asserted-by": "crossref",
+      "first-page": "21",
+      "DOI": "10.1016/j.chroma.2005.05.106",
+      "article-title": "Characterisation of middle-distillates by comprehensive two-dimensional gas chromatography (GC×GC): a powerful alternative for performing various standard analysis of middle-distillates",
+      "volume": "1086",
+      "author": "Vendeuvre",
+      "year": "2005",
+      "journal-title": "J. Chromatogr. A"
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0285",
+      "series-title": "Encyclopedia of Analytical Chemistry",
+      "article-title": "Signal processing in analytical chemistry",
+      "author": "Wentzell",
+      "year": "2000"
+    },
+    {
+      "key": "10.1016/j.chemolab.2014.09.014_bb0290",
+      "doi-asserted-by": "crossref",
+      "first-page": "486",
+      "DOI": "10.1016/S0021-9673(01)99489-0",
+      "article-title": "The elimination of errors due to baseline drift in the measurement of peak areas in gas chromatography",
+      "volume": "19",
+      "author": "Wilson",
+      "year": "1965",
+      "journal-title": "J. Chromatogr. A"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.chemolab.2014.09.014_bb0295",
+      "doi-asserted-by": "crossref",
+      "first-page": "1138",
+      "DOI": "10.1039/b922045c",
+      "article-title": "Baseline correction using adaptive iteratively reweighted penalized least squares",
+      "volume": "135",
+      "author": "Zhang",
+      "year": "2010",
+      "journal-title": "Analyst"
+    }
+  ],
+  "container-title": [
+    "Chemometrics and Intelligent Laboratory Systems"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0169743914002032?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0169743914002032?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        9,
+        30
+      ]
+    ],
+    "date-time": "2025-09-30T14:48:08Z",
+    "timestamp": 1759243688000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0169743914002032"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2014,
+        12
+      ]
+    ]
+  },
+  "references-count": 59,
+  "alternative-id": [
+    "S0169743914002032"
+  ],
+  "URL": "https://doi.org/10.1016/j.chemolab.2014.09.014",
+  "relation": {},
+  "ISSN": [
+    "0169-7439"
+  ],
+  "issn-type": [
+    {
+      "value": "0169-7439",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2014,
+        12
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Chromatogram baseline estimation and denoising using sparsity (BEADS)",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Chemometrics and Intelligent Laboratory Systems",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.chemolab.2014.09.014",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "Copyright © 2014 Elsevier B.V. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ]
+}

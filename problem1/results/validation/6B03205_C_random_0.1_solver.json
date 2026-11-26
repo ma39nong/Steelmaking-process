@@ -1,0 +1,97 @@
+{
+  "solver": "matrix-free IRLS/PCG",
+  "scale_intensity": 79.31909999999999,
+  "history": [
+    {
+      "irls": 0,
+      "cg_info": 0,
+      "cg_iterations": 6,
+      "linear_relative_residual": 0.00015506135688456418,
+      "objective": 107.16107900546825,
+      "relative_change": 1.0
+    },
+    {
+      "irls": 1,
+      "cg_info": 0,
+      "cg_iterations": 13,
+      "linear_relative_residual": 0.00015446131468872443,
+      "objective": 72.28914805331057,
+      "relative_change": 0.11712564541587032
+    },
+    {
+      "irls": 2,
+      "cg_info": 0,
+      "cg_iterations": 10,
+      "linear_relative_residual": 0.00019869396668154577,
+      "objective": 70.50684141443523,
+      "relative_change": 0.03449046294640716
+    },
+    {
+      "irls": 3,
+      "cg_info": 0,
+      "cg_iterations": 9,
+      "linear_relative_residual": 0.0001905166232246283,
+      "objective": 70.09798508954408,
+      "relative_change": 0.016550233728009792
+    },
+    {
+      "irls": 4,
+      "cg_info": 0,
+      "cg_iterations": 8,
+      "linear_relative_residual": 0.0001707161644875874,
+      "objective": 69.93760145324849,
+      "relative_change": 0.010339991591848091
+    },
+    {
+      "irls": 5,
+      "cg_info": 0,
+      "cg_iterations": 7,
+      "linear_relative_residual": 0.00017079374772072486,
+      "objective": 69.86268964390617,
+      "relative_change": 0.007079395010507437
+    },
+    {
+      "irls": 6,
+      "cg_info": 0,
+      "cg_iterations": 6,
+      "linear_relative_residual": 0.00018529177486787207,
+      "objective": 69.8243193175669,
+      "relative_change": 0.005092558986258852
+    },
+    {
+      "irls": 7,
+      "cg_info": 0,
+      "cg_iterations": 6,
+      "linear_relative_residual": 0.00013976532885014314,
+      "objective": 69.80303694413745,
+      "relative_change": 0.003852520187193381
+    },
+    {
+      "irls": 8,
+      "cg_info": 0,
+      "cg_iterations": 5,
+      "linear_relative_residual": 0.0001527346924921195,
+      "objective": 69.7904953498909,
+      "relative_change": 0.002964601804979242
+    },
+    {
+      "irls": 9,
+      "cg_info": 0,
+      "cg_iterations": 4,
+      "linear_relative_residual": 0.00018879931855323172,
+      "objective": 69.78273734449958,
+      "relative_change": 0.0023042971148547788
+    },
+    {
+      "irls": 10,
+      "cg_info": 0,
+      "cg_iterations": 4,
+      "linear_relative_residual": 0.00015659055477888515,
+      "objective": 69.77764639452614,
+      "relative_change": 0.0019026205514681754
+    }
+  ],
+  "converged": true,
+  "cg_converged": true,
+  "penalty_scale": 30.797454833984375
+}

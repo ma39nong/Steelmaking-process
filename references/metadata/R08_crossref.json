@@ -1,0 +1,420 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2025,
+        7,
+        30
+      ]
+    ],
+    "date-time": "2025-07-30T14:50:41Z",
+    "timestamp": 1753887041770,
+    "version": "3.41.2"
+  },
+  "reference-count": 19,
+  "publisher": "Wiley",
+  "issue": "1",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            6,
+            5
+          ]
+        ],
+        "date-time": "2018-06-05T00:00:00Z",
+        "timestamp": 1528156800000
+      },
+      "content-version": "vor",
+      "delay-in-days": 155,
+      "URL": "http://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100001809",
+      "name": "National Natural Science Foundation of China",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "61702184",
+        "51674121"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "61702184",
+            "51674121"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100001809",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Complexity"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2018,
+        1
+      ]
+    ]
+  },
+  "abstract": "<jats:p>The characteristics of the converter combustion flame are one of the key factors in the process control and end‐point control of steelmaking. In a big data era, it is significant to carry out high‐speed and effective processing on frame spectrum data. By installing data acquisition devices at the converter mouth and separating the spectrum according to the wave length, high‐dimensional converter flame spectrum big data sets are achieved. The data of each converter is preprocessed after information fusion. By applying the SM software, the correspondence with the carbon content is obtained. Selecting the relative data of the two peak ratios and the single‐peak absolute data as a one‐dimensional signal, due to the obvious nonlinear and nonstationary characteristics, using HHT to do empirical mode decomposition and Hilbert spectrum analysis, the variation characteristics after 70% of the converter steelmaking process are obtained. From data acquisition, data preprocessing to data analysis and results, it provides a new perspective and method for the study of similar problems.</jats:p>",
+  "DOI": "10.1155/2018/8682725",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2018,
+        6,
+        5
+      ]
+    ],
+    "date-time": "2018-06-05T23:33:39Z",
+    "timestamp": 1528241619000
+  },
+  "update-policy": "https://doi.org/10.1002/crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 3,
+  "title": [
+    "Analysis of Converter Combustion Flame Spectrum Big Data Sets Based on HHT"
+  ],
+  "prefix": "10.1155",
+  "volume": "2018",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-5605-2032",
+      "authenticated-orcid": false,
+      "given": "Jincai",
+      "family": "Chang",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-7751-5905",
+      "authenticated-orcid": false,
+      "given": "Jiecheng",
+      "family": "Wang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-2814-9037",
+      "authenticated-orcid": false,
+      "given": "Zhuo",
+      "family": "Wang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-1275-6759",
+      "authenticated-orcid": false,
+      "given": "Shuaijie",
+      "family": "Shan",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-8155-183X",
+      "authenticated-orcid": false,
+      "given": "Chunfeng",
+      "family": "Liu",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  ],
+  "member": "311",
+  "published-online": {
+    "date-parts": [
+      [
+        2018,
+        6,
+        5
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "e_1_2_10_1_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.resconrec.2017.05.016"
+    },
+    {
+      "key": "e_1_2_10_2_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/B978-0-08-096988-6.00014-6"
+    },
+    {
+      "key": "e_1_2_10_3_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ijleo.2014.05.004"
+    },
+    {
+      "key": "e_1_2_10_4_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.icte.2018.01.007"
+    },
+    {
+      "key": "e_1_2_10_5_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ijleo.2013.10.094"
+    },
+    {
+      "key": "e_1_2_10_6_2",
+      "unstructured": "SharanA. Light sensors for BOF carbon control in low carbon heats 81 Steelmaking Conference Proceedings 1998 Toronto Canada 337–346 Iron and Steel Society of AIME."
+    },
+    {
+      "key": "e_1_2_10_7_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jclepro.2016.03.040"
+    },
+    {
+      "key": "e_1_2_10_8_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1126/science.1197448"
+    },
+    {
+      "key": "e_1_2_10_9_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s00521-004-0463-7"
+    },
+    {
+      "key": "e_1_2_10_10_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.inffus.2011.08.001"
+    },
+    {
+      "key": "e_1_2_10_11_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ijleo.2015.08.073"
+    },
+    {
+      "key": "e_1_2_10_12_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1098/rspa.1998.0193"
+    },
+    {
+      "key": "e_1_2_10_13_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jappgeo.2018.02.001"
+    },
+    {
+      "key": "e_1_2_10_14_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1098/rspa.2003.1123"
+    },
+    {
+      "key": "e_1_2_10_15_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/nature11150"
+    },
+    {
+      "key": "e_1_2_10_16_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.rinp.2017.02.027"
+    },
+    {
+      "key": "e_1_2_10_17_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10586-017-0881-9"
+    },
+    {
+      "key": "e_1_2_10_18_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.6119/JMST-017-1226-05"
+    },
+    {
+      "key": "e_1_2_10_19_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jallcom.2016.10.188"
+    }
+  ],
+  "container-title": [
+    "Complexity"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "http://downloads.hindawi.com/journals/complexity/2018/8682725.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://downloads.hindawi.com/journals/complexity/2018/8682725.xml",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1155/2018/8682725",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        8,
+        8
+      ]
+    ],
+    "date-time": "2024-08-08T23:04:18Z",
+    "timestamp": 1723158258000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1155/2018/8682725"
+    }
+  },
+  "subtitle": [],
+  "editor": [
+    {
+      "given": "Zhihan",
+      "family": "Lv",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "editor",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  ],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2018,
+        1
+      ]
+    ]
+  },
+  "references-count": 19,
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          1
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1155/2018/8682725"
+  ],
+  "URL": "https://doi.org/10.1155/2018/8682725",
+  "archive": [
+    "Portico"
+  ],
+  "relation": {},
+  "ISSN": [
+    "1076-2787",
+    "1099-0526"
+  ],
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1076-2787"
+    },
+    {
+      "type": "electronic",
+      "value": "1099-0526"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2018,
+        1
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "2018-04-05",
+      "order": 0,
+      "name": "received",
+      "label": "Received",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    },
+    {
+      "value": "2018-05-16",
+      "order": 2,
+      "name": "accepted",
+      "label": "Accepted",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    },
+    {
+      "value": "2018-06-05",
+      "order": 3,
+      "name": "published",
+      "label": "Published",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    }
+  ],
+  "article-number": "8682725"
+}

@@ -1,0 +1,527 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        7,
+        9
+      ]
+    ],
+    "date-time": "2026-07-09T10:21:32Z",
+    "timestamp": 1783592492337,
+    "version": "3.55.0"
+  },
+  "reference-count": 32,
+  "publisher": "SAGE Publications",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            6
+          ]
+        ],
+        "date-time": "2026-07-06T00:00:00Z",
+        "timestamp": 1783296000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+    }
+  ],
+  "funder": [
+    {
+      "name": "Research on Intelligent Research Mechanism of Blast Furnace Condition by Integrating Big Data Deep Learning",
+      "award": [
+        "22130201G"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "22130201G"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Research on Dynamic Correction Model for Flue Gas Analysis Based on Flame Spectral Modulation of Converter Mouth",
+      "award": [
+        "QN2023153"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "QN2023153"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Research on Intelligent Control Model of Furnace Temperature Based on Deep Mining of Big Data of Blast Furnace Smelting Process,",
+      "award": [
+        "52074126"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "52074126"
+          ]
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "journals.sagepub.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Ironmaking &amp; Steelmaking: Processes, Products and Applications"
+  ],
+  "abstract": "<jats:p>\n                    Converter steelmaking is a key technology in steel production. Precise prediction of the endpoint carbon content is of great significance for improving steel quality, optimising production efficiency, and reducing costs. In response to the limitations of traditional prediction methods, this study proposes a multi-stage endpoint carbon content prediction model for converter steelmaking based on the grey wolf optimisation (GWO) algorithm and bidirectional long short-term memory (BiLSTM) networks. First, a dynamic cumulative quantity modelling method based on function fitting is employed to divide the steelmaking process into three stages according to CO and CO\n                    <jats:sub>2</jats:sub>\n                    emission volumes. Next, the autoencoder combined with the optuna optimisation algorithm is used to reduce the dimensionality of 2048-dimensional spectral data. Finally, the GWO algorithm is utilised to optimise the parameters of the BiLSTM model. Experimental results demonstrate that compared with back propagation, long short-term memory, BiLSTM and transformer models, the proposed model exhibits relatively lower mean absolute error (MAE), mean absolute percentage error, and root mean square error (RMSE) across all stages of CO and CO\n                    <jats:sub>2</jats:sub>\n                    emission prediction. Especially in the third stage, the prediction errors are significantly reduced. For CO and CO\n                    <jats:sub>2</jats:sub>\n                    gas, the MAE decreases to 18.0017 and 1.7307, respectively, and the RMSE decreases to 20.2151 and 2.1321, respectively. The contributions of various features to the prediction results are clarified through the analysis using the Shapley Additive exPlanations method, thereby enhancing the interpretability of the model. This research provides an efficient and reliable method for the precise prediction of the endpoint carbon content in converter steelmaking, which has important practical significance for optimising the steel-making production process.\n                  </jats:p>",
+  "DOI": "10.1177/03019233251382772",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2026,
+        7,
+        6
+      ]
+    ],
+    "date-time": "2026-07-06T12:24:59Z",
+    "timestamp": 1783340699000
+  },
+  "update-policy": "https://doi.org/10.1177/sage-journals-update-policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 0,
+  "title": [
+    "An improved flue gas analysis model based on the correction of the converter mouth flame spectrum"
+  ],
+  "prefix": "10.1177",
+  "author": [
+    {
+      "given": "Xuezhi",
+      "family": "Wu",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Hebei Engineering Research Center for Iron Ore Optimization and Pre-lron Process Intelligence"
+        },
+        {
+          "name": "North China University of Science and Technology"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Huimin",
+      "family": "Zhao",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "North China University of Science and Technology"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Yao",
+      "family": "Xiao",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "North China University of Science and Technology"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Jiahao",
+      "family": "Zhang",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "North China University of Science and Technology"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Kenan",
+      "family": "Wang",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "North China University of Science and Technology"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-3501-1610",
+      "authenticated-orcid": false,
+      "given": "Yang",
+      "family": "Han",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Hebei Engineering Research Center for Iron Ore Optimization and Pre-lron Process Intelligence"
+        },
+        {
+          "name": "North China University of Science and Technology"
+        },
+        {
+          "name": "North China University of Science and Technology"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Aimin",
+      "family": "Yang",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Hebei Engineering Research Center for Iron Ore Optimization and Pre-lron Process Intelligence"
+        },
+        {
+          "name": "North China University of Science and Technology"
+        },
+        {
+          "name": "North China University of Science and Technology"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "179",
+  "published-online": {
+    "date-parts": [
+      [
+        2026,
+        7,
+        6
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "e_1_3_2_2_2",
+      "volume-title": "Steel statistical yearbook 2019, world steel committee on economic studies",
+      "author": "Basson E.",
+      "year": "2019",
+      "unstructured": "Basson E. Steel statistical yearbook 2019, world steel committee on economic studies, Brussels: World Steel Association (Worldsteel), 2019."
+    },
+    {
+      "key": "e_1_3_2_3_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10845-024-02366-7"
+    },
+    {
+      "key": "e_1_3_2_4_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.tws.2018.08.009"
+    },
+    {
+      "key": "e_1_3_2_5_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ijfatigue.2024.108421"
+    },
+    {
+      "key": "e_1_3_2_6_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ifacol.2021.08.234"
+    },
+    {
+      "key": "e_1_3_2_7_2",
+      "first-page": "451",
+      "article-title": "Hongbin Wang, comparative analysis of process selection and carbon emissions assessment of innovative steelmaking routes",
+      "author": "Xue B",
+      "year": "2024",
+      "unstructured": "Xue B, Wei G, et al. Hongbin Wang, comparative analysis of process selection and carbon emissions assessment of innovative steelmaking routes. J Cleaner Prod 2024: 451.",
+      "journal-title": "J Cleaner Prod"
+    },
+    {
+      "key": "e_1_3_2_8_2",
+      "first-page": "1604051",
+      "article-title": "Steelmaking process control using remote ultraviolet atomic emission spectroscopy",
+      "author": "Arnold S",
+      "year": "2015",
+      "unstructured": "Arnold S. Steelmaking process control using remote ultraviolet atomic emission spectroscopy. University of Toronto (Canada) ProQuest Dissertations & Theses 2015: 1604051.",
+      "journal-title": "University of Toronto (Canada) ProQuest Dissertations & Theses"
+    },
+    {
+      "key": "e_1_3_2_9_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1515/htmp-2020-0098"
+    },
+    {
+      "key": "e_1_3_2_10_2",
+      "first-page": "113",
+      "article-title": "Frontier of converter steelmaking endpoint control technology",
+      "volume": "9",
+      "author": "Chen J",
+      "year": "2023",
+      "unstructured": "Chen J, Zhong Z, Sun T, et al. Frontier of converter steelmaking endpoint control technology. Int Core J Eng 2023; 9: 113–119.",
+      "journal-title": "Int Core J Eng"
+    },
+    {
+      "key": "e_1_3_2_11_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.asoc.2013.09.012"
+    },
+    {
+      "key": "e_1_3_2_12_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ijleo.2014.05.004"
+    },
+    {
+      "key": "e_1_3_2_13_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41598-023-41751-9"
+    },
+    {
+      "key": "e_1_3_2_14_2",
+      "first-page": "15",
+      "article-title": "Continuous prediction model of carbon content and temperature in converter based on flue gas analysis",
+      "volume": "22",
+      "author": "Pan YZ",
+      "year": "2014",
+      "unstructured": "Pan YZ, Zhang CJ, Zhu XH, et al. Continuous prediction model of carbon content and temperature in converter based on flue gas analysis. Henan Metallurgy 2014; 22: 15–17.",
+      "journal-title": "Henan Metallurgy"
+    },
+    {
+      "key": "e_1_3_2_15_2",
+      "first-page": "139",
+      "article-title": "Dynamic flame feature-driven prediction model for basic oxygen furnace steelmaking endpoint carbon content based on three-dimensional multi-layer complex networks",
+      "volume": "109564",
+      "author": "Liu J",
+      "year": "2025",
+      "unstructured": "Liu J, Liu H, et al. Dynamic flame feature-driven prediction model for basic oxygen furnace steelmaking endpoint carbon content based on three-dimensional multi-layer complex networks. Eng Appl Artif Intell 2025; 109564: 139.",
+      "journal-title": "Eng Appl Artif Intell"
+    },
+    {
+      "key": "e_1_3_2_16_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ijleo.2018.10.041"
+    },
+    {
+      "key": "e_1_3_2_17_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.joei.2025.101977"
+    },
+    {
+      "key": "e_1_3_2_18_2",
+      "first-page": "100356",
+      "article-title": "Industrial cyber-physical system driven intelligent prediction model for converter end carbon content in steelmaking plants",
+      "volume": "28",
+      "author": "Zhang C",
+      "year": "2022",
+      "unstructured": "Zhang C, Zhang Y, Han Y. Industrial cyber-physical system driven intelligent prediction model for converter end carbon content in steelmaking plants. J Ind Inform Integrat 2022; 28: 100356.",
+      "journal-title": "J Ind Inform Integrat"
+    },
+    {
+      "key": "e_1_3_2_19_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41598-023-41751-9"
+    },
+    {
+      "key": "e_1_3_2_20_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ijleo.2015.08.073"
+    },
+    {
+      "key": "e_1_3_2_21_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1997.9.8.1735"
+    },
+    {
+      "key": "e_1_3_2_22_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.knosys.2025.113563"
+    },
+    {
+      "key": "e_1_3_2_23_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.aej.2025.04.011"
+    },
+    {
+      "key": "e_1_3_2_24_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jhydrol.2024.132453"
+    },
+    {
+      "key": "e_1_3_2_25_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.gsd.2024.101178"
+    },
+    {
+      "key": "e_1_3_2_26_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.chemolab.2022.104607"
+    },
+    {
+      "key": "e_1_3_2_27_2",
+      "first-page": "103446",
+      "article-title": "Quantifying scattering characteristics of mangrove species from optuna-based optimal machine learning classification using multi-scale feature selection and SAR image time series",
+      "volume": "122",
+      "author": "Fu BL",
+      "year": "2023",
+      "unstructured": "Fu BL, Liang YY, Lao ZN, et al. Quantifying scattering characteristics of mangrove species from optuna-based optimal machine learning classification using multi-scale feature selection and SAR image time series. Int J Appl Earth Obs Geoinf 2023; 122: 103446.",
+      "journal-title": "Int J Appl Earth Obs Geoinf"
+    },
+    {
+      "key": "e_1_3_2_28_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.clwat.2024.100003"
+    },
+    {
+      "key": "e_1_3_2_29_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.hydres.2024.12.001"
+    },
+    {
+      "key": "e_1_3_2_30_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41598-024-63490-1"
+    },
+    {
+      "key": "e_1_3_2_31_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.engappai.2023.107559"
+    },
+    {
+      "key": "e_1_3_2_32_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wcc.2021.221"
+    },
+    {
+      "key": "e_1_3_2_33_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1186/s40537-024-00905-w"
+    }
+  ],
+  "container-title": [
+    "Ironmaking &amp; Steelmaking: Processes, Products and Applications"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://journals.sagepub.com/doi/pdf/10.1177/03019233251382772",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/03019233251382772",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://journals.sagepub.com/doi/pdf/10.1177/03019233251382772",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        7,
+        9
+      ]
+    ],
+    "date-time": "2026-07-09T09:49:00Z",
+    "timestamp": 1783590540000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://journals.sagepub.com/doi/10.1177/03019233251382772"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2026,
+        7,
+        6
+      ]
+    ]
+  },
+  "references-count": 32,
+  "alternative-id": [
+    "10.1177/03019233251382772"
+  ],
+  "URL": "https://doi.org/10.1177/03019233251382772",
+  "relation": {},
+  "ISSN": [
+    "0301-9233",
+    "1743-2812"
+  ],
+  "issn-type": [
+    {
+      "value": "0301-9233",
+      "type": "print"
+    },
+    {
+      "value": "1743-2812",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2026,
+        7,
+        6
+      ]
+    ]
+  },
+  "article-number": "03019233251382772"
+}

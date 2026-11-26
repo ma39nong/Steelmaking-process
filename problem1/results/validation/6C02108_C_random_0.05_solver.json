@@ -1,0 +1,73 @@
+{
+  "solver": "matrix-free IRLS/PCG",
+  "scale_intensity": 117.31072499999898,
+  "history": [
+    {
+      "irls": 0,
+      "cg_info": 0,
+      "cg_iterations": 7,
+      "linear_relative_residual": 0.0001976606720734935,
+      "objective": 380.89506114376667,
+      "relative_change": 1.0
+    },
+    {
+      "irls": 1,
+      "cg_info": 0,
+      "cg_iterations": 18,
+      "linear_relative_residual": 0.00015044103896481818,
+      "objective": 316.4847218754691,
+      "relative_change": 0.04855564692665337
+    },
+    {
+      "irls": 2,
+      "cg_info": 0,
+      "cg_iterations": 14,
+      "linear_relative_residual": 0.0001339200941199954,
+      "objective": 315.49808938055304,
+      "relative_change": 0.00928993923267899
+    },
+    {
+      "irls": 3,
+      "cg_info": 0,
+      "cg_iterations": 11,
+      "linear_relative_residual": 0.000159240161500788,
+      "objective": 315.258251043236,
+      "relative_change": 0.005039865988296426
+    },
+    {
+      "irls": 4,
+      "cg_info": 0,
+      "cg_iterations": 9,
+      "linear_relative_residual": 0.00017728345026025386,
+      "objective": 315.1461772775189,
+      "relative_change": 0.0034654490551609997
+    },
+    {
+      "irls": 5,
+      "cg_info": 0,
+      "cg_iterations": 8,
+      "linear_relative_residual": 0.0001667414549009184,
+      "objective": 315.08536161782894,
+      "relative_change": 0.0025546641699450757
+    },
+    {
+      "irls": 6,
+      "cg_info": 0,
+      "cg_iterations": 7,
+      "linear_relative_residual": 0.00017747709043664853,
+      "objective": 315.05007286890606,
+      "relative_change": 0.0019496241314158845
+    },
+    {
+      "irls": 7,
+      "cg_info": 0,
+      "cg_iterations": 7,
+      "linear_relative_residual": 0.00013104411037046022,
+      "objective": 315.0287029532293,
+      "relative_change": 0.0015269013165089627
+    }
+  ],
+  "converged": true,
+  "cg_converged": true,
+  "penalty_scale": 182.53582763671875
+}

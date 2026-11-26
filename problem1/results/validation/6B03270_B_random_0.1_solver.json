@@ -1,0 +1,80 @@
+{
+  "solver": "masked projected alternating rank/S shrinkage; randomized SVD approximation",
+  "converged": true,
+  "history": [
+    {
+      "objective": 8.556198246367963,
+      "relative_change": 0.04985819948506431
+    },
+    {
+      "objective": 4.188911860521999,
+      "relative_change": 0.00871193637886173
+    },
+    {
+      "objective": 3.0841871134359486,
+      "relative_change": 0.004631168518034029
+    },
+    {
+      "objective": 2.7452212560101175,
+      "relative_change": 0.002596706704049036
+    },
+    {
+      "objective": 2.628068433311665,
+      "relative_change": 0.0015511780473546745
+    },
+    {
+      "objective": 2.579877557652483,
+      "relative_change": 0.0010126384032974993
+    },
+    {
+      "objective": 2.557493693136503,
+      "relative_change": 0.0006938199615032265
+    },
+    {
+      "objective": 2.5466107383862995,
+      "relative_change": 0.00048425955941949994
+    },
+    {
+      "objective": 2.541300960187229,
+      "relative_change": 0.0003393851336647421
+    },
+    {
+      "objective": 2.5384437728399822,
+      "relative_change": 0.00025228359127498694
+    },
+    {
+      "objective": 2.53661386942658,
+      "relative_change": 0.00020480210421898543
+    },
+    {
+      "objective": 2.535261273104933,
+      "relative_change": 0.00017728161430973885
+    },
+    {
+      "objective": 2.534193126067997,
+      "relative_change": 0.00015804776144162367
+    },
+    {
+      "objective": 2.533338163871493,
+      "relative_change": 0.00014150399204580457
+    },
+    {
+      "objective": 2.532655570407816,
+      "relative_change": 0.00012650020071894845
+    },
+    {
+      "objective": 2.5320974104870073,
+      "relative_change": 0.00011465564241061652
+    },
+    {
+      "objective": 2.531632685002437,
+      "relative_change": 0.00010474503151481849
+    },
+    {
+      "objective": 2.5312359433505236,
+      "relative_change": 9.69709918875684e-05
+    }
+  ],
+  "rank": 4,
+  "observation_projection": true
+}

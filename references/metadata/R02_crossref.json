@@ -1,0 +1,337 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2026-10-04T18:03:08Z",
+    "timestamp": 1791136988714,
+    "version": "4.1.0"
+  },
+  "reference-count": 25,
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "issue": "6",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2006,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2006-06-01T00:00:00Z",
+        "timestamp": 1149120000000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "IEEE Trans. on Image Process."
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2006,
+        6
+      ]
+    ]
+  },
+  "DOI": "10.1109/tip.2006.871164",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2006,
+        5,
+        15
+      ]
+    ],
+    "date-time": "2006-05-15T17:09:14Z",
+    "timestamp": 1147712954000
+  },
+  "page": "1621-1632",
+  "source": "Crossref",
+  "is-referenced-by-count": 7,
+  "title": [
+    "Robust regression of scattered data with adaptive spline-wavelets"
+  ],
+  "prefix": "10.1109",
+  "volume": "15",
+  "author": [
+    {
+      "given": "D.",
+      "family": "Castano",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "A.",
+      "family": "Kunoth",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "263",
+  "reference": [
+    {
+      "key": "ref1",
+      "article-title": "Adaptive scattered data fitting with tensor product spline-wavelets",
+      "author": "Castaño",
+      "year": "2004"
+    },
+    {
+      "key": "ref2",
+      "first-page": "65",
+      "article-title": "Adaptive fitting of scattered data by spline-wavelets",
+      "volume-title": "Curve and Surface Fitting",
+      "author": "Castaño",
+      "year": "2003"
+    },
+    {
+      "key": "ref3",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s11075-004-3622-0"
+    },
+    {
+      "key": "ref4",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/83.661182"
+    },
+    {
+      "key": "ref5",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1201/b18057-6"
+    },
+    {
+      "key": "ref6",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1063/1.59199"
+    },
+    {
+      "key": "ref7",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1017/s0962492900002713"
+    },
+    {
+      "key": "ref8",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1006/acha.1998.0247"
+    },
+    {
+      "key": "ref9",
+      "doi-asserted-by": "crossref",
+      "first-page": "51",
+      "DOI": "10.1017/S0962492900002816",
+      "article-title": "Nonlinear approximation",
+      "author": "DeVore",
+      "year": "1998",
+      "journal-title": "Acta Numer."
+    },
+    {
+      "key": "ref10",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/502512.502528"
+    },
+    {
+      "key": "ref11",
+      "doi-asserted-by": "crossref",
+      "first-page": "69",
+      "DOI": "10.1007/3-540-45256-7_4",
+      "article-title": "Wavelet analysis of geoscientific data",
+      "volume-title": "Dynamics of Multiscale Earth Systems",
+      "author": "Gerstner",
+      "year": "2003"
+    },
+    {
+      "key": "ref12",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/CGI.2000.852331"
+    },
+    {
+      "key": "ref13",
+      "first-page": "163",
+      "article-title": "Interpolating and approximating scattered 3D-data with hierarchical tensor product splines",
+      "volume-title": "Surface Fitting and Multiresolution Methods",
+      "author": "Greiner",
+      "year": "1996"
+    },
+    {
+      "key": "ref14",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-1-4612-2222-4"
+    },
+    {
+      "key": "ref15",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.21914/anziamj.v44i0.685"
+    },
+    {
+      "issue": "2",
+      "key": "ref16",
+      "doi-asserted-by": "crossref",
+      "first-page": "135",
+      "DOI": "10.1111/1467-9671.00101",
+      "article-title": "Multivariate interpolation of precipitation using regularized spline with tension",
+      "volume": "6",
+      "author": "Hofierka",
+      "year": "2002",
+      "journal-title": "Trans. GIS"
+    },
+    {
+      "issue": "5",
+      "key": "ref17",
+      "doi-asserted-by": "crossref",
+      "first-page": "277",
+      "DOI": "10.1016/S0167-8396(03)00045-1",
+      "article-title": "Nonuniform web-splines",
+      "volume": "20",
+      "author": "Höllig",
+      "year": "2003",
+      "journal-title": "Comput. Aid. Geometric Design"
+    },
+    {
+      "key": "ref18",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1002/0471725250",
+      "article-title": "Robust Statistics",
+      "author": "Huber",
+      "year": "1981"
+    },
+    {
+      "key": "ref19",
+      "volume-title": "Academic",
+      "author": "Lauer",
+      "year": "1979"
+    },
+    {
+      "key": "ref20",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/2945.620490"
+    },
+    {
+      "issue": "1–2",
+      "key": "ref21",
+      "doi-asserted-by": "crossref",
+      "first-page": "73",
+      "DOI": "10.1016/S0168-9274(01)00064-2",
+      "article-title": "Large scale least squares scattered data fitting",
+      "volume": "44",
+      "author": "Pereyra",
+      "year": "2002",
+      "journal-title": "Appl. Numer. Math."
+    },
+    {
+      "key": "ref23",
+      "first-page": "353",
+      "article-title": "Efficient fitting and rendering of large scattered data sets using subdivision surfaces",
+      "volume-title": "Computer Graphics Forum, Proc. Eurographics",
+      "author": "Scheib"
+    },
+    {
+      "key": "ref24",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.21236/ada027870"
+    },
+    {
+      "key": "ref25",
+      "article-title": "Wavelets for Computer Graphics",
+      "author": "Stollnitz",
+      "year": "2000"
+    },
+    {
+      "key": "ref26",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1007/978-3-662-04388-2_10",
+      "article-title": "Scattered data fitting with bivariate splines",
+      "volume-title": "Tutorials on Multiresolution in Geometric Modeling, Mathematics and Visualization",
+      "author": "Zeilfelder",
+      "year": "2002"
+    }
+  ],
+  "container-title": [
+    "IEEE Transactions on Image Processing"
+  ],
+  "original-title": [],
+  "link": [
+    {
+      "URL": "http://xplorestaging.ieee.org/ielx5/83/34228/01632215.pdf?arnumber=1632215",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        4,
+        1
+      ]
+    ],
+    "date-time": "2025-04-01T08:03:24Z",
+    "timestamp": 1743494604000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "http://ieeexplore.ieee.org/document/1632215/"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2006,
+        6
+      ]
+    ]
+  },
+  "references-count": 25,
+  "journal-issue": {
+    "issue": "6"
+  },
+  "URL": "https://doi.org/10.1109/tip.2006.871164",
+  "relation": {},
+  "ISSN": [
+    "1057-7149"
+  ],
+  "issn-type": [
+    {
+      "value": "1057-7149",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2006,
+        6
+      ]
+    ]
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        5,
+        2
+      ]
+    ],
+    "date-time": "2026-05-02T20:21:56Z",
+    "timestamp": 1777753316059,
+    "version": "3.51.4"
+  },
+  "reference-count": 18,
+  "publisher": "SAGE Publications",
+  "issue": "2",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            8,
+            22
+          ]
+        ],
+        "date-time": "2024-08-22T00:00:00Z",
+        "timestamp": 1724284800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100017697",
+      "name": "Hebei Province Outstanding Youth Fund",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "QN2023153"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "QN2023153"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100017697",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "journals.sagepub.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Ironmaking &amp; Steelmaking: Processes, Products and Applications"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2026,
+        3
+      ]
+    ]
+  },
+  "abstract": "<jats:p>\n                    This study examines converter steelmaking, focusing on real-time aspects of furnace mouth flame spectral radiation and delays in gas analysis to design a predictive system for converter flue gases driven by spectral data. Using a USB2000+ fiber optic spectrometer and gas analyzer, spectral data from the furnace mouth and CO\n                    <jats:sub>2</jats:sub>\n                    and CO flow data from external flue gas were collected. Spectral features were extracted using fast Fourier transform and polynomial fitting methods, and a sample set was constructed. A fully connected neural network algorithm was then employed to predict cumulative flue gas flow. By analyzing changes in spectral and flue gas information, the study investigated delay causes and used cross-correlation to identify temporal discrepancies. Results show that with CO\n                    <jats:sub>2</jats:sub>\n                    and CO prediction errors within ±70 and ±106, the model's root mean square error ranges from 20.54 to 63.43.\n                  </jats:p>",
+  "DOI": "10.1177/03019233241273473",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        8,
+        22
+      ]
+    ],
+    "date-time": "2024-08-22T07:03:36Z",
+    "timestamp": 1724310216000
+  },
+  "page": "232-240",
+  "update-policy": "https://doi.org/10.1177/sage-journals-update-policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 1,
+  "title": [
+    "Dynamic prediction of flue gas information driven by converter mouth flame spectral information"
+  ],
+  "prefix": "10.1177",
+  "volume": "53",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0009-0008-2837-0413",
+      "authenticated-orcid": false,
+      "given": "Xuesong",
+      "family": "Gao",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "North China University of Science and Technology"
+        }
+      ],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Bowen",
+      "family": "Dong",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "North China University of Science and Technology"
+        }
+      ],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Yue",
+      "family": "Wu",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "North China University of Science and Technology"
+        }
+      ],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Yang",
+      "family": "Han",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "North China University of Science and Technology"
+        }
+      ],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  ],
+  "member": "179",
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        8,
+        22
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "e_1_3_2_2_2",
+      "first-page": "2",
+      "article-title": "The steel industry: a stimulus to national development",
+      "volume": "6",
+      "author": "Ocheri C",
+      "year": "2017",
+      "unstructured": "Ocheri C, Ajani OO, Daniel A, et al. The steel industry: a stimulus to national development. J Powder Metall Min 2017; 6: 2.",
+      "journal-title": "J Powder Metall Min"
+    },
+    {
+      "key": "e_1_3_2_3_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.energy.2009.04.008"
+    },
+    {
+      "key": "e_1_3_2_4_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/srin.201500040"
+    },
+    {
+      "key": "e_1_3_2_5_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TII.2019.2948100"
+    },
+    {
+      "key": "e_1_3_2_6_2",
+      "volume-title": "Dynamic modeling of the BOF for endpoint prediction using EFSOP® technology results and implementation at Riva TarantoAISTech proceedings",
+      "author": "Ceriani A",
+      "unstructured": "Ceriani A, Aprile G, Scipolo V, et al. Dynamic modeling of the BOF for endpoint prediction using EFSOP® technology results and implementation at Riva Taranto. In: AISTech proceedings, 2010."
+    },
+    {
+      "key": "e_1_3_2_7_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1515/htmp-2020-0098"
+    },
+    {
+      "key": "e_1_3_2_8_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.3390/pr11082233"
+    },
+    {
+      "key": "e_1_3_2_9_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S1004-9541(09)60048-3"
+    },
+    {
+      "key": "e_1_3_2_10_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/28.993180"
+    },
+    {
+      "key": "e_1_3_2_11_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TCCN.2018.2889337"
+    },
+    {
+      "key": "e_1_3_2_12_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41598-023-41751-9"
+    },
+    {
+      "key": "e_1_3_2_13_2",
+      "first-page": "100356",
+      "article-title": "Industrial cyber-physical system driven intelligent prediction model for converter end carbon content in steelmaking plants",
+      "volume": "28",
+      "author": "Zhang CJ",
+      "year": "2022",
+      "unstructured": "Zhang CJ, Zhang YC, Han Y. Industrial cyber-physical system driven intelligent prediction model for converter end carbon content in steelmaking plants. J Ind Inf Integr 2022; 28: 100356.",
+      "journal-title": "J Ind Inf Integr"
+    },
+    {
+      "key": "e_1_3_2_14_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.apenergy.2010.10.030"
+    },
+    {
+      "key": "e_1_3_2_15_2",
+      "first-page": "29",
+      "article-title": "Methods of noise elimination in image processing",
+      "volume": "05",
+      "author": "Yi Y",
+      "year": "2003",
+      "unstructured": "Yi Y, Chen F, Zou H. Methods of noise elimination in image processing. Comput Appl Software 2003; 05: 29–30 + 34.",
+      "journal-title": "Comput Appl Software"
+    },
+    {
+      "key": "e_1_3_2_16_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1260/1369-4332.15.12.2215"
+    },
+    {
+      "key": "e_1_3_2_17_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TII.2018.2885945"
+    },
+    {
+      "key": "e_1_3_2_18_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TNET.2012.2228501"
+    },
+    {
+      "key": "e_1_3_2_19_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1103/PhysRevE.73.066128"
+    }
+  ],
+  "container-title": [
+    "Ironmaking &amp; Steelmaking: Processes, Products and Applications"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://journals.sagepub.com/doi/pdf/10.1177/03019233241273473",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/03019233241273473",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://journals.sagepub.com/doi/pdf/10.1177/03019233241273473",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        4,
+        29
+      ]
+    ],
+    "date-time": "2026-04-29T12:02:35Z",
+    "timestamp": 1777464155000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://journals.sagepub.com/doi/10.1177/03019233241273473"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        8,
+        22
+      ]
+    ]
+  },
+  "references-count": 18,
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          3
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1177/03019233241273473"
+  ],
+  "URL": "https://doi.org/10.1177/03019233241273473",
+  "relation": {},
+  "ISSN": [
+    "0301-9233",
+    "1743-2812"
+  ],
+  "issn-type": [
+    {
+      "value": "0301-9233",
+      "type": "print"
+    },
+    {
+      "value": "1743-2812",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        8,
+        22
+      ]
+    ]
+  }
+}

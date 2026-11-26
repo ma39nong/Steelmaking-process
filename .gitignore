@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+Data/
+*.xlsb
+*.zip
+往年的优秀论文/
+2026 APMCM Problem B.pdf
+problem1/data/
+!problem1/data/.gitkeep
+references/fulltext/
+
+problem1/results/validation/superseded_pilot/
+
+tmp/
+
+problem1/results/audit/*_process_audit.csv

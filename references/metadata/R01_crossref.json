@@ -1,0 +1,290 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        21
+      ]
+    ],
+    "date-time": "2026-09-21T14:16:47Z",
+    "timestamp": 1790000207475,
+    "version": "4.0.1"
+  },
+  "reference-count": 13,
+  "publisher": "Elsevier BV",
+  "issue": "1",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2006,
+            1,
+            1
+          ]
+        ],
+        "date-time": "2006-01-01T00:00:00Z",
+        "timestamp": 1136073600000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Computational Statistics &amp; Data Analysis"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2006,
+        1
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.csda.2004.07.008",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2004,
+        8,
+        27
+      ]
+    ],
+    "date-time": "2004-08-27T14:36:45Z",
+    "timestamp": 1093617405000
+  },
+  "page": "61-76",
+  "source": "Crossref",
+  "is-referenced-by-count": 166,
+  "title": [
+    "Fast and compact smoothing on large multidimensional grids"
+  ],
+  "prefix": "10.1016",
+  "volume": "50",
+  "author": [
+    {
+      "given": "Paul H.C.",
+      "family": "Eilers",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Iain D.",
+      "family": "Currie",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Maria",
+      "family": "Durbán",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.csda.2004.07.008_bib1",
+      "doi-asserted-by": "crossref",
+      "first-page": "333",
+      "DOI": "10.1191/1471082x02st039ob",
+      "article-title": "Flexible smoothing with P-splines",
+      "volume": "2",
+      "author": "Currie",
+      "year": "2002",
+      "journal-title": "Statist. Modelling"
+    },
+    {
+      "key": "10.1016/j.csda.2004.07.008_bib2",
+      "unstructured": "Currie, I.D., Durban, M., Eilers, P.H.C., 2003. Using P-splines to extrapolate two-dimensional Poisson data. Proceedings of 18th International Workshop on Statistical Modelling. Leuven, Belgium, pp. 97–102."
+    },
+    {
+      "key": "10.1016/j.csda.2004.07.008_bib3",
+      "series-title": "Curve and Surface Fitting with Splines",
+      "author": "Dierckx",
+      "year": "1993"
+    },
+    {
+      "key": "10.1016/j.csda.2004.07.008_bib4",
+      "unstructured": "Durban, M., Currie, I.D., Eilers, P.H.C., 2002. Using P-splines to smooth two-dimensional Poisson data. Proceedings of 17th International Workshop on Statistical Modelling, Chania, Crete, pp. 207–214."
+    },
+    {
+      "key": "10.1016/j.csda.2004.07.008_bib5",
+      "first-page": "269",
+      "article-title": "Discussion of The Analysis of Designed Experiments and Longitudinal Data by Using Smoothing Splines, by Verbyla, A.P., Cullis, B.R., Kenward, M.G. and Welham, S.J.",
+      "volume": "48",
+      "author": "Eilers",
+      "year": "1999",
+      "journal-title": "Appl. Statist."
+    },
+    {
+      "key": "10.1016/j.csda.2004.07.008_bib6",
+      "doi-asserted-by": "crossref",
+      "first-page": "89",
+      "DOI": "10.1214/ss/1038425655",
+      "article-title": "Flexible smoothing with B-splines and penalties (with Discussion)",
+      "volume": "11",
+      "author": "Eilers",
+      "year": "1996",
+      "journal-title": "Statist. Sci."
+    },
+    {
+      "key": "10.1016/j.csda.2004.07.008_bib7",
+      "doi-asserted-by": "crossref",
+      "first-page": "758",
+      "DOI": "10.1198/106186002844",
+      "article-title": "Generalized linear additive smooth structures",
+      "volume": "11",
+      "author": "Eilers",
+      "year": "2002",
+      "journal-title": "J. Comput. Graphical Statist."
+    },
+    {
+      "key": "10.1016/j.csda.2004.07.008_bib8",
+      "doi-asserted-by": "crossref",
+      "first-page": "159",
+      "DOI": "10.1016/S0169-7439(03)00029-7",
+      "article-title": "Multivariate calibration with temperature interaction using two-dimensional penalized signal regression",
+      "volume": "66",
+      "author": "Eilers",
+      "year": "2003",
+      "journal-title": "Chemometr. Intell. Lab. Systems"
+    },
+    {
+      "key": "10.1016/j.csda.2004.07.008_bib9",
+      "series-title": "Generalized Additive Models",
+      "author": "Hastie",
+      "year": "1990"
+    },
+    {
+      "key": "10.1016/j.csda.2004.07.008_bib10",
+      "series-title": "Generalized Linear Models",
+      "author": "McCullagh",
+      "year": "1989"
+    },
+    {
+      "key": "10.1016/j.csda.2004.07.008_bib11",
+      "series-title": "Generalized Inverse of Matrices and its Applications",
+      "author": "Rao",
+      "year": "1971"
+    },
+    {
+      "key": "10.1016/j.csda.2004.07.008_bib12",
+      "series-title": "Semiparametric Regression",
+      "author": "Ruppert",
+      "year": "2003"
+    },
+    {
+      "key": "10.1016/j.csda.2004.07.008_bib13",
+      "series-title": "Matrix Algebra Useful for Statistics",
+      "author": "Searle",
+      "year": "1982"
+    }
+  ],
+  "container-title": [
+    "Computational Statistics &amp; Data Analysis"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0167947304002270?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0167947304002270?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2019,
+        2,
+        4
+      ]
+    ],
+    "date-time": "2019-02-04T09:55:05Z",
+    "timestamp": 1549274105000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0167947304002270"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2006,
+        1
+      ]
+    ]
+  },
+  "references-count": 13,
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2006,
+          1
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "S0167947304002270"
+  ],
+  "URL": "https://doi.org/10.1016/j.csda.2004.07.008",
+  "relation": {},
+  "ISSN": [
+    "0167-9473"
+  ],
+  "issn-type": [
+    {
+      "value": "0167-9473",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2006,
+        1
+      ]
+    ]
+  }
+}

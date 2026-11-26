@@ -1,0 +1,132 @@
+{
+  "solver": "masked projected alternating rank/S shrinkage; randomized SVD approximation",
+  "converged": true,
+  "history": [
+    {
+      "objective": 5.272219209059864,
+      "relative_change": 0.025050882748377523
+    },
+    {
+      "objective": 3.6041576525351013,
+      "relative_change": 0.003245619305147833
+    },
+    {
+      "objective": 3.443120547478946,
+      "relative_change": 0.00159696845470734
+    },
+    {
+      "objective": 3.389143183290637,
+      "relative_change": 0.0009598080171253985
+    },
+    {
+      "objective": 3.364879107781288,
+      "relative_change": 0.0006647001584003556
+    },
+    {
+      "objective": 3.3511572439866173,
+      "relative_change": 0.0005071640816894533
+    },
+    {
+      "objective": 3.3425098409542606,
+      "relative_change": 0.00040523727866862406
+    },
+    {
+      "objective": 3.336674030029906,
+      "relative_change": 0.00033625434138419757
+    },
+    {
+      "objective": 3.3323736056209494,
+      "relative_change": 0.0002906776077539248
+    },
+    {
+      "objective": 3.329039391472509,
+      "relative_change": 0.000257235936075126
+    },
+    {
+      "objective": 3.3263165681205376,
+      "relative_change": 0.0002332773687900699
+    },
+    {
+      "objective": 3.32405736634573,
+      "relative_change": 0.00021300712109146756
+    },
+    {
+      "objective": 3.3221415611783263,
+      "relative_change": 0.00019652824140005748
+    },
+    {
+      "objective": 3.32051185476346,
+      "relative_change": 0.00018159792603583528
+    },
+    {
+      "objective": 3.3191104090484047,
+      "relative_change": 0.00016868902969596457
+    },
+    {
+      "objective": 3.317877582754785,
+      "relative_change": 0.00015851460248276133
+    },
+    {
+      "objective": 3.316775867058023,
+      "relative_change": 0.00014987783749716114
+    },
+    {
+      "objective": 3.315785152249716,
+      "relative_change": 0.0001420995112502675
+    },
+    {
+      "objective": 3.314898643389689,
+      "relative_change": 0.00013462409105948695
+    },
+    {
+      "objective": 3.314084911629936,
+      "relative_change": 0.0001290770705724384
+    },
+    {
+      "objective": 3.313327835605861,
+      "relative_change": 0.00012449870169765225
+    },
+    {
+      "objective": 3.312618797664399,
+      "relative_change": 0.00012054132417640645
+    },
+    {
+      "objective": 3.311949268571745,
+      "relative_change": 0.00011722968311867717
+    },
+    {
+      "objective": 3.3113181702773113,
+      "relative_change": 0.00011381814447778721
+    },
+    {
+      "objective": 3.310726562261265,
+      "relative_change": 0.00011033070405297401
+    },
+    {
+      "objective": 3.3101681439314343,
+      "relative_change": 0.00010720538366147434
+    },
+    {
+      "objective": 3.309629758737301,
+      "relative_change": 0.0001052154885845455
+    },
+    {
+      "objective": 3.3091078151873914,
+      "relative_change": 0.00010365888388887387
+    },
+    {
+      "objective": 3.3085995628116676,
+      "relative_change": 0.00010230569978633836
+    },
+    {
+      "objective": 3.3081032962665784,
+      "relative_change": 0.00010110203390910824
+    },
+    {
+      "objective": 3.3076186004845236,
+      "relative_change": 9.987591771310541e-05
+    }
+  ],
+  "rank": 4,
+  "observation_projection": true
+}
