@@ -1,0 +1,15 @@
+{
+  "model": "B2",
+  "development_macro_nrmse": {
+    "B0": 0.2441939866619415,
+    "B1": 0.22257074938151247,
+    "B2": 0.22232239080264532,
+    "B3": 0.22232239080264532,
+    "B4": 0.2226692643333182,
+    "B5": 0.2537467352771153,
+    "C": 2.9351568626792206
+  },
+  "B_lock_sha256": "cb025737d87e353d2eee236758049c40689ed00cc652c0f96e3acd73382e2167",
+  "C_lock_sha256": "05a162a240a1c40ddbdab5b1c7890f5fe3177b942fb0af3e20511f74168b9fba",
+  "selection_basis": "Only identical disjoint development panels/masks/scenarios/seeds; test unopened"
+}

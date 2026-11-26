@@ -1,0 +1,36 @@
+from common import *
+import subprocess,pandas as pd
+files=subprocess.check_output(['git','ls-tree','-r','--name-only','d8817f2']).decode().splitlines()
+dump(P/'results/v1_immutable_manifest.json',{f:digest(ROOT/f) for f in files if (ROOT/f).is_file()})
+rows=[]
+for f in (V1/'results/validation').glob('*_B_*_solver.json'):
+ d=json.loads(f.read_text());hs=d['history'];o=np.array([x['objective'] for x in hs]);c=np.array([x['relative_change'] for x in hs]);rows.append(dict(file=f.name,iterations=len(hs),converged=d['converged'],initial_objective=o[0],last_objective=o[-1],last_relative_change=c[-1],objective_increases=int((np.diff(o)>1e-10).sum()),relative_objective_last_step=float(abs(o[-1]-o[-2])/max(abs(o[-2]),1e-12)) if len(o)>1 else None))
+pd.DataFrame(rows).to_csv(P/'results/v1_solver_audit.csv',index=False)
+(P/'reports/00_V1模型审计.md').write_text('''# V1模型与协议审计
+
+基准提交 d8817f2；本审计仅新增V2文件。完整V1逐文件SHA256见 results/v1_immutable_manifest.json。
+
+## 目标函数与代码
+
+A为训练内双轴线性填补后时间SG与真实波长局部二次拟合，最后双三次插值；三点二阶SG恒等，不代表额外去噪。B交替更新S=soft(M(Y/65535−L),η)，再对 M(Y/65535−S)+(1−M)L 作近似截断SVD，优化 .5||M(Y/65535−L−S)||²+η||MS||₁，rank(L)≤r。随机SVD使精确下降/驻点保证不成立；保存的目标使用新L和旧S，非消元后的Huber目标。最终D=MY+(1−M)65535L不再低秩。复制观测产生的零误差不能作为预测精度。
+
+C的 scale²ρδ((Y/65535−B_t C B_wᵀ)/scale)、二阶差分惩罚及可选单侧罚与代码一致；IRLS权重 min(1,δscale/|r|)。同一alpha乘mask.size/(KtKw)，改变容量同时改变有效罚强度；V2容量诊断必须固定有效罚或单独标示混杂。误差尺度取波长二阶残差，天然远小于真实快速时间变化，可能过度降权时变峰。PCG停止不等于模型预测正确。
+
+## 可见性与独立性
+
+V1开发模型训练屏蔽开发与全部外层测试几何区域；外层每次仅屏蔽当前测试区域。这是不同训练信息量，开发分数与最终测试分数不能直接当同分布估计。三族在同一次外层拟合共享输入和掩码，训练内处理公平。
+
+但 tune_detector 在全原始数据上截取固定160×512片段并选择检测参数，未先隔离外层测试；检测器的开发和测试使用相同原始片段，仅随机种子不同。检测器选择独立性不足。外层随机遮蔽仅对由全数据检测得到的 eligible=valid & Y<64000 位置抽样，训练输入的缺失几何依赖真实值；分数又排除了异常/高亮位置，属于条件性验证。V2先几何抽样再完全隐藏数值，参考质量仅在评分使用。
+
+## 未收敛与公平性
+
+50个外层B拟合逐项目标增量、最后相对变化、预算记录见 v1_solver_audit.csv；最终6C02057、6C02058、6C02107、6C02108未达1e−4。原因候选为Huber等价损失的平坦尾部、秩限制与快速亮度变化冲突、缺失结构不可辨识以及随机SVD误差；不能仅因达到120步断言发散，必须比较预算和预测稳定性。V2分别检查原算法和带目标回溯算法；不放宽停止阈值。
+
+## 离散与连续误差
+
+V1的150次分数是在原始网格.grid上计算，验证的是补全，不是网格间连续插值。PCHIP的非负性检查只是几何检查，不证明连续预测准确。B2/B3在被隐藏网格点预测严格相同，保真投影的收益只能在有效观测保持和后续插值中讨论。V2分别报告离散遮蔽和真实坐标降采样evaluate误差。
+
+## 模型C的待检验解释
+
+V1最高192个时间基函数用于775–1555条记录，典型支撑覆盖多条快速变化记录，具有欠拟合风险；较大时间罚和小Huber强度尺度可能进一步放大误差。不能只凭大RMSE确定因果。V2在相同开发片段上做容量、时间罚、损失尺度的受控变化，并保留全炉验证的适用范围限制。
+''')

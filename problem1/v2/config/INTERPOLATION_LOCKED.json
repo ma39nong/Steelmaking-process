@@ -1,0 +1,11 @@
+{
+  "method": "linear",
+  "development_macro_nrmse": {
+    "cubic": 0.24366453641848046,
+    "linear": 0.22717947251022075,
+    "pchip": 0.2316930768580404,
+    "tensor_bspline": 0.24366453641848052
+  },
+  "source_sha256": "4f4fa9122b0bd204db849595148aa80f38dd15039ab8c39c22e9729ba1e9352d",
+  "selection_basis": "disjoint development panels only"
+}

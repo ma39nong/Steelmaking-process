@@ -1,0 +1,9 @@
+{
+  "n_heats": 10,
+  "mean_rmse_difference": -47.21701487555016,
+  "cluster_bootstrap_percentile95": [
+    -101.79592829963036,
+    -0.21765890512515915
+  ],
+  "interpretation": "Ten fixed heats only, no independent external-furnace generalization; repeated masks clustered by heat"
+}

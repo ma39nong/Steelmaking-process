@@ -1,0 +1,89 @@
+{
+  "protocol_sha256": "dd09bf377c9214804ab754fa3a8403b6eb19541ca223d9555ee48b60e07358d9",
+  "detector": {
+    "threshold": 6,
+    "aux_threshold": 10
+  },
+  "detector_method": "auxiliary",
+  "models": {
+    "B0": {
+      "params": {
+        "rank": 4,
+        "eta": 0.003,
+        "gamma": 0.5,
+        "beta": 0.03
+      },
+      "candidate": 0,
+      "development_macro_nrmse": 0.2441939866619415
+    },
+    "B1": {
+      "params": {
+        "rank": 4,
+        "eta": 0.003,
+        "gamma": 0.5,
+        "beta": 0.03
+      },
+      "candidate": 0,
+      "development_macro_nrmse": 0.22257074938151247
+    },
+    "B2": {
+      "params": {
+        "rank": 4,
+        "eta": 0.003,
+        "gamma": 0.5,
+        "beta": 0.03
+      },
+      "candidate": 0,
+      "development_macro_nrmse": 0.22232239080264532
+    },
+    "B3": {
+      "params": {
+        "rank": 4,
+        "eta": 0.003,
+        "gamma": 0.5,
+        "beta": 0.03
+      },
+      "candidate": 0,
+      "development_macro_nrmse": 0.22232239080264532
+    },
+    "B4": {
+      "params": {
+        "rank": 4,
+        "eta": 0.003,
+        "gamma": 0.5,
+        "beta": 0.03
+      },
+      "candidate": 0,
+      "development_macro_nrmse": 0.2226692643333182
+    },
+    "B5": {
+      "params": {
+        "rank": 4,
+        "eta": 0.01,
+        "gamma": 0.5,
+        "beta": 0.03
+      },
+      "candidate": 1,
+      "development_macro_nrmse": 0.2537467352771153
+    }
+  },
+  "selected_model": "B2",
+  "selection_utc": "2026-11-26T09:12:15.724000+00:00",
+  "source_sha256": {
+    "saturation.py": "d5347fbb650d8efdef377fcffacfa60709818c740d8d892e791099210fdbf550",
+    "common.py": "66fa98c372d7d674cfc48b3f57c04e8a3e89fdbae8fd94841cb4e6d9174f6771",
+    "interpolation.py": "4f4fa9122b0bd204db849595148aa80f38dd15039ab8c39c22e9729ba1e9352d",
+    "solver.py": "e3f5569b1d3358b650e31d017d320a22fb4df4fc503a6efea828f1157648959c",
+    "capacity.py": "e8409ad8d9bcd26c69ec91d829472872bc39ba1d3cfa1b6d604b3e3d0264e5c4",
+    "c_develop.py": "419b52d85c7eb9319bd69be1f6ff82f3396f01847e3cd6ac02ff05c3da243c6f",
+    "develop.py": "1462bedc63262095dad58bbe705df6c7bda3f51407d556b41a86bb88fdc0ce72",
+    "continuous.py": "a936c34c9616dccd590f07150127d92d14b622be2c5689943473d62ad4b88333",
+    "detector.py": "c58631213d86e8ba152a97e591c6ed3b5f65c2ccd637085704ab5b03f0f9d432",
+    "test_experiments.py": "f87ce21cd24081badc81e52fc496a1f325f94868d7deb48e94a91bd108b2ccf1",
+    "literature_notes.py": "00c8c51b14fe69b14f747d925c933643a01b268dc916dfd40aa53e6a94ac2332",
+    "convergence.py": "0c2aad2179eac30d76c703da0b98274121fce10b57ba440077fca5dad13192d8",
+    "literature_acquire.py": "78447b77dc3b0efe48f7f724c17157d64209a7ae9c21f00902e67ac5a620f25d",
+    "audit_v1.py": "3b57fa476d09bb69bdb8f7c28f05bb9f7f7607de4b23cf01f56510bee4d31190"
+  },
+  "selection_basis": "development only; independent test never loaded"
+}

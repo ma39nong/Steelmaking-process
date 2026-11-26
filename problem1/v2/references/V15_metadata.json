@@ -1,0 +1,232 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        11,
+        26
+      ]
+    ],
+    "date-time": "2026-11-26T03:01:31Z",
+    "timestamp": 1795662091777,
+    "version": "4.11.3"
+  },
+  "reference-count": 12,
+  "publisher": "Society for Industrial & Applied Mathematics (SIAM)",
+  "issue": "2",
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "SIAM J. Numer. Anal."
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        1980,
+        4
+      ]
+    ]
+  },
+  "abstract": "<jats:p>Necessary and sufficient conditions are derived for a cubic to be monotone on an interval. These conditions are used to develop an algorithm which constructs a visually pleasing monotone piecewise cubic interpolant to monotone data. Several examples are given which compare this algorithm with other interpolation methods.</jats:p>",
+  "DOI": "10.1137/0717021",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2005,
+        2,
+        28
+      ]
+    ],
+    "date-time": "2005-02-28T01:42:57Z",
+    "timestamp": 1109554977000
+  },
+  "page": "238-246",
+  "source": "Crossref",
+  "is-referenced-by-count": 2094,
+  "title": [
+    "Monotone Piecewise Cubic Interpolation"
+  ],
+  "prefix": "10.1137",
+  "volume": "17",
+  "author": [
+    {
+      "given": "F. N.",
+      "family": "Fritsch",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "R. E.",
+      "family": "Carlson",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "351",
+  "published-online": {
+    "date-parts": [
+      [
+        2006,
+        7,
+        17
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/321607.321609"
+    },
+    {
+      "key": "R2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-1-4612-6333-3"
+    },
+    {
+      "key": "R3",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0021-9045(77)90011-9"
+    },
+    {
+      "key": "R4",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/360924.360971"
+    },
+    {
+      "key": "R5",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0146-664X(77)90032-6"
+    },
+    {
+      "key": "R6",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/355732.355738"
+    },
+    {
+      "key": "R7",
+      "unstructured": "A. R. Forrest, Ph.D. Thesis,  Curves and surfaces for computer-aided design, Univ. of Cambridge, Cambridge, England,  1968, July"
+    },
+    {
+      "key": "R8",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1090/S0025-5718-1977-0448805-0"
+    },
+    {
+      "key": "R9",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/355958.355964"
+    },
+    {
+      "key": "R10",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0021-9045(74)90066-5"
+    },
+    {
+      "key": "R11",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1090/S0025-5718-1979-0537971-6"
+    },
+    {
+      "key": "R12",
+      "volume-title": "Spline algorithms for curves and surfaces",
+      "author": "Späth Helmuth",
+      "year": "1974"
+    }
+  ],
+  "container-title": [
+    "SIAM Journal on Numerical Analysis"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://epubs.siam.org/doi/pdf/10.1137/0717021",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        21
+      ]
+    ],
+    "date-time": "2026-08-21T16:29:48Z",
+    "timestamp": 1787329788000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://epubs.siam.org/doi/10.1137/0717021"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        1980,
+        4
+      ]
+    ]
+  },
+  "references-count": 12,
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          1980,
+          4
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1137/0717021"
+  ],
+  "URL": "https://doi.org/10.1137/0717021",
+  "relation": {},
+  "ISSN": [
+    "0036-1429",
+    "1095-7170"
+  ],
+  "issn-type": [
+    {
+      "value": "0036-1429",
+      "type": "print"
+    },
+    {
+      "value": "1095-7170",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        1980,
+        4
+      ]
+    ]
+  }
+}

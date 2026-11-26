@@ -1,0 +1,22 @@
+.......................F.............                                    [100%]
+=================================== FAILURES ===================================
+________________________ test_censor_actual_constraints ________________________
+
+    def test_censor_actual_constraints():
+>    d=pd.read_csv(P/'results/artificial_censoring.csv');assert len(d)==1800;assert (d[d.method=='convex_nuclear_bound'].lower_bound_violation==0).all();assert (d.n>0).any()
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    assert np.False_
+E     +  where np.False_ = all()
+E     +    where all = 4       0.0\n9       0.0\n14      0.0\n19      0.0\n24      0.0\n       ... \n1779    0.0\n1784    NaN\n1789    NaN\n1794    NaN\n1799    NaN\nName: lower_bound_violation, Length: 360, dtype: float64 == 0.all
+E     +      where 4       0.0\n9       0.0\n14      0.0\n19      0.0\n24      0.0\n       ... \n1779    0.0\n1784    NaN\n1789    NaN\n1794    NaN\n1799    NaN\nName: lower_bound_violation, Length: 360, dtype: float64 =       heat_id  stage  seed  ...  shortfall   seconds  converged\n4     6B03205      0   811  ...        0.0  0.003435  ...      NaN  0.057245       True\n1799  6C02108      2  1297  ...        NaN  0.058932       True\n\n[360 rows x 14 columns].lower_bound_violation
+
+problem1/v2/tests/test_deliverables.py:25: AssertionError
+=============================== warnings summary ===============================
+problem1/v2/tests/test_math_protocol.py::test_hidden_values_cannot_affect_fit
+  /home/user/APMCM-B/problem1/v2/src/solver.py:19: RuntimeWarning: All-NaN slice encountered
+    rate=np.nanmedian(diff,axis=1);s=np.nanmedian(rate);rate=np.nan_to_num(rate,nan=s if np.isfinite(s) else 0)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED problem1/v2/tests/test_deliverables.py::test_censor_actual_constraints
+1 failed, 36 passed, 1 warning in 68.70s (0:01:08)

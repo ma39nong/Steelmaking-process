@@ -1,0 +1,16 @@
+{
+  "engineering_deliverables_complete": true,
+  "scientific_all_requirements_pass": false,
+  "selected_model": "B2",
+  "selected_interpolation": "linear",
+  "issues": [
+    "Spurious peak risk remains: 6C02058 at 445.5s has 228.9% raw peak change",
+    "Frame/column/block anomaly recall remains low",
+    "Four final fits fail locked change criterion",
+    "Saturated latent heights unidentifiable; final selected masked model violates conditional lower bounds",
+    "Small number of unconstrained low-light latent predictions are negative",
+    "Two original PCHIP fulltexts unavailable",
+    "No independent external heats; local panel and full-native confirmation scopes differ"
+  ],
+  "report": "reports/问题一_V2模型深化与严格验证.md"
+}

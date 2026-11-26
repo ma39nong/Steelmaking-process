@@ -1,0 +1,15 @@
+{
+  "model": "B2",
+  "development_macro_nrmse": {
+    "B0": 0.2441939866619415,
+    "B1": 0.22257074938151247,
+    "B2": 0.22232239080264532,
+    "B3": 0.22232239080264532,
+    "B4": 0.2226692643333182,
+    "B5": 0.2537467352771153,
+    "C": 0.3571380680805159
+  },
+  "B_lock_sha256": "cb025737d87e353d2eee236758049c40689ed00cc652c0f96e3acd73382e2167",
+  "C_lock_sha256": "bc33bb132d790e439327f00bf0243dbd52fdfdc07a64e70e31fb76a1bdc7236c",
+  "selection_basis": "Identical development panels/scenarios/seeds and masks; expanded C candidates driven by development capacity diagnostic only; completion test unopened"
+}

@@ -1,0 +1,8 @@
+{
+ "status":"predeclared before reading independent completion test scores",
+ "model_selection":"Use FINAL_SELECTION_LOCKED.json without any retuning",
+ "seeds":[811,1297],"matched_v1_seed":811,
+ "geometry":"All full native rows/columns are model inputs. Random masks only in chronological test intervals defined by protocol (all wavelengths). Time gaps of 2,4,8,16 rows selected inside test intervals, hidden across entire wavelength range. Wavelength gaps of 4,8,16,32 channels hidden across all chronological test intervals; scoring references never used by training.",
+ "comparators":"selected B2 vs B0 for both seeds; historic V1 B3 on identical visibility for seed811; same locked V2 detector. This comparison tests model/solver, not detector differences.",
+ "interpretation":"Additional confirmation only; never replaces or retunes locked development choice even if unfavorable. Full heat is sampling unit; seeds/regions are repeated measures. Original V1 stored scores have different protocols and are not directly subtracted."
+}

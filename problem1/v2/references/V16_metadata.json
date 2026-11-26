@@ -1,0 +1,192 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        11,
+        25
+      ]
+    ],
+    "date-time": "2026-11-25T19:13:12Z",
+    "timestamp": 1795633992773,
+    "version": "4.11.3"
+  },
+  "reference-count": 4,
+  "publisher": "Society for Industrial & Applied Mathematics (SIAM)",
+  "issue": "2",
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "SIAM J. Sci. and Stat. Comput."
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        1984,
+        6
+      ]
+    ]
+  },
+  "abstract": "<jats:p>A method is described for producing monotone piecewise cubic interpolants to monotone data which is completely local and which is extremely simple to implement.</jats:p>",
+  "DOI": "10.1137/0905021",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2005,
+        3,
+        1
+      ]
+    ],
+    "date-time": "2005-03-01T03:30:29Z",
+    "timestamp": 1109647829000
+  },
+  "page": "300-304",
+  "source": "Crossref",
+  "is-referenced-by-count": 436,
+  "title": [
+    "A Method for Constructing Local Monotone Piecewise Cubic Interpolants"
+  ],
+  "prefix": "10.1137",
+  "volume": "5",
+  "author": [
+    {
+      "given": "F. N.",
+      "family": "Fritsch",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "J.",
+      "family": "Butland",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "351",
+  "published-online": {
+    "date-parts": [
+      [
+        2006,
+        7,
+        14
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "R1",
+      "first-page": "1",
+      "volume-title": "Mathematical Methods in Computer Graphics and Design",
+      "author": "Brodlie K. W.",
+      "year": "1980"
+    },
+    {
+      "key": "R2",
+      "unstructured": "J. Butland, A method of interpolating reasonable-shaped curves through any data, Proc. of Computer Graphics 80, Online Publications Ltd., Northwood Hills, Middlesex, UK, 1980, 409–422"
+    },
+    {
+      "key": "R3",
+      "unstructured": "F. N. Fritsch, J. Butland, An improved monotone piecewise cubic interpolation algorithm, Rep., UCRL-85104, Lawrence Livermore Laboratory, Livermore, CA, 1980, October"
+    },
+    {
+      "key": "R4",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/0717021"
+    }
+  ],
+  "container-title": [
+    "SIAM Journal on Scientific and Statistical Computing"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://epubs.siam.org/doi/pdf/10.1137/0905021",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        20
+      ]
+    ],
+    "date-time": "2026-08-20T13:17:32Z",
+    "timestamp": 1787231852000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://epubs.siam.org/doi/10.1137/0905021"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        1984,
+        6
+      ]
+    ]
+  },
+  "references-count": 4,
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          1984,
+          6
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1137/0905021"
+  ],
+  "URL": "https://doi.org/10.1137/0905021",
+  "relation": {},
+  "ISSN": [
+    "0196-5204",
+    "2168-3417"
+  ],
+  "issn-type": [
+    {
+      "value": "0196-5204",
+      "type": "print"
+    },
+    {
+      "value": "2168-3417",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        1984,
+        6
+      ]
+    ]
+  }
+}

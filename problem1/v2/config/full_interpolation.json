@@ -1,0 +1,7 @@
+{
+ "selection":"Frozen FINAL_SELECTION_LOCKED and INTERPOLATION_LOCKED; no test-driven tuning",
+ "scenarios":["time_stride_2","time_stride_3","time_stride_4","wave_stride_2","wave_stride_3"],
+ "input":"Ten full native matrices; remove held rows/columns before any cleaning or fitting; endpoints retained. All methods use exactly same retained cleaned data. Evaluate original withheld coordinates.",
+ "methods":["linear","cubic","pchip","tensor_bspline","locked_completion_plus_locked_interpolation"],
+ "scope":"Full-heat confirmatory diagnostic, not external untouched data: original rows include historical development intervals. Strictly disjoint local-panel test remains primary estimate. No result used for parameter/model selection."
+}

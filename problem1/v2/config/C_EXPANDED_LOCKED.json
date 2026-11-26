@@ -1,0 +1,23 @@
+{
+  "candidate": 0,
+  "params": {
+    "kt": 24,
+    "kw": 48,
+    "alpha_t": 0.001,
+    "alpha_w": 0.001,
+    "delta": 2.5
+  },
+  "development_macro_nrmse": 0.3571380680805159,
+  "all_candidate_scores": {
+    "0": 0.3571380680805159,
+    "1": 0.37642639754891793,
+    "2": 0.3919973263280264,
+    "3": 0.382703007964801,
+    "4": 0.41317332252409605,
+    "5": 0.4079822441769729,
+    "6": 0.4283395097681374,
+    "7": 0.43395902654144247,
+    "8": 0.43211921532835207
+  },
+  "full_heat_scaling": "Maintain same coefficient density per native coordinate count; alpha scaled to preserve effective coefficient-difference penalty per sample. Not validated full-heat capacity extrapolation."
+}

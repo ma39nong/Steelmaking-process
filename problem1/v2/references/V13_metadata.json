@@ -1,0 +1,623 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        11,
+        26
+      ]
+    ],
+    "date-time": "2026-11-26T04:16:15Z",
+    "timestamp": 1795666575670,
+    "version": "4.11.3"
+  },
+  "reference-count": 54,
+  "publisher": "Association for Computing Machinery (ACM)",
+  "issue": "3",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2011,
+            5,
+            1
+          ]
+        ],
+        "date-time": "2011-05-01T00:00:00Z",
+        "timestamp": 1304208000000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/100000006",
+      "name": "Office of Naval Research",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "N00014-09-1-0469N00014-08-1-0749N00014-09-1-0230"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "N00014-09-1-0469N00014-08-1-0749N00014-09-1-0230"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000006",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100000148",
+      "name": "Division of Electrical, Communications and Cyber Systems",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "IIS 08-49292ECCS 07-01676"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "IIS 08-49292ECCS 07-01676"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000148",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100000145",
+      "name": "Division of Information and Intelligent Systems",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "IIS 08-49292ECCS 07-01676"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "IIS 08-49292ECCS 07-01676"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000145",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "dl.acm.org"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "J. ACM"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2011,
+        5
+      ]
+    ]
+  },
+  "abstract": "<jats:p>\n                    This article is about a curious phenomenon. Suppose we have a data matrix, which is the superposition of a low-rank component and a sparse component. Can we recover each component individually? We prove that under some suitable assumptions, it is possible to recover both the low-rank and the sparse components\n                    <jats:italic>exactly</jats:italic>\n                    by solving a very convenient convex program called\n                    <jats:italic>Principal Component Pursuit</jats:italic>\n                    ; among all feasible decompositions, simply minimize a weighted combination of the nuclear norm and of the ℓ\n                    <jats:sub>1</jats:sub>\n                    norm. This suggests the possibility of a principled approach to robust principal component analysis since our methodology and results assert that one can recover the principal components of a data matrix even though a positive fraction of its entries are arbitrarily corrupted. This extends to the situation where a fraction of the entries are missing as well. We discuss an algorithm for solving this optimization problem, and present applications in the area of video surveillance, where our methodology allows for the detection of objects in a cluttered background, and in the area of face recognition, where it offers a principled way of removing shadows and specularities in images of faces.\n                  </jats:p>",
+  "DOI": "10.1145/1970392.1970395",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2011,
+        6,
+        6
+      ]
+    ],
+    "date-time": "2011-06-06T07:51:38Z",
+    "timestamp": 1307346698000
+  },
+  "page": "1-37",
+  "update-policy": "https://doi.org/10.1145/crossmark-policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 5156,
+  "title": [
+    "Robust principal component analysis?"
+  ],
+  "prefix": "10.1145",
+  "volume": "58",
+  "author": [
+    {
+      "given": "Emmanuel J.",
+      "family": "Candès",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Stanford University, Stanford, CA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Xiaodong",
+      "family": "Li",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Stanford University, Stanford, CA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Yi",
+      "family": "Ma",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "University of Illinois at Urbana-Champaign, Urbana, IL, Microsoft Research Asia, Beijing, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "John",
+      "family": "Wright",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Microsoft Research Asia, Beijing, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "320",
+  "published-online": {
+    "date-parts": [
+      [
+        2011,
+        6,
+        9
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "e_1_2_1_1_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TPAMI.2003.1177153"
+    },
+    {
+      "key": "e_1_2_1_2_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/080716542"
+    },
+    {
+      "key": "e_1_2_1_3_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/090756855"
+    },
+    {
+      "key": "e_1_2_1_4_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/089976603321780317"
+    },
+    {
+      "key": "e_1_2_1_5_1",
+      "volume-title": "Constrained Optimization and Lagrange Multiplier Method",
+      "author": "Bertsekas D.",
+      "unstructured": "Bertsekas , D. 1982. Constrained Optimization and Lagrange Multiplier Method . Academic Press . Bertsekas, D. 1982. Constrained Optimization and Lagrange Multiplier Method. Academic Press."
+    },
+    {
+      "key": "e_1_2_1_6_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/080738970"
+    },
+    {
+      "key": "e_1_2_1_7_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/JPROC.2009.2035722"
+    },
+    {
+      "key": "e_1_2_1_8_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10208-009-9045-5"
+    },
+    {
+      "key": "e_1_2_1_9_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TIT.2005.862083"
+    },
+    {
+      "key": "e_1_2_1_10_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TIT.2010.2044061"
+    },
+    {
+      "key": "e_1_2_1_11_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-540-88688-4_12"
+    },
+    {
+      "key": "e_1_2_1_12_1",
+      "unstructured": "Chandrasekaran V. Sanghavi S. Parrilo P. and Willsky A. 2009. Rank-sparsity incoherence for matrix decomposition. Siam J. Optim. to appear http://arxiv.org/abs/0906.2220.  Chandrasekaran V. Sanghavi S. Parrilo P. and Willsky A. 2009. Rank-sparsity incoherence for matrix decomposition. Siam J. Optim. to appear http://arxiv.org/abs/0906.2220."
+    },
+    {
+      "key": "e_1_2_1_13_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/S003614450037906X"
+    },
+    {
+      "key": "e_1_2_1_14_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/(SICI)1097-4571(199009)41:6<391::AID-ASI1>3.0.CO;2-9"
+    },
+    {
+      "key": "e_1_2_1_15_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF02288367"
+    },
+    {
+      "key": "e_1_2_1_16_1",
+      "volume-title": "Proceedings of the American Control Conference 2156--2162",
+      "author": "Fazel M.",
+      "unstructured": "Fazel , M. , Hindi , H. , and Boyd , S . 2003. Log-det heuristic for matrix rank minimization with applications to Hankel and Euclidean distance matrices . In Proceedings of the American Control Conference 2156--2162 . Fazel, M., Hindi, H., and Boyd, S. 2003. Log-det heuristic for matrix rank minimization with applications to Hankel and Euclidean distance matrices. In Proceedings of the American Control Conference 2156--2162."
+    },
+    {
+      "key": "e_1_2_1_17_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/358669.358692"
+    },
+    {
+      "key": "e_1_2_1_18_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/34.927464"
+    },
+    {
+      "key": "e_1_2_1_19_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2307/2528963"
+    },
+    {
+      "key": "e_1_2_1_20_1",
+      "unstructured": "Goldfarb D. and Ma S. 2009. Convergence of fixed point continuation algorithms for matrix rank minimization. http://arxiv.org/abs/0906.3499.  Goldfarb D. and Ma S. 2009. Convergence of fixed point continuation algorithms for matrix rank minimization. http://arxiv.org/abs/0906.3499."
+    },
+    {
+      "key": "e_1_2_1_21_1",
+      "volume-title": "CVX: Matlab software for disciplined convex programming (web page and software)",
+      "author": "Grant M.",
+      "year": "2009",
+      "unstructured": "Grant , M. , and Boyd , S . 2009 . CVX: Matlab software for disciplined convex programming (web page and software) . http://stanford.edu/~boyd/cvx. Grant, M., and Boyd, S. 2009. CVX: Matlab software for disciplined convex programming (web page and software). http://stanford.edu/~boyd/cvx."
+    },
+    {
+      "key": "e_1_2_1_22_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TIT.2011.2104999"
+    },
+    {
+      "key": "e_1_2_1_23_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1103/PhysRevLett.105.150401"
+    },
+    {
+      "key": "e_1_2_1_24_1",
+      "unstructured": "Hey T. Tansley S. and Tolle K. 2009. The Fourth Paradigm: Data-Intensive Scientific Discovery. Microsoft Research.  Hey T. Tansley S. and Tolle K. 2009. The Fourth Paradigm: Data-Intensive Scientific Discovery. Microsoft Research."
+    },
+    {
+      "key": "e_1_2_1_25_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1037/h0071325"
+    },
+    {
+      "key": "e_1_2_1_26_1",
+      "volume-title": "Robust Statistics",
+      "author": "Huber P.",
+      "unstructured": "Huber , P. 1981. Robust Statistics . Wiley . Huber, P. 1981. Robust Statistics. Wiley."
+    },
+    {
+      "key": "e_1_2_1_27_1",
+      "volume-title": "Principal Component Analysis",
+      "author": "Jolliffe I.",
+      "unstructured": "Jolliffe , I. 1986. Principal Component Analysis . Springer-Verlag . Jolliffe, I. 1986. Principal Component Analysis. Springer-Verlag."
+    },
+    {
+      "key": "e_1_2_1_28_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/CVPR.2005.309"
+    },
+    {
+      "key": "e_1_2_1_29_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TIT.2010.2046205"
+    },
+    {
+      "key": "e_1_2_1_30_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF02680549"
+    },
+    {
+      "key": "e_1_2_1_31_1",
+      "volume-title": "The Concentration of Measure Phenomenon",
+      "author": "Ledoux M.",
+      "unstructured": "Ledoux , M. 2001. The Concentration of Measure Phenomenon . American Mathematical Society . Ledoux, M. 2001. The Concentration of Measure Phenomenon. American Mathematical Society."
+    },
+    {
+      "key": "e_1_2_1_32_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TIP.2004.836169"
+    },
+    {
+      "key": "e_1_2_1_33_1",
+      "unstructured": "Lin Z. Chen M. and Ma Y. 2009a. The augmented Lagrange multiplier method for exact recovery of a corrupted low-rank matrices. http://arxiv.org/abs/1009.5055.  Lin Z. Chen M. and Ma Y. 2009a. The augmented Lagrange multiplier method for exact recovery of a corrupted low-rank matrices. http://arxiv.org/abs/1009.5055."
+    },
+    {
+      "key": "e_1_2_1_34_1",
+      "volume-title": "Proceedings of the Symposium on Computational Advances in Multi-Sensor Adaptive Processing (CAMSAP).",
+      "author": "Lin Z.",
+      "unstructured": "Lin , Z. , Ganesh , A. , Wright , J. , Wu , L. , Chen , M. , and Ma , Y . 2009b. Fast convex optimization algorithms for exact recovery of a corrupted low-rank matrix . In Proceedings of the Symposium on Computational Advances in Multi-Sensor Adaptive Processing (CAMSAP). Lin, Z., Ganesh, A., Wright, J., Wu, L., Chen, M., and Ma, Y. 2009b. Fast convex optimization algorithms for exact recovery of a corrupted low-rank matrix. In Proceedings of the Symposium on Computational Advances in Multi-Sensor Adaptive Processing (CAMSAP)."
+    },
+    {
+      "key": "e_1_2_1_35_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/0716071"
+    },
+    {
+      "key": "e_1_2_1_36_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/090755436"
+    },
+    {
+      "key": "e_1_2_1_37_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5555/3112668.3113011"
+    },
+    {
+      "key": "e_1_2_1_38_1",
+      "first-page": "372",
+      "article-title": "A method of solving a convex programming problem with convergence rate O(1/k&lt;sup&gt;2&lt;/sup&gt;)",
+      "volume": "27",
+      "author": "Nesterov Y.",
+      "year": "1983",
+      "unstructured": "Nesterov , Y. 1983 . A method of solving a convex programming problem with convergence rate O(1/k&lt;sup&gt;2&lt;/sup&gt;) . Soviet Math. Dokl. 27 , 2, 372 -- 376 . Nesterov, Y. 1983. A method of solving a convex programming problem with convergence rate O(1/k&lt;sup&gt;2&lt;/sup&gt;). Soviet Math. Dokl. 27, 2, 372--376.",
+      "journal-title": "Soviet Math. Dokl."
+    },
+    {
+      "key": "e_1_2_1_39_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10107-004-0552-5"
+    },
+    {
+      "key": "e_1_2_1_40_1",
+      "unstructured": "Nesterov Y. 2007. Gradient methods for minimizing composite objective functions. Tech. rep. - CORE - Universite Catholique de Louvain.  Nesterov Y. 2007. Gradient methods for minimizing composite objective functions. Tech. rep. - CORE - Universite Catholique de Louvain."
+    },
+    {
+      "key": "e_1_2_1_41_1",
+      "unstructured": "Netflix Inc. The Netflix prize. http://www.netflixprize.com/.  Netflix Inc. The Netflix prize. http://www.netflixprize.com/."
+    },
+    {
+      "key": "e_1_2_1_42_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/040605412"
+    },
+    {
+      "key": "e_1_2_1_43_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1006/jcss.2000.1711"
+    },
+    {
+      "key": "e_1_2_1_44_1",
+      "unstructured": "Recht B. 2009. A simpler approach to matrix completion. CoRR abs/0910.0651.  Recht B. 2009. A simpler approach to matrix completion. CoRR abs/0910.0651."
+    },
+    {
+      "key": "e_1_2_1_45_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/070697835"
+    },
+    {
+      "key": "e_1_2_1_46_1",
+      "volume-title": "Proceedings of the IEEE International Conference on Computer Vision and Pattern Recognition.",
+      "author": "Stauffer C.",
+      "unstructured": "Stauffer , C. , and Grimson , E . 1999. Adaptive background mixture models for real-time tracking . In Proceedings of the IEEE International Conference on Computer Vision and Pattern Recognition. Stauffer, C., and Grimson, E. 1999. Adaptive background mixture models for real-time tracking. In Proceedings of the IEEE International Conference on Computer Vision and Pattern Recognition."
+    },
+    {
+      "key": "e_1_2_1_47_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Tenenbaum J. de Silva V. and Langford J. 2000. A global geometric framework for nonlinear dimensionality reduction. Science 290 5500 2319--2323.  Tenenbaum J. de Silva V. and Langford J. 2000. A global geometric framework for nonlinear dimensionality reduction. Science 290 5500 2319--2323.",
+      "DOI": "10.1126/science.290.5500.2319"
+    },
+    {
+      "key": "e_1_2_1_48_1",
+      "first-page": "615",
+      "article-title": "An accelerated proximal gradient algorithm for nuclear norm regularized least squares problems",
+      "volume": "6",
+      "author": "Toh K. C.",
+      "year": "2010",
+      "unstructured": "Toh , K. C. , and Yun , S. 2010 . An accelerated proximal gradient algorithm for nuclear norm regularized least squares problems . Pac. J. Optim. 6 , 615 -- 640 . Toh, K. C., and Yun, S. 2010. An accelerated proximal gradient algorithm for nuclear norm regularized least squares problems. Pac. J. Optim. 6, 615--640.",
+      "journal-title": "Pac. J. Optim."
+    },
+    {
+      "key": "e_1_2_1_49_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1023/A:1023709501986"
+    },
+    {
+      "key": "e_1_2_1_50_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Vershynin R. 2011. Introduction to the non-asymptotic analysis of random matrices. http://www-personal.umich.edu/&tilde;romanv/papers/non-asymptotic-rmt-plain.pdf.  Vershynin R. 2011. Introduction to the non-asymptotic analysis of random matrices. http://www-personal.umich.edu/&tilde;romanv/papers/non-asymptotic-rmt-plain.pdf.",
+      "DOI": "10.1017/CBO9780511794308.006"
+    },
+    {
+      "key": "e_1_2_1_51_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/070698920"
+    },
+    {
+      "key": "e_1_2_1_52_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/070703983"
+    },
+    {
+      "key": "e_1_2_1_53_1",
+      "unstructured": "Yuan X. and Yang J. 2009. Sparse and low-rank matrix decomposition via alternating direction methods. http://www.optimization-online.org/08_HTML/2009/11/2447.html.  Yuan X. and Yang J. 2009. Sparse and low-rank matrix decomposition via alternating direction methods. http://www.optimization-online.org/08_HTML/2009/11/2447.html."
+    },
+    {
+      "key": "e_1_2_1_54_1",
+      "volume-title": "Proceedings of the International Conference on Computer Vision (ICCV).",
+      "author": "Zhou Z.",
+      "unstructured": "Zhou , Z. , Wagner , A. , Mobahi , H. , Wright , J. , and Ma , Y . 2009. Face recognition with contiguous occlusion using Markov random fields . In Proceedings of the International Conference on Computer Vision (ICCV). Zhou, Z., Wagner, A., Mobahi, H., Wright, J., and Ma, Y. 2009. Face recognition with contiguous occlusion using Markov random fields. In Proceedings of the International Conference on Computer Vision (ICCV)."
+    }
+  ],
+  "container-title": [
+    "Journal of the ACM"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://dl.acm.org/doi/10.1145/1970392.1970395",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://dl.acm.org/doi/pdf/10.1145/1970392.1970395",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        6,
+        18
+      ]
+    ],
+    "date-time": "2025-06-18T06:52:53Z",
+    "timestamp": 1750229573000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://dl.acm.org/doi/10.1145/1970392.1970395"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2011,
+        5
+      ]
+    ]
+  },
+  "references-count": 54,
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          2011,
+          5
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1145/1970392.1970395"
+  ],
+  "URL": "https://doi.org/10.1145/1970392.1970395",
+  "relation": {},
+  "ISSN": [
+    "0004-5411",
+    "1557-735X"
+  ],
+  "issn-type": [
+    {
+      "value": "0004-5411",
+      "type": "print"
+    },
+    {
+      "value": "1557-735X",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2011,
+        5
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "2010-01-01",
+      "order": 0,
+      "name": "received",
+      "label": "Received",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    },
+    {
+      "value": "2011-02-01",
+      "order": 1,
+      "name": "accepted",
+      "label": "Accepted",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    },
+    {
+      "value": "2011-06-09",
+      "order": 2,
+      "name": "published",
+      "label": "Published",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    }
+  ]
+}

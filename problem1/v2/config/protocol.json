@@ -1,0 +1,16 @@
+{
+ "base_commit":"d8817f260a9a0a6d33f6d91d8e095095eec076ed",
+ "panel_shape":[96,192],"panel_design":"Six disjoint chronological intervals per heat; alternating development/test; early/middle/late; wavelength starts 0.08,0.40,0.72 of available span. No panel is reused across splits.",
+ "development_seeds":[137,271],"test_seeds":[811,1297],
+ "random_fractions":[0.01,0.05,0.10],"time_widths":[2,4,8,16],"wave_widths":[4,8,16,32],
+ "detector_candidates":[{"threshold":6,"aux_threshold":10},{"threshold":9,"aux_threshold":14}],
+ "detector_max_incremental_false_positive":0.005,
+ "rank_candidates":[4,8],"eta_candidates":[0.003,0.01],"gamma_candidates":[0.5,4],"beta_candidates":[0.03,0.3],
+ "solver_max_iter":100,"solver_tol":0.0001,
+ "interpolation_methods":["linear","cubic","pchip","tensor_bspline"],"time_decimation":[2,3,4],"wave_decimation":[2,3],
+ "clip_quantiles":[0.65,0.8,0.9],"clip_sizes":[[4,16],[12,48]],
+ "selection":"Heat-macro mean NRMSE with equal scenario weights; interpolation independently selected; anomaly configuration maximizing development macro F1 under incremental FPR <=0.005. Ties choose lower complexity.",
+ "quality_reference":"Scoring-only fixed physical admissibility: finite, 0<Y<64000. No test-value derived anomaly masks. All eligible held points are scored including naturally suspicious readings; additionally report strict positive finite unsaturated scoring (Y<65535).",
+ "visibility":"Hide geometrically selected cells BEFORE mask/detector/noise/temporal weights. Random hiding independent of intensity. Full time/wave bands hidden regardless of reference eligibility. Model selection never reads test score. Development/test panels disjoint; multiple seeds are repeated measures, heat is sampling unit.",
+ "scope":"Stratified native-coordinate local panels for controlled experiments; ten full native matrices for final refit and solver audit. Panel recovery conclusions do not establish full-heat predictive generalization. No test-based changes allowed after LOCKED.json."
+}
