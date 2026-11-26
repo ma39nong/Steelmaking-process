@@ -1,7 +1,7 @@
 {
   "dataset": "Problem 1 frozen final recorded-scale offline spectra",
   "data_source_commit": "3366db522887b2ca0f5f461ea6bd52ed71def1ba",
-  "packaging_base_commit": "77df8a792c260b4ea7ef1d4163ffa3eda2389b39",
+  "packaging_base_commit": "36c2f86a3778104425f3b99413f4b13ae3dd24fc",
   "heats": 10,
   "actual_repairs": 1043,
   "coordinate_units": {
@@ -12,7 +12,7 @@
   "offline": true,
   "original_xlsb_and_process_columns_included": false,
   "archive": "problem1-final-data.zip",
-  "payload_bytes": 548813140,
+  "payload_bytes": 548813646,
   "files": [
     {
       "path": "problem1/final/data/6B03205_interface.npz",
@@ -126,13 +126,13 @@
     },
     {
       "path": "problem1/final/reports/数据交接与后续问题使用说明.md",
-      "bytes": 8495,
-      "sha256": "fdde6bbed0c660a0ec973f03b8c9cbbc9d364e68e166d3e8c56431dd06b24a62"
+      "bytes": 8683,
+      "sha256": "11d34d8bb2b1ae0133cb43438fab81671d041af359141a7c739cd5ca4b2c7125"
     },
     {
       "path": "problem1/final/delivery/README.md",
-      "bytes": 6169,
-      "sha256": "8da742a0fdc81bd8edc6485330306fc9d782d650a1630678d2b6ad22e412f63f"
+      "bytes": 6487,
+      "sha256": "68ec425efd6843e00d06d8928d37ba1bc9da0adc40dbd46b856fc937cb7bcb4b"
     },
     {
       "path": "problem1/final/delivery/read_example.py",

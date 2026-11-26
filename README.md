@@ -78,9 +78,9 @@
 |修复差值与密集网格|`problem1/final/data/*_difference.npz`、`*_dense.npz`|不包含|修改追溯、连续曲面展示|
 |论文、代码、统计CSV、图像、哈希|`problem1/final/reports/`、`src/`、`results/`、`figures/`|包含|阅读、验证与复现|
 
-**只克隆仓库不会得到大数组。** 已准备523.40 MiB处理后数据交付包，含十炉接口、十炉差值及校验清单：[打包与Release说明](problem1/final/delivery/README.md)。下载并在仓库根目录解压后恢复正式数据路径。包内包含十炉原始网格上的处理结果、原始光谱副本、质量标记及函数接口；原始XLSB中的工艺附加列仍由后两问同事从原附件读取。
+**只克隆仓库不会得到大数组。** 已发布523.40 MiB处理后数据交付包，含十炉接口、十炉差值及校验清单：[Release下载页](https://github.com/ma39nong/Steelmaking-process/releases/tag/problem1-final-data-v1)、[直接下载ZIP](https://github.com/ma39nong/Steelmaking-process/releases/download/problem1-final-data-v1/problem1-final-data.zip)、[打包与Release说明](problem1/final/delivery/README.md)。下载并在仓库根目录解压后恢复正式数据路径。包内包含十炉原始网格上的处理结果、原始光谱副本、质量标记及函数接口；原始XLSB中的工艺附加列仍由后两问同事从原附件读取。
 
-截图中的 **Releases适合发布这个数据包**，单个附件须小于2 GiB；Packages主要用于npm、容器等软件包注册表，本项目采用Release附件更直接。[GitHub官方Release说明](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)、[Packages说明](https://docs.github.com/en/packages/working-with-a-github-packages-registry)。当前数据包在本机准备，尚未创建或上传GitHub Release；提交代码不会自动上传被忽略的数据。
+截图中的 **Releases适合发布这个数据包**，单个附件须小于2 GiB；Packages主要用于npm、容器等软件包注册表，本项目采用Release附件更直接。[GitHub官方Release说明](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)、[Packages说明](https://docs.github.com/en/packages/working-with-a-github-packages-registry)。正式数据附件已通过上述Release单独发布；提交代码不会自动上传被忽略的数据。
 
 ## 给第二、三问
 

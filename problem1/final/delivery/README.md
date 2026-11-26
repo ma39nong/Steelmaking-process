@@ -2,10 +2,10 @@
 
 ## 数据包状态
 
-已在本地生成`problem1-final-data.zip`、`data_package_manifest.json`和`SHA256SUMS`。ZIP按仓库相对路径组织，在克隆仓库根目录解压即可恢复正式数据位置。**本轮没有创建或上传GitHub Release**；下载仓库源码不会自动包含这个ZIP或大数组。
+已将`problem1-final-data.zip`、`data_package_manifest.json`和`SHA256SUMS`发布至[正式Release](https://github.com/ma39nong/Steelmaking-process/releases/tag/problem1-final-data-v1)，可[直接下载数据ZIP](https://github.com/ma39nong/Steelmaking-process/releases/download/problem1-final-data-v1/problem1-final-data.zip)。ZIP按仓库相对路径组织，在克隆仓库根目录解压即可恢复正式数据位置。数据附件与源码分开提供；下载仓库源码不会自动包含这个ZIP或大数组。
 
 - 冻结数据来源：`3366db522887b2ca0f5f461ea6bd52ed71def1ba`对应的最终研究结果。
-- 参数与实际1043点修复保持不变；本轮只编写交接说明、校验并打包现有文件。
+- 参数与实际1043点修复保持不变；交接工具校验并打包现有文件，随后单独上传发布。
 - [清单](data_package_manifest.json)登记每个包内文件的相对路径、SHA256、字节数及来源；[SHA256SUMS](SHA256SUMS)核对ZIP和清单。
 - [数据字段、后两问使用范围](../reports/数据交接与后续问题使用说明.md)是交接时应一起阅读的说明。
 
@@ -73,7 +73,7 @@ python3 -m venv .venv
 
 Release说明可写：“冻结第一问自适应多证据＋秩4 Huber低秩修复结果，十炉1043点实际修复，含原始/修复光谱、坐标、质量、差值及连续查询接口。数据为离线重构；实时预测需从raw另建因果流程。原始工艺附加列从比赛附件获取。”
 
-通过仓库右侧“Create a new release”上传上述附件即可；发布后把实际Release链接加入根README的数据入口。在没有真实发布地址前，文档不写虚假的下载链接。也可通过已登录GitHub CLI创建草稿：
+当前正式Release及根README下载入口已建立。以后发布新数据批次时，可通过仓库右侧“Create a new release”，或使用已登录GitHub CLI创建新标签草稿。下面为首次发布时的草稿命令留档，不要重复创建同名标签：
 
 ```bash
 gh release create problem1-final-data-v1 \
@@ -85,4 +85,4 @@ gh release create problem1-final-data-v1 \
   --notes '十炉正式离线光谱接口与差值、质量掩码及SHA256；详细使用方法见分支总README。'
 ```
 
-以上是发布方法，尚未执行。Git提交仅包含文档、读取/打包工具及小型清单；ZIP沿用项目忽略规则留在本地。
+本次已通过GitHub CLI上传附件并发布正式Release。Git提交仅包含文档、读取/打包工具及小型清单；ZIP作为Release附件分发，本地副本继续按项目忽略规则管理。
