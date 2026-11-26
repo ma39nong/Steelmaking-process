@@ -82,7 +82,7 @@
 
 截图中的 **Releases适合发布这个数据包**，单个附件须小于2 GiB；Packages主要用于npm、容器等软件包注册表，本项目采用Release附件更直接。[GitHub官方Release说明](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)、[Packages说明](https://docs.github.com/en/packages/working-with-a-github-packages-registry)。当前数据包在本机准备，尚未创建或上传GitHub Release；提交代码不会自动上传被忽略的数据。
 
-## 给第二、三问同事
+## 给第二、三问
 
 应交付**修复矩阵＋原始矩阵＋时间/波长轴＋异常及截顶质量掩码＋读取接口＋数据说明**。第二问的离线特征分析可使用`reconstructed`，同时保留`raw`做处理前后对照；氧气、烟气等变量按原始附件、实际采样口径对齐。第三问实时预测须从`raw`建立仅使用当前及历史信息的处理流程，本问的离线异常判断、掩码、低秩估计和连续曲面均可能利用未来观测。训练/测试划分和输入可见范围由各任务单独固定。详见[交接说明](problem1/final/reports/数据交接与后续问题使用说明.md)。
 
