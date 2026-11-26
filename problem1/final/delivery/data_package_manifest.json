@@ -1,0 +1,173 @@
+{
+  "dataset": "Problem 1 frozen final recorded-scale offline spectra",
+  "data_source_commit": "3366db522887b2ca0f5f461ea6bd52ed71def1ba",
+  "packaging_base_commit": "77df8a792c260b4ea7ef1d4163ffa3eda2389b39",
+  "heats": 10,
+  "actual_repairs": 1043,
+  "coordinate_units": {
+    "time": "relative seconds",
+    "wavelength": "nm",
+    "intensity": "counts"
+  },
+  "offline": true,
+  "original_xlsb_and_process_columns_included": false,
+  "archive": "problem1-final-data.zip",
+  "payload_bytes": 548813140,
+  "files": [
+    {
+      "path": "problem1/final/data/6B03205_interface.npz",
+      "bytes": 57706288,
+      "sha256": "465d091f0b80250ef8416b99785567f45605ae9deecdd01b35eb74d5cc68fee6"
+    },
+    {
+      "path": "problem1/final/data/6B03205_difference.npz",
+      "bytes": 27146,
+      "sha256": "b82bb91d14c86f61f6bfa537cc3634894fb368b15291f4d1057c028e68c1c6b8"
+    },
+    {
+      "path": "problem1/final/data/6B03206_interface.npz",
+      "bytes": 52648153,
+      "sha256": "a8fc6259597a9d9b2a78dc5597390810b1015c8bafe245fb7d8bf1856a174329"
+    },
+    {
+      "path": "problem1/final/data/6B03206_difference.npz",
+      "bytes": 24144,
+      "sha256": "87ab2a19c54fde7b30c8574c725054f0199605f56cedc2dffa73ae3b6792a4fc"
+    },
+    {
+      "path": "problem1/final/data/6B03270_interface.npz",
+      "bytes": 56188699,
+      "sha256": "43278a30d1105869bc75d9ae7639448d89c296104d1b7d67a56b38679d5b345f"
+    },
+    {
+      "path": "problem1/final/data/6B03270_difference.npz",
+      "bytes": 25967,
+      "sha256": "30f7f29af018b7cdcced04a357908f0db4bfdb15d849c83165d9756dc6eba5de"
+    },
+    {
+      "path": "problem1/final/data/6B03271_interface.npz",
+      "bytes": 56651484,
+      "sha256": "32e13ad2a46ad5406b69ba0de18ea7c5b46d5d58a7d7fe83c1b840e1e5b2797d"
+    },
+    {
+      "path": "problem1/final/data/6B03271_difference.npz",
+      "bytes": 26055,
+      "sha256": "b1371d247fc1a93630d93882cf79e5f4d41d54e84b14b4e9726591d98fd47386"
+    },
+    {
+      "path": "problem1/final/data/6C02057_interface.npz",
+      "bytes": 31899023,
+      "sha256": "06ba828ff770e9965df575108b40e11e87885a36e48e8b4f789f3915f37c40b7"
+    },
+    {
+      "path": "problem1/final/data/6C02057_difference.npz",
+      "bytes": 16738,
+      "sha256": "d2753c0b5e9ecdfb7a7934933f2aa10b970670941ff9a7b37cd45cfe0d793601"
+    },
+    {
+      "path": "problem1/final/data/6C02058_interface.npz",
+      "bytes": 53847261,
+      "sha256": "59504be04fea704a8862531396a782c06ad1819b2e6d0f51b168b73413f2fb38"
+    },
+    {
+      "path": "problem1/final/data/6C02058_difference.npz",
+      "bytes": 29359,
+      "sha256": "ecd5fc12b3cd602d5198f1328a0fed9469b4f620e5bdeb42c0b4991d2ac35255"
+    },
+    {
+      "path": "problem1/final/data/6C02059_interface.npz",
+      "bytes": 63476369,
+      "sha256": "a1c23f8f875d6e826192a5a7bfd5da17ad9b1f70104c85cf76dd258026f667b3"
+    },
+    {
+      "path": "problem1/final/data/6C02059_difference.npz",
+      "bytes": 29011,
+      "sha256": "b0ee94154ef9b15ca9d3ff145efe33425ba4736c2411a16108d3cb63c62a4f73"
+    },
+    {
+      "path": "problem1/final/data/6C02060_interface.npz",
+      "bytes": 56249237,
+      "sha256": "b216961614fec76ca19f24aba5bfed10856c5ae41434e050e153ebfe7d3b9cd4"
+    },
+    {
+      "path": "problem1/final/data/6C02060_difference.npz",
+      "bytes": 25300,
+      "sha256": "cbb0b0dfe2d4dfa9663cf554210b352fa00f05b87471aaa148b50267a5de8b63"
+    },
+    {
+      "path": "problem1/final/data/6C02107_interface.npz",
+      "bytes": 59671394,
+      "sha256": "d3679cab01b84248cc3736abd348d2956a0df5cdb3148072396add6aac3787ca"
+    },
+    {
+      "path": "problem1/final/data/6C02107_difference.npz",
+      "bytes": 27101,
+      "sha256": "6d67a5474226eda428667c5d94c7392ed770a32cf6e21dbf71ec2165efa9ed39"
+    },
+    {
+      "path": "problem1/final/data/6C02108_interface.npz",
+      "bytes": 59915711,
+      "sha256": "e605363af3e4ddc43fedf6271a816df75b12ccb0213d70de6e0afb8d02104de9"
+    },
+    {
+      "path": "problem1/final/data/6C02108_difference.npz",
+      "bytes": 28184,
+      "sha256": "3647b18eafcc9e687e107516892bb10a1e48c826c3d4c070e0ffdbd286fec609"
+    },
+    {
+      "path": "data_manifest.csv",
+      "bytes": 2071,
+      "sha256": "433738026c87bff6027e08eac20c86e8b5958b577b3ce775b5b47761d892561d"
+    },
+    {
+      "path": "problem1/v3/src/interface.py",
+      "bytes": 2575,
+      "sha256": "3c9a4c5f3081139df843cc76160ec3d7edc1949e607c14b5604e456bcc196131"
+    },
+    {
+      "path": "problem1/final/reports/数据交接与后续问题使用说明.md",
+      "bytes": 8495,
+      "sha256": "fdde6bbed0c660a0ec973f03b8c9cbbc9d364e68e166d3e8c56431dd06b24a62"
+    },
+    {
+      "path": "problem1/final/delivery/README.md",
+      "bytes": 6169,
+      "sha256": "8da742a0fdc81bd8edc6485330306fc9d782d650a1630678d2b6ad22e412f63f"
+    },
+    {
+      "path": "problem1/final/delivery/read_example.py",
+      "bytes": 1458,
+      "sha256": "30973fde108652933a6cb689bec80ae3437639c2dc12b9e042e8556318356c54"
+    },
+    {
+      "path": "problem1/final/results/final_summary.csv",
+      "bytes": 1859,
+      "sha256": "38166509a9393be173837fcdf1c6e3ffed50c46586004bdd4e57a81aea6e38ea"
+    },
+    {
+      "path": "problem1/final/results/actual_repairs.csv",
+      "bytes": 103281,
+      "sha256": "5744b7a05fefb066c0cc76396f7c8ed728144601a9258218f697d8cbaeeecce9"
+    },
+    {
+      "path": "problem1/final/results/statistical_repairs_evidence.csv",
+      "bytes": 165928,
+      "sha256": "87dfff2d438289c49181c410e6f79de8c1330da0bba7ff406e70ea239fe8cd74"
+    },
+    {
+      "path": "problem1/final/results/native_mask_summary.csv",
+      "bytes": 719,
+      "sha256": "472fc53bde44854762e29e5ca82c1691dbe4d1415c5668c38cb64990b1e8cedc"
+    },
+    {
+      "path": "problem1/final/results/conditional_tiles.csv",
+      "bytes": 4351,
+      "sha256": "e8734a58114af16baa9e50b471908e7a9460cfbd75ea6de5752331d1be5c4e00"
+    },
+    {
+      "path": "problem1/final/results/artifact_manifest.csv",
+      "bytes": 3610,
+      "sha256": "654136a9b3d8f57153ab3e3176bfba9730b0bb07f81ee02c5e7f959259da4697"
+    }
+  ]
+}
