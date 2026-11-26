@@ -1,0 +1,22 @@
+{
+  "heat_id": "6B03270",
+  "records": 1413,
+  "channels": 2047,
+  "candidate_frames": 72,
+  "confirmed_invalid_count": 0,
+  "recorded_saturation_count": 0,
+  "recorded_saturation_max_error": 0,
+  "conditional_lower_violations": 0,
+  "conditional_converged_sat_fraction": NaN,
+  "valid_max_error": 0.0,
+  "negative_count": 0,
+  "dense_negative_count": 0,
+  "raw_peak_max_relative_change": 0.0,
+  "lowrank_converged": true,
+  "iterations": 10,
+  "stop_reason": "relative_change",
+  "guarded_missing": 0,
+  "dense_shape": "(2825, 4093)",
+  "original_cache_sha256": "f860bf2d33a3d860d08f2debd05846f17c05fb3b8ba8cbb986e90ac141cf4a1c",
+  "interface_sha256": "f93fd4ceb4426fdbdf08434a515eabf35660824eee1128ecbc9787e37673e8be"
+}

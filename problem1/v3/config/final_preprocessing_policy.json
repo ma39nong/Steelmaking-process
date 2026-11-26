@@ -1,0 +1,17 @@
+{
+  "policy": "P0",
+  "macro_nrmse": {
+    "P0": 0.18552946408353047,
+    "P1": 0.1837077032819302,
+    "P2": 0.1837077032819302,
+    "P3": 0.18356863040760849,
+    "P4": 0.2302612497551362
+  },
+  "rank": 4,
+  "eta": 0.003,
+  "whole_frame_faults_confirmed": 0,
+  "automatic_statistical_frame_deletion": false,
+  "selection": "Predeclared development prediction/risk rule; no test F1 tuning",
+  "protocol_sha256": "04361ea27a3ee899ce82701a660acbf675b6a7042d372cd67b413bfde56dcdc0",
+  "scope": "offline; no online preprocessing claim"
+}

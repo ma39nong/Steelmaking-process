@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "historical_files_unchanged": 1049,
+  "protocol_and_numeric_hashes_verified": true,
+  "raw_versions_verified": 10,
+  "heats_complete": 10,
+  "formal_native_grid_exact_record_identity": true,
+  "formal_negative_count": 0,
+  "conditional_lower_violations": 0,
+  "tests": {
+    "v1_regression_tests.log": "19 passed in 61.90s (0:01:01)",
+    "v2_regression_tests.log": "18 passed, 1 warning in 2.56s",
+    "engineering_tests.log": "10 passed in 7.05s"
+  },
+  "scientific_acceptance": "SCIENTIFIC_ACCEPTANCE.json; restricted target and explicit limitations"
+}

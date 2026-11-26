@@ -1,0 +1,47 @@
+{
+  "model": "V3-C",
+  "rank": 4,
+  "eta": 0.003,
+  "preprocessing": "P0",
+  "interpolation": "linear",
+  "gates": [
+    {
+      "model": "V1",
+      "physical_samples_pass": false,
+      "recorded_censor_supported": false,
+      "eligible": false,
+      "macro_nrmse": 0.10890041127272997
+    },
+    {
+      "model": "V2",
+      "physical_samples_pass": false,
+      "recorded_censor_supported": false,
+      "eligible": false,
+      "macro_nrmse": 0.10437019145811381
+    },
+    {
+      "model": "V3-A",
+      "physical_samples_pass": false,
+      "recorded_censor_supported": false,
+      "eligible": false,
+      "macro_nrmse": 0.10437019145811381
+    },
+    {
+      "model": "V3-B",
+      "physical_samples_pass": false,
+      "recorded_censor_supported": false,
+      "eligible": false,
+      "macro_nrmse": 0.10404617823527947
+    },
+    {
+      "model": "V3-C",
+      "physical_samples_pass": true,
+      "recorded_censor_supported": true,
+      "eligible": true,
+      "macro_nrmse": 0.10450039231004957
+    }
+  ],
+  "selection_basis": "Predeclared physical priorities on new gap0; gap4 confirmation unopened",
+  "protocol_sha256": "04361ea27a3ee899ce82701a660acbf675b6a7042d372cd67b413bfde56dcdc0",
+  "policy_sha256": "523bd17d351b36e0bd53baf0d45be55ee72d3dbb89f2e0eaa65b09bff6397601"
+}

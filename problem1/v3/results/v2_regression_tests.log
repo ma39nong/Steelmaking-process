@@ -1,0 +1,8 @@
+..................                                                       [100%]
+=============================== warnings summary ===============================
+problem1/v2/tests/test_math_protocol.py::test_hidden_values_cannot_affect_fit
+  /home/user/APMCM-B/problem1/v2/src/solver.py:19: RuntimeWarning: All-NaN slice encountered
+    rate=np.nanmedian(diff,axis=1);s=np.nanmedian(rate);rate=np.nan_to_num(rate,nan=s if np.isfinite(s) else 0)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+18 passed, 1 warning in 2.56s

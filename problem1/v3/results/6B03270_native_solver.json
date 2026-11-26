@@ -1,0 +1,87 @@
+{
+  "history": [
+    {
+      "iteration": 1,
+      "objective": 2.8590379828759485,
+      "relative_change": 0.0010810749691519226,
+      "step": 1.0,
+      "accepted": true,
+      "seconds": 0.4887195508927107
+    },
+    {
+      "iteration": 2,
+      "objective": 2.8483521018761486,
+      "relative_change": 0.0005532999842935081,
+      "step": 1,
+      "accepted": true,
+      "seconds": 0.6459395280107856
+    },
+    {
+      "iteration": 3,
+      "objective": 2.8432474425098224,
+      "relative_change": 0.000375420238331954,
+      "step": 1,
+      "accepted": true,
+      "seconds": 0.8041110669728369
+    },
+    {
+      "iteration": 4,
+      "objective": 2.840431522230623,
+      "relative_change": 0.0002760058506196674,
+      "step": 1,
+      "accepted": true,
+      "seconds": 0.9618413948919624
+    },
+    {
+      "iteration": 5,
+      "objective": 2.838723693374221,
+      "relative_change": 0.0002134550683458077,
+      "step": 1,
+      "accepted": true,
+      "seconds": 1.136285362066701
+    },
+    {
+      "iteration": 6,
+      "objective": 2.8376099060303326,
+      "relative_change": 0.00017122305659003777,
+      "step": 1,
+      "accepted": true,
+      "seconds": 1.2773877009749413
+    },
+    {
+      "iteration": 7,
+      "objective": 2.8368332020202387,
+      "relative_change": 0.00014218174500863325,
+      "step": 1,
+      "accepted": true,
+      "seconds": 1.4365047018509358
+    },
+    {
+      "iteration": 8,
+      "objective": 2.8362620260395697,
+      "relative_change": 0.00012142303072580799,
+      "step": 1,
+      "accepted": true,
+      "seconds": 1.570738059002906
+    },
+    {
+      "iteration": 9,
+      "objective": 2.8358257501835604,
+      "relative_change": 0.00010577139334339188,
+      "step": 1,
+      "accepted": true,
+      "seconds": 1.749223561026156
+    },
+    {
+      "iteration": 10,
+      "objective": 2.8354815104916495,
+      "relative_change": 9.366692450417097e-05,
+      "step": 1,
+      "accepted": true,
+      "seconds": 1.9003147899638861
+    }
+  ],
+  "converged": true,
+  "stop_reason": "relative_change",
+  "seconds": 1.9121881099417806
+}

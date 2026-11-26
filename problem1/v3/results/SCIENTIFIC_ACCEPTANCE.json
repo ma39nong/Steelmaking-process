@@ -1,0 +1,19 @@
+{
+  "formal_target": "recorded-scale quality-marked offline continuous spectrum",
+  "physical_integrity_pass": true,
+  "accuracy_ratio_to_linear": 0.8740078958521923,
+  "accuracy_gate_pass": true,
+  "confirmed_real_faults": 0,
+  "all_faults_removed_claim": false,
+  "raw_grid_equal_to_records": true,
+  "conditional_local_tiles": 104,
+  "conditional_tiles_converged": true,
+  "conditional_lower_violations": 0,
+  "unresolved": [
+    "no external heat/fault-log validation",
+    "continuous temporal gaps weak",
+    "6C02058 held fit nonconverged at 1200; conservative fallback loses accuracy",
+    "latent true saturated peak and upper bound unidentified"
+  ],
+  "overall": "restricted recorded-target acceptance; scientific limitations retained, not universal latent-recovery pass"
+}
