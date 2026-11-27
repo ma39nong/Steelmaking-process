@@ -12,6 +12,21 @@ uv run --with pandas --with pyxlsb python -m problem2.src.data_validation `
 
 `data_validation` 逐炉读取唯一工作表，按表头识别累计耗氧量、CO₂ 和 CO，验证 2051 列、连续 Sequence、0.5 s 时间步、缺失值和负值，并写出 JSON 与 CSV 审计结果。
 
+## V2 审查模型
+
+```powershell
+uv run --with 'numpy<2' --with pandas --with pyxlsb --with scipy `
+  python -m problem2.src.q2_pipeline_v2 `
+  --data-dir G:\亚太杯\Data `
+  --output-dir problem2\final\v2_data `
+  --summary-dir problem2\final\v2_results
+
+uv run --with 'numpy<2' python -m problem2.src.v2_validation
+uv run --with 'numpy<2' --with scipy --with pytest pytest -q problem2/tests
+```
+
+V2 不覆盖 V1 文件。`delay_v2.py` 只将通过动态激励、峰值显著性、峰分离度和边界检查的窗口写入 observed delay，边界和低可靠窗口保持 NaN。
+
 ## 基线重构与评价
 
 ```powershell

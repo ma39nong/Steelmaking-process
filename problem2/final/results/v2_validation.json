@@ -1,0 +1,806 @@
+{
+  "leave_one_heat_out": [
+    {
+      "gas": "co",
+      "test_heat": "6B03205",
+      "train_reliable_samples": 12,
+      "test_reliable_samples": 0,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": NaN
+    },
+    {
+      "gas": "co",
+      "test_heat": "6B03206",
+      "train_reliable_samples": 10,
+      "test_reliable_samples": 2,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": 7.210913875044875
+    },
+    {
+      "gas": "co",
+      "test_heat": "6B03270",
+      "train_reliable_samples": 12,
+      "test_reliable_samples": 0,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": NaN
+    },
+    {
+      "gas": "co",
+      "test_heat": "6B03271",
+      "train_reliable_samples": 12,
+      "test_reliable_samples": 0,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": NaN
+    },
+    {
+      "gas": "co",
+      "test_heat": "6C02057",
+      "train_reliable_samples": 11,
+      "test_reliable_samples": 1,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": 31.57805705226413
+    },
+    {
+      "gas": "co",
+      "test_heat": "6C02058",
+      "train_reliable_samples": 10,
+      "test_reliable_samples": 2,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": 10.023340551880239
+    },
+    {
+      "gas": "co",
+      "test_heat": "6C02059",
+      "train_reliable_samples": 9,
+      "test_reliable_samples": 3,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": 21.893845375013512
+    },
+    {
+      "gas": "co",
+      "test_heat": "6C02060",
+      "train_reliable_samples": 9,
+      "test_reliable_samples": 3,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": 21.738253681394117
+    },
+    {
+      "gas": "co",
+      "test_heat": "6C02107",
+      "train_reliable_samples": 11,
+      "test_reliable_samples": 1,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": 1.9163972541376726
+    },
+    {
+      "gas": "co",
+      "test_heat": "6C02108",
+      "train_reliable_samples": 12,
+      "test_reliable_samples": 0,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": NaN
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6B03205",
+      "train_reliable_samples": 11,
+      "test_reliable_samples": 0,
+      "selected": "fixed_median",
+      "test_mae_s": NaN
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6B03206",
+      "train_reliable_samples": 11,
+      "test_reliable_samples": 0,
+      "selected": "fixed_median",
+      "test_mae_s": NaN
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6B03270",
+      "train_reliable_samples": 11,
+      "test_reliable_samples": 0,
+      "selected": "fixed_median",
+      "test_mae_s": NaN
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6B03271",
+      "train_reliable_samples": 8,
+      "test_reliable_samples": 3,
+      "selected": "fixed_median",
+      "test_mae_s": 6.001566831766802
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6C02057",
+      "train_reliable_samples": 6,
+      "test_reliable_samples": 5,
+      "selected": "fixed_median",
+      "test_mae_s": 18.836581365258304
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6C02058",
+      "train_reliable_samples": 11,
+      "test_reliable_samples": 0,
+      "selected": "fixed_median",
+      "test_mae_s": NaN
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6C02059",
+      "train_reliable_samples": 8,
+      "test_reliable_samples": 3,
+      "selected": "fixed_median",
+      "test_mae_s": 4.220614363937758
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6C02060",
+      "train_reliable_samples": 11,
+      "test_reliable_samples": 0,
+      "selected": "fixed_median",
+      "test_mae_s": NaN
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6C02107",
+      "train_reliable_samples": 11,
+      "test_reliable_samples": 0,
+      "selected": "fixed_median",
+      "test_mae_s": NaN
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6C02108",
+      "train_reliable_samples": 11,
+      "test_reliable_samples": 0,
+      "selected": "fixed_median",
+      "test_mae_s": NaN
+    }
+  ],
+  "threshold_sensitivity": [
+    {
+      "heat_id": "6B03205",
+      "gas": "co",
+      "min_corr": 0.25,
+      "candidate_windows": 248,
+      "accepted_windows": 2,
+      "coverage": 0.008064516129032258
+    },
+    {
+      "heat_id": "6B03205",
+      "gas": "co",
+      "min_corr": 0.3,
+      "candidate_windows": 248,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6B03205",
+      "gas": "co",
+      "min_corr": 0.35,
+      "candidate_windows": 248,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6B03205",
+      "gas": "co",
+      "min_corr": 0.4,
+      "candidate_windows": 248,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6B03205",
+      "gas": "co2",
+      "min_corr": 0.25,
+      "candidate_windows": 248,
+      "accepted_windows": 10,
+      "coverage": 0.04032258064516129
+    },
+    {
+      "heat_id": "6B03205",
+      "gas": "co2",
+      "min_corr": 0.3,
+      "candidate_windows": 248,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6B03205",
+      "gas": "co2",
+      "min_corr": 0.35,
+      "candidate_windows": 248,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6B03205",
+      "gas": "co2",
+      "min_corr": 0.4,
+      "candidate_windows": 248,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6B03206",
+      "gas": "co",
+      "min_corr": 0.25,
+      "candidate_windows": 215,
+      "accepted_windows": 34,
+      "coverage": 0.15813953488372093
+    },
+    {
+      "heat_id": "6B03206",
+      "gas": "co",
+      "min_corr": 0.3,
+      "candidate_windows": 215,
+      "accepted_windows": 19,
+      "coverage": 0.08837209302325581
+    },
+    {
+      "heat_id": "6B03206",
+      "gas": "co",
+      "min_corr": 0.35,
+      "candidate_windows": 215,
+      "accepted_windows": 2,
+      "coverage": 0.009302325581395349
+    },
+    {
+      "heat_id": "6B03206",
+      "gas": "co",
+      "min_corr": 0.4,
+      "candidate_windows": 215,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6B03206",
+      "gas": "co2",
+      "min_corr": 0.25,
+      "candidate_windows": 215,
+      "accepted_windows": 14,
+      "coverage": 0.06511627906976744
+    },
+    {
+      "heat_id": "6B03206",
+      "gas": "co2",
+      "min_corr": 0.3,
+      "candidate_windows": 215,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6B03206",
+      "gas": "co2",
+      "min_corr": 0.35,
+      "candidate_windows": 215,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6B03206",
+      "gas": "co2",
+      "min_corr": 0.4,
+      "candidate_windows": 215,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6B03270",
+      "gas": "co",
+      "min_corr": 0.25,
+      "candidate_windows": 235,
+      "accepted_windows": 37,
+      "coverage": 0.1574468085106383
+    },
+    {
+      "heat_id": "6B03270",
+      "gas": "co",
+      "min_corr": 0.3,
+      "candidate_windows": 235,
+      "accepted_windows": 6,
+      "coverage": 0.02553191489361702
+    },
+    {
+      "heat_id": "6B03270",
+      "gas": "co",
+      "min_corr": 0.35,
+      "candidate_windows": 235,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6B03270",
+      "gas": "co",
+      "min_corr": 0.4,
+      "candidate_windows": 235,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6B03270",
+      "gas": "co2",
+      "min_corr": 0.25,
+      "candidate_windows": 235,
+      "accepted_windows": 61,
+      "coverage": 0.25957446808510637
+    },
+    {
+      "heat_id": "6B03270",
+      "gas": "co2",
+      "min_corr": 0.3,
+      "candidate_windows": 235,
+      "accepted_windows": 29,
+      "coverage": 0.12340425531914893
+    },
+    {
+      "heat_id": "6B03270",
+      "gas": "co2",
+      "min_corr": 0.35,
+      "candidate_windows": 235,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6B03270",
+      "gas": "co2",
+      "min_corr": 0.4,
+      "candidate_windows": 235,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6B03271",
+      "gas": "co",
+      "min_corr": 0.25,
+      "candidate_windows": 236,
+      "accepted_windows": 22,
+      "coverage": 0.09322033898305085
+    },
+    {
+      "heat_id": "6B03271",
+      "gas": "co",
+      "min_corr": 0.3,
+      "candidate_windows": 236,
+      "accepted_windows": 5,
+      "coverage": 0.0211864406779661
+    },
+    {
+      "heat_id": "6B03271",
+      "gas": "co",
+      "min_corr": 0.35,
+      "candidate_windows": 236,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6B03271",
+      "gas": "co",
+      "min_corr": 0.4,
+      "candidate_windows": 236,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6B03271",
+      "gas": "co2",
+      "min_corr": 0.25,
+      "candidate_windows": 236,
+      "accepted_windows": 65,
+      "coverage": 0.2754237288135593
+    },
+    {
+      "heat_id": "6B03271",
+      "gas": "co2",
+      "min_corr": 0.3,
+      "candidate_windows": 236,
+      "accepted_windows": 31,
+      "coverage": 0.13135593220338984
+    },
+    {
+      "heat_id": "6B03271",
+      "gas": "co2",
+      "min_corr": 0.35,
+      "candidate_windows": 236,
+      "accepted_windows": 3,
+      "coverage": 0.012711864406779662
+    },
+    {
+      "heat_id": "6B03271",
+      "gas": "co2",
+      "min_corr": 0.4,
+      "candidate_windows": 236,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6C02057",
+      "gas": "co",
+      "min_corr": 0.25,
+      "candidate_windows": 107,
+      "accepted_windows": 12,
+      "coverage": 0.11214953271028037
+    },
+    {
+      "heat_id": "6C02057",
+      "gas": "co",
+      "min_corr": 0.3,
+      "candidate_windows": 107,
+      "accepted_windows": 5,
+      "coverage": 0.04672897196261682
+    },
+    {
+      "heat_id": "6C02057",
+      "gas": "co",
+      "min_corr": 0.35,
+      "candidate_windows": 107,
+      "accepted_windows": 1,
+      "coverage": 0.009345794392523364
+    },
+    {
+      "heat_id": "6C02057",
+      "gas": "co",
+      "min_corr": 0.4,
+      "candidate_windows": 107,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6C02057",
+      "gas": "co2",
+      "min_corr": 0.25,
+      "candidate_windows": 107,
+      "accepted_windows": 28,
+      "coverage": 0.2616822429906542
+    },
+    {
+      "heat_id": "6C02057",
+      "gas": "co2",
+      "min_corr": 0.3,
+      "candidate_windows": 107,
+      "accepted_windows": 17,
+      "coverage": 0.1588785046728972
+    },
+    {
+      "heat_id": "6C02057",
+      "gas": "co2",
+      "min_corr": 0.35,
+      "candidate_windows": 107,
+      "accepted_windows": 5,
+      "coverage": 0.04672897196261682
+    },
+    {
+      "heat_id": "6C02057",
+      "gas": "co2",
+      "min_corr": 0.4,
+      "candidate_windows": 107,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6C02058",
+      "gas": "co",
+      "min_corr": 0.25,
+      "candidate_windows": 221,
+      "accepted_windows": 14,
+      "coverage": 0.06334841628959276
+    },
+    {
+      "heat_id": "6C02058",
+      "gas": "co",
+      "min_corr": 0.3,
+      "candidate_windows": 221,
+      "accepted_windows": 4,
+      "coverage": 0.01809954751131222
+    },
+    {
+      "heat_id": "6C02058",
+      "gas": "co",
+      "min_corr": 0.35,
+      "candidate_windows": 221,
+      "accepted_windows": 2,
+      "coverage": 0.00904977375565611
+    },
+    {
+      "heat_id": "6C02058",
+      "gas": "co",
+      "min_corr": 0.4,
+      "candidate_windows": 221,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6C02058",
+      "gas": "co2",
+      "min_corr": 0.25,
+      "candidate_windows": 221,
+      "accepted_windows": 6,
+      "coverage": 0.027149321266968326
+    },
+    {
+      "heat_id": "6C02058",
+      "gas": "co2",
+      "min_corr": 0.3,
+      "candidate_windows": 221,
+      "accepted_windows": 1,
+      "coverage": 0.004524886877828055
+    },
+    {
+      "heat_id": "6C02058",
+      "gas": "co2",
+      "min_corr": 0.35,
+      "candidate_windows": 221,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6C02058",
+      "gas": "co2",
+      "min_corr": 0.4,
+      "candidate_windows": 221,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6C02059",
+      "gas": "co",
+      "min_corr": 0.25,
+      "candidate_windows": 263,
+      "accepted_windows": 18,
+      "coverage": 0.06844106463878327
+    },
+    {
+      "heat_id": "6C02059",
+      "gas": "co",
+      "min_corr": 0.3,
+      "candidate_windows": 263,
+      "accepted_windows": 3,
+      "coverage": 0.011406844106463879
+    },
+    {
+      "heat_id": "6C02059",
+      "gas": "co",
+      "min_corr": 0.35,
+      "candidate_windows": 263,
+      "accepted_windows": 3,
+      "coverage": 0.011406844106463879
+    },
+    {
+      "heat_id": "6C02059",
+      "gas": "co",
+      "min_corr": 0.4,
+      "candidate_windows": 263,
+      "accepted_windows": 2,
+      "coverage": 0.0076045627376425855
+    },
+    {
+      "heat_id": "6C02059",
+      "gas": "co2",
+      "min_corr": 0.25,
+      "candidate_windows": 263,
+      "accepted_windows": 18,
+      "coverage": 0.06844106463878327
+    },
+    {
+      "heat_id": "6C02059",
+      "gas": "co2",
+      "min_corr": 0.3,
+      "candidate_windows": 263,
+      "accepted_windows": 3,
+      "coverage": 0.011406844106463879
+    },
+    {
+      "heat_id": "6C02059",
+      "gas": "co2",
+      "min_corr": 0.35,
+      "candidate_windows": 263,
+      "accepted_windows": 3,
+      "coverage": 0.011406844106463879
+    },
+    {
+      "heat_id": "6C02059",
+      "gas": "co2",
+      "min_corr": 0.4,
+      "candidate_windows": 263,
+      "accepted_windows": 2,
+      "coverage": 0.0076045627376425855
+    },
+    {
+      "heat_id": "6C02060",
+      "gas": "co",
+      "min_corr": 0.25,
+      "candidate_windows": 227,
+      "accepted_windows": 15,
+      "coverage": 0.06607929515418502
+    },
+    {
+      "heat_id": "6C02060",
+      "gas": "co",
+      "min_corr": 0.3,
+      "candidate_windows": 227,
+      "accepted_windows": 6,
+      "coverage": 0.02643171806167401
+    },
+    {
+      "heat_id": "6C02060",
+      "gas": "co",
+      "min_corr": 0.35,
+      "candidate_windows": 227,
+      "accepted_windows": 3,
+      "coverage": 0.013215859030837005
+    },
+    {
+      "heat_id": "6C02060",
+      "gas": "co",
+      "min_corr": 0.4,
+      "candidate_windows": 227,
+      "accepted_windows": 2,
+      "coverage": 0.00881057268722467
+    },
+    {
+      "heat_id": "6C02060",
+      "gas": "co2",
+      "min_corr": 0.25,
+      "candidate_windows": 227,
+      "accepted_windows": 5,
+      "coverage": 0.022026431718061675
+    },
+    {
+      "heat_id": "6C02060",
+      "gas": "co2",
+      "min_corr": 0.3,
+      "candidate_windows": 227,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6C02060",
+      "gas": "co2",
+      "min_corr": 0.35,
+      "candidate_windows": 227,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6C02060",
+      "gas": "co2",
+      "min_corr": 0.4,
+      "candidate_windows": 227,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6C02107",
+      "gas": "co",
+      "min_corr": 0.25,
+      "candidate_windows": 244,
+      "accepted_windows": 13,
+      "coverage": 0.05327868852459016
+    },
+    {
+      "heat_id": "6C02107",
+      "gas": "co",
+      "min_corr": 0.3,
+      "candidate_windows": 244,
+      "accepted_windows": 1,
+      "coverage": 0.004098360655737705
+    },
+    {
+      "heat_id": "6C02107",
+      "gas": "co",
+      "min_corr": 0.35,
+      "candidate_windows": 244,
+      "accepted_windows": 1,
+      "coverage": 0.004098360655737705
+    },
+    {
+      "heat_id": "6C02107",
+      "gas": "co",
+      "min_corr": 0.4,
+      "candidate_windows": 244,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6C02107",
+      "gas": "co2",
+      "min_corr": 0.25,
+      "candidate_windows": 244,
+      "accepted_windows": 17,
+      "coverage": 0.06967213114754098
+    },
+    {
+      "heat_id": "6C02107",
+      "gas": "co2",
+      "min_corr": 0.3,
+      "candidate_windows": 244,
+      "accepted_windows": 1,
+      "coverage": 0.004098360655737705
+    },
+    {
+      "heat_id": "6C02107",
+      "gas": "co2",
+      "min_corr": 0.35,
+      "candidate_windows": 244,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6C02107",
+      "gas": "co2",
+      "min_corr": 0.4,
+      "candidate_windows": 244,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6C02108",
+      "gas": "co",
+      "min_corr": 0.25,
+      "candidate_windows": 245,
+      "accepted_windows": 1,
+      "coverage": 0.004081632653061225
+    },
+    {
+      "heat_id": "6C02108",
+      "gas": "co",
+      "min_corr": 0.3,
+      "candidate_windows": 245,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6C02108",
+      "gas": "co",
+      "min_corr": 0.35,
+      "candidate_windows": 245,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6C02108",
+      "gas": "co",
+      "min_corr": 0.4,
+      "candidate_windows": 245,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6C02108",
+      "gas": "co2",
+      "min_corr": 0.25,
+      "candidate_windows": 245,
+      "accepted_windows": 3,
+      "coverage": 0.012244897959183673
+    },
+    {
+      "heat_id": "6C02108",
+      "gas": "co2",
+      "min_corr": 0.3,
+      "candidate_windows": 245,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6C02108",
+      "gas": "co2",
+      "min_corr": 0.35,
+      "candidate_windows": 245,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    },
+    {
+      "heat_id": "6C02108",
+      "gas": "co2",
+      "min_corr": 0.4,
+      "candidate_windows": 245,
+      "accepted_windows": 0,
+      "coverage": 0.0
+    }
+  ]
+}
