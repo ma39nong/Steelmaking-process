@@ -1,32 +1,40 @@
-# 第一问机制与结果图重设计
+# 第一问当前正式图集
 
-本轮针对publication_v3的F02、F06、F07重新组织信息，保留原图集。沿用b837d0d的研究数据，并保留b144fe8的符号及坐标修正。算法、参数、1043点实际修复及数据Release不变。
+本目录是唯一当前取图入口，配套[唯一当前正式正文](../../reports/问题一_中文论文_V4_机制与结果图优化版.md)和[统一图表附录](../../reports/问题一_V3_图表与研究附录.md)。保留既有目录名称，不再增加版本目录或正文副本。
 
-[配套七节正文](../../reports/问题一_中文论文_V4_机制与结果图优化版.md) · [设计说明与核对](../../reports/三张核心图_重设计说明.md) · [中文图注](figure_captions.md)
+|图号|科学问题与结构|图片|
+|---|---|---|
+|5-1|分组谱形、低秩及暗亮帧结构|[F01](main/F01_data_structure.png)|
+|5-2|整体算法流程；质量分类、三证据、修复及截顶独立分支|[F02](main/F02_model_mechanism.png)|
+|5-3|2×2双向证据：第一行修复孤立异常，第二行保留持续谱峰|[F03](main/F03_local_evidence.png)|
+|5-4|1×2连续方法对照：时间、波长降采样，共享图例|[F04](main/F04_continuous_reconstruction.png)|
+|5-5|共同协议下的检测与恢复检验|[F05](main/F05_joint_validation.png)|
+|5-6|全部1043点的实际改动分布|[F06](main/F06_actual_repair_results.png)|
+|5-7|十炉完整连续光谱总览|[F07](main/F07_ten_heat_surfaces.png)|
 
-|图|原图问题|新图的论证作用|直接查看|
-|---|---|---|---|
-|5-2|六幅实验图加公式，缺少机制关系|按有向流程连接原始观测、三类证据、评分/连通门控、修复集合、Huber补全、保真与支撑、连续函数；虚线区分截顶分支|[F02](main/F02_model_mechanism.png)|
-|5-6|重复同一尖峰，一像元差值信息少|全部1043个节点的波长—炉次—相对时间图，配绝对改变量与时间分布，区分465回退与578非回退节点|[F06](main/F06_actual_repair_results.png)|
-|5-7|三维坐标区内部留白及重复标注挤占曲面|扩大投影、正交视角、共享单位及色标，保留十炉实际终点、完整前缘和全局峰值|[F07](main/F07_ten_heat_surfaces.png)|
+所有正式图片均保存PNG/SVG/PDF。main/为七幅正文图，appendix/为十九幅附录图：十炉独立曲面、七幅已有研究附图，以及本轮从正文移出的[A11定位和其他三例尖峰](appendix/A11_case_locator_and_spikes.png)、[A12双线性单元](appendix/A12_bilinear_cell.png)。已有十七幅附图从历史来源原字节集中到这里；统一附录索引只引用本目录。
 
-[F01](main/F01_data_structure.png)、[F03](main/F03_local_evidence.png)、[F04](main/F04_continuous_reconstruction.png)、[F05](main/F05_joint_validation.png)与当前publication_v3逐字节相同，仅复制至独立完整七图目录。F01暗亮差异、F03案例组织、F04几何表达可作为后续排版选择，本轮不重画。原[17幅附录图](../publication_v3/appendix/)及[完整图表附录](../../reports/问题一_V3_图表与研究附录.md)继续适用。
+## 三张核心图的简化
 
-所有图片保留600 dpi PNG、英文可编辑SVG及PDF。review/提供A4纸上6.8英寸最大内容宽的检查页；PNG预览用于审图，正文可优先使用PDF/SVG。图注、正文引用及分析已随三图同步更新。
+F02采用横向输入、三个并行证据分支、纵向修复步骤及横向连续输出；框内只有必要英文方法名称。疑似截顶分为记录尺度保留和条件性潜在估计，记录量程路径进入正式矩阵。没有单个案例数值或大段公式。
 
-## 数据与表达边界
+F03为两行两列：上行为6B03205的14.5 s、512.659 nm孤立异常，下行为6C02108的304.0 s、766.413 nm持续谱峰；左列为时间，右列为波长。原始、修复、邻域参考统一视觉编码，纵轴按每个面板实际数据分别设置。灰色叉号是目标节点的实际邻域参考，非整段参考曲线。
 
-F02的局部记录、残差得分与修复值取自正式接口和实际评分；流程关系为模型机制表达，未生成新实验。图中顶码分支表示另一观测机制，不将该普通尖峰节点解释为饱和。
+F04仅保留时间和波长降采样两面板，共用图例，所有十五个RMSE值及采样间隔沿用原独立实验。原插值单元移到A12，原公式子图删除；凸组合、非负、连续与无额外过冲性质由正文5.5推导。
 
-F06逐点展示实际修复集合，每个节点绘制一次；小改变量在共同线性色标中接近白色，其幅度分布另由经验CDF呈现。圆/菱形区分数值分支，回退子集不与修复总数相加。纵向带内时间t/T仅用于比较分布，连续模型仍以实际秒坐标查询。分布图并非新增检测或修复精度实验。
+## 真实版宽检查与复现
 
-F07保持统一0–65535记录尺度，显示网格与正式数据分离。放大投影后关闭集合的坐标区裁剪，另核对所有投影顶点都位于整图范围内，防止截掉前缘。全局峰值及案例坐标仍保留；时间起点均为0，前四行省略重复的零时刻与400 nm刻度，末行显示完整参考刻度。
+按6.8英寸（约173 mm）正文版宽制作，基本文字8.2 pt；逐张打开实际渲染检查了框内换行、公共图例、坐标、面板间距及留白。F02框内文字还通过实际渲染包围盒核对，避免溢出框体。600 dpi仅作为输出规格，不代替版面审查。
 
-## 复现与检查
+- [F02全页检查](review/F02_model_mechanism_page.png)
+- [F03全页检查](review/F03_local_evidence_page.png)
+- [F04全页检查](review/F04_continuous_reconstruction_page.png)
+- [简化与归档说明](../../reports/三张核心图_重设计说明.md)
+- [图注](figure_captions.md)、[来源哈希](source_manifest.csv)、[输出哈希](asset_manifest.csv)、[数值及文件核验](validation.json)
 
 ```bash
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python problem1/final/figures/publication_v4/src/redesign.py
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python problem1/final/figures/publication_v4/src/simplify.py
 .venv/bin/python problem1/final/figures/publication_v4/src/package.py
 ```
 
-依赖已有正式接口NPZ及supplement_v1/results中的真实评分证据。来源哈希见source_manifest.csv，输出哈希见asset_manifest.csv。repair_atlas_points.csv保存1043点绘图坐标、实际差值及回退标记；surface_sampling_audit.csv保存各炉峰值及投影范围。checks.json与validation.json记录数值、文件及图表一致性检查，旧publication_v3图片逐项与Git对象核对。
+simplify.py是F02/F03/F04及A11/A12的唯一当前绘图实现；package.py只核验当前正文、数据与图片，不从旧稿重新生成正文。其余四张主图保持bd7cfa8原字节；redesign.py保留它们的复现，并调用当前简化实现，避免恢复旧蛇形图。历史publication_v3只作研究来源，模型、1043点修复结果、实验指标及Release不变。

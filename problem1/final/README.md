@@ -1,90 +1,43 @@
-# 第一问最终异常修复与中文正文
+# 第一问正式交付
 
-## 本轮研究深化与出版图表
+本目录是**最终算法、结果和当前论文**的交付入口。首次阅读从正文开始；只有复现实验时才需要进入历史目录。
 
-- [最新七节正文](reports/问题一_中文论文_V3_研究深化与图表重构版.md)与[完整图表附录](reports/问题一_V3_图表与研究附录.md)。
-- [补充研究及结论](supplement_v1/README.md)：20,470条通道诊断、物理候选、两种SVD、465/578修复子集与有限独立片段实验。
-- [出版图集](figures/publication_v3/README.md)：7幅正文主图、十炉独立曲面及7幅研究附图，英文标签、600 dpi PNG与SVG/PDF。
-- [可编辑三线表](tables_v3/README.md)、[原十表审核](reports/table_review_v3.md)。
+## 当前交付物
 
-本轮是研究解释和图表重构，正式配置、1043点结果及发布接口保持冻结；持续通道整列替换和保护规则只作为独立敏感性结果。可选低秩可分离样条未开展。以下历史阅读入口完整保留。
+|内容|位置|
+|---|---|
+|唯一推荐正文|[七节中文论文](reports/问题一_中文论文_V4_机制与结果图优化版.md)|
+|论文图片|[当前正式图集](figures/publication_v4/README.md)：7幅正文图、附图与完整研究索引；英文标注，PNG/SVG/PDF|
+|论文表格|[tables_v3](tables_v3/README.md)：五组正文表与完整附表，Markdown/CSV/LaTeX|
+|完整图表附录|[图表与研究附录](reports/问题一_V3_图表与研究附录.md)|
+|全文整合素材|[假设、符号与参考文献](reports/问题一_V2_全文整合材料.md)|
+|处理后数据|[Release下载](https://github.com/ma39nong/Steelmaking-process/releases/tag/problem1-final-data-v1) · [数据交接说明](reports/数据交接与后续问题使用说明.md)|
 
-## 当前正式阅读入口
+`figures/main/`、`figures/english/`、`figures/publication_v3/`及旧版正文留作历史来源。当前写作、翻译和排版统一取上表文件。
 
-- [七节正式章节版](reports/问题一_中文论文_V2_正式章节版.md)：整篇论文第5章的历史正式章节稿；本轮新稿见上方入口。
-- [正文图表清单](reports/问题一_V2_正文图表清单.md)：19幅图、10张表及来源。
-- [全文整合材料](reports/问题一_V2_全文整合材料.md)：摘要、假设、符号、文献、公式与数据核对记录。
-- [英文配图版章节](reports/问题一_中文论文_V2_英文配图版.md)：正文保留中文，19幅正文图及图注使用英文。
-- [English Figure Report](reports/Problem1_English_Figure_Report.md)、[英文图集](figures/english/README.md)：49组图片、PNG/SVG/PDF、英文图注和分析及数据来源。
-- [处理数据交接](reports/数据交接与后续问题使用说明.md)、[数据包与Release发布](delivery/README.md)：十炉正式处理结果及后两问使用范围。
+## 模型与结果
 
-本轮正式章节已核对关键数字、公式与实现、链接及十炉覆盖；初稿和算法、实验、1043点修复结果均完整保留。文稿V2是结构与内容深化，不改变最终算法。
+最终流程为**自适应多证据检测＋秩4 Huber低秩补全＋观测保真/局部非负支撑＋双线性连续函数**。疑似截顶另存质量标记及条件性估计，正式记录曲面保留量程信息。
 
-## 已有研究说明
+- [逐炉修复统计](results/final_summary.csv)：十炉实际修复1,043点。
+- [逐点原始值与修复值](results/actual_repairs.csv)。
+- [同协议实验比较](results/unified_comparison.csv)与[发布流程确认](results/exact_final_pipeline_confirmation.csv)。
 
-[中文论文初稿](reports/问题一_中文论文初稿.md)按问题分析、数据、异常识别、低秩修复、求解、十炉结果、检验与评价组织；[历史复核](reports/历史复核与最终决策依据.md)单独保存，不以软件版本流水账替代正文。
+## 代码从哪里看
 
-最终采用开发阶段锁定的**局部尺度自适应多证据评分（阈值4）＋原V3固定秩4 Huber补全＋保真/局部非负支撑投影＋双线性连续函数**。十炉实际修复1,043点，原始值、估计值、坐标和统计证据独立保存。四个历史高证据尖峰均被新评分重新识别并实际修复。整帧及持续通道只诊断、不盲目整行/整列删除。疑似顶码保持原记录并单独作条件性估计。
+|作用|实现入口|
+|---|---|
+|异常评分与局部掩码|[detectors.py](src/detectors.py) · [native_masks.py](src/native_masks.py)|
+|低秩拟合、保真与支撑约束|[model3.py](../v3/src/model3.py) · [稳定性处理](../v3/src/stable_completion.py)|
+|条件性饱和估计|[conditional_final.py](src/conditional_final.py)|
+|逐炉求解与结果导出|[fit_native.py](src/fit_native.py) · [export_results.py](src/export_results.py)|
+|连续函数查询|[interface.py](../v3/src/interface.py)|
+|参数与选择锁|[protocol.json](config/protocol.json) · [SELECTION_LOCKED.json](config/SELECTION_LOCKED.json)|
 
-V1至V3.1的代码、数据、结果、锁与报告完整保留。历史数据和新比较协议不同，不直接用不同版本历史分数判优。当前目录为独立研究结果，不覆盖旧文件。
+历史目录中的模块是最终实现的依赖，不能按目录版本号判断当前采用的预处理策略。
 
-## 已执行实验
+## 数据怎么用
 
-- 三波长区域、十炉、开发/确认独立时间片段与种子；每阶段240污染案例，各策略共同输入。
-- A原始保留、B原V1双向MAD、C严格多条件、D自适应评分；D仅阈值4、6两候选。
-- 统一300步补全预算选择检测策略；另对同一固定确认案例检查实际发布的600/1200步及数值回退配置，不称第二批独立验证。
-- 不再使用全局Recall/NRMSE绝对门槛一票否决所有局部修复。预声明连续代价衡量污染恢复与误改代价，确认后不调参。
-- 同一十炉历史已研究，本轮为新区域/新注入确认，不是外部炉次验证。参考原谱带噪，注入实验不等于真实故障准确率。
+数据包解压后，每炉`data/HEAT_interface.npz`包含真实时间、波长、原始/修复矩阵及质量掩码。完整字段与读取示例见[交接说明](reports/数据交接与后续问题使用说明.md)。第二问可使用离线修复矩阵；第三问实时预测需从原始记录建立因果处理。
 
-主要数据：`results/unified_comparison.csv`、`confirmation_per_heat_band.csv`、`exact_final_pipeline_confirmation.csv`、`actual_repairs.csv`、`native_mask_summary.csv`、`final_summary.csv`、`conditional_tiles.csv`、`ACCEPTANCE.json`。历史失败的尺度及条件交集归因见`V31_failure_attribution.csv`。
-
-## 运行顺序
-
-沿用根`.venv`。所有数值命令设置 `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1`。以下为已执行顺序；已有锁及实验结果不要覆盖，复现应复制到同级新运行目录。初始化只用于在基线提交登记协议；保留已有配置用于核对即可，不删除历史锁后宣称新独立测试。
-
-```bash
-.venv/bin/python problem1/final/src/initialize.py
-.venv/bin/python problem1/final/src/history.py
-.venv/bin/python problem1/final/src/experiment_final.py development
-.venv/bin/python problem1/final/src/experiment_final.py confirmation
-.venv/bin/python problem1/final/src/summarize.py
-.venv/bin/python problem1/final/src/native_masks.py
-.venv/bin/python problem1/final/src/controls_line.py
-.venv/bin/python problem1/final/src/check_final_pipeline.py
-.venv/bin/python problem1/final/src/run_native.py
-.venv/bin/python problem1/final/src/conditional_final.py
-.venv/bin/python problem1/final/src/export_results.py
-.venv/bin/python problem1/final/src/plots.py
-.venv/bin/python problem1/final/src/paper.py
-.venv/bin/python -m pytest problem1/final/tests -q
-.venv/bin/python problem1/final/src/integrity.py
-```
-
-`run_native.py`只并行独立炉次，使用原V3求解器，不创建新模型；每炉有限1200步、360s上限。原始ADC顶码、非负支撑、回退逻辑和双线性实现不变。条件性分块只对受修复掩码影响的块重算，其余相同目标复用V3结果；未达停止准则的块保留标记。
-
-## 正式数据对象与接口
-
-每炉本地`data/HEAT_interface.npz`保存真实time、wavelength、raw、cleaned（统计修复位置置NaN）、reconstructed、latent、conditional、valid、invalid、quality、quality_grade、statistical_repair、suspected_saturation、saturated_unidentifiable、conditional_solver_converged、numerical_fallback、score及模型参数。latent数组保存counts尺度的UL；公式中的L已除以65535。
-
-`invalid`表示被排除后进行统计修复的位置，不表示已确认硬件故障。`valid`为低秩拟合集，不含疑似顶码；顶码记录在正式曲面中保留。`conditional`只在顶码节点替换潜在估计，其他位置等于处理矩阵。quality位：2顶码，4修复，8局部支撑投影，16负潜变量修正，32弱支撑，256一般疑似，1024帧候选，8192条件估计未达停止标准，16384统计修复，32768数值回退。grade0保留、1疑似、2统计修复，不是概率。
-
-掩码文件为`HEAT_masks.npz`，含评分分量、自动/复核/实际修复及保留疑似。`HEAT_difference.npz`是完整处理−原始差值矩阵；`HEAT_dense.npz`为双倍分辨率的连续函数显示网格。`results/actual_repairs.csv`逐点列出原始测量与模型估计，行/列从0开始。
-
-大数组沿用项目既有约定留在本地data/，均已生成；代码、全部指标、哈希、参数、论文、图表及参考索引入Git，可从原始附件复现。图表显示降采样不改变保存的全矩阵或精确查询。
-
-```python
-import sys
-sys.path.insert(0, 'problem1/v3/src')
-from interface import Spectrum
-m = Spectrum.load('problem1/final/data/6C02058_interface.npz')
-recorded = m.evaluate([445.5, 445.75], [767.07, 770.0])
-conditional = m.evaluate([445.5], [767.07], target='conditional')
-```
-
-查询为坐标笛卡尔积，只在实际观测定义域内；时间s、波长nm、强度counts。函数C0连续、非负、无单元内超出四角值域的过冲，不全局可微。`raw_until`只返回原始历史切片，未执行因果预处理。第三问实时预测不能直接使用本轮含未来信息的离线结果。
-
-## 文献与图表
-
-[方法文献](references/README.md)沿用合法全文与核读笔记，区分固定秩Huber改造与原PCP/Soft-Impute。[写作组织核读](references/writing/组织方式阅读笔记.md)记录2022/2023 APMCM和2024/2025全国赛官方B题页面，后两者不混称APMCM、不转载图像正文。
-
-figures/main供正文使用；figures/appendix包含十炉实际修复曲线、原始/处理热图、差值及三维曲面，另有帧级快变诊断。工程测试状态和科学收益/代价分别记录于验收文件，新增峰、漏检、数值回退及条件性估计局限保留在论文检验/评价部分。
+需要重跑实验、追溯旧结果或核对文献时，再打开[研究档案与复现说明](reports/研究档案与复现说明.md)。请保留已有数据、参数锁及实验结果，在独立目录复现。

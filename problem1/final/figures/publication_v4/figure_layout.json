@@ -1,0 +1,24 @@
+{
+  "F02": "flowchart; no case values or formulas",
+  "F03": {
+    "rows": 2,
+    "columns": 2,
+    "panel_roles": [
+      "isolated/time",
+      "isolated/wavelength",
+      "persistent/time",
+      "persistent/wavelength"
+    ]
+  },
+  "F04": {
+    "rows": 1,
+    "columns": 2,
+    "shared_legend": true
+  },
+  "appendix": [
+    "A11_case_locator_and_spikes",
+    "A12_bilinear_cell"
+  ],
+  "figure_width_inches": 6.8,
+  "font_size_pt": 8.2
+}

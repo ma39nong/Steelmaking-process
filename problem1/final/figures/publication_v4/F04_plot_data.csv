@@ -1,0 +1,16 @@
+model,scenario,spacing,rmse
+linear,time_stride_2,1.0,3352.5301801606315
+linear,time_stride_3,1.5,4152.55745591668
+linear,time_stride_4,2.0,4790.973107188798
+pchip,time_stride_2,1.0,3299.81314977508
+pchip,time_stride_3,1.5,4207.618186755641
+pchip,time_stride_4,2.0,4890.472999290201
+cubic,time_stride_2,1.0,3388.280402725891
+cubic,time_stride_3,1.5,4418.690140953496
+cubic,time_stride_4,2.0,5266.402084473618
+linear,wave_stride_2,2.0,188.77182943497618
+linear,wave_stride_3,3.0,206.64595024375436
+pchip,wave_stride_2,2.0,192.12386824954254
+pchip,wave_stride_3,3.0,214.64297685633338
+cubic,wave_stride_2,2.0,216.23455734213093
+cubic,wave_stride_3,3.0,231.40430866424663

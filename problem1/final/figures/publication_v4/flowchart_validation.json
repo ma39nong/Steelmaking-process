@@ -1,0 +1,23 @@
+{
+  "all_text_inside_boxes": true,
+  "box_count": 16,
+  "font_size_pt": 8.2,
+  "labels": [
+    "Raw flame spectra",
+    "Quality check\nand classification",
+    "Suspected\nupper clipping",
+    "Temporal\nevidence",
+    "Wavelength\nevidence",
+    "Low-rank\nevidence",
+    "Adaptive evidence fusion\nand anomaly decision",
+    "Anomaly mask",
+    "Rank-4 Huber robust\nlow-rank completion",
+    "Stability check\nand fallback if needed",
+    "Retain recorded\nrange information",
+    "Conditional latent\nintensity estimate",
+    "Observation fidelity\nand local\nnonnegative support",
+    "Formal repaired\nmatrix",
+    "Bilinear continuous\nreconstruction",
+    "Continuous\nspectral surface"
+  ]
+}

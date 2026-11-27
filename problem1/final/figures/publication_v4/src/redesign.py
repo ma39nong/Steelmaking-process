@@ -30,50 +30,9 @@ def arrow(ax,start,end,color=GRAY,style='-|>',lw=1.1,rad=0):
  ax.add_patch(FancyArrowPatch(start,end,arrowstyle=style,mutation_scale=10,lw=lw,color=color,connectionstyle=f'arc3,rad={rad}',transform=ax.transAxes))
 def heading(ax,x,y,num,title):txt(ax,x,y,f'{num}  {title}',fontsize=9,fontweight='bold',va='top',color=RAW)
 def mechanism():
- z,r=prior.case('6B03205',29,466);Y=z['raw'];D=z['reconstructed'];w=z['wavelength'];t=z['time'];i,j=29,466
- c=r.score/np.sqrt(r.time_z*(.5*r.wave_z/(1+r.persistence)+.5*r.lowrank_z))
- fig=plt.figure(figsize=(6.8,5.2));ax=fig.add_axes([.01,.01,.98,.98]);ax.set_axis_off()
- # A directed, two-level graph: observation -> evidence -> decision -> solver -> record -> function.
- heading(ax,.025,.96,'1','Recorded spectrum')
- a=fig.add_axes([.055,.625,.20,.225]);input_image=a.pcolormesh(w[j-5:j+6],t[i-3:i+4],Y[i-3:i+4,j-5:j+6],shading='nearest',cmap='viridis',rasterized=True);a.scatter(w[j],t[i],s=30,facecolors='none',edgecolors=ORANGE);a.set(xlabel='Wavelength (nm)',ylabel='Time (s)',xticks=[511,514],yticks=[13,16]);a.tick_params(labelsize=7);cax=fig.add_axes([.262,.65,.007,.18]);cb=fig.colorbar(input_image,cax=cax,ticks=[500,1500]);cb.ax.tick_params(labelsize=6,pad=1);cax.set_title('counts',fontsize=6,pad=3)
- txt(ax,.035,.89,r'$Y_{ij}=1767$ counts',fontsize=8,color=RAW)
- heading(ax,.32,.96,'2','Evidence channels')
- rails=[(.82,r'Time $z_t$',r.time_z,f'Leave-point reference: {r.time_reference:.1f}'),(.705,r'Wave $z_\lambda$',r.wave_z,f'Leave-point reference: {r.wavelength_reference:.1f}'),(.59,r'Background $z_L$',r.lowrank_z,'Rank-4 residual / local scale')]
- for y,label,value,sub in rails:
-  ax.plot([.31,.65],[y-.045,y-.045],transform=ax.transAxes,color='#d4dfe2',lw=.8)
-  txt(ax,.325,y,label,fontsize=8.5,color=RAW);txt(ax,.64,y,f'{value:.2f}',ha='right',fontsize=9,color=TEAL,fontweight='bold');txt(ax,.325,y-.036,sub,fontsize=7,color=GRAY)
- arrow(ax,(.255,.745),(.305,.745))
- heading(ax,.725,.96,'3','Fuse and gate')
- txt(ax,.73,.83,r'$P=0,\quad c=0.925$',fontsize=9)
- txt(ax,.73,.755,r'$S=22.15\geq4$',fontsize=10,color=TEAL,fontweight='bold')
- txt(ax,.73,.69,'Local connected span\n<= 3 frames x 7 channels',fontsize=7.5,linespacing=1.45)
- txt(ax,.325,.49,r'$S=c\sqrt{z_t\{z_\lambda/[2(1+P)]+z_L/2\}}$',fontsize=10)
- arrow(ax,(.66,.745),(.715,.745))
- # Top-code side branch separates recorded quality information from point repairs.
- ax.plot([.255,.285,.285,.975,.975],[.84,.84,.985,.985,.55],transform=ax.transAxes,color='#b7c2c7',ls='--',lw=.8)
- txt(ax,.45,.988,'65535: separate quality flag and conditional lower-bound branch',fontsize=6.8,ha='center',va='bottom',color=GRAY)
- arrow(ax,(.975,.55),(.86,.55),color='#9baab0');txt(ax,.73,.52,r'Record $D=U$',fontsize=7.5,color=GRAY);txt(ax,.73,.48,r'Conditional $X\geq1$',fontsize=7.5,color=GRAY)
- # Decision mask is conveyed by the selected observation and exact global output count.
- ax.plot([.83,.695,.695],[.615,.615,.445],transform=ax.transAxes,color=GRAY,lw=1.1);arrow(ax,(.695,.445),(.83,.445))
- heading(ax,.72,.405,'4','Selected mask')
- txt(ax,.73,.335,r'$(i,j)\in\mathcal{A}$',fontsize=11,color=ORANGE)
- txt(ax,.73,.285,'1,043 repaired nodes\nacross all ten heats',fontsize=7.8,linespacing=1.5)
- heading(ax,.345,.405,'5','Robust completion')
- txt(ax,.35,.335,r'$\min_{\mathrm{rank}(L)\leq4}\ \sum_{\Omega_v}h_\eta(L-Y/U)$',fontsize=9)
- txt(ax,.35,.275,r'$\eta=0.003,\quad U=65535$',fontsize=8)
- txt(ax,.35,.225,'Visible nodes only; stability check',fontsize=7.5,color=GRAY)
- arrow(ax,(.705,.32),(.65,.32))
- heading(ax,.025,.405,'6','Record-scale output')
- txt(ax,.035,.335,r'$D_{ij}=523.87$ counts',fontsize=9,color=TEAL)
- txt(ax,.035,.28,'Fidelity at retained nodes\nLocal nonnegative support',fontsize=7.1,linespacing=1.5)
- txt(ax,.035,.18,r'$D_{\Omega_o}=Y_{\Omega_o},\quad D\geq0$',fontsize=9)
- arrow(ax,(.33,.32),(.285,.32))
- # Continuous output is a consequence of the projected grid, not another fitted background.
- arrow(ax,(.16,.15),(.16,.115));ax.plot([.16,.90],[.115,.115],transform=ax.transAxes,color=TEAL,lw=1.1)
- txt(ax,.35,.13,r'$D\ \longrightarrow\ \widehat F(t,\lambda)=\mathrm{Bilinear}(t,\lambda,D)$',fontsize=10,color=TEAL)
- txt(ax,.35,.065,'Continuous on the observed domain; nonnegative corner weights',fontsize=7.5,color=GRAY)
- CHECKS['mechanism_case']={'heat':'6B03205','row':i,'column':j,'time_s':float(t[i]),'wave_nm':float(w[j]),'raw':float(Y[i,j]),'repaired':float(D[i,j]),'score':float(r.score),'consistency':float(c),'diagram_values_are_actual':True}
- save(fig,'F02_model_mechanism')
+ from simplify import mechanism as current_mechanism
+ current_mechanism()
+
 
 def repair_atlas():
  p=pd.read_csv(F/'results/actual_repairs.csv');s=pd.read_csv(F/'results/final_summary.csv');heats=s.heat_id.tolist();lookup={h:k for k,h in enumerate(heats)};times={}
@@ -117,9 +76,11 @@ def surfaces():
  save(fig,'F07_ten_heat_surfaces')
 
 def main():
- for name in ['F01_data_structure','F03_local_evidence','F04_continuous_reconstruction','F05_joint_validation']:
+ for name in ['F01_data_structure','F05_joint_validation']:
   for ext in ['png','svg','pdf']:
    p=O/f'main/{name}.{ext}';shutil.copy2(F/f'figures/publication_v3/main/{name}.{ext}',p);MAN.append(dict(figure=name,format=ext,path=p.relative_to(O).as_posix(),sha256=hashlib.sha256(p.read_bytes()).hexdigest(),bytes=p.stat().st_size))
- mechanism();repair_atlas();surfaces()
- pd.DataFrame(MAN).to_csv(O/'asset_manifest.csv',index=False);(O/'checks.json').write_text(json.dumps(CHECKS,indent=2)+'\n')
+ repair_atlas();surfaces()
+ old=pd.read_csv(O/'asset_manifest.csv');new=pd.DataFrame(MAN);pd.concat([old[~old.figure.isin(new.figure)],new],ignore_index=True).to_csv(O/'asset_manifest.csv',index=False);(O/'checks.json').write_text(json.dumps(CHECKS,indent=2)+'\n')
+ from simplify import main as simplify_current
+ simplify_current()
 if __name__=='__main__':main()
