@@ -3,7 +3,7 @@ from pathlib import Path
 import re,json,hashlib,subprocess
 import numpy as np,pandas as pd
 from PIL import Image,ImageOps,ImageDraw
-S=Path(__file__).resolve().parents[1];F=S.parent;ROOT=F.parents[1];O=F/'figures/publication_v3';results={}
+S=Path(__file__).resolve().parents[1];F=S.parent;ROOT=F.parents[1];O=F/'archive/figures/publication_v3';results={}
 def sha(p):
  h=hashlib.sha256()
  with p.open('rb') as f:
@@ -62,7 +62,7 @@ def main():
     # A4-width proof with a 6.8-inch content area at 120dpi, to inspect true scale.
     im=im.convert('RGB');im.thumbnail((816,1210));page=Image.new('RGB',(992,1403),'white');page.paste(im,((992-im.width)//2,60));ImageDraw.Draw(page).text((88,24),f'{r.figure} | A4 proof, 6.8 inch maximum width',fill='black');page.save(proof/f'{r.figure}_page.png')
  pd.DataFrame(render).to_csv(O/'render_dimensions.csv',index=False)
- paper=F/'reports/问题一_中文论文_V3_研究深化与图表重构版.md';s=paper.read_text();old=(F/'reports/问题一_中文论文_V2_英文配图版.md').read_text()
+ paper=F/'archive/reports/问题一_中文论文_V3_研究深化与图表重构版.md';s=paper.read_text();old=(F/'archive/reports/问题一_中文论文_V2_英文配图版.md').read_text()
  check('F05_points_inside_axis',json.loads((O/'F05_axis_bounds.json').read_text())['all_strategy_points_visible'])
  check('Latin_upper_support_consistent',r'\qquad u_{ij}=\max' in s and r'\Pi_{[\ell_{ij},u_{ij}]}' in s)
  check('T1_explicit_65535_header','65535 records' in (F/'tables_v3/T1.md').read_text())

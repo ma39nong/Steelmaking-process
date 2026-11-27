@@ -8,4 +8,4 @@
 
 LaTeX片段需使用XeLaTeX或LuaLaTeX，在全文模板中加载booktabs及fontspec，并安装Times New Roman；不是独立LaTeX文档。所有文件的中文标题、协议、单位和舍入说明在同名Markdown中。预览为7.2英寸单栏宽，8 pt字；数据表可作为双栏跨栏表。
 
-复现：`.venv/bin/python problem1/final/tables_v3/build_tables.py`。来源见[source_mapping.csv](source_mapping.csv)，原十表逐项审核见[table_review_v3.md](../reports/table_review_v3.md)。
+复现：`.venv/bin/python problem1/final/tables_v3/build_tables.py`。来源见[source_mapping.csv](source_mapping.csv)，原十表逐项审核见[table_review_v3.md](../archive/reports/table_review_v3.md)。

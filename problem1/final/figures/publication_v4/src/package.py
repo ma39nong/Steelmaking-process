@@ -32,7 +32,7 @@ def main():
  # All 15 interpolation points must match the existing independent experiment.
  e=pd.read_csv(F.parent/'v2/results/interpolation_independent_macro.csv',header=[0,1],index_col=[0,1]);points=pd.read_csv(O/'F04_plot_data.csv');verify('F04_15_points',len(points)==15)
  for r in points.itertuples():verify('F04_exact:'+r.model+r.scenario,abs(r.rmse-e.loc[(r.model,r.scenario),('rmse','mean')])<1e-8)
- cell=pd.read_csv(O/'A12_cell_values.csv');verify('cell_weights',np.isclose(cell.weight.sum(),1) and (cell.weight>=0).all());verify('cell_original_values',np.allclose(cell.value,pd.read_csv(F/'figures/publication_v3/bilinear_cell_values.csv').value))
+ cell=pd.read_csv(O/'A12_cell_values.csv');verify('cell_weights',np.isclose(cell.weight.sum(),1) and (cell.weight>=0).all());verify('cell_original_values',np.allclose(cell.value,pd.read_csv(F/'archive/figures/publication_v3/bilinear_cell_values.csv').value))
  # Style-only re-render: verify plotted data before/after typography, plus frozen numerical sources above.
  ty=json.loads((O/'typography_validation.json').read_text());verify('actual_Times_New_Roman','Times.TTF' in ty['font_file']);verify('all_26_restyled',len(ty['figures'])==26)
  for name,r in ty['figures'].items():

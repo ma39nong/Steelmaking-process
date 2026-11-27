@@ -21,4 +21,4 @@
 
 未污染0不能独立代表修复能力；零预测阳性的P0精确率未定义。各表在舍入前判定最优，平局共同高亮。T5修复1043、向下797、向上246、回退465；总率37.50 ppm而非逐炉百分比均值；14805顶码和1129帧候选不与点修复相加。
 
-源与计算入口：[source_mapping.csv](../tables_v3/source_mapping.csv)、[build_tables.py](../tables_v3/build_tables.py)。列名统一量纲、每指标统一精度。LaTeX为booktabs片段，三横线无竖线；预览按7.2英寸、8pt跨双栏宽设计，正式模板中应作跨栏表，不能直接压缩至半栏。预览已渲染检查，完整表保留附录，不靠栅格截图交付。
+源与计算入口：[source_mapping.csv](../../tables_v3/source_mapping.csv)、[build_tables.py](../../tables_v3/build_tables.py)。列名统一量纲、每指标统一精度。LaTeX为booktabs片段，三横线无竖线；预览按7.2英寸、8pt跨双栏宽设计，正式模板中应作跨栏表，不能直接压缩至半栏。预览已渲染检查，完整表保留附录，不靠栅格截图交付。

@@ -34,6 +34,8 @@
 - [文献索引](references/README.md)：原文获取状态、书目信息及中文笔记。
 - [补充研究](problem1/final/supplement_v1/README.md)：持续通道、物理候选、SVD与修复可靠性。
 
-历史代码、数据和报告保持原位。当前阅读与取数统一使用上方入口。
+历史代码与数据保持原位；旧论文稿和旧图集集中在[写作归档](problem1/final/archive/README.md)。当前阅读与取数统一使用上方入口。
 
 </details>
+
+仓库结构与文件保留规则见[整理说明](problem1/final/reports/仓库整理与文件保留说明.md)。

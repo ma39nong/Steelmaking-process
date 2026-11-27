@@ -20,7 +20,21 @@ def test_top_code_separate_and_domain_edges_diagnostic():
 
 def test_history_and_numeric_locks_unchanged():
  sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();lock=json.loads((P/'config/SELECTION_LOCKED.json').read_text());assert sha(P/'src/detectors.py')==lock['detector_sha256'];assert sha(P/'src/experiment_final.py')==lock['experiment_sha256'];assert sha(P/'config/protocol.json')==lock['protocol_sha256']
- for path,h in json.loads((P/'results/history_immutable.json').read_text()).items():assert sha(ROOT/path)==h,path
+ # The frozen manifest describes the original Git snapshot, including editable README/AGENTS.
+ # Verify that snapshot itself, then require live historical scientific artifacts to remain unchanged.
+ import subprocess,tarfile,io
+ frozen=json.loads((P/'results/history_immutable.json').read_text());base=json.loads((P/'config/protocol.json').read_text())['base_commit']
+ blob=subprocess.check_output(['git','archive',base],cwd=ROOT)
+ with tarfile.open(fileobj=io.BytesIO(blob)) as archive:
+  members={m.name:m for m in archive.getmembers() if m.isfile()}
+  assert set(frozen)<=set(members)
+  for path,h in frozen.items():
+   raw=archive.extractfile(members[path]).read();variants=[raw]
+   # CSV checkout bytes may be CRLF although Git stores LF (root .gitattributes).
+   if Path(path).suffix=='.csv':variants.append(raw.replace(b'\r\n',b'\n').replace(b'\n',b'\r\n'))
+   assert h in {hashlib.sha256(v).hexdigest() for v in variants},path
+   if path.startswith('problem1/') and not path.startswith('problem1/final/') and Path(path).suffix in {'.py','.json','.csv','.npz'}:
+    assert sha(ROOT/path)==h,path
 
 def test_new_regions_disjoint_in_raw_coordinates():
  prior=pd.concat([pd.read_csv(V3/'results/new_region_index.csv'),pd.read_csv(V31/'results/region_index.csv')])

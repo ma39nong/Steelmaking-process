@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from matplotlib import colors,cm
 from matplotlib.patches import Rectangle
 from matplotlib.text import Text
-S=Path(__file__).resolve().parents[1];F=S.parent;P=F.parent;O=F/'figures/publication_v3'
+S=Path(__file__).resolve().parents[1];F=S.parent;P=F.parent;O=F/'archive/figures/publication_v3'
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':8.2,'axes.labelsize':8.2,'axes.titlesize':8.5,'legend.fontsize':7.6,'xtick.labelsize':7.5,'ytick.labelsize':7.5,'axes.spines.top':False,'axes.spines.right':False,'axes.linewidth':.6,'lines.linewidth':1.1,'svg.fonttype':'none','pdf.fonttype':42,'mathtext.fontset':'dejavusans','savefig.dpi':600})
 RAW='#344c5c';REPAIR='#178b82';ANOM='#cc624b';FALL='#867399';GROUP={'6B':'#365f82','6C':'#c28a45'}
 HEATS=pd.read_csv(F/'results/final_summary.csv').heat_id.tolist();MANIFEST=[];SAMPLING=[]

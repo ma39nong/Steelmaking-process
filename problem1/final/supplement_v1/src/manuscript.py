@@ -3,7 +3,7 @@ from pathlib import Path
 import re,csv,json
 import pandas as pd
 from PIL import Image
-S=Path(__file__).resolve().parents[1];F=S.parent;R=F/'reports';O=F/'figures/publication_v3';T=F/'tables_v3'
+S=Path(__file__).resolve().parents[1];F=S.parent;R=F/'archive/reports';O=F/'archive/figures/publication_v3';T=F/'tables_v3'
 old=(R/'问题一_中文论文_V2_英文配图版.md').read_text()
 images=re.findall(r'!\[([^]]*)\]\(([^)]+)\)',old)
 names=['F01_data_structure','F02_model_mechanism','F03_local_evidence','F04_continuous_reconstruction','F05_joint_validation','F06_actual_repair_results','F07_ten_heat_surfaces']
@@ -73,7 +73,7 @@ ins2='''持续通道诊断使用同一实际波长参考，以残差符号持续
 
 对两个目标窗口进一步取宽带亮度最低和最高各15%的帧，并以10%、20%作敏感性分析；亮度由排除目标±2 nm窗口的实际波长梯形积分除以有效带宽得到。局部稳健回归 $d(t)=\\alpha+\\beta B(t)+\\varepsilon(t)$ 将固定残差与亮度相关分量分开，区间由16帧移动块、64次重采样估计。6B四炉斜率均为正，6C斜率则正负并存，说明同一突出通道可能包含不同的背景或响应成分。其时间轨迹、峰宽描述及回归区间见附图B4及补充通道表。
 
-物理结构的检查以NIST空气参考为索引：Na I双线588.9950/589.5924 nm、K I双线766.48991/769.89645 nm，并检查约760 nm的O₂ A带。[补充物理来源](../supplement_v1/reports/physical_sources.md)记录参考约定和原文状态。6C02108在304.0 s、766.413 nm的持续特征原始与正式值均为39674 counts，与K I第一参考位置相近；其邻帧结构支持保留。波长接近用于定位候选，实际仪器配置及空气/真空约定统一列入模型评价。
+物理结构的检查以NIST空气参考为索引：Na I双线588.9950/589.5924 nm、K I双线766.48991/769.89645 nm，并检查约760 nm的O₂ A带。[补充物理来源](../../supplement_v1/reports/physical_sources.md)记录参考约定和原文状态。6C02108在304.0 s、766.413 nm的持续特征原始与正式值均为39674 counts，与K I第一参考位置相近；其邻帧结构支持保留。波长接近用于定位候选，实际仪器配置及空气/真空约定统一列入模型评价。
 
 '''
 s=s.replace('### 5.2.2 双向局部预测及自适应尺度估计',ins2+'### 5.2.2 双向局部预测及自适应尺度估计')
@@ -123,14 +123,14 @@ s=re.sub(r'\n{4,}','\n\n\n',s);assert '@@' not in s
 (R/'问题一_中文论文_V3_研究深化与图表重构版.md').write_text(s)
 # Comprehensive appendix, editable tables and scientific sources.
 a='# 第一问图表与研究附录\n\n正文图5-1—5-7服务于数据—机制—证据—连续模型—验证—修复—结果的论证；历史正文和数据接口完整保留。本附录保存完整表与独立曲面，数值来源及统计口径随表给出。\n\n## 可编辑完整表\n\n'
-for k in range(1,8):a+=(T/f'A{k}.md').read_text()+f'\n\n[CSV](../tables_v3/data/A{k}.csv) · [LaTeX片段](../tables_v3/latex/A{k}.tex)\n\n'
-a+='## 补充科学证据\n\n[补充研究报告](../supplement_v1/reports/补充研究与模型依据.md) · [物理来源核实](../supplement_v1/reports/physical_sources.md) · [固定协议](../supplement_v1/protocol.json)\n\n全部20,470条通道诊断、9个通道候选、暗亮回归、峰宽/邻域支持、逐点修复分级、17个新增峰定位及新片段验证CSV保存在[results](../supplement_v1/results/)。派生数组由脚本复现，正式接口仍使用已发布冻结版本。\n\n## 十炉独立连续曲面\n\n'
+for k in range(1,8):a+=(T/f'A{k}.md').read_text()+f'\n\n[CSV](../../tables_v3/data/A{k}.csv) · [LaTeX片段](../../tables_v3/latex/A{k}.tex)\n\n'
+a+='## 补充科学证据\n\n[补充研究报告](../../supplement_v1/reports/补充研究与模型依据.md) · [物理来源核实](../../supplement_v1/reports/physical_sources.md) · [固定协议](../../supplement_v1/protocol.json)\n\n全部20,470条通道诊断、9个通道候选、暗亮回归、峰宽/邻域支持、逐点修复分级、17个新增峰定位及新片段验证CSV保存在[results](../../supplement_v1/results/)。派生数组由脚本复现，正式接口仍使用已发布冻结版本。\n\n## 十炉独立连续曲面\n\n'
 heats=pd.read_csv(F/'results/final_summary.csv').heat_id
 for k,h in enumerate(heats,1):a+=f'![附图A{k}](../figures/publication_v3/appendix/A{k:02d}_{h}_surface.png)\n\n附图A{k}　{h}连续光谱。实际定义域、统一色标和视角，展示采样保留全局最大值及案例位置。\n\n'
 for name,cap in [('B01_solver_stability','附图B1　四炉归一化目标函数及相对变化。'),('B02_wide_peak_tradeoff','附图B2　339.5 s宽峰内的修复权衡及回退机制。'),('B03_6B03205_svd_raw','附图B3(a)　6B03205原始抽样SVD。'),('B03_6B03205_svd_centered','附图B3(b)　6B03205同样本中心化SVD。'),('B03_6C02058_svd_raw','附图B3(c)　6C02058原始抽样SVD。'),('B03_6C02058_svd_centered','附图B3(d)　6C02058同样本中心化SVD。'),('B04_persistent_channel_evidence','附图B4　持续通道的时间轨迹与亮度关系。')]:a+=f'![{cap}](../figures/publication_v3/appendix/{name}.png)\n\n{cap}\n\n'
 (R/'问题一_V3_图表与研究附录.md').write_text(a.rstrip()+'\n')
 # Ten original tables audited separately, with precise destination and rationale.
 tr=[('数据规模','T1/表5-1','2047通道、0.5 s及两组波长范围移表注；逐炉保留帧数、时长及质量统计。'),('强度及相关','T1及A1','合并中位强度和相关性，P99及完整统计移A1；相邻对展平、隔4抽样口径保留。'),('SVD四阶能量','F01及A1','避免并排炉号和99.9%挤压，正文展示1−E(r)；原始与中心化严格分开。'),('正式参数','T2及A2','数学意义与依据进正文，时限/halo等实现参数进附录。'),('连续插值','F04及A3','三次/张量等价列合并；1.0 s PCHIP最优按真实未舍入值高亮。'),('共同污染','T3(a)/(b)及A7','纳入S=6和新增峰代价；P0精确率—*；300步与发布600/1200分开。'),('局部缺失','T4及A4','正文三个代表场景；全部11场景附录，平方低秩最优项如实加粗；全矩阵独立协议不拼表。'),('求解检查点','A6及B1','归一化曲线表达趋势，同一运行目标及δ完整保存；不把跨炉绝对目标用于优劣排名。'),('实际修复','T5','修复率改ppm；797下/246上及465回退子集明确，总率按27,816,683加权。'),('四例','F03及A5','图给时空证据，表留精确坐标、变化量、S及回退；持续峰为保留对照。')]
-review='# 原十表审查与论文级重构\n\n所有数字由源CSV/JSON导出，历史表不改动。正文五个主题对应六个物理表块（T3拆为a/b），三线LaTeX源和单栏预览均保留，Markdown提供编辑与检索。\n\n|原表|主题|新位置|处理依据|\n|---|---|---|---|\n'+''.join(f'|5-{i}|{x}|{d}|{why}|\n' for i,(x,d,why) in enumerate(tr,1))+'\n## 数值与公平性复核\n\n共同300步：S4污染2390.39、整体198.50、未污染68.94，新增48；S6污染3440.22、新增17。发布S4在同一确认案例上污染2359.80、整体195.80、未污染66.68，新增17，单独A7说明。两个17不合并解释。P/R/F1汇总计数，误差炉次宏平均，区域图逐案例F1均值，口径分别标注。\n\n未污染0不能独立代表修复能力；零预测阳性的P0精确率未定义。各表在舍入前判定最优，平局共同高亮。T5修复1043、向下797、向上246、回退465；总率37.50 ppm而非逐炉百分比均值；14805顶码和1129帧候选不与点修复相加。\n\n源与计算入口：[source_mapping.csv](../tables_v3/source_mapping.csv)、[build_tables.py](../tables_v3/build_tables.py)。列名统一量纲、每指标统一精度。LaTeX为booktabs片段，三横线无竖线；预览按7.2英寸、8pt跨双栏宽设计，正式模板中应作跨栏表，不能直接压缩至半栏。预览已渲染检查，完整表保留附录，不靠栅格截图交付。\n'
+review='# 原十表审查与论文级重构\n\n所有数字由源CSV/JSON导出，历史表不改动。正文五个主题对应六个物理表块（T3拆为a/b），三线LaTeX源和单栏预览均保留，Markdown提供编辑与检索。\n\n|原表|主题|新位置|处理依据|\n|---|---|---|---|\n'+''.join(f'|5-{i}|{x}|{d}|{why}|\n' for i,(x,d,why) in enumerate(tr,1))+'\n## 数值与公平性复核\n\n共同300步：S4污染2390.39、整体198.50、未污染68.94，新增48；S6污染3440.22、新增17。发布S4在同一确认案例上污染2359.80、整体195.80、未污染66.68，新增17，单独A7说明。两个17不合并解释。P/R/F1汇总计数，误差炉次宏平均，区域图逐案例F1均值，口径分别标注。\n\n未污染0不能独立代表修复能力；零预测阳性的P0精确率未定义。各表在舍入前判定最优，平局共同高亮。T5修复1043、向下797、向上246、回退465；总率37.50 ppm而非逐炉百分比均值；14805顶码和1129帧候选不与点修复相加。\n\n源与计算入口：[source_mapping.csv](../../tables_v3/source_mapping.csv)、[build_tables.py](../../tables_v3/build_tables.py)。列名统一量纲、每指标统一精度。LaTeX为booktabs片段，三横线无竖线；预览按7.2英寸、8pt跨双栏宽设计，正式模板中应作跨栏表，不能直接压缩至半栏。预览已渲染检查，完整表保留附录，不靠栅格截图交付。\n'
 (R/'table_review_v3.md').write_text(review)
 print('MANUSCRIPT_AUDITS_COMPLETE',len(images))

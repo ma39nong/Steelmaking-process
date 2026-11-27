@@ -5,8 +5,8 @@ import re
 import pandas as pd
 
 P = Path(__file__).resolve().parents[1]
-OUT = P / 'figures/english'
-REPORTS = P / 'reports'
+OUT = P / 'archive/figures/english'
+REPORTS = P / 'archive/reports'
 HEATS = pd.read_csv(P / 'results/final_summary.csv').heat_id.tolist()
 
 
@@ -35,7 +35,7 @@ def main():
     title = '# Problem 1: English Figure Report\n\n'
     title += 'This figure report accompanies Section 5 of the manuscript. Figure-internal titles, axes, legends, annotations, and color-bar labels are in English. The Chinese manuscript and its original figures are preserved. All figures are rendered from frozen arrays, saved statistics, or saved solver histories; no detector, model fit, parameter search, or experiment is rerun.\n\n'
     title += '## Files and editing\n\n'
-    title += '- `problem1/final/figures/english/main/`: main comparison, workflow, validation, and overview figures.\n- `problem1/final/figures/english/appendix/`: per-heat local repairs, full spectra and signed changes, surfaces, and rapid-transition diagnostics.\n- PNG: 300 dpi preview and raster publication output. SVG: editable text and vector elements. PDF: publication export with embedded TrueType fonts. Heat maps and surfaces may contain rasterized graphical layers; their text remains editable in SVG.\n- [Chinese chapter with English figures](问题一_中文论文_V2_英文配图版.md): the original Chinese prose, equations, and tables are retained; only figure links and captions are replaced.\n- [Asset manifest](../figures/english/figure_manifest.csv) and [language check](../figures/english/language_check.json): 49 unique figures, three formats each, no CJK characters in figure text or SVG content.\n\n'
+    title += '- `problem1/final/archive/figures/english/main/`: main comparison, workflow, validation, and overview figures.\n- `problem1/final/archive/figures/english/appendix/`: per-heat local repairs, full spectra and signed changes, surfaces, and rapid-transition diagnostics.\n- PNG: 300 dpi preview and raster publication output. SVG: editable text and vector elements. PDF: publication export with embedded TrueType fonts. Heat maps and surfaces may contain rasterized graphical layers; their text remains editable in SVG.\n- [Chinese chapter with English figures](问题一_中文论文_V2_英文配图版.md): the original Chinese prose, equations, and tables are retained; only figure links and captions are replaced.\n- [Asset manifest](../figures/english/figure_manifest.csv) and [language check](../figures/english/language_check.json): 49 unique figures, three formats each, no CJK characters in figure text or SVG content.\n\n'
     title += '## Main-text figure map\n\n|Figure|Subject|PNG|SVG|PDF|\n|---|---|---|---|---|\n'
     for number, stem, caption, analysis, source in rows:
         title += f'|5-{number}|{caption}|[PNG](../figures/english/{stem}.png)|[SVG](../figures/english/{stem}.svg)|[PDF](../figures/english/{stem}.pdf)|\n'

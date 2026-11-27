@@ -16,7 +16,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 plt.rcParams.update({'font.family':'DejaVu Serif','font.size':10,'axes.unicode_minus':True,'svg.fonttype':'none','pdf.fonttype':42,'mathtext.fontset':'dejavuserif','savefig.dpi':300})
-OUT=P/'figures/english'
+OUT=P/'archive/figures/english'
 A=OUT/'appendix';M=OUT/'main'
 A.mkdir(parents=True,exist_ok=True);M.mkdir(parents=True,exist_ok=True)
 def save(fig,name,main=False):

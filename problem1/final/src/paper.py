@@ -267,9 +267,9 @@ $$J=\frac{E_a^2}{\max(E_b^2,1)}+0.5\frac{E_u^2}{\max(E_b^2,1)}+0.1(1-F_1)+0.25H+
 
 ## 数据与实验附录入口
 
-[实验协议](../config/protocol.json)、[模型冻结](../config/FINAL_MODEL_FROZEN.json)、[逐点实际修复](../results/actual_repairs.csv)、[逐炉逐区域确认](../results/confirmation_per_heat_band.csv)、[完整结果与接口](../README.md)、[文献索引](../references/README.md)。图表均由实际数据生成；三维图与全谱热图作显示降采样，完整节点、密集网格及差值数组在data/中保存。
+[实验协议](../../config/protocol.json)、[模型冻结](../../config/FINAL_MODEL_FROZEN.json)、[逐点实际修复](../../results/actual_repairs.csv)、[逐炉逐区域确认](../../results/confirmation_per_heat_band.csv)、[完整结果与接口](../README.md)、[文献索引](../../references/README.md)。图表均由实际数据生成；三维图与全谱热图作显示降采样，完整节点、密集网格及差值数组在data/中保存。
 '''
- (P/'reports/问题一_中文论文初稿.md').write_text(text)
+ (P/'archive/reports/问题一_中文论文初稿.md').write_text(text)
  # Research audit remains separate from the paper's causal model narrative.
  audit=r'''# 历史实验复核与最终决策依据
 

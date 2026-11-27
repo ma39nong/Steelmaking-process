@@ -3,7 +3,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 plt.rcParams.update({'font.family':'Noto Serif CJK SC','font.size':10,'axes.unicode_minus':False})
-A=P/'figures/appendix';M=P/'figures/main'
+A=P/'archive/figures/appendix';M=P/'archive/figures/main'
 def save(fig,name,main=False):
  d=M if main else A;fig.savefig(d/(name+'.png'),dpi=170,bbox_inches='tight');p=d/(name+'.svg');fig.savefig(p,bbox_inches='tight');p.write_text('\n'.join(x.rstrip() for x in p.read_text().splitlines())+'\n');plt.close(fig)
 

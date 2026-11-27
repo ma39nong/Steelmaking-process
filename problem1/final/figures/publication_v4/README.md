@@ -29,7 +29,7 @@ F04仅保留时间和波长降采样两面板，共用图例，所有十五个RM
 - [F02全页检查](review/F02_model_mechanism_page.png)
 - [F03全页检查](review/F03_local_evidence_page.png)
 - [F04全页检查](review/F04_continuous_reconstruction_page.png)
-- [简化与归档说明](../../reports/三张核心图_重设计说明.md)
+- [简化与归档说明](../../archive/reports/三张核心图_重设计说明.md)
 - [图注](figure_captions.md)、[来源哈希](source_manifest.csv)、[输出哈希](asset_manifest.csv)、[数值及文件核验](validation.json)
 
 ```bash

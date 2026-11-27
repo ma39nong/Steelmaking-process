@@ -13,7 +13,7 @@
 |全文整合素材|[假设、符号与参考文献](reports/问题一_V2_全文整合材料.md)|
 |处理后数据|[Release下载](https://github.com/ma39nong/Steelmaking-process/releases/tag/problem1-final-data-v1) · [数据交接说明](reports/数据交接与后续问题使用说明.md)|
 
-`figures/main/`、`figures/english/`、`figures/publication_v3/`及旧版正文留作历史来源。当前写作、翻译和排版统一取上表文件。
+旧版正文与四套旧图集已集中到[archive/](archive/README.md)，正式`figures/`只保留当前图集。当前写作、翻译和排版统一取上表文件。
 
 ## 模型与结果
 
