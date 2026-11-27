@@ -38,3 +38,7 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python problem1/final/figures
 ```
 
 simplify.py是F02/F03/F04及A11/A12的唯一当前绘图实现；package.py只核验当前正文、数据与图片，不从旧稿重新生成正文。其余四张主图保持bd7cfa8原字节；redesign.py保留它们的复现，并调用当前简化实现，避免恢复旧蛇形图。历史publication_v3只作研究来源，模型、1043点修复结果、实验指标及Release不变。
+
+## 论文图题与字体
+
+参照仓库内2022—2025年B题优秀论文，整图题在图片下方以正文排版，图内保留英文标签。七条英文图题见[english_captions.md](english_captions.md)，实际样本核对与字体规范见[说明](../../reports/优秀论文图表样式核对与采用规范.md)。带外置图题的A4检查页在`review/*_caption_page.png`；正式正文仍使用`main/`原图。
