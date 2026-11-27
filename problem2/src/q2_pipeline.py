@@ -43,8 +43,27 @@ def hampel_mask(values: np.ndarray, window: int = 9, threshold: float = 6.0) -> 
             continue
         med = np.median(local)
         scale = 1.4826 * np.median(np.abs(local - med))
-        if scale > 0 and abs(x[i] - med) > threshold * scale:
-            mask[i] = True
+        if scale > 0:
+            if abs(x[i] - med) > threshold * scale:
+                mask[i] = True
+            continue
+        # A zero MAD is common on flat instrument plateaus. Use the two
+        # one-sided neighborhoods to distinguish an isolated spike from a
+        # genuine step, while keeping the exact flat-plateau test sensitive.
+        left = x[lo:i]
+        right = x[i + 1 : hi]
+        left = left[np.isfinite(left)]
+        right = right[np.isfinite(right)]
+        if len(left) < 2 or len(right) < 2:
+            continue
+        left_med, right_med = np.median(left), np.median(right)
+        neighbors = np.concatenate([left, right])
+        neighbor_scale = 1.4826 * np.median(np.abs(neighbors - np.median(neighbors)))
+        step_size = abs(left_med - right_med)
+        if step_size <= max(1e-12, 3 * neighbor_scale):
+            fallback_scale = max(neighbor_scale, 1e-12)
+            if abs(x[i] - np.median(neighbors)) > threshold * fallback_scale:
+                mask[i] = True
     return mask
 
 

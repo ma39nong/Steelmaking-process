@@ -16,6 +16,15 @@ def rmse(a: np.ndarray, b: np.ndarray) -> float:
 
 def evaluate(path: Path, fraction: float = 0.05, seed: int = 20261127) -> dict:
     with np.load(path, allow_pickle=False) as data:
+        numeric_fields = {}
+        shape_fields = {}
+        for key in data.files:
+            if key == "metadata":
+                continue
+            array = data[key]
+            shape_fields[key] = list(array.shape)
+            if np.issubdtype(array.dtype, np.number):
+                numeric_fields[key] = bool(np.isfinite(array).all())
         time = data["time"]
         oxygen = data["oxygen_cumulative_clean"]
         co = data["co_clean"]
@@ -38,7 +47,9 @@ def evaluate(path: Path, fraction: float = 0.05, seed: int = 20261127) -> dict:
         "co2_masked_rmse": rmse(reconstructed["co2"], co2[mask]),
         "oxygen_flow_min": float(np.min(flow)),
         "oxygen_reintegration_rmse": rmse(integrated, oxygen),
-        "all_finite": bool(np.isfinite(flow).all() and np.isfinite(integrated).all()),
+        "all_numeric_fields_finite": bool(all(numeric_fields.values())),
+        "numeric_field_finite": numeric_fields,
+        "field_shapes": shape_fields,
     }
 
 

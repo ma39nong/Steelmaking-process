@@ -1,0 +1,46 @@
+\section{V2 model for Problem 2}
+\label{sec:problem2-v2}
+
+\subsection{Data and process variables}
+For heat $h$, the validated time coordinate is $t_{h,i}=0.5(s_{h,i}-s_{h,1})$ s. Cumulative oxygen consumption $O_h$ has unit m$^3$, while the CO$_2$ and CO columns are instantaneous volumetric flows $C_{2,h}$ and $C_{1,h}$ in m$^3$/s. The ten raw workbooks were checked separately. Each has one sheet, 2051 columns, a continuous sequence, and a 0.5 s time step.
+
+\subsection{Continuous reconstruction and flow}
+The V1 Hampel--PCHIP--Savitzky--Golay chain is retained as a baseline. Negative and nonfinite samples are masked, visible samples are reconstructed by PCHIP, and a third-order Savitzky--Golay derivative over 31 samples gives the nonnegative flow estimate
+\[
+\widehat q_h(t)=\max\{0,\operatorname{SGDeriv}_{31,3}[\widehat O_h](t)\}.
+\]
+Total gas emissions are integrated in the physical time unit,
+\[
+\widehat E_{g,h}(t)=\int_0^t\widehat C_{g,h}(u)\,du,\qquad g\in\{\mathrm{CO},\mathrm{CO_2}\}.
+\]
+
+\subsection{Reliability-weighted local delay}
+Let $x_h$ be the flow and $y_{g,h}$ a gas-flow signal after robust detrending. For a window center $c$, half-width $r$, and nonnegative lag $\ell$, the correlation is computed only on the common support
+\[
+ c-r\leq i\leq c+r,\qquad c-r+\ell\leq i+\ell\leq c+r+L,
+\]
+with $c\geq r$ and $c+r+L<n_h$. The estimated lag is retained only when the source and target changes have adequate standard deviation, the maximum correlation exceeds a null-calibrated threshold, the best peak is separated from a competing peak, and the peak is not at a search boundary. Each window stores its support indices, correlation, peak separation, peak width, boundary flag, and confidence.
+
+The valid-window set is
+\[
+\mathcal V_g=\{c:\text{dynamic excitation, significance, peak separation and support tests pass}\}.
+\]
+Windows outside $\mathcal V_g$ remain NaN. Thus interpolated or boundary values cannot enter the delay-model fit as observations.
+
+\subsection{Flow--delay models}
+The fixed-delay baseline and the constrained inverse-square-root model are fitted to the same reliable samples $(\bar q_i,\widehat\tau_i,w_i)$. The latter solves
+\[
+\min_{a,b}\sum_{i\in\mathcal V_g}w_i\rho_\delta\left(\widehat\tau_i-a-b\bar q_i^{-1/2}\right),
+\qquad a\geq0,\;b\geq0,
+\]
+and predictions are restricted to the 0--60 s search range. A weighted monotone fit is retained as a nonparametric comparison. The model is selected only when it improves the weighted RMSE over the fixed-delay baseline on the common reliable sample. If fewer than five reliable windows exist, the result is marked insufficient for dynamic fitting.
+
+\subsection{Observed and model time mappings}
+The source-to-measurement mapping is
+\[
+\phi_g(t)=t+\tau_g(t).
+\]
+V2 stores separate observed and model mappings. Only observed reliable centers are used for an alignment mask, and the mapping is accepted only when it remains within the heat definition domain and is strictly increasing at valid centers. Model delay arrays are predictions and are not independent gas labels.
+
+\subsection{Results and limitations}
+The null proxy calibration gives a 99\% maximum-correlation quantile near 0.36 for the selected window and search range. With a 0.35 threshold and a 0.05 competing-peak separation requirement, reliable-window coverage is 0--4.7\% across the ten heats. The data therefore do not support a shared dynamic flow--delay law at this reliability level. Cumulative emissions and cumulative oxygen have very high rank correlation because both are time accumulations. Instantaneous CO and CO$_2$ relationships are reported separately, with stage-stratified statistics and scatter plots. The V2 result distinguishes statistical response delay from independently measured transport delay.

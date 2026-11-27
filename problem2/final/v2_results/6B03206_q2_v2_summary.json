@@ -1,0 +1,35 @@
+{
+  "heat_id": "6B03206",
+  "records": 1311,
+  "oxygen_cumulative": 0,
+  "co2": 4,
+  "co": 3,
+  "models": {
+    "co": {
+      "n": 2,
+      "selected": "insufficient_data"
+    },
+    "co2": {
+      "n": 0,
+      "selected": "insufficient_data"
+    }
+  },
+  "coverage": {
+    "co": {
+      "window_count": 215,
+      "reliable_window_count": 2,
+      "reliable_fraction": 0.009302325581395349,
+      "observed_point_count": 2,
+      "alignment_valid_count": 2,
+      "boundary_unavailable_count": 1096
+    },
+    "co2": {
+      "window_count": 215,
+      "reliable_window_count": 0,
+      "reliable_fraction": 0.0,
+      "observed_point_count": 0,
+      "alignment_valid_count": 0,
+      "boundary_unavailable_count": 1096
+    }
+  }
+}
