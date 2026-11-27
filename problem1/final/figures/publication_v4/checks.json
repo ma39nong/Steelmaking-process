@@ -1,0 +1,24 @@
+{
+  "mechanism_case": {
+    "heat": "6B03205",
+    "row": 29,
+    "column": 466,
+    "time_s": 14.5,
+    "wave_nm": 512.659,
+    "raw": 1767.0,
+    "repaired": 523.8722339661751,
+    "score": 22.154518127441406,
+    "consistency": 0.9253614819361782,
+    "diagram_values_are_actual": true
+  },
+  "atlas": {
+    "total": 1043,
+    "fallback": 465,
+    "nonfallback": 578,
+    "each_actual_repair_plotted_once": true,
+    "phase_is_display_coordinate_only": true
+  },
+  "all_surface_maxima_retained": true,
+  "no_surface_axes_clipping": true,
+  "all_projected_meshes_within_figure": true
+}
