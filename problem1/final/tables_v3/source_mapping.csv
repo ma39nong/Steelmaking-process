@@ -1,0 +1,14 @@
+table,caption,sources,note,rows,columns
+T1,表5-1 数据结构与质量特征,problem1/results/eda/statistics.csv; data_manifest.csv; problem1/final/results/final_summary.csv,每帧2047通道，间隔0.5 s。6B组波长340.535–1027.963 nm；6C组339.390–1023.303 nm，均为非均匀网格。中位数为原始矩阵的全体记录中位数。相邻相关性使用实际相邻对展平计算，时间方向每4通道抽样、波长方向每4帧抽样；不是逐帧相关系数的平均。,10,7
+T2,表5-2 核心模型参数与选取依据,problem1/final/config/protocol.json; problem1/v3/config/protocol.json,Huber尺度针对Y/65535的归一化残差。检测25/50 counts分别是双向和低秩残差尺度下限。连通跨度是包围盒上限；停止阈值衡量迭代变化。工程预算、偏移窗、ADMM及halo等完整配置转附录A2。,8,4
+T3a,表5-3(a) 共同污染确认的检测性能与新增峰,problem1/final/results/unified_comparison.csv,* 无预测阳性，精确率未定义；源CSV按约定置0。P/R/F1由汇总TP/FP/FN计算；新增峰是全部确认案例计数。加粗为同指标最优，平局共同高亮。共同补全上限300步。,5,5
+T3b,表5-3(b) 同一协议的异常恢复误差,problem1/final/results/unified_comparison.csv; problem1/final/results/exact_final_pipeline_confirmation.csv,单位counts；先炉内平均、再十炉等权平均。P0和保守策略未污染误差为0，须结合污染恢复解释。发布配置使用同一确认案例但600/1200步及回退，另报告2359.80、195.80、66.68 counts及17个新增峰，不混入本300步表。,5,4
+T4,表5-4 代表性局部缺失补全检验,problem1/v2/results/all_models_test_macro.csv,历史独立局部96×192片段协议，RMSE/counts，均值±炉间SD；随机/时间/波长为不同遮蔽场景。加粗按未舍入均值判最优。Huber在部分场景接近平方损失，正式选择同时考虑污染恢复。全矩阵配对试验另列，不与本表混合。,3,4
+T5,表5-5 十炉实际修复与数值回退子集,problem1/final/results/final_summary.csv,"1 ppm=每百万原始记录1点；总比例由1043/27816683加权计算，为37.4955 ppm=0.00374955%。465回退点包含在1043修复点内，不额外相加。14,805个疑似顶码独立标记，1129个帧候选保留，整帧删除0。方向是估计值相对原值的变化，不等同于检测类型。",11,6
+A1,附表A1 全部原始统计与秩4剩余能量,problem1/v3/results/singular_energy.csv; problem1/results/eda/statistics.csv,原始矩阵每8帧抽样；未中心化。中心化口径另见supplement_v1/results/svd_conventions.csv。原始完整统计保留于data/A1_full_data_statistics.csv。,10,4
+A2,附表A2 求解与检测完整实现参数,problem1/v3/config/protocol.json; problem1/final/config/protocol.json; problem1/v3/src/model3.py,所有数值来自既有配置与实现；JSON源配置完整保留。随机种子、数据协议及图像参数见各源协议，不能因省略正文工程列而删除配置。,12,2
+A3,附表A3 独立连续降采样检验,problem1/v2/results/interpolation_independent_macro.csv,RMSE/counts。三次样条与零平滑张量B样条在该边界设置下数值等价；合为一列。1.0 s的PCHIP最优，其余按源CSV呈现。,5,4
+A4,附表A4 全部11种局部缺失场景,problem1/v2/results/all_models_test_macro.csv,历史独立局部96×192片段协议，RMSE/counts，均值±炉间SD；随机/时间/波长为不同遮蔽场景。加粗按未舍入均值判最优。Huber在部分场景接近平方损失，正式选择同时考虑污染恢复。全矩阵配对试验另列，不与本表混合。,11,4
+A5,附表A5 四个高证据尖峰的坐标与修复证据,problem1/final/results/four_reviewed_actual_repairs.csv,强度及差值单位counts；修复值是模型估计。实际双向参考和持续谱线保留反例见supplement_v1/results/repair_reliability_points.csv。,4,7
+A6,附表A6 原网格保存迭代与输出稳定性,problem1/final/results/*_solver.json; problem1/final/results/final_summary.csv,同一正式原网格配置的检查点；目标相对变化为(Φ1200−Φ600)/Φ600。不同炉目标值不用于横向比较；满足变化率标准与局部输出稳定性分开记录。,4,7
+A7,附表A7 同一确认案例的发布配置复核,problem1/final/results/exact_final_pipeline_confirmation.csv; problem1/final/results/unified_comparison.csv,同一批固定确认案例，不是第二次独立验证；RMSE为炉次宏平均。两个配置新增峰分别48和17；后者与300步阈值6的17属于不同统计结果。,2,6

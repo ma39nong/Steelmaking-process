@@ -2,6 +2,14 @@
 
 当前研究分支为 **`problem1`**。第一问已完成数据分析、实际异常点修复、连续光谱建模和中文正式章节，最终采用 **自适应多证据异常识别＋秩4 Huber鲁棒低秩补全＋观测保真及局部非负支撑＋双线性连续重构**。第二、三问尚未在本分支实现。
 
+## 本轮深化稿与科研图表
+
+最新正文：[七节研究深化与图表重构版](problem1/final/reports/问题一_中文论文_V3_研究深化与图表重构版.md)。沿用已发布1043点修复数据，新增持续通道与物理候选分析、原始/中心化SVD、回退可靠性及有限补充验证；正式算法与Release未改变。
+
+- [7幅正文主图、17幅附录图及逐图映射](problem1/final/figures/publication_v3/README.md)：英文标注，600 dpi PNG、SVG、PDF；中文图注随正文。
+- [正文五组表与完整附表](problem1/final/tables_v3/README.md)：可编辑Markdown、CSV、LaTeX三线表。
+- [图表与研究附录](problem1/final/reports/问题一_V3_图表与研究附录.md)、[补充研究报告](problem1/final/supplement_v1/reports/补充研究与模型依据.md)。
+
 ## 从这里开始
 
 |你要找什么|正式入口|

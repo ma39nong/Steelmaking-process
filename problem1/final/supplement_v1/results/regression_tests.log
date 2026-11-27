@@ -1,0 +1,46 @@
+...F......F..........F....                                               [100%]
+=================================== FAILURES ===================================
+___________________ test_history_and_numeric_locks_unchanged ___________________
+
+    def test_history_and_numeric_locks_unchanged():
+     sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();lock=json.loads((P/'config/SELECTION_LOCKED.json').read_text());assert sha(P/'src/detectors.py')==lock['detector_sha256'];assert sha(P/'src/experiment_final.py')==lock['experiment_sha256'];assert sha(P/'config/protocol.json')==lock['protocol_sha256']
+>    for path,h in json.loads((P/'results/history_immutable.json').read_text()).items():assert sha(ROOT/path)==h,path
+                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    AssertionError: README.md
+E    assert '669ef5592c3d...5e1350394ff61' == '1b76bd0eb3a2...188d83e10828c'
+E
+E      - 1b76bd0eb3a2d49b30d9f23b8acb9fa059f50b68f13fb8c744d188d83e10828c
+E      + 669ef5592c3d3202790e3130523ff53219d3df9f95580900f7b5e1350394ff61
+
+problem1/final/tests/test_final_repair.py:23: AssertionError
+__________________ test_historical_and_numerical_immutability __________________
+
+    def test_historical_and_numerical_immutability():
+>    for name,h in json.loads((P/'results/history_immutable.json').read_text()).items():assert hashlib.sha256((P.parents[1]/name).read_bytes()).hexdigest()==h,name
+                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    AssertionError: README.md
+E    assert '669ef5592c3d...5e1350394ff61' == '1b76bd0eb3a2...188d83e10828c'
+E
+E      - 1b76bd0eb3a2d49b30d9f23b8acb9fa059f50b68f13fb8c744d188d83e10828c
+E      + 669ef5592c3d3202790e3130523ff53219d3df9f95580900f7b5e1350394ff61
+
+problem1/v3/tests/test_final.py:22: AssertionError
+________________________ test_frozen_rules_and_history _________________________
+
+    def test_frozen_rules_and_history():
+     protocol=json.loads((P/'config/PROTOCOL_LOCKED.json').read_text());lock=json.loads((P/'config/SELECTION_LOCKED.json').read_text());sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+     assert sha(P/'config/protocol.json')==protocol['protocol_sha256']==lock['protocol_sha256'];assert sha(P/'src/points.py')==protocol['detector_sha256']==lock['points_source_sha256'];assert sha(P/'src/experiments.py')==lock['experiments_source_sha256'];assert sha(P/'src/select.py')==lock['selection_source_sha256']
+>    for path,h in json.loads((P/'results/history_immutable.json').read_text()).items():assert sha(ROOT/path)==h,path
+                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    AssertionError: README.md
+E    assert '669ef5592c3d...5e1350394ff61' == '1b76bd0eb3a2...188d83e10828c'
+E
+E      - 1b76bd0eb3a2d49b30d9f23b8acb9fa059f50b68f13fb8c744d188d83e10828c
+E      + 669ef5592c3d3202790e3130523ff53219d3df9f95580900f7b5e1350394ff61
+
+problem1/v3_1/tests/test_acceptance.py:27: AssertionError
+=========================== short test summary info ============================
+FAILED problem1/final/tests/test_final_repair.py::test_history_and_numeric_locks_unchanged
+FAILED problem1/v3/tests/test_final.py::test_historical_and_numerical_immutability
+FAILED problem1/v3_1/tests/test_acceptance.py::test_frozen_rules_and_history
+3 failed, 23 passed in 19.95s

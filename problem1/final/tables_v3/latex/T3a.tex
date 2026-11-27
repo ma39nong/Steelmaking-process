@@ -1,0 +1,12 @@
+% booktabs fragment; captions/notes remain editable in paired Markdown.
+\begin{tabular}{lrrrr}
+\toprule
+Strategy & Precision $\uparrow$ & Recall $\uparrow$ & F1 $\uparrow$ & New peaks $\downarrow$ \\
+\midrule
+Retain all & ---* & 0.000 & 0.000 & \textbf{0} \\
+Bidirectional MAD & 0.287 & 0.381 & 0.327 & 72 \\
+Conservative & \textbf{1.000} & 0.181 & 0.306 & \textbf{0} \\
+Adaptive S=4 & 0.893 & \textbf{0.705} & \textbf{0.788} & 48 \\
+Adaptive S=6 & 0.961 & 0.517 & 0.672 & 17 \\
+\bottomrule
+\end{tabular}

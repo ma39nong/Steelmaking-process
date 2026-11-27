@@ -1,0 +1,130 @@
+{
+  "base_commit": "4d28373fadc54353520deead39efd9876215bc9f",
+  "declared_date": "2026-11-27",
+  "inputs": [
+    {
+      "path": "/home/user/Downloads/APMCM_B_第一问_科研图表参考册.docx",
+      "sha256": "53a7a82424ed0ba3f74555b4d770285c161f470ff8f942ff529a93e15f670d5a"
+    },
+    {
+      "path": "/home/user/Downloads/02_第一问_19图重构指令.md",
+      "sha256": "25c3983fc5436849cc1264fc7d2ad0100d68dd80a0b9b1e1fe4b13f74abfc0f1"
+    },
+    {
+      "path": "/home/user/Downloads/01_第一问_补充研究指令.md",
+      "sha256": "3454f89a8a53580e08439abe2052f2ad76a1eb9933a8ea83671407f831bb8892"
+    },
+    {
+      "path": "/home/user/Downloads/03_第一问_表格重构指令.md",
+      "sha256": "ab53b0abf2cfb6771bf183a584f7fa6bf8cc540bf787112192dcb21b8b869975"
+    }
+  ],
+  "frozen_actual_repairs": 1043,
+  "frozen_release_unchanged": true,
+  "group_comparison": {
+    "common_range_nm": [
+      340.535,
+      1023.303
+    ],
+    "grid_step_nm": 0.5,
+    "summary": "per-heat temporal median and q10/q90, interpolate each heat to common grid, equal-heat arithmetic means within each group; envelope is mean of heat quantiles, not pooled quantiles"
+  },
+  "persistent_scan": {
+    "reference": "leave-current adjacent wavelength linear interpolation using actual distances",
+    "scale": "max(25,1.4826 median absolute neighbor residual at wavelength offsets +-2,+-3,+-4)",
+    "candidate_rule": "sign persistence>=0.95, abs(median residual)>=250 counts, median abs z>=4, exclude outer4 channels",
+    "followup": "top8 per heat by median abs z union nearest383.293nm and835.887nm and Na/K target channels",
+    "brightness": "trapezoid broadband mean excluding target +-2nm",
+    "dark_bright_fractions": [
+      0.1,
+      0.15,
+      0.2
+    ],
+    "regression": "Huber IRLS intercept+slope, brightness centered/scaled by IQR; moving-block bootstrap 64 draws, block16frames, seed27011; conditional within-heat intervals, plus heat-group ranges"
+  },
+  "svd": {
+    "heats": [
+      "6B03205",
+      "6C02058"
+    ],
+    "time_stride": 8,
+    "conventions": [
+      "uncentered original sample",
+      "column-centered original sample"
+    ],
+    "sign": "largest-magnitude spectral loading positive, flip coefficient consistently",
+    "ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      16,
+      32
+    ]
+  },
+  "repair_reliability": {
+    "groups": "actual statistical_repair intersect numerical_fallback (465 expected), complement578",
+    "near_top": "raw>=.9*65535 or any top-code in11x21 neighborhood",
+    "rapid": "upper15% absolute adjacent integral change per heat",
+    "specific_case": [
+      "6C02058",
+      339.5,
+      674.478
+    ],
+    "case_scope": "four reviewed spikes and retained6C02108 at304s766.413nm",
+    "introduced_peak_check": "diagnostic replay only previously saved cases with introduced_count>0; frozen pipeline, not new independent confirmation"
+  },
+  "finite_channel_validation": {
+    "panel_shape": [
+      32,
+      96
+    ],
+    "time_gaps": {
+      "development": 3,
+      "confirmation": 4
+    },
+    "wave_starts": [
+      800,
+      1600
+    ],
+    "types": [
+      "offset",
+      "gain",
+      "freeze"
+    ],
+    "strengths": [
+      0.3,
+      0.7
+    ],
+    "seed": 27017,
+    "normal_column": "center32..63 with lowest abs median standardized residual; candidate/reference-nearby targets excluded",
+    "models": [
+      "visible-only bidirectional linear",
+      "existing rank4 Huber,eta.003,100steps with original fidelity/nonnegative support"
+    ],
+    "reference": "same raw panel before contamination; no synthetic hardware-accuracy interpretation",
+    "oracle_mask": "known injected channel for recovery; structural detection separately reported"
+  },
+  "finite_guard_validation": {
+    "optional": true,
+    "rule": "only existing fallback cells with raw and wavelength reference >=.9U and reference disagreement>.5*max(abs(wavelength reference),25); use wavelength reference clipped to original support",
+    "selection": "no parameter search; two fixed new gap panels at col800 per heat,spike/drop strength.5; development and confirmation separate; frozen baseline retained"
+  },
+  "optional_separable_spline": "not scheduled; prioritize mandatory A/B and publication reconstruction",
+  "publication": {
+    "main_figures": 7,
+    "png_dpi": 600,
+    "formats": [
+      "png",
+      "svg",
+      "pdf"
+    ],
+    "labels": "English",
+    "captions": "Chinese",
+    "main_tables": 5
+  }
+}

@@ -1,0 +1,7 @@
+split,kind,tp,fp,fn,precision,recall,f1
+confirmation,freeze,0,0,40,,0.0,0.0
+confirmation,gain,40,80,0,0.3333333333333333,1.0,0.5
+confirmation,offset,40,80,0,0.3333333333333333,1.0,0.5
+development,freeze,0,0,40,,0.0,0.0
+development,gain,40,77,0,0.3418803418803419,1.0,0.5095541401273885
+development,offset,40,80,0,0.3333333333333333,1.0,0.5
