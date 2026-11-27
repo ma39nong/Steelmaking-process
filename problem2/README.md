@@ -1,6 +1,6 @@
 # Problem 2
 
-当前定稿入口为 `python -m problem2.src.final_delivery`，配置见 [final_analysis.json](configs/final_analysis.json)。[中文正式章节](final/reports/问题二_中文论文_正式章节版.md)包含八张统计表、六组核心图；[最终验收](final/reports/第二问最终验收报告.md)给出十炉接口检查。时滞算法开发暂停，正式V2保留，尚未验证流量—时滞物理函数。
+当前定稿入口为 `python -m problem2.src.final_delivery`，配置见 [final_analysis.json](configs/final_analysis.json)。[中文正式章节](final/reports/问题二_中文论文_正式章节版.md)包含九张统计表、六组核心图；[最终验收](final/reports/第二问最终验收报告.md)给出十炉接口检查。时滞算法开发暂停，正式V2保留，尚未验证流量—时滞物理函数。
 
 本目录实现 APMCM 2026 B 题第二问的工艺信号分析。输入是十炉原始 XLSB；输出是连续工艺信号、氧枪流量、累计烟气排放、可靠性筛选后的局部响应时滞、时间映射和可供后续问题调用的 NPZ 接口。原始 XLSB 只读读取，所有结果写入 `problem2/final/`。
 
@@ -141,3 +141,7 @@ PDF嵌入字体，SVG保留可编辑文字并要求查看设备安装Times New R
 以 `dea6637` 为基准的[真实事件验证](research/real_event_validation/results/REPORT.md)及[复现入口](research/real_event_validation/README.md)保存十炉候选、原24窗口复核、重叠与尺度检查。用户已确认中文附件1只是现有英文原始文件的改名；本轮文件指纹核验关闭了前轮报告中的数据身份待确认项。历史报告仍保留当时状态，正式模型与NPZ接口保持冻结。
 
 当前正式复现步骤与输入要求见 [实验配置与复现说明](final/reports/实验配置与复现说明.md)。历史研究脚本按各自冻结提交复现；其旧待办不覆盖本轮数据身份确认和时滞开发暂停决定。
+
+## 最终论文审查与冻结
+
+建模与实验结束，当前只维护正式论文和离线交接。九项审查见 [最终论文审查报告](final/reports/第二问最终论文审查.md)。正文在原八表基础上补入流量分层候选时滞表，现为九表、六组核心图；窗口统计不代表独立物理响应。正式生成后运行 `python -m problem2.src.final_review` 核对数值、图表、输入输出指纹并更新 `final/relationships/paper_freeze_manifest.json`。第三问可使用未作时滞修正的原时间轴作为基线。

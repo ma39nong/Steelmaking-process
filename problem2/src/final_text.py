@@ -35,6 +35,12 @@ def write_reports(heats,a,cfg):
     flow=[r for r in a['flow_review'] if r['sg_window']==31]
     t7=table(['炉号','原累计值相邻重复比例','正增量中位数 m³','31点反积分RMSE m³','31点总量相对差 %','21/41点流量偏离31点RMSE m³/s'],[[r['heat_id'],r['raw_equal_adjacent_fraction'],r['positive_increment_median_m3'],r['reintegration_rmse_m3'],100*r['endpoint_relative_error'],' / '.join(f"{x['flow_difference_from_31_rmse_m3_s']:.3f}" for x in a['flow_review'] if x['heat_id']==r['heat_id'] and x['sg_window']!=31)] for r in flow])
     t8=table(['炉号','CO/CO₂可靠窗口','CO/CO₂有效对齐点','Q1时间轴','字段历史比较','检查项'],[[r['heat_id'],f"{r['co_reliable_windows']} / {r['co2_reliable_windows']}",f"{r['co_alignment_points']} / {r['co2_alignment_points']}",'精确一致','57/57通过',sum(x['heat_id']==r['heat_id'] for x in a['interface_checks'])] for r in a['heat_summary']])
+    bandnames={'low':'低','medium':'中','high':'高'}
+    delayrows=[]
+    for r in a['delay_flow_summary']:
+        interval=f"[{r['flow_min_m3_s']:.3f}, {r['flow_max_m3_s']:.3f}"+(']' if r['upper_inclusive'] else ')')
+        delayrows.append([bandnames[r['flow_band']],interval,r['gas'].upper(),r['delay_median_s'] if r['accepted_windows'] else '不可辨识',f"{r['delay_min_s']:.1f}–{r['delay_max_s']:.1f}" if r['accepted_windows'] else '—',r['accepted_windows'],r['contributing_heats'],'仅窗口级；物理事件未确认' if r['accepted_windows'] else '无合格窗口'])
+    delaytable=table(['流量层','中心流量区间 m³/s','气体','候选时滞中位数 s','范围 s','合格窗口数','覆盖炉数','证据范围'],delayrows)
     maxrel=max(abs(r['endpoint_relative_error']) for r in flow)
     chapter=r'''# 问题二模型与实验结果
 
@@ -109,7 +115,7 @@ E^{(0)}_{g,h}(t)=E_{g,h}(T_h)\frac{t}{T_h}.
 
 ## 6.5 五阶段比较和非线性趋势
 
-按 \(p\in[0,0.2),[0.2,0.4),\ldots,[0.8,1]\) 划分五个等耗氧进度阶段，区别于旧分析中的耗氧分位数。阶段边界由累计量的线性时间插值定位，同氧量平台取最后观测时刻，记录起止点固定。阶段平均排放为该段积分增量除以持续时间；阶段排放/耗氧比为 \(\Delta E_g/\Delta O\)，避免逐点除以低流量。该比值是表观体积比，不是脱碳收率。
+按 \(p\in[0,0.2),[0.2,0.4),\ldots,[0.8,1]\) 划分五个等耗氧进度阶段。阶段边界由累计量的线性时间插值定位，同氧量平台取最后观测时刻，记录起止点固定。阶段平均排放为该段积分增量除以持续时间；阶段排放/耗氧比为 \(\Delta E_g/\Delta O\)，避免逐点除以低流量。该比值是表观体积比，不是脱碳收率。
 
 表4 五阶段炉间统计
 
@@ -155,11 +161,18 @@ CO共13/2241个窗口通过，CO₂为11/2241，覆盖率分别约0.58%和0.49%�
 
 原固定时滞与约束反平方根模型仍保留在接口中作为探索性离线推断。其模型选择依据训练误差，既有留一炉次也未建立稳定泛化，因此不将模型输出当作实测时滞。题目给出的“流量增大、时滞减小”在本数据上属于待检验方向：当前缺少可信独立事件，不能报告经验证的流量—时滞函数，也不能由证据不足推断该物理规律不存在。24个窗口的流量与候选时滞详见 `../delay_audit/accepted_windows.csv`，仅作窗口级估计，不重复拟合。
 
+表8 不同流量区间的候选时滞描述性统计
+
+'''+delaytable+r'''
+流量边界取全部2241个共同候选中心的三分位数，仅按源流量划分，不根据24个时滞值调整。两个气体共用分层边界，源中心不重复计数；正式V2使用中心时刻的瞬时流量，不是事件平均流量。表中边界仅显示三位小数，归属按CSV和JSON的完整精度确定。
+
+低、中、高层均存在算法合格窗口，但中、高层CO各只有1个窗口；高流量两类气体的窗口均只来自6C02057。时滞中位数未呈一致下降，这不能证明物理规律相反，因为炉次、阶段、重叠和候选身份未被分离。窗口数不是独立样本数，不报告事件置信区间；没有合格窗口的区间应记“不可辨识”，不能填零。表8直接给出现有算法在不同流量下的定量输出，仍不足以给出经过物理验证的流量—时滞函数。
+
 当前数据接口未提供独立氧枪操作指令或分析仪响应记录。暂停新增时滞算法；若未来取得这些信息，再核查事件标签。题目能计算的重构、导数与积分结果完整给出；时滞部分同时交付窗口估计、置信分数、掩膜与限制，避免把不可辨识段补成预设曲线。
 
 ## 6.7 第三问接口和验收
 
-表8 十炉离线接口验收
+表9 十炉离线接口验收
 
 '''+t8+r'''
 十炉共570个字段与历史Release在规定数值容差内一致，掩膜、窗口中心和时间轴要求精确一致。本轮实际核对了十个第一问本地接口的完整文件SHA256，与Release清单一致；其时间轴与第二问逐点精确相同，不通过截断或插值掩盖不一致。验收还检查序号、形状、布尔类型、导数、反积分、气体积分、观测时滞NaN、有效掩膜、时间映射及对齐插值；这是计算和交接验收，不是物理时滞验证。
@@ -168,7 +181,7 @@ CO共13/2241个窗口通过，CO₂为11/2241，覆盖率分别约0.58%和0.49%�
 
 ## 6.8 复现和结果追溯
 
-正式统计配置为 `../../configs/final_analysis.json`，冻结研究基准为 `fe52075`。在仓库根目录运行 `python -m problem2.src.final_delivery`，输入原始文件、前轮冻结NPZ及第一问接口只读核验，固定写入一套当前统计、图表与正文。所有八张表对应的逐炉CSV、趋势参数、留一炉次结果、图注、字体检查和输入输出SHA256位于 `../relationships/`。数据字典、交接规则和完整复现命令随本章保存。
+正式统计配置为 `../../configs/final_analysis.json`，冻结研究基准为 `fe52075`。在仓库根目录运行 `python -m problem2.src.final_delivery`，输入原始文件、前轮冻结NPZ及第一问接口只读核验，固定写入一套当前统计、图表与正文。所有九张表对应的逐炉CSV、趋势参数、留一炉次结果、图注、字体检查和输入输出SHA256位于 `../relationships/`。数据字典、交接规则和完整复现命令随本章保存。
 '''
     (REPORTS/'问题二_中文论文_正式章节版.md').write_text(chapter)
     acceptance=json.loads((out/'acceptance.json').read_text())
@@ -181,7 +194,7 @@ CO共13/2241个窗口通过，CO₂为11/2241，覆盖率分别约0.58%和0.49%�
 | 四类关系 | Pearson、Spearman、三种增量尺度、五个等耗氧阶段、线性/二次趋势及留一炉次结果已保存 |
 | 氧枪流量 | 31点正式实现保留，21/41点仅诊断；计数更新机制尚不能由现有数据确认 |
 | 时滞结论 | 24个算法合格窗口保留，尚无独立事件确认；暂停算法开发，不拟合流量—时滞规律 |
-| 中文正文 | 八张统计表、六组核心图及十炉结果已统一 |
+| 中文正文 | 九张统计表、六组核心图及十炉结果已统一 |
 | 第三问交接 | 十炉{acceptance['historical_fields']}字段、{acceptance['interface_checks']}项检查通过；第一问十炉时间轴精确一致 |
 | 物理解释 | 离线计算验收通过不代表动态规律已被验证 |
 
@@ -199,6 +212,7 @@ CO共13/2241个窗口通过，CO₂为11/2241，覆盖率分别约0.58%和0.49%�
 
 ```bash
 .venv/bin/python -m problem2.src.final_delivery
+.venv/bin/python -m problem2.src.final_review
 .venv/bin/python -m pytest -q problem2/tests problem2/research/response_broadening/test_response.py problem2/research/real_event_validation/test_review.py
 ```
 
@@ -236,7 +250,7 @@ For heat $h$, $t_i=0.5(s_i-s_0)$ seconds. Cumulative oxygen $O_h$ is in $\mathrm
 Within each heat we report Pearson and Spearman coefficients, nonoverlapping increments at 0.5, 5 and 15 seconds, and five equal 20-percent oxygen-progress stages. Whole heats, rather than time samples, are resampled for stage uncertainty. A constant-rate cumulative comparator demonstrates that high level correlation alone does not establish a reaction mechanism. Increment correlations depend on aggregation scale and do not isolate a causal effect.
 With $p=(O_h-O_h(0))/(O_h(T_h)-O_h(0))$, linear and quadratic descriptive trends are fitted with equal total weight per heat and evaluated by leaving one heat out. For instantaneous CO, macro-average test $R^2$ is 0.596 and 0.792; for instantaneous CO$_2$, it is $-0.044$ and 0.309. The normalized progress requires the final oxygen total, so this is a retrospective evaluation. Curves are not extrapolated or substituted for physical integrals.
 \subsection{Delay identifiability and offline handoff}
-The frozen V2 method uses 121 samples, stride five, and a nonnegative 0--60 second lag search. Dynamic excitation, correlation, peak separation and non-boundary checks determine acceptance. Peak width and prominence are diagnostic only. CO has 13 accepted windows out of 2241, and CO$_2$ has 11. These overlapping windows, and 167 scale-recurring source candidates, are not independent physical events. Four candidate pairings remain unconfirmed. Existing fixed and constrained inverse-square-root delay predictions remain exploratory; the data do not validate a decreasing flow--delay function.
+The frozen V2 method uses 121 samples, stride five, and a nonnegative 0--60 second lag search. Dynamic excitation, correlation, peak separation and non-boundary checks determine acceptance. Peak width and prominence are diagnostic only. CO has 13 accepted windows out of 2241, and CO$_2$ has 11. These overlapping windows, and 167 scale-recurring source candidates, are not independent physical events. Four candidate pairings remain unconfirmed. Flow-tertile summaries of the accepted windows are descriptive: CO median lags are 27.5, 7.5 and 40.0 s; CO$_2$ medians are 7.5, 15.0 and 36.5 s. High-flow windows come from one heat only, so these are not a validated monotone relation. Existing fixed and constrained inverse-square-root delay predictions remain exploratory; the data do not validate a decreasing flow--delay function.
 The 57-field NPZ schema is unchanged. Ten heats and 570 historical fields have been checked, and the local first-question time axes match exactly. Observed delays, model delays and physical measurements must remain distinct. NaNs are not replaced by zero; downstream use requires masks and heuristic confidence scores. The interface is offline and may use future samples.
 ''')
     # Extend the existing dictionary without changing field semantics.
@@ -246,11 +260,11 @@ The 57-field NPZ schema is unchanged. Ten heats and 570 historical fields have b
     handoff.write_text(text+marker+f'\n本轮十炉{acceptance["historical_fields"]}项历史字段比较及{acceptance["interface_checks"]}项接口检查通过；第一问本地十炉文件SHA256与Release清单一致，时间轴逐点精确一致。正式NPZ已在上述标准路径核验可读。验收记录位于 [acceptance.json](../relationships/acceptance.json) 与 [逐项检查](../relationships/interface_checks.csv)。这不证明任何候选时滞具有独立物理标签。\n\n推荐第三问将工艺变量及异常掩膜作为基础输入；只有在明确评估研究假设时才使用探索性时滞对齐。必须将“未对齐”与“时滞为零”区分，不得用模型时滞填充观测或生成伪标签。若需离线预测验证，共享拟合及预处理参数须在训练炉次内确定。\n')
     import csv
     with (out/'figure_captions.csv').open() as f:captions=list(csv.DictReader(f))
-    index='# 第二问当前图表清单\n\n六组核心图与十二组补充图统一由 `python -m problem2.src.final_delivery` 生成，当前输出仅维护在 `../figures/`。PNG、SVG、PDF是同一图的必要导出格式，图题另存为可编辑 [图注CSV](../relationships/figure_captions.csv)。所有图内英文与数字使用真实Times New Roman，PDF嵌入检查见 [font_validation.json](../relationships/font_validation.json)，唯一版宽预览见 [layout_preview.png](../relationships/layout_preview.png)。\n\n'+table(['图名','用途','图题'],[[r['figure'],r['role'],r['caption']] for r in captions])+'\n第一轮时滞检查图、响应核研究图和真实事件检查页属于独立科研证据，分别保留在 `../delay_audit/` 和 `../../research/`。其组数和图数不计作独立响应数量。当前八张统计表位于中文正式章节，逐炉CSV位于 `../relationships/`。\n'
+    index='# 第二问当前图表清单\n\n六组核心图与十二组补充图统一由 `python -m problem2.src.final_delivery` 生成，当前输出仅维护在 `../figures/`。PNG、SVG、PDF是同一图的必要导出格式，图题另存为可编辑 [图注CSV](../relationships/figure_captions.csv)。所有图内英文与数字使用真实Times New Roman，PDF嵌入检查见 [font_validation.json](../relationships/font_validation.json)，唯一版宽预览见 [layout_preview.png](../relationships/layout_preview.png)。\n\n'+table(['图名','用途','图题'],[[r['figure'],r['role'],r['caption']] for r in captions])+'\n第一轮时滞检查图、响应核研究图和真实事件检查页属于独立科研证据，分别保留在 `../delay_audit/` 和 `../../research/`。其组数和图数不计作独立响应数量。当前九张统计表位于中文正式章节，逐炉CSV位于 `../relationships/`。\n'
     (REPORTS/'完整图表清单.md').write_text(index)
     (out/'README.md').write_text('''# 第二问正式统计结果
 
-[中文正式章节](../reports/问题二_中文论文_正式章节版.md)给出八张统计表与六组核心图，[验收报告](../reports/第二问最终验收报告.md)区分计算验收和物理结论。[复现说明](../reports/实验配置与复现说明.md)说明配置、输入和统计口径。
+[中文正式章节](../reports/问题二_中文论文_正式章节版.md)给出九张统计表与六组核心图，[验收报告](../reports/第二问最终验收报告.md)区分计算验收和物理结论。[复现说明](../reports/实验配置与复现说明.md)说明配置、输入和统计口径。
 
 | 正文表 | 逐炉或完整证据 |
 |---|---|
@@ -261,9 +275,10 @@ The 57-field NPZ schema is unchanged. Ten heats and 570 historical fields have b
 | 表5 趋势参数 | trend_parameters.csv、pooled_trends.csv |
 | 表6 留一炉次 | trend_loho.csv |
 | 表7 流量复核 | flow_review.csv |
-| 表8 接口验收 | interface_checks.csv、interface_field_comparison.csv |
+| 表8 流量分层时滞 | delay_flow_summary.csv、delay_flow_definition.json |
+| 表9 接口验收 | interface_checks.csv、interface_field_comparison.csv |
 
-原始计数更新机制未被确证，24个合格窗口没有转化为独立事件，不拟合流量—时滞规律。当前入口不改变正式V2、第一问或第三问字段。研究代码的历史冻结检查应在对应Git提交上复现；本目录是后续正式统计收尾，不覆盖科研证据。
+原始计数更新机制未被确证，24个合格窗口没有转化为独立事件，不拟合流量—时滞规律。当前入口不改变正式V2、第一问或第三问字段。最终论文审查见 [九项审查](../reports/第二问最终论文审查.md)，冻结文件指纹见 `paper_freeze_manifest.json`；仅描述已保存窗口的流量分层，不再拟合新时滞模型。研究代码的历史冻结检查应在对应Git提交上复现；本目录是后续正式统计收尾，不覆盖科研证据。
 ''')
 
     audit=REPORTS/'独立数学审查与修复报告.md'

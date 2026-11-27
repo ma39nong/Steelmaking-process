@@ -1,0 +1,7 @@
+flow_band,flow_min_m3_s,flow_max_m3_s,upper_inclusive,gas,candidate_windows,accepted_windows,contributing_heats,heat_ids,delay_median_s,delay_min_s,delay_max_s,evidence,confirmed_physical_events,independent_sample_size
+low,1.9878841414207506,4.651999864343871,False,co,747,11,5,6B03206;6C02058;6C02059;6C02060;6C02107,27.5,6.0,35.0,algorithm-accepted overlapping windows; physical response identity unconfirmed,0,
+low,1.9878841414207506,4.651999864343871,False,co2,747,4,2,6B03271;6C02059,7.5,7.5,7.5,algorithm-accepted overlapping windows; physical response identity unconfirmed,0,
+medium,4.651999864343871,5.198760816137546,False,co,747,1,1,6C02059,7.5,7.5,7.5,algorithm-accepted overlapping windows; physical response identity unconfirmed,0,
+medium,4.651999864343871,5.198760816137546,False,co2,747,2,2,6B03271;6C02059,15.0,7.5,22.5,algorithm-accepted overlapping windows; physical response identity unconfirmed,0,
+high,5.198760816137546,15.090062631483958,True,co,747,1,1,6C02057,40.0,40.0,40.0,algorithm-accepted overlapping windows; physical response identity unconfirmed,0,
+high,5.198760816137546,15.090062631483958,True,co2,747,5,1,6C02057,36.5,7.5,36.5,algorithm-accepted overlapping windows; physical response identity unconfirmed,0,

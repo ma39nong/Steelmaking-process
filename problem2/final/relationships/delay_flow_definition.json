@@ -1,0 +1,19 @@
+{
+  "basis": "all common V2 candidate centers, counted once across gases; instantaneous center flow, not event mean",
+  "quantiles": [
+    0,
+    0.3333333333333333,
+    0.6666666666666666,
+    1
+  ],
+  "boundaries_m3_s": [
+    1.9878841414207506,
+    4.651999864343871,
+    5.198760816137546,
+    15.090062631483958
+  ],
+  "candidate_centers": 2241,
+  "accepted_windows": 24,
+  "precision": "CSV/JSON full precision determines membership; chapter thresholds are rounded for display",
+  "inference": "descriptive only; no independence assumption, confidence interval or flow-delay regression"
+}

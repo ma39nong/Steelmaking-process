@@ -126,7 +126,12 @@ def execute(cfg,config_path=None):
                 co_reliable_windows=int(d['delay_co_valid_mask'].sum()),co2_reliable_windows=int(d['delay_co2_valid_mask'].sum()),co_alignment_points=int(d['alignment_valid_mask_co'].sum()),co2_alignment_points=int(d['alignment_valid_mask_co2'].sum()),
                 mask_oxygen=int(d['outlier_oxygen'].sum()),mask_co=int(d['outlier_co'].sum()),mask_co2=int(d['outlier_co2'].sum()),npz_sha256=sha(destination),baseline_npz_sha256=sha(path))
             heatrows.append(row)
-    tables=analyze(heats,cfg);tables.update(heat_summary=heatrows,flow_review=flow,interface_checks=checks,interface_field_comparison=release,q1_interface_identity=q1identity)
+    tables=analyze(heats,cfg)
+    from .final_delay_summary import summarize
+    delay_bands,delay_definition=summarize(heats,cfg['delay_flow_summary_quantiles'])
+    tables['delay_flow_summary']=delay_bands
+    write_json(out/'delay_flow_definition.json',delay_definition)
+    tables.update(heat_summary=heatrows,flow_review=flow,interface_checks=checks,interface_field_comparison=release,q1_interface_identity=q1identity)
     for name,rows in tables.items():write_csv(out/(name+'.csv'),rows)
     write_json(out/'effective_config.json',cfg);write_json(out/'input_manifest.json',inputs)
     write_json(out/'acceptance.json',dict(data_identity_resolved=True,heats=len(heats),q1_time_axes_exact=True,q1_release_hashes_match=True,historical_fields=len(release),interface_checks=len(checks),all_interface_checks_pass=True,
@@ -137,7 +142,7 @@ def execute(cfg,config_path=None):
     render(heats,tables,cfg);write_reports(heats,tables,cfg)
     protected=['problem2/src/q2_pipeline.py','problem2/src/q2_pipeline_v2.py','problem2/src/delay_v2.py']
     if subprocess.check_output(['git','diff',cfg['baseline_commit'],'--',*protected],cwd=ROOT):raise AssertionError('formal numeric model changed')
-    outputs=[p for p in out.rglob('*') if p.is_file() and p.name!='provenance.json']
+    outputs=[p for p in out.rglob('*') if p.is_file() and p.name!='provenance.json' and not p.name.startswith('paper_') and p.name!='statement_answer_mapping.csv']
     outputs+=list((ROOT/cfg['figure_dir']).glob('*'))
     outputs.append(ROOT/'problem2/final/results/artifact_manifest.json')
     reports=['第一问成果审查与第二问接口说明.md','独立数学审查与修复报告.md','问题二_中文论文_正式章节版.md','第二问最终验收报告.md','数据交接与第三问使用说明.md','数据字典与接口说明.md','完整图表清单.md','实验配置与复现说明.md','problem2_section.tex']

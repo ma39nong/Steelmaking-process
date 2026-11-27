@@ -33,5 +33,11 @@
   "stage_boundary_ties": "latest observation at equal oxygen; record endpoints fixed",
   "trend_weighting": "each heat has total weight one in pooled fits; each heat separately scored in LOHO",
   "model_role": "retrospective trends against final oxygen progress; no causal or online prediction claim",
-  "raw_data_dir": "Data"
+  "raw_data_dir": "Data",
+  "delay_flow_summary_quantiles": [
+    0,
+    0.3333333333333333,
+    0.6666666666666666,
+    1
+  ]
 }
