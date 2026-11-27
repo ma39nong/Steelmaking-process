@@ -24,35 +24,8 @@ def save(fig,name,section='main'):
  plt.close(fig);print('rendered',name,flush=True)
 
 def mechanism():
- fig=plt.figure(figsize=(6.8,5.4));ax=fig.add_axes([.015,.015,.97,.97]);ax.set(xlim=(0,1),ylim=(0,1));ax.axis('off');box_artists=[]
- def box(x,y,w,h,label,fill='white'):
-  rect=Rectangle((x,y),w,h,fc=fill,ec='#4d626e',lw=.8);ax.add_patch(rect);text=ax.text(x+w/2,y+h/2,label,ha='center',va='center',fontsize=8.2,linespacing=1.1,color=RAW);box_artists.append((rect,text))
- def wire(points,head=True):
-  if len(points)>2:ax.plot([x for x,y in points[:-1]],[y for x,y in points[:-1]],color=REF,lw=.9)
-  ax.add_patch(FancyArrowPatch(points[-2],points[-1],arrowstyle='-|>' if head else '-',mutation_scale=9,color=REF,lw=.9,shrinkA=0,shrinkB=1.5))
- box(.025,.855,.25,.075,'Raw flame spectra', '#f0f5f6');box(.375,.855,.25,.075,'Quality check\nand classification')
- wire([(.275,.8925),(.375,.8925)])
- box(.755,.855,.22,.075,'Suspected\nupper clipping');wire([(.625,.8925),(.755,.8925)])
- # Three parallel ordinary-observation evidence branches.
- for x,label in [(.025,'Temporal\nevidence'),(.255,'Wavelength\nevidence'),(.485,'Low-rank\nevidence')]:
-  box(x,.68,.18,.075,label);wire([(.5,.855),(.5,.80),(x+.09,.80),(x+.09,.755)])
- box(.20,.555,.42,.075,'Adaptive evidence fusion\nand anomaly decision')
- for x in [.115,.345,.575]:wire([(x,.68),(x,.655),(.41,.655),(.41,.63)])
- for y,label in [(.445,'Anomaly mask'),(.335,'Rank-4 Huber robust\nlow-rank completion'),(.225,'Stability check\nand fallback if needed')]:box(.20,y,.42,.075,label)
- wire([(.41,.555),(.41,.52)]);wire([(.41,.445),(.41,.41)]);wire([(.41,.335),(.41,.30)])
- # Separate recorded-range retention from conditional latent estimation.
- box(.755,.70,.22,.075,'Retain recorded\nrange information');box(.755,.565,.22,.075,'Conditional latent\nintensity estimate')
- wire([(.865,.855),(.865,.775)]);wire([(.865,.83),(.99,.83),(.99,.6025),(.975,.6025)])
- box(.025,.065,.22,.085,'Observation fidelity\nand local\nnonnegative support')
- box(.28,.065,.19,.085,'Formal repaired\nmatrix', '#f0f5f6');box(.505,.065,.22,.085,'Bilinear continuous\nreconstruction');box(.76,.065,.22,.085,'Continuous\nspectral surface','#f0f5f6')
- wire([(.41,.225),(.41,.195),(.135,.195),(.135,.15)])
- wire([(.245,.1075),(.28,.1075)]);wire([(.47,.1075),(.505,.1075)]);wire([(.725,.1075),(.76,.1075)])
- wire([(.755,.7375),(.69,.7375),(.69,.172),(.375,.172),(.375,.15)])
- fig.canvas.draw();renderer=fig.canvas.get_renderer()
- for rect,text in box_artists:
-  a=rect.get_window_extent(renderer);b=text.get_window_extent(renderer);assert a.x0+1<=b.x0 and b.x1<=a.x1-1 and a.y0<=b.y0 and b.y1<=a.y1,text.get_text()
- (O/'flowchart_validation.json').write_text(json.dumps({'all_text_inside_boxes':True,'box_count':len(box_artists),'font_size_pt':8.2,'labels':[text.get_text() for rect,text in box_artists]},indent=2)+'\n')
- save(fig,'F02_model_mechanism')
+ from method_architecture import draw
+ draw(O,prior,save)
 
 def legend():return [Line2D([],[],color=RAW,lw=1.5,marker='o',ms=2.5,label='Raw'),Line2D([],[],color=REPAIR,lw=1.1,ls='--',label='Repaired'),Line2D([],[],color=REF,lw=0,marker='x',ms=5,label='Neighborhood reference')]
 
@@ -107,7 +80,7 @@ def main():
  prior.appendices()
  mechanism();local_evidence();interpolation();appendices()
  previous=pd.read_csv(O/'asset_manifest.csv');new=pd.DataFrame(MAN);pd.concat([previous[~previous.figure.isin(new.figure)],new],ignore_index=True).to_csv(O/'asset_manifest.csv',index=False)
- (O/'figure_layout.json').write_text(json.dumps({'F02':'flowchart; no case values or formulas','F03':{'rows':2,'columns':2,'panel_roles':['isolated/time','isolated/wavelength','persistent/time','persistent/wavelength']},'F04':{'rows':1,'columns':2,'shared_legend':True},'appendix':['A11_case_locator_and_spikes','A12_bilinear_cell'],'figure_width_inches':6.8,'font_size_pt':8.2,'font_family':'Times New Roman','panel_title_alignment':'center'},indent=2)+'\n')
+ (O/'figure_layout.json').write_text(json.dumps({'F02':'horizontal real matrices, adaptive evidence, visible nodes, robust completion, recorded surface; separate conditional branch','F03':{'rows':2,'columns':2,'panel_roles':['isolated/time','isolated/wavelength','persistent/time','persistent/wavelength']},'F04':{'rows':1,'columns':2,'shared_legend':True},'appendix':['A11_case_locator_and_spikes','A12_bilinear_cell'],'figure_width_inches':6.8,'font_size_pt':8.2,'font_family':'Times New Roman','panel_title_alignment':'center'},indent=2)+'\n')
 if __name__=='__main__':
  main()
  p=O/'checks.json';d=json.loads(p.read_text());d.pop('mechanism_case',None);d['current_core_layout']=json.loads((O/'figure_layout.json').read_text());d['current_core_case_evidence']='F03_panel_data.csv';p.write_text(json.dumps(d,indent=2)+'\n')

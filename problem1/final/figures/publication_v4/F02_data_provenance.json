@@ -1,0 +1,35 @@
+{
+  "heat_id": "6C02058",
+  "source": "problem1/final/data/6C02058_interface.npz",
+  "source_sha256": "59504be04fea704a8862531396a782c06ad1819b2e6d0f51b168b73413f2fb38",
+  "rows": [
+    656,
+    680
+  ],
+  "columns": [
+    708,
+    748
+  ],
+  "time_range_s": [
+    328.0,
+    339.5
+  ],
+  "wavelength_range_nm": [
+    595.835,
+    609.435
+  ],
+  "raw_sha256": "e7764a0f58b8556a54a2833dba819d1c801ffee194f8740424fec9a3e7920f8f",
+  "repair_mask_sha256": "f7d588dbff2fb2c59cd6ea027ecf23e878523a67e3fbcaf54a99d6ae17deead8",
+  "visible_sha256": "20c3a629f8f18d8f9ceacbf48cc271f25a2d493af5016c22a9310b11064190cc",
+  "displayed_middle_matrix": "measured Y on frozen visible set; excluded nodes shown white",
+  "repaired_sha256": "6a0f8ac7d1c6ece13e872c0cc751844cc3abac3b84e7929e225af7c64eed93cf",
+  "surface_sha256": "831a76eee11bf034215635ed1d65475e6d453f3a7ee6c9528c49f91788cda355",
+  "surface_shape": [
+    47,
+    79
+  ],
+  "surface_source": "Spectrum(t,w,D).evaluate on twice refined true-coordinate grid",
+  "recorded_scale_only": true,
+  "conditional_estimate_enters_official_surface": false,
+  "coordinates": "original observed time and nonuniform wavelength; pcolormesh cell centers"
+}

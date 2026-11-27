@@ -29,6 +29,17 @@ def main():
    verify('F03_raw:'+panel,np.array_equal(g.raw,raw));verify('F03_repaired:'+panel,np.allclose(g.repaired,rep,rtol=0,atol=1e-8))
    alpha=(t[i]-t[i-1])/(t[i+1]-t[i-1]);beta=(w[j]-w[j-1])/(w[j+1]-w[j-1]);reference=(1-alpha)*y[i-1,j]+alpha*y[i+1,j] if direction=='time' else (1-beta)*y[i,j-1]+beta*y[i,j+1]
    verify('F03_actual_reference:'+panel,np.allclose(g.neighborhood_reference,reference,rtol=0,atol=1e-7));verify('F03_target_class:'+panel,bool(z['statistical_repair'][i,j])==(panel in ['a','b']))
+ # F02 thumbnails and visible nodes are tied directly to the unchanged real matrices.
+ meta=json.loads((O/'F02_data_provenance.json').read_text());source=ROOT/meta['source'];verify('F02_real_source',hashlib.sha256(source.read_bytes()).hexdigest()==meta['source_sha256']);i,end=meta['rows'];j,stop=meta['columns'];nodes=pd.read_csv(O/'F02_plot_nodes.csv')
+ with np.load(source) as z:
+  shape=(end-i,stop-j);t=z['time'][i:end];w=z['wavelength'][j:stop]
+  for col,key in [('raw','raw'),('repaired','reconstructed'),('repair_mask','statistical_repair'),('visible','valid')]:verify('F02_actual:'+col,np.allclose(nodes[col].to_numpy().reshape(shape),z[key][i:end,j:stop],rtol=0,atol=0))
+  verify('F02_actual_time',np.array_equal(nodes.time_s.to_numpy().reshape(shape)[:,0],t));verify('F02_actual_wavelength',np.allclose(nodes.wavelength_nm.to_numpy().reshape(shape)[0],w,rtol=0,atol=1e-10))
+  import importlib.util
+  spec=importlib.util.spec_from_file_location('f02_interface',F.parent/'v3/src/interface.py');module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+  expected=module.Spectrum(t,w,z['reconstructed'][i:end,j:stop]).evaluate(np.linspace(t[0],t[-1],2*len(t)-1),np.linspace(w[0],w[-1],2*len(w)-1))
+  verify('F02_actual_bilinear_surface',hashlib.sha256(np.ascontiguousarray(expected).tobytes()).hexdigest()==meta['surface_sha256'])
+ flow=json.loads((O/'flowchart_validation.json').read_text());verify('F02_no_crossing',not flow['proper_arrow_crossings']);verify('F02_colorbar_clearance',flow['colorbar_branch_clearance_pt']>3);verify('F02_retained_path',flow['retained_observations_reach_D']);verify('F02_latent_separate',flow['conditional_branch_separate'] and not meta['conditional_estimate_enters_official_surface'])
  # All 15 interpolation points must match the existing independent experiment.
  e=pd.read_csv(F.parent/'v2/results/interpolation_independent_macro.csv',header=[0,1],index_col=[0,1]);points=pd.read_csv(O/'F04_plot_data.csv');verify('F04_15_points',len(points)==15)
  for r in points.itertuples():verify('F04_exact:'+r.model+r.scenario,abs(r.rmse-e.loc[(r.model,r.scenario),('rmse','mean')])<1e-8)
@@ -56,6 +67,6 @@ def main():
  captions=re.findall(r'^图5-[1-7]　[^\n]+',s,re.M);verify('seven_captions',len(captions)==7)
  appendix=(R/'问题一_V3_图表与研究附录.md').read_text();extra=re.findall(r'^附图A1[12]　[^\n]+',appendix,re.M)
  (O/'figure_captions.md').write_text('# 当前正式图注\n\n'+'\n\n'.join(captions+extra)+'\n')
- (O/'validation.json').write_text(json.dumps({'passed':len(CHECK),'failed':0,'model_or_data_changed':False,'one_current_manuscript':str(doc.relative_to(F)),'active_figure_set':str(O.relative_to(F)),'changed_figures':'All 26 figures: typography and title alignment only','appendix_added':['A11','A12'],'formal_width_inches':6.8,'rendering_review_completed':True},indent=2)+'\n')
+ (O/'validation.json').write_text(json.dumps({'passed':len(CHECK),'failed':0,'model_or_data_changed':False,'one_current_manuscript':str(doc.relative_to(F)),'active_figure_set':str(O.relative_to(F)),'changed_figures':['F02_model_mechanism'],'change_scope':'Horizontal scientific architecture from frozen data','appendix_added':[],'formal_width_inches':6.8,'rendering_review_completed':True},indent=2)+'\n')
  print('CURRENT_PACKAGE_VERIFIED',len(CHECK))
 if __name__=='__main__':main()

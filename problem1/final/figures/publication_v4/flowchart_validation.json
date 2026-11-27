@@ -1,23 +1,336 @@
 {
   "all_text_inside_boxes": true,
-  "box_count": 16,
+  "box_count": 10,
   "font_size_pt": 8.2,
+  "layout": "left-to-right, real matrices and surface",
+  "all_box_fills": "white",
+  "all_box_edges": "black",
+  "middle_panel": "actual visible-node matrix Y_Omega_v",
   "labels": [
-    "Raw flame spectra",
-    "Quality check\nand classification",
-    "Suspected\nupper clipping",
-    "Temporal\nevidence",
-    "Wavelength\nevidence",
-    "Low-rank\nevidence",
-    "Adaptive evidence fusion\nand anomaly decision",
-    "Anomaly mask",
-    "Rank-4 Huber robust\nlow-rank completion",
-    "Stability check\nand fallback if needed",
-    "Retain recorded\nrange information",
-    "Conditional latent\nintensity estimate",
-    "Observation fidelity\nand local\nnonnegative support",
-    "Formal repaired\nmatrix",
-    "Bilinear continuous\nreconstruction",
-    "Continuous\nspectral surface"
-  ]
+    "Temporal\n$z_t$",
+    "Wavelength\n$z_\\lambda$",
+    "Low-rank\n$z_L$",
+    "Joint score\nand local\nscreening",
+    "Rank-4 Huber\ncompletion",
+    "Stability check\nand fallback",
+    "Fidelity and local\nnonnegative support",
+    "Suspected\ntop codes",
+    "Conditional lower-bound\nestimation",
+    "Separate latent\nintensity estimate"
+  ],
+  "edges": [
+    {
+      "source": "Y",
+      "target": "time",
+      "points": [
+        [
+          0.145,
+          0.58
+        ],
+        [
+          0.17,
+          0.58
+        ],
+        [
+          0.17,
+          0.74
+        ],
+        [
+          0.19,
+          0.74
+        ]
+      ]
+    },
+    {
+      "source": "time",
+      "target": "score",
+      "points": [
+        [
+          0.305,
+          0.74
+        ],
+        [
+          0.32,
+          0.74
+        ],
+        [
+          0.32,
+          0.58
+        ],
+        [
+          0.335,
+          0.58
+        ]
+      ]
+    },
+    {
+      "source": "Y",
+      "target": "wavelength",
+      "points": [
+        [
+          0.145,
+          0.58
+        ],
+        [
+          0.17,
+          0.58
+        ],
+        [
+          0.17,
+          0.5800000000000001
+        ],
+        [
+          0.19,
+          0.5800000000000001
+        ]
+      ]
+    },
+    {
+      "source": "wavelength",
+      "target": "score",
+      "points": [
+        [
+          0.305,
+          0.5800000000000001
+        ],
+        [
+          0.32,
+          0.5800000000000001
+        ],
+        [
+          0.32,
+          0.58
+        ],
+        [
+          0.335,
+          0.58
+        ]
+      ]
+    },
+    {
+      "source": "Y",
+      "target": "lowrank",
+      "points": [
+        [
+          0.145,
+          0.58
+        ],
+        [
+          0.17,
+          0.58
+        ],
+        [
+          0.17,
+          0.42
+        ],
+        [
+          0.19,
+          0.42
+        ]
+      ]
+    },
+    {
+      "source": "lowrank",
+      "target": "score",
+      "points": [
+        [
+          0.305,
+          0.42
+        ],
+        [
+          0.32,
+          0.42
+        ],
+        [
+          0.32,
+          0.58
+        ],
+        [
+          0.335,
+          0.58
+        ]
+      ]
+    },
+    {
+      "source": "score",
+      "target": "A",
+      "points": [
+        [
+          0.41,
+          0.58
+        ],
+        [
+          0.445,
+          0.58
+        ]
+      ]
+    },
+    {
+      "source": "A",
+      "target": "fit",
+      "points": [
+        [
+          0.5,
+          0.58
+        ],
+        [
+          0.52,
+          0.58
+        ],
+        [
+          0.52,
+          0.74
+        ],
+        [
+          0.54,
+          0.74
+        ]
+      ]
+    },
+    {
+      "source": "fit",
+      "target": "stable",
+      "points": [
+        [
+          0.6375,
+          0.695
+        ],
+        [
+          0.6375,
+          0.625
+        ]
+      ]
+    },
+    {
+      "source": "stable",
+      "target": "fidelity",
+      "points": [
+        [
+          0.6375,
+          0.535
+        ],
+        [
+          0.6375,
+          0.465
+        ]
+      ]
+    },
+    {
+      "source": "retained_Y",
+      "target": "fidelity",
+      "points": [
+        [
+          0.145,
+          0.44
+        ],
+        [
+          0.158,
+          0.44
+        ],
+        [
+          0.158,
+          0.27
+        ],
+        [
+          0.525,
+          0.27
+        ],
+        [
+          0.525,
+          0.42
+        ],
+        [
+          0.54,
+          0.42
+        ]
+      ]
+    },
+    {
+      "source": "fidelity",
+      "target": "D",
+      "points": [
+        [
+          0.735,
+          0.42
+        ],
+        [
+          0.755,
+          0.42
+        ],
+        [
+          0.755,
+          0.58
+        ],
+        [
+          0.77,
+          0.58
+        ]
+      ]
+    },
+    {
+      "source": "D",
+      "target": "bilinear_surface",
+      "points": [
+        [
+          0.825,
+          0.58
+        ],
+        [
+          0.855,
+          0.58
+        ]
+      ]
+    },
+    {
+      "source": "Y",
+      "target": "sat",
+      "points": [
+        [
+          0.158,
+          0.27
+        ],
+        [
+          0.158,
+          0.1375
+        ],
+        [
+          0.2,
+          0.1375
+        ]
+      ]
+    },
+    {
+      "source": "sat",
+      "target": "conditional",
+      "points": [
+        [
+          0.37,
+          0.1375
+        ],
+        [
+          0.415,
+          0.1375
+        ]
+      ]
+    },
+    {
+      "source": "conditional",
+      "target": "latent_output",
+      "points": [
+        [
+          0.62,
+          0.1375
+        ],
+        [
+          0.665,
+          0.1375
+        ]
+      ]
+    }
+  ],
+  "retained_observations_reach_D": true,
+  "conditional_branch_separate": true,
+  "colorbar_branch_clearance_pt": 10.540799999999999,
+  "proper_arrow_crossings": [],
+  "shared_bus_junctions_are_intentional": true
 }

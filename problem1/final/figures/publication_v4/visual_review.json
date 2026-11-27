@@ -4,7 +4,7 @@
   "method": "Opened main and appendix contact sheets plus full-width F02/F05/F06/F07 caption proofs; checked centered panel titles, actual Times New Roman, legends and labels.",
   "reviewed_sha256": {
     "main/F01_data_structure.png": "af2a7ade2c47f4f7985db2949063bc814679dc032057369fe9c5e19c142b88ec",
-    "main/F02_model_mechanism.png": "acdf255b5a05de4cdb20b2bab3f0024b34a428ae554e6c779db950a94edc4356",
+    "main/F02_model_mechanism.png": "616107542fd9b0b60733230925bf8a77c2df16510f3d51f32eb96bcdc63b5af0",
     "main/F03_local_evidence.png": "7b3d172aa83dca10b639a4025fae4c18c7896735f366a74aee8154be74c1e06f",
     "main/F04_continuous_reconstruction.png": "7133d91ee21bdfbd0095fbfe48af6fabfcd971fe294b3fe5ed172846c4edef89",
     "main/F05_joint_validation.png": "c6fab70f0badc77c5a35027c6bee70fe7908003d4a442e8640e80eaade0e170e",
@@ -33,6 +33,7 @@
   "observations": {
     "all_26": "Actual Times New Roman embedded in all PDFs, titles centered, chart values and scientific arrays unchanged.",
     "main": "No overlapping panel titles; common legends and external captions separated.",
-    "appendix": "Ten surfaces and diagnostic panels retained; all panel titles centered."
+    "appendix": "Ten surfaces and diagnostic panels retained; all panel titles centered.",
+    "F02": "Opened final 6.8-inch A4 proof and enlarged colorbar detail. Both colorbar end labels align inward; text clears the vertical branch; boxes and branch separation verified."
   }
 }

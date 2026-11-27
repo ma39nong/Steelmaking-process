@@ -5,18 +5,18 @@
 |图号|科学问题与结构|图片|
 |---|---|---|
 |5-1|分组谱形、低秩及暗亮帧结构|[F01](main/F01_data_structure.png)|
-|5-2|整体算法流程；质量分类、三证据、修复及截顶独立分支|[F02](main/F02_model_mechanism.png)|
+|5-2|横向模型架构；真实矩阵、并行证据、可见输入、补全与连续输出|[F02](main/F02_model_mechanism.png)|
 |5-3|2×2双向证据：第一行修复孤立异常，第二行保留持续谱峰|[F03](main/F03_local_evidence.png)|
 |5-4|1×2连续方法对照：时间、波长降采样，共享图例|[F04](main/F04_continuous_reconstruction.png)|
 |5-5|共同协议下的检测与恢复检验|[F05](main/F05_joint_validation.png)|
 |5-6|全部1043点的实际改动分布|[F06](main/F06_actual_repair_results.png)|
 |5-7|十炉完整连续光谱总览|[F07](main/F07_ten_heat_surfaces.png)|
 
-所有正式图片均保存PNG/SVG/PDF。main/为七幅正文图，appendix/为十九幅附录图：十炉独立曲面、七幅已有研究附图，以及本轮从正文移出的[A11定位和其他三例尖峰](appendix/A11_case_locator_and_spikes.png)、[A12双线性单元](appendix/A12_bilinear_cell.png)。已有十七幅附图从历史来源原字节集中到这里；统一附录索引只引用本目录。
+所有正式图片均保存PNG/SVG/PDF。main/为七幅正文图，appendix/为十九幅附录图：十炉独立曲面、七幅已有研究附图，以及本轮从正文移出的[A11定位和其他三例尖峰](appendix/A11_case_locator_and_spikes.png)、[A12双线性单元](appendix/A12_bilinear_cell.png)。附图沿用历史数据，并统一了Times New Roman字体；统一附录索引只引用本目录。
 
 ## 三张核心图的简化
 
-F02采用横向输入、三个并行证据分支、纵向修复步骤及横向连续输出；框内只有必要英文方法名称。疑似截顶分为记录尺度保留和条件性潜在估计，记录量程路径进入正式矩阵。没有单个案例数值或大段公式。
+F02按真实原始矩阵→三类并行证据→可见节点→鲁棒补全→修复矩阵→连续曲面组织。白底黑色细边框、细箭头和普通矩形，数据图保留科学配色。原始、可见、修复矩阵与曲面来自6C02058同一实际窗口；保留观测绕过低秩潜变量直接进入保真约束，条件性截顶估计在独立分支结束。图中不列实验指标和长公式。[设计参照](F02_design_references.json)、[数据来源](F02_data_provenance.json)、[真实绘图节点](F02_plot_nodes.csv)、[布局与分支核验](flowchart_validation.json)可直接追溯。
 
 F03为两行两列：上行为6B03205的14.5 s、512.659 nm孤立异常，下行为6C02108的304.0 s、766.413 nm持续谱峰；左列为时间，右列为波长。原始、修复、邻域参考统一视觉编码，纵轴按每个面板实际数据分别设置。灰色叉号是目标节点的实际邻域参考，非整段参考曲线。
 

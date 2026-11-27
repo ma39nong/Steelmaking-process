@@ -10,7 +10,7 @@ FONTS=Path.home()/'.local/share/fonts/msttcore'
 for p in FONTS.glob('*.TTF'):font_manager.fontManager.addfont(str(p))
 actual=font_manager.findfont('Times New Roman',fallback_to_default=False)
 plt.rcParams.update({'font.family':'Times New Roman','axes.titlelocation':'center','mathtext.fontset':'custom','mathtext.rm':'Times New Roman','mathtext.it':'Times New Roman:italic','mathtext.bf':'Times New Roman:bold','mathtext.cal':'Times New Roman','mathtext.sf':'Times New Roman','mathtext.tt':'Times New Roman','mathtext.fallback':'stix'})
-RECORDS={}
+RECORDS=json.loads((O/'typography_validation.json').read_text())['figures'] if (O/'typography_validation.json').exists() else {}
 def digest(fig):
  h=hashlib.sha256()
  for ax in fig.axes:
