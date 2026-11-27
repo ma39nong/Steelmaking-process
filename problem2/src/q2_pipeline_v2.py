@@ -13,7 +13,6 @@ from .q2_pipeline import (
     hampel_mask,
     oxygen_flow,
     pchip_clean,
-    process_one,
     read_process_file,
 )
 

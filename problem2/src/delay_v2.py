@@ -6,7 +6,7 @@ from typing import Any
 
 import numpy as np
 from scipy.optimize import least_squares
-from scipy.signal import find_peaks, peak_prominences, peak_widths
+from scipy.signal import peak_prominences, peak_widths
 
 from .q2_pipeline import _standardized_change
 
