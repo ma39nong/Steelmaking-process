@@ -1,0 +1,234 @@
+[
+  {
+    "case_id": "window_6B03206_co_00",
+    "heat_id": "6B03206",
+    "gas": "co",
+    "left": 22.5,
+    "right": 172.5,
+    "kind": "baseline window overlap group",
+    "centers": [
+      67.5
+    ],
+    "lags": [
+      16.5
+    ]
+  },
+  {
+    "case_id": "window_6B03206_co_01",
+    "heat_id": "6B03206",
+    "gas": "co",
+    "left": 187.5,
+    "right": 337.5,
+    "kind": "baseline window overlap group",
+    "centers": [
+      232.5
+    ],
+    "lags": [
+      28.0
+    ]
+  },
+  {
+    "case_id": "pair_6B03271_co2_v2_0036",
+    "heat_id": "6B03271",
+    "gas": "co2",
+    "left": 270.0,
+    "right": 364.0,
+    "kind": "previous unique pair",
+    "source_peak": 287.0,
+    "gas_peak": 294.5
+  },
+  {
+    "case_id": "window_6B03271_co2_00",
+    "heat_id": "6B03271",
+    "gas": "co2",
+    "left": 100.0,
+    "right": 250.0,
+    "kind": "baseline window overlap group",
+    "centers": [
+      145.0
+    ],
+    "lags": [
+      22.5
+    ]
+  },
+  {
+    "case_id": "window_6B03271_co2_01",
+    "heat_id": "6B03271",
+    "gas": "co2",
+    "left": 242.5,
+    "right": 395.0,
+    "kind": "baseline window overlap group",
+    "centers": [
+      287.5,
+      290.0
+    ],
+    "lags": [
+      7.5,
+      7.5
+    ]
+  },
+  {
+    "case_id": "pair_6C02057_co_events_0001",
+    "heat_id": "6C02057",
+    "gas": "co",
+    "left": 0.5,
+    "right": 92.5,
+    "kind": "previous unique pair",
+    "source_peak": 16.5,
+    "gas_peak": 24.0
+  },
+  {
+    "case_id": "window_6C02057_co_00",
+    "heat_id": "6C02057",
+    "gas": "co",
+    "left": 97.5,
+    "right": 247.5,
+    "kind": "baseline window overlap group",
+    "centers": [
+      142.5
+    ],
+    "lags": [
+      40.0
+    ]
+  },
+  {
+    "case_id": "pair_6C02057_co2_v2_0017",
+    "heat_id": "6C02057",
+    "gas": "co2",
+    "left": 142.5,
+    "right": 238.0,
+    "kind": "previous unique pair",
+    "source_peak": 159.0,
+    "gas_peak": 175.5
+  },
+  {
+    "case_id": "window_6C02057_co2_00",
+    "heat_id": "6C02057",
+    "gas": "co2",
+    "left": 50.0,
+    "right": 200.0,
+    "kind": "baseline window overlap group",
+    "centers": [
+      95.0
+    ],
+    "lags": [
+      7.5
+    ]
+  },
+  {
+    "case_id": "window_6C02057_co2_01",
+    "heat_id": "6C02057",
+    "gas": "co2",
+    "left": 115.0,
+    "right": 280.0,
+    "kind": "baseline window overlap group",
+    "centers": [
+      160.0,
+      170.0,
+      172.5,
+      175.0
+    ],
+    "lags": [
+      16.0,
+      36.5,
+      36.5,
+      36.5
+    ]
+  },
+  {
+    "case_id": "window_6C02058_co_00",
+    "heat_id": "6C02058",
+    "gas": "co",
+    "left": 0,
+    "right": 170.0,
+    "kind": "baseline window overlap group",
+    "centers": [
+      30.0,
+      42.5,
+      65.0
+    ],
+    "lags": [
+      35.0,
+      27.5,
+      6.0
+    ]
+  },
+  {
+    "case_id": "pair_6C02059_co_v2_0099",
+    "heat_id": "6C02059",
+    "gas": "co",
+    "left": 665.5,
+    "right": 760.5,
+    "kind": "previous unique pair",
+    "source_peak": 682.5,
+    "gas_peak": 686.5
+  },
+  {
+    "case_id": "window_6C02059_co_00",
+    "heat_id": "6C02059",
+    "gas": "co",
+    "left": 635.0,
+    "right": 777.0,
+    "kind": "baseline window overlap group",
+    "centers": [
+      680.0,
+      682.5,
+      685.0
+    ],
+    "lags": [
+      7.5,
+      7.5,
+      7.5
+    ]
+  },
+  {
+    "case_id": "window_6C02059_co2_00",
+    "heat_id": "6C02059",
+    "gas": "co2",
+    "left": 635.0,
+    "right": 777.0,
+    "kind": "baseline window overlap group",
+    "centers": [
+      680.0,
+      682.5,
+      685.0
+    ],
+    "lags": [
+      7.5,
+      7.5,
+      7.5
+    ]
+  },
+  {
+    "case_id": "window_6C02060_co_00",
+    "heat_id": "6C02060",
+    "gas": "co",
+    "left": 2.5,
+    "right": 157.5,
+    "kind": "baseline window overlap group",
+    "centers": [
+      47.5,
+      50.0,
+      52.5
+    ],
+    "lags": [
+      33.5,
+      32.5,
+      32.5
+    ]
+  },
+  {
+    "case_id": "window_6C02107_co_00",
+    "heat_id": "6C02107",
+    "gas": "co",
+    "left": 17.5,
+    "right": 167.5,
+    "kind": "baseline window overlap group",
+    "centers": [
+      62.5
+    ],
+    "lags": [
+      14.0
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "reviewer": "Codex visual review of exported real-data waveform pages",
+  "label_status": "qualitative audit, not independent ground truth",
+  "cases": [
+    {
+      "heat_id": "6B03271",
+      "gas": "CO2",
+      "figure": "pair_6B03271_co2_v2_0036",
+      "observation": "源峰前后气体已处于持续下降段，图中有多个氧枪变化峰；局部变化峰不能唯一归因于287秒源候选。",
+      "assessment": "保留歧义，不确认7.5秒物理时滞"
+    },
+    {
+      "heat_id": "6C02057",
+      "gas": "CO",
+      "figure": "pair_6C02057_co_events_0001",
+      "observation": "唯一边实际匹配16.5秒氧枪下降变化与24秒CO小幅下降，均为负极性；不是图中更明显的CO上升段。源峰仅在九尺度中的两种重现，且邻近源仍有竞争。",
+      "assessment": "保留局部下降候选，不能作为启动上升时滞"
+    },
+    {
+      "heat_id": "6C02057",
+      "gas": "CO2",
+      "figure": "pair_6C02057_co2_v2_0017",
+      "observation": "159秒附近氧枪和CO2均有多次波动，波形页不能将175.5秒目标峰唯一归因于选定源峰。",
+      "assessment": "保留歧义，不确认16.5秒物理时滞"
+    },
+    {
+      "heat_id": "6C02059",
+      "gas": "CO",
+      "figure": "pair_6C02059_co_v2_0099",
+      "observation": "局部配对的起始时间差为负而峰值差为正；显示区间后部还有更大幅度的气体下降，不能混为同一个响应。",
+      "assessment": "时滞定义及事件身份均不确定"
+    }
+  ]
+}

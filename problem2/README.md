@@ -132,3 +132,7 @@ PDF嵌入字体，SVG保留可编辑文字并要求查看设备安装Times New R
 在 `9b8513a` 基线之后，新增 [独立研究入口](research/response_broadening/README.md) 与
 [当前研究报告](research/response_broadening/results/REPORT.md)。新研究比较V2事件接口、保留歧义的一对一事件匹配及正则化FIR响应核筛选，
 合成与十炉真实证据分开保存。正式V2、第三问接口及前轮审查报告均保持冻结；本轮未启动流量—时滞拟合。
+
+## 当前真实事件验证
+
+以 `dea6637` 为基准的[真实事件验证](research/real_event_validation/results/REPORT.md)及[复现入口](research/real_event_validation/README.md)保存十炉候选、原24窗口复核、重叠与尺度检查。用户已确认中文附件1只是现有英文原始文件的改名；本轮文件指纹核验关闭了前轮报告中的数据身份待确认项。历史报告仍保留当时状态，正式模型与NPZ接口保持冻结。

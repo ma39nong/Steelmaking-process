@@ -1,0 +1,24 @@
+{
+  "baseline_commit": "dea6637",
+  "dt_s": 0.5,
+  "response_horizon_s": 60.0,
+  "event_time_tolerance_s": 5.0,
+  "flow_sg_windows": [
+    21,
+    31,
+    41
+  ],
+  "change_sg_windows": [
+    9,
+    21,
+    41
+  ],
+  "circular_controls": 99,
+  "random_seed": 4101,
+  "review_padding_s": 15.0,
+  "counter_increment_band_m3": [
+    4.5,
+    5.0
+  ],
+  "event_configuration": "problem2/research/response_broadening/config.json"
+}
