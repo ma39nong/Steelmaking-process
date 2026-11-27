@@ -126,3 +126,9 @@ python -m problem2.src.delay_audit --stage report
 新图要求真实 Times New Roman、fontconfig 的 `fc-match` 和 Poppler 的 `pdffonts`。
 共享配置在 `src/figure_fonts.py`；缺失时明确失败，不能替代字体继续导出。
 PDF嵌入字体，SVG保留可编辑文字并要求查看设备安装Times New Roman。
+
+## 响应展宽与事件匹配独立研究
+
+在 `9b8513a` 基线之后，新增 [独立研究入口](research/response_broadening/README.md) 与
+[当前研究报告](research/response_broadening/results/REPORT.md)。新研究比较V2事件接口、保留歧义的一对一事件匹配及正则化FIR响应核筛选，
+合成与十炉真实证据分开保存。正式V2、第三问接口及前轮审查报告均保持冻结；本轮未启动流量—时滞拟合。

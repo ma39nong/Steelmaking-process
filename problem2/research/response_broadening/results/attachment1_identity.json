@@ -1,0 +1,15 @@
+{
+  "status": "pending_designated_new_file",
+  "existing_manifest_sha256": "8c73aaefadb9c8d8c3f83b193d9b4583dcfdfb239446c69b7eacd4120820783c",
+  "observed_files": [
+    {
+      "path": "/home/user/APMCM-B/Data/Attachment 1. Heat No. 6B03205.xlsb",
+      "bytes": 12633846,
+      "sha256": "8c73aaefadb9c8d8c3f83b193d9b4583dcfdfb239446c69b7eacd4120820783c"
+    }
+  ],
+  "existing_file_matches_prior": true,
+  "new_file_identity_verified": false,
+  "freeze_gate_pass": false,
+  "conclusion": "The designated new Chinese-named attachment has not been located; equality to the old manifest does not resolve this requirement."
+}

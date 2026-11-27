@@ -1,0 +1,54 @@
+{
+  "commit": "9b8513a",
+  "scenarios": [
+    "adjacent_events",
+    "broadened_theta_2s",
+    "broadened_theta_5s",
+    "drifting_5_to_25s",
+    "fixed_+0s",
+    "fixed_+15s",
+    "fixed_+30s",
+    "fixed_+55s",
+    "fixed_+5s",
+    "fixed_+60s",
+    "fixed_-15s",
+    "fixed_-30s",
+    "fixed_-55s",
+    "fixed_-5s",
+    "fixed_-60s",
+    "noise_0.5",
+    "noise_1",
+    "unrelated"
+  ],
+  "scenario_count": 18,
+  "pure_translation_reused_without_rerun": [
+    "fixed_+0s",
+    "fixed_+15s",
+    "fixed_+30s",
+    "fixed_+55s",
+    "fixed_+5s",
+    "fixed_+60s",
+    "fixed_-15s",
+    "fixed_-30s",
+    "fixed_-55s",
+    "fixed_-5s",
+    "fixed_-60s"
+  ],
+  "nonideal_replay": [
+    "adjacent_events",
+    "broadened_theta_2s",
+    "broadened_theta_5s",
+    "drifting_5_to_25s",
+    "noise_0.5",
+    "noise_1",
+    "unrelated"
+  ],
+  "limitation": "Most prior traces have no sparse event ground truth. Event PR/F1 are not defined for them.",
+  "references": {
+    "synthetic_summary.json": "17cbd5b630e406702c3d5df2136927b97ec7837eb2daeedbb37288f66089738b",
+    "real_summary.json": "0e3af546ec68eb0bf16ca7a1ea6363c7963a0cba1bc4ff16e9f2a70627df2cb4",
+    "accepted_windows.csv": "1c59f274631c2e24e6226edb96d2cfac3983bbe046e73b07fd7ad829f0544900",
+    "provenance.json": "8c34ee3c631b31ec830adeddae720438273f83701aa89ef74df30af817016cf4"
+  },
+  "previous_report_sha256": "b929d7aea5357cdf6e0bf4461563af695a50e348de6c47b3e4dfa808fdcfd86a"
+}

@@ -1,0 +1,51 @@
+{
+  "releases": [
+    {
+      "tag": "problem1-final-data-v1",
+      "url": "https://github.com/ma39nong/Steelmaking-process/releases/tag/problem1-final-data-v1",
+      "assets": [
+        "data_package_manifest.json",
+        "problem1-final-data.zip",
+        "SHA256SUMS"
+      ]
+    },
+    {
+      "tag": "problem2-final-data",
+      "url": "https://github.com/ma39nong/Steelmaking-process/releases/tag/problem2-final-data",
+      "assets": [
+        "Steelmaking-process-q2-final-data.SHA256",
+        "Steelmaking-process-q2-final-data.zip"
+      ]
+    }
+  ],
+  "q2_zip_sha256": "c1c444c56ea5827d5ea91465e86b7b98818883d6487e839f67c23524fe68c8a1",
+  "zip_checksum_verified": true,
+  "all_zip_member_checksums_verified": true,
+  "archive_inventory": [
+    "artifact_manifest.json",
+    "data/6B03205_q2_processed.npz",
+    "data/6B03206_q2_processed.npz",
+    "data/6B03270_q2_processed.npz",
+    "data/6B03271_q2_processed.npz",
+    "data/6C02057_q2_processed.npz",
+    "data/6C02058_q2_processed.npz",
+    "data/6C02059_q2_processed.npz",
+    "data/6C02060_q2_processed.npz",
+    "data/6C02107_q2_processed.npz",
+    "data/6C02108_q2_processed.npz",
+    "data_dictionary.md",
+    "handoff_for_problem3.md",
+    "README.md",
+    "SHA256SUMS"
+  ],
+  "historical_npz_heats": 10,
+  "historical_npz_fields": 570,
+  "historical_numeric_and_metadata_match": true,
+  "masks_centers_and_time_axes_exact": true,
+  "q1_manifest_sha256": "359b2937f23497b674e1ee3eda581e2dce7745ced2998f878ea6cf44e7c77bc5",
+  "q1_manifest_checksum_verified": true,
+  "q1_manifest_declares_raw_xlsb_included": false,
+  "raw_xlsb_assets_listed": false,
+  "designated_new_raw_attachment1_verified": false,
+  "distinction": "Historical processed NPZ identity is now checked directly. Releases do not supply the designated new raw attachment1; these are separate checks."
+}

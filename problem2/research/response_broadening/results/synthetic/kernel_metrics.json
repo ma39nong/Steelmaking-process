@@ -1,0 +1,7202 @@
+[
+  {
+    "seed": 2001,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9998070080810408,
+    "test_skill": 0.9998725787311024,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.108372104820848,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.0022116328665255447,
+      "tail_mass": 0.0006697081036233871
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.10583252235116092,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2001,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9998265817586708,
+    "test_skill": 0.9998621651849755,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.363160437604957,
+      "width": 23.5,
+      "polarity": 1,
+      "minority_mass": 0.00907491783153473,
+      "tail_mass": 0.003012729887523626
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.3645334980645387,
+      "width": 2.0
+    }
+  },
+  {
+    "seed": 2001,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9997611711905546,
+    "test_skill": 0.9998105551745606,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.849559011778616,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.010357176903149341,
+      "tail_mass": 0.0035901594220906666
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.34652502597367985,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2001,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9629849840000162,
+    "test_skill": 0.9565253509358468,
+    "usable": false,
+    "estimated": {
+      "onset": 1.5,
+      "peak": 60.0,
+      "centroid": 27.019708864412333,
+      "width": 58.0,
+      "polarity": 1,
+      "minority_mass": 0.2562935078932398,
+      "tail_mass": 0.09388460793985672
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2001,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9574748551546043,
+    "test_skill": 0.9583340713713582,
+    "usable": false,
+    "estimated": {
+      "onset": 6.0,
+      "peak": 10.5,
+      "centroid": 16.143435172424503,
+      "width": 30.0,
+      "polarity": 1,
+      "minority_mass": 0.021521224751360982,
+      "tail_mass": 0.0007619475759543335
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 1.0,
+      "peak": 0.5,
+      "centroid": 1.1448082328840847,
+      "width": 8.5
+    }
+  },
+  {
+    "seed": 2001,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.999635895769673,
+    "test_skill": 0.999357130618675,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.133856641230176,
+      "width": 23.0,
+      "polarity": 1,
+      "minority_mass": 0.0065227087260741655,
+      "tail_mass": 0.0016558381668623397
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.13522970168975768,
+      "width": 1.5
+    }
+  },
+  {
+    "seed": 2001,
+    "scenario": "null_response",
+    "validation_skill": -0.1095729554888416,
+    "test_skill": -0.06053275910898459,
+    "usable": false,
+    "estimated": {
+      "onset": 2.5,
+      "peak": 60.0,
+      "centroid": 32.090246489260316,
+      "width": 57.0,
+      "polarity": 1,
+      "minority_mass": 0.29505045994230467,
+      "tail_mass": 0.09883539058428305
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2001,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.999910413676832,
+    "test_skill": 0.999902325741036,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.76895212190035,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.4414533453311713,
+      "tail_mass": 0.001861182012188488
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.0931942438872575,
+      "width": 0.0
+    }
+  },
+  {
+    "seed": 2002,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9997440158010589,
+    "test_skill": 0.9998569582928681,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.099141880633667,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.001610462743821459,
+      "tail_mass": 0.0002922075770864297
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.09660229816397958,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2002,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9997844570852396,
+    "test_skill": 0.9998308366190358,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.489979273164298,
+      "width": 24.5,
+      "polarity": 1,
+      "minority_mass": 0.01315620707374348,
+      "tail_mass": 0.0030996792302981687
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.49135233362387964,
+      "width": 3.0
+    }
+  },
+  {
+    "seed": 2002,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9996620130641819,
+    "test_skill": 0.9997113835204771,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.771339077364146,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.012868781736175085,
+      "tail_mass": 0.0047244215079708584
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.4247449603881499,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2002,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9734790510079553,
+    "test_skill": 0.9801367101525166,
+    "usable": false,
+    "estimated": {
+      "onset": 3.0,
+      "peak": 60.0,
+      "centroid": 31.195253696743457,
+      "width": 57.0,
+      "polarity": 1,
+      "minority_mass": 0.2678412223147025,
+      "tail_mass": 0.1206516428771275
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2002,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9258259441214678,
+    "test_skill": 0.9431525876653837,
+    "usable": true,
+    "estimated": {
+      "onset": 6.0,
+      "peak": 10.0,
+      "centroid": 17.209579057618726,
+      "width": 38.5,
+      "polarity": 1,
+      "minority_mass": 0.019377552778748603,
+      "tail_mass": 0.008460927431361967
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 1.0,
+      "peak": 0.0,
+      "centroid": 2.210952118078307,
+      "width": 17.0
+    }
+  },
+  {
+    "seed": 2002,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9994345337043121,
+    "test_skill": 0.9983280063464158,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 11.5,
+      "centroid": 16.732887938222984,
+      "width": 35.0,
+      "polarity": 1,
+      "minority_mass": 0.03805277551298263,
+      "tail_mass": 0.00815297946887536
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 1.5,
+      "centroid": 1.734260998682565,
+      "width": 13.5
+    }
+  },
+  {
+    "seed": 2002,
+    "scenario": "null_response",
+    "validation_skill": -0.05300352029624,
+    "test_skill": -0.08365014259935277,
+    "usable": false,
+    "estimated": {
+      "onset": 0.5,
+      "peak": 60.0,
+      "centroid": 27.833947460345012,
+      "width": 59.0,
+      "polarity": 1,
+      "minority_mass": 0.32154685505899233,
+      "tail_mass": 0.12636502326044013
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2002,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999200362028593,
+    "test_skill": 0.9999206803891982,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 37.5,
+      "centroid": 24.75104372937949,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.4414465832992349,
+      "tail_mass": 0.0016776313730232106
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.5,
+      "centroid": 0.0752858513663952,
+      "width": 0.0
+    }
+  },
+  {
+    "seed": 2003,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9997626258995285,
+    "test_skill": 0.9998675663183251,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.665235720843405,
+      "width": 17.5,
+      "polarity": 1,
+      "minority_mass": 0.010725427675913972,
+      "tail_mass": 0.0036045541480985146
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.6626961383737182,
+      "width": 1.5
+    }
+  },
+  {
+    "seed": 2003,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.999769373210404,
+    "test_skill": 0.9998525375781632,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 15.411589161887667,
+      "width": 24.0,
+      "polarity": 1,
+      "minority_mass": 0.013388418862767162,
+      "tail_mass": 0.0037956007072345874
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.41296222234724844,
+      "width": 2.5
+    }
+  },
+  {
+    "seed": 2003,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9997025056858035,
+    "test_skill": 0.9997946802943729,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.786042200759766,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.012928180365529366,
+      "tail_mass": 0.004296542566668705
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.41004183699253005,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2003,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9850896229448051,
+    "test_skill": 0.9566111470547636,
+    "usable": false,
+    "estimated": {
+      "onset": 1.0,
+      "peak": 0.0,
+      "centroid": 23.044911921574617,
+      "width": 57.5,
+      "polarity": 1,
+      "minority_mass": 0.2520173817618329,
+      "tail_mass": 0.06607815211393041
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2003,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9390530896589582,
+    "test_skill": 0.9569148345151153,
+    "usable": false,
+    "estimated": {
+      "onset": 6.0,
+      "peak": 11.0,
+      "centroid": 16.78135802949798,
+      "width": 34.5,
+      "polarity": 1,
+      "minority_mass": 0.02290763709183016,
+      "tail_mass": 0.0025670434236805682
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 1.0,
+      "peak": 1.0,
+      "centroid": 1.7827310899575615,
+      "width": 13.0
+    }
+  },
+  {
+    "seed": 2003,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9994966616301849,
+    "test_skill": 0.999466998797534,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 11.0,
+      "centroid": 16.596506072849298,
+      "width": 36.0,
+      "polarity": 1,
+      "minority_mass": 0.035052152033336795,
+      "tail_mass": 0.013625674957220136
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 1.0,
+      "centroid": 1.5978791333088793,
+      "width": 14.5
+    }
+  },
+  {
+    "seed": 2003,
+    "scenario": "null_response",
+    "validation_skill": 0.09152087613206328,
+    "test_skill": -0.08778346344520882,
+    "usable": false,
+    "estimated": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 31.568785908307635,
+      "width": 59.0,
+      "polarity": -1,
+      "minority_mass": 0.3338839753241956,
+      "tail_mass": 0.09672736606804622
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2003,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.999902527500601,
+    "test_skill": 0.9998810623658606,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 38.0,
+      "centroid": 24.73954271681798,
+      "width": 36.0,
+      "polarity": 1,
+      "minority_mass": 0.44151673597568625,
+      "tail_mass": 0.002240224905744714
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.06378483880488517,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2004,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9996412470476038,
+    "test_skill": 0.9998100225454206,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.12498959929285,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.0018167666196165057,
+      "tail_mass": 0.0006295329594166905
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.12245001682316214,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2004,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9997044994714642,
+    "test_skill": 0.9997425405543784,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 14.831193897910584,
+      "width": 22.0,
+      "polarity": 1,
+      "minority_mass": 0.009926496932309993,
+      "tail_mass": 0.0005435107472611376
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.16743304162983463,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2004,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9995344814617377,
+    "test_skill": 0.9996446722796554,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.900990813478668,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.008769726259592436,
+      "tail_mass": 0.003223250154542464
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.2950932242736286,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2004,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9625577193715402,
+    "test_skill": 0.9580871337705462,
+    "usable": false,
+    "estimated": {
+      "onset": 5.0,
+      "peak": 60.0,
+      "centroid": 32.957050801232334,
+      "width": 55.0,
+      "polarity": 1,
+      "minority_mass": 0.26712046347415874,
+      "tail_mass": 0.13374202003671032
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2004,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9374857582189796,
+    "test_skill": 0.9469882638099445,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.5,
+      "centroid": 17.56376183734562,
+      "width": 40.5,
+      "polarity": 1,
+      "minority_mass": 0.02287243668132068,
+      "tail_mass": 0.011390756767770172
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 2.5651348978052013,
+      "width": 19.0
+    }
+  },
+  {
+    "seed": 2004,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9993238765692214,
+    "test_skill": 0.9979901220109418,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 14.816121133400161,
+      "width": 22.0,
+      "polarity": 1,
+      "minority_mass": 0.008048256408775474,
+      "tail_mass": 0.00014057016626985194
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.18250580614025758,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2004,
+    "scenario": "null_response",
+    "validation_skill": -0.11807550242107956,
+    "test_skill": -0.28609653765871124,
+    "usable": false,
+    "estimated": {
+      "onset": 4.0,
+      "peak": 60.0,
+      "centroid": 32.70870829169007,
+      "width": 56.0,
+      "polarity": -1,
+      "minority_mass": 0.4110352166544847,
+      "tail_mass": 0.21472158784486164
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2004,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9998752005450688,
+    "test_skill": 0.9998647427089925,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 38.0,
+      "centroid": 24.472441961193724,
+      "width": 36.0,
+      "polarity": 1,
+      "minority_mass": 0.44151579619785253,
+      "tail_mass": 0.0002975957956027984
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.20331591681937056,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2005,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9997758383790768,
+    "test_skill": 0.9998433543334914,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.179001524326196,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.002988919187460438,
+      "tail_mass": 0.0009438163130793775
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.17646194185650899,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2005,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9997901781777091,
+    "test_skill": 0.9998127295458613,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.027772878193343,
+      "width": 22.5,
+      "polarity": 1,
+      "minority_mass": 0.008049975852208653,
+      "tail_mass": 0.0016297475703678766
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.02914593865292403,
+      "width": 1.0
+    }
+  },
+  {
+    "seed": 2005,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9996896939573673,
+    "test_skill": 0.9997172286170839,
+    "usable": true,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 9.0,
+      "centroid": 20.048134498309537,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.004868649866642152,
+      "tail_mass": 0.004130584866051117
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 2.0,
+      "centroid": 0.14794953944275946,
+      "width": 0.0
+    }
+  },
+  {
+    "seed": 2005,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.90981470819426,
+    "test_skill": 0.9574840267350992,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 18.0,
+      "centroid": 25.750526191933634,
+      "width": 48.5,
+      "polarity": 1,
+      "minority_mass": 0.17001169482121997,
+      "tail_mass": 0.029047721690076717
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2005,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9518806600158213,
+    "test_skill": 0.9438466850000907,
+    "usable": false,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 17.43851421131371,
+      "width": 41.0,
+      "polarity": 1,
+      "minority_mass": 0.02209507658543179,
+      "tail_mass": 0.0113252446173457
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 2.4398872717732907,
+      "width": 19.5
+    }
+  },
+  {
+    "seed": 2005,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9994272809145346,
+    "test_skill": 0.9986899838750017,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.024295129119498,
+      "width": 23.0,
+      "polarity": 1,
+      "minority_mass": 0.010429513840855175,
+      "tail_mass": 0.0005598336422181027
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.025668189579079126,
+      "width": 1.5
+    }
+  },
+  {
+    "seed": 2005,
+    "scenario": "null_response",
+    "validation_skill": -0.036881188025090994,
+    "test_skill": -0.27736758980428733,
+    "usable": false,
+    "estimated": {
+      "onset": 4.0,
+      "peak": 60.0,
+      "centroid": 29.416126665813714,
+      "width": 56.0,
+      "polarity": 1,
+      "minority_mass": 0.09567442194970495,
+      "tail_mass": 0.1534391739554742
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2005,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9998915762957995,
+    "test_skill": 0.9998902312438204,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.60984107208455,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44129594967545077,
+      "tail_mass": 0.0011436512320468994
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.06591680592854487,
+      "width": 0.0
+    }
+  },
+  {
+    "seed": 2006,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9998264297737337,
+    "test_skill": 0.9998350561059074,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.29691412394705,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.005277957432784435,
+      "tail_mass": 0.00042218756229756206
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.29437454147736375,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2006,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9998170507565768,
+    "test_skill": 0.9998002748042663,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.188932158983862,
+      "width": 23.5,
+      "polarity": 1,
+      "minority_mass": 0.01079070636612137,
+      "tail_mass": 0.0007472251030293008
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.19030521944344336,
+      "width": 2.0
+    }
+  },
+  {
+    "seed": 2006,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9997216025763163,
+    "test_skill": 0.9996765729493423,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.87341063693997,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.009992958528522703,
+      "tail_mass": 0.004202346015280821
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.3226734008123273,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2006,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9126305240378539,
+    "test_skill": 0.9674208723016643,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 18.0,
+      "centroid": 25.992877051704966,
+      "width": 48.5,
+      "polarity": 1,
+      "minority_mass": 0.17210230450257014,
+      "tail_mass": 0.02924646321011098
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2006,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9607238408037424,
+    "test_skill": 0.948321507369228,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.5,
+      "centroid": 18.403453908211247,
+      "width": 39.0,
+      "polarity": 1,
+      "minority_mass": 0.03785341995217651,
+      "tail_mass": 0.014247598188441289
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.5,
+      "centroid": 3.404826968670829,
+      "width": 17.5
+    }
+  },
+  {
+    "seed": 2006,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9992887952164994,
+    "test_skill": 0.9978655744474154,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.5,
+      "centroid": 16.628516888469836,
+      "width": 37.0,
+      "polarity": 1,
+      "minority_mass": 0.03634046132073079,
+      "tail_mass": 0.006772296935419003
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 1.6298899489294172,
+      "width": 15.5
+    }
+  },
+  {
+    "seed": 2006,
+    "scenario": "null_response",
+    "validation_skill": -0.01350441783213241,
+    "test_skill": 0.06673076374775466,
+    "usable": false,
+    "estimated": {
+      "onset": 0.0,
+      "peak": 60.0,
+      "centroid": 31.421387999464454,
+      "width": 60.0,
+      "polarity": -1,
+      "minority_mass": 0.4206336029883395,
+      "tail_mass": 0.186462313979072
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2006,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999143714388139,
+    "test_skill": 0.99990016368916,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 38.5,
+      "centroid": 24.562553622132437,
+      "width": 36.0,
+      "polarity": 1,
+      "minority_mass": 0.4412190289511338,
+      "tail_mass": 0.00044126833102080227
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.11320425588065675,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2007,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9998322615255594,
+    "test_skill": 0.9998157309586867,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.13317865967755,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.0023949516402276597,
+      "tail_mass": 0.000630384855839497
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.1306390772078636,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2007,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9998435603646311,
+    "test_skill": 0.9997761322750174,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.125880985162883,
+      "width": 23.0,
+      "polarity": 1,
+      "minority_mass": 0.010909715829828059,
+      "tail_mass": 0.0010809193670526748
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.12725404562246467,
+      "width": 1.5
+    }
+  },
+  {
+    "seed": 2007,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9997726871904142,
+    "test_skill": 0.999667246710892,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.682616901404806,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.014946720235957988,
+      "tail_mass": 0.002861454175979125
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.5134671363474901,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2007,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9456016849315569,
+    "test_skill": 0.9731421476833108,
+    "usable": false,
+    "estimated": {
+      "onset": 1.5,
+      "peak": 60.0,
+      "centroid": 28.175817822242667,
+      "width": 58.0,
+      "polarity": 1,
+      "minority_mass": 0.2561934012439426,
+      "tail_mass": 0.10038880386013974
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2007,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9599208748748992,
+    "test_skill": 0.9503017356969846,
+    "usable": false,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 11.0,
+      "centroid": 19.362593862699242,
+      "width": 47.5,
+      "polarity": 1,
+      "minority_mass": 0.05233564249115789,
+      "tail_mass": 0.011395399188917556
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 1.0,
+      "centroid": 4.363966923158824,
+      "width": 26.0
+    }
+  },
+  {
+    "seed": 2007,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9995758084074272,
+    "test_skill": 0.9981848347679965,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 14.987126683531828,
+      "width": 22.5,
+      "polarity": 1,
+      "minority_mass": 0.007720155577243195,
+      "tail_mass": 0.0008195352889111032
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.01150025600859017,
+      "width": 1.0
+    }
+  },
+  {
+    "seed": 2007,
+    "scenario": "null_response",
+    "validation_skill": 0.07886153828564635,
+    "test_skill": -0.06147097611826835,
+    "usable": false,
+    "estimated": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 27.28871639146773,
+      "width": 57.5,
+      "polarity": -1,
+      "minority_mass": 0.44013502449455627,
+      "tail_mass": 0.026346743571397973
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2007,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999243377381783,
+    "test_skill": 0.9998702288315654,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 38.5,
+      "centroid": 24.598152881943516,
+      "width": 36.0,
+      "polarity": 1,
+      "minority_mass": 0.44143240163512004,
+      "tail_mass": 0.0005737587877884344
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.07760499606957794,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2008,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.999853230339933,
+    "test_skill": 0.9998271107266103,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.096860973634254,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.0017965493969656215,
+      "tail_mass": 0.00032318898854119044
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.09432139116456639,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2008,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9998644016572023,
+    "test_skill": 0.9997889973614595,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 11.0,
+      "centroid": 15.592355175644997,
+      "width": 26.0,
+      "polarity": 1,
+      "minority_mass": 0.019674626138647948,
+      "tail_mass": 0.00417471324100324
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 1.0,
+      "centroid": 0.5937282361045781,
+      "width": 4.5
+    }
+  },
+  {
+    "seed": 2008,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9997812120084622,
+    "test_skill": 0.9996399757443148,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 8.5,
+      "centroid": 19.86268951847573,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.012355461856616706,
+      "tail_mass": 0.003984694860968431
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 1.5,
+      "centroid": 0.3333945192765668,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2008,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.8967169934218515,
+    "test_skill": 0.9549645771588433,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 10.0,
+      "centroid": 26.7855844019341,
+      "width": 48.0,
+      "polarity": 1,
+      "minority_mass": 0.16645085274444107,
+      "tail_mass": 0.03212514745238567
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2008,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9573312195066901,
+    "test_skill": 0.9322733582504004,
+    "usable": false,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 18.51364827397984,
+      "width": 42.5,
+      "polarity": 1,
+      "minority_mass": 0.03955920363435648,
+      "tail_mass": 0.00992523909121873
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 3.515021334439421,
+      "width": 21.0
+    }
+  },
+  {
+    "seed": 2008,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9995772533992074,
+    "test_skill": 0.9980180410913759,
+    "usable": true,
+    "estimated": {
+      "onset": 6.0,
+      "peak": 11.0,
+      "centroid": 15.745185754705508,
+      "width": 27.5,
+      "polarity": 1,
+      "minority_mass": 0.02886441368571713,
+      "tail_mass": 0.001641873883629356
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 1.0,
+      "peak": 1.0,
+      "centroid": 0.7465588151650895,
+      "width": 6.0
+    }
+  },
+  {
+    "seed": 2008,
+    "scenario": "null_response",
+    "validation_skill": -0.12549926020879787,
+    "test_skill": -0.08596429890546653,
+    "usable": false,
+    "estimated": {
+      "onset": 1.0,
+      "peak": 60.0,
+      "centroid": 30.739157597594932,
+      "width": 58.5,
+      "polarity": -1,
+      "minority_mass": 0.09319791613100145,
+      "tail_mass": 0.08923191704452274
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2008,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999386256063441,
+    "test_skill": 0.9999044044852714,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 37.0,
+      "centroid": 24.69674876494288,
+      "width": 36.0,
+      "polarity": 1,
+      "minority_mass": 0.4416369592048931,
+      "tail_mass": 0.0025716310981808255
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 1.0,
+      "centroid": 0.020990886929784125,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2009,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9997367941946879,
+    "test_skill": 0.9998523001867143,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.15274047850097,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.002462761489098928,
+      "tail_mass": 0.00014886547624643983
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.15020089603128284,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2009,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9997827409255517,
+    "test_skill": 0.9998229361849322,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 15.588522518005375,
+      "width": 25.5,
+      "polarity": 1,
+      "minority_mass": 0.02199948275670805,
+      "tail_mass": 0.0014316873868688144
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.5898955784649562,
+      "width": 4.0
+    }
+  },
+  {
+    "seed": 2009,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9996722651537221,
+    "test_skill": 0.999727490991447,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.833670089166404,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.010587988736473155,
+      "tail_mass": 0.0036403057364352348
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.3624139485858926,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2009,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9538403296419761,
+    "test_skill": 0.9729939455135874,
+    "usable": false,
+    "estimated": {
+      "onset": 2.0,
+      "peak": 60.0,
+      "centroid": 29.86136721417565,
+      "width": 58.0,
+      "polarity": 1,
+      "minority_mass": 0.25444160310260805,
+      "tail_mass": 0.11367700254427496
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2009,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9458692421693282,
+    "test_skill": 0.9479788565695147,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.5,
+      "centroid": 17.827673226576394,
+      "width": 39.5,
+      "polarity": 1,
+      "minority_mass": 0.031192358361011606,
+      "tail_mass": 0.006577262035207702
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 2.8290462870359754,
+      "width": 18.0
+    }
+  },
+  {
+    "seed": 2009,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9995037948973807,
+    "test_skill": 0.9988100398745173,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 15.768609569560322,
+      "width": 26.0,
+      "polarity": 1,
+      "minority_mass": 0.020348227244067298,
+      "tail_mass": 0.003117294953774744
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.7699826300199035,
+      "width": 4.5
+    }
+  },
+  {
+    "seed": 2009,
+    "scenario": "null_response",
+    "validation_skill": -0.15562714628956598,
+    "test_skill": -0.27259535098201026,
+    "usable": false,
+    "estimated": {
+      "onset": 4.5,
+      "peak": 60.0,
+      "centroid": 36.7596084936775,
+      "width": 55.5,
+      "polarity": 1,
+      "minority_mass": 0.2539889564666038,
+      "tail_mass": 0.14535632429313106
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2009,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999001255714841,
+    "test_skill": 0.9998998027292901,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 38.5,
+      "centroid": 24.68305547993423,
+      "width": 36.5,
+      "polarity": 1,
+      "minority_mass": 0.44185957579240553,
+      "tail_mass": 0.0009560150360265082
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.0072976019211346,
+      "width": 1.0
+    }
+  },
+  {
+    "seed": 2010,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9997256885317665,
+    "test_skill": 0.9998718228826542,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.081400724822995,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.002046519790462277,
+      "tail_mass": 0.0005385712665533699
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.07886114235330766,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2010,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9997445266395666,
+    "test_skill": 0.9998543511415002,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 15.489780741972325,
+      "width": 24.0,
+      "polarity": 1,
+      "minority_mass": 0.011195378544805753,
+      "tail_mass": 0.001177057205782985
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 1.0,
+      "centroid": 0.4911538024319064,
+      "width": 2.5
+    }
+  },
+  {
+    "seed": 2010,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9996246623189549,
+    "test_skill": 0.9997830254361131,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 8.5,
+      "centroid": 19.848390121350246,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.010969974422682775,
+      "tail_mass": 0.005171078359879227
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 1.5,
+      "centroid": 0.3476939164020507,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2010,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9717437292972346,
+    "test_skill": 0.9641253944472863,
+    "usable": false,
+    "estimated": {
+      "onset": 1.5,
+      "peak": 60.0,
+      "centroid": 27.459241541072938,
+      "width": 58.0,
+      "polarity": 1,
+      "minority_mass": 0.2599407939398945,
+      "tail_mass": 0.09622187996427065
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2010,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9449342992664238,
+    "test_skill": 0.9408866023131255,
+    "usable": false,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 17.765415764656836,
+      "width": 40.0,
+      "polarity": 1,
+      "minority_mass": 0.02024425653319057,
+      "tail_mass": 0.011517904186130556
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 2.766788825116418,
+      "width": 18.5
+    }
+  },
+  {
+    "seed": 2010,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9993682236777057,
+    "test_skill": 0.998447237518068,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.256398925365056,
+      "width": 23.0,
+      "polarity": 1,
+      "minority_mass": 0.005801630378790485,
+      "tail_mass": 0.0027605793286832694
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.2577719858246379,
+      "width": 1.5
+    }
+  },
+  {
+    "seed": 2010,
+    "scenario": "null_response",
+    "validation_skill": -0.23634752939535963,
+    "test_skill": 0.0013647416145402547,
+    "usable": false,
+    "estimated": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 21.109292199850028,
+      "width": 57.0,
+      "polarity": 1,
+      "minority_mass": 0.4147341090416223,
+      "tail_mass": 0.03028886320101818
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2010,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9998904118267842,
+    "test_skill": 0.9999166054365455,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 38.5,
+      "centroid": 24.715068250240623,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44095084780822213,
+      "tail_mass": 0.0006615958343290547
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.5,
+      "centroid": 0.0393103722275292,
+      "width": 0.0
+    }
+  },
+  {
+    "seed": 2011,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9998060062790958,
+    "test_skill": 0.9998413267782525,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.134840851231804,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.002231632091369037,
+      "tail_mass": 0.0005869650583839155
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.13230126876211656,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2011,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9998174769853346,
+    "test_skill": 0.999798169117935,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 15.993510101378376,
+      "width": 27.5,
+      "polarity": 1,
+      "minority_mass": 0.021602002878618316,
+      "tail_mass": 0.00416553249461569
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.9948831618379579,
+      "width": 6.0
+    }
+  },
+  {
+    "seed": 2011,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9997202666675341,
+    "test_skill": 0.9996648930372888,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.94762056018185,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.009900648846634554,
+      "tail_mass": 0.004517516053196732
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.2484634775704464,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2011,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9444930276597787,
+    "test_skill": 0.951430053498857,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 60.0,
+      "centroid": 33.633262381345446,
+      "width": 53.0,
+      "polarity": 1,
+      "minority_mass": 0.26224807270066,
+      "tail_mass": 0.13950488684289714
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2011,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9334202241311196,
+    "test_skill": 0.9091883769188762,
+    "usable": false,
+    "estimated": {
+      "onset": 4.0,
+      "peak": 8.0,
+      "centroid": 22.072711330268746,
+      "width": 53.5,
+      "polarity": 1,
+      "minority_mass": 0.13926173787063895,
+      "tail_mass": 0.03823330136101588
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 3.0,
+      "peak": 2.0,
+      "centroid": 7.074084390728327,
+      "width": 32.0
+    }
+  },
+  {
+    "seed": 2011,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9995666156527793,
+    "test_skill": 0.9967653695856707,
+    "usable": true,
+    "estimated": {
+      "onset": 6.0,
+      "peak": 10.0,
+      "centroid": 16.215393643382534,
+      "width": 32.0,
+      "polarity": 1,
+      "minority_mass": 0.03172424423787682,
+      "tail_mass": 0.008503756072342291
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 1.0,
+      "peak": 0.0,
+      "centroid": 1.216766703842115,
+      "width": 10.5
+    }
+  },
+  {
+    "seed": 2011,
+    "scenario": "null_response",
+    "validation_skill": -0.0575963792011589,
+    "test_skill": -0.08568353973287546,
+    "usable": false,
+    "estimated": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 23.89089296717446,
+      "width": 55.0,
+      "polarity": 1,
+      "minority_mass": 0.4817114512057815,
+      "tail_mass": 0.030342410455443
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2011,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999238519985469,
+    "test_skill": 0.9999041792521867,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 37.5,
+      "centroid": 24.90734970322681,
+      "width": 36.5,
+      "polarity": 1,
+      "minority_mass": 0.44188849874985237,
+      "tail_mass": 0.0024685516171985005
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.2315918252137159,
+      "width": 1.0
+    }
+  },
+  {
+    "seed": 2012,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9998435729663504,
+    "test_skill": 0.9998417058868737,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.318131493997658,
+      "width": 17.0,
+      "polarity": 1,
+      "minority_mass": 0.005358624131927644,
+      "tail_mass": 0.0006127669244380661
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.31559191152797084,
+      "width": 1.0
+    }
+  },
+  {
+    "seed": 2012,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9998467990493461,
+    "test_skill": 0.9998109351136081,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 15.421852064560996,
+      "width": 24.0,
+      "polarity": 1,
+      "minority_mass": 0.013333183906302648,
+      "tail_mass": 0.0018994547173011207
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.4232251250205774,
+      "width": 2.5
+    }
+  },
+  {
+    "seed": 2012,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9997722651525877,
+    "test_skill": 0.9997071505393137,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 8.5,
+      "centroid": 19.966042726184153,
+      "width": 39.5,
+      "polarity": 1,
+      "minority_mass": 0.018534667827366992,
+      "tail_mass": 0.008026386134664625
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 1.5,
+      "centroid": 0.23004131156814367,
+      "width": 2.0
+    }
+  },
+  {
+    "seed": 2012,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9447865147662787,
+    "test_skill": 0.9514319299155478,
+    "usable": false,
+    "estimated": {
+      "onset": 3.5,
+      "peak": 60.0,
+      "centroid": 31.773380651798643,
+      "width": 56.5,
+      "polarity": 1,
+      "minority_mass": 0.26099292746457303,
+      "tail_mass": 0.12428730305520078
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2012,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9538949584523008,
+    "test_skill": 0.945124646314488,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 11.5,
+      "centroid": 17.511311470742193,
+      "width": 36.0,
+      "polarity": 1,
+      "minority_mass": 0.020712438540676947,
+      "tail_mass": 0.006882516649917054
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 1.5,
+      "centroid": 2.5126845312017743,
+      "width": 14.5
+    }
+  },
+  {
+    "seed": 2012,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.999486403861813,
+    "test_skill": 0.99838941936852,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 11.5,
+      "centroid": 17.453214573651866,
+      "width": 43.0,
+      "polarity": 1,
+      "minority_mass": 0.03804176954044678,
+      "tail_mass": 0.010697560550687093
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 1.5,
+      "centroid": 2.454587634111448,
+      "width": 21.5
+    }
+  },
+  {
+    "seed": 2012,
+    "scenario": "null_response",
+    "validation_skill": -0.20186757557664148,
+    "test_skill": -0.5074007763131925,
+    "usable": false,
+    "estimated": {
+      "onset": 0.0,
+      "peak": 60.0,
+      "centroid": 29.561008692948676,
+      "width": 60.0,
+      "polarity": 1,
+      "minority_mass": 0.15634091102497194,
+      "tail_mass": 0.14170145530456163
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2012,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999335576958498,
+    "test_skill": 0.9998963345328321,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 38.5,
+      "centroid": 24.730240289555265,
+      "width": 36.5,
+      "polarity": 1,
+      "minority_mass": 0.44147769152935046,
+      "tail_mass": 0.0011519434532388717
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.05448241154217115,
+      "width": 1.0
+    }
+  },
+  {
+    "seed": 2013,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9998103337982371,
+    "test_skill": 0.9999096640328407,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.109968641613932,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.001995088463491832,
+      "tail_mass": 0.00017841483315787123
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.10742905914424483,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2013,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9998104630162787,
+    "test_skill": 0.9998981426756239,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.315839236236634,
+      "width": 24.0,
+      "polarity": 1,
+      "minority_mass": 0.014405401667458528,
+      "tail_mass": 0.0008186229256475349
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.31721229669621565,
+      "width": 2.5
+    }
+  },
+  {
+    "seed": 2013,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9997440075822881,
+    "test_skill": 0.9998612212263006,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.861584426497153,
+      "width": 39.5,
+      "polarity": 1,
+      "minority_mass": 0.01942627835348289,
+      "tail_mass": 0.00316261525726859
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.3344996112551435,
+      "width": 2.0
+    }
+  },
+  {
+    "seed": 2013,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9774343182112785,
+    "test_skill": 0.9511767537340211,
+    "usable": false,
+    "estimated": {
+      "onset": 1.0,
+      "peak": 0.0,
+      "centroid": 23.03521364637686,
+      "width": 57.5,
+      "polarity": 1,
+      "minority_mass": 0.24272900208523276,
+      "tail_mass": 0.06334060868544521
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2013,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9518995545419896,
+    "test_skill": 0.9684158423757463,
+    "usable": false,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 17.589141917656402,
+      "width": 39.5,
+      "polarity": 1,
+      "minority_mass": 0.03453789842513685,
+      "tail_mass": 0.0031288039730702393
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 2.5905149781159835,
+      "width": 18.0
+    }
+  },
+  {
+    "seed": 2013,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9995742694997036,
+    "test_skill": 0.999547570586299,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.0,
+      "centroid": 15.23105354002739,
+      "width": 24.0,
+      "polarity": 1,
+      "minority_mass": 0.01507575861157104,
+      "tail_mass": 0.0003124550680928904
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 1.0,
+      "centroid": 0.2324266004869706,
+      "width": 2.5
+    }
+  },
+  {
+    "seed": 2013,
+    "scenario": "null_response",
+    "validation_skill": -0.4537203176290643,
+    "test_skill": -0.29811243792737496,
+    "usable": false,
+    "estimated": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 27.508033691946682,
+      "width": 57.5,
+      "polarity": -1,
+      "minority_mass": 0.0018989588887392017,
+      "tail_mass": 0.04943105089688413
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2013,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999057387905225,
+    "test_skill": 0.9999234930622355,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 38.5,
+      "centroid": 24.616267783996026,
+      "width": 36.0,
+      "polarity": 1,
+      "minority_mass": 0.44142502339101153,
+      "tail_mass": 0.00044131258559011055
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.059490094017068174,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2014,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9998583601140437,
+    "test_skill": 0.9998686980264788,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.102291927468126,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.0023789277151797174,
+      "tail_mass": 0.00034281660478808487
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.09975234499843921,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2014,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9998572054567263,
+    "test_skill": 0.9998449906132362,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.0,
+      "centroid": 15.537367001062094,
+      "width": 25.0,
+      "polarity": 1,
+      "minority_mass": 0.012223908061111247,
+      "tail_mass": 0.006263947200642835
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 1.0,
+      "centroid": 0.5387400615216755,
+      "width": 3.5
+    }
+  },
+  {
+    "seed": 2014,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9997894584849745,
+    "test_skill": 0.9997636161441218,
+    "usable": true,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 8.5,
+      "centroid": 20.154694452792043,
+      "width": 38.5,
+      "polarity": 1,
+      "minority_mass": 0.007979548389709172,
+      "tail_mass": 0.006384614792319116
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 1.5,
+      "centroid": 0.041389584960253245,
+      "width": 1.0
+    }
+  },
+  {
+    "seed": 2014,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9491631233431795,
+    "test_skill": 0.9673603528270611,
+    "usable": false,
+    "estimated": {
+      "onset": 2.0,
+      "peak": 60.0,
+      "centroid": 29.847914327496394,
+      "width": 58.0,
+      "polarity": 1,
+      "minority_mass": 0.2538038041146368,
+      "tail_mass": 0.11183428211521029
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2014,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9593861570256854,
+    "test_skill": 0.962715964076666,
+    "usable": false,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 16.687354051958526,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.021901123185006182,
+      "tail_mass": 0.0009964614834264789
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 1.688727112418107,
+      "width": 14.0
+    }
+  },
+  {
+    "seed": 2014,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9995578379184898,
+    "test_skill": 0.9980599192185515,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.0,
+      "centroid": 15.770416937784349,
+      "width": 26.5,
+      "polarity": 1,
+      "minority_mass": 0.020578944712184126,
+      "tail_mass": 0.002162525574661419
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 1.0,
+      "centroid": 0.7717899982439302,
+      "width": 5.0
+    }
+  },
+  {
+    "seed": 2014,
+    "scenario": "null_response",
+    "validation_skill": -0.024174018331750036,
+    "test_skill": -0.09288713662350201,
+    "usable": false,
+    "estimated": {
+      "onset": 3.0,
+      "peak": 50.0,
+      "centroid": 36.586677107347164,
+      "width": 52.5,
+      "polarity": -1,
+      "minority_mass": 0.3190147014057379,
+      "tail_mass": 0.010167557310094204
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2014,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999338294692759,
+    "test_skill": 0.9999170244210195,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 38.5,
+      "centroid": 24.83048382878848,
+      "width": 36.0,
+      "polarity": 1,
+      "minority_mass": 0.441536966908806,
+      "tail_mass": 0.0037551467872767833
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.5,
+      "centroid": 0.15472595077538642,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2015,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9997692733591509,
+    "test_skill": 0.9998957246589422,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.205291089864833,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.0034678910406094193,
+      "tail_mass": 0.0006148147494964154
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.20275150739514558,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2015,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9998030340717813,
+    "test_skill": 0.9998748927126089,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 15.326444526378767,
+      "width": 24.5,
+      "polarity": 1,
+      "minority_mass": 0.013986707809773841,
+      "tail_mass": 0.0009255316813655699
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.32781758683834816,
+      "width": 3.0
+    }
+  },
+  {
+    "seed": 2015,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9997219379653075,
+    "test_skill": 0.99981744159862,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.803707349002533,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.011776054757022964,
+      "tail_mass": 0.004732618782986004
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.3923766887497635,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2015,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9486581018864253,
+    "test_skill": 0.9474727870833306,
+    "usable": false,
+    "estimated": {
+      "onset": 1.5,
+      "peak": 60.0,
+      "centroid": 29.35430955344765,
+      "width": 58.5,
+      "polarity": 1,
+      "minority_mass": 0.2564416849548693,
+      "tail_mass": 0.1104036686037148
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2015,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9573950997854226,
+    "test_skill": 0.9568875983194921,
+    "usable": false,
+    "estimated": {
+      "onset": 5.5,
+      "peak": 11.0,
+      "centroid": 16.357887007840258,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.03173272324199167,
+      "tail_mass": 0.00522620513740612
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 1.5,
+      "peak": 1.0,
+      "centroid": 1.3592600682998395,
+      "width": 14.0
+    }
+  },
+  {
+    "seed": 2015,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9995765766453741,
+    "test_skill": 0.9993923758123793,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 14.820681147592492,
+      "width": 22.0,
+      "polarity": 1,
+      "minority_mass": 0.009703236081702427,
+      "tail_mass": 0.0005065085592812125
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.17794579194792703,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2015,
+    "scenario": "null_response",
+    "validation_skill": 0.23855093804832328,
+    "test_skill": 0.08652624686604216,
+    "usable": true,
+    "estimated": {
+      "onset": 6.0,
+      "peak": 60.0,
+      "centroid": 29.779646299565556,
+      "width": 53.5,
+      "polarity": 1,
+      "minority_mass": 0.10311487866745138,
+      "tail_mass": 0.0836439291804987
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2015,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9998966499651434,
+    "test_skill": 0.999920417750432,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 38.5,
+      "centroid": 24.599370554541487,
+      "width": 36.0,
+      "polarity": 1,
+      "minority_mass": 0.4414359553764409,
+      "tail_mass": 0.000584794515697044
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.07638732347160726,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2016,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9998555617559761,
+    "test_skill": 0.999827908368491,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.5,
+      "centroid": 18.90424786460113,
+      "width": 18.5,
+      "polarity": 1,
+      "minority_mass": 0.017872116929941423,
+      "tail_mass": 0.0012480027688469772
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.5,
+      "centroid": 0.901708282131441,
+      "width": 2.5
+    }
+  },
+  {
+    "seed": 2016,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9998591781173084,
+    "test_skill": 0.9998017016028801,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.603843320482296,
+      "width": 25.5,
+      "polarity": 1,
+      "minority_mass": 0.015530018690359354,
+      "tail_mass": 0.0014285502598185879
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.6052163809418776,
+      "width": 4.0
+    }
+  },
+  {
+    "seed": 2016,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9997897627701099,
+    "test_skill": 0.9996788589106135,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.930124560032493,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.007800293491304319,
+      "tail_mass": 0.0037261193852586427
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.26595947771980377,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2016,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9294179253509618,
+    "test_skill": 0.9760460542817492,
+    "usable": false,
+    "estimated": {
+      "onset": 4.5,
+      "peak": 60.0,
+      "centroid": 31.535995165988588,
+      "width": 55.5,
+      "polarity": 1,
+      "minority_mass": 0.258060248578644,
+      "tail_mass": 0.12223212252060105
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2016,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9633557764342671,
+    "test_skill": 0.9283139226856211,
+    "usable": false,
+    "estimated": {
+      "onset": 6.0,
+      "peak": 12.5,
+      "centroid": 16.32531834960232,
+      "width": 29.5,
+      "polarity": 1,
+      "minority_mass": 0.016452352522033933,
+      "tail_mass": 0.0026864158379657065
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 1.0,
+      "peak": 2.5,
+      "centroid": 1.3266914100619012,
+      "width": 8.0
+    }
+  },
+  {
+    "seed": 2016,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9995563664797802,
+    "test_skill": 0.997267704389891,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 16.25686563524908,
+      "width": 31.0,
+      "polarity": 1,
+      "minority_mass": 0.024863797358592114,
+      "tail_mass": 0.008475169812696777
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 1.2582386957086626,
+      "width": 9.5
+    }
+  },
+  {
+    "seed": 2016,
+    "scenario": "null_response",
+    "validation_skill": -0.3469899471855995,
+    "test_skill": -0.15359821268714247,
+    "usable": false,
+    "estimated": {
+      "onset": 0.5,
+      "peak": 60.0,
+      "centroid": 28.92405241456291,
+      "width": 59.5,
+      "polarity": 1,
+      "minority_mass": 0.268865770185441,
+      "tail_mass": 0.17666435659940838
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2016,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999357946126626,
+    "test_skill": 0.9999016607680211,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 37.5,
+      "centroid": 24.720566796952244,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.441339297690751,
+      "tail_mass": 0.0007585807308625035
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.5,
+      "centroid": 0.04480891893915029,
+      "width": 0.0
+    }
+  },
+  {
+    "seed": 2017,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9998442051648777,
+    "test_skill": 0.9997975386891781,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.160557035366175,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.0026006689993276614,
+      "tail_mass": 0.00026929178680215273
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.1580174528964875,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2017,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9998447320193494,
+    "test_skill": 0.9997578070668591,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.088680969263772,
+      "width": 23.0,
+      "polarity": 1,
+      "minority_mass": 0.009117368294929103,
+      "tail_mass": 0.0007117825946081839
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.09005402972335297,
+      "width": 1.5
+    }
+  },
+  {
+    "seed": 2017,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.999761851746628,
+    "test_skill": 0.9996149825810938,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.75841757128358,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.013305679522985413,
+      "tail_mass": 0.004215113608933352
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.4376664664687162,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2017,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.8773995839097649,
+    "test_skill": 0.9639673724942991,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 10.0,
+      "centroid": 26.857121243433728,
+      "width": 48.5,
+      "polarity": 1,
+      "minority_mass": 0.1722664893733135,
+      "tail_mass": 0.033288346577285244
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2017,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9460808497014914,
+    "test_skill": 0.9340983818002422,
+    "usable": false,
+    "estimated": {
+      "onset": 6.0,
+      "peak": 9.5,
+      "centroid": 20.768279326218902,
+      "width": 48.0,
+      "polarity": 1,
+      "minority_mass": 0.10731007934472776,
+      "tail_mass": 0.022446580189097703
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 1.0,
+      "peak": 0.5,
+      "centroid": 5.769652386678484,
+      "width": 26.5
+    }
+  },
+  {
+    "seed": 2017,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9995452001710992,
+    "test_skill": 0.9966377386295634,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.098265161043612,
+      "width": 23.0,
+      "polarity": 1,
+      "minority_mass": 0.01046771626946489,
+      "tail_mass": 0.0008190547076917245
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.09963822150319324,
+      "width": 1.5
+    }
+  },
+  {
+    "seed": 2017,
+    "scenario": "null_response",
+    "validation_skill": -0.4801317823644793,
+    "test_skill": -0.005050724890929947,
+    "usable": false,
+    "estimated": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 32.818378205286706,
+      "width": 57.5,
+      "polarity": 1,
+      "minority_mass": 0.17324890482021607,
+      "tail_mass": 0.04880162651394899
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2017,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999233693596941,
+    "test_skill": 0.9998853817683219,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 38.0,
+      "centroid": 24.59211772411226,
+      "width": 36.0,
+      "polarity": 1,
+      "minority_mass": 0.44126823137848226,
+      "tail_mass": 0.00036166047475058864
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.08364015390083424,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2018,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.99972641857977,
+    "test_skill": 0.9998829099318239,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.106822488106822,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.002336424172061149,
+      "tail_mass": 0.00013666443137414942
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.1042829056371346,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2018,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9997629371686081,
+    "test_skill": 0.9998524897498107,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 15.133802746304347,
+      "width": 23.0,
+      "polarity": 1,
+      "minority_mass": 0.0066333524964222726,
+      "tail_mass": 0.0006499878595005411
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.13517580676392882,
+      "width": 1.5
+    }
+  },
+  {
+    "seed": 2018,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9996527079356156,
+    "test_skill": 0.9997921656600729,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.987984296528527,
+      "width": 39.0,
+      "polarity": 1,
+      "minority_mass": 0.010071257843198176,
+      "tail_mass": 0.005883483293997944
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.20809974122376929,
+      "width": 1.5
+    }
+  },
+  {
+    "seed": 2018,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9377083438451269,
+    "test_skill": 0.9533924719931577,
+    "usable": false,
+    "estimated": {
+      "onset": 2.0,
+      "peak": 60.0,
+      "centroid": 31.016641694899374,
+      "width": 58.0,
+      "polarity": 1,
+      "minority_mass": 0.26585496707649847,
+      "tail_mass": 0.12006282758607793
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2018,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9418446187270175,
+    "test_skill": 0.9575974263407593,
+    "usable": false,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 16.89860165227364,
+      "width": 36.5,
+      "polarity": 1,
+      "minority_mass": 0.013802647643526499,
+      "tail_mass": 0.0004253253503404239
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 1.899974712733222,
+      "width": 15.0
+    }
+  },
+  {
+    "seed": 2018,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9995371153489395,
+    "test_skill": 0.9993795442135037,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.069207200238568,
+      "width": 22.5,
+      "polarity": 1,
+      "minority_mass": 0.005781134544716343,
+      "tail_mass": 0.0002699548263171388
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.07058026069814893,
+      "width": 1.0
+    }
+  },
+  {
+    "seed": 2018,
+    "scenario": "null_response",
+    "validation_skill": -0.15905272998473619,
+    "test_skill": -0.21390707287558586,
+    "usable": false,
+    "estimated": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 29.687590670774572,
+      "width": 59.5,
+      "polarity": -1,
+      "minority_mass": 0.4075096524317803,
+      "tail_mass": 0.09948680599134724
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2018,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.999875744729852,
+    "test_skill": 0.9999049338061635,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.66616026524222,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.4410405366944936,
+      "tail_mass": 0.0004411862218344614
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.00959761277087523,
+      "width": 0.0
+    }
+  },
+  {
+    "seed": 2019,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9998000162057781,
+    "test_skill": 0.9998952996846715,
+    "usable": false,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.159853275986524,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.0029309923556397792,
+      "tail_mass": 0.001004394450628271
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.1573136935168371,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2019,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9998237789564326,
+    "test_skill": 0.9998661854731091,
+    "usable": false,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 14.864536475166823,
+      "width": 22.5,
+      "polarity": 1,
+      "minority_mass": 0.009428584837641257,
+      "tail_mass": 0.0009368166178056722
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.13409046437359606,
+      "width": 1.0
+    }
+  },
+  {
+    "seed": 2019,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9997339275301823,
+    "test_skill": 0.9997779484564525,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 19.72143769631042,
+      "width": 38.5,
+      "polarity": 1,
+      "minority_mass": 0.012621544727242185,
+      "tail_mass": 0.0030092124782793014
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 1.0,
+      "peak": 2.5,
+      "centroid": 0.47464634144187556,
+      "width": 1.0
+    }
+  },
+  {
+    "seed": 2019,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9699282406189939,
+    "test_skill": 0.9499475969636038,
+    "usable": false,
+    "estimated": {
+      "onset": 1.0,
+      "peak": 0.0,
+      "centroid": 22.502244639478924,
+      "width": 57.5,
+      "polarity": 1,
+      "minority_mass": 0.25142906507373786,
+      "tail_mass": 0.05948824113053949
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2019,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9590327833524501,
+    "test_skill": 0.9736384946963476,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 9.0,
+      "centroid": 22.75313565672666,
+      "width": 46.0,
+      "polarity": 1,
+      "minority_mass": 0.11599240376844801,
+      "tail_mass": 0.012280502607593351
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 1.0,
+      "centroid": 7.754508717186241,
+      "width": 24.5
+    }
+  },
+  {
+    "seed": 2019,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9996102856934019,
+    "test_skill": 0.9995715845072555,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 14.893771448294048,
+      "width": 22.5,
+      "polarity": 1,
+      "minority_mass": 0.010506435536098544,
+      "tail_mass": 0.0017014392763195535
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.10485549124637039,
+      "width": 1.0
+    }
+  },
+  {
+    "seed": 2019,
+    "scenario": "null_response",
+    "validation_skill": -0.28069990643557974,
+    "test_skill": -0.06937230869201749,
+    "usable": false,
+    "estimated": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 28.29090365412879,
+      "width": 57.0,
+      "polarity": 1,
+      "minority_mass": 0.4445825622273533,
+      "tail_mass": 0.03912502895933083
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2019,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9998988539336339,
+    "test_skill": 0.9998895374309873,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 38.0,
+      "centroid": 24.49972693554056,
+      "width": 36.0,
+      "polarity": 1,
+      "minority_mass": 0.44160142758477,
+      "tail_mass": 0.0005616026876094074
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.17603094247253281,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2020,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.999846664678467,
+    "test_skill": 0.9998650564894597,
+    "usable": true,
+    "estimated": {
+      "onset": 9.5,
+      "peak": 18.0,
+      "centroid": 18.18145942856587,
+      "width": 17.0,
+      "polarity": 1,
+      "minority_mass": 0.004312252594447952,
+      "tail_mass": 0.0004332717214436753
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.17891984609618206,
+      "width": 1.0
+    }
+  },
+  {
+    "seed": 2020,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9998377547163609,
+    "test_skill": 0.9998329333824081,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.311169526285052,
+      "width": 24.0,
+      "polarity": 1,
+      "minority_mass": 0.010897516614234945,
+      "tail_mass": 0.00048000803464694463
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.31254258674463387,
+      "width": 2.5
+    }
+  },
+  {
+    "seed": 2020,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9997560705956052,
+    "test_skill": 0.999747089945858,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.765320614422194,
+      "width": 38.5,
+      "polarity": 1,
+      "minority_mass": 0.01274861527218905,
+      "tail_mass": 0.0038037811792758633
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.4307634233301023,
+      "width": 1.0
+    }
+  },
+  {
+    "seed": 2020,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9169393642808186,
+    "test_skill": 0.9651888710841197,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 18.0,
+      "centroid": 25.73192924849119,
+      "width": 48.5,
+      "polarity": 1,
+      "minority_mass": 0.17054493552310934,
+      "tail_mass": 0.028740824107062028
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2020,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9598064775787162,
+    "test_skill": 0.9514216210887937,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.5,
+      "centroid": 18.076115836709445,
+      "width": 44.0,
+      "polarity": 1,
+      "minority_mass": 0.03557832489320779,
+      "tail_mass": 0.015777850380364934
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 3.077488897169026,
+      "width": 22.5
+    }
+  },
+  {
+    "seed": 2020,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9995601078882127,
+    "test_skill": 0.999003534889151,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 8.5,
+      "centroid": 17.294757176941157,
+      "width": 36.5,
+      "polarity": 1,
+      "minority_mass": 0.04551734113307988,
+      "tail_mass": 0.0008625509483531357
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 1.5,
+      "centroid": 2.296130237400739,
+      "width": 15.0
+    }
+  },
+  {
+    "seed": 2020,
+    "scenario": "null_response",
+    "validation_skill": 0.14694744337311572,
+    "test_skill": -0.037027557242167664,
+    "usable": false,
+    "estimated": {
+      "onset": 0.5,
+      "peak": 60.0,
+      "centroid": 32.476744441419875,
+      "width": 59.5,
+      "polarity": -1,
+      "minority_mass": 0.09232468686055233,
+      "tail_mass": 0.22846453752271303
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2020,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999180909028536,
+    "test_skill": 0.9999035550590444,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.627534647907982,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44120256687311193,
+      "tail_mass": 0.00035031583954014804
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.04822323010511198,
+      "width": 0.0
+    }
+  },
+  {
+    "seed": 2021,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9996105733430409,
+    "test_skill": 0.9998450619511059,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.176904107536796,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.003548671358720361,
+      "tail_mass": 0.0004286831972746172
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.17436452506710864,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2021,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9996357705161185,
+    "test_skill": 0.9998059664275978,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.385795263283324,
+      "width": 24.5,
+      "polarity": 1,
+      "minority_mass": 0.012863996459936543,
+      "tail_mass": 0.00034355560634080086
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.38716832374290533,
+      "width": 3.0
+    }
+  },
+  {
+    "seed": 2021,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9994403205415431,
+    "test_skill": 0.9996811073939429,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.860926402018762,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.009428741082667952,
+      "tail_mass": 0.003752853878213089
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.33515763573353397,
+      "width": 0.0
+    }
+  },
+  {
+    "seed": 2021,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9776526620880954,
+    "test_skill": 0.9656714932004702,
+    "usable": false,
+    "estimated": {
+      "onset": 1.5,
+      "peak": 60.0,
+      "centroid": 30.147697942350486,
+      "width": 58.5,
+      "polarity": 1,
+      "minority_mass": 0.2682906693304933,
+      "tail_mass": 0.11382144949049817
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2021,
+    "scenario": "noise_trend",
+    "validation_skill": 0.909681032841462,
+    "test_skill": 0.9400090131804927,
+    "usable": false,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 18.992625821593577,
+      "width": 45.5,
+      "polarity": 1,
+      "minority_mass": 0.04411566230986873,
+      "tail_mass": 0.016664059077204887
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 3.993998882053159,
+      "width": 24.0
+    }
+  },
+  {
+    "seed": 2021,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9991068218984084,
+    "test_skill": 0.9973202544516987,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.0,
+      "centroid": 15.756643167780426,
+      "width": 27.0,
+      "polarity": 1,
+      "minority_mass": 0.02010922091948335,
+      "tail_mass": 0.001032740449843211
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 1.0,
+      "centroid": 0.7580162282400078,
+      "width": 5.5
+    }
+  },
+  {
+    "seed": 2021,
+    "scenario": "null_response",
+    "validation_skill": 0.0967909835033064,
+    "test_skill": -0.05883986701146582,
+    "usable": false,
+    "estimated": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 20.5875245378646,
+      "width": 54.0,
+      "polarity": 1,
+      "minority_mass": 0.25181256930599133,
+      "tail_mass": 0.010283156079753001
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2021,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9998636178996444,
+    "test_skill": 0.9999008146375286,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 38.0,
+      "centroid": 24.484485537417218,
+      "width": 36.0,
+      "polarity": 1,
+      "minority_mass": 0.4411955353109738,
+      "tail_mass": 0.00011127987967163064
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.1912723405958765,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2022,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9998094791356945,
+    "test_skill": 0.9997573058917566,
+    "usable": true,
+    "estimated": {
+      "onset": 9.5,
+      "peak": 18.0,
+      "centroid": 18.07832502020417,
+      "width": 17.0,
+      "polarity": 1,
+      "minority_mass": 0.002566905424329248,
+      "tail_mass": 8.01045995984725e-05
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.07578543773448132,
+      "width": 1.0
+    }
+  },
+  {
+    "seed": 2022,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9997942586656442,
+    "test_skill": 0.9997055660266017,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.523925354831036,
+      "width": 24.5,
+      "polarity": 1,
+      "minority_mass": 0.012138655309736495,
+      "tail_mass": 0.0032569191150069714
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.5252984152906173,
+      "width": 3.0
+    }
+  },
+  {
+    "seed": 2022,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9996919374009481,
+    "test_skill": 0.9995103164464576,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.807491904371645,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.011817720965381568,
+      "tail_mass": 0.004435478916328343
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.38859213338065146,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2022,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9224101840944015,
+    "test_skill": 0.9475259431415481,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 60.0,
+      "centroid": 33.52629704544782,
+      "width": 53.0,
+      "polarity": 1,
+      "minority_mass": 0.2589003272881317,
+      "tail_mass": 0.1375884738254624
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2022,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9496411379693035,
+    "test_skill": 0.9170924499104864,
+    "usable": true,
+    "estimated": {
+      "onset": 6.0,
+      "peak": 10.5,
+      "centroid": 17.876147541065375,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.040593285802666974,
+      "tail_mass": 0.01055079321685481
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 1.0,
+      "peak": 0.5,
+      "centroid": 2.8775206015249566,
+      "width": 16.5
+    }
+  },
+  {
+    "seed": 2022,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9993159622819776,
+    "test_skill": 0.9967900028263484,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 17.061805502247463,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.03554042455013456,
+      "tail_mass": 0.012457352667541348
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 2.0631785627070443,
+      "width": 16.5
+    }
+  },
+  {
+    "seed": 2022,
+    "scenario": "null_response",
+    "validation_skill": -0.6557288085682151,
+    "test_skill": 0.16480498351295703,
+    "usable": false,
+    "estimated": {
+      "onset": 3.0,
+      "peak": 60.0,
+      "centroid": 45.08698472150867,
+      "width": 57.0,
+      "polarity": 1,
+      "minority_mass": 0.3922738478653284,
+      "tail_mass": 0.26571236472101833
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2022,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999137917385782,
+    "test_skill": 0.9998560338562911,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.806692975957574,
+      "width": 36.0,
+      "polarity": 1,
+      "minority_mass": 0.44135592695839654,
+      "tail_mass": 0.0019191046936037589
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.1309350979444801,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2023,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9997877543815256,
+    "test_skill": 0.9998867973991987,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.198084942047764,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.0031583152675833718,
+      "tail_mass": 0.00028867357268627447
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.19554535957807673,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2023,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9997925221800291,
+    "test_skill": 0.9998672992180675,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.193563741990603,
+      "width": 23.0,
+      "polarity": 1,
+      "minority_mass": 0.008418514629401524,
+      "tail_mass": 0.0007655351023899199
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.19493680245018474,
+      "width": 1.5
+    }
+  },
+  {
+    "seed": 2023,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9997053590791356,
+    "test_skill": 0.9998088354658873,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.86882756181818,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.010685296119314671,
+      "tail_mass": 0.004731564582440214
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.3272564759341172,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2023,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9697340196550498,
+    "test_skill": 0.9586626952529201,
+    "usable": false,
+    "estimated": {
+      "onset": 1.0,
+      "peak": 60.0,
+      "centroid": 25.852580880678094,
+      "width": 58.0,
+      "polarity": 1,
+      "minority_mass": 0.2574081135391115,
+      "tail_mass": 0.08537651852228707
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2023,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9429118909731015,
+    "test_skill": 0.9607669124780601,
+    "usable": false,
+    "estimated": {
+      "onset": 6.0,
+      "peak": 9.5,
+      "centroid": 17.487342263416128,
+      "width": 40.0,
+      "polarity": 1,
+      "minority_mass": 0.029736925919884107,
+      "tail_mass": 0.00553890885311102
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 1.0,
+      "peak": 0.5,
+      "centroid": 2.4887153238757094,
+      "width": 18.5
+    }
+  },
+  {
+    "seed": 2023,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9994818908817578,
+    "test_skill": 0.9992348880910706,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.268749448491059,
+      "width": 23.0,
+      "polarity": 1,
+      "minority_mass": 0.00767298835041327,
+      "tail_mass": 0.0012143376656793463
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.2701225089506405,
+      "width": 1.5
+    }
+  },
+  {
+    "seed": 2023,
+    "scenario": "null_response",
+    "validation_skill": -0.12279725113729967,
+    "test_skill": -0.3192079820663769,
+    "usable": false,
+    "estimated": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 26.20752037676785,
+      "width": 59.5,
+      "polarity": 1,
+      "minority_mass": 0.4752602519220978,
+      "tail_mass": 0.11461963826774076
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2023,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999026986977937,
+    "test_skill": 0.9999126835497187,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.64173252253103,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.4411379730712927,
+      "tail_mass": 0.0004644120043743351
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.03402535548206487,
+      "width": 0.0
+    }
+  },
+  {
+    "seed": 2024,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.999726469229256,
+    "test_skill": 0.9998490990011878,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.171662064648874,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.0024521818553961514,
+      "tail_mass": 0.0008920873201615564
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.16912248217918702,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2024,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9997193634967622,
+    "test_skill": 0.9998248105786729,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.217494671363307,
+      "width": 23.5,
+      "polarity": 1,
+      "minority_mass": 0.009473086529537912,
+      "tail_mass": 0.0006120276670353827
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.218867731822888,
+      "width": 2.0
+    }
+  },
+  {
+    "seed": 2024,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9996298457915093,
+    "test_skill": 0.9997487302059478,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.863705413442652,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.010162772194949031,
+      "tail_mass": 0.0045733302018725695
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.33237862430964427,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2024,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9820497702997838,
+    "test_skill": 0.9668439333481579,
+    "usable": false,
+    "estimated": {
+      "onset": 1.5,
+      "peak": 60.0,
+      "centroid": 27.58831316405616,
+      "width": 58.0,
+      "polarity": 1,
+      "minority_mass": 0.24556182182432992,
+      "tail_mass": 0.09617273348665123
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2024,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9246359252797173,
+    "test_skill": 0.9481193094800265,
+    "usable": false,
+    "estimated": {
+      "onset": 6.0,
+      "peak": 9.5,
+      "centroid": 18.500592737527292,
+      "width": 43.5,
+      "polarity": 1,
+      "minority_mass": 0.057239991879942026,
+      "tail_mass": 0.01864461996910357
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 1.0,
+      "peak": 0.5,
+      "centroid": 3.5019657979868732,
+      "width": 22.0
+    }
+  },
+  {
+    "seed": 2024,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9993391513180999,
+    "test_skill": 0.9988556821439037,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.745204816707965,
+      "width": 27.5,
+      "polarity": 1,
+      "minority_mass": 0.022465658429246027,
+      "tail_mass": 0.0009449236363511159
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.746577877167546,
+      "width": 6.0
+    }
+  },
+  {
+    "seed": 2024,
+    "scenario": "null_response",
+    "validation_skill": 0.18037254414138149,
+    "test_skill": -0.2777986638942638,
+    "usable": false,
+    "estimated": {
+      "onset": 3.5,
+      "peak": 60.0,
+      "centroid": 46.39562371624076,
+      "width": 56.5,
+      "polarity": -1,
+      "minority_mass": 0.47032562954910306,
+      "tail_mass": 0.24789000104744566
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2024,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.999895746988967,
+    "test_skill": 0.9998913466035927,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.619718537691103,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.4409877563796341,
+      "tail_mass": 0.00025606541917401455
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.056039340321991205,
+      "width": 0.0
+    }
+  },
+  {
+    "seed": 2025,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.999706020232394,
+    "test_skill": 0.9998525460954313,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.118872932964017,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.0018900480133922967,
+      "tail_mass": 0.0012011848160624304
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.11633335049432958,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2025,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9997179425326351,
+    "test_skill": 0.9998196300508876,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.271047958559484,
+      "width": 23.5,
+      "polarity": 1,
+      "minority_mass": 0.008869885910934622,
+      "tail_mass": 0.0017758062716127128
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.272421019019065,
+      "width": 2.0
+    }
+  },
+  {
+    "seed": 2025,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9995941119584044,
+    "test_skill": 0.9997146816946283,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.78371284688106,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.011953312710037573,
+      "tail_mass": 0.002324202675254984
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.4123711908712373,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2025,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9780123350668115,
+    "test_skill": 0.9591492316017287,
+    "usable": false,
+    "estimated": {
+      "onset": 4.5,
+      "peak": 60.0,
+      "centroid": 32.508539915734644,
+      "width": 55.5,
+      "polarity": 1,
+      "minority_mass": 0.26371126032768,
+      "tail_mass": 0.13177369204985465
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2025,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9387391739290598,
+    "test_skill": 0.9587821284742936,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.5,
+      "centroid": 17.876071330818025,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.032659596591888274,
+      "tail_mass": 0.004298707898174273
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.5,
+      "centroid": 2.8774443912776064,
+      "width": 16.0
+    }
+  },
+  {
+    "seed": 2025,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9993327305798013,
+    "test_skill": 0.998148879458177,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.385582589395616,
+      "width": 24.0,
+      "polarity": 1,
+      "minority_mass": 0.010540090634637619,
+      "tail_mass": 0.001795683744318685
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.3869556498551976,
+      "width": 2.5
+    }
+  },
+  {
+    "seed": 2025,
+    "scenario": "null_response",
+    "validation_skill": -0.17835386779971785,
+    "test_skill": 0.05076539551146997,
+    "usable": false,
+    "estimated": {
+      "onset": 3.0,
+      "peak": 60.0,
+      "centroid": 23.629865613074983,
+      "width": 56.5,
+      "polarity": -1,
+      "minority_mass": 0.31861073418112323,
+      "tail_mass": 0.07941837030433811
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2025,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9998989852923594,
+    "test_skill": 0.999907458951856,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 38.5,
+      "centroid": 24.716266459042547,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44120007626253116,
+      "tail_mass": 0.0010845599912339783
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.5,
+      "centroid": 0.040508581029452984,
+      "width": 0.0
+    }
+  },
+  {
+    "seed": 2026,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9998007542372012,
+    "test_skill": 0.9998368995922787,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.065588567619027,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.0013417063072672353,
+      "tail_mass": 0.00020010511069257588
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.0630489851493401,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2026,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9998096074105955,
+    "test_skill": 0.9997977917258972,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 15.632425016966184,
+      "width": 25.5,
+      "polarity": 1,
+      "minority_mass": 0.022531018894893354,
+      "tail_mass": 0.003633233757144628
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.6337980774257659,
+      "width": 4.0
+    }
+  },
+  {
+    "seed": 2026,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9997194878113155,
+    "test_skill": 0.9996977813113285,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.869007628068704,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.009679623101516962,
+      "tail_mass": 0.003850075821720591
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.32707640968359186,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2026,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9483689312618551,
+    "test_skill": 0.9653062137485342,
+    "usable": false,
+    "estimated": {
+      "onset": 1.5,
+      "peak": 60.0,
+      "centroid": 27.211098842716734,
+      "width": 58.0,
+      "polarity": 1,
+      "minority_mass": 0.25735716505342987,
+      "tail_mass": 0.09402700693746172
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2026,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9554786216812294,
+    "test_skill": 0.959066306010566,
+    "usable": false,
+    "estimated": {
+      "onset": 6.0,
+      "peak": 10.0,
+      "centroid": 16.542463845905054,
+      "width": 31.0,
+      "polarity": 1,
+      "minority_mass": 0.01019598895684394,
+      "tail_mass": 0.008675151104760808
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 1.0,
+      "peak": 0.0,
+      "centroid": 1.5438369063646356,
+      "width": 9.5
+    }
+  },
+  {
+    "seed": 2026,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9995121679656174,
+    "test_skill": 0.9987488106575629,
+    "usable": true,
+    "estimated": {
+      "onset": 6.0,
+      "peak": 10.0,
+      "centroid": 16.286861674061022,
+      "width": 32.0,
+      "polarity": 1,
+      "minority_mass": 0.04430446554073811,
+      "tail_mass": 0.007990366380551126
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 1.0,
+      "peak": 0.0,
+      "centroid": 1.2882347345206036,
+      "width": 10.5
+    }
+  },
+  {
+    "seed": 2026,
+    "scenario": "null_response",
+    "validation_skill": -0.46321289868500304,
+    "test_skill": -0.2745046640829698,
+    "usable": false,
+    "estimated": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 22.327544585582448,
+      "width": 56.5,
+      "polarity": -1,
+      "minority_mass": 0.3401345711767184,
+      "tail_mass": 0.014683330118554798
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2026,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999050229323855,
+    "test_skill": 0.9998785352268708,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 38.0,
+      "centroid": 24.656997014122723,
+      "width": 36.0,
+      "polarity": 1,
+      "minority_mass": 0.44176178230758234,
+      "tail_mass": 0.002351023625570707
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.018760863890371127,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2027,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9998324353101403,
+    "test_skill": 0.9998807136813563,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.209035496490174,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.00352632204484147,
+      "tail_mass": 0.0004048890727684636
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.20649591402048628,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2027,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.999824942004553,
+    "test_skill": 0.9998605813037598,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.09525793670431,
+      "width": 23.0,
+      "polarity": 1,
+      "minority_mass": 0.008808827359550582,
+      "tail_mass": 0.0010191784591935121
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.09663099716389212,
+      "width": 1.5
+    }
+  },
+  {
+    "seed": 2027,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9997551281054349,
+    "test_skill": 0.9998067135149878,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.908806510708352,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.009233814926496964,
+      "tail_mass": 0.004381146939544629
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.28727752704394405,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2027,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9686769608091692,
+    "test_skill": 0.9534105113956878,
+    "usable": false,
+    "estimated": {
+      "onset": 1.0,
+      "peak": 0.0,
+      "centroid": 23.037265142792304,
+      "width": 57.5,
+      "polarity": 1,
+      "minority_mass": 0.2564741936252401,
+      "tail_mass": 0.064270906080035
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2027,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9566213344766151,
+    "test_skill": 0.9625646588970854,
+    "usable": true,
+    "estimated": {
+      "onset": 6.0,
+      "peak": 10.0,
+      "centroid": 18.894483936694034,
+      "width": 47.5,
+      "polarity": 1,
+      "minority_mass": 0.04951539878343966,
+      "tail_mass": 0.013440520067900624
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 1.0,
+      "peak": 0.0,
+      "centroid": 3.895856997153615,
+      "width": 26.0
+    }
+  },
+  {
+    "seed": 2027,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9994959140908455,
+    "test_skill": 0.9993232455462353,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.271503673187045,
+      "width": 23.5,
+      "polarity": 1,
+      "minority_mass": 0.010215452358226079,
+      "tail_mass": 0.0014715039902065382
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.27287673364662623,
+      "width": 2.0
+    }
+  },
+  {
+    "seed": 2027,
+    "scenario": "null_response",
+    "validation_skill": -0.3444173423986612,
+    "test_skill": -0.40073354846375686,
+    "usable": false,
+    "estimated": {
+      "onset": 2.0,
+      "peak": 60.0,
+      "centroid": 33.72194097662186,
+      "width": 58.0,
+      "polarity": 1,
+      "minority_mass": 0.41094135397019427,
+      "tail_mass": 0.24492410527998773
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2027,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999085478411881,
+    "test_skill": 0.9998974041926656,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.61512057385512,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44118312830106854,
+      "tail_mass": 0.0005434597293210734
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.06063730415797508,
+      "width": 0.0
+    }
+  },
+  {
+    "seed": 2028,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9998569561335693,
+    "test_skill": 0.9998910630773411,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.159594441010665,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.002302359285196545,
+      "tail_mass": 0.0006499216548710319
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.15705485854097745,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2028,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9998637026389334,
+    "test_skill": 0.9998733747317599,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.376067892536387,
+      "width": 24.0,
+      "polarity": 1,
+      "minority_mass": 0.011213688191422556,
+      "tail_mass": 0.00026842723672223785
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.37744095299596836,
+      "width": 2.5
+    }
+  },
+  {
+    "seed": 2028,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9998112453412408,
+    "test_skill": 0.9998228207537738,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.8643524707112,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.010201144940500041,
+      "tail_mass": 0.00391018404141977
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.3317315670410963,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2028,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9745540526564195,
+    "test_skill": 0.9615337736123923,
+    "usable": false,
+    "estimated": {
+      "onset": 1.0,
+      "peak": 60.0,
+      "centroid": 26.392788646199264,
+      "width": 58.0,
+      "polarity": 1,
+      "minority_mass": 0.2629558675441865,
+      "tail_mass": 0.09035946105926809
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2028,
+    "scenario": "noise_trend",
+    "validation_skill": 0.945611765796316,
+    "test_skill": 0.9560072063930868,
+    "usable": false,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 17.015489831587537,
+      "width": 35.0,
+      "polarity": 1,
+      "minority_mass": 0.014273048289133708,
+      "tail_mass": 0.009902389108877628
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 2.0168628920471185,
+      "width": 13.5
+    }
+  },
+  {
+    "seed": 2028,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.999707872426808,
+    "test_skill": 0.9994945599495726,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 15.340239769550193,
+      "width": 24.0,
+      "polarity": 1,
+      "minority_mass": 0.011701458296739173,
+      "tail_mass": 0.0015824926067611014
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.34161283000977427,
+      "width": 2.5
+    }
+  },
+  {
+    "seed": 2028,
+    "scenario": "null_response",
+    "validation_skill": 0.08114774907793876,
+    "test_skill": 0.08004346997214407,
+    "usable": false,
+    "estimated": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 25.884313552540434,
+      "width": 59.5,
+      "polarity": 1,
+      "minority_mass": 0.4953185527011759,
+      "tail_mass": 0.102614688115642
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2028,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999345742710034,
+    "test_skill": 0.9999093347786304,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.733553730426806,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.4413233275428502,
+      "tail_mass": 0.00029869443354177053
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.05779585241371166,
+      "width": 0.0
+    }
+  },
+  {
+    "seed": 2029,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9997610654841628,
+    "test_skill": 0.9998585877682103,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.142207584855445,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.002432856896660563,
+      "tail_mass": 0.0007553026377600493
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.13966800238575772,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2029,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.999780417005188,
+    "test_skill": 0.9998411301798239,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 14.950871681554588,
+      "width": 22.5,
+      "polarity": 1,
+      "minority_mass": 0.006551748731063563,
+      "tail_mass": 0.0009426175446878312
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.04775525798583047,
+      "width": 1.0
+    }
+  },
+  {
+    "seed": 2029,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.9996818269531857,
+    "test_skill": 0.9997651087579353,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.861921523580886,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.010023921761562504,
+      "tail_mass": 0.004969093121878564
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.3341625141714104,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2029,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9565134353088801,
+    "test_skill": 0.9690517841166808,
+    "usable": false,
+    "estimated": {
+      "onset": 2.5,
+      "peak": 60.0,
+      "centroid": 30.718038930904747,
+      "width": 57.5,
+      "polarity": 1,
+      "minority_mass": 0.25127603700349316,
+      "tail_mass": 0.11658817791344792
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2029,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9331992091407907,
+    "test_skill": 0.9537045584856286,
+    "usable": false,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 17.874292610916164,
+      "width": 43.0,
+      "polarity": 1,
+      "minority_mass": 0.031974602549690166,
+      "tail_mass": 0.020586107283672793
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 2.875665671375746,
+      "width": 21.5
+    }
+  },
+  {
+    "seed": 2029,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9994648338276387,
+    "test_skill": 0.9986893461308077,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 10.0,
+      "centroid": 14.935639653072295,
+      "width": 22.5,
+      "polarity": 1,
+      "minority_mass": 0.007769164622913813,
+      "tail_mass": 0.0010540118659925163
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.06298728646812357,
+      "width": 1.0
+    }
+  },
+  {
+    "seed": 2029,
+    "scenario": "null_response",
+    "validation_skill": 0.06449457844866724,
+    "test_skill": -0.03381574703559731,
+    "usable": false,
+    "estimated": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 24.673350777133805,
+      "width": 58.5,
+      "polarity": -1,
+      "minority_mass": 0.4242353228476864,
+      "tail_mass": 0.05670460734884844
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2029,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9999059443399898,
+    "test_skill": 0.9999121072050792,
+    "usable": false,
+    "estimated": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.555762225561544,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.4410679932503392,
+      "tail_mass": 0.00047574689311527567
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.11999565245154997,
+      "width": 0.0
+    }
+  },
+  {
+    "seed": 2030,
+    "scenario": "gaussian_broadening",
+    "validation_skill": 0.9996912915214602,
+    "test_skill": 0.9998432339313764,
+    "usable": true,
+    "estimated": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.100134990349414,
+      "width": 16.5,
+      "polarity": 1,
+      "minority_mass": 0.0016061712741717606,
+      "tail_mass": 0.0001229076407312869
+    },
+    "truth": {
+      "onset": 10.0,
+      "peak": 18.0,
+      "centroid": 18.002539582469687,
+      "width": 16.0,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 3.887426086393077e-16
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.0,
+      "peak": 0.0,
+      "centroid": 0.09759540787972654,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2030,
+    "scenario": "asymmetric_gamma",
+    "validation_skill": 0.9997098887317964,
+    "test_skill": 0.9998067426507852,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 14.867209046550776,
+      "width": 22.0,
+      "polarity": 1,
+      "minority_mass": 0.0076170653986221805,
+      "tail_mass": 0.0003932832803956519
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.13141789298964213,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2030,
+    "scenario": "slow_exponential",
+    "validation_skill": 0.999551269478329,
+    "test_skill": 0.9996831604432478,
+    "usable": true,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 9.0,
+      "centroid": 19.842855367185525,
+      "width": 38.0,
+      "polarity": 1,
+      "minority_mass": 0.010393569577163914,
+      "tail_mass": 0.004355585104915363
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 7.0,
+      "centroid": 20.196084037752296,
+      "width": 37.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 0.004146437193253215
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 2.0,
+      "centroid": 0.35322867056677154,
+      "width": 0.5
+    }
+  },
+  {
+    "seed": 2030,
+    "scenario": "adjacent_events",
+    "validation_skill": 0.9396161773118235,
+    "test_skill": 0.9728887512541672,
+    "usable": false,
+    "estimated": {
+      "onset": 1.5,
+      "peak": 60.0,
+      "centroid": 29.4926499421181,
+      "width": 58.5,
+      "polarity": 1,
+      "minority_mass": 0.26173650263011344,
+      "tail_mass": 0.10911536864618807
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2030,
+    "scenario": "noise_trend",
+    "validation_skill": 0.9362835928574977,
+    "test_skill": 0.9485343764819786,
+    "usable": true,
+    "estimated": {
+      "onset": 6.0,
+      "peak": 9.5,
+      "centroid": 18.35849285115722,
+      "width": 49.0,
+      "polarity": 1,
+      "minority_mass": 0.041040494782775466,
+      "tail_mass": 0.02933493702033691
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 1.0,
+      "peak": 0.5,
+      "centroid": 3.359865911616801,
+      "width": 27.5
+    }
+  },
+  {
+    "seed": 2030,
+    "scenario": "mixed_strength",
+    "validation_skill": 0.9991175013414259,
+    "test_skill": 0.9984040670006349,
+    "usable": true,
+    "estimated": {
+      "onset": 6.5,
+      "peak": 9.5,
+      "centroid": 14.923941559321507,
+      "width": 22.5,
+      "polarity": 1,
+      "minority_mass": 0.009381352034296336,
+      "tail_mass": 0.00017819258687906849
+    },
+    "truth": {
+      "onset": 7.0,
+      "peak": 10.0,
+      "centroid": 14.998626939540419,
+      "width": 21.5,
+      "polarity": 1,
+      "minority_mass": 0.0,
+      "tail_mass": 8.473268405650523e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.5,
+      "centroid": 0.07468538021891113,
+      "width": 1.0
+    }
+  },
+  {
+    "seed": 2030,
+    "scenario": "null_response",
+    "validation_skill": 0.1807150790103328,
+    "test_skill": -0.08214476601181508,
+    "usable": false,
+    "estimated": {
+      "onset": 4.5,
+      "peak": 60.0,
+      "centroid": 34.28039355805648,
+      "width": 55.5,
+      "polarity": 1,
+      "minority_mass": 0.009442902815626328,
+      "tail_mass": 0.17091393556107995
+    },
+    "truth": null,
+    "stationary_kernel": false,
+    "errors": {
+      "onset": null,
+      "peak": null,
+      "centroid": null,
+      "width": null
+    }
+  },
+  {
+    "seed": 2030,
+    "scenario": "biphasic_response",
+    "validation_skill": 0.9998677637982564,
+    "test_skill": 0.9998976507706867,
+    "usable": false,
+    "estimated": {
+      "onset": 7.0,
+      "peak": 38.0,
+      "centroid": 24.49911430904018,
+      "width": 36.0,
+      "polarity": 1,
+      "minority_mass": 0.4411945575048665,
+      "tail_mass": 0.0001673437550441565
+    },
+    "truth": {
+      "onset": 7.5,
+      "peak": 38.0,
+      "centroid": 24.675757878013094,
+      "width": 35.5,
+      "polarity": 1,
+      "minority_mass": 0.44071656591717423,
+      "tail_mass": 5.014217692101282e-05
+    },
+    "stationary_kernel": true,
+    "errors": {
+      "onset": 0.5,
+      "peak": 0.0,
+      "centroid": 0.17664356897291356,
+      "width": 0.5
+    }
+  }
+]

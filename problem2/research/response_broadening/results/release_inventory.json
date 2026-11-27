@@ -1,0 +1,83 @@
+[
+  {
+    "assets": [
+      {
+        "apiUrl": "https://api.github.com/repos/ma39nong/Steelmaking-process/releases/assets/795626941",
+        "contentType": "application/json",
+        "createdAt": "2026-11-26T11:42:23Z",
+        "downloadCount": 2,
+        "id": "RA_kwDOV8ZI584vbE29",
+        "label": "",
+        "name": "data_package_manifest.json",
+        "size": 6045,
+        "state": "uploaded",
+        "updatedAt": "2026-11-26T11:42:23Z",
+        "url": "https://github.com/ma39nong/Steelmaking-process/releases/download/problem1-final-data-v1/data_package_manifest.json"
+      },
+      {
+        "apiUrl": "https://api.github.com/repos/ma39nong/Steelmaking-process/releases/assets/795626939",
+        "contentType": "application/zip",
+        "createdAt": "2026-11-26T11:42:23Z",
+        "downloadCount": 1,
+        "id": "RA_kwDOV8ZI584vbE27",
+        "label": "",
+        "name": "problem1-final-data.zip",
+        "size": 548825449,
+        "state": "uploaded",
+        "updatedAt": "2026-11-26T11:43:48Z",
+        "url": "https://github.com/ma39nong/Steelmaking-process/releases/download/problem1-final-data-v1/problem1-final-data.zip"
+      },
+      {
+        "apiUrl": "https://api.github.com/repos/ma39nong/Steelmaking-process/releases/assets/795626938",
+        "contentType": "application/octet-stream",
+        "createdAt": "2026-11-26T11:42:23Z",
+        "downloadCount": 2,
+        "id": "RA_kwDOV8ZI584vbE26",
+        "label": "",
+        "name": "SHA256SUMS",
+        "size": 183,
+        "state": "uploaded",
+        "updatedAt": "2026-11-26T11:42:23Z",
+        "url": "https://github.com/ma39nong/Steelmaking-process/releases/download/problem1-final-data-v1/SHA256SUMS"
+      }
+    ],
+    "body": "## 第一问正式处理数据\n\n最终方法：自适应多证据异常识别（阈值4）＋固定秩4 Huber鲁棒低秩补全（尺度0.003）＋观测保真及局部非负支撑＋双线性连续重构。疑似截顶保留记录量程，并另存条件性估计。\n\n十炉共27,816,683个记录，实际修复1043点（0.00375%），保留14,805个疑似顶码标记。代码、数学模型和既有处理结果不变。\n\n### 下载附件\n\n- **problem1-final-data.zip**：十炉完整光谱接口、十炉修复差值、真实时间/波长坐标、原始及修复光谱、质量掩码、条件性估计、稳定查询接口和读取示例。\n- **data_package_manifest.json**：文件级SHA256、大小及来源。\n- **SHA256SUMS**：ZIP及清单的校验值；下载到同一目录后执行 `sha256sum -c SHA256SUMS`。\n\n请下载上述数据附件。GitHub自动生成的 **Source code** 压缩包仅包含Git跟踪内容，不含被忽略的大数组。\n\n### 使用方法\n\n克隆或更新仓库的`problem1`分支，在仓库根目录解压数据ZIP，然后运行：\n\n```bash\npython3 -m venv .venv\n.venv/bin/pip install numpy\n.venv/bin/python problem1/final/delivery/read_example.py --heat 6C02058\n```\n\n[分支总README](https://github.com/ma39nong/Steelmaking-process/blob/problem1/README.md) · [数据交接说明](https://github.com/ma39nong/Steelmaking-process/blob/problem1/problem1/final/reports/数据交接与后续问题使用说明.md) · [中文正式章节](https://github.com/ma39nong/Steelmaking-process/blob/problem1/problem1/final/reports/问题一_中文论文_V2_正式章节版.md)\n\n### 后续问题接口\n\n离线分析默认使用`reconstructed`，原始对照使用`raw`。第一问处理利用前后时刻，第三问实时预测须从原始记录另建因果预处理。累计耗氧、CO₂、CO等工艺附加列及原始XLSB不包含在此光谱交接包，请从原比赛附件读取并核对时间口径。\n\n冻结数据来源提交：`3366db522887b2ca0f5f461ea6bd52ed71def1ba`。所有接口与差值均按既有artifact_manifest验证，数据包载荷CRC及SHA256通过检查。\n",
+    "name": "问题一正式处理数据：十炉光谱与质量掩码",
+    "tagName": "problem1-final-data-v1",
+    "url": "https://github.com/ma39nong/Steelmaking-process/releases/tag/problem1-final-data-v1"
+  },
+  {
+    "assets": [
+      {
+        "apiUrl": "https://api.github.com/repos/ma39nong/Steelmaking-process/releases/assets/800676459",
+        "contentType": "application/octet-stream",
+        "createdAt": "2026-11-27T13:49:43Z",
+        "downloadCount": 1,
+        "id": "RA_kwDOV8ZI584vuVpr",
+        "label": "",
+        "name": "Steelmaking-process-q2-final-data.SHA256",
+        "size": 105,
+        "state": "uploaded",
+        "updatedAt": "2026-11-27T13:49:44Z",
+        "url": "https://github.com/ma39nong/Steelmaking-process/releases/download/problem2-final-data/Steelmaking-process-q2-final-data.SHA256"
+      },
+      {
+        "apiUrl": "https://api.github.com/repos/ma39nong/Steelmaking-process/releases/assets/800675529",
+        "contentType": "application/x-zip-compressed",
+        "createdAt": "2026-11-27T13:49:28Z",
+        "downloadCount": 2,
+        "id": "RA_kwDOV8ZI584vuVbJ",
+        "label": "",
+        "name": "Steelmaking-process-q2-final-data.zip",
+        "size": 715164,
+        "state": "uploaded",
+        "updatedAt": "2026-11-27T13:49:33Z",
+        "url": "https://github.com/ma39nong/Steelmaking-process/releases/download/problem2-final-data/Steelmaking-process-q2-final-data.zip"
+      }
+    ],
+    "body": "## Problem 2 processed data interface\r\n\r\nThis release contains the ten processed NPZ interfaces for downstream Problem 3 work.\r\n\r\nContents:\r\n- ten heat-level NPZ files;\r\n- data dictionary;\r\n- downstream handoff instructions;\r\n- artifact manifest;\r\n- SHA256SUMS for all package files.\r\n\r\nTime unit: s\r\nOxygen cumulative unit: m3\r\nOxygen flow unit: m3/s\r\nCO and CO2 unit: m3/s\r\nDelay unit: s\r\n\r\nNaN values in delay and alignment fields are intentional and must be interpreted with the corresponding validity masks.\r\nThe package contains processed interfaces only and does not include raw XLSB files.",
+    "name": "Problem 2 Process Data Interface",
+    "tagName": "problem2-final-data",
+    "url": "https://github.com/ma39nong/Steelmaking-process/releases/tag/problem2-final-data"
+  }
+]
