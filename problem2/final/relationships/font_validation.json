@@ -1,0 +1,111 @@
+{
+  "configuration": {
+    "fonts": [
+      {
+        "style": "normal",
+        "weight": "normal",
+        "family": "Times New Roman",
+        "file": "/home/user/.local/share/fonts/msttcore/Times.TTF",
+        "sha256": "4e98adeff8ccc8ef4e3ece8d4547e288ff85fdc9c7ca711a4599c234874bbe86"
+      },
+      {
+        "style": "normal",
+        "weight": "bold",
+        "family": "Times New Roman",
+        "file": "/home/user/.local/share/fonts/msttcore/Timesbd.TTF",
+        "sha256": "4357b63cef20c01661a53c5dae70ffd20cb4765503aaed6d38b17a57c5a90bff"
+      },
+      {
+        "style": "italic",
+        "weight": "normal",
+        "family": "Times New Roman",
+        "file": "/home/user/.local/share/fonts/msttcore/Timesi.TTF",
+        "sha256": "c25ae529b4cecdbca148b6ccb862ee0abad770af8b1fd29c8dba619d1b8da78a"
+      },
+      {
+        "style": "italic",
+        "weight": "bold",
+        "family": "Times New Roman",
+        "file": "/home/user/.local/share/fonts/msttcore/Timesbi.TTF",
+        "sha256": "192e1b0d18e90334e999a99f8c32808d6a2e74b3698b8cd90c943c2249a46549"
+      }
+    ],
+    "special_math_fallback": "STIX explicitly configured; audit figures use plain Latin text and digits",
+    "intended_width_inches": 7.2,
+    "svg_text": "editable; requires installed Times New Roman"
+  },
+  "pdf_checks": [
+    {
+      "figure": "oxygen_instantaneous_relationships",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBIGVSA+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    {
+      "figure": "oxygen_cumulative_relationships",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nEPZPYQ+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    {
+      "figure": "oxygen_stage_statistics",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nEVUNJQ+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     19  0\n"
+    },
+    {
+      "figure": "oxygen_trend_diagnostics",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBSFYSX+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     47  0\n"
+    },
+    {
+      "figure": "oxygen_flow_review",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDIDROG+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     21  0\n"
+    },
+    {
+      "figure": "ten_heats_six_process_curves",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDFISTV+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    {
+      "figure": "6B03205_oxygen_relationships",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nOKBSZV+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    {
+      "figure": "6B03206_oxygen_relationships",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nOKBSZV+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    {
+      "figure": "6B03270_oxygen_relationships",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nEYAIYF+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    {
+      "figure": "6B03271_oxygen_relationships",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nOKBSZV+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    {
+      "figure": "6C02057_oxygen_relationships",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBXTMHT+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    {
+      "figure": "6C02058_oxygen_relationships",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nOKBSZV+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    {
+      "figure": "6C02059_oxygen_relationships",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nOKBSZV+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    {
+      "figure": "6C02060_oxygen_relationships",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nOKBSZV+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    {
+      "figure": "6C02107_oxygen_relationships",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nEIVHYY+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    {
+      "figure": "6C02108_oxygen_relationships",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nEIVHYY+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    {
+      "figure": "6B03205_q2_processed_signals_and_delay",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nEEYXML+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     17  0\n"
+    },
+    {
+      "figure": "delay_threshold_sensitivity",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDAKNCC+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     17  0\n"
+    }
+  ]
+}

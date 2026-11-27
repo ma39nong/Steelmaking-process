@@ -1,0 +1,359 @@
+{
+  "baseline_commit": "fe52075",
+  "execution_commit": "fe52075ec4232505d69aaad797c9ce25306bf88f",
+  "execution_source_state": "Working-tree source hashes record the executed code; execution_commit is the pre-commit HEAD.",
+  "git_status": " M .gitattributes\n M problem2/README.md\n M problem2/final/figures/6B03205_oxygen_relationships.png\n M problem2/final/figures/6B03205_oxygen_relationships.svg\n M problem2/final/figures/6B03205_q2_processed_signals_and_delay.png\n M problem2/final/figures/6B03205_q2_processed_signals_and_delay.svg\n M problem2/final/figures/6B03206_oxygen_relationships.png\n M problem2/final/figures/6B03206_oxygen_relationships.svg\n M problem2/final/figures/6B03270_oxygen_relationships.png\n M problem2/final/figures/6B03270_oxygen_relationships.svg\n M problem2/final/figures/6B03271_oxygen_relationships.png\n M problem2/final/figures/6B03271_oxygen_relationships.svg\n M problem2/final/figures/6C02057_oxygen_relationships.png\n M problem2/final/figures/6C02057_oxygen_relationships.svg\n M problem2/final/figures/6C02058_oxygen_relationships.png\n M problem2/final/figures/6C02058_oxygen_relationships.svg\n M problem2/final/figures/6C02059_oxygen_relationships.png\n M problem2/final/figures/6C02059_oxygen_relationships.svg\n M problem2/final/figures/6C02060_oxygen_relationships.png\n M problem2/final/figures/6C02060_oxygen_relationships.svg\n M problem2/final/figures/6C02107_oxygen_relationships.png\n M problem2/final/figures/6C02107_oxygen_relationships.svg\n M problem2/final/figures/6C02108_oxygen_relationships.png\n M problem2/final/figures/6C02108_oxygen_relationships.svg\n M problem2/final/figures/delay_threshold_sensitivity.png\n M problem2/final/figures/delay_threshold_sensitivity.svg\n M problem2/final/figures/ten_heats_six_process_curves.png\n M problem2/final/figures/ten_heats_six_process_curves.svg\n M problem2/final/reports/problem2_section.tex\n M \"problem2/final/reports/\\345\\256\\214\\346\\225\\264\\345\\233\\276\\350\\241\\250\\346\\270\\205\\345\\215\\225.md\"\n M \"problem2/final/reports/\\345\\256\\236\\351\\252\\214\\351\\205\\215\\347\\275\\256\\344\\270\\216\\345\\244\\215\\347\\216\\260\\350\\257\\264\\346\\230\\216.md\"\n M \"problem2/final/reports/\\346\\225\\260\\346\\215\\256\\344\\272\\244\\346\\216\\245\\344\\270\\216\\347\\254\\254\\344\\270\\211\\351\\227\\256\\344\\275\\277\\347\\224\\250\\350\\257\\264\\346\\230\\216.md\"\n M \"problem2/final/reports/\\346\\225\\260\\346\\215\\256\\345\\255\\227\\345\\205\\270\\344\\270\\216\\346\\216\\245\\345\\217\\243\\350\\257\\264\\346\\230\\216.md\"\n M \"problem2/final/reports/\\347\\213\\254\\347\\253\\213\\346\\225\\260\\345\\255\\246\\345\\256\\241\\346\\237\\245\\344\\270\\216\\344\\277\\256\\345\\244\\215\\346\\212\\245\\345\\221\\212.md\"\n M \"problem2/final/reports/\\347\\254\\254\\344\\270\\200\\351\\227\\256\\346\\210\\220\\346\\236\\234\\345\\256\\241\\346\\237\\245\\344\\270\\216\\347\\254\\254\\344\\272\\214\\351\\227\\256\\346\\216\\245\\345\\217\\243\\350\\257\\264\\346\\230\\216.md\"\n M \"problem2/final/reports/\\351\\227\\256\\351\\242\\230\\344\\272\\214_\\344\\270\\255\\346\\226\\207\\350\\256\\272\\346\\226\\207_\\346\\255\\243\\345\\274\\217\\347\\253\\240\\350\\212\\202\\347\\211\\210.md\"\n M problem2/final/results/artifact_manifest.json\n M problem2/src/run_all.py\n?? problem2/configs/final_analysis.json\n?? problem2/final/figures/6B03205_oxygen_relationships.pdf\n?? problem2/final/figures/6B03205_q2_processed_signals_and_delay.pdf\n?? problem2/final/figures/6B03206_oxygen_relationships.pdf\n?? problem2/final/figures/6B03270_oxygen_relationships.pdf\n?? problem2/final/figures/6B03271_oxygen_relationships.pdf\n?? problem2/final/figures/6C02057_oxygen_relationships.pdf\n?? problem2/final/figures/6C02058_oxygen_relationships.pdf\n?? problem2/final/figures/6C02059_oxygen_relationships.pdf\n?? problem2/final/figures/6C02060_oxygen_relationships.pdf\n?? problem2/final/figures/6C02107_oxygen_relationships.pdf\n?? problem2/final/figures/6C02108_oxygen_relationships.pdf\n?? problem2/final/figures/delay_threshold_sensitivity.pdf\n?? problem2/final/figures/oxygen_cumulative_relationships.pdf\n?? problem2/final/figures/oxygen_cumulative_relationships.png\n?? problem2/final/figures/oxygen_cumulative_relationships.svg\n?? problem2/final/figures/oxygen_flow_review.pdf\n?? problem2/final/figures/oxygen_flow_review.png\n?? problem2/final/figures/oxygen_flow_review.svg\n?? problem2/final/figures/oxygen_instantaneous_relationships.pdf\n?? problem2/final/figures/oxygen_instantaneous_relationships.png\n?? problem2/final/figures/oxygen_instantaneous_relationships.svg\n?? problem2/final/figures/oxygen_stage_statistics.pdf\n?? problem2/final/figures/oxygen_stage_statistics.png\n?? problem2/final/figures/oxygen_stage_statistics.svg\n?? problem2/final/figures/oxygen_trend_diagnostics.pdf\n?? problem2/final/figures/oxygen_trend_diagnostics.png\n?? problem2/final/figures/oxygen_trend_diagnostics.svg\n?? problem2/final/figures/ten_heats_six_process_curves.pdf\n?? problem2/final/relationships/\n?? \"problem2/final/reports/\\347\\254\\254\\344\\272\\214\\351\\227\\256\\346\\234\\200\\347\\273\\210\\351\\252\\214\\346\\224\\266\\346\\212\\245\\345\\221\\212.md\"\n?? problem2/src/final_delivery.py\n?? problem2/src/final_figures.py\n?? problem2/src/final_statistics.py\n?? problem2/src/final_text.py\n?? problem2/tests/test_final_statistics.py\n",
+  "python": "3.12.3",
+  "dependencies": {
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "Pillow": "13.0.0"
+  },
+  "sources": {
+    "problem2/src/final_delivery.py": "675767822b3b56eb82c20742271dcde63272d53f4477d018f95f0057942c9d14",
+    "problem2/src/final_figures.py": "bcabbb405f3451bf708c7516eb248159bd4b5f3bb3b5839d9143ec635d7df8d4",
+    "problem2/src/final_statistics.py": "727b9ecadb43a3528c59fd2acd88674ad0c7dc604459e27aca3a35c87cfc9bb8",
+    "problem2/src/final_text.py": "47276bd2ab0ddb5ec25b44eae70d030685066a3208d7ad46bf8afce5c0d47d31"
+  },
+  "protected_sources": {
+    "problem2/src/q2_pipeline.py": "729e3943b0bbf7d8eea4a5aefbcd362249dd3b6057e9a7957b9ad8ee4532e2fc",
+    "problem2/src/q2_pipeline_v2.py": "ac1648f12b1d0482cbf81d37a523d9e52fb1642c1418dff59d4f7ff2808928ce",
+    "problem2/src/delay_v2.py": "0f2df31a50263a67a664e3a2687d45738c229bc87b9e3039ae96fac07b4d7ef9"
+  },
+  "config_sha256": "822dd0d1dba0e2ac6b2c87be71447c4229a14498596957349dcef6ca55ffc9b9",
+  "outputs": [
+    {
+      "path": "problem2/final/figures/6B03205_oxygen_relationships.pdf",
+      "sha256": "54c42bc2ca00f99066181c697102e99372aa84a27d7357ed8786809c4268b9f3"
+    },
+    {
+      "path": "problem2/final/figures/6B03205_oxygen_relationships.png",
+      "sha256": "c85b06e630cdce0fb6acea9886e7bd671b40f4591dba65160ca8e9f73d81345d"
+    },
+    {
+      "path": "problem2/final/figures/6B03205_oxygen_relationships.svg",
+      "sha256": "19b3a1ecf72c2cdd74486b7aad2a201eef4cc83b2484ff1454fbe191f081a92b"
+    },
+    {
+      "path": "problem2/final/figures/6B03205_q2_processed_signals_and_delay.pdf",
+      "sha256": "22b6293f52bd417d4cbe0486bcedf451c1d7ddec601c53fc0586dacfd38d4f21"
+    },
+    {
+      "path": "problem2/final/figures/6B03205_q2_processed_signals_and_delay.png",
+      "sha256": "db6241e69ef4421202bb7a05e48982f10475de1802c979268935a6c28a54f3af"
+    },
+    {
+      "path": "problem2/final/figures/6B03205_q2_processed_signals_and_delay.svg",
+      "sha256": "5d997a7f238ea01b66d7e624be75fa6d21dd7c015e1635ba474bbd7acc4d9d04"
+    },
+    {
+      "path": "problem2/final/figures/6B03206_oxygen_relationships.pdf",
+      "sha256": "4a72f595530d8fbcdbdcd472a33c66538bfaa10c07ab5fd34e3e0974bdc8ed16"
+    },
+    {
+      "path": "problem2/final/figures/6B03206_oxygen_relationships.png",
+      "sha256": "f1e205b597463241874b2ae264f220c42fb86dcca5f4bab6b3503047e220cad7"
+    },
+    {
+      "path": "problem2/final/figures/6B03206_oxygen_relationships.svg",
+      "sha256": "2514fbcf6916c25649643d8a5cde1854b3f968c88ec18d6c51d12f171663d3a3"
+    },
+    {
+      "path": "problem2/final/figures/6B03270_oxygen_relationships.pdf",
+      "sha256": "f1d7f68b327e0d8771aae308e6b8f77ab0e9a2ae48c11e61adb7b9c8d67cceef"
+    },
+    {
+      "path": "problem2/final/figures/6B03270_oxygen_relationships.png",
+      "sha256": "4f8e9dbb16019d6ced52fd248d47cff4879881a8a7aa02e5d1379063825ff6ea"
+    },
+    {
+      "path": "problem2/final/figures/6B03270_oxygen_relationships.svg",
+      "sha256": "4a4576add1f251538fd236877158a4a0a837b5ebf18ba8caefd8190b916d7be0"
+    },
+    {
+      "path": "problem2/final/figures/6B03271_oxygen_relationships.pdf",
+      "sha256": "cf331db07f281e652a7da87a1b11a4ad6ffbaba8ba3ad9d1459c1a16756b5bbd"
+    },
+    {
+      "path": "problem2/final/figures/6B03271_oxygen_relationships.png",
+      "sha256": "9cbc10d2e38f03d9a1d9cfa56b5fbfe792f5ec53cc481c990e830093c719536d"
+    },
+    {
+      "path": "problem2/final/figures/6B03271_oxygen_relationships.svg",
+      "sha256": "4f1b345a3f73389c58a09613e926e08f504aba8eff73a340ada92fa485412026"
+    },
+    {
+      "path": "problem2/final/figures/6C02057_oxygen_relationships.pdf",
+      "sha256": "ed746411e02f315167fdc7679f7741e485c00c93f3359a2e2cc72be6feedea8b"
+    },
+    {
+      "path": "problem2/final/figures/6C02057_oxygen_relationships.png",
+      "sha256": "649758214263e71e3ec99c9b8dfb4f9665e6956489c27f7b26c9e2abe2b5366d"
+    },
+    {
+      "path": "problem2/final/figures/6C02057_oxygen_relationships.svg",
+      "sha256": "eae14949110c224af2d729d3efb67fd57a1a97230367a2d203f30d13a4abe334"
+    },
+    {
+      "path": "problem2/final/figures/6C02058_oxygen_relationships.pdf",
+      "sha256": "a1c213f8847457de279179756ce082729c5cb427f34fce2959ed69801d526b68"
+    },
+    {
+      "path": "problem2/final/figures/6C02058_oxygen_relationships.png",
+      "sha256": "1048be62bbb4cd82494cd56280cba01c72043c9eddedb57670bae91c3dfc373a"
+    },
+    {
+      "path": "problem2/final/figures/6C02058_oxygen_relationships.svg",
+      "sha256": "c3de97725a00d7c561594a0a510d2fdb3cb91e554d106d55c3c17f5dcea4bc47"
+    },
+    {
+      "path": "problem2/final/figures/6C02059_oxygen_relationships.pdf",
+      "sha256": "547ddbf2c7ac9a4b004d38bed2c9bc399c5408f799243428591c4d526b38cae3"
+    },
+    {
+      "path": "problem2/final/figures/6C02059_oxygen_relationships.png",
+      "sha256": "b107b213abfdbad469b738db8cad1e8a2b8c6e50c7925f02f190b0535edc774e"
+    },
+    {
+      "path": "problem2/final/figures/6C02059_oxygen_relationships.svg",
+      "sha256": "2cec0de5ebc8df4645758d08dd6874c50093411239327fb7299bef5114fa4fb5"
+    },
+    {
+      "path": "problem2/final/figures/6C02060_oxygen_relationships.pdf",
+      "sha256": "1d9fcc6dfd1093b808c4d92ebfe5951eebc20a680972c8bbef2840eb27e80b84"
+    },
+    {
+      "path": "problem2/final/figures/6C02060_oxygen_relationships.png",
+      "sha256": "4b35ecabd6d3b238822158a9197b3a2aca8c631094e9beffca4b5222ca4a5050"
+    },
+    {
+      "path": "problem2/final/figures/6C02060_oxygen_relationships.svg",
+      "sha256": "5c5c1918f9a148734197f998192879817e836e040b3a051492f98c563c11331c"
+    },
+    {
+      "path": "problem2/final/figures/6C02107_oxygen_relationships.pdf",
+      "sha256": "356559d5b783f196b6931548732b799ceb7be1a3f2d0e18f6cbf7a2e2fcbd6e6"
+    },
+    {
+      "path": "problem2/final/figures/6C02107_oxygen_relationships.png",
+      "sha256": "9f9134fff58b422c864267dc4e6010f86578b99ce59ea21342eed6fa5e330ba4"
+    },
+    {
+      "path": "problem2/final/figures/6C02107_oxygen_relationships.svg",
+      "sha256": "bb8e408e3b318d6faaff818046d26bf5f6ea03f0ee473d275659dcfdac3261fd"
+    },
+    {
+      "path": "problem2/final/figures/6C02108_oxygen_relationships.pdf",
+      "sha256": "1e872922f9690a5c52f9bb12402e7ebff4fed458f78e944c0f43c95cebae13d5"
+    },
+    {
+      "path": "problem2/final/figures/6C02108_oxygen_relationships.png",
+      "sha256": "9453cbd7bb03dfd5e69743e2c3e46f787e55a25a8e3f0afd877f98f8f4ccd5ac"
+    },
+    {
+      "path": "problem2/final/figures/6C02108_oxygen_relationships.svg",
+      "sha256": "9ad7c856e1c6614e5ccf1ccc26eab6338ea2c7e548a11d2abb7bf81135c0e996"
+    },
+    {
+      "path": "problem2/final/figures/delay_threshold_sensitivity.pdf",
+      "sha256": "de8ea582b26a5a73c62cdc22f7409cbaa31db35723818a298c6e3e806bfcb60b"
+    },
+    {
+      "path": "problem2/final/figures/delay_threshold_sensitivity.png",
+      "sha256": "f9c1e937d64e6872a97e00cd9ee477ce5dbb6552fb1dd67a27c156502d21ef84"
+    },
+    {
+      "path": "problem2/final/figures/delay_threshold_sensitivity.svg",
+      "sha256": "af7ee7b8679f88dccfee0455ab6907ed5116a46fecd3a744774737a9251e2811"
+    },
+    {
+      "path": "problem2/final/figures/oxygen_cumulative_relationships.pdf",
+      "sha256": "bdbf7e276db6c855e4dc771a82536148951ccb05c8d67c96f754760ec5e64c45"
+    },
+    {
+      "path": "problem2/final/figures/oxygen_cumulative_relationships.png",
+      "sha256": "d9244c1e92294dad541b10efcc0d0fa4e2d6914cc92d91987c036db1677896fb"
+    },
+    {
+      "path": "problem2/final/figures/oxygen_cumulative_relationships.svg",
+      "sha256": "583d37b0f877c7c27e3c9df3d85245588cfd6c23d45a392e4c48d532ddaf48b9"
+    },
+    {
+      "path": "problem2/final/figures/oxygen_flow_review.pdf",
+      "sha256": "f935c40cd109bc9a97af7d1d02b6b337820acaaff5654a964d4dc6444c353590"
+    },
+    {
+      "path": "problem2/final/figures/oxygen_flow_review.png",
+      "sha256": "be60144ed0a006c99d5c76882c1be1693015993c22d0b3159be6275256438b48"
+    },
+    {
+      "path": "problem2/final/figures/oxygen_flow_review.svg",
+      "sha256": "79027994d012c4d8754e5c231af577f644d15760baf64e01c143e79d76260756"
+    },
+    {
+      "path": "problem2/final/figures/oxygen_instantaneous_relationships.pdf",
+      "sha256": "03a6d81353585267f22fb822410c57c31f366835c0055e7d8796b9bba9391cea"
+    },
+    {
+      "path": "problem2/final/figures/oxygen_instantaneous_relationships.png",
+      "sha256": "8bc3b86dfadea06399ab73f483d4fd75ec13bbf58d6021de65e5bcaf0c3784b9"
+    },
+    {
+      "path": "problem2/final/figures/oxygen_instantaneous_relationships.svg",
+      "sha256": "edeab3b7be846491e6bae699ed60301ae8d8de06d6a72b2bc0c69d8f2fe805f2"
+    },
+    {
+      "path": "problem2/final/figures/oxygen_stage_statistics.pdf",
+      "sha256": "655166c63cb9c8ab50c20eb3c245202b73be940205552378d5b5c262e1fbe191"
+    },
+    {
+      "path": "problem2/final/figures/oxygen_stage_statistics.png",
+      "sha256": "f1a739a87031fcf249a4c520b3a2a815e7a0cce7b9119f2b3c336d06288eef8d"
+    },
+    {
+      "path": "problem2/final/figures/oxygen_stage_statistics.svg",
+      "sha256": "a656719218b52f0a8c088c8e43a98f6e31e59c2642687fa929600054c5ac31b3"
+    },
+    {
+      "path": "problem2/final/figures/oxygen_trend_diagnostics.pdf",
+      "sha256": "e2a697b96f3804b0391bf16fd5b19d87a433ecf78f9368409acf3f3022cfaf80"
+    },
+    {
+      "path": "problem2/final/figures/oxygen_trend_diagnostics.png",
+      "sha256": "257ba0cffa20b4ec1b7aa4239626449a9fe4098375f4eae5573a0547b7e7fe7c"
+    },
+    {
+      "path": "problem2/final/figures/oxygen_trend_diagnostics.svg",
+      "sha256": "fda2b64ea3cd2543165ee91c35bf064e66c10a64d4e134c8fef7befc564562e3"
+    },
+    {
+      "path": "problem2/final/figures/ten_heats_six_process_curves.pdf",
+      "sha256": "f2bdf4d15a6fa2bd62acedba8ce2d2844e940d5e15a2071b58bd47cfdf780e5c"
+    },
+    {
+      "path": "problem2/final/figures/ten_heats_six_process_curves.png",
+      "sha256": "766944bcbdb7deaf420025f468a749908acd8005b21243d053985c6a38029bc8"
+    },
+    {
+      "path": "problem2/final/figures/ten_heats_six_process_curves.svg",
+      "sha256": "988a4aa07e55febc99faca2e4dd1f9b680538cfabfd80fe8460eb45e1fa7c5da"
+    },
+    {
+      "path": "problem2/final/relationships/README.md",
+      "sha256": "15eea3743e70b2aa42ce43e33c5caa385241744022fd69b34524f51f978d6089"
+    },
+    {
+      "path": "problem2/final/relationships/acceptance.json",
+      "sha256": "c8d1814904b72fb809fa0d54772d133646ce374621e85678f4c82fbb79a91fe6"
+    },
+    {
+      "path": "problem2/final/relationships/effective_config.json",
+      "sha256": "822dd0d1dba0e2ac6b2c87be71447c4229a14498596957349dcef6ca55ffc9b9"
+    },
+    {
+      "path": "problem2/final/relationships/figure_captions.csv",
+      "sha256": "7eeabbf4271c05f8904e5efddca34f95cf9f0f76266b5379a0329f712bf7b941"
+    },
+    {
+      "path": "problem2/final/relationships/flow_review.csv",
+      "sha256": "80b5fc20682347230b6e27df2bf19324ccb9e7af85d8009e39db4aa4785a8219"
+    },
+    {
+      "path": "problem2/final/relationships/font_validation.json",
+      "sha256": "31837140efb8498a3c1cd94bef4c59101f48c9f4561d84cd61842de9d91c28cb"
+    },
+    {
+      "path": "problem2/final/relationships/heat_summary.csv",
+      "sha256": "5e51bef2fb6e4eb653003055190bfc83ffd7962fc088031f20e0f3e2f4523d40"
+    },
+    {
+      "path": "problem2/final/relationships/increment_correlations.csv",
+      "sha256": "6f01e88c33df887707fa6ea22eefeb7d728cbe644bf6e9c03fdaff7a6aee1c1f"
+    },
+    {
+      "path": "problem2/final/relationships/input_manifest.json",
+      "sha256": "61e55630131c613eead6d2474684235131ec23dd9a2e9ff7311b12022dc41f78"
+    },
+    {
+      "path": "problem2/final/relationships/interface_checks.csv",
+      "sha256": "9ef81c48e47e53e82099ec14019547ba378435c99eac6855e546ac9148a90292"
+    },
+    {
+      "path": "problem2/final/relationships/interface_field_comparison.csv",
+      "sha256": "0e5a7f123fc2fdbced795b5a9e65b46cc8180c336e2ad6e8632a0e2baf6fbbf7"
+    },
+    {
+      "path": "problem2/final/relationships/layout_preview.png",
+      "sha256": "5c3b69440c80ca791a933356a7387be9c98f4a531ee8972e158e8661d77db84f"
+    },
+    {
+      "path": "problem2/final/relationships/level_correlations.csv",
+      "sha256": "be97a64c2c3c3e80236634c662643519cc20d2db36601d232e2aa9bf83edc2c0"
+    },
+    {
+      "path": "problem2/final/relationships/pooled_trends.csv",
+      "sha256": "cff2cb78bb9bec779fe0fafd64cb807df2a5017064d3d20df1eb74941b1d3d9a"
+    },
+    {
+      "path": "problem2/final/relationships/q1_interface_identity.csv",
+      "sha256": "837440c3f4ef3900a2fa8345a37e075feea1c87d8e717500eee4d8c269b2622e"
+    },
+    {
+      "path": "problem2/final/relationships/stage_aggregate.csv",
+      "sha256": "f3d89877abf1bded078d2678a86b329432d03151a4b6f17a078756153d610158"
+    },
+    {
+      "path": "problem2/final/relationships/stage_statistics.csv",
+      "sha256": "1bf4074799ff79a394bd9c5419470c78b394df543e9c5f899707faf81c0c6d6f"
+    },
+    {
+      "path": "problem2/final/relationships/trend_loho.csv",
+      "sha256": "e46e382e2762406f3c13d0f9d93448609f548ebab788cfea4ae32f6c3072bb69"
+    },
+    {
+      "path": "problem2/final/relationships/trend_parameters.csv",
+      "sha256": "544c5d2cc7ef9ccc292bb500080a6a787db8542ee29e868bccfbbe0e47d092b6"
+    },
+    {
+      "path": "problem2/final/reports/problem2_section.tex",
+      "sha256": "9806fe4b2897b68fe7369117eb2e62cd5a21603b87a449361e1f9ddf97ac238c"
+    },
+    {
+      "path": "problem2/final/reports/完整图表清单.md",
+      "sha256": "16184ab0748c5b15abb5fcf13f071d39f7e0e91fe455ebeca1b1185193e2f69a"
+    },
+    {
+      "path": "problem2/final/reports/实验配置与复现说明.md",
+      "sha256": "3c707788fec3f246e9b168e8fb560a237cd3e918bbd1eb6966f3ca89d55d49e3"
+    },
+    {
+      "path": "problem2/final/reports/数据交接与第三问使用说明.md",
+      "sha256": "d14bbf1aedfa0b487f736e7c01598bb93bc4430a244f09d855fc4180f2a91344"
+    },
+    {
+      "path": "problem2/final/reports/数据字典与接口说明.md",
+      "sha256": "48cf7d23dcb18a15c4ec4a464ec2866be577965c719647161d66dd1c14168bfa"
+    },
+    {
+      "path": "problem2/final/reports/独立数学审查与修复报告.md",
+      "sha256": "22604707613782482bbfc64c34d934ca4db106095db59a16ab2a3b7ea6f87cae"
+    },
+    {
+      "path": "problem2/final/reports/第一问成果审查与第二问接口说明.md",
+      "sha256": "216440deb3caad6f67ab264284c5b248e2f9c1142de7327185690625632c4817"
+    },
+    {
+      "path": "problem2/final/reports/第二问最终验收报告.md",
+      "sha256": "7238ec4e092143ed88cdabc005f241269cef4f80a7c7d7fc02ba7bef3320ae90"
+    },
+    {
+      "path": "problem2/final/reports/问题二_中文论文_正式章节版.md",
+      "sha256": "d079757689cc0620fd91c5d43301d012a67d7d5831f5b97a70e3f63e3775e9ab"
+    },
+    {
+      "path": "problem2/final/results/artifact_manifest.json",
+      "sha256": "dbde21231816da71d1538fa88d6b533284cafad020ff2fac779eb2d22564fc50"
+    }
+  ]
+}

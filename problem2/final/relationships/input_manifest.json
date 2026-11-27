@@ -1,0 +1,167 @@
+[
+  {
+    "role": "historical_q2_release",
+    "path": "/home/user/.cache/apmcm-b/releases/problem2-final-data/Steelmaking-process-q2-final-data.zip",
+    "sha256": "c1c444c56ea5827d5ea91465e86b7b98818883d6487e839f67c23524fe68c8a1"
+  },
+  {
+    "role": "q1_release_manifest",
+    "path": "/home/user/.cache/apmcm-b/releases/problem1-final-data-v1/data_package_manifest.json",
+    "sha256": "359b2937f23497b674e1ee3eda581e2dce7745ced2998f878ea6cf44e7c77bc5"
+  },
+  {
+    "role": "q1_release_checksums",
+    "path": "/home/user/.cache/apmcm-b/releases/problem1-final-data-v1/SHA256SUMS",
+    "sha256": "faea3ac5a9fe655b8b90c09c3e38616f3d4dd23b0e550e5134fc368a56998f89"
+  },
+  {
+    "role": "raw_xlsb",
+    "path": "Data/Attachment 1. Heat No. 6B03205.xlsb",
+    "sha256": "8c73aaefadb9c8d8c3f83b193d9b4583dcfdfb239446c69b7eacd4120820783c"
+  },
+  {
+    "role": "baseline_npz",
+    "path": "problem2/final/delay_audit/baseline/data/6B03205_q2_processed.npz",
+    "sha256": "e3ae760723c9cc1c073814e3f5c9e75b9f88c114baece271b31dd9ef812c9364"
+  },
+  {
+    "role": "q1_read_only",
+    "path": "problem1/final/data/6B03205_interface.npz",
+    "sha256": "465d091f0b80250ef8416b99785567f45605ae9deecdd01b35eb74d5cc68fee6"
+  },
+  {
+    "role": "raw_xlsb",
+    "path": "Data/Attachment 2. Heat No. 6B03206.xlsb",
+    "sha256": "6a0558bcf4d02316e805fd566d441a21ff14f8c151d09dffc5a786608cf84c46"
+  },
+  {
+    "role": "baseline_npz",
+    "path": "problem2/final/delay_audit/baseline/data/6B03206_q2_processed.npz",
+    "sha256": "6601d29f2905697fed63d143136b389d96075d61801f0d28b0c985d2ca9f7c05"
+  },
+  {
+    "role": "q1_read_only",
+    "path": "problem1/final/data/6B03206_interface.npz",
+    "sha256": "a8fc6259597a9d9b2a78dc5597390810b1015c8bafe245fb7d8bf1856a174329"
+  },
+  {
+    "role": "raw_xlsb",
+    "path": "Data/Attachment 3. Heat No. 6B03270.xlsb",
+    "sha256": "f8e48e3dfa90b6b4031746781913e85cfe07c7ad5c69c049f027163a141b9a54"
+  },
+  {
+    "role": "baseline_npz",
+    "path": "problem2/final/delay_audit/baseline/data/6B03270_q2_processed.npz",
+    "sha256": "0bea859aa9c1cd3621de9dc2b28d0c2e60e3b7e1a24d10e1e887b595ef8fbd90"
+  },
+  {
+    "role": "q1_read_only",
+    "path": "problem1/final/data/6B03270_interface.npz",
+    "sha256": "43278a30d1105869bc75d9ae7639448d89c296104d1b7d67a56b38679d5b345f"
+  },
+  {
+    "role": "raw_xlsb",
+    "path": "Data/Attachment 4. Heat No. 6B03271.xlsb",
+    "sha256": "ecf62c1c46a0ef94a6151d86f66e7c44b2a6005337c7d84735debcffed7a619a"
+  },
+  {
+    "role": "baseline_npz",
+    "path": "problem2/final/delay_audit/baseline/data/6B03271_q2_processed.npz",
+    "sha256": "e53fb47c4f416d87c9a980b168757b1277d4dd2851e42fd249b44d0456b232ee"
+  },
+  {
+    "role": "q1_read_only",
+    "path": "problem1/final/data/6B03271_interface.npz",
+    "sha256": "32e13ad2a46ad5406b69ba0de18ea7c5b46d5d58a7d7fe83c1b840e1e5b2797d"
+  },
+  {
+    "role": "raw_xlsb",
+    "path": "Data/Attachment 5. Heat No. 6C02057.xlsb",
+    "sha256": "f8b4e18a408a61bf1fed4303f9554ae1d4aec0a643da076cc1ddffe89a1a5d59"
+  },
+  {
+    "role": "baseline_npz",
+    "path": "problem2/final/delay_audit/baseline/data/6C02057_q2_processed.npz",
+    "sha256": "1a47b5472a24ed0de7010d6b913c8096979b014e20c2a70e164ed1133731fdba"
+  },
+  {
+    "role": "q1_read_only",
+    "path": "problem1/final/data/6C02057_interface.npz",
+    "sha256": "06ba828ff770e9965df575108b40e11e87885a36e48e8b4f789f3915f37c40b7"
+  },
+  {
+    "role": "raw_xlsb",
+    "path": "Data/Attachment 6. Heat No. 6C02058.xlsb",
+    "sha256": "06da7f31ab390489a3efecd0b9047c4851ebfee12a09e86a284ba59fb178940e"
+  },
+  {
+    "role": "baseline_npz",
+    "path": "problem2/final/delay_audit/baseline/data/6C02058_q2_processed.npz",
+    "sha256": "0b129b93a6edf6680fcdfeaf3b2a915c282a1b4d2c2509f41ffd2a80e24965de"
+  },
+  {
+    "role": "q1_read_only",
+    "path": "problem1/final/data/6C02058_interface.npz",
+    "sha256": "59504be04fea704a8862531396a782c06ad1819b2e6d0f51b168b73413f2fb38"
+  },
+  {
+    "role": "raw_xlsb",
+    "path": "Data/Attachment 7. Heat No. 6C02059.xlsb",
+    "sha256": "c86b2a668c62e3089249e4e1b9ffd284351919c2a244c11ef86ed89ed5febba5"
+  },
+  {
+    "role": "baseline_npz",
+    "path": "problem2/final/delay_audit/baseline/data/6C02059_q2_processed.npz",
+    "sha256": "fb6bf38615e055b2a6f474b26f3dd2800d7c3a8a285c3fa050b7be93c1efcdcc"
+  },
+  {
+    "role": "q1_read_only",
+    "path": "problem1/final/data/6C02059_interface.npz",
+    "sha256": "a1c23f8f875d6e826192a5a7bfd5da17ad9b1f70104c85cf76dd258026f667b3"
+  },
+  {
+    "role": "raw_xlsb",
+    "path": "Data/Attachment 8. Heat No. 6C02060.xlsb",
+    "sha256": "f135704ec92aa9418ae3d8c03b7c31ef4af27976b35fabf8430c5a8cdbfd0072"
+  },
+  {
+    "role": "baseline_npz",
+    "path": "problem2/final/delay_audit/baseline/data/6C02060_q2_processed.npz",
+    "sha256": "be63b3e730ddd526211131fb6eec00295530b8b182e5955c10d0c321b9a3def1"
+  },
+  {
+    "role": "q1_read_only",
+    "path": "problem1/final/data/6C02060_interface.npz",
+    "sha256": "b216961614fec76ca19f24aba5bfed10856c5ae41434e050e153ebfe7d3b9cd4"
+  },
+  {
+    "role": "raw_xlsb",
+    "path": "Data/Attachment 9. Heat No. 6C02107.xlsb",
+    "sha256": "30e817ac542c4ca852730c9c39ea72eea39199c7750acdb24fd5d8e9305cfb56"
+  },
+  {
+    "role": "baseline_npz",
+    "path": "problem2/final/delay_audit/baseline/data/6C02107_q2_processed.npz",
+    "sha256": "b1d701c3526cedef5374c492d1ef117fbec46637131146e1210358751fccc3a3"
+  },
+  {
+    "role": "q1_read_only",
+    "path": "problem1/final/data/6C02107_interface.npz",
+    "sha256": "d3679cab01b84248cc3736abd348d2956a0df5cdb3148072396add6aac3787ca"
+  },
+  {
+    "role": "raw_xlsb",
+    "path": "Data/Attachment 10. Heat No. 6C02108.xlsb",
+    "sha256": "06d915ba1c186da76b60a110bddf51b9a52944f623ad9e55eef02bc40cd4d90e"
+  },
+  {
+    "role": "baseline_npz",
+    "path": "problem2/final/delay_audit/baseline/data/6C02108_q2_processed.npz",
+    "sha256": "25a007fa414d8140c60a47d3297e349136e8bb9c2cb53ad60c1f7b28f3953977"
+  },
+  {
+    "role": "q1_read_only",
+    "path": "problem1/final/data/6C02108_interface.npz",
+    "sha256": "e605363af3e4ddc43fedf6271a816df75b12ccb0213d70de6e0afb8d02104de9"
+  }
+]

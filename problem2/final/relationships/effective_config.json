@@ -1,0 +1,37 @@
+{
+  "baseline_commit": "fe52075",
+  "data_dir": "problem2/final/delay_audit/baseline/data",
+  "q1_data_dir": "problem1/final/data",
+  "output_dir": "problem2/final/relationships",
+  "figure_dir": "problem2/final/figures",
+  "time_step_s": 0.5,
+  "increment_intervals_s": [
+    0.5,
+    5.0,
+    15.0
+  ],
+  "oxygen_progress_edges": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "trend_degrees": [
+    1,
+    2
+  ],
+  "flow_sg_windows": [
+    21,
+    31,
+    41
+  ],
+  "bootstrap_heat_resamples": 2000,
+  "random_seed": 5201,
+  "correlation_inference": "descriptive; no iid pointwise p values",
+  "stage_boundary_ties": "latest observation at equal oxygen; record endpoints fixed",
+  "trend_weighting": "each heat has total weight one in pooled fits; each heat separately scored in LOHO",
+  "model_role": "retrospective trends against final oxygen progress; no causal or online prediction claim",
+  "raw_data_dir": "Data"
+}

@@ -1,39 +1,10 @@
-\\section{Model for Problem 2}
-
-\\subsection{Data and continuous reconstruction}
-For heat $h$, the source time is defined by $t_{h,i}=0.5(s_{h,i}-s_{h,1})$ seconds. Let $O_h(t)$ denote cumulative oxygen consumption in $\\mathrm{m^3}$ and let $C_{g,h}(t)$ denote the instantaneous volumetric flow rate of gas $g\\in\\{\\mathrm{CO},\\mathrm{CO_2}\\}$ in $\\mathrm{m^3/s}$. A robust Hampel detector with a zero-scale fallback identifies isolated spikes while preserving sustained steps. PCHIP is then fitted to the retained observations and the original values, cleaned values, and masks are saved separately.
-
-\\subsection{Oxygen flow and cumulative emissions}
-The oxygen flow is estimated from the reconstructed cumulative oxygen curve using a third-order, 31-sample Savitzky--Golay derivative,
-\\[
-\\widehat q_h(t)=\\max\\{0,\\operatorname{SGDeriv}_{31,3}[\\widehat O_h](t)\\}.
-\\]
-The cumulative gas emission is computed by
-\\[
-\\widehat E_{g,h}(t)=\\int_0^t\\widehat C_{g,h}(u)\\,du.
-\\]
-PCHIP analytic derivatives and antiderivatives are retained as consistency diagnostics. The analytic integral recovers the PCHIP curve to machine precision, whereas trapezoidal integration of nodal derivatives is unsuitable for the long plateaus and discrete changes in the cumulative record.
-
-\\subsection{Oxygen--flue-gas relationships}
-For each heat, four relationships are evaluated: cumulative oxygen versus instantaneous CO, instantaneous CO$_2$, cumulative CO emission, and cumulative CO$_2$ emission. Pearson and Spearman coefficients, linear and quadratic fits, and oxygen-quantile stage statistics are reported. High correlations between cumulative quantities are interpreted cautiously because both variables share a time trend.
-
-\\subsection{Reliability-weighted local delay}
-Let $x_h(t)=\\widehat q_h(t)$ and $y_{g,h}(t)=\\widehat C_{g,h}(t)$. In each window, detrended changes are compared over nonnegative lags. A window is accepted only when source and target dynamic standard deviations, the maximum correlation, peak separation, peak width, and boundary checks all pass. Thus
-\\[
-\\mathcal V_g=\\{i:\\text{window }i\\text{ passes all reliability checks}\\},
-\\]
-and $\\widehat\\tau_i$ is stored only for $i\\in\\mathcal V_g$. Unidentifiable windows remain NaN and are accompanied by validity masks and confidence scores.
-
-\\subsection{Flow-dependent delay and time mapping}
-Reliable window samples are $(\\bar q_i,\\widehat\\tau_i,w_i)$. We compare a fixed delay with the constrained inverse-square-root model
-\\[
-\\tau(q)=a+bq^{-1/2},\\qquad a\\geq0,\\quad b\\geq0.
-\\]
-The model is fitted only when at least five reliable samples are available. The source-to-measurement map is
-\\[
-\\phi_g(t)=t+\\tau_g(t),
-\\]
-and only in-domain, strictly increasing observed mappings are used for offline alignment. Each heat file contains observed delay, model delay, confidence, observed and model mappings, and alignment masks.
-
-\\subsection{Results and limitations}
-All ten heats have continuous Sequence and a 0.5-s sampling interval. Reliable delay coverage is low (0--4.7\\%), and many leave-one-heat-out test heats have no valid delay windows. The resulting delay is a statistical response delay containing reaction, transport, and instrument components; it is not an independently measured pipe transport time. The NPZ interface preserves NaNs in unidentifiable intervals so that later models can use the masks explicitly.
+% Current English section; include from the main document, not standalone.
+\section{Model and Results for Problem 2}
+\subsection{Process reconstruction and numerical quantities}
+For heat $h$, $t_i=0.5(s_i-s_0)$ seconds. Cumulative oxygen $O_h$ is in $\mathrm{m^3}$; the two gas fields are instantaneous volume rates $C_{g,h}$ in $\mathrm{m^3/s}$ under the problem statement. A nine-sample Hampel detector (threshold 6) and PCHIP preserve original values and outlier masks. The frozen oxygen flow is a nonnegative, degree-three, 31-sample Savitzky--Golay derivative. Gas totals are trapezoidal time integrals. Reintegration checks cumulative consistency, not instantaneous flow accuracy. Repeated cumulative samples and discrete increments require caution when interpreting short-period changes.
+\subsection{Four oxygen relationships}
+Within each heat we report Pearson and Spearman coefficients, nonoverlapping increments at 0.5, 5 and 15 seconds, and five equal 20-percent oxygen-progress stages. Whole heats, rather than time samples, are resampled for stage uncertainty. A constant-rate cumulative comparator demonstrates that high level correlation alone does not establish a reaction mechanism. Increment correlations depend on aggregation scale and do not isolate a causal effect.
+With $p=(O_h-O_h(0))/(O_h(T_h)-O_h(0))$, linear and quadratic descriptive trends are fitted with equal total weight per heat and evaluated by leaving one heat out. For instantaneous CO, macro-average test $R^2$ is 0.596 and 0.792; for instantaneous CO$_2$, it is $-0.044$ and 0.309. The normalized progress requires the final oxygen total, so this is a retrospective evaluation. Curves are not extrapolated or substituted for physical integrals.
+\subsection{Delay identifiability and offline handoff}
+The frozen V2 method uses 121 samples, stride five, and a nonnegative 0--60 second lag search. Dynamic excitation, correlation, peak separation and non-boundary checks determine acceptance. Peak width and prominence are diagnostic only. CO has 13 accepted windows out of 2241, and CO$_2$ has 11. These overlapping windows, and 167 scale-recurring source candidates, are not independent physical events. Four candidate pairings remain unconfirmed. Existing fixed and constrained inverse-square-root delay predictions remain exploratory; the data do not validate a decreasing flow--delay function.
+The 57-field NPZ schema is unchanged. Ten heats and 570 historical fields have been checked, and the local first-question time axes match exactly. Observed delays, model delays and physical measurements must remain distinct. NaNs are not replaced by zero; downstream use requires masks and heuristic confidence scores. The interface is offline and may use future samples.

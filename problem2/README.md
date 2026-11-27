@@ -1,5 +1,7 @@
 # Problem 2
 
+当前定稿入口为 `python -m problem2.src.final_delivery`，配置见 [final_analysis.json](configs/final_analysis.json)。[中文正式章节](final/reports/问题二_中文论文_正式章节版.md)包含八张统计表、六组核心图；[最终验收](final/reports/第二问最终验收报告.md)给出十炉接口检查。时滞算法开发暂停，正式V2保留，尚未验证流量—时滞物理函数。
+
 本目录实现 APMCM 2026 B 题第二问的工艺信号分析。输入是十炉原始 XLSB；输出是连续工艺信号、氧枪流量、累计烟气排放、可靠性筛选后的局部响应时滞、时间映射和可供后续问题调用的 NPZ 接口。原始 XLSB 只读读取，所有结果写入 `problem2/final/`。
 
 ## 目录
@@ -23,7 +25,7 @@ problem2/
 在仓库根目录执行：
 
 ```powershell
-uv run --with 'numpy<2' --with pandas --with pyxlsb --with scipy --with matplotlib `
+uv run --with 'numpy<2' --with pandas --with pyxlsb --with scipy --with matplotlib --with pillow `
   python -m problem2.src.run_all --data-dir G:\亚太杯\Data
 ```
 
@@ -52,14 +54,15 @@ uv run --with 'numpy<2' --with scipy --with pytest pytest -q problem2/tests
 2. 氧枪流量采用累计耗氧量连续曲线的 Savitzky–Golay 近似导数，并截断负值；同时保存由流量梯形积分得到的累计量用于一致性检查。
 3. CO 和 CO₂ 的累计排放由清洗后的瞬时体积流量积分得到。
 4. 局部时滞只对动态激励、相关阈值、峰值分离和边界条件均合格的窗口返回观测值；峰宽与峰显著性仅记录为诊断量，不参与筛选。不可辨识窗口保存 NaN 和掩膜。
-5. 流量—时滞关系使用可靠窗口中心样本进行固定模型、反平方根模型和约束模型比较。样本不足时保留固定模型或不可用状态。
+5. 正式接口保留基于可靠窗口的既有固定与约束反平方根探索结果；不足五个合格窗口时模型不可用。24个重叠窗口不构成已确认独立事件，不重新开展流量—时滞回归。
 6. 时间映射遵循 `t_measurement = t_source + delay(t_source)`，并保存观测映射、模型映射和单调有效掩膜。
 
 ## 结果与接口
 
 - `final/results/process_validation.csv`：十炉字段、Sequence、采样间隔和缺失值核验。
 - `final/results/q2_summary.json`：每炉处理摘要和可靠窗口覆盖率。
-- `final/results/relationship_summary.json`：四类累计耗氧量—烟气关系。
+- `final/relationships/`：当前四类关系的原值/增量相关、等耗氧进度阶段、趋势与留一炉次结果、流量复核及接口验收。
+- `final/results/relationship_summary.json`：旧版四类关系诊断（包含分位数阶段），与当前等耗氧进度阶段区别保存。
 - `final/results/cross_validation.json`：留一炉次时滞模型验证和阈值敏感性。
 - `final/results/reconstruction_evaluation.json`：重构、反积分和全字段质量检查。
 - `final/results/raw_injection_validation.json`：原始 XLSB 注入尖峰后的端到端检测结果。
@@ -136,3 +139,5 @@ PDF嵌入字体，SVG保留可编辑文字并要求查看设备安装Times New R
 ## 当前真实事件验证
 
 以 `dea6637` 为基准的[真实事件验证](research/real_event_validation/results/REPORT.md)及[复现入口](research/real_event_validation/README.md)保存十炉候选、原24窗口复核、重叠与尺度检查。用户已确认中文附件1只是现有英文原始文件的改名；本轮文件指纹核验关闭了前轮报告中的数据身份待确认项。历史报告仍保留当时状态，正式模型与NPZ接口保持冻结。
+
+当前正式复现步骤与输入要求见 [实验配置与复现说明](final/reports/实验配置与复现说明.md)。历史研究脚本按各自冻结提交复现；其旧待办不覆盖本轮数据身份确认和时滞开发暂停决定。
