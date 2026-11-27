@@ -26,9 +26,9 @@ F04仅保留时间和波长降采样两面板，共用图例，所有十五个RM
 
 按6.8英寸（约173 mm）正文版宽制作，基本文字8.2 pt；逐张打开实际渲染检查了框内换行、公共图例、坐标、面板间距及留白。F02框内文字还通过实际渲染包围盒核对，避免溢出框体。600 dpi仅作为输出规格，不代替版面审查。
 
-- [F02全页检查](review/F02_model_mechanism_page.png)
-- [F03全页检查](review/F03_local_evidence_page.png)
-- [F04全页检查](review/F04_continuous_reconstruction_page.png)
+- [F02全页检查](review/F02_model_mechanism_caption_page.png)
+- [F03全页检查](review/F03_local_evidence_caption_page.png)
+- [F04全页检查](review/F04_continuous_reconstruction_caption_page.png)
 - [简化与归档说明](../../archive/reports/三张核心图_重设计说明.md)
 - [图注](figure_captions.md)、[来源哈希](source_manifest.csv)、[输出哈希](asset_manifest.csv)、[数值及文件核验](validation.json)
 
@@ -46,3 +46,5 @@ simplify.py是F02/F03/F04及A11/A12的唯一当前绘图实现；package.py只�
 字体安装：需本机安装真实Times New Roman（Regular/Bold/Italic/Bold Italic），脚本使用`findfont(..., fallback_to_default=False)`核实，缺失时停止，避免静默替换字体。字体文件不随仓库分发。
 
 本次字体与标题统一已完成402项核验：26张PDF均嵌入TimesNewRoman字体，数值源文件和模型保持冻结，逐图绘图数据在样式处理前后相同。全部主图的带图题版宽预览见`review/F*_caption_page.png`。
+
+更新后直接替换当前文件，不保留旧样式与修改前后拼图；`review/`仅维护每张主图一份当前带图题检查页，共七份。旧呈现通过Git历史追溯，生成脚本不得重新产生已清除的预览。

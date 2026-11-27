@@ -1,8 +1,8 @@
 """Verify the sole current manuscript and figure set; never regenerate historical prose."""
 from pathlib import Path
-import re,json,hashlib,subprocess,io
+import re,json,hashlib,subprocess
 import pandas as pd,numpy as np
-from PIL import Image,ImageDraw
+from PIL import Image
 O=Path(__file__).resolve().parents[1];F=O.parents[1];R=F/'reports';ROOT=F.parents[1];CHECK={}
 def verify(name,value):
  assert value,name
@@ -57,9 +57,8 @@ def main():
   if r.format=='svg':verify('English:'+r.figure,not re.search(r'[\u3400-\u9fff]',p.read_text()))
   if r.format=='png':
    im=Image.open(p);verify('600dpi:'+r.figure,abs(im.info['dpi'][0]-600)<1)
-   if r.figure.startswith(('F02','F03','F04')):
-    im=im.convert('RGB');im.thumbnail((816,1220));page=Image.new('RGB',(992,1403),'white');page.paste(im,((992-im.width)//2,55));ImageDraw.Draw(page).text((88,20),r.figure+' | A4, 6.8-inch content width',fill='black');page.save(O/f'review/{r.figure}_page.png')
-    old=subprocess.run(['git','show','bd7cfa8:'+str(p.relative_to(ROOT))],capture_output=True,check=True).stdout;prev=Image.open(io.BytesIO(old)).convert('RGB');now=Image.open(p).convert('RGB');prev.thumbnail((800,1300));now.thumbnail((800,1300));comparison=Image.new('RGB',(1640,max(prev.height,now.height)+45),'white');comparison.paste(prev,(10,40));comparison.paste(now,(830,40));draw=ImageDraw.Draw(comparison);draw.text((10,12),'Before simplification',fill='black');draw.text((830,12),'Current formal figure',fill='black');comparison.save(O/f'review/{r.figure}_comparison.png')
+ verify('seven_current_previews',len(list((O/'review').glob('*.png')))==7)
+ verify('no_stale_previews',all(p.name.endswith('_caption_page.png') for p in (O/'review').glob('*.png')))
  review=json.loads((O/'visual_review.json').read_text());verify('visual_review_completed',review['completed'])
  for path,digest in review['reviewed_sha256'].items():verify('review_current:'+path,hashlib.sha256((O/path).read_bytes()).hexdigest()==digest)
  for rel in ['problem1/final/src/detectors.py','problem1/final/config/protocol.json','problem1/v3/src/model3.py','problem1/v3/src/stable_completion.py','problem1/v3/src/interface.py','problem1/v2/src/convex_censor.py']:
