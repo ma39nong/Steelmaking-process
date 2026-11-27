@@ -5,8 +5,11 @@ import numpy as np,pandas as pd
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+from matplotlib import font_manager
+for font in (Path.home()/'.local/share/fonts/msttcore').glob('*.TTF'):font_manager.fontManager.addfont(str(font))
+font_manager.findfont('Times New Roman',fallback_to_default=False)
 T=Path(__file__).resolve().parent;F=T.parent;P=F.parent
-plt.rcParams.update({'font.family':'DejaVu Serif','font.size':8,'pdf.fonttype':42,'svg.fonttype':'none'})
+plt.rcParams.update({'font.family':'Times New Roman','font.size':8,'pdf.fonttype':42,'svg.fonttype':'none'})
 SOURCES=[]
 
 def mdtable(headers,rows):return '|'+ '|'.join(headers)+'|\n|'+'|'.join(['---']+['---:']*(len(headers)-1))+'|\n'+'\n'.join('|'+ '|'.join(map(str,r))+'|' for r in rows)+'\n'
@@ -20,7 +23,7 @@ def emit(name,caption,headers,rows,note,sources,widths=None):
  clean=[[re.sub(r'\*\*','',str(c)) for c in r] for r in rows]
  pd.DataFrame(clean,columns=headers).to_csv(T/f'data/{name}.csv',index=False)
  tex=r'\begin{tabular}{l'+('r'*(len(headers)-1))+'}\n'+r'\toprule'+'\n'+' & '.join(map(latexescape,headers))+r' \\'+'\n'+r'\midrule'+'\n'+'\n'.join(' & '.join(map(latexescape,r))+r' \\' for r in rows)+'\n'+r'\bottomrule'+'\n'+r'\end{tabular}'+'\n'
- (T/f'latex/{name}.tex').write_text('% booktabs fragment; captions/notes remain editable in paired Markdown.\n'+tex)
+ (T/f'latex/{name}.tex').write_text('% booktabs fragment; captions/notes remain editable in paired Markdown.\n'+r'\begingroup'+'\n'+r'\fontspec{Times New Roman}'+'\n'+tex+r'\endgroup'+'\n')
  if name.startswith('T'):
   n=len(rows);height=max(1.5,.29*n+1.0)
   fig,ax=plt.subplots(figsize=(7.2,height));ax.axis('off');table=ax.table(cellText=clean,colLabels=[{'Time (s)':'Time\n(s)','65535 records':'65535\nrecords','Median (counts)':'Median\n(counts)','Time corr.':'Time\ncorr.','Wave corr.':'Wave\ncorr.'}.get(h,h) if name=='T1' else h for h in headers],loc='center',cellLoc='right',colLoc='center',colWidths=widths)
@@ -96,6 +99,6 @@ def main():
  emit('A6','附表A6 原网格保存迭代与输出稳定性',['Heat','Phi300','Phi600','Phi1200','delta1200','Phi change (%)','Fallback'],rows,'同一正式原网格配置的检查点；目标相对变化为(Φ1200−Φ600)/Φ600。不同炉目标值不用于横向比较；满足变化率标准与局部输出稳定性分开记录。',[str(F/'results/*_solver.json'),str(F/'results/final_summary.csv')])
  common=pd.read_csv(F/'results/contamination_confirmation.csv').query("strategy=='D_adaptive4'");exact=pd.read_csv(F/'results/exact_final_pipeline_confirmation.csv');means=exact.groupby('heat_id').mean(numeric_only=True).mean();emit('A7','附表A7 同一确认案例的发布配置复核',['Configuration','Polluted RMSE','Overall RMSE','Unpolluted RMSE','New peaks','Stopped'],[['300-step S=4',f'{u.loc["D_adaptive4","pollution_rmse"]:.2f}',f'{u.loc["D_adaptive4","overall_rmse"]:.2f}',f'{u.loc["D_adaptive4","unpolluted_rmse"]:.2f}',str(int(u.loc['D_adaptive4','introduced_unsupported_peak_count'])),f'{int(common.converged.sum())}/{len(common)}'],['Released 600/1200',f'{means.pollution_rmse:.2f}',f'{means.overall_rmse:.2f}',f'{means.unpolluted_rmse:.2f}',str(int(exact.introduced_unsupported_peak_count.sum())),f'{int(exact.converged.sum())}/{len(exact)}']],'同一批固定确认案例，不是第二次独立验证；RMSE为炉次宏平均。两个配置新增峰分别48和17；后者与300步阈值6的17属于不同统计结果。',[str(F/'results/exact_final_pipeline_confirmation.csv'),str(F/'results/unified_comparison.csv')])
  pd.DataFrame(SOURCES).to_csv(T/'source_mapping.csv',index=False)
- (T/'README.md').write_text('# 第一问出版表格V3\n\n正文为T1、T2、T3(a)/(b)、T4、T5五个论证主题；附录A1—A7保留完整数值。每表有可编辑Markdown、CSV、booktabs LaTeX片段；preview为排版检查，不作为唯一表源。\n\n数值从源CSV/JSON生成：P/R/F1三位小数，RMSE均值及SD两位，强度统计整数，时间相邻相关四位、波长相邻相关六位，修复率ppm两位。先比较未舍入值再标最优，平局共同加粗。相对比例按总计分母计算。\n\nLaTeX片段需在全文模板中加载booktabs；不是独立LaTeX文档。所有文件的中文标题、协议、单位和舍入说明在同名Markdown中。预览为7.2英寸单栏宽，8 pt字；数据表可作为双栏跨栏表。\n\n复现：`.venv/bin/python problem1/final/tables_v3/build_tables.py`。来源见[source_mapping.csv](source_mapping.csv)，原十表逐项审核见[table_review_v3.md](../reports/table_review_v3.md)。\n')
+ (T/'README.md').write_text('# 第一问出版表格V3\n\n正文为T1、T2、T3(a)/(b)、T4、T5五个论证主题；附录A1—A7保留完整数值。每表有可编辑Markdown、CSV、booktabs LaTeX片段；preview为排版检查，不作为唯一表源。\n\n数值从源CSV/JSON生成：P/R/F1三位小数，RMSE均值及SD两位，强度统计整数，时间相邻相关四位、波长相邻相关六位，修复率ppm两位。先比较未舍入值再标最优，平局共同加粗。相对比例按总计分母计算。\n\n表格内所有英文字母、数字、表头及统计标记统一使用真实Times New Roman。Markdown与CSV保存可编辑内容，显示字体由阅读器决定；正式输出以预览PDF和LaTeX排版字体为准。\n\nLaTeX片段需使用XeLaTeX或LuaLaTeX，在全文模板中加载booktabs及fontspec，并安装Times New Roman；不是独立LaTeX文档。所有文件的中文标题、协议、单位和舍入说明在同名Markdown中。预览为7.2英寸单栏宽，8 pt字；数据表可作为双栏跨栏表。\n\n复现：`.venv/bin/python problem1/final/tables_v3/build_tables.py`。来源见[source_mapping.csv](source_mapping.csv)，原十表逐项审核见[table_review_v3.md](../reports/table_review_v3.md)。\n')
  print('TABLES_COMPLETE',len(SOURCES))
 if __name__=='__main__':main()
