@@ -1,0 +1,9 @@
+Module,Parameter,Value,Basis
+Detection,Score threshold,4,Development loss
+Detection,Scale floors,25 / 50 counts,Local residual scale
+Detection,Connected span,3 frames x 7 channels,Local point repair
+Background,Rank,4,Energy and development
+Completion,Huber scale,0.003,196.605 counts
+Completion,Rank,4,Locked development choice
+Solver,Relative change,1e-4,Stopping criterion
+Continuous,Interpolation,Bilinear,Held-out / convex hull

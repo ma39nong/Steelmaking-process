@@ -1,0 +1,6 @@
+Strategy,Precision ↑,Recall ↑,F1 ↑,New peaks ↓
+Retain all,—*,0.000,0.000,0
+Bidirectional MAD,0.287,0.381,0.327,72
+Conservative,1.000,0.181,0.306,0
+Adaptive S=4,0.893,0.705,0.788,48
+Adaptive S=6,0.961,0.517,0.672,17

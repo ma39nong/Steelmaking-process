@@ -23,6 +23,11 @@ def main():
   for name,digest in json.loads((ROOT/f'problem1/{version}/results/history_immutable.json').read_text()).items():
    actual=sha(ROOT/name)
    if actual!=digest:
+    if name=='data_manifest.csv':
+     base=subprocess.run(['git','show',f'4d28373:{name}'],capture_output=True,check=True).stdout
+     old=b'Data/Attachment 1. Heat No. 6B03205.xlsb.xlsb';new=b'Data/Attachment 1. Heat No. 6B03205.xlsb'
+     check('metadata_source_name:'+version,hashlib.sha256(base).hexdigest()==digest and (ROOT/name).read_bytes().replace(new,old)==base)
+     continue
     base=subprocess.run(['git','show',f'4d28373:{name}'],capture_output=True,check=True).stdout
     check('existing_navigation_exception:'+version+name,name in ['README.md','problem1/README.md'] and hashlib.sha256(base).hexdigest()!=digest)
     history.append(dict(version=version,path=name,locked_sha256=digest,baseline_sha256=hashlib.sha256(base).hexdigest(),current_sha256=actual,preexisting_mismatch=True))
@@ -58,6 +63,11 @@ def main():
     im=im.convert('RGB');im.thumbnail((816,1210));page=Image.new('RGB',(992,1403),'white');page.paste(im,((992-im.width)//2,60));ImageDraw.Draw(page).text((88,24),f'{r.figure} | A4 proof, 6.8 inch maximum width',fill='black');page.save(proof/f'{r.figure}_page.png')
  pd.DataFrame(render).to_csv(O/'render_dimensions.csv',index=False)
  paper=F/'reports/问题一_中文论文_V3_研究深化与图表重构版.md';s=paper.read_text();old=(F/'reports/问题一_中文论文_V2_英文配图版.md').read_text()
+ check('F05_points_inside_axis',json.loads((O/'F05_axis_bounds.json').read_text())['all_strategy_points_visible'])
+ check('Latin_upper_support_consistent',r'\qquad u_{ij}=\max' in s and r'\Pi_{[\ell_{ij},u_{ij}]}' in s)
+ check('T1_explicit_65535_header','65535 records' in (F/'tables_v3/T1.md').read_text())
+ for k in range(1,8):
+  lead=s.split(f'![图5-{k}]')[0].rstrip().split('\n\n')[-1];check('body_figure_call:'+str(k),f'图5-{k}' in lead)
  check('seven_sections',len(re.findall(r'^## 5\.[1-7] ',s,re.M))==7);check('seven_main_images',len(re.findall(r'^!\[',s,re.M))==7);check('equations_preserved',re.findall(r'\\tag\{[^}]+\}',s)==re.findall(r'\\tag\{[^}]+\}',old))
  for p in [paper,F/'reports/问题一_V3_图表与研究附录.md']:
   for link in re.findall(r'\]\(([^)]+)\)',p.read_text()):
