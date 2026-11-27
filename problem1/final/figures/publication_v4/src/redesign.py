@@ -15,8 +15,10 @@ import publication_figures as prior
 RAW=prior.RAW;TEAL=prior.REPAIR;ORANGE=prior.ANOM;PURPLE=prior.FALL;GRAY='#697c85';PALE='#edf2f3'
 plt.rcParams.update({'font.size':8,'axes.labelsize':8,'axes.titlesize':8.5,'xtick.labelsize':7.5,'ytick.labelsize':7.5,'svg.hashsalt':'problem1-publication-v4'})
 MAN=[];CHECKS={}
+import typography
+
 def save(fig,name):
- fig.canvas.draw()
+ typography.apply(fig,name);fig.canvas.draw()
  assert not any(re.search(r'[\u3400-\u9fff]',x.get_text()) for x in fig.findobj(match=Text))
  for ext in ['png','svg','pdf']:
   p=O/f'main/{name}.{ext}';fig.savefig(p,dpi=600,bbox_inches='tight',pad_inches=.06,metadata={'Creator':'Steelmaking-process publication v4'})
@@ -44,7 +46,7 @@ def repair_atlas():
   ax.axhspan(k,k+1,color='#f0f3f4' if k%2==0 else 'white',zorder=0);ax.axhline(k,color='#d6dee1',lw=.4);ax.text(1035,k+.5,str(int(s.set_index('heat_id').loc[h,'repair_points'])),va='center',fontsize=7,color=GRAY)
  for fall,mark,label in [(False,'o','No fallback'),(True,'D','Fallback subset')]:
   d=p[p.numerical_fallback==fall];ax.scatter(d.wavelength_nm,d.atlas_y,c=d.difference,cmap='RdBu_r',norm=norm,s=9 if not fall else 12,marker=mark,lw=.2,edgecolors='#6b7d87',alpha=.85,rasterized=False,label=label)
- ax.set(xlim=(339,1078),ylim=(10,0),yticks=np.arange(10)+.5,yticklabels=heats,xlabel='Wavelength (nm)',xticks=[400,600,800,1000]);ax.set_title('(a) All 1,043 repairs: wavelength, heat and within-heat time',loc='left',fontsize=8.6);ax.text(.99,1.015,'n',ha='right',transform=ax.transAxes,color=GRAY,fontsize=8);ax.legend(loc='upper left',bbox_to_anchor=(0,-.19),ncol=2,fontsize=7.2,frameon=False,borderaxespad=0)
+ ax.set(xlim=(339,1078),ylim=(10,0),yticks=np.arange(10)+.5,yticklabels=heats,xlabel='Wavelength (nm)',xticks=[400,600,800,1000]);ax.set_title('(a) All 1,043 repairs: wavelength, heat and within-heat time',loc='center',fontsize=8.6);ax.text(.99,1.015,'n',ha='right',transform=ax.transAxes,color=GRAY,fontsize=8);ax.legend(loc='upper left',bbox_to_anchor=(0,-.19),ncol=2,fontsize=7.2,frameon=False,borderaxespad=0)
  fig.colorbar(cm.ScalarMappable(norm=norm,cmap='RdBu_r'),ax=ax,location='right',fraction=.026,pad=.015,label='Estimated change D-Y (counts)',ticks=[-30000,0,30000])
  ax.text(.01,-.30,'Within each band: top = start, bottom = end of that heat.  Marker shape identifies fallback.',transform=ax.transAxes,fontsize=7,color=GRAY)
  a=fig.add_subplot(gs[1,0]);b=fig.add_subplot(gs[1,1]);stats=[]
@@ -52,8 +54,8 @@ def repair_atlas():
   d=p[p.numerical_fallback==fall];x=np.sort(abs(d.difference));a.step(x,np.arange(1,len(x)+1)/len(x),where='post',color=col,label=label)
   edges=np.linspace(0,1,11);hist,_=np.histogram(d.phase,edges);b.stairs(hist/len(d),edges,color=col,label=label)
   stats.append(dict(fallback=fall,n=len(d),median_abs_change=np.median(x),p90_abs_change=np.quantile(x,.9),mean_phase=d.phase.mean()))
- a.set(xscale='log',xlabel='Absolute estimated change (counts)',ylabel='Fraction of repaired nodes',ylim=(0,1.03));a.legend(fontsize=7);a.set_title('(b) Magnitude of the actual changes',loc='left',fontsize=8.5)
- b.set(xlabel='Within-heat time t / T',ylabel='Fraction within each subset',xlim=(0,1));b.set_title('(c) Where repairs occur in time',loc='left',fontsize=8.5)
+ a.set(xscale='log',xlabel='Absolute estimated change (counts)',ylabel='Fraction of repaired nodes',ylim=(0,1.03));a.legend(fontsize=7);a.set_title('(b) Magnitude of the actual changes',loc='center',fontsize=8.5)
+ b.set(xlabel='Within-heat time t / T',ylabel='Fraction within each subset',xlim=(0,1));b.set_title('(c) Where repairs occur in time',loc='center',fontsize=8.5)
  p.to_csv(O/'repair_atlas_points.csv',index=False);pd.DataFrame(stats).to_csv(O/'repair_atlas_summary.csv',index=False)
  CHECKS['atlas']={'total':len(p),'fallback':int(p.numerical_fallback.sum()),'nonfallback':int((~p.numerical_fallback).sum()),'each_actual_repair_plotted_once':bool(not p.duplicated(['heat_id','row','column']).any()),'phase_is_display_coordinate_only':True}
  save(fig,'F06_actual_repair_results')
@@ -65,7 +67,7 @@ def surfaces():
   row,col=divmod(k,2);ax=fig.add_axes([.005+.50*col,.84-.177*row,.49,.175],projection='3d');z=prior.load(h);D=z['reconstructed'];w=z['wavelength'];t=z['time'];ii,jj=prior.surface_indices(z,h);W,T=np.meshgrid(w[jj],t[ii]);Z=D[np.ix_(ii,jj)]
   surface=ax.plot_surface(W,T,Z,cmap='viridis',norm=colors.Normalize(0,65535),rasterized=True,linewidth=0,antialiased=False,rcount=len(ii),ccount=len(jj),clip_on=False)
   ax.set(xlim=(w[0],w[-1]),ylim=(0,t[-1]),zlim=(0,65535),xticks=([700,1000] if row<4 else [400,700,1000]),yticks=([t[-1]] if row<4 else [0,t[-1]]),zticks=[0,65535]);ax.set_zticklabels(['0','65k'] if col==0 else []);ax.set_yticklabels([f'{t[-1]:g}'] if row<4 else ['0',f'{t[-1]:g}']);ax.tick_params(labelsize=7,pad=-1);ax.view_init(23,-125);ax.set_proj_type('ortho');ax.set_box_aspect((1.65,1,.65),zoom=1.38)
-  ax.text2D(.02,.90,h,transform=ax.transAxes,fontsize=9,fontweight='bold',color=RAW)
+  ax.text2D(.50,.90,h,ha='center',transform=ax.transAxes,fontsize=9,fontweight='bold',color=RAW)
   for axis in [ax.xaxis,ax.yaxis,ax.zaxis]:axis.pane.fill=False;axis._axinfo['grid'].update(color='#d5dde0',linewidth=.4)
   fig.canvas.draw();px,py,_=proj3d.proj_transform(W.ravel(),T.ravel(),Z.ravel(),ax.get_proj());xy=fig.transFigure.inverted().transform(ax.transData.transform(np.column_stack([px,py])));checks.append(dict(mesh_clip_on=surface.get_clip_on(),projected_x_min=float(xy[:,0].min()),projected_x_max=float(xy[:,0].max()),projected_y_min=float(xy[:,1].min()),projected_y_max=float(xy[:,1].max()),heat_id=h,native_max=float(D.max()),display_max=float(Z.max()),time_end_s=float(t[-1]),wavelength_start=float(w[0]),wavelength_end=float(w[-1]),rows=len(ii),columns=len(jj)))
  fig.text(.50,.042,'Wavelength (nm)    |    Time (s)    |    Recorded intensity (counts)',ha='center',fontsize=8)
@@ -76,9 +78,7 @@ def surfaces():
  save(fig,'F07_ten_heat_surfaces')
 
 def main():
- for name in ['F01_data_structure','F05_joint_validation']:
-  for ext in ['png','svg','pdf']:
-   p=O/f'main/{name}.{ext}';shutil.copy2(F/f'figures/publication_v3/main/{name}.{ext}',p);MAN.append(dict(figure=name,format=ext,path=p.relative_to(O).as_posix(),sha256=hashlib.sha256(p.read_bytes()).hexdigest(),bytes=p.stat().st_size))
+ prior.O=O;prior.save=save;prior.F01();prior.F05()
  repair_atlas();surfaces()
  old=pd.read_csv(O/'asset_manifest.csv');new=pd.DataFrame(MAN);pd.concat([old[~old.figure.isin(new.figure)],new],ignore_index=True).to_csv(O/'asset_manifest.csv',index=False);(O/'checks.json').write_text(json.dumps(CHECKS,indent=2)+'\n')
  from simplify import main as simplify_current

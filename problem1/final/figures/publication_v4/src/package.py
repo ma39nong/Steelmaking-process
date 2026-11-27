@@ -33,14 +33,16 @@ def main():
  e=pd.read_csv(F.parent/'v2/results/interpolation_independent_macro.csv',header=[0,1],index_col=[0,1]);points=pd.read_csv(O/'F04_plot_data.csv');verify('F04_15_points',len(points)==15)
  for r in points.itertuples():verify('F04_exact:'+r.model+r.scenario,abs(r.rmse-e.loc[(r.model,r.scenario),('rmse','mean')])<1e-8)
  cell=pd.read_csv(O/'A12_cell_values.csv');verify('cell_weights',np.isclose(cell.weight.sum(),1) and (cell.weight>=0).all());verify('cell_original_values',np.allclose(cell.value,pd.read_csv(F/'figures/publication_v3/bilinear_cell_values.csv').value))
- # Previous improvements stay byte-identical; no model, experiment or Release changes.
- for name in ['F01_data_structure','F05_joint_validation','F06_actual_repair_results','F07_ten_heat_surfaces']:
-  for ext in ['png','svg','pdf']:
-   p=O/f'main/{name}.{ext}';old=subprocess.run(['git','show','bd7cfa8:'+str(p.relative_to(ROOT))],capture_output=True,check=True).stdout;verify('unchanged:'+name+ext,p.read_bytes()==old)
+ # Style-only re-render: verify plotted data before/after typography, plus frozen numerical sources above.
+ ty=json.loads((O/'typography_validation.json').read_text());verify('actual_Times_New_Roman','Times.TTF' in ty['font_file']);verify('all_26_restyled',len(ty['figures'])==26)
+ for name,r in ty['figures'].items():
+  verify('plot_data_unchanged:'+name,r['plot_data_before']==r['plot_data_after']);verify('centered_titles:'+name,all(t['x']==.5 and t['ha']=='center' for t in r['centered_titles']))
  manifest=pd.read_csv(O/'asset_manifest.csv');verify('one_complete_figure_set',manifest.figure.nunique()==26 and len(manifest)==78)
  verify('flowchart_text_fits',json.loads((O/'flowchart_validation.json').read_text())['all_text_inside_boxes'])
  for r in manifest.itertuples():
   p=O/r.path;verify('asset:'+r.path,hashlib.sha256(p.read_bytes()).hexdigest()==r.sha256)
+  if r.format=='pdf':
+   fonts=subprocess.run(['pdffonts',str(p)],capture_output=True,text=True,check=True).stdout;verify('Times_embedded:'+r.figure,'TimesNewRoman' in fonts and 'DejaVu' not in fonts)
   if r.format=='svg':verify('English:'+r.figure,not re.search(r'[\u3400-\u9fff]',p.read_text()))
   if r.format=='png':
    im=Image.open(p);verify('600dpi:'+r.figure,abs(im.info['dpi'][0]-600)<1)
@@ -54,6 +56,6 @@ def main():
  captions=re.findall(r'^图5-[1-7]　[^\n]+',s,re.M);verify('seven_captions',len(captions)==7)
  appendix=(R/'问题一_V3_图表与研究附录.md').read_text();extra=re.findall(r'^附图A1[12]　[^\n]+',appendix,re.M)
  (O/'figure_captions.md').write_text('# 当前正式图注\n\n'+'\n\n'.join(captions+extra)+'\n')
- (O/'validation.json').write_text(json.dumps({'passed':len(CHECK),'failed':0,'model_or_data_changed':False,'one_current_manuscript':str(doc.relative_to(F)),'active_figure_set':str(O.relative_to(F)),'changed_figures':['F02','F03','F04'],'appendix_added':['A11','A12'],'formal_width_inches':6.8,'rendering_review_completed':True},indent=2)+'\n')
+ (O/'validation.json').write_text(json.dumps({'passed':len(CHECK),'failed':0,'model_or_data_changed':False,'one_current_manuscript':str(doc.relative_to(F)),'active_figure_set':str(O.relative_to(F)),'changed_figures':'All 26 figures: typography and title alignment only','appendix_added':['A11','A12'],'formal_width_inches':6.8,'rendering_review_completed':True},indent=2)+'\n')
  print('CURRENT_PACKAGE_VERIFIED',len(CHECK))
 if __name__=='__main__':main()

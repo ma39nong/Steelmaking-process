@@ -1,0 +1,518 @@
+{
+  "font_file": "/home/user/.local/share/fonts/msttcore/Times.TTF",
+  "font_sha256": "4e98adeff8ccc8ef4e3ece8d4547e288ff85fdc9c7ca711a4599c234874bbe86",
+  "source": "https://downloads.sourceforge.net/corefonts/times32.exe",
+  "fonts_distributed_in_repository": false,
+  "figures": {
+    "F01_data_structure": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "(a) Group spectra and mean within-heat 10-90% bands",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(b) Raw sampled SVD",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(c) 6B: 835.887 nm",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(d) 6C: 383.293 nm",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "13b2a0f3ffd2e0a5fad52be81a5aeaa427731a16af99a5f63477be548e17f55c",
+      "plot_data_after": "13b2a0f3ffd2e0a5fad52be81a5aeaa427731a16af99a5f63477be548e17f55c",
+      "plot_data_unchanged": true
+    },
+    "F05_joint_validation": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "(a) Finite strategies and F1 contours",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(b) Recovery benefit and cost (300 steps)",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(c) Mean case-wise F1 by region",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(d) Released 600/1200-step configuration",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "1c4be14000fa4d4ff04968a56a86b95e61549f2fd1077f80d1c2468bec57d18c",
+      "plot_data_after": "1c4be14000fa4d4ff04968a56a86b95e61549f2fd1077f80d1c2468bec57d18c",
+      "plot_data_unchanged": true
+    },
+    "F06_actual_repair_results": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "(a) All 1,043 repairs: wavelength, heat and within-heat time",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(b) Magnitude of the actual changes",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(c) Where repairs occur in time",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "273b6c59eca403638ccb287682f03b19f8c9579cec2d3ad522ded90e4211da50",
+      "plot_data_after": "273b6c59eca403638ccb287682f03b19f8c9579cec2d3ad522ded90e4211da50",
+      "plot_data_unchanged": true
+    },
+    "F07_ten_heat_surfaces": {
+      "font": "Times New Roman",
+      "centered_titles": [],
+      "plot_data_before": "81b397bd23c9ee236e33b532adf2e5e3ba84868f137803c7ba7da2e9c83ba004",
+      "plot_data_after": "81b397bd23c9ee236e33b532adf2e5e3ba84868f137803c7ba7da2e9c83ba004",
+      "plot_data_unchanged": true
+    },
+    "A01_6B03205_surface": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "6B03205",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "f6d609f10e64374457f2158f9d975d0c15c4501737841606880c3efb43c269c5",
+      "plot_data_after": "f6d609f10e64374457f2158f9d975d0c15c4501737841606880c3efb43c269c5",
+      "plot_data_unchanged": true
+    },
+    "A02_6B03206_surface": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "6B03206",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "6e1533fc4522f634a8b0f089ead2410052d3a59f629531a02d190ea79c9f8631",
+      "plot_data_after": "6e1533fc4522f634a8b0f089ead2410052d3a59f629531a02d190ea79c9f8631",
+      "plot_data_unchanged": true
+    },
+    "A03_6B03270_surface": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "6B03270",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "9e3499a54fa1cac4aac3701334443e6dbb9987ab7166cce5acf8b6e0554bfe64",
+      "plot_data_after": "9e3499a54fa1cac4aac3701334443e6dbb9987ab7166cce5acf8b6e0554bfe64",
+      "plot_data_unchanged": true
+    },
+    "A04_6B03271_surface": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "6B03271",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "4f28c610977d7b50f7f9c9ced463a950c002bbfa6a68b42e0c6875cb7848b4e8",
+      "plot_data_after": "4f28c610977d7b50f7f9c9ced463a950c002bbfa6a68b42e0c6875cb7848b4e8",
+      "plot_data_unchanged": true
+    },
+    "A05_6C02057_surface": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "6C02057",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "71f2369991a30d213fe59d149b49b49b59503bd6602861c1d276d995769482ac",
+      "plot_data_after": "71f2369991a30d213fe59d149b49b49b59503bd6602861c1d276d995769482ac",
+      "plot_data_unchanged": true
+    },
+    "A06_6C02058_surface": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "6C02058",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "75eebed1a6b30412a57d013ba2068131a2c62467c21c0ae7ff38253c63719bbe",
+      "plot_data_after": "75eebed1a6b30412a57d013ba2068131a2c62467c21c0ae7ff38253c63719bbe",
+      "plot_data_unchanged": true
+    },
+    "A07_6C02059_surface": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "6C02059",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "3f3bebb4e3281de043d97fa6d074595e7b9cb8e39b686f443f15079edec7654a",
+      "plot_data_after": "3f3bebb4e3281de043d97fa6d074595e7b9cb8e39b686f443f15079edec7654a",
+      "plot_data_unchanged": true
+    },
+    "A08_6C02060_surface": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "6C02060",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "75740b874cd81e8ea076b852c1a24fa9ab21fcb2512e2a50266ce4d2b640c30e",
+      "plot_data_after": "75740b874cd81e8ea076b852c1a24fa9ab21fcb2512e2a50266ce4d2b640c30e",
+      "plot_data_unchanged": true
+    },
+    "A09_6C02107_surface": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "6C02107",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "f9cb0889568c3e62f9b9deab7957aeacfcd7fafe22743178ecc80422e2749dc4",
+      "plot_data_after": "f9cb0889568c3e62f9b9deab7957aeacfcd7fafe22743178ecc80422e2749dc4",
+      "plot_data_unchanged": true
+    },
+    "A10_6C02108_surface": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "6C02108",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "7c6182bc9b380a5847da16cd7615076d4cc66cc8f673ad849adf4908624656f7",
+      "plot_data_after": "7c6182bc9b380a5847da16cd7615076d4cc66cc8f673ad849adf4908624656f7",
+      "plot_data_unchanged": true
+    },
+    "B01_solver_stability": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "(a) Normalized objectives",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(b) Iterate changes",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "035b5d8445893506d62006162eb80b7768bdf7ab39a702facf2d711e66361c9a",
+      "plot_data_after": "035b5d8445893506d62006162eb80b7768bdf7ab39a702facf2d711e66361c9a",
+      "plot_data_unchanged": true
+    },
+    "B02_wide_peak_tradeoff": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "(a) Wide-peak notch: 339.5 s",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(b) Disagreeing references",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(c) Signed output difference",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(d) Audited quantities",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "1b97196cdad3fdecc9f41349cc059eb24644136ede57d8df0f1d6420e460a8f1",
+      "plot_data_after": "1b97196cdad3fdecc9f41349cc059eb24644136ede57d8df0f1d6420e460a8f1",
+      "plot_data_unchanged": true
+    },
+    "B03_6B03205_svd_raw": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "(a) 6B03205: raw SVD",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(b) Temporal coefficients",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "Rank-1 term",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "Rank-4 sum",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "Residual",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "a992e43fd19cc024e04a1d7a2e3faa10f90ac2c33a8dd663b6c047d07509c89d",
+      "plot_data_after": "a992e43fd19cc024e04a1d7a2e3faa10f90ac2c33a8dd663b6c047d07509c89d",
+      "plot_data_unchanged": true
+    },
+    "B03_6B03205_svd_centered": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "(a) 6B03205: centered SVD",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(b) Temporal coefficients",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "Rank-1 term",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "Rank-4 sum",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "Residual",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "d5e588a1adfa2f032882d6ee03b10d00243b023de5da63c496b7002356ea56f8",
+      "plot_data_after": "d5e588a1adfa2f032882d6ee03b10d00243b023de5da63c496b7002356ea56f8",
+      "plot_data_unchanged": true
+    },
+    "B03_6C02058_svd_raw": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "(a) 6C02058: raw SVD",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(b) Temporal coefficients",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "Rank-1 term",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "Rank-4 sum",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "Residual",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "171d454a5aae86e084368987f0be849ce4acb265ec3ad4fd9be27b66c889f79a",
+      "plot_data_after": "171d454a5aae86e084368987f0be849ce4acb265ec3ad4fd9be27b66c889f79a",
+      "plot_data_unchanged": true
+    },
+    "B03_6C02058_svd_centered": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "(a) 6C02058: centered SVD",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(b) Temporal coefficients",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "Rank-1 term",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "Rank-4 sum",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "Residual",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "2675ba374d510ed6abdf4e7b70aa208ff7aaaae0969166ea44f00a73c9e88c0f",
+      "plot_data_after": "2675ba374d510ed6abdf4e7b70aa208ff7aaaae0969166ea44f00a73c9e88c0f",
+      "plot_data_unchanged": true
+    },
+    "B04_persistent_channel_evidence": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "(a) 6B target trajectories",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(b) 6B residual versus brightness",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(c) 6C target trajectories",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(d) 6C residual versus brightness",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "e42ff47d4f18277c3c3c2853b3933fcbbaeaa20aa9113d4067aa9b5e8f731ca7",
+      "plot_data_after": "e42ff47d4f18277c3c3c2853b3933fcbbaeaa20aa9113d4067aa9b5e8f731ca7",
+      "plot_data_unchanged": true
+    },
+    "F02_model_mechanism": {
+      "font": "Times New Roman",
+      "centered_titles": [],
+      "plot_data_before": "8ff3a9ca86002f3856159a4de35c78d46176cad64fd13ff915bc3ff0545bb66d",
+      "plot_data_after": "8ff3a9ca86002f3856159a4de35c78d46176cad64fd13ff915bc3ff0545bb66d",
+      "plot_data_unchanged": true
+    },
+    "F03_local_evidence": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "(a) Temporal evidence",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(b) Wavelength evidence",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(c) Temporal evidence",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(d) Wavelength evidence",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "2c8090d94fa456cef1c46b3df45826f5d5cb533274f43a508fb6d33b3c8461f8",
+      "plot_data_after": "2c8090d94fa456cef1c46b3df45826f5d5cb533274f43a508fb6d33b3c8461f8",
+      "plot_data_unchanged": true
+    },
+    "F04_continuous_reconstruction": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "(a) Time downsampling",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(b) Wavelength downsampling",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "48d9e4489d0b16d9ce6b7a5fb6917dfdb46931be0383597f72bfaa5708ec85f3",
+      "plot_data_after": "48d9e4489d0b16d9ce6b7a5fb6917dfdb46931be0383597f72bfaa5708ec85f3",
+      "plot_data_unchanged": true
+    },
+    "A11_case_locator_and_spikes": {
+      "font": "Times New Roman",
+      "centered_titles": [
+        {
+          "text": "(a) 6B03205: representative case location",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(b) 6B03270",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(c) 6B03271",
+          "x": 0.5,
+          "ha": "center"
+        },
+        {
+          "text": "(d) 6C02059",
+          "x": 0.5,
+          "ha": "center"
+        }
+      ],
+      "plot_data_before": "681dbef4e567f5c01206d87147f662f4cff066791be09f100dec3b3cdb50908d",
+      "plot_data_after": "681dbef4e567f5c01206d87147f662f4cff066791be09f100dec3b3cdb50908d",
+      "plot_data_unchanged": true
+    },
+    "A12_bilinear_cell": {
+      "font": "Times New Roman",
+      "centered_titles": [],
+      "plot_data_before": "d23ea0d110fd1c3894d4e3c97601c21b4ab5f5ae09f2a7b34db7ad06cf86ac50",
+      "plot_data_after": "d23ea0d110fd1c3894d4e3c97601c21b4ab5f5ae09f2a7b34db7ad06cf86ac50",
+      "plot_data_unchanged": true
+    }
+  }
+}

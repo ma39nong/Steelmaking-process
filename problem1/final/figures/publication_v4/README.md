@@ -33,12 +33,16 @@ F04仅保留时间和波长降采样两面板，共用图例，所有十五个RM
 - [图注](figure_captions.md)、[来源哈希](source_manifest.csv)、[输出哈希](asset_manifest.csv)、[数值及文件核验](validation.json)
 
 ```bash
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python problem1/final/figures/publication_v4/src/simplify.py
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python problem1/final/figures/publication_v4/src/redesign.py
 .venv/bin/python problem1/final/figures/publication_v4/src/package.py
 ```
 
-simplify.py是F02/F03/F04及A11/A12的唯一当前绘图实现；package.py只核验当前正文、数据与图片，不从旧稿重新生成正文。其余四张主图保持bd7cfa8原字节；redesign.py保留它们的复现，并调用当前简化实现，避免恢复旧蛇形图。历史publication_v3只作研究来源，模型、1043点修复结果、实验指标及Release不变。
+simplify.py是F02/F03/F04及A11/A12的唯一当前绘图实现；package.py只核验当前正文、数据与图片，不从旧稿重新生成正文。当前26张图统一采用真实Times New Roman，所有子图标题居中；redesign.py复用已有绘图数据并调用当前简化实现，历史图像保持归档。历史publication_v3只作研究来源，模型、1043点修复结果、实验指标及Release不变。
 
 ## 论文图题与字体
 
 参照仓库内2022—2025年B题优秀论文，整图题在图片下方以正文排版，图内保留英文标签。七条英文图题见[english_captions.md](english_captions.md)，实际样本核对与字体规范见[说明](../../reports/优秀论文图表样式核对与采用规范.md)。带外置图题的A4检查页在`review/*_caption_page.png`；正式正文仍使用`main/`原图。
+
+字体安装：需本机安装真实Times New Roman（Regular/Bold/Italic/Bold Italic），脚本使用`findfont(..., fallback_to_default=False)`核实，缺失时停止，避免静默替换字体。字体文件不随仓库分发。
+
+本次字体与标题统一已完成402项核验：26张PDF均嵌入TimesNewRoman字体，数值源文件和模型保持冻结，逐图绘图数据在样式处理前后相同。全部主图的带图题版宽预览见`review/F*_caption_page.png`。

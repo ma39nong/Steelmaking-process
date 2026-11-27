@@ -24,8 +24,8 @@ def main():
     f=fonts[t.attrib['font']];spans.append({'text':text,'font':f['family'],'size_pt_approx':round(float(f['size'])/1.5,2)})
   evidence.append({'year':year,'source':str(p.relative_to(ROOT)),'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'pdf_page':page,'printed_page':printed,'caption_spans':spans,'placement':'below figure, outside plot image','in_plot_font':'2022 vector mathematical labels: CMMI10/CMR7 and TeXGyreTermesX; other selected chart labels are not identifiable from extracted text; family not asserted'})
  (O/'paper_style_sources.json').write_text(json.dumps(evidence,ensure_ascii=False,indent=2)+'\n')
- font=ImageFont.truetype('/usr/share/fonts/truetype/liberation2/LiberationSerif-Bold.ttf',18) # 10.8 pt at 120 dpi
- for name in ['F02_model_mechanism','F03_local_evidence','F04_continuous_reconstruction']:
+ font=ImageFont.truetype(str(Path.home()/'.local/share/fonts/msttcore/Timesbd.TTF'),18) # 10.8 pt at 120 dpi
+ for name in CAPTIONS:
   im=Image.open(O/f'main/{name}.png').convert('RGB');im.thumbnail((816,1120));page=Image.new('RGB',(992,1403),'white');y=100;page.paste(im,((992-im.width)//2,y));draw=ImageDraw.Draw(page);words=CAPTIONS[name].split();lines=[];line=''
   for word in words:
    trial=(line+' '+word).strip()

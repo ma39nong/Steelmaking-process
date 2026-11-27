@@ -1,18 +1,38 @@
 {
   "completed": true,
   "paper_width_inches": 6.8,
-  "method": "Opened actual main renders, A4 120dpi page proofs and both appendix figures; checked reading direction, box text fit, scales, legends and panel spacing.",
+  "method": "Opened main and appendix contact sheets plus full-width F02/F05/F06/F07 caption proofs; checked centered panel titles, actual Times New Roman, legends and labels.",
   "reviewed_sha256": {
-    "main/F02_model_mechanism.png": "26666e15874c48ebdffa5cc23370298138a4e0855928c07be54aa1b529fe2d8f",
-    "main/F03_local_evidence.png": "675a7d28c762f54e9b9ba9243e1e86a0670050bf184664df04abf8b678bd7a2d",
-    "main/F04_continuous_reconstruction.png": "1859b13aa3cfcf1e6ed96f66c123f2279a735ad0e6a24ee73b33a0fc7c8ae37e",
-    "appendix/A11_case_locator_and_spikes.png": "9ca8294af5a0cfd5e063190be08849585130d4c17848a79c3190fe336ce9eb59",
-    "appendix/A12_bilinear_cell.png": "8c11093460bc940fe47d3673b2a9b161c9000304625eb92cecf56482adaa7040"
+    "main/F01_data_structure.png": "af2a7ade2c47f4f7985db2949063bc814679dc032057369fe9c5e19c142b88ec",
+    "main/F02_model_mechanism.png": "acdf255b5a05de4cdb20b2bab3f0024b34a428ae554e6c779db950a94edc4356",
+    "main/F03_local_evidence.png": "7b3d172aa83dca10b639a4025fae4c18c7896735f366a74aee8154be74c1e06f",
+    "main/F04_continuous_reconstruction.png": "7133d91ee21bdfbd0095fbfe48af6fabfcd971fe294b3fe5ed172846c4edef89",
+    "main/F05_joint_validation.png": "c6fab70f0badc77c5a35027c6bee70fe7908003d4a442e8640e80eaade0e170e",
+    "main/F06_actual_repair_results.png": "76b47e9f739e2cc8422cf25689176298dd26a0437b84f0ed017430a0fc108282",
+    "main/F07_ten_heat_surfaces.png": "12d490218570e4f222d8d452b7b1dbc75d4359ebdf346e5e80e93a35866557a2",
+    "appendix/A01_6B03205_surface.png": "6719f3b2ebae513223f0e851699e147afd2ffe65d5b2c649a84cc5e186c91ce7",
+    "appendix/A02_6B03206_surface.png": "b9ba0410a0b0bcb3b6e16ba096e458ce6e244ae0242ffd4eecec5f34d4fa868d",
+    "appendix/A03_6B03270_surface.png": "661762f15bcea1fffb6e12019fadbe5a876fb6203772e8800b274aaed5893033",
+    "appendix/A04_6B03271_surface.png": "c53366efaf219222e86273f07a6d2a833f50693a66f0f329694e8b9d824cad7d",
+    "appendix/A05_6C02057_surface.png": "c9b39b9b192aebc22c63238561531b473007ec338bf01e180154c5d69c157d29",
+    "appendix/A06_6C02058_surface.png": "9df23704b65604ff42c12788a410687d8670e0ec0af960ba685134713a1bca12",
+    "appendix/A07_6C02059_surface.png": "4fc943f5531f42cc1915de64b90d0884d899edbc4d492d0a7ac238a8b6888deb",
+    "appendix/A08_6C02060_surface.png": "1d0fbb476e33c1524dcf38c8bd2135ee650a27c17337314187cf4e0e926f9abe",
+    "appendix/A09_6C02107_surface.png": "6b7d8cb1ec36bde463bfae9e7ed3e4b20c7725bf049e665a97aaa6980b3f6b66",
+    "appendix/A10_6C02108_surface.png": "186e57ecc9f761eba4ada840a72922117ec58d44c7b9b2946bf00d829d21f0cd",
+    "appendix/A11_case_locator_and_spikes.png": "cd5cd80af2357cff8bc03d1ca7364b913070b0e7e05e71dbf01d8910f5582979",
+    "appendix/A12_bilinear_cell.png": "49bb16c8862da0ee990982bb2e9b3d2b7973cda7e089a910b6624cc8532127c1",
+    "appendix/B01_solver_stability.png": "5943fe2bd3c748fc67efc2eb984cfa7a49cf4e3e34a98f613d4cbe98e2130911",
+    "appendix/B02_wide_peak_tradeoff.png": "c5c20741b44a98e07a7d43f226b4f54477bb3cdd230a1c7a977dcd7ff7ee4a44",
+    "appendix/B03_6B03205_svd_centered.png": "f3d05bd2e85523c7b31cd8c40d719934ca29280f533742c09fc57a4c23c9804b",
+    "appendix/B03_6B03205_svd_raw.png": "29d9b5e0f47dcd8f2d9905083f1f728d9ee514a87cb9a415ea4278ea539ac2d7",
+    "appendix/B03_6C02058_svd_centered.png": "bc087de4fc103dcc822746cd5038e9a9d7f6649fc0026fe741f73a7694f38ca0",
+    "appendix/B03_6C02058_svd_raw.png": "f02098494e7c8a26ebc184c31c147ff542350828abda03876ac7154ab93d67f8",
+    "appendix/B04_persistent_channel_evidence.png": "517e67b5b1328750f01223e116a7820d0956462f97890c3cf4f7970b22266fb4"
   },
   "observations": {
-    "F02": "No equations or case values; all labels fit; ordinary and clipping routes separate.",
-    "F03": "Four panel titles centered above their axes; opened updated caption page and checked alignment, labels and legend.",
-    "F04": "1x2; common legend; no mathematical panels.",
-    "A11_A12": "Relocated evidence and actual-coordinate cell remain legible."
+    "all_26": "Actual Times New Roman embedded in all PDFs, titles centered, chart values and scientific arrays unchanged.",
+    "main": "No overlapping panel titles; common legends and external captions separated.",
+    "appendix": "Ten surfaces and diagnostic panels retained; all panel titles centered."
   }
 }
