@@ -59,7 +59,7 @@ def evidence(ax,h,i,j,direction,panel):
  x=t[ix] if direction=='time' else w[ix];raw=Y[ix,j] if direction=='time' else Y[i,ix];rep=D[ix,j] if direction=='time' else D[i,ix]
  target=t[i] if direction=='time' else w[j];reference=r.time_reference if direction=='time' else r.wavelength_reference
  ax.plot(x,raw,color=RAW,lw=1.6,marker='o',ms=2.8,zorder=2);ax.plot(x,rep,color=REPAIR,lw=1.1,ls='--',zorder=3);ax.scatter(target,reference,marker='x',s=35,color=REF,zorder=5);ax.axvline(target,color='#c4cbce',ls=':',lw=.65,zorder=1)
- ax.set(xlabel='Time (s)' if direction=='time' else 'Wavelength (nm)',ylabel='Intensity (counts)');ax.set_title(f'({panel}) '+('Temporal evidence' if direction=='time' else 'Wavelength evidence'),loc='left')
+ ax.set(xlabel='Time (s)' if direction=='time' else 'Wavelength (nm)',ylabel='Intensity (counts)');ax.set_title(f'({panel}) '+('Temporal evidence' if direction=='time' else 'Wavelength evidence'),loc='center')
  for xx,rr,dd in zip(x,raw,rep):PANELS.append(dict(panel=panel,heat_id=h,direction=direction,coordinate=xx,raw=rr,repaired=dd,target_coordinate=target,neighborhood_reference=reference))
  return z,r
 

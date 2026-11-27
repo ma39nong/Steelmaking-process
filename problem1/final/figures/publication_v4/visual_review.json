@@ -4,14 +4,14 @@
   "method": "Opened actual main renders, A4 120dpi page proofs and both appendix figures; checked reading direction, box text fit, scales, legends and panel spacing.",
   "reviewed_sha256": {
     "main/F02_model_mechanism.png": "26666e15874c48ebdffa5cc23370298138a4e0855928c07be54aa1b529fe2d8f",
-    "main/F03_local_evidence.png": "5a932179fb0b9c1e2897b94bf7e8f449d17f6e072b3da1518549ce573a1a52d4",
+    "main/F03_local_evidence.png": "675a7d28c762f54e9b9ba9243e1e86a0670050bf184664df04abf8b678bd7a2d",
     "main/F04_continuous_reconstruction.png": "1859b13aa3cfcf1e6ed96f66c123f2279a735ad0e6a24ee73b33a0fc7c8ae37e",
     "appendix/A11_case_locator_and_spikes.png": "9ca8294af5a0cfd5e063190be08849585130d4c17848a79c3190fe336ce9eb59",
     "appendix/A12_bilinear_cell.png": "8c11093460bc940fe47d3673b2a9b161c9000304625eb92cecf56482adaa7040"
   },
   "observations": {
     "F02": "No equations or case values; all labels fit; ordinary and clipping routes separate.",
-    "F03": "2x2 roles clear; shared legend outside axes; independent y scales.",
+    "F03": "Four panel titles centered above their axes; opened updated caption page and checked alignment, labels and legend.",
     "F04": "1x2; common legend; no mathematical panels.",
     "A11_A12": "Relocated evidence and actual-coordinate cell remain legible."
   }
