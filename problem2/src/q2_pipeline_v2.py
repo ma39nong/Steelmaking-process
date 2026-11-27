@@ -1,4 +1,4 @@
-"""V2 pipeline with reliability-aware delay observations and time mappings."""
+"""Final pipeline with reliability-aware delay observations and time mappings."""
 
 from __future__ import annotations
 
@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 
 import numpy as np
+from scipy.integrate import cumulative_trapezoid
 
 from .delay_v2 import fit_delay_models, local_delay_reliable
 from .q2_pipeline import (
@@ -23,8 +24,11 @@ def process_one_v2(path: Path, output_dir: Path, summary_dir: Path) -> dict:
     masks = {name: hampel_mask(raw[name]) for name in ("oxygen_cumulative", "co2", "co")}
     clean = {name: pchip_clean(time, raw[name], masks[name]) for name in masks}
     flow = oxygen_flow(time, clean["oxygen_cumulative"])
-    # V1 remains available through q2_pipeline.process_one. V2 uses observed
-    # reliable centers only and never fills delay observations at boundaries.
+    oxygen_from_flow = clean["oxygen_cumulative"][0] + np.concatenate([[0.0], cumulative_trapezoid(flow, time)])
+    total_co = np.concatenate([[0.0], cumulative_trapezoid(clean["co"], time)])
+    total_co2 = np.concatenate([[0.0], cumulative_trapezoid(clean["co2"], time)])
+    # The final pipeline uses observed reliable centers only and never fills
+    # delay observations at boundaries.
     delay_info = {
         gas: local_delay_reliable(flow, clean[gas], 0.5)
         for gas in ("co", "co2")
@@ -42,16 +46,19 @@ def process_one_v2(path: Path, output_dir: Path, summary_dir: Path) -> dict:
         "oxygen_cumulative_raw": raw["oxygen_cumulative"],
         "oxygen_cumulative_clean": clean["oxygen_cumulative"],
         "oxygen_flow": flow,
+        "oxygen_from_flow": oxygen_from_flow,
         "co_raw": raw["co"],
         "co_clean": clean["co"],
         "co2_raw": raw["co2"],
         "co2_clean": clean["co2"],
+        "total_co_emission": total_co,
+        "total_co2_emission": total_co2,
         "outlier_oxygen": masks["oxygen_cumulative"],
         "outlier_co": masks["co"],
         "outlier_co2": masks["co2"],
     }
     metadata = {
-        "version": "V2-audit-fix",
+        "version": "problem2-final",
         "delay_definition": "target measurement time minus source event time",
         "delay_parameters": {"window": 121, "max_lag_s": 60.0, "stride": 5, "min_corr": 0.35, "min_separation": 0.05},
         "models": models,
@@ -115,20 +122,20 @@ def process_one_v2(path: Path, output_dir: Path, summary_dir: Path) -> dict:
             "between_window_gap_count": int((centers[-1] - centers[0] + 1) - len(centers)) if len(centers) else 0,
         }
     arrays["metadata"] = np.asarray(json.dumps(metadata, ensure_ascii=False))
-    np.savez_compressed(output_dir / f"{raw['heat_id']}_q2_v2_processed.npz", **arrays)
+    np.savez_compressed(output_dir / f"{raw['heat_id']}_q2_processed.npz", **arrays)
     result = {"heat_id": raw["heat_id"], "records": len(time), **metadata["mask_counts"], "models": models, "coverage": {gas: metadata[f"{gas}_coverage"] for gas in ("co", "co2")}}
-    (summary_dir / f"{raw['heat_id']}_q2_v2_summary.json").write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+    (summary_dir / f"{raw['heat_id']}_q2_summary.json").write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     return result
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--data-dir", type=Path, default=Path("Data"))
-    parser.add_argument("--output-dir", type=Path, default=Path("problem2/final/v2_data"))
-    parser.add_argument("--summary-dir", type=Path, default=Path("problem2/final/v2_results"))
+    parser.add_argument("--output-dir", type=Path, default=Path("problem2/final/data"))
+    parser.add_argument("--summary-dir", type=Path, default=Path("problem2/final/results"))
     args = parser.parse_args()
     rows = [process_one_v2(path, args.output_dir, args.summary_dir) for path in sorted(args.data_dir.glob("*.xlsb*"))]
-    (args.summary_dir / "q2_v2_summary.json").write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
+    (args.summary_dir / "q2_summary.json").write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
     for row in rows:
         print(json.dumps(row, ensure_ascii=False))
 

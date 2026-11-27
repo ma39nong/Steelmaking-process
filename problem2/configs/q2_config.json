@@ -1,0 +1,29 @@
+{
+  "time_step_s": 0.5,
+  "hampel_window": 9,
+  "hampel_threshold": 6.0,
+  "reconstruction": "PCHIP",
+  "flow": {
+    "method": "Savitzky-Golay derivative",
+    "window": 31,
+    "polyorder": 3,
+    "clip_negative": true
+  },
+  "delay": {
+    "window": 121,
+    "max_lag_s": 60.0,
+    "stride": 5,
+    "min_corr": 0.35,
+    "min_separation": 0.05,
+    "min_strength_ratio": 0.05
+  },
+  "random_seeds": [11, 23, 37],
+  "units": {
+    "oxygen_cumulative": "m3",
+    "oxygen_flow": "m3/s",
+    "co": "m3/s",
+    "co2": "m3/s",
+    "total_emission": "m3",
+    "delay": "s"
+  }
+}

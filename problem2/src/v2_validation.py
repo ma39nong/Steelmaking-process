@@ -1,4 +1,4 @@
-"""Cross-heat validation and threshold sensitivity for V2 delay observations."""
+"""Cross-heat validation and threshold sensitivity for delay observations."""
 
 from __future__ import annotations
 
@@ -30,7 +30,7 @@ def _predict(model: dict, flow: np.ndarray) -> np.ndarray:
 
 
 def leave_one_heat_out(data_dir: Path) -> list[dict]:
-    paths = sorted(data_dir.glob("*_q2_v2_processed.npz"))
+    paths = sorted(data_dir.glob("*_q2_processed.npz"))
     rows = []
     for gas in ("co", "co2"):
         samples = {p.stem.split("_q2")[0]: _load(p, gas) for p in paths}
@@ -48,7 +48,7 @@ def leave_one_heat_out(data_dir: Path) -> list[dict]:
 
 def threshold_sensitivity(data_dir: Path) -> list[dict]:
     rows = []
-    for path in sorted(data_dir.glob("*_q2_v2_processed.npz")):
+    for path in sorted(data_dir.glob("*_q2_processed.npz")):
         heat = path.stem.split("_q2")[0]
         with np.load(path, allow_pickle=False) as data:
             for gas in ("co", "co2"):
@@ -63,8 +63,8 @@ def threshold_sensitivity(data_dir: Path) -> list[dict]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data-dir", type=Path, default=Path("problem2/final/v2_data"))
-    parser.add_argument("--output", type=Path, default=Path("problem2/final/results/v2_validation.json"))
+    parser.add_argument("--data-dir", type=Path, default=Path("problem2/final/data"))
+    parser.add_argument("--output", type=Path, default=Path("problem2/final/results/cross_validation.json"))
     args = parser.parse_args()
     result = {"leave_one_heat_out": leave_one_heat_out(args.data_dir), "threshold_sensitivity": threshold_sensitivity(args.data_dir)}
     args.output.parent.mkdir(parents=True, exist_ok=True)

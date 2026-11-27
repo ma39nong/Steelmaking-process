@@ -1,0 +1,2252 @@
+[
+  {
+    "heat_id": "6B03205",
+    "masked_points": 71,
+    "mask_fraction": 0.048005409060175794,
+    "oxygen_masked_rmse": 3.0818200349090916,
+    "co_masked_rmse": 0.18221824293626054,
+    "co2_masked_rmse": 0.09972168168791962,
+    "oxygen_flow_min": 1.879110561051197,
+    "oxygen_reintegration_rmse": 1.7588931075868302,
+    "all_numeric_fields_valid": true,
+    "numeric_field_finite": {
+      "sequence": true,
+      "time": true,
+      "oxygen_cumulative_raw": true,
+      "oxygen_cumulative_clean": true,
+      "oxygen_flow": true,
+      "oxygen_from_flow": true,
+      "co_raw": true,
+      "co_clean": true,
+      "co2_raw": true,
+      "co2_clean": true,
+      "total_co_emission": true,
+      "total_co2_emission": true,
+      "delay_co_center_index": true,
+      "delay_co_window_time": true,
+      "delay_co_observed": true,
+      "delay_co_max_corr": true,
+      "delay_co_source_std": true,
+      "delay_co_target_std": true,
+      "delay_co_peak_separation": true,
+      "delay_co_peak_prominence": true,
+      "delay_co_peak_width_samples": true,
+      "delay_co_confidence": true,
+      "delay_co_support_left_index": true,
+      "delay_co_support_right_index": true,
+      "delay_co_model": true,
+      "time_mapping_co": true,
+      "time_mapping_co_model": true,
+      "co_aligned": true,
+      "delay_co2_center_index": true,
+      "delay_co2_window_time": true,
+      "delay_co2_observed": true,
+      "delay_co2_max_corr": true,
+      "delay_co2_source_std": true,
+      "delay_co2_target_std": true,
+      "delay_co2_peak_separation": true,
+      "delay_co2_peak_prominence": true,
+      "delay_co2_peak_width_samples": true,
+      "delay_co2_confidence": true,
+      "delay_co2_support_left_index": true,
+      "delay_co2_support_right_index": true,
+      "delay_co2_model": true,
+      "time_mapping_co2": true,
+      "time_mapping_co2_model": true,
+      "co2_aligned": true
+    },
+    "field_shapes": {
+      "heat_id": [],
+      "sequence": [
+        1479
+      ],
+      "time": [
+        1479
+      ],
+      "oxygen_cumulative_raw": [
+        1479
+      ],
+      "oxygen_cumulative_clean": [
+        1479
+      ],
+      "oxygen_flow": [
+        1479
+      ],
+      "oxygen_from_flow": [
+        1479
+      ],
+      "co_raw": [
+        1479
+      ],
+      "co_clean": [
+        1479
+      ],
+      "co2_raw": [
+        1479
+      ],
+      "co2_clean": [
+        1479
+      ],
+      "total_co_emission": [
+        1479
+      ],
+      "total_co2_emission": [
+        1479
+      ],
+      "outlier_oxygen": [
+        1479
+      ],
+      "outlier_co": [
+        1479
+      ],
+      "outlier_co2": [
+        1479
+      ],
+      "delay_co_center_index": [
+        248
+      ],
+      "delay_co_window_time": [
+        248
+      ],
+      "delay_co_observed": [
+        248
+      ],
+      "delay_co_max_corr": [
+        248
+      ],
+      "delay_co_source_std": [
+        248
+      ],
+      "delay_co_target_std": [
+        248
+      ],
+      "delay_co_peak_separation": [
+        248
+      ],
+      "delay_co_peak_prominence": [
+        248
+      ],
+      "delay_co_peak_width_samples": [
+        248
+      ],
+      "delay_co_boundary_hit": [
+        248
+      ],
+      "delay_co_valid_mask": [
+        248
+      ],
+      "delay_co_confidence": [
+        248
+      ],
+      "delay_co_support_left_index": [
+        248
+      ],
+      "delay_co_support_right_index": [
+        248
+      ],
+      "delay_co_model": [
+        1479
+      ],
+      "delay_co_observed_mask": [
+        1479
+      ],
+      "time_mapping_co": [
+        1479
+      ],
+      "time_mapping_co_model": [
+        1479
+      ],
+      "alignment_valid_mask_co": [
+        1479
+      ],
+      "co_aligned": [
+        1479
+      ],
+      "delay_co2_center_index": [
+        248
+      ],
+      "delay_co2_window_time": [
+        248
+      ],
+      "delay_co2_observed": [
+        248
+      ],
+      "delay_co2_max_corr": [
+        248
+      ],
+      "delay_co2_source_std": [
+        248
+      ],
+      "delay_co2_target_std": [
+        248
+      ],
+      "delay_co2_peak_separation": [
+        248
+      ],
+      "delay_co2_peak_prominence": [
+        248
+      ],
+      "delay_co2_peak_width_samples": [
+        248
+      ],
+      "delay_co2_boundary_hit": [
+        248
+      ],
+      "delay_co2_valid_mask": [
+        248
+      ],
+      "delay_co2_confidence": [
+        248
+      ],
+      "delay_co2_support_left_index": [
+        248
+      ],
+      "delay_co2_support_right_index": [
+        248
+      ],
+      "delay_co2_model": [
+        1479
+      ],
+      "delay_co2_observed_mask": [
+        1479
+      ],
+      "time_mapping_co2": [
+        1479
+      ],
+      "time_mapping_co2_model": [
+        1479
+      ],
+      "alignment_valid_mask_co2": [
+        1479
+      ],
+      "co2_aligned": [
+        1479
+      ]
+    }
+  },
+  {
+    "heat_id": "6B03206",
+    "masked_points": 63,
+    "mask_fraction": 0.04805491990846682,
+    "oxygen_masked_rmse": 2.6257033499592084,
+    "co_masked_rmse": 0.14888488710224598,
+    "co2_masked_rmse": 0.07313089570529657,
+    "oxygen_flow_min": 1.9993810388449051,
+    "oxygen_reintegration_rmse": 1.9281114627543539,
+    "all_numeric_fields_valid": true,
+    "numeric_field_finite": {
+      "sequence": true,
+      "time": true,
+      "oxygen_cumulative_raw": true,
+      "oxygen_cumulative_clean": true,
+      "oxygen_flow": true,
+      "oxygen_from_flow": true,
+      "co_raw": true,
+      "co_clean": true,
+      "co2_raw": true,
+      "co2_clean": true,
+      "total_co_emission": true,
+      "total_co2_emission": true,
+      "delay_co_center_index": true,
+      "delay_co_window_time": true,
+      "delay_co_observed": true,
+      "delay_co_max_corr": true,
+      "delay_co_source_std": true,
+      "delay_co_target_std": true,
+      "delay_co_peak_separation": true,
+      "delay_co_peak_prominence": true,
+      "delay_co_peak_width_samples": true,
+      "delay_co_confidence": true,
+      "delay_co_support_left_index": true,
+      "delay_co_support_right_index": true,
+      "delay_co_model": true,
+      "time_mapping_co": true,
+      "time_mapping_co_model": true,
+      "co_aligned": true,
+      "delay_co2_center_index": true,
+      "delay_co2_window_time": true,
+      "delay_co2_observed": true,
+      "delay_co2_max_corr": true,
+      "delay_co2_source_std": true,
+      "delay_co2_target_std": true,
+      "delay_co2_peak_separation": true,
+      "delay_co2_peak_prominence": true,
+      "delay_co2_peak_width_samples": true,
+      "delay_co2_confidence": true,
+      "delay_co2_support_left_index": true,
+      "delay_co2_support_right_index": true,
+      "delay_co2_model": true,
+      "time_mapping_co2": true,
+      "time_mapping_co2_model": true,
+      "co2_aligned": true
+    },
+    "field_shapes": {
+      "heat_id": [],
+      "sequence": [
+        1311
+      ],
+      "time": [
+        1311
+      ],
+      "oxygen_cumulative_raw": [
+        1311
+      ],
+      "oxygen_cumulative_clean": [
+        1311
+      ],
+      "oxygen_flow": [
+        1311
+      ],
+      "oxygen_from_flow": [
+        1311
+      ],
+      "co_raw": [
+        1311
+      ],
+      "co_clean": [
+        1311
+      ],
+      "co2_raw": [
+        1311
+      ],
+      "co2_clean": [
+        1311
+      ],
+      "total_co_emission": [
+        1311
+      ],
+      "total_co2_emission": [
+        1311
+      ],
+      "outlier_oxygen": [
+        1311
+      ],
+      "outlier_co": [
+        1311
+      ],
+      "outlier_co2": [
+        1311
+      ],
+      "delay_co_center_index": [
+        215
+      ],
+      "delay_co_window_time": [
+        215
+      ],
+      "delay_co_observed": [
+        215
+      ],
+      "delay_co_max_corr": [
+        215
+      ],
+      "delay_co_source_std": [
+        215
+      ],
+      "delay_co_target_std": [
+        215
+      ],
+      "delay_co_peak_separation": [
+        215
+      ],
+      "delay_co_peak_prominence": [
+        215
+      ],
+      "delay_co_peak_width_samples": [
+        215
+      ],
+      "delay_co_boundary_hit": [
+        215
+      ],
+      "delay_co_valid_mask": [
+        215
+      ],
+      "delay_co_confidence": [
+        215
+      ],
+      "delay_co_support_left_index": [
+        215
+      ],
+      "delay_co_support_right_index": [
+        215
+      ],
+      "delay_co_model": [
+        1311
+      ],
+      "delay_co_observed_mask": [
+        1311
+      ],
+      "time_mapping_co": [
+        1311
+      ],
+      "time_mapping_co_model": [
+        1311
+      ],
+      "alignment_valid_mask_co": [
+        1311
+      ],
+      "co_aligned": [
+        1311
+      ],
+      "delay_co2_center_index": [
+        215
+      ],
+      "delay_co2_window_time": [
+        215
+      ],
+      "delay_co2_observed": [
+        215
+      ],
+      "delay_co2_max_corr": [
+        215
+      ],
+      "delay_co2_source_std": [
+        215
+      ],
+      "delay_co2_target_std": [
+        215
+      ],
+      "delay_co2_peak_separation": [
+        215
+      ],
+      "delay_co2_peak_prominence": [
+        215
+      ],
+      "delay_co2_peak_width_samples": [
+        215
+      ],
+      "delay_co2_boundary_hit": [
+        215
+      ],
+      "delay_co2_valid_mask": [
+        215
+      ],
+      "delay_co2_confidence": [
+        215
+      ],
+      "delay_co2_support_left_index": [
+        215
+      ],
+      "delay_co2_support_right_index": [
+        215
+      ],
+      "delay_co2_model": [
+        1311
+      ],
+      "delay_co2_observed_mask": [
+        1311
+      ],
+      "time_mapping_co2": [
+        1311
+      ],
+      "time_mapping_co2_model": [
+        1311
+      ],
+      "alignment_valid_mask_co2": [
+        1311
+      ],
+      "co2_aligned": [
+        1311
+      ]
+    }
+  },
+  {
+    "heat_id": "6B03270",
+    "masked_points": 68,
+    "mask_fraction": 0.048124557678697805,
+    "oxygen_masked_rmse": 3.1425105583774022,
+    "co_masked_rmse": 0.1250166911606824,
+    "co2_masked_rmse": 0.08621246485313523,
+    "oxygen_flow_min": 1.987884141420752,
+    "oxygen_reintegration_rmse": 1.9551453175056281,
+    "all_numeric_fields_valid": true,
+    "numeric_field_finite": {
+      "sequence": true,
+      "time": true,
+      "oxygen_cumulative_raw": true,
+      "oxygen_cumulative_clean": true,
+      "oxygen_flow": true,
+      "oxygen_from_flow": true,
+      "co_raw": true,
+      "co_clean": true,
+      "co2_raw": true,
+      "co2_clean": true,
+      "total_co_emission": true,
+      "total_co2_emission": true,
+      "delay_co_center_index": true,
+      "delay_co_window_time": true,
+      "delay_co_observed": true,
+      "delay_co_max_corr": true,
+      "delay_co_source_std": true,
+      "delay_co_target_std": true,
+      "delay_co_peak_separation": true,
+      "delay_co_peak_prominence": true,
+      "delay_co_peak_width_samples": true,
+      "delay_co_confidence": true,
+      "delay_co_support_left_index": true,
+      "delay_co_support_right_index": true,
+      "delay_co_model": true,
+      "time_mapping_co": true,
+      "time_mapping_co_model": true,
+      "co_aligned": true,
+      "delay_co2_center_index": true,
+      "delay_co2_window_time": true,
+      "delay_co2_observed": true,
+      "delay_co2_max_corr": true,
+      "delay_co2_source_std": true,
+      "delay_co2_target_std": true,
+      "delay_co2_peak_separation": true,
+      "delay_co2_peak_prominence": true,
+      "delay_co2_peak_width_samples": true,
+      "delay_co2_confidence": true,
+      "delay_co2_support_left_index": true,
+      "delay_co2_support_right_index": true,
+      "delay_co2_model": true,
+      "time_mapping_co2": true,
+      "time_mapping_co2_model": true,
+      "co2_aligned": true
+    },
+    "field_shapes": {
+      "heat_id": [],
+      "sequence": [
+        1413
+      ],
+      "time": [
+        1413
+      ],
+      "oxygen_cumulative_raw": [
+        1413
+      ],
+      "oxygen_cumulative_clean": [
+        1413
+      ],
+      "oxygen_flow": [
+        1413
+      ],
+      "oxygen_from_flow": [
+        1413
+      ],
+      "co_raw": [
+        1413
+      ],
+      "co_clean": [
+        1413
+      ],
+      "co2_raw": [
+        1413
+      ],
+      "co2_clean": [
+        1413
+      ],
+      "total_co_emission": [
+        1413
+      ],
+      "total_co2_emission": [
+        1413
+      ],
+      "outlier_oxygen": [
+        1413
+      ],
+      "outlier_co": [
+        1413
+      ],
+      "outlier_co2": [
+        1413
+      ],
+      "delay_co_center_index": [
+        235
+      ],
+      "delay_co_window_time": [
+        235
+      ],
+      "delay_co_observed": [
+        235
+      ],
+      "delay_co_max_corr": [
+        235
+      ],
+      "delay_co_source_std": [
+        235
+      ],
+      "delay_co_target_std": [
+        235
+      ],
+      "delay_co_peak_separation": [
+        235
+      ],
+      "delay_co_peak_prominence": [
+        235
+      ],
+      "delay_co_peak_width_samples": [
+        235
+      ],
+      "delay_co_boundary_hit": [
+        235
+      ],
+      "delay_co_valid_mask": [
+        235
+      ],
+      "delay_co_confidence": [
+        235
+      ],
+      "delay_co_support_left_index": [
+        235
+      ],
+      "delay_co_support_right_index": [
+        235
+      ],
+      "delay_co_model": [
+        1413
+      ],
+      "delay_co_observed_mask": [
+        1413
+      ],
+      "time_mapping_co": [
+        1413
+      ],
+      "time_mapping_co_model": [
+        1413
+      ],
+      "alignment_valid_mask_co": [
+        1413
+      ],
+      "co_aligned": [
+        1413
+      ],
+      "delay_co2_center_index": [
+        235
+      ],
+      "delay_co2_window_time": [
+        235
+      ],
+      "delay_co2_observed": [
+        235
+      ],
+      "delay_co2_max_corr": [
+        235
+      ],
+      "delay_co2_source_std": [
+        235
+      ],
+      "delay_co2_target_std": [
+        235
+      ],
+      "delay_co2_peak_separation": [
+        235
+      ],
+      "delay_co2_peak_prominence": [
+        235
+      ],
+      "delay_co2_peak_width_samples": [
+        235
+      ],
+      "delay_co2_boundary_hit": [
+        235
+      ],
+      "delay_co2_valid_mask": [
+        235
+      ],
+      "delay_co2_confidence": [
+        235
+      ],
+      "delay_co2_support_left_index": [
+        235
+      ],
+      "delay_co2_support_right_index": [
+        235
+      ],
+      "delay_co2_model": [
+        1413
+      ],
+      "delay_co2_observed_mask": [
+        1413
+      ],
+      "time_mapping_co2": [
+        1413
+      ],
+      "time_mapping_co2_model": [
+        1413
+      ],
+      "alignment_valid_mask_co2": [
+        1413
+      ],
+      "co2_aligned": [
+        1413
+      ]
+    }
+  },
+  {
+    "heat_id": "6B03271",
+    "masked_points": 68,
+    "mask_fraction": 0.04788732394366197,
+    "oxygen_masked_rmse": 2.9654119983776375,
+    "co_masked_rmse": 0.12504602558703057,
+    "co2_masked_rmse": 0.09084924646452702,
+    "oxygen_flow_min": 2.0175412197946243,
+    "oxygen_reintegration_rmse": 2.1646647920987157,
+    "all_numeric_fields_valid": true,
+    "numeric_field_finite": {
+      "sequence": true,
+      "time": true,
+      "oxygen_cumulative_raw": true,
+      "oxygen_cumulative_clean": true,
+      "oxygen_flow": true,
+      "oxygen_from_flow": true,
+      "co_raw": true,
+      "co_clean": true,
+      "co2_raw": true,
+      "co2_clean": true,
+      "total_co_emission": true,
+      "total_co2_emission": true,
+      "delay_co_center_index": true,
+      "delay_co_window_time": true,
+      "delay_co_observed": true,
+      "delay_co_max_corr": true,
+      "delay_co_source_std": true,
+      "delay_co_target_std": true,
+      "delay_co_peak_separation": true,
+      "delay_co_peak_prominence": true,
+      "delay_co_peak_width_samples": true,
+      "delay_co_confidence": true,
+      "delay_co_support_left_index": true,
+      "delay_co_support_right_index": true,
+      "delay_co_model": true,
+      "time_mapping_co": true,
+      "time_mapping_co_model": true,
+      "co_aligned": true,
+      "delay_co2_center_index": true,
+      "delay_co2_window_time": true,
+      "delay_co2_observed": true,
+      "delay_co2_max_corr": true,
+      "delay_co2_source_std": true,
+      "delay_co2_target_std": true,
+      "delay_co2_peak_separation": true,
+      "delay_co2_peak_prominence": true,
+      "delay_co2_peak_width_samples": true,
+      "delay_co2_confidence": true,
+      "delay_co2_support_left_index": true,
+      "delay_co2_support_right_index": true,
+      "delay_co2_model": true,
+      "time_mapping_co2": true,
+      "time_mapping_co2_model": true,
+      "co2_aligned": true
+    },
+    "field_shapes": {
+      "heat_id": [],
+      "sequence": [
+        1420
+      ],
+      "time": [
+        1420
+      ],
+      "oxygen_cumulative_raw": [
+        1420
+      ],
+      "oxygen_cumulative_clean": [
+        1420
+      ],
+      "oxygen_flow": [
+        1420
+      ],
+      "oxygen_from_flow": [
+        1420
+      ],
+      "co_raw": [
+        1420
+      ],
+      "co_clean": [
+        1420
+      ],
+      "co2_raw": [
+        1420
+      ],
+      "co2_clean": [
+        1420
+      ],
+      "total_co_emission": [
+        1420
+      ],
+      "total_co2_emission": [
+        1420
+      ],
+      "outlier_oxygen": [
+        1420
+      ],
+      "outlier_co": [
+        1420
+      ],
+      "outlier_co2": [
+        1420
+      ],
+      "delay_co_center_index": [
+        236
+      ],
+      "delay_co_window_time": [
+        236
+      ],
+      "delay_co_observed": [
+        236
+      ],
+      "delay_co_max_corr": [
+        236
+      ],
+      "delay_co_source_std": [
+        236
+      ],
+      "delay_co_target_std": [
+        236
+      ],
+      "delay_co_peak_separation": [
+        236
+      ],
+      "delay_co_peak_prominence": [
+        236
+      ],
+      "delay_co_peak_width_samples": [
+        236
+      ],
+      "delay_co_boundary_hit": [
+        236
+      ],
+      "delay_co_valid_mask": [
+        236
+      ],
+      "delay_co_confidence": [
+        236
+      ],
+      "delay_co_support_left_index": [
+        236
+      ],
+      "delay_co_support_right_index": [
+        236
+      ],
+      "delay_co_model": [
+        1420
+      ],
+      "delay_co_observed_mask": [
+        1420
+      ],
+      "time_mapping_co": [
+        1420
+      ],
+      "time_mapping_co_model": [
+        1420
+      ],
+      "alignment_valid_mask_co": [
+        1420
+      ],
+      "co_aligned": [
+        1420
+      ],
+      "delay_co2_center_index": [
+        236
+      ],
+      "delay_co2_window_time": [
+        236
+      ],
+      "delay_co2_observed": [
+        236
+      ],
+      "delay_co2_max_corr": [
+        236
+      ],
+      "delay_co2_source_std": [
+        236
+      ],
+      "delay_co2_target_std": [
+        236
+      ],
+      "delay_co2_peak_separation": [
+        236
+      ],
+      "delay_co2_peak_prominence": [
+        236
+      ],
+      "delay_co2_peak_width_samples": [
+        236
+      ],
+      "delay_co2_boundary_hit": [
+        236
+      ],
+      "delay_co2_valid_mask": [
+        236
+      ],
+      "delay_co2_confidence": [
+        236
+      ],
+      "delay_co2_support_left_index": [
+        236
+      ],
+      "delay_co2_support_right_index": [
+        236
+      ],
+      "delay_co2_model": [
+        1420
+      ],
+      "delay_co2_observed_mask": [
+        1420
+      ],
+      "time_mapping_co2": [
+        1420
+      ],
+      "time_mapping_co2_model": [
+        1420
+      ],
+      "alignment_valid_mask_co2": [
+        1420
+      ],
+      "co2_aligned": [
+        1420
+      ]
+    }
+  },
+  {
+    "heat_id": "6C02057",
+    "masked_points": 33,
+    "mask_fraction": 0.04258064516129032,
+    "oxygen_masked_rmse": 6.181998836774024,
+    "co_masked_rmse": 2.610185225305684,
+    "co2_masked_rmse": 1.114853421202982,
+    "oxygen_flow_min": 3.8104174250850638,
+    "oxygen_reintegration_rmse": 6.516130951904052,
+    "all_numeric_fields_valid": true,
+    "numeric_field_finite": {
+      "sequence": true,
+      "time": true,
+      "oxygen_cumulative_raw": true,
+      "oxygen_cumulative_clean": true,
+      "oxygen_flow": true,
+      "oxygen_from_flow": true,
+      "co_raw": true,
+      "co_clean": true,
+      "co2_raw": true,
+      "co2_clean": true,
+      "total_co_emission": true,
+      "total_co2_emission": true,
+      "delay_co_center_index": true,
+      "delay_co_window_time": true,
+      "delay_co_observed": true,
+      "delay_co_max_corr": true,
+      "delay_co_source_std": true,
+      "delay_co_target_std": true,
+      "delay_co_peak_separation": true,
+      "delay_co_peak_prominence": true,
+      "delay_co_peak_width_samples": true,
+      "delay_co_confidence": true,
+      "delay_co_support_left_index": true,
+      "delay_co_support_right_index": true,
+      "delay_co_model": true,
+      "time_mapping_co": true,
+      "time_mapping_co_model": true,
+      "co_aligned": true,
+      "delay_co2_center_index": true,
+      "delay_co2_window_time": true,
+      "delay_co2_observed": true,
+      "delay_co2_max_corr": true,
+      "delay_co2_source_std": true,
+      "delay_co2_target_std": true,
+      "delay_co2_peak_separation": true,
+      "delay_co2_peak_prominence": true,
+      "delay_co2_peak_width_samples": true,
+      "delay_co2_confidence": true,
+      "delay_co2_support_left_index": true,
+      "delay_co2_support_right_index": true,
+      "delay_co2_model": true,
+      "time_mapping_co2": true,
+      "time_mapping_co2_model": true,
+      "co2_aligned": true
+    },
+    "field_shapes": {
+      "heat_id": [],
+      "sequence": [
+        775
+      ],
+      "time": [
+        775
+      ],
+      "oxygen_cumulative_raw": [
+        775
+      ],
+      "oxygen_cumulative_clean": [
+        775
+      ],
+      "oxygen_flow": [
+        775
+      ],
+      "oxygen_from_flow": [
+        775
+      ],
+      "co_raw": [
+        775
+      ],
+      "co_clean": [
+        775
+      ],
+      "co2_raw": [
+        775
+      ],
+      "co2_clean": [
+        775
+      ],
+      "total_co_emission": [
+        775
+      ],
+      "total_co2_emission": [
+        775
+      ],
+      "outlier_oxygen": [
+        775
+      ],
+      "outlier_co": [
+        775
+      ],
+      "outlier_co2": [
+        775
+      ],
+      "delay_co_center_index": [
+        107
+      ],
+      "delay_co_window_time": [
+        107
+      ],
+      "delay_co_observed": [
+        107
+      ],
+      "delay_co_max_corr": [
+        107
+      ],
+      "delay_co_source_std": [
+        107
+      ],
+      "delay_co_target_std": [
+        107
+      ],
+      "delay_co_peak_separation": [
+        107
+      ],
+      "delay_co_peak_prominence": [
+        107
+      ],
+      "delay_co_peak_width_samples": [
+        107
+      ],
+      "delay_co_boundary_hit": [
+        107
+      ],
+      "delay_co_valid_mask": [
+        107
+      ],
+      "delay_co_confidence": [
+        107
+      ],
+      "delay_co_support_left_index": [
+        107
+      ],
+      "delay_co_support_right_index": [
+        107
+      ],
+      "delay_co_model": [
+        775
+      ],
+      "delay_co_observed_mask": [
+        775
+      ],
+      "time_mapping_co": [
+        775
+      ],
+      "time_mapping_co_model": [
+        775
+      ],
+      "alignment_valid_mask_co": [
+        775
+      ],
+      "co_aligned": [
+        775
+      ],
+      "delay_co2_center_index": [
+        107
+      ],
+      "delay_co2_window_time": [
+        107
+      ],
+      "delay_co2_observed": [
+        107
+      ],
+      "delay_co2_max_corr": [
+        107
+      ],
+      "delay_co2_source_std": [
+        107
+      ],
+      "delay_co2_target_std": [
+        107
+      ],
+      "delay_co2_peak_separation": [
+        107
+      ],
+      "delay_co2_peak_prominence": [
+        107
+      ],
+      "delay_co2_peak_width_samples": [
+        107
+      ],
+      "delay_co2_boundary_hit": [
+        107
+      ],
+      "delay_co2_valid_mask": [
+        107
+      ],
+      "delay_co2_confidence": [
+        107
+      ],
+      "delay_co2_support_left_index": [
+        107
+      ],
+      "delay_co2_support_right_index": [
+        107
+      ],
+      "delay_co2_model": [
+        775
+      ],
+      "delay_co2_observed_mask": [
+        775
+      ],
+      "time_mapping_co2": [
+        775
+      ],
+      "time_mapping_co2_model": [
+        775
+      ],
+      "alignment_valid_mask_co2": [
+        775
+      ],
+      "co2_aligned": [
+        775
+      ]
+    }
+  },
+  {
+    "heat_id": "6C02058",
+    "masked_points": 64,
+    "mask_fraction": 0.04765450483991065,
+    "oxygen_masked_rmse": 2.6502756107778014,
+    "co_masked_rmse": 0.12462564068756517,
+    "co2_masked_rmse": 0.05033439887535582,
+    "oxygen_flow_min": 1.9868760843400939,
+    "oxygen_reintegration_rmse": 2.2189457561732944,
+    "all_numeric_fields_valid": true,
+    "numeric_field_finite": {
+      "sequence": true,
+      "time": true,
+      "oxygen_cumulative_raw": true,
+      "oxygen_cumulative_clean": true,
+      "oxygen_flow": true,
+      "oxygen_from_flow": true,
+      "co_raw": true,
+      "co_clean": true,
+      "co2_raw": true,
+      "co2_clean": true,
+      "total_co_emission": true,
+      "total_co2_emission": true,
+      "delay_co_center_index": true,
+      "delay_co_window_time": true,
+      "delay_co_observed": true,
+      "delay_co_max_corr": true,
+      "delay_co_source_std": true,
+      "delay_co_target_std": true,
+      "delay_co_peak_separation": true,
+      "delay_co_peak_prominence": true,
+      "delay_co_peak_width_samples": true,
+      "delay_co_confidence": true,
+      "delay_co_support_left_index": true,
+      "delay_co_support_right_index": true,
+      "delay_co_model": true,
+      "time_mapping_co": true,
+      "time_mapping_co_model": true,
+      "co_aligned": true,
+      "delay_co2_center_index": true,
+      "delay_co2_window_time": true,
+      "delay_co2_observed": true,
+      "delay_co2_max_corr": true,
+      "delay_co2_source_std": true,
+      "delay_co2_target_std": true,
+      "delay_co2_peak_separation": true,
+      "delay_co2_peak_prominence": true,
+      "delay_co2_peak_width_samples": true,
+      "delay_co2_confidence": true,
+      "delay_co2_support_left_index": true,
+      "delay_co2_support_right_index": true,
+      "delay_co2_model": true,
+      "time_mapping_co2": true,
+      "time_mapping_co2_model": true,
+      "co2_aligned": true
+    },
+    "field_shapes": {
+      "heat_id": [],
+      "sequence": [
+        1343
+      ],
+      "time": [
+        1343
+      ],
+      "oxygen_cumulative_raw": [
+        1343
+      ],
+      "oxygen_cumulative_clean": [
+        1343
+      ],
+      "oxygen_flow": [
+        1343
+      ],
+      "oxygen_from_flow": [
+        1343
+      ],
+      "co_raw": [
+        1343
+      ],
+      "co_clean": [
+        1343
+      ],
+      "co2_raw": [
+        1343
+      ],
+      "co2_clean": [
+        1343
+      ],
+      "total_co_emission": [
+        1343
+      ],
+      "total_co2_emission": [
+        1343
+      ],
+      "outlier_oxygen": [
+        1343
+      ],
+      "outlier_co": [
+        1343
+      ],
+      "outlier_co2": [
+        1343
+      ],
+      "delay_co_center_index": [
+        221
+      ],
+      "delay_co_window_time": [
+        221
+      ],
+      "delay_co_observed": [
+        221
+      ],
+      "delay_co_max_corr": [
+        221
+      ],
+      "delay_co_source_std": [
+        221
+      ],
+      "delay_co_target_std": [
+        221
+      ],
+      "delay_co_peak_separation": [
+        221
+      ],
+      "delay_co_peak_prominence": [
+        221
+      ],
+      "delay_co_peak_width_samples": [
+        221
+      ],
+      "delay_co_boundary_hit": [
+        221
+      ],
+      "delay_co_valid_mask": [
+        221
+      ],
+      "delay_co_confidence": [
+        221
+      ],
+      "delay_co_support_left_index": [
+        221
+      ],
+      "delay_co_support_right_index": [
+        221
+      ],
+      "delay_co_model": [
+        1343
+      ],
+      "delay_co_observed_mask": [
+        1343
+      ],
+      "time_mapping_co": [
+        1343
+      ],
+      "time_mapping_co_model": [
+        1343
+      ],
+      "alignment_valid_mask_co": [
+        1343
+      ],
+      "co_aligned": [
+        1343
+      ],
+      "delay_co2_center_index": [
+        221
+      ],
+      "delay_co2_window_time": [
+        221
+      ],
+      "delay_co2_observed": [
+        221
+      ],
+      "delay_co2_max_corr": [
+        221
+      ],
+      "delay_co2_source_std": [
+        221
+      ],
+      "delay_co2_target_std": [
+        221
+      ],
+      "delay_co2_peak_separation": [
+        221
+      ],
+      "delay_co2_peak_prominence": [
+        221
+      ],
+      "delay_co2_peak_width_samples": [
+        221
+      ],
+      "delay_co2_boundary_hit": [
+        221
+      ],
+      "delay_co2_valid_mask": [
+        221
+      ],
+      "delay_co2_confidence": [
+        221
+      ],
+      "delay_co2_support_left_index": [
+        221
+      ],
+      "delay_co2_support_right_index": [
+        221
+      ],
+      "delay_co2_model": [
+        1343
+      ],
+      "delay_co2_observed_mask": [
+        1343
+      ],
+      "time_mapping_co2": [
+        1343
+      ],
+      "time_mapping_co2_model": [
+        1343
+      ],
+      "alignment_valid_mask_co2": [
+        1343
+      ],
+      "co2_aligned": [
+        1343
+      ]
+    }
+  },
+  {
+    "heat_id": "6C02059",
+    "masked_points": 74,
+    "mask_fraction": 0.047588424437299034,
+    "oxygen_masked_rmse": 3.5592831393077797,
+    "co_masked_rmse": 1.8960010427088676,
+    "co2_masked_rmse": 0.705756274079117,
+    "oxygen_flow_min": 1.8328191504126488,
+    "oxygen_reintegration_rmse": 2.1258978097241124,
+    "all_numeric_fields_valid": true,
+    "numeric_field_finite": {
+      "sequence": true,
+      "time": true,
+      "oxygen_cumulative_raw": true,
+      "oxygen_cumulative_clean": true,
+      "oxygen_flow": true,
+      "oxygen_from_flow": true,
+      "co_raw": true,
+      "co_clean": true,
+      "co2_raw": true,
+      "co2_clean": true,
+      "total_co_emission": true,
+      "total_co2_emission": true,
+      "delay_co_center_index": true,
+      "delay_co_window_time": true,
+      "delay_co_observed": true,
+      "delay_co_max_corr": true,
+      "delay_co_source_std": true,
+      "delay_co_target_std": true,
+      "delay_co_peak_separation": true,
+      "delay_co_peak_prominence": true,
+      "delay_co_peak_width_samples": true,
+      "delay_co_confidence": true,
+      "delay_co_support_left_index": true,
+      "delay_co_support_right_index": true,
+      "delay_co_model": true,
+      "time_mapping_co": true,
+      "time_mapping_co_model": true,
+      "co_aligned": true,
+      "delay_co2_center_index": true,
+      "delay_co2_window_time": true,
+      "delay_co2_observed": true,
+      "delay_co2_max_corr": true,
+      "delay_co2_source_std": true,
+      "delay_co2_target_std": true,
+      "delay_co2_peak_separation": true,
+      "delay_co2_peak_prominence": true,
+      "delay_co2_peak_width_samples": true,
+      "delay_co2_confidence": true,
+      "delay_co2_support_left_index": true,
+      "delay_co2_support_right_index": true,
+      "delay_co2_model": true,
+      "time_mapping_co2": true,
+      "time_mapping_co2_model": true,
+      "co2_aligned": true
+    },
+    "field_shapes": {
+      "heat_id": [],
+      "sequence": [
+        1555
+      ],
+      "time": [
+        1555
+      ],
+      "oxygen_cumulative_raw": [
+        1555
+      ],
+      "oxygen_cumulative_clean": [
+        1555
+      ],
+      "oxygen_flow": [
+        1555
+      ],
+      "oxygen_from_flow": [
+        1555
+      ],
+      "co_raw": [
+        1555
+      ],
+      "co_clean": [
+        1555
+      ],
+      "co2_raw": [
+        1555
+      ],
+      "co2_clean": [
+        1555
+      ],
+      "total_co_emission": [
+        1555
+      ],
+      "total_co2_emission": [
+        1555
+      ],
+      "outlier_oxygen": [
+        1555
+      ],
+      "outlier_co": [
+        1555
+      ],
+      "outlier_co2": [
+        1555
+      ],
+      "delay_co_center_index": [
+        263
+      ],
+      "delay_co_window_time": [
+        263
+      ],
+      "delay_co_observed": [
+        263
+      ],
+      "delay_co_max_corr": [
+        263
+      ],
+      "delay_co_source_std": [
+        263
+      ],
+      "delay_co_target_std": [
+        263
+      ],
+      "delay_co_peak_separation": [
+        263
+      ],
+      "delay_co_peak_prominence": [
+        263
+      ],
+      "delay_co_peak_width_samples": [
+        263
+      ],
+      "delay_co_boundary_hit": [
+        263
+      ],
+      "delay_co_valid_mask": [
+        263
+      ],
+      "delay_co_confidence": [
+        263
+      ],
+      "delay_co_support_left_index": [
+        263
+      ],
+      "delay_co_support_right_index": [
+        263
+      ],
+      "delay_co_model": [
+        1555
+      ],
+      "delay_co_observed_mask": [
+        1555
+      ],
+      "time_mapping_co": [
+        1555
+      ],
+      "time_mapping_co_model": [
+        1555
+      ],
+      "alignment_valid_mask_co": [
+        1555
+      ],
+      "co_aligned": [
+        1555
+      ],
+      "delay_co2_center_index": [
+        263
+      ],
+      "delay_co2_window_time": [
+        263
+      ],
+      "delay_co2_observed": [
+        263
+      ],
+      "delay_co2_max_corr": [
+        263
+      ],
+      "delay_co2_source_std": [
+        263
+      ],
+      "delay_co2_target_std": [
+        263
+      ],
+      "delay_co2_peak_separation": [
+        263
+      ],
+      "delay_co2_peak_prominence": [
+        263
+      ],
+      "delay_co2_peak_width_samples": [
+        263
+      ],
+      "delay_co2_boundary_hit": [
+        263
+      ],
+      "delay_co2_valid_mask": [
+        263
+      ],
+      "delay_co2_confidence": [
+        263
+      ],
+      "delay_co2_support_left_index": [
+        263
+      ],
+      "delay_co2_support_right_index": [
+        263
+      ],
+      "delay_co2_model": [
+        1555
+      ],
+      "delay_co2_observed_mask": [
+        1555
+      ],
+      "time_mapping_co2": [
+        1555
+      ],
+      "time_mapping_co2_model": [
+        1555
+      ],
+      "alignment_valid_mask_co2": [
+        1555
+      ],
+      "co2_aligned": [
+        1555
+      ]
+    }
+  },
+  {
+    "heat_id": "6C02060",
+    "masked_points": 66,
+    "mask_fraction": 0.04806991988346686,
+    "oxygen_masked_rmse": 2.935094326627216,
+    "co_masked_rmse": 0.09782746817228892,
+    "co2_masked_rmse": 0.06204353949737606,
+    "oxygen_flow_min": 1.9665317797156279,
+    "oxygen_reintegration_rmse": 1.8411279658325037,
+    "all_numeric_fields_valid": true,
+    "numeric_field_finite": {
+      "sequence": true,
+      "time": true,
+      "oxygen_cumulative_raw": true,
+      "oxygen_cumulative_clean": true,
+      "oxygen_flow": true,
+      "oxygen_from_flow": true,
+      "co_raw": true,
+      "co_clean": true,
+      "co2_raw": true,
+      "co2_clean": true,
+      "total_co_emission": true,
+      "total_co2_emission": true,
+      "delay_co_center_index": true,
+      "delay_co_window_time": true,
+      "delay_co_observed": true,
+      "delay_co_max_corr": true,
+      "delay_co_source_std": true,
+      "delay_co_target_std": true,
+      "delay_co_peak_separation": true,
+      "delay_co_peak_prominence": true,
+      "delay_co_peak_width_samples": true,
+      "delay_co_confidence": true,
+      "delay_co_support_left_index": true,
+      "delay_co_support_right_index": true,
+      "delay_co_model": true,
+      "time_mapping_co": true,
+      "time_mapping_co_model": true,
+      "co_aligned": true,
+      "delay_co2_center_index": true,
+      "delay_co2_window_time": true,
+      "delay_co2_observed": true,
+      "delay_co2_max_corr": true,
+      "delay_co2_source_std": true,
+      "delay_co2_target_std": true,
+      "delay_co2_peak_separation": true,
+      "delay_co2_peak_prominence": true,
+      "delay_co2_peak_width_samples": true,
+      "delay_co2_confidence": true,
+      "delay_co2_support_left_index": true,
+      "delay_co2_support_right_index": true,
+      "delay_co2_model": true,
+      "time_mapping_co2": true,
+      "time_mapping_co2_model": true,
+      "co2_aligned": true
+    },
+    "field_shapes": {
+      "heat_id": [],
+      "sequence": [
+        1373
+      ],
+      "time": [
+        1373
+      ],
+      "oxygen_cumulative_raw": [
+        1373
+      ],
+      "oxygen_cumulative_clean": [
+        1373
+      ],
+      "oxygen_flow": [
+        1373
+      ],
+      "oxygen_from_flow": [
+        1373
+      ],
+      "co_raw": [
+        1373
+      ],
+      "co_clean": [
+        1373
+      ],
+      "co2_raw": [
+        1373
+      ],
+      "co2_clean": [
+        1373
+      ],
+      "total_co_emission": [
+        1373
+      ],
+      "total_co2_emission": [
+        1373
+      ],
+      "outlier_oxygen": [
+        1373
+      ],
+      "outlier_co": [
+        1373
+      ],
+      "outlier_co2": [
+        1373
+      ],
+      "delay_co_center_index": [
+        227
+      ],
+      "delay_co_window_time": [
+        227
+      ],
+      "delay_co_observed": [
+        227
+      ],
+      "delay_co_max_corr": [
+        227
+      ],
+      "delay_co_source_std": [
+        227
+      ],
+      "delay_co_target_std": [
+        227
+      ],
+      "delay_co_peak_separation": [
+        227
+      ],
+      "delay_co_peak_prominence": [
+        227
+      ],
+      "delay_co_peak_width_samples": [
+        227
+      ],
+      "delay_co_boundary_hit": [
+        227
+      ],
+      "delay_co_valid_mask": [
+        227
+      ],
+      "delay_co_confidence": [
+        227
+      ],
+      "delay_co_support_left_index": [
+        227
+      ],
+      "delay_co_support_right_index": [
+        227
+      ],
+      "delay_co_model": [
+        1373
+      ],
+      "delay_co_observed_mask": [
+        1373
+      ],
+      "time_mapping_co": [
+        1373
+      ],
+      "time_mapping_co_model": [
+        1373
+      ],
+      "alignment_valid_mask_co": [
+        1373
+      ],
+      "co_aligned": [
+        1373
+      ],
+      "delay_co2_center_index": [
+        227
+      ],
+      "delay_co2_window_time": [
+        227
+      ],
+      "delay_co2_observed": [
+        227
+      ],
+      "delay_co2_max_corr": [
+        227
+      ],
+      "delay_co2_source_std": [
+        227
+      ],
+      "delay_co2_target_std": [
+        227
+      ],
+      "delay_co2_peak_separation": [
+        227
+      ],
+      "delay_co2_peak_prominence": [
+        227
+      ],
+      "delay_co2_peak_width_samples": [
+        227
+      ],
+      "delay_co2_boundary_hit": [
+        227
+      ],
+      "delay_co2_valid_mask": [
+        227
+      ],
+      "delay_co2_confidence": [
+        227
+      ],
+      "delay_co2_support_left_index": [
+        227
+      ],
+      "delay_co2_support_right_index": [
+        227
+      ],
+      "delay_co2_model": [
+        1373
+      ],
+      "delay_co2_observed_mask": [
+        1373
+      ],
+      "time_mapping_co2": [
+        1373
+      ],
+      "time_mapping_co2_model": [
+        1373
+      ],
+      "alignment_valid_mask_co2": [
+        1373
+      ],
+      "co2_aligned": [
+        1373
+      ]
+    }
+  },
+  {
+    "heat_id": "6C02107",
+    "masked_points": 70,
+    "mask_fraction": 0.047978067169294036,
+    "oxygen_masked_rmse": 3.148845365267163,
+    "co_masked_rmse": 0.15126183481501032,
+    "co2_masked_rmse": 0.05746183519780533,
+    "oxygen_flow_min": 1.8701541497881404,
+    "oxygen_reintegration_rmse": 2.1899582731627945,
+    "all_numeric_fields_valid": true,
+    "numeric_field_finite": {
+      "sequence": true,
+      "time": true,
+      "oxygen_cumulative_raw": true,
+      "oxygen_cumulative_clean": true,
+      "oxygen_flow": true,
+      "oxygen_from_flow": true,
+      "co_raw": true,
+      "co_clean": true,
+      "co2_raw": true,
+      "co2_clean": true,
+      "total_co_emission": true,
+      "total_co2_emission": true,
+      "delay_co_center_index": true,
+      "delay_co_window_time": true,
+      "delay_co_observed": true,
+      "delay_co_max_corr": true,
+      "delay_co_source_std": true,
+      "delay_co_target_std": true,
+      "delay_co_peak_separation": true,
+      "delay_co_peak_prominence": true,
+      "delay_co_peak_width_samples": true,
+      "delay_co_confidence": true,
+      "delay_co_support_left_index": true,
+      "delay_co_support_right_index": true,
+      "delay_co_model": true,
+      "time_mapping_co": true,
+      "time_mapping_co_model": true,
+      "co_aligned": true,
+      "delay_co2_center_index": true,
+      "delay_co2_window_time": true,
+      "delay_co2_observed": true,
+      "delay_co2_max_corr": true,
+      "delay_co2_source_std": true,
+      "delay_co2_target_std": true,
+      "delay_co2_peak_separation": true,
+      "delay_co2_peak_prominence": true,
+      "delay_co2_peak_width_samples": true,
+      "delay_co2_confidence": true,
+      "delay_co2_support_left_index": true,
+      "delay_co2_support_right_index": true,
+      "delay_co2_model": true,
+      "time_mapping_co2": true,
+      "time_mapping_co2_model": true,
+      "co2_aligned": true
+    },
+    "field_shapes": {
+      "heat_id": [],
+      "sequence": [
+        1459
+      ],
+      "time": [
+        1459
+      ],
+      "oxygen_cumulative_raw": [
+        1459
+      ],
+      "oxygen_cumulative_clean": [
+        1459
+      ],
+      "oxygen_flow": [
+        1459
+      ],
+      "oxygen_from_flow": [
+        1459
+      ],
+      "co_raw": [
+        1459
+      ],
+      "co_clean": [
+        1459
+      ],
+      "co2_raw": [
+        1459
+      ],
+      "co2_clean": [
+        1459
+      ],
+      "total_co_emission": [
+        1459
+      ],
+      "total_co2_emission": [
+        1459
+      ],
+      "outlier_oxygen": [
+        1459
+      ],
+      "outlier_co": [
+        1459
+      ],
+      "outlier_co2": [
+        1459
+      ],
+      "delay_co_center_index": [
+        244
+      ],
+      "delay_co_window_time": [
+        244
+      ],
+      "delay_co_observed": [
+        244
+      ],
+      "delay_co_max_corr": [
+        244
+      ],
+      "delay_co_source_std": [
+        244
+      ],
+      "delay_co_target_std": [
+        244
+      ],
+      "delay_co_peak_separation": [
+        244
+      ],
+      "delay_co_peak_prominence": [
+        244
+      ],
+      "delay_co_peak_width_samples": [
+        244
+      ],
+      "delay_co_boundary_hit": [
+        244
+      ],
+      "delay_co_valid_mask": [
+        244
+      ],
+      "delay_co_confidence": [
+        244
+      ],
+      "delay_co_support_left_index": [
+        244
+      ],
+      "delay_co_support_right_index": [
+        244
+      ],
+      "delay_co_model": [
+        1459
+      ],
+      "delay_co_observed_mask": [
+        1459
+      ],
+      "time_mapping_co": [
+        1459
+      ],
+      "time_mapping_co_model": [
+        1459
+      ],
+      "alignment_valid_mask_co": [
+        1459
+      ],
+      "co_aligned": [
+        1459
+      ],
+      "delay_co2_center_index": [
+        244
+      ],
+      "delay_co2_window_time": [
+        244
+      ],
+      "delay_co2_observed": [
+        244
+      ],
+      "delay_co2_max_corr": [
+        244
+      ],
+      "delay_co2_source_std": [
+        244
+      ],
+      "delay_co2_target_std": [
+        244
+      ],
+      "delay_co2_peak_separation": [
+        244
+      ],
+      "delay_co2_peak_prominence": [
+        244
+      ],
+      "delay_co2_peak_width_samples": [
+        244
+      ],
+      "delay_co2_boundary_hit": [
+        244
+      ],
+      "delay_co2_valid_mask": [
+        244
+      ],
+      "delay_co2_confidence": [
+        244
+      ],
+      "delay_co2_support_left_index": [
+        244
+      ],
+      "delay_co2_support_right_index": [
+        244
+      ],
+      "delay_co2_model": [
+        1459
+      ],
+      "delay_co2_observed_mask": [
+        1459
+      ],
+      "time_mapping_co2": [
+        1459
+      ],
+      "time_mapping_co2_model": [
+        1459
+      ],
+      "alignment_valid_mask_co2": [
+        1459
+      ],
+      "co2_aligned": [
+        1459
+      ]
+    }
+  },
+  {
+    "heat_id": "6C02108",
+    "masked_points": 70,
+    "mask_fraction": 0.04791238877481177,
+    "oxygen_masked_rmse": 3.0600276354801705,
+    "co_masked_rmse": 0.11412807833440335,
+    "co2_masked_rmse": 0.044383061731729755,
+    "oxygen_flow_min": 1.444937145451771,
+    "oxygen_reintegration_rmse": 1.7440342908987376,
+    "all_numeric_fields_valid": true,
+    "numeric_field_finite": {
+      "sequence": true,
+      "time": true,
+      "oxygen_cumulative_raw": true,
+      "oxygen_cumulative_clean": true,
+      "oxygen_flow": true,
+      "oxygen_from_flow": true,
+      "co_raw": true,
+      "co_clean": true,
+      "co2_raw": true,
+      "co2_clean": true,
+      "total_co_emission": true,
+      "total_co2_emission": true,
+      "delay_co_center_index": true,
+      "delay_co_window_time": true,
+      "delay_co_observed": true,
+      "delay_co_max_corr": true,
+      "delay_co_source_std": true,
+      "delay_co_target_std": true,
+      "delay_co_peak_separation": true,
+      "delay_co_peak_prominence": true,
+      "delay_co_peak_width_samples": true,
+      "delay_co_confidence": true,
+      "delay_co_support_left_index": true,
+      "delay_co_support_right_index": true,
+      "delay_co_model": true,
+      "time_mapping_co": true,
+      "time_mapping_co_model": true,
+      "co_aligned": true,
+      "delay_co2_center_index": true,
+      "delay_co2_window_time": true,
+      "delay_co2_observed": true,
+      "delay_co2_max_corr": true,
+      "delay_co2_source_std": true,
+      "delay_co2_target_std": true,
+      "delay_co2_peak_separation": true,
+      "delay_co2_peak_prominence": true,
+      "delay_co2_peak_width_samples": true,
+      "delay_co2_confidence": true,
+      "delay_co2_support_left_index": true,
+      "delay_co2_support_right_index": true,
+      "delay_co2_model": true,
+      "time_mapping_co2": true,
+      "time_mapping_co2_model": true,
+      "co2_aligned": true
+    },
+    "field_shapes": {
+      "heat_id": [],
+      "sequence": [
+        1461
+      ],
+      "time": [
+        1461
+      ],
+      "oxygen_cumulative_raw": [
+        1461
+      ],
+      "oxygen_cumulative_clean": [
+        1461
+      ],
+      "oxygen_flow": [
+        1461
+      ],
+      "oxygen_from_flow": [
+        1461
+      ],
+      "co_raw": [
+        1461
+      ],
+      "co_clean": [
+        1461
+      ],
+      "co2_raw": [
+        1461
+      ],
+      "co2_clean": [
+        1461
+      ],
+      "total_co_emission": [
+        1461
+      ],
+      "total_co2_emission": [
+        1461
+      ],
+      "outlier_oxygen": [
+        1461
+      ],
+      "outlier_co": [
+        1461
+      ],
+      "outlier_co2": [
+        1461
+      ],
+      "delay_co_center_index": [
+        245
+      ],
+      "delay_co_window_time": [
+        245
+      ],
+      "delay_co_observed": [
+        245
+      ],
+      "delay_co_max_corr": [
+        245
+      ],
+      "delay_co_source_std": [
+        245
+      ],
+      "delay_co_target_std": [
+        245
+      ],
+      "delay_co_peak_separation": [
+        245
+      ],
+      "delay_co_peak_prominence": [
+        245
+      ],
+      "delay_co_peak_width_samples": [
+        245
+      ],
+      "delay_co_boundary_hit": [
+        245
+      ],
+      "delay_co_valid_mask": [
+        245
+      ],
+      "delay_co_confidence": [
+        245
+      ],
+      "delay_co_support_left_index": [
+        245
+      ],
+      "delay_co_support_right_index": [
+        245
+      ],
+      "delay_co_model": [
+        1461
+      ],
+      "delay_co_observed_mask": [
+        1461
+      ],
+      "time_mapping_co": [
+        1461
+      ],
+      "time_mapping_co_model": [
+        1461
+      ],
+      "alignment_valid_mask_co": [
+        1461
+      ],
+      "co_aligned": [
+        1461
+      ],
+      "delay_co2_center_index": [
+        245
+      ],
+      "delay_co2_window_time": [
+        245
+      ],
+      "delay_co2_observed": [
+        245
+      ],
+      "delay_co2_max_corr": [
+        245
+      ],
+      "delay_co2_source_std": [
+        245
+      ],
+      "delay_co2_target_std": [
+        245
+      ],
+      "delay_co2_peak_separation": [
+        245
+      ],
+      "delay_co2_peak_prominence": [
+        245
+      ],
+      "delay_co2_peak_width_samples": [
+        245
+      ],
+      "delay_co2_boundary_hit": [
+        245
+      ],
+      "delay_co2_valid_mask": [
+        245
+      ],
+      "delay_co2_confidence": [
+        245
+      ],
+      "delay_co2_support_left_index": [
+        245
+      ],
+      "delay_co2_support_right_index": [
+        245
+      ],
+      "delay_co2_model": [
+        1461
+      ],
+      "delay_co2_observed_mask": [
+        1461
+      ],
+      "time_mapping_co2": [
+        1461
+      ],
+      "time_mapping_co2_model": [
+        1461
+      ],
+      "alignment_valid_mask_co2": [
+        1461
+      ],
+      "co2_aligned": [
+        1461
+      ]
+    }
+  }
+]

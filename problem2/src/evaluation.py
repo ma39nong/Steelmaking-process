@@ -24,7 +24,28 @@ def evaluate(path: Path, fraction: float = 0.05, seed: int = 20261127) -> dict:
             array = data[key]
             shape_fields[key] = list(array.shape)
             if np.issubdtype(array.dtype, np.number):
-                numeric_fields[key] = bool(np.isfinite(array).all())
+                finite = np.isfinite(array)
+                if key.startswith("delay_"):
+                    gas = "co2" if "co2" in key else "co"
+                    if key.endswith("_model"):
+                        # A model array is all-NaN when the reliable windows
+                        # are insufficient for fitting; otherwise it must be
+                        # finite across the source time grid.
+                        numeric_fields[key] = bool(np.all(finite) or not finite.any())
+                        continue
+                    elif array.shape == data[f"delay_{gas}_valid_mask"].shape:
+                        allowed = ~data[f"delay_{gas}_valid_mask"]
+                    else:
+                        allowed = ~data[f"delay_{gas}_observed_mask"]
+                    numeric_fields[key] = bool(np.all(finite | allowed))
+                elif key in {"time_mapping_co", "time_mapping_co_model", "co_aligned", "time_mapping_co2", "time_mapping_co2_model", "co2_aligned"}:
+                    gas = "co2" if "co2" in key else "co"
+                    if key.endswith("_model"):
+                        numeric_fields[key] = bool(np.all(finite) or not finite.any())
+                    else:
+                        numeric_fields[key] = bool(np.all(finite | ~data[f"delay_{gas}_observed_mask"]))
+                else:
+                    numeric_fields[key] = bool(finite.all())
         time = data["time"]
         oxygen = data["oxygen_cumulative_clean"]
         co = data["co_clean"]
@@ -47,7 +68,7 @@ def evaluate(path: Path, fraction: float = 0.05, seed: int = 20261127) -> dict:
         "co2_masked_rmse": rmse(reconstructed["co2"], co2[mask]),
         "oxygen_flow_min": float(np.min(flow)),
         "oxygen_reintegration_rmse": rmse(integrated, oxygen),
-        "all_numeric_fields_finite": bool(all(numeric_fields.values())),
+        "all_numeric_fields_valid": bool(all(numeric_fields.values())),
         "numeric_field_finite": numeric_fields,
         "field_shapes": shape_fields,
     }

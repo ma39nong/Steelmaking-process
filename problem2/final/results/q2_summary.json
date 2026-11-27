@@ -3,130 +3,388 @@
     "heat_id": "6B03205",
     "records": 1479,
     "oxygen_cumulative": 0,
-    "co2": 0,
-    "co": 6,
-    "flow_mean": 4.586574797732157,
-    "flow_max": 6.762809464467323,
-    "delay_co_median_s": 25.5,
-    "delay_co2_median_s": 32.5,
-    "delay_co_fit_rmse_s": 15.47791786230317,
-    "delay_co2_fit_rmse_s": 15.810300329744338
+    "co2": 3,
+    "co": 10,
+    "models": {
+      "co": {
+        "n": 0,
+        "selected": "insufficient_data"
+      },
+      "co2": {
+        "n": 0,
+        "selected": "insufficient_data"
+      }
+    },
+    "coverage": {
+      "co": {
+        "window_count": 248,
+        "reliable_window_count": 0,
+        "reliable_fraction": 0.0,
+        "observed_point_count": 0,
+        "alignment_valid_count": 0,
+        "boundary_unavailable_count": 243,
+        "between_window_gap_count": 988
+      },
+      "co2": {
+        "window_count": 248,
+        "reliable_window_count": 0,
+        "reliable_fraction": 0.0,
+        "observed_point_count": 0,
+        "alignment_valid_count": 0,
+        "boundary_unavailable_count": 243,
+        "between_window_gap_count": 988
+      }
+    }
   },
   {
     "heat_id": "6C02108",
     "records": 1461,
     "oxygen_cumulative": 0,
-    "co2": 0,
-    "co": 0,
-    "flow_mean": 4.776161117112792,
-    "flow_max": 7.857054265583274,
-    "delay_co_median_s": 21.5,
-    "delay_co2_median_s": 29.0,
-    "delay_co_fit_rmse_s": 16.28479183426311,
-    "delay_co2_fit_rmse_s": 16.82754047467101
+    "co2": 3,
+    "co": 3,
+    "models": {
+      "co": {
+        "n": 0,
+        "selected": "insufficient_data"
+      },
+      "co2": {
+        "n": 0,
+        "selected": "insufficient_data"
+      }
+    },
+    "coverage": {
+      "co": {
+        "window_count": 245,
+        "reliable_window_count": 0,
+        "reliable_fraction": 0.0,
+        "observed_point_count": 0,
+        "alignment_valid_count": 0,
+        "boundary_unavailable_count": 240,
+        "between_window_gap_count": 976
+      },
+      "co2": {
+        "window_count": 245,
+        "reliable_window_count": 0,
+        "reliable_fraction": 0.0,
+        "observed_point_count": 0,
+        "alignment_valid_count": 0,
+        "boundary_unavailable_count": 240,
+        "between_window_gap_count": 976
+      }
+    }
   },
   {
     "heat_id": "6B03206",
     "records": 1311,
     "oxygen_cumulative": 0,
-    "co2": 4,
-    "co": 3,
-    "flow_mean": 5.067598339856127,
-    "flow_max": 8.336128353151333,
-    "delay_co_median_s": 16.5,
-    "delay_co2_median_s": 27.2,
-    "delay_co_fit_rmse_s": 13.345869428691287,
-    "delay_co2_fit_rmse_s": 15.84044074186022
+    "co2": 7,
+    "co": 4,
+    "models": {
+      "co": {
+        "n": 2,
+        "selected": "insufficient_data"
+      },
+      "co2": {
+        "n": 0,
+        "selected": "insufficient_data"
+      }
+    },
+    "coverage": {
+      "co": {
+        "window_count": 215,
+        "reliable_window_count": 2,
+        "reliable_fraction": 0.009302325581395349,
+        "observed_point_count": 2,
+        "alignment_valid_count": 2,
+        "boundary_unavailable_count": 240,
+        "between_window_gap_count": 856
+      },
+      "co2": {
+        "window_count": 215,
+        "reliable_window_count": 0,
+        "reliable_fraction": 0.0,
+        "observed_point_count": 0,
+        "alignment_valid_count": 0,
+        "boundary_unavailable_count": 240,
+        "between_window_gap_count": 856
+      }
+    }
   },
   {
     "heat_id": "6B03270",
     "records": 1413,
     "oxygen_cumulative": 0,
-    "co2": 0,
-    "co": 7,
-    "flow_mean": 4.716259861381506,
-    "flow_max": 7.662161105922761,
-    "delay_co_median_s": 27.0,
-    "delay_co2_median_s": 27.0,
-    "delay_co_fit_rmse_s": 14.73874848869743,
-    "delay_co2_fit_rmse_s": 16.142229506266897
+    "co2": 6,
+    "co": 9,
+    "models": {
+      "co": {
+        "n": 0,
+        "selected": "insufficient_data"
+      },
+      "co2": {
+        "n": 0,
+        "selected": "insufficient_data"
+      }
+    },
+    "coverage": {
+      "co": {
+        "window_count": 235,
+        "reliable_window_count": 0,
+        "reliable_fraction": 0.0,
+        "observed_point_count": 0,
+        "alignment_valid_count": 0,
+        "boundary_unavailable_count": 242,
+        "between_window_gap_count": 936
+      },
+      "co2": {
+        "window_count": 235,
+        "reliable_window_count": 0,
+        "reliable_fraction": 0.0,
+        "observed_point_count": 0,
+        "alignment_valid_count": 0,
+        "boundary_unavailable_count": 242,
+        "between_window_gap_count": 936
+      }
+    }
   },
   {
     "heat_id": "6B03271",
     "records": 1420,
     "oxygen_cumulative": 0,
-    "co2": 1,
-    "co": 5,
-    "flow_mean": 4.827064297363719,
-    "flow_max": 8.21495912471565,
-    "delay_co_median_s": 31.5,
-    "delay_co2_median_s": 28.0,
-    "delay_co_fit_rmse_s": 14.656362675373668,
-    "delay_co2_fit_rmse_s": 14.323268164380869
+    "co2": 4,
+    "co": 8,
+    "models": {
+      "co": {
+        "n": 0,
+        "selected": "insufficient_data"
+      },
+      "co2": {
+        "n": 3,
+        "selected": "insufficient_data"
+      }
+    },
+    "coverage": {
+      "co": {
+        "window_count": 236,
+        "reliable_window_count": 0,
+        "reliable_fraction": 0.0,
+        "observed_point_count": 0,
+        "alignment_valid_count": 0,
+        "boundary_unavailable_count": 244,
+        "between_window_gap_count": 940
+      },
+      "co2": {
+        "window_count": 236,
+        "reliable_window_count": 3,
+        "reliable_fraction": 0.012711864406779662,
+        "observed_point_count": 3,
+        "alignment_valid_count": 3,
+        "boundary_unavailable_count": 244,
+        "between_window_gap_count": 940
+      }
+    }
   },
   {
     "heat_id": "6C02057",
     "records": 775,
     "oxygen_cumulative": 0,
-    "co2": 1,
+    "co2": 3,
     "co": 0,
-    "flow_mean": 9.145028410284565,
-    "flow_max": 17.54648265848957,
-    "delay_co_median_s": 33.5,
-    "delay_co2_median_s": 25.5,
-    "delay_co_fit_rmse_s": 15.218844456973443,
-    "delay_co2_fit_rmse_s": 16.800810327011934
+    "models": {
+      "co": {
+        "n": 1,
+        "selected": "insufficient_data"
+      },
+      "co2": {
+        "n": 5,
+        "selected": "fixed_median",
+        "fixed": {
+          "c_s": 24.771890667235944,
+          "rmse_s": 13.484757617434944
+        },
+        "unconstrained_inverse_sqrt": {
+          "a_s": 97.56575490049998,
+          "b_s_sqrt_m3": -219.96711698070715
+        },
+        "constrained_inverse_sqrt": {
+          "a_s": 24.771890655357552,
+          "b_s_sqrt_m3": 5.5835170132702804e-14,
+          "rmse_s": 13.484757617434948
+        },
+        "monotone_flow_fit": {
+          "rmse_s": 13.484757617434944
+        },
+        "prediction_min_s": 24.771890655357566,
+        "prediction_max_s": 24.771890655357574
+      }
+    },
+    "coverage": {
+      "co": {
+        "window_count": 107,
+        "reliable_window_count": 1,
+        "reliable_fraction": 0.009345794392523364,
+        "observed_point_count": 1,
+        "alignment_valid_count": 1,
+        "boundary_unavailable_count": 244,
+        "between_window_gap_count": 424
+      },
+      "co2": {
+        "window_count": 107,
+        "reliable_window_count": 5,
+        "reliable_fraction": 0.04672897196261682,
+        "observed_point_count": 5,
+        "alignment_valid_count": 5,
+        "boundary_unavailable_count": 244,
+        "between_window_gap_count": 424
+      }
+    }
   },
   {
     "heat_id": "6C02058",
     "records": 1343,
     "oxygen_cumulative": 0,
-    "co2": 0,
-    "co": 0,
-    "flow_mean": 4.971822514059156,
-    "flow_max": 12.556348046651168,
-    "delay_co_median_s": 32.900000000000006,
-    "delay_co2_median_s": 10.8,
-    "delay_co_fit_rmse_s": 18.061015761932588,
-    "delay_co2_fit_rmse_s": 16.082718370478084
+    "co2": 2,
+    "co": 5,
+    "models": {
+      "co": {
+        "n": 3,
+        "selected": "insufficient_data"
+      },
+      "co2": {
+        "n": 0,
+        "selected": "insufficient_data"
+      }
+    },
+    "coverage": {
+      "co": {
+        "window_count": 221,
+        "reliable_window_count": 3,
+        "reliable_fraction": 0.013574660633484163,
+        "observed_point_count": 3,
+        "alignment_valid_count": 3,
+        "boundary_unavailable_count": 242,
+        "between_window_gap_count": 880
+      },
+      "co2": {
+        "window_count": 221,
+        "reliable_window_count": 0,
+        "reliable_fraction": 0.0,
+        "observed_point_count": 0,
+        "alignment_valid_count": 0,
+        "boundary_unavailable_count": 242,
+        "between_window_gap_count": 880
+      }
+    }
   },
   {
     "heat_id": "6C02059",
     "records": 1555,
     "oxygen_cumulative": 0,
-    "co2": 0,
-    "co": 0,
-    "flow_mean": 4.635361477976723,
-    "flow_max": 8.754454511251275,
-    "delay_co_median_s": 18.6,
-    "delay_co2_median_s": 20.5,
-    "delay_co_fit_rmse_s": 17.210936981856534,
-    "delay_co2_fit_rmse_s": 17.84276796587636
+    "co2": 7,
+    "co": 7,
+    "models": {
+      "co": {
+        "n": 3,
+        "selected": "insufficient_data"
+      },
+      "co2": {
+        "n": 3,
+        "selected": "insufficient_data"
+      }
+    },
+    "coverage": {
+      "co": {
+        "window_count": 263,
+        "reliable_window_count": 3,
+        "reliable_fraction": 0.011406844106463879,
+        "observed_point_count": 3,
+        "alignment_valid_count": 3,
+        "boundary_unavailable_count": 244,
+        "between_window_gap_count": 1048
+      },
+      "co2": {
+        "window_count": 263,
+        "reliable_window_count": 3,
+        "reliable_fraction": 0.011406844106463879,
+        "observed_point_count": 3,
+        "alignment_valid_count": 3,
+        "boundary_unavailable_count": 244,
+        "between_window_gap_count": 1048
+      }
+    }
   },
   {
     "heat_id": "6C02060",
     "records": 1373,
     "oxygen_cumulative": 0,
-    "co2": 0,
-    "co": 1,
-    "flow_mean": 4.819439871461852,
-    "flow_max": 7.302419501069718,
-    "delay_co_median_s": 31.0,
-    "delay_co2_median_s": 23.5,
-    "delay_co_fit_rmse_s": 16.904762971257853,
-    "delay_co2_fit_rmse_s": 16.211728401564475
+    "co2": 2,
+    "co": 7,
+    "models": {
+      "co": {
+        "n": 3,
+        "selected": "insufficient_data"
+      },
+      "co2": {
+        "n": 0,
+        "selected": "insufficient_data"
+      }
+    },
+    "coverage": {
+      "co": {
+        "window_count": 227,
+        "reliable_window_count": 3,
+        "reliable_fraction": 0.013215859030837005,
+        "observed_point_count": 3,
+        "alignment_valid_count": 3,
+        "boundary_unavailable_count": 242,
+        "between_window_gap_count": 904
+      },
+      "co2": {
+        "window_count": 227,
+        "reliable_window_count": 0,
+        "reliable_fraction": 0.0,
+        "observed_point_count": 0,
+        "alignment_valid_count": 0,
+        "boundary_unavailable_count": 242,
+        "between_window_gap_count": 904
+      }
+    }
   },
   {
     "heat_id": "6C02107",
     "records": 1459,
     "oxygen_cumulative": 0,
-    "co2": 0,
-    "co": 0,
-    "flow_mean": 4.673682519674091,
-    "flow_max": 7.434734977366377,
-    "delay_co_median_s": 25.5,
-    "delay_co2_median_s": 32.0,
-    "delay_co_fit_rmse_s": 15.14671672273249,
-    "delay_co2_fit_rmse_s": 17.260065164545907
+    "co2": 6,
+    "co": 2,
+    "models": {
+      "co": {
+        "n": 1,
+        "selected": "insufficient_data"
+      },
+      "co2": {
+        "n": 0,
+        "selected": "insufficient_data"
+      }
+    },
+    "coverage": {
+      "co": {
+        "window_count": 244,
+        "reliable_window_count": 1,
+        "reliable_fraction": 0.004098360655737705,
+        "observed_point_count": 1,
+        "alignment_valid_count": 1,
+        "boundary_unavailable_count": 243,
+        "between_window_gap_count": 972
+      },
+      "co2": {
+        "window_count": 244,
+        "reliable_window_count": 0,
+        "reliable_fraction": 0.0,
+        "observed_point_count": 0,
+        "alignment_valid_count": 0,
+        "boundary_unavailable_count": 243,
+        "between_window_gap_count": 972
+      }
+    }
   }
 ]

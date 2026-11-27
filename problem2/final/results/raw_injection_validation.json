@@ -9,7 +9,8 @@
         "injected": 20,
         "detected": 20,
         "recall": 1.0,
-        "injected_rmse": 3.2540723208730453
+        "injected_rmse": 3.2540723208730453,
+        "source": "raw_xlsb"
       },
       {
         "heat_id": "6B03205",
@@ -18,7 +19,8 @@
         "injected": 20,
         "detected": 20,
         "recall": 1.0,
-        "injected_rmse": 3.2888621835799228
+        "injected_rmse": 3.2888621835799228,
+        "source": "raw_xlsb"
       },
       {
         "heat_id": "6B03205",
@@ -27,7 +29,8 @@
         "injected": 20,
         "detected": 20,
         "recall": 1.0,
-        "injected_rmse": 3.0990037916913984
+        "injected_rmse": 3.0990037916913984,
+        "source": "raw_xlsb"
       },
       {
         "heat_id": "6B03205",
@@ -36,7 +39,8 @@
         "injected": 20,
         "detected": 19,
         "recall": 0.95,
-        "injected_rmse": 38.32445216593291
+        "injected_rmse": 38.32566307198386,
+        "source": "raw_xlsb"
       },
       {
         "heat_id": "6B03205",
@@ -45,7 +49,8 @@
         "injected": 20,
         "detected": 19,
         "recall": 0.95,
-        "injected_rmse": 38.32437910459233
+        "injected_rmse": 38.325590012951665,
+        "source": "raw_xlsb"
       },
       {
         "heat_id": "6B03205",
@@ -54,7 +59,8 @@
         "injected": 20,
         "detected": 20,
         "recall": 1.0,
-        "injected_rmse": 0.24411183723253915
+        "injected_rmse": 0.24411183723253915,
+        "source": "raw_xlsb"
       },
       {
         "heat_id": "6B03205",
@@ -63,7 +69,8 @@
         "injected": 20,
         "detected": 18,
         "recall": 0.9,
-        "injected_rmse": 14.047286796749908
+        "injected_rmse": 14.047286796749908,
+        "source": "raw_xlsb"
       },
       {
         "heat_id": "6B03205",
@@ -72,7 +79,8 @@
         "injected": 20,
         "detected": 19,
         "recall": 0.95,
-        "injected_rmse": 9.932550217153516
+        "injected_rmse": 9.932550217153516,
+        "source": "raw_xlsb"
       },
       {
         "heat_id": "6B03205",
@@ -81,695 +89,8 @@
         "injected": 20,
         "detected": 20,
         "recall": 1.0,
-        "injected_rmse": 0.08434381881300096
-      }
-    ]
-  },
-  {
-    "heat_id": "6B03206",
-    "rows": [
-      {
-        "heat_id": "6B03206",
-        "signal": "oxygen_cumulative",
-        "seed": 11,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 2.563484464977678
-      },
-      {
-        "heat_id": "6B03206",
-        "signal": "oxygen_cumulative",
-        "seed": 23,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 3.036586553044583
-      },
-      {
-        "heat_id": "6B03206",
-        "signal": "oxygen_cumulative",
-        "seed": 37,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 2.7135363544818922
-      },
-      {
-        "heat_id": "6B03206",
-        "signal": "co",
-        "seed": 11,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 36.17676369900786
-      },
-      {
-        "heat_id": "6B03206",
-        "signal": "co",
-        "seed": 23,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.12168287343908979
-      },
-      {
-        "heat_id": "6B03206",
-        "signal": "co",
-        "seed": 37,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.10590073999686282
-      },
-      {
-        "heat_id": "6B03206",
-        "signal": "co2",
-        "seed": 11,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 11.484613881100545
-      },
-      {
-        "heat_id": "6B03206",
-        "signal": "co2",
-        "seed": 23,
-        "injected": 20,
-        "detected": 18,
-        "recall": 0.9,
-        "injected_rmse": 16.241562594422263
-      },
-      {
-        "heat_id": "6B03206",
-        "signal": "co2",
-        "seed": 37,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 11.485339202422368
-      }
-    ]
-  },
-  {
-    "heat_id": "6B03270",
-    "rows": [
-      {
-        "heat_id": "6B03270",
-        "signal": "oxygen_cumulative",
-        "seed": 11,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 3.206401684226354
-      },
-      {
-        "heat_id": "6B03270",
-        "signal": "oxygen_cumulative",
-        "seed": 23,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 2.700100761646443
-      },
-      {
-        "heat_id": "6B03270",
-        "signal": "oxygen_cumulative",
-        "seed": 37,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 2.687902911767933
-      },
-      {
-        "heat_id": "6B03270",
-        "signal": "co",
-        "seed": 11,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.149286975653121
-      },
-      {
-        "heat_id": "6B03270",
-        "signal": "co",
-        "seed": 23,
-        "injected": 20,
-        "detected": 18,
-        "recall": 0.9,
-        "injected_rmse": 56.86580500176226
-      },
-      {
-        "heat_id": "6B03270",
-        "signal": "co",
-        "seed": 37,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 40.21019561209136
-      },
-      {
-        "heat_id": "6B03270",
-        "signal": "co2",
-        "seed": 11,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.09266312902185547
-      },
-      {
-        "heat_id": "6B03270",
-        "signal": "co2",
-        "seed": 23,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.05623437957563777
-      },
-      {
-        "heat_id": "6B03270",
-        "signal": "co2",
-        "seed": 37,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.0888389526331082
-      }
-    ]
-  },
-  {
-    "heat_id": "6B03271",
-    "rows": [
-      {
-        "heat_id": "6B03271",
-        "signal": "oxygen_cumulative",
-        "seed": 11,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 3.0564164844065966
-      },
-      {
-        "heat_id": "6B03271",
-        "signal": "oxygen_cumulative",
-        "seed": 23,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 3.418094277714425
-      },
-      {
-        "heat_id": "6B03271",
-        "signal": "oxygen_cumulative",
-        "seed": 37,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 3.2040211213766696
-      },
-      {
-        "heat_id": "6B03271",
-        "signal": "co",
-        "seed": 11,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.1727777830584577
-      },
-      {
-        "heat_id": "6B03271",
-        "signal": "co",
-        "seed": 23,
-        "injected": 20,
-        "detected": 18,
-        "recall": 0.9,
-        "injected_rmse": 49.86440775090291
-      },
-      {
-        "heat_id": "6B03271",
-        "signal": "co",
-        "seed": 37,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.15325354498476418
-      },
-      {
-        "heat_id": "6B03271",
-        "signal": "co2",
-        "seed": 11,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.06238891133047699
-      },
-      {
-        "heat_id": "6B03271",
-        "signal": "co2",
-        "seed": 23,
-        "injected": 20,
-        "detected": 16,
-        "recall": 0.8,
-        "injected_rmse": 21.35959375096085
-      },
-      {
-        "heat_id": "6B03271",
-        "signal": "co2",
-        "seed": 37,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.1656015834511375
-      }
-    ]
-  },
-  {
-    "heat_id": "6C02057",
-    "rows": [
-      {
-        "heat_id": "6C02057",
-        "signal": "oxygen_cumulative",
-        "seed": 11,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 3.142325063522892
-      },
-      {
-        "heat_id": "6C02057",
-        "signal": "oxygen_cumulative",
-        "seed": 23,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 3.3915460720942385
-      },
-      {
-        "heat_id": "6C02057",
-        "signal": "oxygen_cumulative",
-        "seed": 37,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 3.7212304781039163
-      },
-      {
-        "heat_id": "6C02057",
-        "signal": "co",
-        "seed": 11,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.15379819954988608
-      },
-      {
-        "heat_id": "6C02057",
-        "signal": "co",
-        "seed": 23,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 28.424248496029016
-      },
-      {
-        "heat_id": "6C02057",
-        "signal": "co",
-        "seed": 37,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.11690113523404938
-      },
-      {
-        "heat_id": "6C02057",
-        "signal": "co2",
-        "seed": 11,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 8.007332473020602
-      },
-      {
-        "heat_id": "6C02057",
-        "signal": "co2",
-        "seed": 23,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.05998742016173998
-      },
-      {
-        "heat_id": "6C02057",
-        "signal": "co2",
-        "seed": 37,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.06009025533181891
-      }
-    ]
-  },
-  {
-    "heat_id": "6C02058",
-    "rows": [
-      {
-        "heat_id": "6C02058",
-        "signal": "oxygen_cumulative",
-        "seed": 11,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 3.2491656449933974
-      },
-      {
-        "heat_id": "6C02058",
-        "signal": "oxygen_cumulative",
-        "seed": 23,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 2.979876424174545
-      },
-      {
-        "heat_id": "6C02058",
-        "signal": "oxygen_cumulative",
-        "seed": 37,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 2.37434281423353
-      },
-      {
-        "heat_id": "6C02058",
-        "signal": "co",
-        "seed": 11,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.10816258614034047
-      },
-      {
-        "heat_id": "6C02058",
-        "signal": "co",
-        "seed": 23,
-        "injected": 20,
-        "detected": 18,
-        "recall": 0.9,
-        "injected_rmse": 45.27241694867668
-      },
-      {
-        "heat_id": "6C02058",
-        "signal": "co",
-        "seed": 37,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.09040975893519984
-      },
-      {
-        "heat_id": "6C02058",
-        "signal": "co2",
-        "seed": 11,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 9.093943061837878
-      },
-      {
-        "heat_id": "6C02058",
-        "signal": "co2",
-        "seed": 23,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 9.09370216110323
-      },
-      {
-        "heat_id": "6C02058",
-        "signal": "co2",
-        "seed": 37,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 9.093782058690065
-      }
-    ]
-  },
-  {
-    "heat_id": "6C02059",
-    "rows": [
-      {
-        "heat_id": "6C02059",
-        "signal": "oxygen_cumulative",
-        "seed": 11,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 3.272357496023314
-      },
-      {
-        "heat_id": "6C02059",
-        "signal": "oxygen_cumulative",
-        "seed": 23,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 2.835956369841626
-      },
-      {
-        "heat_id": "6C02059",
-        "signal": "oxygen_cumulative",
-        "seed": 37,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 2.261409943934129
-      },
-      {
-        "heat_id": "6C02059",
-        "signal": "co",
-        "seed": 11,
-        "injected": 20,
-        "detected": 16,
-        "recall": 0.8,
-        "injected_rmse": 65.50180192844057
-      },
-      {
-        "heat_id": "6C02059",
-        "signal": "co",
-        "seed": 23,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 32.75098868211002
-      },
-      {
-        "heat_id": "6C02059",
-        "signal": "co",
-        "seed": 37,
-        "injected": 20,
-        "detected": 17,
-        "recall": 0.85,
-        "injected_rmse": 56.72622676390801
-      },
-      {
-        "heat_id": "6C02059",
-        "signal": "co2",
-        "seed": 11,
-        "injected": 20,
-        "detected": 15,
-        "recall": 0.75,
-        "injected_rmse": 25.434961221787884
-      },
-      {
-        "heat_id": "6C02059",
-        "signal": "co2",
-        "seed": 23,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 11.374922202532376
-      },
-      {
-        "heat_id": "6C02059",
-        "signal": "co2",
-        "seed": 37,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 11.374958459219563
-      }
-    ]
-  },
-  {
-    "heat_id": "6C02060",
-    "rows": [
-      {
-        "heat_id": "6C02060",
-        "signal": "oxygen_cumulative",
-        "seed": 11,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 3.0282933955958615
-      },
-      {
-        "heat_id": "6C02060",
-        "signal": "oxygen_cumulative",
-        "seed": 23,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 2.643411197356076
-      },
-      {
-        "heat_id": "6C02060",
-        "signal": "oxygen_cumulative",
-        "seed": 37,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 2.8219425876358506
-      },
-      {
-        "heat_id": "6C02060",
-        "signal": "co",
-        "seed": 11,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.09327756429642986
-      },
-      {
-        "heat_id": "6C02060",
-        "signal": "co",
-        "seed": 23,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 31.068890684067952
-      },
-      {
-        "heat_id": "6C02060",
-        "signal": "co",
-        "seed": 37,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 31.06911145152043
-      },
-      {
-        "heat_id": "6C02060",
-        "signal": "co2",
-        "seed": 11,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 8.8037414740955
-      },
-      {
-        "heat_id": "6C02060",
-        "signal": "co2",
-        "seed": 23,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 8.80349769062219
-      },
-      {
-        "heat_id": "6C02060",
-        "signal": "co2",
-        "seed": 37,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 8.803475050640158
-      }
-    ]
-  },
-  {
-    "heat_id": "6C02107",
-    "rows": [
-      {
-        "heat_id": "6C02107",
-        "signal": "oxygen_cumulative",
-        "seed": 11,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 3.024858113818144
-      },
-      {
-        "heat_id": "6C02107",
-        "signal": "oxygen_cumulative",
-        "seed": 23,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 3.014982042449445
-      },
-      {
-        "heat_id": "6C02107",
-        "signal": "oxygen_cumulative",
-        "seed": 37,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 2.4443552994027193
-      },
-      {
-        "heat_id": "6C02107",
-        "signal": "co",
-        "seed": 11,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 30.07199658983003
-      },
-      {
-        "heat_id": "6C02107",
-        "signal": "co",
-        "seed": 23,
-        "injected": 20,
-        "detected": 18,
-        "recall": 0.9,
-        "injected_rmse": 42.52817722945391
-      },
-      {
-        "heat_id": "6C02107",
-        "signal": "co",
-        "seed": 37,
-        "injected": 20,
-        "detected": 17,
-        "recall": 0.85,
-        "injected_rmse": 52.08613048754692
-      },
-      {
-        "heat_id": "6C02107",
-        "signal": "co2",
-        "seed": 11,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.0445344466070521
-      },
-      {
-        "heat_id": "6C02107",
-        "signal": "co2",
-        "seed": 23,
-        "injected": 20,
-        "detected": 19,
-        "recall": 0.95,
-        "injected_rmse": 9.156414142427943
-      },
-      {
-        "heat_id": "6C02107",
-        "signal": "co2",
-        "seed": 37,
-        "injected": 20,
-        "detected": 20,
-        "recall": 1.0,
-        "injected_rmse": 0.13101800445389358
+        "injected_rmse": 0.08434381881300096,
+        "source": "raw_xlsb"
       }
     ]
   },
@@ -783,7 +104,8 @@
         "injected": 20,
         "detected": 20,
         "recall": 1.0,
-        "injected_rmse": 3.266019614403282
+        "injected_rmse": 3.266019614403282,
+        "source": "raw_xlsb"
       },
       {
         "heat_id": "6C02108",
@@ -792,7 +114,8 @@
         "injected": 20,
         "detected": 20,
         "recall": 1.0,
-        "injected_rmse": 2.7837421350485676
+        "injected_rmse": 2.7837421350485676,
+        "source": "raw_xlsb"
       },
       {
         "heat_id": "6C02108",
@@ -801,7 +124,8 @@
         "injected": 20,
         "detected": 20,
         "recall": 1.0,
-        "injected_rmse": 2.855028366727006
+        "injected_rmse": 2.855028366727006,
+        "source": "raw_xlsb"
       },
       {
         "heat_id": "6C02108",
@@ -810,7 +134,8 @@
         "injected": 20,
         "detected": 19,
         "recall": 0.95,
-        "injected_rmse": 28.433039908329842
+        "injected_rmse": 28.433039908329842,
+        "source": "raw_xlsb"
       },
       {
         "heat_id": "6C02108",
@@ -819,7 +144,8 @@
         "injected": 20,
         "detected": 18,
         "recall": 0.9,
-        "injected_rmse": 40.21023621473726
+        "injected_rmse": 40.21023621473726,
+        "source": "raw_xlsb"
       },
       {
         "heat_id": "6C02108",
@@ -828,7 +154,8 @@
         "injected": 20,
         "detected": 20,
         "recall": 1.0,
-        "injected_rmse": 0.12501649451206473
+        "injected_rmse": 0.12501649451206473,
+        "source": "raw_xlsb"
       },
       {
         "heat_id": "6C02108",
@@ -837,7 +164,8 @@
         "injected": 20,
         "detected": 18,
         "recall": 0.9,
-        "injected_rmse": 13.171643776111974
+        "injected_rmse": 13.171643776111974,
+        "source": "raw_xlsb"
       },
       {
         "heat_id": "6C02108",
@@ -846,7 +174,8 @@
         "injected": 20,
         "detected": 17,
         "recall": 0.85,
-        "injected_rmse": 16.131497393699906
+        "injected_rmse": 16.131497393699906,
+        "source": "raw_xlsb"
       },
       {
         "heat_id": "6C02108",
@@ -855,7 +184,768 @@
         "injected": 20,
         "detected": 18,
         "recall": 0.9,
-        "injected_rmse": 13.171472848363372
+        "injected_rmse": 13.171472848363372,
+        "source": "raw_xlsb"
+      }
+    ]
+  },
+  {
+    "heat_id": "6B03206",
+    "rows": [
+      {
+        "heat_id": "6B03206",
+        "signal": "oxygen_cumulative",
+        "seed": 11,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 2.563484464977678,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03206",
+        "signal": "oxygen_cumulative",
+        "seed": 23,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 3.036586553044583,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03206",
+        "signal": "oxygen_cumulative",
+        "seed": 37,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 2.7135363544818922,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03206",
+        "signal": "co",
+        "seed": 11,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 36.17655001835298,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03206",
+        "signal": "co",
+        "seed": 23,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.12168287343908979,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03206",
+        "signal": "co",
+        "seed": 37,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.10590073999686282,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03206",
+        "signal": "co2",
+        "seed": 11,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 11.484616660011904,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03206",
+        "signal": "co2",
+        "seed": 23,
+        "injected": 20,
+        "detected": 18,
+        "recall": 0.9,
+        "injected_rmse": 16.241566524428844,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03206",
+        "signal": "co2",
+        "seed": 37,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 11.485341981158232,
+        "source": "raw_xlsb"
+      }
+    ]
+  },
+  {
+    "heat_id": "6B03270",
+    "rows": [
+      {
+        "heat_id": "6B03270",
+        "signal": "oxygen_cumulative",
+        "seed": 11,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 3.206401684226354,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03270",
+        "signal": "oxygen_cumulative",
+        "seed": 23,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 2.700100761646443,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03270",
+        "signal": "oxygen_cumulative",
+        "seed": 37,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 2.687902911767933,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03270",
+        "signal": "co",
+        "seed": 11,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.149286975653121,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03270",
+        "signal": "co",
+        "seed": 23,
+        "injected": 20,
+        "detected": 18,
+        "recall": 0.9,
+        "injected_rmse": 56.86597912862888,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03270",
+        "signal": "co",
+        "seed": 37,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 40.2103108833517,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03270",
+        "signal": "co2",
+        "seed": 11,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.09266312902185547,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03270",
+        "signal": "co2",
+        "seed": 23,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.05623437957563777,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03270",
+        "signal": "co2",
+        "seed": 37,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.0888389526331082,
+        "source": "raw_xlsb"
+      }
+    ]
+  },
+  {
+    "heat_id": "6B03271",
+    "rows": [
+      {
+        "heat_id": "6B03271",
+        "signal": "oxygen_cumulative",
+        "seed": 11,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 3.0564164844065966,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03271",
+        "signal": "oxygen_cumulative",
+        "seed": 23,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 3.418094277714425,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03271",
+        "signal": "oxygen_cumulative",
+        "seed": 37,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 3.2040211213766696,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03271",
+        "signal": "co",
+        "seed": 11,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.1727777830584577,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03271",
+        "signal": "co",
+        "seed": 23,
+        "injected": 20,
+        "detected": 18,
+        "recall": 0.9,
+        "injected_rmse": 49.86502473178128,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03271",
+        "signal": "co",
+        "seed": 37,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.15325354498476418,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03271",
+        "signal": "co2",
+        "seed": 11,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.06238891133047699,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03271",
+        "signal": "co2",
+        "seed": 23,
+        "injected": 20,
+        "detected": 16,
+        "recall": 0.8,
+        "injected_rmse": 21.35959375096085,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6B03271",
+        "signal": "co2",
+        "seed": 37,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.1656015834511375,
+        "source": "raw_xlsb"
+      }
+    ]
+  },
+  {
+    "heat_id": "6C02057",
+    "rows": [
+      {
+        "heat_id": "6C02057",
+        "signal": "oxygen_cumulative",
+        "seed": 11,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 3.142325063522892,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02057",
+        "signal": "oxygen_cumulative",
+        "seed": 23,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 3.3915460720942385,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02057",
+        "signal": "oxygen_cumulative",
+        "seed": 37,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 3.7212304781039163,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02057",
+        "signal": "co",
+        "seed": 11,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.15379819954988608,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02057",
+        "signal": "co",
+        "seed": 23,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 28.424248496029016,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02057",
+        "signal": "co",
+        "seed": 37,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.11690113523404938,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02057",
+        "signal": "co2",
+        "seed": 11,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 8.006594309924607,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02057",
+        "signal": "co2",
+        "seed": 23,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.05998742016173998,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02057",
+        "signal": "co2",
+        "seed": 37,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.06009025533181891,
+        "source": "raw_xlsb"
+      }
+    ]
+  },
+  {
+    "heat_id": "6C02058",
+    "rows": [
+      {
+        "heat_id": "6C02058",
+        "signal": "oxygen_cumulative",
+        "seed": 11,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 3.2491656449933974,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02058",
+        "signal": "oxygen_cumulative",
+        "seed": 23,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 2.979876424174545,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02058",
+        "signal": "oxygen_cumulative",
+        "seed": 37,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 2.37434281423353,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02058",
+        "signal": "co",
+        "seed": 11,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.10816258614034047,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02058",
+        "signal": "co",
+        "seed": 23,
+        "injected": 20,
+        "detected": 18,
+        "recall": 0.9,
+        "injected_rmse": 45.27241694867668,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02058",
+        "signal": "co",
+        "seed": 37,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.09040975893519984,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02058",
+        "signal": "co2",
+        "seed": 11,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 9.093943061837878,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02058",
+        "signal": "co2",
+        "seed": 23,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 9.09370216110323,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02058",
+        "signal": "co2",
+        "seed": 37,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 9.093782058690065,
+        "source": "raw_xlsb"
+      }
+    ]
+  },
+  {
+    "heat_id": "6C02059",
+    "rows": [
+      {
+        "heat_id": "6C02059",
+        "signal": "oxygen_cumulative",
+        "seed": 11,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 3.272357496023314,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02059",
+        "signal": "oxygen_cumulative",
+        "seed": 23,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 2.835956369841626,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02059",
+        "signal": "oxygen_cumulative",
+        "seed": 37,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 2.261409943934129,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02059",
+        "signal": "co",
+        "seed": 11,
+        "injected": 20,
+        "detected": 16,
+        "recall": 0.8,
+        "injected_rmse": 65.50180192844057,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02059",
+        "signal": "co",
+        "seed": 23,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 32.75098868211002,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02059",
+        "signal": "co",
+        "seed": 37,
+        "injected": 20,
+        "detected": 17,
+        "recall": 0.85,
+        "injected_rmse": 56.72622676390801,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02059",
+        "signal": "co2",
+        "seed": 11,
+        "injected": 20,
+        "detected": 15,
+        "recall": 0.75,
+        "injected_rmse": 25.434961221787884,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02059",
+        "signal": "co2",
+        "seed": 23,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 11.374922202532376,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02059",
+        "signal": "co2",
+        "seed": 37,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 11.374958459219563,
+        "source": "raw_xlsb"
+      }
+    ]
+  },
+  {
+    "heat_id": "6C02060",
+    "rows": [
+      {
+        "heat_id": "6C02060",
+        "signal": "oxygen_cumulative",
+        "seed": 11,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 3.0282933955958615,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02060",
+        "signal": "oxygen_cumulative",
+        "seed": 23,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 2.643411197356076,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02060",
+        "signal": "oxygen_cumulative",
+        "seed": 37,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 2.8219425876358506,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02060",
+        "signal": "co",
+        "seed": 11,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.09327756429642986,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02060",
+        "signal": "co",
+        "seed": 23,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 31.068788604274616,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02060",
+        "signal": "co",
+        "seed": 37,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 31.069009372452445,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02060",
+        "signal": "co2",
+        "seed": 11,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 8.8037414740955,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02060",
+        "signal": "co2",
+        "seed": 23,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 8.80349769062219,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02060",
+        "signal": "co2",
+        "seed": 37,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 8.803475050640158,
+        "source": "raw_xlsb"
+      }
+    ]
+  },
+  {
+    "heat_id": "6C02107",
+    "rows": [
+      {
+        "heat_id": "6C02107",
+        "signal": "oxygen_cumulative",
+        "seed": 11,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 3.024858113818144,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02107",
+        "signal": "oxygen_cumulative",
+        "seed": 23,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 3.014982042449445,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02107",
+        "signal": "oxygen_cumulative",
+        "seed": 37,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 2.4443552994027193,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02107",
+        "signal": "co",
+        "seed": 11,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 30.07199658983003,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02107",
+        "signal": "co",
+        "seed": 23,
+        "injected": 20,
+        "detected": 18,
+        "recall": 0.9,
+        "injected_rmse": 42.52817722945391,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02107",
+        "signal": "co",
+        "seed": 37,
+        "injected": 20,
+        "detected": 17,
+        "recall": 0.85,
+        "injected_rmse": 52.08613048754692,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02107",
+        "signal": "co2",
+        "seed": 11,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.0445344466070521,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02107",
+        "signal": "co2",
+        "seed": 23,
+        "injected": 20,
+        "detected": 19,
+        "recall": 0.95,
+        "injected_rmse": 9.156414142427943,
+        "source": "raw_xlsb"
+      },
+      {
+        "heat_id": "6C02107",
+        "signal": "co2",
+        "seed": 37,
+        "injected": 20,
+        "detected": 20,
+        "recall": 1.0,
+        "injected_rmse": 0.13101800445389358,
+        "source": "raw_xlsb"
       }
     ]
   }

@@ -1,51 +1,74 @@
 # Problem 2
 
-第二问的代码和正式报告位于本目录。原始 XLSB 文件只读存放在本地资料目录，代码不会覆盖它们。
+本目录实现 APMCM 2026 B 题第二问的工艺信号分析。输入是十炉原始 XLSB；输出是连续工艺信号、氧枪流量、累计烟气排放、可靠性筛选后的局部响应时滞、时间映射和可供后续问题调用的 NPZ 接口。原始 XLSB 只读读取，所有结果写入 `problem2/final/`。
 
-## 当前入口
+## 目录
+
+```text
+problem2/
+├── configs/                 # 固定参数
+├── src/                     # 数据读取、重构、流量、关系及时滞算法
+├── tests/                   # 合成信号与接口回归测试
+├── final/
+│   ├── data/                # 运行生成的每炉 NPZ（默认不提交大文件）
+│   ├── results/             # JSON/CSV 实验结果
+│   ├── figures/             # 真实数据和模拟验证图
+│   ├── tables/              # 表格说明与导出位置
+│   └── reports/             # 建模、接口、复现和图表说明
+└── README.md
+```
+
+## 一键复现
+
+在仓库根目录执行：
+
+```powershell
+uv run --with 'numpy<2' --with pandas --with pyxlsb --with scipy --with matplotlib `
+  python -m problem2.src.run_all --data-dir G:\亚太杯\Data
+```
+
+该命令依次完成原始字段与时间轴核验、十炉连续信号处理、关系分析、留一炉次验证、微积分一致性、原始数据异常注入、遮蔽实验和敏感性图。结果写入 `problem2/final/results/`，每炉接口写入 `problem2/final/data/`。
+
+分模块运行示例：
 
 ```powershell
 uv run --with pandas --with pyxlsb python -m problem2.src.data_validation `
-  --data-dir G:\亚太杯\Data `
-  --output-dir problem2\final\results
-```
+  --data-dir G:\亚太杯\Data --output-dir problem2\final\results
 
-`data_validation` 逐炉读取唯一工作表，按表头识别累计耗氧量、CO₂ 和 CO，验证 2051 列、连续 Sequence、0.5 s 时间步、缺失值和负值，并写出 JSON 与 CSV 审计结果。
-
-## V2 审查模型
-
-```powershell
 uv run --with 'numpy<2' --with pandas --with pyxlsb --with scipy `
   python -m problem2.src.q2_pipeline_v2 `
-  --data-dir G:\亚太杯\Data `
-  --output-dir problem2\final\v2_data `
-  --summary-dir problem2\final\v2_results
+  --data-dir G:\亚太杯\Data --output-dir problem2\final\data `
+  --summary-dir problem2\final\results
 
-uv run --with 'numpy<2' python -m problem2.src.v2_validation
+uv run --with 'numpy<2' python -m problem2.src.v2_validation `
+  --data-dir problem2\final\data --output problem2\final\results\cross_validation.json
+
 uv run --with 'numpy<2' --with scipy --with pytest pytest -q problem2/tests
 ```
 
-V2 不覆盖 V1 文件。`delay_v2.py` 只将通过动态激励、峰值显著性、峰分离度和边界检查的窗口写入 observed delay，边界和低可靠窗口保持 NaN。
+## 当前模型
 
-## 基线重构与评价
+1. Hampel 稳健异常识别在局部尺度为零时使用平台/邻域回退规则；PCHIP 在保留点上重构三类信号。
+2. 氧枪流量采用累计耗氧量连续曲线的 Savitzky–Golay 近似导数，并截断负值；同时保存由流量梯形积分得到的累计量用于一致性检查。
+3. CO 和 CO₂ 的累计排放由清洗后的瞬时体积流量积分得到。
+4. 局部时滞只对具有动态激励、显著相关、峰值分离、峰宽和边界条件均合格的窗口返回观测值；不可辨识窗口保存 NaN 和掩膜。
+5. 流量—时滞关系使用可靠窗口中心样本进行固定模型、反平方根模型和约束模型比较。样本不足时保留固定模型或不可用状态。
+6. 时间映射遵循 `t_measurement = t_source + delay(t_source)`，并保存观测映射、模型映射和单调有效掩膜。
 
-```powershell
-uv run --with 'numpy<2' --with pandas --with pyxlsb --with scipy `
-  python -m problem2.src.q2_pipeline `
-  --data-dir G:\亚太杯\Data `
-  --output-dir problem2\final\data `
-  --summary problem2\final\results\q2_summary.json
+## 结果与接口
 
-uv run --with 'numpy<2' --with scipy python -m problem2.src.evaluation
-uv run --with 'numpy<2' --with matplotlib python -m problem2.src.visualization
-```
+- `final/results/process_validation.csv`：十炉字段、Sequence、采样间隔和缺失值核验。
+- `final/results/q2_summary.json`：每炉处理摘要和可靠窗口覆盖率。
+- `final/results/relationship_summary.json`：四类累计耗氧量—烟气关系。
+- `final/results/cross_validation.json`：留一炉次时滞模型验证和阈值敏感性。
+- `final/results/reconstruction_evaluation.json`：重构、反积分和全字段质量检查。
+- `final/results/raw_injection_validation.json`：原始 XLSB 注入尖峰后的端到端检测结果。
+- `final/results/masking_validation.json`：随机点和连续区块遮蔽结果。
+- `final/results/calculus_comparison.json`：导数、积分和解析积分对照。
+- `final/data/{heat_id}_q2_processed.npz`：后续问题的逐炉接口。
 
-基线输出已在本地十炉数据上运行。NPZ 和 PNG 按 `.gitignore` 保留在实验工作区，JSON、CSV、代码和论文材料进入版本库。
+NPZ 字段、维度、单位、NaN 语义和读取示例见 `final/reports/数据字典与接口说明.md`。第一问光谱结果仅通过 `heat_id` 和逐炉时间轴只读连接，第二问不修改第一问文件。
 
-## 数据接口
+## 数据解释边界
 
-后续重构模块将从原始工艺列生成 `problem2/final/data/{heat_id}_q2_processed.npz`。接口至少保留原始 Sequence、相对时间、原始和清洗后的三类工艺变量、氧枪流量、总排放量、CO/CO₂ 时滞、时间映射和元数据。第一问光谱接口通过同一 `heat_id` 只读引用。
-
-## 已知数据核验
-
-十炉均为一个工作表、2051 列、Sequence 从 1 连续递增，时间步均为 0.5 s，工艺三列没有缺失值或负值。表头存在英文、中文和缩写差异，代码按实际表头识别。单位按题面采用累计氧量 m³、CO₂/CO 瞬时体积流量 m³/s。
+CO/CO₂ 原始字段按题面作为瞬时体积流量处理。统计响应时滞同时包含反应、传输和仪器响应成分，不能直接视为独立测得的管道传输时间。动态时滞的可靠窗口覆盖率较低，后续问题必须读取有效掩膜和置信度，不能把无效区间填零或把模型时滞当作实测标签。

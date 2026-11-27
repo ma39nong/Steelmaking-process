@@ -22,7 +22,7 @@ def evaluate(path: Path) -> dict:
         oxygen = data["oxygen_cumulative_clean"]
         co = data["co_clean"]
         co2 = data["co2_clean"]
-        v1_flow = data["oxygen_flow"]
+        clipped_flow = data["oxygen_flow"]
     oxygen_fn = PchipInterpolator(time, oxygen)
     co_fn = PchipInterpolator(time, co)
     co2_fn = PchipInterpolator(time, co2)
@@ -36,7 +36,7 @@ def evaluate(path: Path) -> dict:
     return {
         "heat_id": path.stem.split("_q2")[0],
         "sg_vs_pchip_flow_rmse": rmse(sg_flow, pchip_flow),
-        "v1_clipped_flow_vs_pchip_derivative_rmse": rmse(v1_flow, pchip_flow),
+        "clipped_flow_vs_pchip_derivative_rmse": rmse(clipped_flow, pchip_flow),
         "sg_negative_fraction": float(np.mean(sg_flow < 0)),
         "pchip_derivative_negative_fraction": float(np.mean(pchip_flow < 0)),
         "co_trapezoid_vs_pchip_integral_rmse": rmse(trap_co_total, pchip_co_total),

@@ -4,31 +4,31 @@
     "relationships": {
       "oxygen_vs_co_instantaneous": {
         "n": 1479,
-        "pearson_r": 0.644080287304056,
-        "spearman_r": 0.5271996802975885,
-        "linear_r2": 0.4148394164936745,
-        "quadratic_r2": 0.8651670778412615
+        "pearson_r": 0.6440828910934179,
+        "spearman_r": 0.5272045191632456,
+        "linear_r2": 0.41484277059925556,
+        "quadratic_r2": 0.8651686563567648
       },
       "oxygen_vs_co2_instantaneous": {
         "n": 1479,
-        "pearson_r": 0.11600704666978408,
-        "spearman_r": 0.0795596809200172,
-        "linear_r2": 0.013457634877045432,
-        "quadratic_r2": 0.07459087017399424
+        "pearson_r": 0.11600890985512845,
+        "spearman_r": 0.0795642115652619,
+        "linear_r2": 0.013458067165775467,
+        "quadratic_r2": 0.0745909708990542
       },
       "oxygen_vs_co_cumulative_emission": {
         "n": 1479,
-        "pearson_r": 0.979514183196876,
+        "pearson_r": 0.9795142585462875,
         "spearman_r": 0.9998666693239177,
-        "linear_r2": 0.9594480350838429,
-        "quadratic_r2": 0.9817268035482183
+        "linear_r2": 0.9594481826954834,
+        "quadratic_r2": 0.9817270585755851
       },
       "oxygen_vs_co2_cumulative_emission": {
         "n": 1479,
-        "pearson_r": 0.9934227854025579,
+        "pearson_r": 0.9934228251147991,
         "spearman_r": 0.9999990495243328,
-        "linear_r2": 0.9868888305569765,
-        "quadratic_r2": 0.9942914687873283
+        "linear_r2": 0.9868889094590685,
+        "quadratic_r2": 0.9942914369935877
       }
     },
     "oxygen_stage_statistics": [
@@ -49,8 +49,8 @@
         "n": 295,
         "co_m3_s_median": 21.47,
         "co2_m3_s_median": 20.89,
-        "co_m3_median": 929.4025,
-        "co2_m3_median": 2729.1399999999994
+        "co_m3_median": 929.4075,
+        "co2_m3_median": 2729.1424999999995
       },
       {
         "stage": 3,
@@ -59,8 +59,8 @@
         "n": 295,
         "co_m3_s_median": 58.1,
         "co2_m3_s_median": 10.05,
-        "co_m3_median": 7683.197500000006,
-        "co2_m3_median": 4906.4725000000035
+        "co_m3_median": 7683.202500000006,
+        "co2_m3_median": 4906.475000000003
       },
       {
         "stage": 4,
@@ -69,8 +69,8 @@
         "n": 296,
         "co_m3_s_median": 44.37,
         "co2_m3_s_median": 13.01,
-        "co_m3_median": 16017.099999999991,
-        "co2_m3_median": 6383.377499999999
+        "co_m3_median": 16017.044999999987,
+        "co2_m3_median": 6383.379999999999
       },
       {
         "stage": 5,
@@ -79,24 +79,24 @@
         "n": 297,
         "co_m3_s_median": 42.3,
         "co2_m3_s_median": 12.76,
-        "co_m3_median": 22329.537499999937,
-        "co2_m3_median": 8315.272499999995
+        "co_m3_median": 22329.482499999933,
+        "co2_m3_median": 8315.284999999994
       }
     ],
     "unit_oxygen_rate_diagnostics": {
       "co_per_oxygen_m3_per_m3": {
         "n": 1405,
-        "pearson_r": 0.5593161720147121,
-        "spearman_r": 0.44754741447883056,
-        "linear_r2": 0.31283458027719246,
-        "quadratic_r2": 0.8407576675060611
+        "pearson_r": 0.5593174681508358,
+        "spearman_r": 0.44754848317404633,
+        "linear_r2": 0.31283603017866135,
+        "quadratic_r2": 0.8407559865070031
       },
       "co2_per_oxygen_m3_per_m3": {
         "n": 1405,
-        "pearson_r": -0.150054022966795,
-        "spearman_r": -0.09777953661392631,
-        "linear_r2": 0.02251620980851954,
-        "quadratic_r2": 0.025913162774085508
+        "pearson_r": -0.15005189312964695,
+        "spearman_r": -0.09777718507323936,
+        "linear_r2": 0.022515570631790882,
+        "quadratic_r2": 0.025912453627842336
       }
     }
   },
@@ -105,31 +105,31 @@
     "relationships": {
       "oxygen_vs_co_instantaneous": {
         "n": 1311,
-        "pearson_r": 0.8819939928799571,
-        "spearman_r": 0.8324693154484822,
-        "linear_r2": 0.7779134034763312,
-        "quadratic_r2": 0.8690901884691277
+        "pearson_r": 0.8819940266730311,
+        "spearman_r": 0.8324691017310577,
+        "linear_r2": 0.7779134630869073,
+        "quadratic_r2": 0.8690903034526096
       },
       "oxygen_vs_co2_instantaneous": {
         "n": 1311,
-        "pearson_r": 0.1972013939620965,
-        "spearman_r": 0.032261792739923016,
-        "linear_r2": 0.03888838978059428,
-        "quadratic_r2": 0.4455840533511103
+        "pearson_r": 0.19719594956848474,
+        "spearman_r": 0.032256785227141864,
+        "linear_r2": 0.03888624252621642,
+        "quadratic_r2": 0.4455863956376551
       },
       "oxygen_vs_co_cumulative_emission": {
         "n": 1311,
-        "pearson_r": 0.9575125824970896,
+        "pearson_r": 0.957512624957029,
         "spearman_r": 0.9998262987960718,
-        "linear_r2": 0.9168303456402447,
-        "quadratic_r2": 0.9863088629352591
+        "linear_r2": 0.9168304269521002,
+        "quadratic_r2": 0.9863088762969915
       },
       "oxygen_vs_co2_cumulative_emission": {
         "n": 1311,
-        "pearson_r": 0.9924523769327156,
+        "pearson_r": 0.9924522930187794,
         "spearman_r": 0.9999989188904684,
-        "linear_r2": 0.9849617204793993,
-        "quadratic_r2": 0.9939852362744306
+        "linear_r2": 0.9849615539182329,
+        "quadratic_r2": 0.9939852180276635
       }
     },
     "oxygen_stage_statistics": [
@@ -150,7 +150,7 @@
         "n": 260,
         "co_m3_s_median": 2.65,
         "co2_m3_s_median": 23.04,
-        "co_m3_median": 241.53000000000014,
+        "co_m3_median": 241.53250000000017,
         "co2_m3_median": 1921.1350000000007
       },
       {
@@ -160,7 +160,7 @@
         "n": 264,
         "co_m3_s_median": 33.06,
         "co2_m3_s_median": 18.725,
-        "co_m3_median": 2295.6037499999993,
+        "co_m3_median": 2295.6062499999994,
         "co2_m3_median": 4881.931249999994
       },
       {
@@ -170,7 +170,7 @@
         "n": 262,
         "co_m3_s_median": 46.67,
         "co2_m3_s_median": 14.42,
-        "co_m3_median": 8439.176029411767,
+        "co_m3_median": 8439.178529411765,
         "co2_m3_median": 6850.199999999992
       },
       {
@@ -180,24 +180,24 @@
         "n": 263,
         "co_m3_s_median": 42.41,
         "co2_m3_s_median": 13.76,
-        "co_m3_median": 14199.312225063935,
-        "co2_m3_median": 8731.657499999981
+        "co_m3_median": 14199.314725063934,
+        "co2_m3_median": 8731.647499999981
       }
     ],
     "unit_oxygen_rate_diagnostics": {
       "co_per_oxygen_m3_per_m3": {
         "n": 1245,
-        "pearson_r": 0.8114107674891956,
-        "spearman_r": 0.7983070267290017,
-        "linear_r2": 0.6583874335974057,
-        "quadratic_r2": 0.7706739428211298
+        "pearson_r": 0.8114107692844407,
+        "spearman_r": 0.7983077729395823,
+        "linear_r2": 0.6583874365107685,
+        "quadratic_r2": 0.7706740032818622
       },
       "co2_per_oxygen_m3_per_m3": {
         "n": 1245,
-        "pearson_r": -0.144581377339157,
-        "spearman_r": -0.14057292656087825,
-        "linear_r2": 0.020903774673287745,
-        "quadratic_r2": 0.222165929355721
+        "pearson_r": -0.14458605438657085,
+        "spearman_r": -0.14057824634489477,
+        "linear_r2": 0.020905127123076572,
+        "quadratic_r2": 0.2221699243538411
       }
     }
   },
@@ -206,31 +206,31 @@
     "relationships": {
       "oxygen_vs_co_instantaneous": {
         "n": 1413,
-        "pearson_r": 0.9296607986267581,
-        "spearman_r": 0.9173291651544098,
-        "linear_r2": 0.8642692005033431,
-        "quadratic_r2": 0.9226777854350365
+        "pearson_r": 0.9296659346369032,
+        "spearman_r": 0.9173303276497815,
+        "linear_r2": 0.8642787500243067,
+        "quadratic_r2": 0.9226743828736731
       },
       "oxygen_vs_co2_instantaneous": {
         "n": 1413,
-        "pearson_r": -0.01960057349494739,
-        "spearman_r": -0.12133766331219244,
-        "linear_r2": 0.0003841824813307637,
-        "quadratic_r2": 0.5556355631278189
+        "pearson_r": -0.019609282745487046,
+        "spearman_r": -0.12134837901711804,
+        "linear_r2": 0.00038452396979260506,
+        "quadratic_r2": 0.5556409490253004
       },
       "oxygen_vs_co_cumulative_emission": {
         "n": 1413,
-        "pearson_r": 0.9671474701198538,
+        "pearson_r": 0.9671471710921345,
         "spearman_r": 0.9998472024910848,
-        "linear_r2": 0.9353742289592333,
-        "quadratic_r2": 0.9903846767310472
+        "linear_r2": 0.9353736505515187,
+        "quadratic_r2": 0.9903852260054026
       },
       "oxygen_vs_co2_cumulative_emission": {
         "n": 1413,
-        "pearson_r": 0.9930727596590133,
+        "pearson_r": 0.9930726020142728,
         "spearman_r": 0.9999182202867833,
-        "linear_r2": 0.98619350597677,
-        "quadratic_r2": 0.9948859182563428
+        "linear_r2": 0.9861931928713987,
+        "quadratic_r2": 0.9948858460027983
       }
     },
     "oxygen_stage_statistics": [
@@ -272,7 +272,7 @@
         "co_m3_s_median": 48.235,
         "co2_m3_s_median": 15.64,
         "co_m3_median": 12075.113749999999,
-        "co2_m3_median": 7499.919999999995
+        "co2_m3_median": 7499.922499999995
       },
       {
         "stage": 5,
@@ -282,23 +282,23 @@
         "co_m3_s_median": 57.1,
         "co2_m3_s_median": 9.28,
         "co_m3_median": 19121.822499999987,
-        "co2_m3_median": 9462.692500000001
+        "co2_m3_median": 9462.685000000001
       }
     ],
     "unit_oxygen_rate_diagnostics": {
       "co_per_oxygen_m3_per_m3": {
         "n": 1342,
-        "pearson_r": 0.8433936849653811,
-        "spearman_r": 0.7837084079210561,
-        "linear_r2": 0.7113129078394835,
-        "quadratic_r2": 0.8738604422597807
+        "pearson_r": 0.843404107756947,
+        "spearman_r": 0.7837312101744023,
+        "linear_r2": 0.7113304889812921,
+        "quadratic_r2": 0.8738569869309153
       },
       "co2_per_oxygen_m3_per_m3": {
         "n": 1342,
-        "pearson_r": -0.3284993954910889,
-        "spearman_r": -0.3711009601043548,
-        "linear_r2": 0.10791185283801064,
-        "quadratic_r2": 0.5091759909754872
+        "pearson_r": -0.3285054949264661,
+        "spearman_r": -0.37109992985128887,
+        "linear_r2": 0.10791586019688237,
+        "quadratic_r2": 0.5091827357932102
       }
     }
   },
@@ -307,31 +307,31 @@
     "relationships": {
       "oxygen_vs_co_instantaneous": {
         "n": 1420,
-        "pearson_r": 0.8713989810318896,
-        "spearman_r": 0.8016987803037668,
-        "linear_r2": 0.7593361841434181,
-        "quadratic_r2": 0.8689515215724188
+        "pearson_r": 0.8713992848299458,
+        "spearman_r": 0.8017001834376395,
+        "linear_r2": 0.7593367136021404,
+        "quadratic_r2": 0.8689522539312123
       },
       "oxygen_vs_co2_instantaneous": {
         "n": 1420,
-        "pearson_r": 0.08249188475702876,
-        "spearman_r": -0.05682013462185776,
-        "linear_r2": 0.00680491105076686,
-        "quadratic_r2": 0.333960905219571
+        "pearson_r": 0.08249128687454596,
+        "spearman_r": -0.0567989692720872,
+        "linear_r2": 0.006804812410218686,
+        "quadratic_r2": 0.33393302601482433
       },
       "oxygen_vs_co_cumulative_emission": {
         "n": 1420,
-        "pearson_r": 0.9579635594798256,
+        "pearson_r": 0.9579637056297716,
         "spearman_r": 0.9998192574308971,
-        "linear_r2": 0.9176941812912567,
-        "quadratic_r2": 0.9857438354684472
+        "linear_r2": 0.9176944613039238,
+        "quadratic_r2": 0.9857438993331384
       },
       "oxygen_vs_co2_cumulative_emission": {
         "n": 1420,
-        "pearson_r": 0.9916766218378059,
+        "pearson_r": 0.9916765279280767,
         "spearman_r": 0.9999852098665604,
-        "linear_r2": 0.9834225222996427,
-        "quadratic_r2": 0.9954249571517365
+        "linear_r2": 0.9834223360434858,
+        "quadratic_r2": 0.9954250065904131
       }
     },
     "oxygen_stage_statistics": [
@@ -352,7 +352,7 @@
         "n": 284,
         "co_m3_s_median": 2.87,
         "co2_m3_s_median": 23.15,
-        "co_m3_median": 245.01500000000013,
+        "co_m3_median": 245.02500000000012,
         "co2_m3_median": 2564.909999999999
       },
       {
@@ -362,7 +362,7 @@
         "n": 283,
         "co_m3_s_median": 40.97,
         "co2_m3_s_median": 17.27,
-        "co_m3_median": 2985.5775000000026,
+        "co_m3_median": 2985.587500000003,
         "co2_m3_median": 5601.48
       },
       {
@@ -372,8 +372,8 @@
         "n": 285,
         "co_m3_s_median": 45.2,
         "co2_m3_s_median": 13.52,
-        "co_m3_median": 9462.082500000017,
-        "co2_m3_median": 7663.842500000006
+        "co_m3_median": 9462.090000000017,
+        "co2_m3_median": 7663.742500000005
       },
       {
         "stage": 5,
@@ -382,24 +382,24 @@
         "n": 284,
         "co_m3_s_median": 43.08,
         "co2_m3_s_median": 13.41,
-        "co_m3_median": 15687.89375000004,
-        "co2_m3_median": 9563.483750000014
+        "co_m3_median": 15687.901250000039,
+        "co2_m3_median": 9563.384945652186
       }
     ],
     "unit_oxygen_rate_diagnostics": {
       "co_per_oxygen_m3_per_m3": {
         "n": 1349,
-        "pearson_r": 0.7889041877326768,
-        "spearman_r": 0.7332170860024527,
-        "linear_r2": 0.6223698174221546,
-        "quadratic_r2": 0.8042123300435633
+        "pearson_r": 0.788904392049591,
+        "spearman_r": 0.7332200800472014,
+        "linear_r2": 0.6223701397951344,
+        "quadratic_r2": 0.804212910776207
       },
       "co2_per_oxygen_m3_per_m3": {
         "n": 1349,
-        "pearson_r": -0.2879692807486323,
-        "spearman_r": -0.32789689899574814,
-        "linear_r2": 0.08292630665488454,
-        "quadratic_r2": 0.24955853334377487
+        "pearson_r": -0.2879677238673707,
+        "spearman_r": -0.32789427649064656,
+        "linear_r2": 0.08292540998935427,
+        "quadratic_r2": 0.2495355392719848
       }
     }
   },
@@ -408,31 +408,31 @@
     "relationships": {
       "oxygen_vs_co_instantaneous": {
         "n": 775,
-        "pearson_r": 0.63546644094574,
+        "pearson_r": 0.6354664409457393,
         "spearman_r": 0.47431030648912864,
         "linear_r2": 0.4038175975682454,
         "quadratic_r2": 0.8338805440377105
       },
       "oxygen_vs_co2_instantaneous": {
         "n": 775,
-        "pearson_r": -0.1301711873525545,
-        "spearman_r": -0.17406238359870843,
-        "linear_r2": 0.016944538016773758,
-        "quadratic_r2": 0.2535095351652792
+        "pearson_r": -0.13017597389151037,
+        "spearman_r": -0.1740790799178627,
+        "linear_r2": 0.016945784178603263,
+        "quadratic_r2": 0.2535090588744656
       },
       "oxygen_vs_co_cumulative_emission": {
         "n": 775,
-        "pearson_r": 0.9845704575080405,
+        "pearson_r": 0.9845704575080392,
         "spearman_r": 0.9999629280506919,
         "linear_r2": 0.9693789857975897,
         "quadratic_r2": 0.9952361148740551
       },
       "oxygen_vs_co2_cumulative_emission": {
         "n": 775,
-        "pearson_r": 0.9950335052007871,
+        "pearson_r": 0.9950334863317415,
         "spearman_r": 0.9999980278555349,
-        "linear_r2": 0.9900916764721621,
-        "quadratic_r2": 0.9916691137679887
+        "linear_r2": 0.9900916389214999,
+        "quadratic_r2": 0.9916691873280467
       }
     },
     "oxygen_stage_statistics": [
@@ -484,7 +484,7 @@
         "co_m3_s_median": 39.99,
         "co2_m3_s_median": 11.63,
         "co_m3_median": 10037.12999999999,
-        "co2_m3_median": 4489.969999999996
+        "co2_m3_median": 4489.959999999996
       }
     ],
     "unit_oxygen_rate_diagnostics": {
@@ -497,10 +497,10 @@
       },
       "co2_per_oxygen_m3_per_m3": {
         "n": 736,
-        "pearson_r": -0.1323757703254076,
+        "pearson_r": -0.132381937344003,
         "spearman_r": -0.015233164936219814,
-        "linear_r2": 0.01752334456924498,
-        "quadratic_r2": 0.053216730908827725
+        "linear_r2": 0.017524977334951508,
+        "quadratic_r2": 0.05321800080841255
       }
     }
   },
@@ -509,31 +509,31 @@
     "relationships": {
       "oxygen_vs_co_instantaneous": {
         "n": 1343,
-        "pearson_r": 0.8840581922335263,
-        "spearman_r": 0.8632915121799429,
-        "linear_r2": 0.7815588872552118,
-        "quadratic_r2": 0.9419160959216242
+        "pearson_r": 0.8840579959977154,
+        "spearman_r": 0.863294044467645,
+        "linear_r2": 0.7815585402874967,
+        "quadratic_r2": 0.9419161440434949
       },
       "oxygen_vs_co2_instantaneous": {
         "n": 1343,
-        "pearson_r": 0.03228331274888324,
-        "spearman_r": -0.1979909001662835,
-        "linear_r2": 0.0010422122820422652,
-        "quadratic_r2": 0.3186096702897745
+        "pearson_r": 0.03227888855738045,
+        "spearman_r": -0.19799147611126164,
+        "linear_r2": 0.0010419266464998245,
+        "quadratic_r2": 0.31860813733945204
       },
       "oxygen_vs_co_cumulative_emission": {
         "n": 1343,
-        "pearson_r": 0.9722577334336616,
+        "pearson_r": 0.9722577798256834,
         "spearman_r": 0.9998220804926475,
-        "linear_r2": 0.9452851002215651,
-        "quadratic_r2": 0.9953046897996023
+        "linear_r2": 0.9452851904315664,
+        "quadratic_r2": 0.9953046822508732
       },
       "oxygen_vs_co2_cumulative_emission": {
         "n": 1343,
-        "pearson_r": 0.9963071931455809,
+        "pearson_r": 0.9963071965413502,
         "spearman_r": 0.9999988890714145,
-        "linear_r2": 0.9926280231136299,
-        "quadratic_r2": 0.9968630021039022
+        "linear_r2": 0.9926280298800844,
+        "quadratic_r2": 0.9968630210117188
       }
     },
     "oxygen_stage_statistics": [
@@ -544,8 +544,8 @@
         "n": 269,
         "co_m3_s_median": 0.41,
         "co2_m3_s_median": 5.73,
-        "co_m3_median": 3.7925,
-        "co2_m3_median": 73.265
+        "co_m3_median": 3.795,
+        "co2_m3_median": 73.27499999999999
       },
       {
         "stage": 2,
@@ -554,8 +554,8 @@
         "n": 268,
         "co_m3_s_median": 18.36,
         "co2_m3_s_median": 19.99,
-        "co_m3_median": 959.9549999999999,
-        "co2_m3_median": 2383.1025000000004
+        "co_m3_median": 959.9575,
+        "co2_m3_median": 2383.1125000000006
       },
       {
         "stage": 3,
@@ -564,8 +564,8 @@
         "n": 268,
         "co_m3_s_median": 41.09,
         "co2_m3_s_median": 13.485,
-        "co_m3_median": 5652.6650000000045,
-        "co2_m3_median": 4430.547500000004
+        "co_m3_median": 5652.672500000004,
+        "co2_m3_median": 4430.557500000004
       },
       {
         "stage": 4,
@@ -574,8 +574,8 @@
         "n": 269,
         "co_m3_s_median": 44.18,
         "co2_m3_s_median": 11.92,
-        "co_m3_median": 11393.309999999996,
-        "co2_m3_median": 6143.270000000004
+        "co_m3_median": 11393.317499999996,
+        "co2_m3_median": 6143.280000000004
       },
       {
         "stage": 5,
@@ -584,21 +584,21 @@
         "n": 269,
         "co_m3_s_median": 47.29,
         "co2_m3_s_median": 10.24,
-        "co_m3_median": 17600.67,
-        "co2_m3_median": 7622.787500000018
+        "co_m3_median": 17600.677499999998,
+        "co2_m3_median": 7622.797500000018
       }
     ],
     "unit_oxygen_rate_diagnostics": {
       "co_per_oxygen_m3_per_m3": {
         "n": 1275,
-        "pearson_r": 0.8727116486976753,
-        "spearman_r": 0.8262330782857621,
-        "linear_r2": 0.7616256217726127,
-        "quadratic_r2": 0.885898389009549
+        "pearson_r": 0.8727115587322578,
+        "spearman_r": 0.8262341204357032,
+        "linear_r2": 0.7616254647448868,
+        "quadratic_r2": 0.88589836995183
       },
       "co2_per_oxygen_m3_per_m3": {
         "n": 1275,
-        "pearson_r": -0.1535543523546503,
+        "pearson_r": -0.15355435235465037,
         "spearman_r": -0.23929157072812493,
         "linear_r2": 0.02357893912705622,
         "quadratic_r2": 0.12427721349030119
@@ -610,31 +610,31 @@
     "relationships": {
       "oxygen_vs_co_instantaneous": {
         "n": 1555,
-        "pearson_r": 0.5371162783215141,
-        "spearman_r": 0.5284069431160302,
-        "linear_r2": 0.28849389643795365,
-        "quadratic_r2": 0.7354145500568208
+        "pearson_r": 0.5371179594895781,
+        "spearman_r": 0.528419237240142,
+        "linear_r2": 0.288495702406248,
+        "quadratic_r2": 0.7354159317996714
       },
       "oxygen_vs_co2_instantaneous": {
         "n": 1555,
-        "pearson_r": -0.1994126015039688,
-        "spearman_r": -0.3251567239077198,
-        "linear_r2": 0.03976538563858045,
-        "quadratic_r2": 0.6119282884929189
+        "pearson_r": -0.1994192819643429,
+        "spearman_r": -0.3251554228869442,
+        "linear_r2": 0.03976805001917405,
+        "quadratic_r2": 0.6119292095985075
       },
       "oxygen_vs_co_cumulative_emission": {
         "n": 1555,
-        "pearson_r": 0.9740455894350597,
+        "pearson_r": 0.9740455668558831,
         "spearman_r": 0.9998174399499403,
-        "linear_r2": 0.9487648102978918,
-        "quadratic_r2": 0.9898650674633973
+        "linear_r2": 0.9487647663115985,
+        "quadratic_r2": 0.9898651167044793
       },
       "oxygen_vs_co2_cumulative_emission": {
         "n": 1555,
-        "pearson_r": 0.9963103132868653,
+        "pearson_r": 0.9963102708694813,
         "spearman_r": 0.9999991821864589,
-        "linear_r2": 0.9926342403617708,
-        "quadratic_r2": 0.9964236112037811
+        "linear_r2": 0.9926341558400189,
+        "quadratic_r2": 0.9964236261418742
       }
     },
     "oxygen_stage_statistics": [
@@ -646,7 +646,7 @@
         "co_m3_s_median": 0.29,
         "co2_m3_s_median": 6.95,
         "co_m3_median": 3.2125,
-        "co2_m3_median": 128.46750000000003
+        "co2_m3_median": 128.47750000000005
       },
       {
         "stage": 2,
@@ -656,7 +656,7 @@
         "co_m3_s_median": 18.97,
         "co2_m3_s_median": 20.67,
         "co_m3_median": 1027.6250000000007,
-        "co2_m3_median": 3028.3749999999973
+        "co2_m3_median": 3028.384999999997
       },
       {
         "stage": 3,
@@ -666,7 +666,7 @@
         "co_m3_s_median": 40.32,
         "co2_m3_s_median": 14.79,
         "co_m3_median": 6749.527499999999,
-        "co2_m3_median": 5513.537499999997
+        "co2_m3_median": 5513.547499999997
       },
       {
         "stage": 4,
@@ -676,7 +676,7 @@
         "co_m3_s_median": 39.05,
         "co2_m3_s_median": 14.24,
         "co_m3_median": 12808.676250000026,
-        "co2_m3_median": 7815.763749999987
+        "co2_m3_median": 7815.766249999987
       },
       {
         "stage": 5,
@@ -685,24 +685,24 @@
         "n": 311,
         "co_m3_s_median": 38.66,
         "co2_m3_s_median": 10.22,
-        "co_m3_median": 19577.150000000027,
-        "co2_m3_median": 9626.282500000001
+        "co_m3_median": 19577.155000000028,
+        "co2_m3_median": 9626.2775
       }
     ],
     "unit_oxygen_rate_diagnostics": {
       "co_per_oxygen_m3_per_m3": {
         "n": 1477,
-        "pearson_r": 0.5452028156799102,
-        "spearman_r": 0.539973408187181,
-        "linear_r2": 0.29724611022530223,
-        "quadratic_r2": 0.6920422574233013
+        "pearson_r": 0.5452059420589319,
+        "spearman_r": 0.5399860896126667,
+        "linear_r2": 0.29724951925636767,
+        "quadratic_r2": 0.6920446348475331
       },
       "co2_per_oxygen_m3_per_m3": {
         "n": 1477,
-        "pearson_r": -0.2814958471565779,
-        "spearman_r": -0.38614161791296814,
-        "linear_r2": 0.07923991196639946,
-        "quadratic_r2": 0.5519220851003156
+        "pearson_r": -0.28150981201943237,
+        "spearman_r": -0.3861415359791808,
+        "linear_r2": 0.07924777426321616,
+        "quadratic_r2": 0.5519258579614721
       }
     }
   },
@@ -711,31 +711,31 @@
     "relationships": {
       "oxygen_vs_co_instantaneous": {
         "n": 1373,
-        "pearson_r": 0.8395778851535539,
-        "spearman_r": 0.7259834902571024,
-        "linear_r2": 0.7048910252389184,
-        "quadratic_r2": 0.9316871261829498
+        "pearson_r": 0.8395787100806043,
+        "spearman_r": 0.725979000347814,
+        "linear_r2": 0.7048924104206112,
+        "quadratic_r2": 0.9316853946337552
       },
       "oxygen_vs_co2_instantaneous": {
         "n": 1373,
-        "pearson_r": 0.173313130992845,
-        "spearman_r": -0.1579521666575758,
-        "linear_r2": 0.030037441374543117,
-        "quadratic_r2": 0.4098194608065452
+        "pearson_r": 0.17331343572892008,
+        "spearman_r": -0.1579521664744894,
+        "linear_r2": 0.030037547004162612,
+        "quadratic_r2": 0.4098188044829536
       },
       "oxygen_vs_co_cumulative_emission": {
         "n": 1373,
-        "pearson_r": 0.977665603545012,
-        "spearman_r": 0.9999547371797113,
-        "linear_r2": 0.9558300323550367,
-        "quadratic_r2": 0.992813110117086
+        "pearson_r": 0.9776658141753721,
+        "spearman_r": 0.9998762578337355,
+        "linear_r2": 0.9558304442071929,
+        "quadratic_r2": 0.9928132451675925
       },
       "oxygen_vs_co2_cumulative_emission": {
         "n": 1373,
-        "pearson_r": 0.9986497126582651,
+        "pearson_r": 0.9986497167505045,
         "spearman_r": 0.9999966734571674,
-        "linear_r2": 0.9973012485924404,
-        "quadratic_r2": 0.9979270266592252
+        "linear_r2": 0.9973012567658626,
+        "quadratic_r2": 0.9979270301309172
       }
     },
     "oxygen_stage_statistics": [
@@ -746,7 +746,7 @@
         "n": 275,
         "co_m3_s_median": 0.72,
         "co2_m3_s_median": 6.42,
-        "co_m3_median": 9.1775,
+        "co_m3_median": 9.167499999999999,
         "co2_m3_median": 69.32249999999998
       },
       {
@@ -756,7 +756,7 @@
         "n": 274,
         "co_m3_s_median": 21.810000000000002,
         "co2_m3_s_median": 19.560000000000002,
-        "co_m3_median": 1246.3300000000004,
+        "co_m3_median": 1246.3400000000001,
         "co2_m3_median": 2388.9725000000008
       },
       {
@@ -766,8 +766,8 @@
         "n": 275,
         "co_m3_s_median": 44.39,
         "co2_m3_s_median": 14.24,
-        "co_m3_median": 6600.229999999999,
-        "co2_m3_median": 4487.8025000000025
+        "co_m3_median": 6600.239999999999,
+        "co2_m3_median": 4487.800000000002
       },
       {
         "stage": 4,
@@ -776,8 +776,8 @@
         "n": 274,
         "co_m3_s_median": 42.78,
         "co2_m3_s_median": 14.08,
-        "co_m3_median": 12598.759999999991,
-        "co2_m3_median": 6420.527500000009
+        "co_m3_median": 12598.709999999988,
+        "co2_m3_median": 6420.525000000009
       },
       {
         "stage": 5,
@@ -786,24 +786,24 @@
         "n": 275,
         "co_m3_s_median": 44.63,
         "co2_m3_s_median": 11.79,
-        "co_m3_median": 18490.254999999997,
-        "co2_m3_median": 8222.21250000001
+        "co_m3_median": 18490.204999999994,
+        "co2_m3_median": 8222.21000000001
       }
     ],
     "unit_oxygen_rate_diagnostics": {
       "co_per_oxygen_m3_per_m3": {
         "n": 1304,
-        "pearson_r": 0.8113799470514921,
-        "spearman_r": 0.7194781637863167,
-        "linear_r2": 0.6583374184772832,
-        "quadratic_r2": 0.8683324984451184
+        "pearson_r": 0.8113798737631948,
+        "spearman_r": 0.7194822329262079,
+        "linear_r2": 0.6583372995479776,
+        "quadratic_r2": 0.8683287568569269
       },
       "co2_per_oxygen_m3_per_m3": {
         "n": 1304,
-        "pearson_r": 0.024025632914165096,
-        "spearman_r": -0.14843259379046098,
-        "linear_r2": 0.0005772310369264178,
-        "quadratic_r2": 0.2509879233742267
+        "pearson_r": 0.024026094450025865,
+        "spearman_r": -0.14843296179925466,
+        "linear_r2": 0.0005772532145216225,
+        "quadratic_r2": 0.25098720759649606
       }
     }
   },
@@ -812,31 +812,31 @@
     "relationships": {
       "oxygen_vs_co_instantaneous": {
         "n": 1459,
-        "pearson_r": 0.8964357775779624,
-        "spearman_r": 0.8629049288243826,
-        "linear_r2": 0.803597103321807,
-        "quadratic_r2": 0.9344869178639819
+        "pearson_r": 0.8964354124311109,
+        "spearman_r": 0.8629067470866042,
+        "linear_r2": 0.8035964486605361,
+        "quadratic_r2": 0.934487041964854
       },
       "oxygen_vs_co2_instantaneous": {
         "n": 1459,
-        "pearson_r": 0.24891070665681642,
-        "spearman_r": -0.15160035293093688,
-        "linear_r2": 0.06195653988839589,
-        "quadratic_r2": 0.541497800351112
+        "pearson_r": 0.24891147544184875,
+        "spearman_r": -0.15160314909905043,
+        "linear_r2": 0.06195692260663799,
+        "quadratic_r2": 0.5414974957769402
       },
       "oxygen_vs_co_cumulative_emission": {
         "n": 1459,
-        "pearson_r": 0.9754673525392662,
+        "pearson_r": 0.9754671288638164,
         "spearman_r": 0.9999947500283982,
-        "linear_r2": 0.9515365558699659,
-        "quadratic_r2": 0.9964466831827513
+        "linear_r2": 0.9515361194938174,
+        "quadratic_r2": 0.996446612723519
       },
       "oxygen_vs_co2_cumulative_emission": {
         "n": 1459,
-        "pearson_r": 0.9984044303106469,
+        "pearson_r": 0.9984044652911975,
         "spearman_r": 0.9999990495026992,
-        "linear_r2": 0.9968114064639306,
-        "quadratic_r2": 0.9974178130370633
+        "linear_r2": 0.996811476313402,
+        "quadratic_r2": 0.9974178581491646
       }
     },
     "oxygen_stage_statistics": [
@@ -848,7 +848,7 @@
         "co_m3_s_median": 0.74,
         "co2_m3_s_median": 8.21,
         "co_m3_median": 17.785000000000004,
-        "co2_m3_median": 153.88749999999993
+        "co2_m3_median": 153.89749999999998
       },
       {
         "stage": 2,
@@ -857,7 +857,7 @@
         "n": 292,
         "co_m3_s_median": 19.76,
         "co2_m3_s_median": 20.009999999999998,
-        "co_m3_median": 1346.6549999999993,
+        "co_m3_median": 1346.6249999999993,
         "co2_m3_median": 2667.8062500000005
       },
       {
@@ -867,7 +867,7 @@
         "n": 291,
         "co_m3_s_median": 40.32,
         "co2_m3_s_median": 17.19,
-        "co_m3_median": 6025.645000000006,
+        "co_m3_median": 6025.615000000005,
         "co2_m3_median": 5340.7350000000015
       },
       {
@@ -877,8 +877,8 @@
         "n": 290,
         "co_m3_s_median": 40.67,
         "co2_m3_s_median": 16.33,
-        "co_m3_median": 11632.294999999993,
-        "co2_m3_median": 7836.9024999999965
+        "co_m3_median": 11632.264999999992,
+        "co2_m3_median": 7836.893124999995
       },
       {
         "stage": 5,
@@ -887,24 +887,24 @@
         "n": 294,
         "co_m3_s_median": 48.28,
         "co2_m3_s_median": 13.48,
-        "co_m3_median": 18422.287499999984,
-        "co2_m3_median": 9916.665
+        "co_m3_median": 18422.257499999985,
+        "co2_m3_median": 9916.657499999998
       }
     ],
     "unit_oxygen_rate_diagnostics": {
       "co_per_oxygen_m3_per_m3": {
         "n": 1386,
-        "pearson_r": 0.8795425683315984,
-        "spearman_r": 0.8464983445229854,
-        "linear_r2": 0.7735951295073475,
-        "quadratic_r2": 0.879688696015764
+        "pearson_r": 0.8795423352270827,
+        "spearman_r": 0.8464981642410261,
+        "linear_r2": 0.7735947194567101,
+        "quadratic_r2": 0.87968943452268
       },
       "co2_per_oxygen_m3_per_m3": {
         "n": 1386,
-        "pearson_r": 0.06318917734650296,
-        "spearman_r": -0.17281245553524402,
-        "linear_r2": 0.003992872133727787,
-        "quadratic_r2": 0.29006011940518794
+        "pearson_r": 0.06319337894408504,
+        "spearman_r": -0.1728154820183458,
+        "linear_r2": 0.003993403142370622,
+        "quadratic_r2": 0.2900612822910199
       }
     }
   },
@@ -913,31 +913,31 @@
     "relationships": {
       "oxygen_vs_co_instantaneous": {
         "n": 1461,
-        "pearson_r": 0.9056351785156591,
-        "spearman_r": 0.8723784928625475,
-        "linear_r2": 0.8201750765650975,
-        "quadratic_r2": 0.9079696163478507
+        "pearson_r": 0.9056355271595505,
+        "spearman_r": 0.8723785630686728,
+        "linear_r2": 0.8201757080535566,
+        "quadratic_r2": 0.9079697141141352
       },
       "oxygen_vs_co2_instantaneous": {
         "n": 1461,
-        "pearson_r": 0.18664483662309292,
-        "spearman_r": -0.17747235397581593,
-        "linear_r2": 0.03483629503806074,
-        "quadratic_r2": 0.5586583911742986
+        "pearson_r": 0.186647807376609,
+        "spearman_r": -0.17747044965430697,
+        "linear_r2": 0.034837403998495775,
+        "quadratic_r2": 0.5586588247770123
       },
       "oxygen_vs_co_cumulative_emission": {
         "n": 1461,
-        "pearson_r": 0.9657555129226286,
+        "pearson_r": 0.9657558344440328,
         "spearman_r": 0.9998483275270812,
-        "linear_r2": 0.9326837107404492,
-        "quadratic_r2": 0.995417140667413
+        "linear_r2": 0.9326843317626897,
+        "quadratic_r2": 0.9954172174750917
       },
       "oxygen_vs_co2_cumulative_emission": {
         "n": 1461,
-        "pearson_r": 0.9977774085395402,
+        "pearson_r": 0.997777401627228,
         "spearman_r": 0.9999990957284647,
-        "linear_r2": 0.9955597569918831,
-        "quadratic_r2": 0.9956791703131954
+        "linear_r2": 0.9955597431979825,
+        "quadratic_r2": 0.9956791548191137
       }
     },
     "oxygen_stage_statistics": [
@@ -949,7 +949,7 @@
         "co_m3_s_median": 0.25,
         "co2_m3_s_median": 6.65,
         "co_m3_median": 3.1262500000000006,
-        "co2_m3_median": 118.04250000000002
+        "co2_m3_median": 118.03250000000003
       },
       {
         "stage": 2,
@@ -958,8 +958,8 @@
         "n": 292,
         "co_m3_s_median": 14.93,
         "co2_m3_s_median": 19.59,
-        "co_m3_median": 987.4950000000001,
-        "co2_m3_median": 2571.4325000000013
+        "co_m3_median": 987.5250000000001,
+        "co2_m3_median": 2571.4225000000015
       },
       {
         "stage": 3,
@@ -968,8 +968,8 @@
         "n": 292,
         "co_m3_s_median": 37.57,
         "co2_m3_s_median": 16.71,
-        "co_m3_median": 5034.169999999998,
-        "co2_m3_median": 5267.477500000004
+        "co_m3_median": 5034.199999999998,
+        "co2_m3_median": 5267.467500000003
       },
       {
         "stage": 4,
@@ -978,8 +978,8 @@
         "n": 292,
         "co_m3_s_median": 34.51,
         "co2_m3_s_median": 15.15,
-        "co_m3_median": 10502.014999999985,
-        "co2_m3_median": 7491.54750000001
+        "co_m3_median": 10502.044999999986,
+        "co2_m3_median": 7491.5375000000095
       },
       {
         "stage": 5,
@@ -988,21 +988,21 @@
         "n": 293,
         "co_m3_s_median": 43.85,
         "co2_m3_s_median": 12.26,
-        "co_m3_median": 16431.73499999999,
-        "co2_m3_median": 9405.215000000015
+        "co_m3_median": 16431.76499999999,
+        "co2_m3_median": 9405.205000000014
       }
     ],
     "unit_oxygen_rate_diagnostics": {
       "co_per_oxygen_m3_per_m3": {
         "n": 1387,
-        "pearson_r": 0.898310115872385,
-        "spearman_r": 0.8726271882244844,
-        "linear_r2": 0.8069610642786591,
-        "quadratic_r2": 0.8724980922706246
+        "pearson_r": 0.8983102223921471,
+        "spearman_r": 0.8726295583211475,
+        "linear_r2": 0.8069612556542285,
+        "quadratic_r2": 0.8724975401211288
       },
       "co2_per_oxygen_m3_per_m3": {
         "n": 1387,
-        "pearson_r": 0.12387213558333736,
+        "pearson_r": 0.12387213558333733,
         "spearman_r": -0.12410159985120538,
         "linear_r2": 0.015344305973976846,
         "quadratic_r2": 0.4116685416020671

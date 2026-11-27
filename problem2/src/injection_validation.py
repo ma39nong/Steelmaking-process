@@ -8,7 +8,7 @@ from pathlib import Path
 
 import numpy as np
 
-from .q2_pipeline import hampel_mask, pchip_clean
+from .q2_pipeline import hampel_mask, pchip_clean, read_process_file
 
 
 def evaluate(path: Path, seeds: tuple[int, ...] = (11, 23, 37), count: int = 20) -> dict:
@@ -38,12 +38,45 @@ def evaluate(path: Path, seeds: tuple[int, ...] = (11, 23, 37), count: int = 20)
     return {"heat_id": path.stem.split("_q2")[0], "rows": rows}
 
 
+def evaluate_raw(path: Path, seeds: tuple[int, ...] = (11, 23, 37), count: int = 20) -> dict:
+    """Inject spikes into raw XLSB process columns before any cleaning."""
+    raw = read_process_file(path)
+    time = raw["time"]
+    rows = []
+    for name in ("oxygen_cumulative", "co", "co2"):
+        reference = np.asarray(raw[name], dtype=float)
+        for seed in seeds:
+            rng = np.random.default_rng(seed)
+            candidates = np.arange(4, len(reference) - 4)
+            indices = np.sort(rng.choice(candidates, size=min(count, len(candidates)), replace=False))
+            contaminated = reference.copy()
+            amplitude = max(np.std(reference) * 8, 1.0)
+            contaminated[indices] += amplitude
+            mask = hampel_mask(contaminated)
+            reconstructed = pchip_clean(time, contaminated, mask)
+            rows.append({
+                "heat_id": raw["heat_id"],
+                "signal": name,
+                "seed": seed,
+                "injected": int(len(indices)),
+                "detected": int(mask[indices].sum()),
+                "recall": float(mask[indices].mean()),
+                "injected_rmse": float(np.sqrt(np.mean((reconstructed[indices] - reference[indices]) ** 2))),
+                "source": "raw_xlsb",
+            })
+    return {"heat_id": raw["heat_id"], "rows": rows}
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--data-dir", type=Path, default=Path("problem2/final/data"))
+    parser.add_argument("--raw-data-dir", type=Path, default=None)
     parser.add_argument("--output", type=Path, default=Path("problem2/final/results/injection_validation.json"))
     args = parser.parse_args()
-    result = [evaluate(path) for path in sorted(args.data_dir.glob("*_q2_processed.npz"))]
+    if args.raw_data_dir is not None:
+        result = [evaluate_raw(path) for path in sorted(args.raw_data_dir.glob("*.xlsb*"))]
+    else:
+        result = [evaluate(path) for path in sorted(args.data_dir.glob("*_q2_processed.npz"))]
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     flat = [row for heat in result for row in heat["rows"]]

@@ -1,0 +1,3602 @@
+[
+  {
+    "heat_id": "6B03205",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 78,
+    "rmse": 3.002879036590225
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 2.2776049919409496
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 1.4463112414230552
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 5.091127999395066
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 7.0558934666489135
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 59,
+    "rmse": 2.814381693931416
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 1.6485908592365213
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 3.2078401335847606
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 4.703848892842017
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 2.7354378078813073
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 80,
+    "rmse": 2.744236506170947
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 1.847501769207436
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 4.003272955828394
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 3.112286017791271
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 3.1004975391332104
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 78,
+    "rmse": 0.16937199770950398
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.35516027410421525
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.33814502709512756
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.18382547297256865
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 59,
+    "rmse": 0.11527567479971722
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.18867889561786724
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.06483073981268926
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.02205326846427399
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.5806537633196815
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 80,
+    "rmse": 0.16222806224593522
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.033703703703704235
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.08998390967278556
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.029095522083237586
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 1.0224772461143745
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 78,
+    "rmse": 0.08668618818589388
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.04358820268024683
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.0037597872280223576
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.025438235652515365
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.028259855831938713
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 59,
+    "rmse": 0.04674775415704322
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.07214193067742077
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.010381522046405012
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.061105270102500414
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.12320974234063485
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 80,
+    "rmse": 0.09016126652943696
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.010370370370369919
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.016795713738928863
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.23350047253501
+  },
+  {
+    "heat_id": "6B03205",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.26512765526763094
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 69,
+    "rmse": 2.782470066267096
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 1.761966848261069
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 2.1418175123011847
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 2.586381763880639
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 7.177048945428013
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 53,
+    "rmse": 2.7880033255926513
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 1.9204022213152454
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 1.6614912894414644
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 4.077300914514483
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 3.202507121603149
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 73,
+    "rmse": 2.7718062002807087
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 1.3410168980790373
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 1.8084597598171568
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 4.216858165299321
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 2.842891523953032
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 69,
+    "rmse": 0.11714860419634723
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.11024950060738872
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.12369166301565782
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 53,
+    "rmse": 0.14576447024908387
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.3212687778284094
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.054200322264639875
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.25514669895505154
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 73,
+    "rmse": 0.1463781729275556
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.28909015143034317
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.005253855961907049
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.19748770599299068
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.3114266441117771
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 69,
+    "rmse": 0.09098662183006442
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.012477820322476104
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.0663405326739701
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.038714635388522364
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 53,
+    "rmse": 0.05045297819321524
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.06393436717278911
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.4381611598245497
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.10773232891026979
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.006723725391702187
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 73,
+    "rmse": 0.09193985420687611
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.011098758565758034
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.043197961204886615
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.05676512777188177
+  },
+  {
+    "heat_id": "6B03206",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.09041367436072903
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 74,
+    "rmse": 2.865780760810968
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 2.2592328474473327
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 2.098254088759205
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 7.001641730023217
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 5.752607163308334
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 57,
+    "rmse": 2.8499587185379123
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 1.8519818082943773
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 1.0482881038626304
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 4.167933750157592
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 8.526910030443236
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 77,
+    "rmse": 2.8561130970197715
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 1.7678633177483805
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 4.0225844771625505
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 3.184427129942076
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 4.711180747547308
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 74,
+    "rmse": 0.145566039862576
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.08538663780095536
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.24736442778391193
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.2783344581344286
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.2717376445082866
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 57,
+    "rmse": 0.10805828854854226
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.02074074074073806
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.2365053938101527
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.4014410541347184
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 77,
+    "rmse": 0.12396153323549416
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.07000000000000028
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.052203612020944104
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.40132166901296507
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.31826760918446056
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 74,
+    "rmse": 0.08666408329275868
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.03851851851851862
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.0926365550694787
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.14530983463421404
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 57,
+    "rmse": 0.05190388802602304
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.0036792889814778866
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.011279361684067058
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.11204785360948206
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.654844710605368
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 77,
+    "rmse": 0.06638128689741811
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.02592592592592524
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.10460373769288633
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.04741557847768167
+  },
+  {
+    "heat_id": "6B03270",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.07447711313978972
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 74,
+    "rmse": 2.84783827684651
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 3.162869772675213
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.9538068084591217
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 3.122655068157194
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 5.878833096409116
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 57,
+    "rmse": 2.8901327847833045
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 6.286560854563339
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 2.5140345216404825
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 3.6215381645665303
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 3.4672349237876174
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 78,
+    "rmse": 2.7155818607124877
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 4.204502143132453
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 4.337875931835831
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 2.112794501450353
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 3.921397430068706
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 74,
+    "rmse": 0.13090726318793677
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.013882714677030627
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.04985804620386301
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.16818088728860228
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.35586596327312386
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 57,
+    "rmse": 0.13034423827617267
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.44101611767528304
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.2153285489664582
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.2854803255621768
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.20196809550284217
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 78,
+    "rmse": 0.1511555839863457
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.09433944780893362
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.24101950128568453
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.30221809368266844
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.17479734981983183
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 74,
+    "rmse": 0.07390214580733981
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.02219751713151405
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.450477710281787
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.07938419426730285
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.0977188319139769
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 57,
+    "rmse": 0.08044522688979576
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.06543018975405727
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.02469283296829262
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.04072512812069458
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.04038250379519254
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 78,
+    "rmse": 0.06962034497325868
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.005549379282877416
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.04165553984765919
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.06767930435946698
+  },
+  {
+    "heat_id": "6B03271",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.06852494324831383
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 43,
+    "rmse": 4.010408803119656
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 3.6983443333526607
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 3.231248609670968
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 4.6035523250117985
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 13.720185100722103
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 28,
+    "rmse": 6.323017917713511
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 2.2889217206809223
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 2.762916212820098
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 12.889730159655127
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 9.23364704571487
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 43,
+    "rmse": 4.315913597616762
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 4.773564679889028
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 1.8725401038995069
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 5.058229518998359
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 5.17913883503734
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 43,
+    "rmse": 0.14525168110256204
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.05547855201988387
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.2895128017874023
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.2603936168788732
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 28,
+    "rmse": 2.822580807561198
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.1357479407923183
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.19075998419781012
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.10365065184031402
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.30128067746909387
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 43,
+    "rmse": 0.16696761094027848
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.03329627569727564
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.15471392956033406
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.5805216560775415
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.32794576855378443
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 43,
+    "rmse": 0.20155760013126287
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.040079665133188364
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.008660254037844203
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.03766563230600978
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.14846856803724878
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 28,
+    "rmse": 1.2070685540280994
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.03910258745503885
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.02967597778434892
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.14398585071763256
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.12558822618287882
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 43,
+    "rmse": 0.10404172836750006
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.011098758565756019
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.27268563820556113
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.15552329206142096
+  },
+  {
+    "heat_id": "6C02057",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.06723836411978057
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 71,
+    "rmse": 2.7669021048618148
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 1.0396777225679645
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 2.0890994560914353
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 2.515371885971663
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 5.1907617713551595
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 54,
+    "rmse": 2.6694320894187373
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 2.2822441305883503
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 3.836565228837638
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 4.034130289664674
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 2.8788377253159427
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 73,
+    "rmse": 2.899681240876154
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 1.1667289812870094
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 4.386321084462489
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 4.588876793668422
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 9.857940165460704
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 71,
+    "rmse": 0.10629567821018798
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.12031651216743353
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.0395618929850619
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.30755022340700056
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.09301186689688395
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 54,
+    "rmse": 0.10641698557439942
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.12656157650512395
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.08828754903856924
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.3776824577564601
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.21144177449659332
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 73,
+    "rmse": 0.10246009368016314
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.030149376624347673
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.0801075277361642
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.2633571114248457
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.4399045332508354
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 71,
+    "rmse": 0.04491966145111499
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.02859897261385328
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.015039148912088903
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.14494940927895344
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.0401783713987077
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 54,
+    "rmse": 0.06952059599771863
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.04994441354590552
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.04361952590296873
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.041971755291384825
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.15101682461425195
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 73,
+    "rmse": 0.06015214023110318
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.3329627569727046
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.031839346726965166
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.15375795231537828
+  },
+  {
+    "heat_id": "6C02058",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.4249608338450673
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 81,
+    "rmse": 3.035894185606487
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 3.3079555195780346
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 2.3157669001866497
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 2.3357331605563525
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 3.5718954747395895
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 63,
+    "rmse": 3.3937918509540985
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 3.3139875148506763
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 1.074398250184729
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 2.5964762656955496
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 5.8924899555657255
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 83,
+    "rmse": 2.806299207518199
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 2.3918361950785263
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.9544624685057472
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 2.6179137498532667
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 6.064413969186051
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 81,
+    "rmse": 1.331299142351348
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.14993865412227836
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.14481370092786922
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.26724731339292246
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 63,
+    "rmse": 2.0534013343673987
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.07214193067742396
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.16607851129437576
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 83,
+    "rmse": 0.12465523516017911
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.12763572350620453
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.03396566355087173
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.14647391014028413
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 81,
+    "rmse": 0.4959254883637427
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.07765307463326918
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.24974856645581903
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.06335146261841713
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 63,
+    "rmse": 0.7637839451503154
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.004601738801800904
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.011909920580030584
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.04127843249933878
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 83,
+    "rmse": 0.05428194372759683
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.02774689641439307
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.004197671312102054
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.033120999039709366
+  },
+  {
+    "heat_id": "6C02059",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.08878726011980619
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 71,
+    "rmse": 2.9266135051023694
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 3.0448528944522075
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 2.154741283773872
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 2.715299922733804
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 2.9154660687967096
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 56,
+    "rmse": 2.8062933525694738
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 3.4288696349964334
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 2.996481797689564
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 4.360764625352015
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 6.84408089167544
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 75,
+    "rmse": 2.8303376921758563
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 2.2655083127085844
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 2.965394510010348
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 4.219204038290464
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 1.8186651264075053
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 71,
+    "rmse": 0.10864882030990647
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.18553516108813362
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.14794330736466882
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.14572494106012726
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 56,
+    "rmse": 0.13997492273128773
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.06767617010440494
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.3278857706859527
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.13377344765842483
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 75,
+    "rmse": 0.10259083162810206
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.07989791154255535
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.1581904674751256
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.025777293381508085
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 71,
+    "rmse": 0.05940650186288139
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.05938055016639673
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.062055587983677815
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.03647505740267655
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.02892925899585204
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 56,
+    "rmse": 0.04047340832511245
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.021356979641895056
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.020666039947231974
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.11340045360955255
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.09485761239571613
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 75,
+    "rmse": 0.05427268979834311
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.03884565498014909
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.05084682880967032
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.01677615149676282
+  },
+  {
+    "heat_id": "6C02060",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.0067605316007232335
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 78,
+    "rmse": 2.751323788433991
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 2.265508312708699
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 4.295345434304386
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 4.805136156551338
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 8.48529284844398
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 59,
+    "rmse": 2.7949054329198613
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 2.0920430120661044
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 2.707217075713152
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 3.202598641836447
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 8.952287684647567
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 79,
+    "rmse": 2.7352202430097816
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 1.8651763028884214
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 6.895397158829134
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 2.7033032339706757
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 3.9378303007352375
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 78,
+    "rmse": 0.12243690348816637
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.12847127960948757
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.018167663581208277
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.03846199894118798
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.32735628989387316
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 59,
+    "rmse": 0.11203476781869151
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.17203075776923502
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.18388669933508167
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.038445676599172425
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.1509571156603527
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 79,
+    "rmse": 0.12176904809670022
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.07052124049143453
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.37966236141834886
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.023495690075331664
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.2983538628582237
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 78,
+    "rmse": 0.06706211798633119
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.027746896414392656
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.010381522046403809
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.04728304103845594
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.054190676122818984
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 59,
+    "rmse": 0.0593149601072225
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.055493792828784125
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.019900725461512128
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.04977633763185645
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.06540020489513447
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 79,
+    "rmse": 0.06119337779017192
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.6210931474430993
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.2814453494775849
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.06812986615541013
+  },
+  {
+    "heat_id": "6C02107",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.052072617983468225
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 78,
+    "rmse": 2.8946497693850257
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 2.256717922085565
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 2.118619471259611
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 3.5492886743617795
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 7.767823052614505
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 59,
+    "rmse": 2.6114339503804067
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 1.8118121875502753
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 2.973535355665615
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 1.7776070223380964
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 5.00684359978641
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "oxygen_cumulative",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 79,
+    "rmse": 2.840933903313277
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 2.074936590350062
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 2.9695824867789193
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 4.784936936097959
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "oxygen_cumulative",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 8.530148461116362
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 78,
+    "rmse": 0.12660627047035689
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.0166481378486352
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.19743252011763174
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.11482931257186503
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.10591793776452219
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 59,
+    "rmse": 0.11074997417595102
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.07468757041513156
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.024977863095670242
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.5226540929268464
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 79,
+    "rmse": 0.12660193331644165
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.02219751713151405
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.2824895236296288
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.14169444172166915
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.06762109890161937
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 11,
+    "masked": 78,
+    "rmse": 0.07576412054567794
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 11,
+    "masked": 2,
+    "rmse": 0.10006868607293647
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 11,
+    "masked": 4,
+    "rmse": 0.03723954886944803
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 11,
+    "masked": 8,
+    "rmse": 0.02177093304856546
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 11,
+    "masked": 16,
+    "rmse": 0.02230411377720542
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 23,
+    "masked": 59,
+    "rmse": 0.051104027439301265
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 23,
+    "masked": 2,
+    "rmse": 0.0
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 23,
+    "masked": 4,
+    "rmse": 0.0026260555766644982
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 23,
+    "masked": 8,
+    "rmse": 0.05132965007891822
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 23,
+    "masked": 16,
+    "rmse": 0.04340239467580942
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co2",
+    "scenario": "random_5pct",
+    "seed": 37,
+    "masked": 79,
+    "rmse": 0.054800005502191364
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co2",
+    "scenario": "block_2",
+    "seed": 37,
+    "masked": 2,
+    "rmse": 0.09433944780893362
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co2",
+    "scenario": "block_4",
+    "seed": 37,
+    "masked": 4,
+    "rmse": 0.11716068090165024
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co2",
+    "scenario": "block_8",
+    "seed": 37,
+    "masked": 8,
+    "rmse": 0.026536677347160902
+  },
+  {
+    "heat_id": "6C02108",
+    "signal": "co2",
+    "scenario": "block_16",
+    "seed": 37,
+    "masked": 16,
+    "rmse": 0.00929373421780519
+  }
+]

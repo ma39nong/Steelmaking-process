@@ -1,0 +1,31 @@
+{
+  "workflow": "problem2-final",
+  "input": "十炉原始 XLSB（只读）",
+  "per_heat_interface": "final/data/{heat_id}_q2_processed.npz",
+  "results": [
+    "process_validation.csv",
+    "process_validation.json",
+    "q2_summary.json",
+    "relationship_summary.json",
+    "cross_validation.json",
+    "reconstruction_evaluation.json",
+    "raw_injection_validation.json",
+    "masking_validation.json",
+    "calculus_comparison.json",
+    "delay_parameter_sensitivity.json"
+  ],
+  "figures": [
+    "ten_heats_six_process_curves.png",
+    "6B03205_q2_processed_signals_and_delay.png",
+    "delay_threshold_sensitivity.png"
+  ],
+  "nan_policy": "不可辨识的时滞和越界映射保留 NaN，并由有效掩膜解释",
+  "units": {
+    "time": "s",
+    "oxygen_cumulative": "m3",
+    "oxygen_flow": "m3/s",
+    "co_and_co2": "m3/s",
+    "emission_integrals": "m3",
+    "delay": "s"
+  }
+}

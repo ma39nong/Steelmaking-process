@@ -3,7 +3,7 @@
     {
       "gas": "co",
       "test_heat": "6B03205",
-      "train_reliable_samples": 12,
+      "train_reliable_samples": 13,
       "test_reliable_samples": 0,
       "selected": "constrained_inverse_sqrt",
       "test_mae_s": NaN
@@ -11,15 +11,15 @@
     {
       "gas": "co",
       "test_heat": "6B03206",
-      "train_reliable_samples": 10,
+      "train_reliable_samples": 11,
       "test_reliable_samples": 2,
       "selected": "constrained_inverse_sqrt",
-      "test_mae_s": 7.210913875044875
+      "test_mae_s": 6.903591871214602
     },
     {
       "gas": "co",
       "test_heat": "6B03270",
-      "train_reliable_samples": 12,
+      "train_reliable_samples": 13,
       "test_reliable_samples": 0,
       "selected": "constrained_inverse_sqrt",
       "test_mae_s": NaN
@@ -27,7 +27,7 @@
     {
       "gas": "co",
       "test_heat": "6B03271",
-      "train_reliable_samples": 12,
+      "train_reliable_samples": 13,
       "test_reliable_samples": 0,
       "selected": "constrained_inverse_sqrt",
       "test_mae_s": NaN
@@ -35,47 +35,47 @@
     {
       "gas": "co",
       "test_heat": "6C02057",
-      "train_reliable_samples": 11,
+      "train_reliable_samples": 12,
       "test_reliable_samples": 1,
       "selected": "constrained_inverse_sqrt",
-      "test_mae_s": 31.57805705226413
+      "test_mae_s": 31.407205445106193
     },
     {
       "gas": "co",
       "test_heat": "6C02058",
       "train_reliable_samples": 10,
-      "test_reliable_samples": 2,
+      "test_reliable_samples": 3,
       "selected": "constrained_inverse_sqrt",
-      "test_mae_s": 10.023340551880239
+      "test_mae_s": 12.22789151443258
     },
     {
       "gas": "co",
       "test_heat": "6C02059",
-      "train_reliable_samples": 9,
+      "train_reliable_samples": 10,
       "test_reliable_samples": 3,
       "selected": "constrained_inverse_sqrt",
-      "test_mae_s": 21.893845375013512
+      "test_mae_s": 21.77313665894872
     },
     {
       "gas": "co",
       "test_heat": "6C02060",
-      "train_reliable_samples": 9,
+      "train_reliable_samples": 10,
       "test_reliable_samples": 3,
       "selected": "constrained_inverse_sqrt",
-      "test_mae_s": 21.738253681394117
+      "test_mae_s": 19.962203205077603
     },
     {
       "gas": "co",
       "test_heat": "6C02107",
-      "train_reliable_samples": 11,
+      "train_reliable_samples": 12,
       "test_reliable_samples": 1,
       "selected": "constrained_inverse_sqrt",
-      "test_mae_s": 1.9163972541376726
+      "test_mae_s": 2.234742947961589
     },
     {
       "gas": "co",
       "test_heat": "6C02108",
-      "train_reliable_samples": 12,
+      "train_reliable_samples": 13,
       "test_reliable_samples": 0,
       "selected": "constrained_inverse_sqrt",
       "test_mae_s": NaN
@@ -110,7 +110,7 @@
       "train_reliable_samples": 8,
       "test_reliable_samples": 3,
       "selected": "fixed_median",
-      "test_mae_s": 6.001566831766802
+      "test_mae_s": 6.0015648224244815
     },
     {
       "gas": "co2",
@@ -118,7 +118,7 @@
       "train_reliable_samples": 6,
       "test_reliable_samples": 5,
       "selected": "fixed_median",
-      "test_mae_s": 18.836581365258304
+      "test_mae_s": 18.83665797337411
     },
     {
       "gas": "co2",
@@ -134,7 +134,7 @@
       "train_reliable_samples": 8,
       "test_reliable_samples": 3,
       "selected": "fixed_median",
-      "test_mae_s": 4.220614363937758
+      "test_mae_s": 4.218481059094016
     },
     {
       "gas": "co2",
@@ -327,16 +327,16 @@
       "gas": "co2",
       "min_corr": 0.25,
       "candidate_windows": 235,
-      "accepted_windows": 61,
-      "coverage": 0.25957446808510637
+      "accepted_windows": 62,
+      "coverage": 0.26382978723404255
     },
     {
       "heat_id": "6B03270",
       "gas": "co2",
       "min_corr": 0.3,
       "candidate_windows": 235,
-      "accepted_windows": 29,
-      "coverage": 0.12340425531914893
+      "accepted_windows": 28,
+      "coverage": 0.11914893617021277
     },
     {
       "heat_id": "6B03270",
@@ -391,8 +391,8 @@
       "gas": "co2",
       "min_corr": 0.25,
       "candidate_windows": 236,
-      "accepted_windows": 65,
-      "coverage": 0.2754237288135593
+      "accepted_windows": 66,
+      "coverage": 0.2796610169491525
     },
     {
       "heat_id": "6B03271",
@@ -487,24 +487,24 @@
       "gas": "co",
       "min_corr": 0.25,
       "candidate_windows": 221,
-      "accepted_windows": 14,
-      "coverage": 0.06334841628959276
+      "accepted_windows": 15,
+      "coverage": 0.06787330316742081
     },
     {
       "heat_id": "6C02058",
       "gas": "co",
       "min_corr": 0.3,
       "candidate_windows": 221,
-      "accepted_windows": 4,
-      "coverage": 0.01809954751131222
+      "accepted_windows": 5,
+      "coverage": 0.02262443438914027
     },
     {
       "heat_id": "6C02058",
       "gas": "co",
       "min_corr": 0.35,
       "candidate_windows": 221,
-      "accepted_windows": 2,
-      "coverage": 0.00904977375565611
+      "accepted_windows": 3,
+      "coverage": 0.013574660633484163
     },
     {
       "heat_id": "6C02058",
