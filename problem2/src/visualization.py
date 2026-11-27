@@ -38,6 +38,7 @@ def make_figures(data_dir: Path, figure_dir: Path) -> None:
     axes[5].set_xlabel("Relative time / s")
     axes[0].legend(ncol=2, fontsize=8)
     fig.savefig(figure_dir / "ten_heats_six_process_curves.png", dpi=180)
+    fig.savefig(figure_dir / "ten_heats_six_process_curves.svg")
     plt.close(fig)
 
     d = load(paths[0])
@@ -57,6 +58,7 @@ def make_figures(data_dir: Path, figure_dir: Path) -> None:
     for axis in axes:
         axis.legend()
     fig.savefig(figure_dir / f"{paths[0].stem}_signals_and_delay.png", dpi=180)
+    fig.savefig(figure_dir / f"{paths[0].stem}_signals_and_delay.svg")
     plt.close(fig)
 
 

@@ -30,6 +30,7 @@ def main() -> None:
     ax.legend()
     args.output.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(args.output, dpi=180)
+    fig.savefig(args.output.with_suffix(".svg"))
     plt.close(fig)
 
 

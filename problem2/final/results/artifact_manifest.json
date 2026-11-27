@@ -16,8 +16,13 @@
   ],
   "figures": [
     "ten_heats_six_process_curves.png",
+    "ten_heats_six_process_curves.svg",
     "6B03205_q2_processed_signals_and_delay.png",
-    "delay_threshold_sensitivity.png"
+    "6B03205_q2_processed_signals_and_delay.svg",
+    "*_oxygen_relationships.png",
+    "*_oxygen_relationships.svg",
+    "delay_threshold_sensitivity.png",
+    "delay_threshold_sensitivity.svg"
   ],
   "nan_policy": "不可辨识的时滞和越界映射保留 NaN，并由有效掩膜解释",
   "units": {

@@ -28,6 +28,7 @@ def make_figure(path: Path, output_dir: Path) -> None:
     fig.suptitle(f"{heat_id}: cumulative oxygen relationships")
     output_dir.mkdir(parents=True, exist_ok=True)
     fig.savefig(output_dir / f"{heat_id}_oxygen_relationships.png", dpi=180)
+    fig.savefig(output_dir / f"{heat_id}_oxygen_relationships.svg")
     plt.close(fig)
 
 
