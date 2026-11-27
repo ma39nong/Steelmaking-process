@@ -278,5 +278,5 @@ V1实际局部掩码122995、疑似顶码14805，不能称其未完成修复。V
 历史协议的参考筛选、强度范围、片段、种子及求解预算不同，不直接用历史Precision/Recall/RMSE排名。历史失败归因使用旧片段一组种子，只解释机制；最终比较使用新共同协议。
 
 '''+table(pd.read_csv(P/'results/history_counts.csv'))+'\n历史失败尺度/各条件通过比例：\n\n'+table(hist)+'\n共同新协议：\n\n'+table(cmp)+'\n所选方案按开发连续代价最小确定，确认不调参；最终包含实际1043点修复，四个历史强点均被新规则重新识别。所有原始值、估计值与质量位独立保存。\n'
- (P/'reports/历史复核与最终决策依据.md').write_text(audit)
+ (P/'archive/reports/历史复核与最终决策依据.md').write_text(audit)
 if __name__=='__main__':main()

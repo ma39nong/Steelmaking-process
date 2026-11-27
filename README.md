@@ -30,7 +30,7 @@
 <details>
 <summary>历史研究、文献与复现实验（需要时再展开）</summary>
 
-- [研究档案与复现说明](problem1/final/reports/研究档案与复现说明.md)：V1—V3.1索引、模型实现位置与完整运行流程。
+- [研究档案与复现说明](problem1/final/docs/研究与维护说明.md#研究档案与复现说明)：V1—V3.1索引、模型实现位置与完整运行流程。
 - [文献索引](references/README.md)：原文获取状态、书目信息及中文笔记。
 - [补充研究](problem1/final/supplement_v1/README.md)：持续通道、物理候选、SVD与修复可靠性。
 
@@ -38,4 +38,4 @@
 
 </details>
 
-仓库结构与文件保留规则见[整理说明](problem1/final/reports/仓库整理与文件保留说明.md)。
+仓库结构与文件保留规则见[整理说明](problem1/final/docs/研究与维护说明.md#仓库整理与文件保留说明)。

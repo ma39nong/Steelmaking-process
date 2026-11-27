@@ -41,7 +41,7 @@ simplify.py是F02/F03/F04及A11/A12的唯一当前绘图实现；package.py只�
 
 ## 论文图题与字体
 
-参照仓库内2022—2025年B题优秀论文，整图题在图片下方以正文排版，图内保留英文标签。七条英文图题见[english_captions.md](english_captions.md)，实际样本核对与字体规范见[说明](../../reports/优秀论文图表样式核对与采用规范.md)。带外置图题的A4检查页在`review/*_caption_page.png`；正式正文仍使用`main/`原图。
+参照仓库内2022—2025年B题优秀论文，整图题在图片下方以正文排版，图内保留英文标签。七条英文图题见[english_captions.md](english_captions.md)，实际样本核对与字体规范见[说明](../../docs/研究与维护说明.md#优秀论文图表样式核对与采用规范)。带外置图题的A4检查页在`review/*_caption_page.png`；正式正文仍使用`main/`原图。
 
 字体安装：需本机安装真实Times New Roman（Regular/Bold/Italic/Bold Italic），脚本使用`findfont(..., fallback_to_default=False)`核实，缺失时停止，避免静默替换字体。字体文件不随仓库分发。
 
