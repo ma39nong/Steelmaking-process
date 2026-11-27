@@ -1,0 +1,242 @@
+{
+  "pooled_training": [
+    {
+      "gas": "co",
+      "heats_with_windows": 6,
+      "flow_min_m3_s": 2.0280118382675134,
+      "flow_max_m3_s": 11.350595730252856,
+      "flow_quantiles_m3_s": [
+        2.0280118382675134,
+        2.629188301420275,
+        3.1508877535744797,
+        4.134907361417609,
+        11.350595730252856
+      ],
+      "models": {
+        "n": 13,
+        "selected": "constrained_inverse_sqrt",
+        "fixed": {
+          "c_s": 13.528086875678959,
+          "rmse_s": 10.67614689143439
+        },
+        "unconstrained_inverse_sqrt": {
+          "a_s": 10.216664284860197,
+          "b_s_sqrt_m3": 21.913022311406305
+        },
+        "constrained_inverse_sqrt": {
+          "a_s": 2.579834158885111e-22,
+          "b_s_sqrt_m3": 29.34707092887573,
+          "rmse_s": 8.88159428895098
+        },
+        "monotone_flow_fit": {
+          "rmse_s": 3.9256647051808646
+        },
+        "prediction_min_s": 8.710747677036661,
+        "prediction_max_s": 20.607699781072405
+      },
+      "evidence_unit": "overlapping accepted windows; descriptive training fit only"
+    },
+    {
+      "gas": "co2",
+      "heats_with_windows": 3,
+      "flow_min_m3_s": 4.063124998760709,
+      "flow_max_m3_s": 14.37647354507581,
+      "flow_quantiles_m3_s": [
+        4.063124998760709,
+        4.5601961589823095,
+        5.087633771629711,
+        9.621150302673387,
+        14.37647354507581
+      ],
+      "models": {
+        "n": 11,
+        "selected": "fixed_median",
+        "fixed": {
+          "c_s": 9.664767598262474,
+          "rmse_s": 7.1029704305997745
+        },
+        "unconstrained_inverse_sqrt": {
+          "a_s": 71.22101621161902,
+          "b_s_sqrt_m3": -132.99072311377643
+        },
+        "constrained_inverse_sqrt": {
+          "a_s": 9.664767594584145,
+          "b_s_sqrt_m3": 2.9799801952682237e-20,
+          "rmse_s": 7.102970430599775
+        },
+        "monotone_flow_fit": {
+          "rmse_s": 7.1029704305997745
+        },
+        "prediction_min_s": 9.664767594584145,
+        "prediction_max_s": 9.664767594584145
+      },
+      "evidence_unit": "overlapping accepted windows; descriptive training fit only"
+    }
+  ],
+  "historical_selected_model_loho_matches": true,
+  "historical_selected_model_loho": [
+    {
+      "gas": "co",
+      "test_heat": "6B03205",
+      "train_reliable_samples": 13,
+      "test_reliable_samples": 0,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": null
+    },
+    {
+      "gas": "co",
+      "test_heat": "6B03206",
+      "train_reliable_samples": 11,
+      "test_reliable_samples": 2,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": 6.903591895068374
+    },
+    {
+      "gas": "co",
+      "test_heat": "6B03270",
+      "train_reliable_samples": 13,
+      "test_reliable_samples": 0,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": null
+    },
+    {
+      "gas": "co",
+      "test_heat": "6B03271",
+      "train_reliable_samples": 13,
+      "test_reliable_samples": 0,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": null
+    },
+    {
+      "gas": "co",
+      "test_heat": "6C02057",
+      "train_reliable_samples": 12,
+      "test_reliable_samples": 1,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": 31.407205424396036
+    },
+    {
+      "gas": "co",
+      "test_heat": "6C02058",
+      "train_reliable_samples": 10,
+      "test_reliable_samples": 3,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": 12.227891503302509
+    },
+    {
+      "gas": "co",
+      "test_heat": "6C02059",
+      "train_reliable_samples": 10,
+      "test_reliable_samples": 3,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": 21.773137132327975
+    },
+    {
+      "gas": "co",
+      "test_heat": "6C02060",
+      "train_reliable_samples": 10,
+      "test_reliable_samples": 3,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": 19.962203220124078
+    },
+    {
+      "gas": "co",
+      "test_heat": "6C02107",
+      "train_reliable_samples": 12,
+      "test_reliable_samples": 1,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": 2.23474290814994
+    },
+    {
+      "gas": "co",
+      "test_heat": "6C02108",
+      "train_reliable_samples": 13,
+      "test_reliable_samples": 0,
+      "selected": "constrained_inverse_sqrt",
+      "test_mae_s": null
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6B03205",
+      "train_reliable_samples": 11,
+      "test_reliable_samples": 0,
+      "selected": "fixed_median",
+      "test_mae_s": null
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6B03206",
+      "train_reliable_samples": 11,
+      "test_reliable_samples": 0,
+      "selected": "fixed_median",
+      "test_mae_s": null
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6B03270",
+      "train_reliable_samples": 11,
+      "test_reliable_samples": 0,
+      "selected": "fixed_median",
+      "test_mae_s": null
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6B03271",
+      "train_reliable_samples": 8,
+      "test_reliable_samples": 3,
+      "selected": "fixed_median",
+      "test_mae_s": 6.001564822424506
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6C02057",
+      "train_reliable_samples": 6,
+      "test_reliable_samples": 5,
+      "selected": "fixed_median",
+      "test_mae_s": 18.836657973374106
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6C02058",
+      "train_reliable_samples": 11,
+      "test_reliable_samples": 0,
+      "selected": "fixed_median",
+      "test_mae_s": null
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6C02059",
+      "train_reliable_samples": 8,
+      "test_reliable_samples": 3,
+      "selected": "fixed_median",
+      "test_mae_s": 4.218481059094199
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6C02060",
+      "train_reliable_samples": 11,
+      "test_reliable_samples": 0,
+      "selected": "fixed_median",
+      "test_mae_s": null
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6C02107",
+      "train_reliable_samples": 11,
+      "test_reliable_samples": 0,
+      "selected": "fixed_median",
+      "test_mae_s": null
+    },
+    {
+      "gas": "co2",
+      "test_heat": "6C02108",
+      "train_reliable_samples": 11,
+      "test_reliable_samples": 0,
+      "selected": "fixed_median",
+      "test_mae_s": null
+    }
+  ],
+  "independent_event_count": null,
+  "conclusion": "insufficient evidence for a general decreasing flow-delay law; no independently confirmed events",
+  "selection_limitation": "existing selection compares nested models using training RMSE; it is not evidence of a general flow effect"
+}

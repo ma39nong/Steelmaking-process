@@ -1,0 +1,55 @@
+{
+  "heat_id": "6C02057",
+  "records": 775,
+  "oxygen_cumulative": 0,
+  "co2": 3,
+  "co": 0,
+  "models": {
+    "co": {
+      "n": 1,
+      "selected": "insufficient_data"
+    },
+    "co2": {
+      "n": 5,
+      "selected": "fixed_median",
+      "fixed": {
+        "c_s": 24.771890667235898,
+        "rmse_s": 13.484757617434973
+      },
+      "unconstrained_inverse_sqrt": {
+        "a_s": 97.56575490049998,
+        "b_s_sqrt_m3": -219.9671169807071
+      },
+      "constrained_inverse_sqrt": {
+        "a_s": 24.771890671079422,
+        "b_s_sqrt_m3": 6.310887241768094e-29,
+        "rmse_s": 13.484757617434973
+      },
+      "monotone_flow_fit": {
+        "rmse_s": 13.484757617434973
+      },
+      "prediction_min_s": 24.771890671079422,
+      "prediction_max_s": 24.771890671079422
+    }
+  },
+  "coverage": {
+    "co": {
+      "window_count": 107,
+      "reliable_window_count": 1,
+      "reliable_fraction": 0.009345794392523364,
+      "observed_point_count": 1,
+      "alignment_valid_count": 1,
+      "boundary_unavailable_count": 244,
+      "between_window_gap_count": 424
+    },
+    "co2": {
+      "window_count": 107,
+      "reliable_window_count": 5,
+      "reliable_fraction": 0.04672897196261682,
+      "observed_point_count": 5,
+      "alignment_valid_count": 5,
+      "boundary_unavailable_count": 244,
+      "between_window_gap_count": 424
+    }
+  }
+}

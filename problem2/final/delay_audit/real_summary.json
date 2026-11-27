@@ -1,0 +1,900 @@
+[
+  {
+    "heat_id": "6B03205",
+    "gas": "co",
+    "candidate_windows": 248,
+    "accepted_windows": 0,
+    "check_counts": {
+      "strength": {
+        "passed": 241,
+        "rejected": 7
+      },
+      "finite_correlation": {
+        "passed": 241,
+        "rejected": 7
+      },
+      "correlation": {
+        "passed": 0,
+        "rejected": 248
+      },
+      "separation": {
+        "passed": 25,
+        "rejected": 223
+      },
+      "interior_peak": {
+        "passed": 231,
+        "rejected": 17
+      }
+    },
+    "sequential_funnel": {
+      "strength": 241,
+      "finite_correlation": 241,
+      "correlation": 0,
+      "separation": 0,
+      "interior_peak": 0
+    },
+    "consecutive_groups": 0,
+    "source_overlap_groups": 0,
+    "search_overlap_groups": 0,
+    "zero_peak_count": 7,
+    "upper_boundary_peak_count": 10,
+    "fitted_models": {
+      "n": 0,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6B03205",
+    "gas": "co2",
+    "candidate_windows": 248,
+    "accepted_windows": 0,
+    "check_counts": {
+      "strength": {
+        "passed": 248,
+        "rejected": 0
+      },
+      "finite_correlation": {
+        "passed": 248,
+        "rejected": 0
+      },
+      "correlation": {
+        "passed": 0,
+        "rejected": 248
+      },
+      "separation": {
+        "passed": 46,
+        "rejected": 202
+      },
+      "interior_peak": {
+        "passed": 248,
+        "rejected": 0
+      }
+    },
+    "sequential_funnel": {
+      "strength": 248,
+      "finite_correlation": 248,
+      "correlation": 0,
+      "separation": 0,
+      "interior_peak": 0
+    },
+    "consecutive_groups": 0,
+    "source_overlap_groups": 0,
+    "search_overlap_groups": 0,
+    "zero_peak_count": 0,
+    "upper_boundary_peak_count": 0,
+    "fitted_models": {
+      "n": 0,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6C02108",
+    "gas": "co",
+    "candidate_windows": 245,
+    "accepted_windows": 0,
+    "check_counts": {
+      "strength": {
+        "passed": 240,
+        "rejected": 5
+      },
+      "finite_correlation": {
+        "passed": 240,
+        "rejected": 5
+      },
+      "correlation": {
+        "passed": 0,
+        "rejected": 245
+      },
+      "separation": {
+        "passed": 26,
+        "rejected": 219
+      },
+      "interior_peak": {
+        "passed": 240,
+        "rejected": 5
+      }
+    },
+    "sequential_funnel": {
+      "strength": 240,
+      "finite_correlation": 240,
+      "correlation": 0,
+      "separation": 0,
+      "interior_peak": 0
+    },
+    "consecutive_groups": 0,
+    "source_overlap_groups": 0,
+    "search_overlap_groups": 0,
+    "zero_peak_count": 5,
+    "upper_boundary_peak_count": 0,
+    "fitted_models": {
+      "n": 0,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6C02108",
+    "gas": "co2",
+    "candidate_windows": 245,
+    "accepted_windows": 0,
+    "check_counts": {
+      "strength": {
+        "passed": 245,
+        "rejected": 0
+      },
+      "finite_correlation": {
+        "passed": 245,
+        "rejected": 0
+      },
+      "correlation": {
+        "passed": 0,
+        "rejected": 245
+      },
+      "separation": {
+        "passed": 34,
+        "rejected": 211
+      },
+      "interior_peak": {
+        "passed": 241,
+        "rejected": 4
+      }
+    },
+    "sequential_funnel": {
+      "strength": 245,
+      "finite_correlation": 245,
+      "correlation": 0,
+      "separation": 0,
+      "interior_peak": 0
+    },
+    "consecutive_groups": 0,
+    "source_overlap_groups": 0,
+    "search_overlap_groups": 0,
+    "zero_peak_count": 0,
+    "upper_boundary_peak_count": 4,
+    "fitted_models": {
+      "n": 0,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6B03206",
+    "gas": "co",
+    "candidate_windows": 215,
+    "accepted_windows": 2,
+    "check_counts": {
+      "strength": {
+        "passed": 215,
+        "rejected": 0
+      },
+      "finite_correlation": {
+        "passed": 215,
+        "rejected": 0
+      },
+      "correlation": {
+        "passed": 2,
+        "rejected": 213
+      },
+      "separation": {
+        "passed": 56,
+        "rejected": 159
+      },
+      "interior_peak": {
+        "passed": 213,
+        "rejected": 2
+      }
+    },
+    "sequential_funnel": {
+      "strength": 215,
+      "finite_correlation": 215,
+      "correlation": 2,
+      "separation": 2,
+      "interior_peak": 2
+    },
+    "consecutive_groups": 2,
+    "source_overlap_groups": 2,
+    "search_overlap_groups": 2,
+    "zero_peak_count": 0,
+    "upper_boundary_peak_count": 2,
+    "fitted_models": {
+      "n": 2,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6B03206",
+    "gas": "co2",
+    "candidate_windows": 215,
+    "accepted_windows": 0,
+    "check_counts": {
+      "strength": {
+        "passed": 215,
+        "rejected": 0
+      },
+      "finite_correlation": {
+        "passed": 215,
+        "rejected": 0
+      },
+      "correlation": {
+        "passed": 0,
+        "rejected": 215
+      },
+      "separation": {
+        "passed": 48,
+        "rejected": 167
+      },
+      "interior_peak": {
+        "passed": 213,
+        "rejected": 2
+      }
+    },
+    "sequential_funnel": {
+      "strength": 215,
+      "finite_correlation": 215,
+      "correlation": 0,
+      "separation": 0,
+      "interior_peak": 0
+    },
+    "consecutive_groups": 0,
+    "source_overlap_groups": 0,
+    "search_overlap_groups": 0,
+    "zero_peak_count": 2,
+    "upper_boundary_peak_count": 0,
+    "fitted_models": {
+      "n": 0,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6B03270",
+    "gas": "co",
+    "candidate_windows": 235,
+    "accepted_windows": 0,
+    "check_counts": {
+      "strength": {
+        "passed": 235,
+        "rejected": 0
+      },
+      "finite_correlation": {
+        "passed": 235,
+        "rejected": 0
+      },
+      "correlation": {
+        "passed": 0,
+        "rejected": 235
+      },
+      "separation": {
+        "passed": 67,
+        "rejected": 168
+      },
+      "interior_peak": {
+        "passed": 234,
+        "rejected": 1
+      }
+    },
+    "sequential_funnel": {
+      "strength": 235,
+      "finite_correlation": 235,
+      "correlation": 0,
+      "separation": 0,
+      "interior_peak": 0
+    },
+    "consecutive_groups": 0,
+    "source_overlap_groups": 0,
+    "search_overlap_groups": 0,
+    "zero_peak_count": 1,
+    "upper_boundary_peak_count": 0,
+    "fitted_models": {
+      "n": 0,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6B03270",
+    "gas": "co2",
+    "candidate_windows": 235,
+    "accepted_windows": 0,
+    "check_counts": {
+      "strength": {
+        "passed": 235,
+        "rejected": 0
+      },
+      "finite_correlation": {
+        "passed": 235,
+        "rejected": 0
+      },
+      "correlation": {
+        "passed": 0,
+        "rejected": 235
+      },
+      "separation": {
+        "passed": 85,
+        "rejected": 150
+      },
+      "interior_peak": {
+        "passed": 235,
+        "rejected": 0
+      }
+    },
+    "sequential_funnel": {
+      "strength": 235,
+      "finite_correlation": 235,
+      "correlation": 0,
+      "separation": 0,
+      "interior_peak": 0
+    },
+    "consecutive_groups": 0,
+    "source_overlap_groups": 0,
+    "search_overlap_groups": 0,
+    "zero_peak_count": 0,
+    "upper_boundary_peak_count": 0,
+    "fitted_models": {
+      "n": 0,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6B03271",
+    "gas": "co",
+    "candidate_windows": 236,
+    "accepted_windows": 0,
+    "check_counts": {
+      "strength": {
+        "passed": 236,
+        "rejected": 0
+      },
+      "finite_correlation": {
+        "passed": 236,
+        "rejected": 0
+      },
+      "correlation": {
+        "passed": 0,
+        "rejected": 236
+      },
+      "separation": {
+        "passed": 45,
+        "rejected": 191
+      },
+      "interior_peak": {
+        "passed": 236,
+        "rejected": 0
+      }
+    },
+    "sequential_funnel": {
+      "strength": 236,
+      "finite_correlation": 236,
+      "correlation": 0,
+      "separation": 0,
+      "interior_peak": 0
+    },
+    "consecutive_groups": 0,
+    "source_overlap_groups": 0,
+    "search_overlap_groups": 0,
+    "zero_peak_count": 0,
+    "upper_boundary_peak_count": 0,
+    "fitted_models": {
+      "n": 0,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6B03271",
+    "gas": "co2",
+    "candidate_windows": 236,
+    "accepted_windows": 3,
+    "check_counts": {
+      "strength": {
+        "passed": 236,
+        "rejected": 0
+      },
+      "finite_correlation": {
+        "passed": 236,
+        "rejected": 0
+      },
+      "correlation": {
+        "passed": 3,
+        "rejected": 233
+      },
+      "separation": {
+        "passed": 90,
+        "rejected": 146
+      },
+      "interior_peak": {
+        "passed": 235,
+        "rejected": 1
+      }
+    },
+    "sequential_funnel": {
+      "strength": 236,
+      "finite_correlation": 236,
+      "correlation": 3,
+      "separation": 3,
+      "interior_peak": 3
+    },
+    "consecutive_groups": 2,
+    "source_overlap_groups": 2,
+    "search_overlap_groups": 2,
+    "zero_peak_count": 1,
+    "upper_boundary_peak_count": 0,
+    "fitted_models": {
+      "n": 3,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6C02057",
+    "gas": "co",
+    "candidate_windows": 107,
+    "accepted_windows": 1,
+    "check_counts": {
+      "strength": {
+        "passed": 107,
+        "rejected": 0
+      },
+      "finite_correlation": {
+        "passed": 107,
+        "rejected": 0
+      },
+      "correlation": {
+        "passed": 1,
+        "rejected": 106
+      },
+      "separation": {
+        "passed": 38,
+        "rejected": 69
+      },
+      "interior_peak": {
+        "passed": 107,
+        "rejected": 0
+      }
+    },
+    "sequential_funnel": {
+      "strength": 107,
+      "finite_correlation": 107,
+      "correlation": 1,
+      "separation": 1,
+      "interior_peak": 1
+    },
+    "consecutive_groups": 1,
+    "source_overlap_groups": 1,
+    "search_overlap_groups": 1,
+    "zero_peak_count": 0,
+    "upper_boundary_peak_count": 0,
+    "fitted_models": {
+      "n": 1,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6C02057",
+    "gas": "co2",
+    "candidate_windows": 107,
+    "accepted_windows": 5,
+    "check_counts": {
+      "strength": {
+        "passed": 107,
+        "rejected": 0
+      },
+      "finite_correlation": {
+        "passed": 107,
+        "rejected": 0
+      },
+      "correlation": {
+        "passed": 5,
+        "rejected": 102
+      },
+      "separation": {
+        "passed": 33,
+        "rejected": 74
+      },
+      "interior_peak": {
+        "passed": 107,
+        "rejected": 0
+      }
+    },
+    "sequential_funnel": {
+      "strength": 107,
+      "finite_correlation": 107,
+      "correlation": 5,
+      "separation": 5,
+      "interior_peak": 5
+    },
+    "consecutive_groups": 3,
+    "source_overlap_groups": 2,
+    "search_overlap_groups": 1,
+    "zero_peak_count": 0,
+    "upper_boundary_peak_count": 0,
+    "fitted_models": {
+      "n": 5,
+      "selected": "fixed_median",
+      "fixed": {
+        "c_s": 24.771890667235898,
+        "rmse_s": 13.484757617434973
+      },
+      "unconstrained_inverse_sqrt": {
+        "a_s": 97.56575490049998,
+        "b_s_sqrt_m3": -219.9671169807071
+      },
+      "constrained_inverse_sqrt": {
+        "a_s": 24.771890671079422,
+        "b_s_sqrt_m3": 6.310887241768094e-29,
+        "rmse_s": 13.484757617434973
+      },
+      "monotone_flow_fit": {
+        "rmse_s": 13.484757617434973
+      },
+      "prediction_min_s": 24.771890671079422,
+      "prediction_max_s": 24.771890671079422
+    }
+  },
+  {
+    "heat_id": "6C02058",
+    "gas": "co",
+    "candidate_windows": 221,
+    "accepted_windows": 3,
+    "check_counts": {
+      "strength": {
+        "passed": 221,
+        "rejected": 0
+      },
+      "finite_correlation": {
+        "passed": 221,
+        "rejected": 0
+      },
+      "correlation": {
+        "passed": 3,
+        "rejected": 218
+      },
+      "separation": {
+        "passed": 44,
+        "rejected": 177
+      },
+      "interior_peak": {
+        "passed": 221,
+        "rejected": 0
+      }
+    },
+    "sequential_funnel": {
+      "strength": 221,
+      "finite_correlation": 221,
+      "correlation": 3,
+      "separation": 3,
+      "interior_peak": 3
+    },
+    "consecutive_groups": 3,
+    "source_overlap_groups": 1,
+    "search_overlap_groups": 1,
+    "zero_peak_count": 0,
+    "upper_boundary_peak_count": 0,
+    "fitted_models": {
+      "n": 3,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6C02058",
+    "gas": "co2",
+    "candidate_windows": 221,
+    "accepted_windows": 0,
+    "check_counts": {
+      "strength": {
+        "passed": 221,
+        "rejected": 0
+      },
+      "finite_correlation": {
+        "passed": 221,
+        "rejected": 0
+      },
+      "correlation": {
+        "passed": 0,
+        "rejected": 221
+      },
+      "separation": {
+        "passed": 29,
+        "rejected": 192
+      },
+      "interior_peak": {
+        "passed": 221,
+        "rejected": 0
+      }
+    },
+    "sequential_funnel": {
+      "strength": 221,
+      "finite_correlation": 221,
+      "correlation": 0,
+      "separation": 0,
+      "interior_peak": 0
+    },
+    "consecutive_groups": 0,
+    "source_overlap_groups": 0,
+    "search_overlap_groups": 0,
+    "zero_peak_count": 0,
+    "upper_boundary_peak_count": 0,
+    "fitted_models": {
+      "n": 0,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6C02059",
+    "gas": "co",
+    "candidate_windows": 263,
+    "accepted_windows": 3,
+    "check_counts": {
+      "strength": {
+        "passed": 241,
+        "rejected": 22
+      },
+      "finite_correlation": {
+        "passed": 241,
+        "rejected": 22
+      },
+      "correlation": {
+        "passed": 3,
+        "rejected": 260
+      },
+      "separation": {
+        "passed": 46,
+        "rejected": 217
+      },
+      "interior_peak": {
+        "passed": 236,
+        "rejected": 27
+      }
+    },
+    "sequential_funnel": {
+      "strength": 241,
+      "finite_correlation": 241,
+      "correlation": 3,
+      "separation": 3,
+      "interior_peak": 3
+    },
+    "consecutive_groups": 1,
+    "source_overlap_groups": 1,
+    "search_overlap_groups": 1,
+    "zero_peak_count": 27,
+    "upper_boundary_peak_count": 0,
+    "fitted_models": {
+      "n": 3,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6C02059",
+    "gas": "co2",
+    "candidate_windows": 263,
+    "accepted_windows": 3,
+    "check_counts": {
+      "strength": {
+        "passed": 263,
+        "rejected": 0
+      },
+      "finite_correlation": {
+        "passed": 263,
+        "rejected": 0
+      },
+      "correlation": {
+        "passed": 3,
+        "rejected": 260
+      },
+      "separation": {
+        "passed": 61,
+        "rejected": 202
+      },
+      "interior_peak": {
+        "passed": 255,
+        "rejected": 8
+      }
+    },
+    "sequential_funnel": {
+      "strength": 263,
+      "finite_correlation": 263,
+      "correlation": 3,
+      "separation": 3,
+      "interior_peak": 3
+    },
+    "consecutive_groups": 1,
+    "source_overlap_groups": 1,
+    "search_overlap_groups": 1,
+    "zero_peak_count": 8,
+    "upper_boundary_peak_count": 0,
+    "fitted_models": {
+      "n": 3,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6C02060",
+    "gas": "co",
+    "candidate_windows": 227,
+    "accepted_windows": 3,
+    "check_counts": {
+      "strength": {
+        "passed": 227,
+        "rejected": 0
+      },
+      "finite_correlation": {
+        "passed": 227,
+        "rejected": 0
+      },
+      "correlation": {
+        "passed": 3,
+        "rejected": 224
+      },
+      "separation": {
+        "passed": 36,
+        "rejected": 191
+      },
+      "interior_peak": {
+        "passed": 227,
+        "rejected": 0
+      }
+    },
+    "sequential_funnel": {
+      "strength": 227,
+      "finite_correlation": 227,
+      "correlation": 3,
+      "separation": 3,
+      "interior_peak": 3
+    },
+    "consecutive_groups": 1,
+    "source_overlap_groups": 1,
+    "search_overlap_groups": 1,
+    "zero_peak_count": 0,
+    "upper_boundary_peak_count": 0,
+    "fitted_models": {
+      "n": 3,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6C02060",
+    "gas": "co2",
+    "candidate_windows": 227,
+    "accepted_windows": 0,
+    "check_counts": {
+      "strength": {
+        "passed": 227,
+        "rejected": 0
+      },
+      "finite_correlation": {
+        "passed": 227,
+        "rejected": 0
+      },
+      "correlation": {
+        "passed": 0,
+        "rejected": 227
+      },
+      "separation": {
+        "passed": 53,
+        "rejected": 174
+      },
+      "interior_peak": {
+        "passed": 225,
+        "rejected": 2
+      }
+    },
+    "sequential_funnel": {
+      "strength": 227,
+      "finite_correlation": 227,
+      "correlation": 0,
+      "separation": 0,
+      "interior_peak": 0
+    },
+    "consecutive_groups": 0,
+    "source_overlap_groups": 0,
+    "search_overlap_groups": 0,
+    "zero_peak_count": 0,
+    "upper_boundary_peak_count": 2,
+    "fitted_models": {
+      "n": 0,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6C02107",
+    "gas": "co",
+    "candidate_windows": 244,
+    "accepted_windows": 1,
+    "check_counts": {
+      "strength": {
+        "passed": 244,
+        "rejected": 0
+      },
+      "finite_correlation": {
+        "passed": 244,
+        "rejected": 0
+      },
+      "correlation": {
+        "passed": 1,
+        "rejected": 243
+      },
+      "separation": {
+        "passed": 48,
+        "rejected": 196
+      },
+      "interior_peak": {
+        "passed": 239,
+        "rejected": 5
+      }
+    },
+    "sequential_funnel": {
+      "strength": 244,
+      "finite_correlation": 244,
+      "correlation": 1,
+      "separation": 1,
+      "interior_peak": 1
+    },
+    "consecutive_groups": 1,
+    "source_overlap_groups": 1,
+    "search_overlap_groups": 1,
+    "zero_peak_count": 5,
+    "upper_boundary_peak_count": 0,
+    "fitted_models": {
+      "n": 1,
+      "selected": "insufficient_data"
+    }
+  },
+  {
+    "heat_id": "6C02107",
+    "gas": "co2",
+    "candidate_windows": 244,
+    "accepted_windows": 0,
+    "check_counts": {
+      "strength": {
+        "passed": 244,
+        "rejected": 0
+      },
+      "finite_correlation": {
+        "passed": 244,
+        "rejected": 0
+      },
+      "correlation": {
+        "passed": 0,
+        "rejected": 244
+      },
+      "separation": {
+        "passed": 62,
+        "rejected": 182
+      },
+      "interior_peak": {
+        "passed": 241,
+        "rejected": 3
+      }
+    },
+    "sequential_funnel": {
+      "strength": 244,
+      "finite_correlation": 244,
+      "correlation": 0,
+      "separation": 0,
+      "interior_peak": 0
+    },
+    "consecutive_groups": 0,
+    "source_overlap_groups": 0,
+    "search_overlap_groups": 0,
+    "zero_peak_count": 0,
+    "upper_boundary_peak_count": 3,
+    "fitted_models": {
+      "n": 0,
+      "selected": "insufficient_data"
+    }
+  }
+]

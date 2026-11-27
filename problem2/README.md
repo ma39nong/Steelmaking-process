@@ -51,7 +51,7 @@ uv run --with 'numpy<2' --with scipy --with pytest pytest -q problem2/tests
 1. Hampel 稳健异常识别在局部尺度为零时使用平台/邻域回退规则；PCHIP 在保留点上重构三类信号。
 2. 氧枪流量采用累计耗氧量连续曲线的 Savitzky–Golay 近似导数，并截断负值；同时保存由流量梯形积分得到的累计量用于一致性检查。
 3. CO 和 CO₂ 的累计排放由清洗后的瞬时体积流量积分得到。
-4. 局部时滞只对具有动态激励、显著相关、峰值分离、峰宽和边界条件均合格的窗口返回观测值；不可辨识窗口保存 NaN 和掩膜。
+4. 局部时滞只对动态激励、相关阈值、峰值分离和边界条件均合格的窗口返回观测值；峰宽与峰显著性仅记录为诊断量，不参与筛选。不可辨识窗口保存 NaN 和掩膜。
 5. 流量—时滞关系使用可靠窗口中心样本进行固定模型、反平方根模型和约束模型比较。样本不足时保留固定模型或不可用状态。
 6. 时间映射遵循 `t_measurement = t_source + delay(t_source)`，并保存观测映射、模型映射和单调有效掩膜。
 
@@ -72,3 +72,57 @@ NPZ 字段、维度、单位、NaN 语义和读取示例见 `final/reports/数�
 ## 数据解释边界
 
 CO/CO₂ 原始字段按题面作为瞬时体积流量处理。统计响应时滞同时包含反应、传输和仪器响应成分，不能直接视为独立测得的管道传输时间。动态时滞的可靠窗口覆盖率较低，后续问题必须读取有效掩膜和置信度，不能把无效区间填零或把模型时滞当作实测标签。
+
+## 第一轮时滞专项审查
+
+审查基于 `cea8248`，不修改正式时滞模型和第三问接口。独立结果位于
+`final/delay_audit/`；默认实验配置为 `configs/delay_audit_config.json`，
+预处理和时滞参数显式读取 `configs/q2_config.json`。
+
+完整复现（仓库根目录，已安装 README 上述依赖的 Python 环境）：
+
+```bash
+python -m problem2.src.delay_audit --data-dir Data
+python -m pytest -q problem2/tests
+```
+
+本机已有环境可将 `python` 换成 `.venv/bin/python`。完整运行会重新生成审查目录中的
+基线 NPZ、实验、图表与报告第6节，覆盖当前输出，不替换 `final/data/` 或原有正式结果。
+正式源文件必须与 `cea8248` 一致，否则拒绝把本次运行称为原基线复现。
+
+分阶段运行使用同一配置和输出目录：
+
+```bash
+python -m problem2.src.delay_audit --stage real
+python -m problem2.src.delay_audit --stage synthetic
+python -m problem2.src.delay_audit --stage figures
+python -m problem2.src.delay_audit --stage report
+```
+
+`real` 生成十炉重放、独立拒绝原因、窗口重叠分组、双向/全局对照、窗口敏感性及已有流量模型验证；
+`synthetic` 运行30个固定种子的18种场景；`figures` 需要前两阶段结果；`report` 更新现有审查报告。
+更改配置后必须完整运行，禁止混用不同配置的分阶段结果。正式原入口的配置接入不属于本轮修改。
+
+| 审查目录文件 | 内容 |
+|---|---|
+| `effective_config.json`、`provenance.json` | 有效配置、输入及源代码来源、依赖版本、输出SHA256 |
+| `input_audit.json` | 十炉哈希、时间轴、工艺字段、数据质量与积分总量检查 |
+| `baseline/data/`、`baseline/results/` | 重放NPZ、历史JSON比较及逐数组SHA256；NPZ按既有策略不提交Git，可重新生成 |
+| `window_diagnostics.csv`、`real_summary.json` | 所有4482个炉次—气体窗口的独立检查和顺序筛选计数 |
+| `accepted_windows.csv` | 24个可靠窗口、流量/阶段、三种重叠分组、跨气体数据共享；事件身份保留不确定 |
+| `signed_comparison.csv`、`global_correlations.json` | 相同有效源中心的双向/非负搜索，以及全局描述性互相关 |
+| `window_sensitivity.csv` | 十炉81/121/161点窗口对照；不同窗口的中心范围不同 |
+| `synthetic_runs.csv`、`synthetic_windows.csv` | 每种子/场景指标与逐窗口估计、真实起点/峰值/重心 |
+| `synthetic_summary.json`、`synthetic_peak_calibration.csv` | 合成误差、拒绝率、方向错误及峰宽/显著性诊断 |
+| `flow_model_evidence.json`、`flow_model_cross_validation.csv`、`flow_stage_coverage.csv` | 既有模型训练误差、固定/反平方根留一炉次比较和流量/阶段覆盖 |
+| `figures/`、`figure_captions.csv` | 24张逐窗口检查图和2张总览，PNG/SVG/PDF；图注独立可编辑 |
+| `font_validation.json`、`layout_preview.png` | 四种真实Times New Roman字形与PDF嵌入检查；唯一版宽检查预览 |
+
+报告见 `final/reports/独立数学审查与修复报告.md` 第6节。
+窗口、重叠组均不能直接作为独立事件；合成窗口也高度重叠，30个种子才是重复实验单位。
+同事历史NPZ未包含在当前检出中，故逐数组比较属于配置重放对未改动基线代码的验证，
+不表示已经直接核对其历史数组。旧论文章节的峰宽筛选描述暂未改写，应以本轮审查更正为准。
+
+新图要求真实 Times New Roman、fontconfig 的 `fc-match` 和 Poppler 的 `pdffonts`。
+共享配置在 `src/figure_fonts.py`；缺失时明确失败，不能替代字体继续导出。
+PDF嵌入字体，SVG保留可编辑文字并要求查看设备安装Times New Roman。
