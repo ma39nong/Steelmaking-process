@@ -1,10 +1,16 @@
 {
   "review_base_commit": "8c8cea5",
+  "editorial_base_commit": "94cb15f",
   "main_sections": 4,
   "main_tables": 6,
   "supplement_tables": 4,
   "embedded_core_figures": 6,
   "table_checks": [
+    {
+      "item": "expression_only_revision",
+      "pass_check": true,
+      "evidence": "All six main tables and displayed mathematical formulas match 94cb15f exactly"
+    },
     {
       "item": "main_table_1",
       "pass_check": true,
@@ -54,6 +60,11 @@
       "item": "measurement_chain_delay_recovery",
       "pass_check": true,
       "evidence": "1200 matched controlled conditions per entry; accepted and error <=1 s: direct flow 1199, cumulative reconstruction 3"
+    },
+    {
+      "item": "gas_specific_delay_interpretation",
+      "pass_check": true,
+      "evidence": "CO nonmonotone medians; CO2 increasing medians; high-flow CO2 has 5 windows in heat 6C02057, 3 at 36.5 s; checked against existing records"
     },
     {
       "item": "supplement_table_S4",

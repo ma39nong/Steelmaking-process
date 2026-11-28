@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 from .delay_audit import write_csv,write_json
 
-ROOT=Path(__file__).resolve().parents[2];BASE='8c8cea5';OUT=ROOT/'problem2/final/relationships';REPORTS=ROOT/'problem2/final/reports'
+ROOT=Path(__file__).resolve().parents[2];BASE='8c8cea5';EDITORIAL_BASE='94cb15f';OUT=ROOT/'problem2/final/relationships';REPORTS=ROOT/'problem2/final/reports'
 
 
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
@@ -34,7 +34,12 @@ def run():
     assert list(current)==list('123456') and list(appendix)==['S1','S2','S3','S4']
     assert re.findall(r'^## (6\.\d+) ',body,re.M)==['6.1','6.2','6.3','6.4']
     assert not any(word in body for word in ['SHA256','用户确认','Release','NPZ','冻结','Git','V2','复现命令','暂停新增','提交'])
-    checked=[]
+    before=subprocess.check_output(['git','show',EDITORIAL_BASE+':'+str(chapter.relative_to(ROOT))],cwd=ROOT,text=True)
+    assert current==tables(before), 'academic expression changed a table'
+    formulas=re.findall(r'\\\[(.*?)\\\]',body,re.S)
+    assert len(formulas)==8 and formulas==re.findall(r'\\\[(.*?)\\\]',before,re.S), 'academic expression changed a model formula'
+    assert re.findall(r'\\\((.*?)\\\)',body,re.S)==re.findall(r'\\\((.*?)\\\)',before,re.S), 'academic expression changed inline mathematics'
+    checked=[dict(item='expression_only_revision',pass_check=True,evidence='All six main tables and displayed mathematical formulas match 94cb15f exactly')]
     def compare(label,a,b):
         assert a==b,label
         checked.append(dict(item=label,pass_check=True,evidence=f'{len(a)-1} rows; every displayed cell matches pre-edit source'))
@@ -57,6 +62,17 @@ def run():
     assert '1199/1200' in body and '3/1200' in body
     assert '各项均为窗口级候选估计' in body and all(len(r)==7 for r in current['6'])
     checked.append(dict(item='measurement_chain_delay_recovery',pass_check=True,evidence='1200 matched controlled conditions per entry; accepted and error <=1 s: direct flow 1199, cumulative reconstruction 3'))
+    bands=pd.read_csv(OUT/'delay_flow_summary.csv')
+    for gas,expected in [('co',[27.5,7.5,40.0]),('co2',[7.5,15.0,36.5])]:
+        values=[float(bands[(bands.gas==gas)&(bands.flow_band==level)].delay_median_s.iloc[0]) for level in ['low','medium','high']]
+        assert values==expected
+    accepted=pd.read_csv(ROOT/'problem2/final/delay_audit/accepted_windows.csv')
+    threshold=float(bands[bands.flow_band=='high'].flow_min_m3_s.iloc[0])
+    high=accepted[(accepted.gas=='co2')&(accepted.flow_m3_s>=threshold)]
+    assert len(high)==5 and set(high.heat_id)=={'6C02057'} and int((high.best_delay_s==36.5).sum())==3
+    assert 'CO的分层时滞呈先降后升' in body and '与题设预期的递减方向相反' in body
+    checked.append(dict(item='gas_specific_delay_interpretation',pass_check=True,evidence='CO nonmonotone medians; CO2 increasing medians; high-flow CO2 has 5 windows in heat 6C02057, 3 at 36.5 s; checked against existing records'))
+
 
     trials=pd.read_csv(ROOT/'problem2/research/weak_integral/results/trials.csv')
     q=trials.query('acquisition=="ideal" and gas_input=="raw"')
@@ -108,34 +124,34 @@ def run():
         ('不同流量下烟气时滞','6.4；表6','给出分层候选数值；未建立可靠物理函数'),
         ('补充统计与复现','附录表S1至S4；独立交接和复现文档','移出主文的证据仍可追溯')]]
     write_csv(OUT/'statement_answer_mapping.csv',mapping)
-    metadata=dict(review_base_commit=BASE,main_sections=4,main_tables=6,supplement_tables=4,embedded_core_figures=6,
+    metadata=dict(review_base_commit=BASE,editorial_base_commit=EDITORIAL_BASE,main_sections=4,main_tables=6,supplement_tables=4,embedded_core_figures=6,
                   table_checks=checked,preserved_statistical_csvs=preserved,protected_results_unchanged=True,
                   scientific_status='No validated physical flow-delay function',editorial_status='accepted',
                   note='Old numeric verification remains valid for unchanged statistical CSVs. New controlled summaries independently checked; no new model selected.')
     write_json(OUT/'paper_review_checklist.json',metadata)
     report='''# 第二问论文审查
 
-本次将正文按“连续重构—流量与排放—四类关系—时滞估计”改为四节。六张主表、六组原有核心图直接回答题目；多尺度增量、趋势系数、逐炉反积分及未采用方法对照列入四张补充表。文件改名、哈希、提交和接口验收过程均移出正文。
+正文保持“连续重构—流量与排放—四类关系—时滞估计”四节结构，本轮仅优化学术表达。六张主表、六组原有核心图直接回答题目；多尺度增量、趋势系数、逐炉反积分及未采用方法对照列入四张补充表。文件改名、哈希、提交和接口验收过程均移出正文。
 
 | 核查项 | 结果 |
 |---|---|
 | 原统计表 | 保留的五张主表与三张补充表数值匹配修改前正文；表6删除重复说明列并合并为表注，统计CSV未变 |
 | 新增方法依据 | 核对2 s烟气响应、SG窗口权衡及1200组测量链配对恢复数；区分中位数与平均召回率 |
 | 实验条件 | 脉冲保留与恒定流量伪波动分别标明条件；存储网格不解释为仪表分辨率 |
-| 时滞结论 | 保留24个窗口及流量分层；没有独立事件或递减物理函数的确认 |
+| 时滞结论 | 逐气体解释分层特征：CO先降后升，CO₂中位数递增；统计范围集中说明 |
 | 未采用方法 | 弱形式只在补充材料说明采用失败，不列为正文方法 |
 | 六组核心图 | 图像文件未变；正文按出现顺序嵌入，PDF保持Times New Roman嵌入 |
 | 模型与数据 | 第一问、正式V2、研究实验、第三问NPZ和原统计配置均未变 |
 | 生成与追溯 | 正文生成模板同步更新；重跑正文入口不会恢复工程记录 |
 
-正文采用Hampel–PCHIP、31点SG导数、梯形积分、分阶段统计和局部互相关。已有验证支持连续工艺量与总量计算，但短瞬态存在衰减，现有数据不能建立可靠的流量—时滞物理函数。该判断在正文明确给出，不以新增模型替代证据。
+正文采用Hampel–PCHIP、31点SG导数、梯形积分、分阶段统计和局部互相关。已有验证支持连续工艺量与总量计算。正文分别给出CO的非单调分层形态和CO₂的递增中位数，并保留1199/1200与3/1200的受控对照；结论采用分层候选时滞，不拟合统一递减函数。本轮六张正文表及全部显示公式与94cb15f逐项一致，未重跑实验。
 
 [正式正文](问题二_中文论文_正式章节版.md) · [补充统计与验证](问题二_补充统计与验证.md) · [逐项核对](../relationships/manuscript_review.csv) · [新增数值来源](../relationships/manuscript_evidence.csv)
 '''
     (REPORTS/'第二问最终论文审查.md').write_text(report)
     # Refresh provenance only for editorially changed outputs; preserve old execution identities.
     path=OUT/'provenance.json';prov=json.loads(path.read_text())
-    prov['editorial_revision']=dict(base_commit=BASE,source='python -m problem2.src.final_manuscript',review='python -m problem2.src.final_review',scope='Presentation only; numeric arrays, formal statistics and figures unchanged')
+    prov['editorial_revision']=dict(base_commit=EDITORIAL_BASE,source='python -m problem2.src.final_manuscript',review='python -m problem2.src.final_review',scope='Presentation only; numeric arrays, formal statistics and figures unchanged')
     for r in prov['outputs']:
         p=ROOT/r['path'];r['sha256']=sha(p)
     prov['sources'].update({str(p.relative_to(ROOT)):sha(p) for p in (ROOT/'problem2/src').glob('final_*.py')})
@@ -146,7 +162,7 @@ def run():
     manifest=OUT/'paper_freeze_manifest.json';old=json.loads(manifest.read_text())
     files={r['path'] for r in old['files']}
     files.update(str(p.relative_to(ROOT)) for p in [supp,OUT/'manuscript_evidence.csv',OUT/'manuscript_review.csv',ROOT/'problem2/src/final_manuscript.py',ROOT/'problem2/src/final_manuscript_review.py'])
-    write_json(manifest,dict(review_base_commit=BASE,execution_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
+    write_json(manifest,dict(review_base_commit=BASE,editorial_base_commit=EDITORIAL_BASE,execution_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
         previous_manifest_sha256=sha(manifest),scope='Editorial revision; current manuscript and supplement; existing scientific results unchanged',
         files=[dict(path=p,sha256=sha(ROOT/p)) for p in sorted(files) if (ROOT/p).is_file()]))
     print(f'Manuscript review passed: 4 sections; 6 main tables; 4 supplement tables; {len(preserved)} statistical CSVs unchanged; 6 figures unchanged.',flush=True)
