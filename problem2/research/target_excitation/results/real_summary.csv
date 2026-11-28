@@ -1,0 +1,5 @@
+gas,method,trials,accepted,acceptance_rate,rejection_rate,known_delay_trials,correct_recoveries,correct_recovery_rate,accepted_wrong_delay,wrong_delay_rate_all,conditional_mae_s,conditional_p90_error_s,conditional_p99_error_s,conditional_max_error_s,B_full_competitor_acceptances,guarded_correct_recoveries,guarded_wrong_delays,unshifted_target_gate_failures,accepted_selected_target_below_threshold,accepted_due_to_masked_competitors
+co,A,2241,13,0.005800981704596163,0.9941990182954038,0,0,,0,,,,,,13,0,0,34,0,0
+co,B,2241,13,0.005800981704596163,0.9941990182954038,0,0,,0,,,,,,13,0,0,34,0,0
+co2,A,2241,11,0.0049085229808121375,0.9950914770191879,0,0,,0,,,,,,11,0,0,0,0,0
+co2,B,2241,11,0.0049085229808121375,0.9950914770191879,0,0,,0,,,,,,11,0,0,0,0,0

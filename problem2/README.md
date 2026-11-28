@@ -145,3 +145,7 @@ PDF嵌入字体，SVG保留可编辑文字并要求查看设备安装Times New R
 ## 最终论文审查与冻结
 
 建模与实验结束，当前只维护正式论文和离线交接。九项审查见 [最终论文审查报告](final/reports/第二问最终论文审查.md)。正文在原八表基础上补入流量分层候选时滞表，现为九表、六组核心图；窗口统计不代表独立物理响应。正式生成后运行 `python -m problem2.src.final_review` 核对数值、图表、输入输出指纹并更新 `final/relationships/paper_freeze_manifest.json`。第三问可使用未作时滞修正的原时间轴作为基线。
+
+## 目标激励检查位置的独立 A/B 验证
+
+用户新增授权的专项代码验证见 [研究报告](research/target_excitation/results/REPORT.md)与[复现入口](research/target_excitation/README.md)。未平移目标门确会漏掉受控晚响应，但B没有改变原始十炉的24个合格窗口；7200次背景配对注入净增加261次±1秒正确恢复，源单独注入接受38→40，极弱已知复制恢复30→0。B仅保留在独立研究目录，正式V2、冻结论文和第三问接口保持不变。

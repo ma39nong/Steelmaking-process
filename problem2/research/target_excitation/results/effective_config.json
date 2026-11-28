@@ -1,0 +1,89 @@
+{
+  "formal_baseline_commit": "d08f989",
+  "dt_s": 0.5,
+  "window": 121,
+  "max_lag_samples": 120,
+  "stride": 5,
+  "min_corr": 0.35,
+  "min_separation": 0.05,
+  "min_strength_ratio": 0.05,
+  "peak_distance_samples": 5,
+  "error_tolerance_s": 1.0,
+  "seeds": [
+    6101,
+    6102,
+    6103,
+    6104,
+    6105,
+    6106,
+    6107,
+    6108,
+    6109,
+    6110,
+    6111,
+    6112,
+    6113,
+    6114,
+    6115,
+    6116,
+    6117,
+    6118,
+    6119,
+    6120,
+    6121,
+    6122,
+    6123,
+    6124,
+    6125,
+    6126,
+    6127,
+    6128,
+    6129,
+    6130
+  ],
+  "synthetic": {
+    "samples": 1001,
+    "evaluation_center_s": 200.0,
+    "delays_s": [
+      5.0,
+      15.0,
+      30.0,
+      55.0
+    ],
+    "noise_ratios": [
+      0.0,
+      0.02,
+      0.1
+    ],
+    "source_offsets_s": [
+      0.0,
+      20.0
+    ],
+    "boundary_delays_s": [
+      0.0,
+      60.0
+    ],
+    "weak_copy_delay_s": 55.0,
+    "weak_copy_gain": 0.001
+  },
+  "injection": {
+    "source_change_snr": 2.0,
+    "target_change_snr": [
+      0.5,
+      2.0,
+      8.0
+    ],
+    "delays_s": [
+      5.0,
+      15.0,
+      30.0,
+      55.0
+    ],
+    "source_offset_from_window_center_s": 20.0,
+    "design": "one uniformly chosen valid center per heat-gas-seed, reused across all doses/delays and A/B; positive packet added directly to frozen V2 input flow and gas",
+    "null_control": "one source-only injection per heat-gas-seed, not duplicated across response delays or doses",
+    "estimand": "known delay of added perturbations, not a physically labelled industrial event"
+  },
+  "B_definition": "eligible lags require shifted-target std >= 0.05 whole-record target std; source gate unchanged; competitors restricted to eligible lags",
+  "B_full_competitor_diagnostic": "same B winner, but retain all finite raw-lag competitors for separation; diagnostic only, not a third proposed formal model"
+}

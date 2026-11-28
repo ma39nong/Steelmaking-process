@@ -1,0 +1,8 @@
+{
+  "code_hypothesis_confirmed": true,
+  "adopt_B_in_formal_model": false,
+  "real_injection_net_correct_gain": 261,
+  "real_source_only_acceptance_change": 2,
+  "original_real_changed_windows": 0,
+  "conclusion": "目标激励检查位置错配是受控漏检的原因，但不是原始24个合格窗口稀少的主要原因。未平移目标门控会漏掉后续响应：专门晚响应试验正确恢复从252/360变为360/360。在十炉背景注入中，B比A净增加261次±1秒正确恢复，无注入响应接受数变化+2。原始十炉的24个窗口及其时滞完全不变；同时，已知极弱复制在A恢复30/30、B恢复0/30。本轮保留正式V2：B通过了晚响应漏检机制验证，但没有改善原始工业时滞证据。"
+}
