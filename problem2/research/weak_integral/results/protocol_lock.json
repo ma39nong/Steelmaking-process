@@ -1,0 +1,214 @@
+{
+  "code_hashes": {
+    "problem2/research/weak_integral/__init__.py": "0e00ad4e96f96b82503215682e290c63908b70c79c523a92b67707d6a51cfc93",
+    "problem2/research/weak_integral/model.py": "eca162adfa2f190acb73aee830fc6518a2b49686c59581447341f8b7781bba06",
+    "problem2/research/weak_integral/run.py": "b656cd9487e1f28ef4256b6e66e938811f48481ccf49ff4bb08dd9be5bcd126b",
+    "problem2/research/weak_integral/real.py": "7e1cdebdfb70c2697daa36acd0da0d55ce240f7eb3fa60923cd66cdcc762beec",
+    "problem2/research/weak_integral/test_weak.py": "b52ef0c437685b352d81af9cb93eb228bac40e6b3ebc8d1652e6ea18a0d347a3",
+    "problem2/research/weak_integral/present.py": "25acc07059d83c3d6561d41bd5af79cdcee49a0b82897820a56d1561e2a8e32d",
+    "problem2/research/weak_integral/config.json": "930286e7225c80b18f7feac1d933387fbf216a3023d1c4eca0a8c8fedaf8b2fe"
+  },
+  "effective_config": {
+    "formal_baseline": "d08f989",
+    "research_baseline": "fd477308bb6016f612c562c4e18479f542d1eb66",
+    "dt_s": 0.5,
+    "seeds": [
+      8101,
+      8102,
+      8103,
+      8104,
+      8105,
+      8106,
+      8107,
+      8108,
+      8109,
+      8110
+    ],
+    "durations_s": [
+      2,
+      4,
+      8,
+      16,
+      30,
+      60
+    ],
+    "controlled_shapes": [
+      "triangle",
+      "rectangle"
+    ],
+    "controlled_source_base_flows_m3_s": [
+      0,
+      5
+    ],
+    "controlled_event_phases_s": [
+      0,
+      0.15
+    ],
+    "background_shape": "triangle",
+    "source_amplitude_flow_median_multiplier": 1.0,
+    "gas_amplitude_std_multipliers": [
+      0.5,
+      2.0
+    ],
+    "source_methods": [
+      "formal",
+      "omit_oxygen_hampel",
+      "linear_oxygen_interpolation",
+      "SG11",
+      "analytic_PCHIP_derivative",
+      "secant_2s",
+      "omit_flow_clipping"
+    ],
+    "gas_methods": [
+      "formal",
+      "omit_gas_hampel",
+      "hampel_threshold12",
+      "hampel_window5",
+      "linear_gas_interpolation"
+    ],
+    "change_methods": [
+      "formal_median21",
+      "difference_only",
+      "mean21"
+    ],
+    "source_acquisition": [
+      "ideal",
+      "grid_0.01",
+      "hold1_phase0",
+      "hold1_phase0.5",
+      "hold2_phase0",
+      "hold2_phase0.5",
+      "hold2_phase1",
+      "hold2_phase1.5",
+      "empirical_hold"
+    ],
+    "gas_acquisition": [
+      "ideal",
+      "grid_0.01",
+      "empirical_hold"
+    ],
+    "acquisition_note": "0.01 is an observed stored-value lattice, not calibrated instrument resolution; all hold mechanisms are competing hypotheses. Empirical schedules reuse observed nonzero-change indices, not independently recorded device refreshes.",
+    "event_subgrid_phase_range_s": [
+      -0.25,
+      0.25
+    ],
+    "roi_padding_s": 15,
+    "onset_true_peak_fraction": 0.1,
+    "null_ripple_fraction": 0.25,
+    "source_logging_spike_increment_multiplier": 10,
+    "gas_logging_spike_std_multiplier": 10,
+    "integral_probe": {
+      "fine_dt_s": 0.05,
+      "duration_s": 400,
+      "true_delays_s": [
+        5,
+        15,
+        30
+      ],
+      "true_time_constants_s": [
+        2,
+        8
+      ],
+      "true_gain": 0.8,
+      "true_offset": 0.4,
+      "noise_std": [
+        0,
+        0.05
+      ],
+      "source_acquisition": [
+        "ideal",
+        "grid_0.01",
+        "hold1_phase0",
+        "hold1_phase0.5",
+        "hold2_phase0",
+        "hold2_phase0.5",
+        "hold2_phase1",
+        "hold2_phase1.5"
+      ],
+      "lag_grid_s": {
+        "min": 0,
+        "max": 60,
+        "step": 0.5
+      },
+      "integration_interval_s": 5,
+      "training_bounds_s": [
+        60,
+        275
+      ],
+      "validation_bounds_s": [
+        280,
+        395
+      ],
+      "source_mean_flow_std_min": 0.05,
+      "profile_loss_tolerance_fraction_of_output_variance": 0.01,
+      "profile_width_max_s": 5,
+      "validation_improvement_min": 0.1,
+      "absolute_gain_min": 0.05,
+      "correct_delay_tolerance_s": 1,
+      "gas_inputs": [
+        "raw",
+        "formal_clean"
+      ],
+      "note": "Controlled first-order model probe, plus constant-input, unrelated-output and two-stage-response challenges. Profile ranges are tolerance sets, not confidence intervals. No real physical delay labels or flow-delay regression."
+    },
+    "automatic_selection": false,
+    "evaluation_seeds": [
+      9201,
+      9202,
+      9203,
+      9204,
+      9205,
+      9206,
+      9207,
+      9208,
+      9209,
+      9210
+    ],
+    "selection": "No tuning or method selection on evaluation seeds or real acceptance counts. Primary weight fixed before first execution.",
+    "primary_weight": "sin_squared",
+    "weak_support_s": 20,
+    "weak_stride_s": 5,
+    "sensitivity_supports_s": [
+      10,
+      40
+    ],
+    "acquisition": [
+      "ideal",
+      "grid_0.01",
+      "hold1_phase0",
+      "hold2_phase0"
+    ],
+    "gas_inputs": [
+      "raw",
+      "formal_clean"
+    ],
+    "bootstrap_replicates": 199,
+    "bootstrap_seed": 182701,
+    "bootstrap_confidence": 0.95,
+    "bootstrap_scope": "Primary ideal acquisition, raw gas, noisy matched/short/slow/two_stage. Whole-record iid Gaussian parametric model bootstrap, residual sigma estimated on training only; interval is conditional on first-order model and iid noise, with empirical truth coverage reported.",
+    "success": {
+      "noiseless_matched_correct": 6,
+      "noisy_matched_correct_rate_min": 0.85,
+      "paired_seed_bootstrap_gain_lower_min": 0,
+      "time_scale_rate_degradation_max": 0,
+      "negative_acceptance_increase_max": 0.1,
+      "constant_accepted_max": 0,
+      "conditional_ci_coverage_min": 0.9,
+      "conditional_ci_median_width_max_s": 5
+    },
+    "real_data_if_pass": {
+      "training_fraction": 0.6,
+      "validation_fraction": 0.3,
+      "gap_s": 65,
+      "training_start_s": 60,
+      "bootstrap_replicates": 199,
+      "moving_block_s": 10,
+      "loho": "Gas-specific median T, K, c from the nine training heats, plus common delay selected by summed normalized training free-prediction losses; held-out heat uses only its initial validation y and O, no held-out parameter fitting. Compare a separately trained no-input model.",
+      "flow_relationship_gate": "At least six accepted heats per gas; median held-out improvement >=0.1; at least eight positive LOHO held-out improvements per gas; identifiable delay intervals <=5s. Otherwise no flow-delay fit."
+    },
+    "correct_tolerance_s": 1,
+    "notes": "Reuse fd47730 generator, acquisition, cleaning and ordinary fit. Short/slow use identical event centers and amplitudes with all source widths replaced by 4/30 seconds. No new dynamic structure. Confidence intervals are not physical-delay guarantees under mismatch."
+  },
+  "base_commit": "fd477308bb6016f612c562c4e18479f542d1eb66",
+  "rule": "Written before historical replay and before new evaluation; no post-evaluation tuning. Gate is evaluated once."
+}

@@ -1,0 +1,37 @@
+{
+  "research_baseline": "fd477308bb6016f612c562c4e18479f542d1eb66",
+  "evaluation_seeds": [9201,9202,9203,9204,9205,9206,9207,9208,9209,9210],
+  "selection": "No tuning or method selection on evaluation seeds or real acceptance counts. Primary weight fixed before first execution.",
+  "primary_weight": "sin_squared",
+  "weak_support_s": 20,
+  "weak_stride_s": 5,
+  "sensitivity_supports_s": [10,40],
+  "acquisition": ["ideal","grid_0.01","hold1_phase0","hold2_phase0"],
+  "gas_inputs": ["raw","formal_clean"],
+  "bootstrap_replicates": 199,
+  "bootstrap_seed": 182701,
+  "bootstrap_confidence": 0.95,
+  "bootstrap_scope": "Primary ideal acquisition, raw gas, noisy matched/short/slow/two_stage. Whole-record iid Gaussian parametric model bootstrap, residual sigma estimated on training only; interval is conditional on first-order model and iid noise, with empirical truth coverage reported.",
+  "success": {
+    "noiseless_matched_correct": 6,
+    "noisy_matched_correct_rate_min": 0.85,
+    "paired_seed_bootstrap_gain_lower_min": 0,
+    "time_scale_rate_degradation_max": 0,
+    "negative_acceptance_increase_max": 0.1,
+    "constant_accepted_max": 0,
+    "conditional_ci_coverage_min": 0.9,
+    "conditional_ci_median_width_max_s": 5
+  },
+  "real_data_if_pass": {
+    "training_fraction": 0.6,
+    "validation_fraction": 0.3,
+    "gap_s": 65,
+    "training_start_s": 60,
+    "bootstrap_replicates": 199,
+    "moving_block_s": 10,
+    "loho": "Gas-specific median T, K, c from the nine training heats, plus common delay selected by summed normalized training free-prediction losses; held-out heat uses only its initial validation y and O, no held-out parameter fitting. Compare a separately trained no-input model.",
+    "flow_relationship_gate": "At least six accepted heats per gas; median held-out improvement >=0.1; at least eight positive LOHO held-out improvements per gas; identifiable delay intervals <=5s. Otherwise no flow-delay fit."
+  },
+  "correct_tolerance_s": 1,
+  "notes": "Reuse fd47730 generator, acquisition, cleaning and ordinary fit. Short/slow use identical event centers and amplitudes with all source widths replaced by 4/30 seconds. No new dynamic structure. Confidence intervals are not physical-delay guarantees under mismatch."
+}
