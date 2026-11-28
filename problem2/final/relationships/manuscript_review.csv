@@ -1,0 +1,11 @@
+item,pass_check,evidence
+main_table_1,True,10 rows; every displayed cell matches pre-edit source
+main_table_3,True,4 rows; every displayed cell matches pre-edit source
+main_table_4,True,10 rows; every displayed cell matches pre-edit source
+main_table_5,True,8 rows; every displayed cell matches pre-edit source
+main_table_6,True,6 rows; every displayed cell matches pre-edit source
+supplement_table_S1,True,12 rows; every displayed cell matches pre-edit source
+supplement_table_S2,True,8 rows; every displayed cell matches pre-edit source
+supplement_table_S3,True,10 rows; every displayed cell matches pre-edit source
+main_table_2,True,Two metrics recomputed from separate explicitly defined controlled conditions
+supplement_table_S4,True,"Paired recovery counts, short CI coverage and real-data rejection checked against saved experiment outputs"

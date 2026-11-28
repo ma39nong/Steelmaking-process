@@ -145,7 +145,7 @@ def execute(cfg,config_path=None):
     outputs=[p for p in out.rglob('*') if p.is_file() and p.name!='provenance.json' and not p.name.startswith('paper_') and p.name!='statement_answer_mapping.csv']
     outputs+=list((ROOT/cfg['figure_dir']).glob('*'))
     outputs.append(ROOT/'problem2/final/results/artifact_manifest.json')
-    reports=['第一问成果审查与第二问接口说明.md','独立数学审查与修复报告.md','问题二_中文论文_正式章节版.md','第二问最终验收报告.md','数据交接与第三问使用说明.md','数据字典与接口说明.md','完整图表清单.md','实验配置与复现说明.md','problem2_section.tex']
+    reports=['第一问成果审查与第二问接口说明.md','独立数学审查与修复报告.md','问题二_中文论文_正式章节版.md','问题二_补充统计与验证.md','第二问最终验收报告.md','数据交接与第三问使用说明.md','数据字典与接口说明.md','完整图表清单.md','实验配置与复现说明.md','problem2_section.tex']
     outputs+=[ROOT/'problem2/final/reports'/name for name in reports]
     write_json(out/'provenance.json',dict(baseline_commit=cfg['baseline_commit'],execution_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
         execution_source_state='Working-tree source hashes record the executed code; execution_commit is the pre-commit HEAD.',

@@ -35,6 +35,10 @@ def error_metrics(y,pred):
     error=y-pred;return dict(mae=np.mean(abs(error)),rmse=np.sqrt(np.mean(error**2)),r2=1-np.sum(error**2)/np.sum((y-y.mean())**2))
 
 def run():
+    chapter=ROOT/'problem2/final/reports/问题二_中文论文_正式章节版.md'
+    if chapter.read_text().startswith('# 基于稳健重构'):
+        from .final_manuscript_review import run as manuscript_review
+        return manuscript_review()
     cfg=json.loads((ROOT/'problem2/configs/final_analysis.json').read_text())
     ds={}
     for p in sorted((ROOT/cfg['data_dir']).glob('*.npz')):

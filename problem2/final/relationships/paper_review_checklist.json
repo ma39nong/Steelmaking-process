@@ -1,100 +1,80 @@
 {
-  "audited_commit": "82582ad",
-  "checklist": [
+  "review_base_commit": "8c8cea5",
+  "main_sections": 4,
+  "main_tables": 6,
+  "supplement_tables": 4,
+  "embedded_core_figures": 6,
+  "table_checks": [
     {
-      "item": 1,
-      "requirement": "逐条核对题目原文与正文回答",
-      "status": "通过，动态规律保留限制",
-      "evidence": "题目工艺变量、六曲线、四关系、候选时滞和交接均有对应段落"
+      "item": "main_table_1",
+      "pass_check": true,
+      "evidence": "10 rows; every displayed cell matches pre-edit source"
     },
     {
-      "item": 2,
-      "requirement": "检查不同流量区间的描述性时滞",
-      "status": "补齐后通过",
-      "evidence": "新增6行表8；边界取全部2241候选中心流量三分位数，24窗口全部归属"
+      "item": "main_table_3",
+      "pass_check": true,
+      "evidence": "4 rows; every displayed cell matches pre-edit source"
     },
     {
-      "item": 3,
-      "requirement": "核对原八张统计表所有数值",
-      "status": "通过",
-      "evidence": "3554个数值单元重新计算核对；原统计CSV逐字节保持，接口原表8改编号为表9"
+      "item": "main_table_4",
+      "pass_check": true,
+      "evidence": "10 rows; every displayed cell matches pre-edit source"
     },
     {
-      "item": 4,
-      "requirement": "核对六组核心图和图注",
-      "status": "通过",
-      "evidence": "六组PNG/PDF逐字节一致，SVG仅导出日期元数据变化；检查图源、图注、版宽和字体嵌入"
+      "item": "main_table_5",
+      "pass_check": true,
+      "evidence": "8 rows; every displayed cell matches pre-edit source"
     },
     {
-      "item": 5,
-      "requirement": "核对数学公式符号和物理单位",
-      "status": "通过",
-      "evidence": "氧量与排放m³、流量m³/s、时滞s；耗氧进度无量纲；31点跨度15秒"
+      "item": "main_table_6",
+      "pass_check": true,
+      "evidence": "6 rows; every displayed cell matches pre-edit source"
     },
     {
-      "item": 6,
-      "requirement": "检查中文章节重复论述",
-      "status": "通过",
-      "evidence": "无重复段落；各处限制分别对应求导、关系、时滞和接口，保留必要边界说明"
+      "item": "supplement_table_S1",
+      "pass_check": true,
+      "evidence": "12 rows; every displayed cell matches pre-edit source"
     },
     {
-      "item": 7,
-      "requirement": "核对第三问接口与离线限制",
-      "status": "通过",
-      "evidence": "570字段比较、480检查、第一问10文件身份及时间轴均核验；无需时滞修正的原时间轴可直接交接"
+      "item": "supplement_table_S2",
+      "pass_check": true,
+      "evidence": "8 rows; every displayed cell matches pre-edit source"
     },
     {
-      "item": 8,
-      "requirement": "确认Git历史数据哈希和复现说明",
-      "status": "通过",
-      "evidence": "六个历史提交祖先关系成立；输入与输出指纹通过；原模型和历史研究未变"
+      "item": "supplement_table_S3",
+      "pass_check": true,
+      "evidence": "10 rows; every displayed cell matches pre-edit source"
     },
     {
-      "item": 9,
-      "requirement": "检查正式结论是否超出实验支持",
-      "status": "通过，物理关系仍未验证",
-      "evidence": "无因果、单调规律或独立事件准确率声明；新增表不计算事件置信区间"
+      "item": "main_table_2",
+      "pass_check": true,
+      "evidence": "Two metrics recomputed from separate explicitly defined controlled conditions"
+    },
+    {
+      "item": "supplement_table_S4",
+      "pass_check": true,
+      "evidence": "Paired recovery counts, short CI coverage and real-data rejection checked against saved experiment outputs"
     }
   ],
-  "completed": 9,
-  "total": 9,
-  "rendered_tables_checked": 9,
-  "numeric_cells_verified": 3554,
   "preserved_statistical_csvs": [
-    "problem2/final/relationships/figure_captions.csv",
-    "problem2/final/relationships/flow_review.csv",
-    "problem2/final/relationships/heat_summary.csv",
-    "problem2/final/relationships/increment_correlations.csv",
-    "problem2/final/relationships/interface_checks.csv",
-    "problem2/final/relationships/interface_field_comparison.csv",
-    "problem2/final/relationships/level_correlations.csv",
     "problem2/final/relationships/pooled_trends.csv",
-    "problem2/final/relationships/q1_interface_identity.csv",
-    "problem2/final/relationships/stage_aggregate.csv",
-    "problem2/final/relationships/stage_statistics.csv",
+    "problem2/final/relationships/interface_checks.csv",
     "problem2/final/relationships/trend_loho.csv",
-    "problem2/final/relationships/trend_parameters.csv"
+    "problem2/final/relationships/flow_review.csv",
+    "problem2/final/relationships/paper_numeric_verification.csv",
+    "problem2/final/relationships/increment_correlations.csv",
+    "problem2/final/relationships/interface_field_comparison.csv",
+    "problem2/final/relationships/heat_summary.csv",
+    "problem2/final/relationships/trend_parameters.csv",
+    "problem2/final/relationships/q1_interface_identity.csv",
+    "problem2/final/relationships/level_correlations.csv",
+    "problem2/final/relationships/stage_statistics.csv",
+    "problem2/final/relationships/stage_aggregate.csv",
+    "problem2/final/relationships/figure_captions.csv",
+    "problem2/final/relationships/delay_flow_summary.csv"
   ],
-  "preserved_core_exports": [
-    "problem2/final/figures/oxygen_instantaneous_relationships.png",
-    "problem2/final/figures/oxygen_instantaneous_relationships.svg",
-    "problem2/final/figures/oxygen_instantaneous_relationships.pdf",
-    "problem2/final/figures/oxygen_cumulative_relationships.png",
-    "problem2/final/figures/oxygen_cumulative_relationships.svg",
-    "problem2/final/figures/oxygen_cumulative_relationships.pdf",
-    "problem2/final/figures/oxygen_stage_statistics.png",
-    "problem2/final/figures/oxygen_stage_statistics.svg",
-    "problem2/final/figures/oxygen_stage_statistics.pdf",
-    "problem2/final/figures/oxygen_trend_diagnostics.png",
-    "problem2/final/figures/oxygen_trend_diagnostics.svg",
-    "problem2/final/figures/oxygen_trend_diagnostics.pdf",
-    "problem2/final/figures/oxygen_flow_review.png",
-    "problem2/final/figures/oxygen_flow_review.svg",
-    "problem2/final/figures/oxygen_flow_review.pdf",
-    "problem2/final/figures/ten_heats_six_process_curves.png",
-    "problem2/final/figures/ten_heats_six_process_curves.svg",
-    "problem2/final/figures/ten_heats_six_process_curves.pdf"
-  ],
-  "scientific_limit": "No confirmed independent physical events; no validated flow-delay law",
-  "status": "reviewed offline deliverable; algorithms frozen"
+  "protected_results_unchanged": true,
+  "scientific_status": "No validated physical flow-delay function",
+  "editorial_status": "accepted",
+  "note": "Old numeric verification remains valid for unchanged statistical CSVs. New controlled summaries independently checked; no new model selected."
 }
