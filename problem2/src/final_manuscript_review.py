@@ -59,7 +59,7 @@ def run():
     paired=chain.pivot(index=keys,columns='method',values='correct')
     assert len(paired)==1200 and paired.notna().all().all()
     assert int(paired.direct_flow.sum())==1199 and int(paired.raw_counter_chain.sum())==3
-    assert '1199/1200' in body and '3/1200' in body
+    assert '1200组配对受控条件中有1199组正确恢复时滞' in body and '正确恢复数降至3组' in body
     assert '各项均为窗口级候选估计' in body and all(len(r)==7 for r in current['6'])
     checked.append(dict(item='measurement_chain_delay_recovery',pass_check=True,evidence='1200 matched controlled conditions per entry; accepted and error <=1 s: direct flow 1199, cumulative reconstruction 3'))
     bands=pd.read_csv(OUT/'delay_flow_summary.csv')
@@ -70,7 +70,7 @@ def run():
     threshold=float(bands[bands.flow_band=='high'].flow_min_m3_s.iloc[0])
     high=accepted[(accepted.gas=='co2')&(accepted.flow_m3_s>=threshold)]
     assert len(high)==5 and set(high.heat_id)=={'6C02057'} and int((high.best_delay_s==36.5).sum())==3
-    assert 'CO的分层时滞呈先降后升' in body and '与题设预期的递减方向相反' in body
+    assert '呈先减小后增大的非单调特征' in body and '表现为逐层增大' in body
     checked.append(dict(item='gas_specific_delay_interpretation',pass_check=True,evidence='CO nonmonotone medians; CO2 increasing medians; high-flow CO2 has 5 windows in heat 6C02057, 3 at 36.5 s; checked against existing records'))
 
 
@@ -97,6 +97,7 @@ def run():
                'problem2/research','problem2/final/delay_audit','problem2/configs/final_analysis.json']
     assert not subprocess.check_output(['git','diff',BASE,'--',*protected],cwd=ROOT)
     summary=pd.read_csv(OUT/'heat_summary.csv')
+    assert (summary.co_total_m3>summary.co2_total_m3).all(), 'CO/CO2 total ordering changed'
     for r in summary.to_dict('records'):
         assert sha(ROOT/'problem2/final/data'/(r['heat_id']+'_q2_processed.npz'))==r['npz_sha256']
     figures=re.findall(r'!\[[^\]]*\]\(([^)]+)\)',body);assert len(figures)==6
@@ -144,7 +145,7 @@ def run():
 | 模型与数据 | 第一问、正式V2、研究实验、第三问NPZ和原统计配置均未变 |
 | 生成与追溯 | 正文生成模板同步更新；重跑正文入口不会恢复工程记录 |
 
-正文采用Hampel–PCHIP、31点SG导数、梯形积分、分阶段统计和局部互相关。已有验证支持连续工艺量与总量计算。正文分别给出CO的非单调分层形态和CO₂的递增中位数，并保留1199/1200与3/1200的受控对照；结论采用分层候选时滞，不拟合统一递减函数。本轮六张正文表及全部显示公式与94cb15f逐项一致，未重跑实验。
+正文采用Hampel–PCHIP、31点SG导数、梯形积分、分阶段统计和局部互相关。已有验证支持连续工艺量与总量计算。正文分别给出CO的非单调分层形态和CO₂的递增中位数，并保留1200组配对条件中正确恢复1199组与3组的受控对照；结论采用分层候选时滞，不拟合统一递减函数。本轮六张正文表及全部显示公式与94cb15f逐项一致，未重跑实验。
 
 [正式正文](问题二_中文论文_正式章节版.md) · [补充统计与验证](问题二_补充统计与验证.md) · [逐项核对](../relationships/manuscript_review.csv) · [新增数值来源](../relationships/manuscript_evidence.csv)
 '''

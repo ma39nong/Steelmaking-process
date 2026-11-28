@@ -73,7 +73,9 @@ m_i=\operatorname{median}_{j\in\mathcal N_i}x_j,\qquad
 
 当 \(|x_i-m_i|>6\sigma_i\) 时标记异常；局部尺度为零时，结合两侧平台和邻域尺度识别孤立尖峰，非有限值及负值同时剔除。利用其余观测构造PCHIP连续函数 \(\widehat O_h(t)\) 和 \(\widehat C_{g,h}(t)\)。该插值保持节点取值及局部单调形态，避免普通三次样条在平台和突变附近产生额外过冲，并对重构值施加非负约束。
 
-'''+f'''90组孤立尖峰注入试验的平均召回率为{100*e['spike_recall']:.1f}%。在2 s低幅烟气响应试验中，CO与CO₂的峰值保留中位数由采集后的{100*e['co_acquisition_only']:.1f}%和{100*e['co2_acquisition_only']:.1f}%降至清洗后的{100*e['co_formal']:.1f}%和{100*e['co2_formal']:.1f}%。缩小至5点窗口虽能改善短峰保留，但另一组20个已知强孤立尖峰仅检出{e['hampel_window5_spike_detected']}个，9点窗口全部检出。这一检测能力与短峰保留的权衡支持采用9点窗口进行工艺信号重构；具体注入条件见补充材料。
+'''+f'''9点Hampel在90组孤立尖峰注入试验中的平均召回率为{100*e['spike_recall']:.1f}%；在另一组20个已知强孤立尖峰对照中全部检出，5点窗口检出{e['hampel_window5_spike_detected']}个。9点窗口在该对照中具有更强的尖峰抑制能力，因此选用该参数进行连续信号重构。
+
+在2 s低幅烟气响应试验中，CO与CO₂的峰值保留中位数由采集后的{100*e['co_acquisition_only']:.1f}%和{100*e['co2_acquisition_only']:.1f}%降至清洗后的{100*e['co_formal']:.1f}%和{100*e['co2_formal']:.1f}%。这一结果表明异常剔除同时削弱了短时响应，动态信息保留在6.4节进一步检验。具体注入条件见补充材料。
 
 '''+r'''## 6.2 氧枪流量与烟气排放量
 
@@ -90,7 +92,7 @@ m_i=\operatorname{median}_{j\in\mathcal N_i}x_j,\qquad
 '''+compare+r'''
 表注：两项指标来自不同受控条件，分别衡量4 s脉冲峰值保留与恒定流量下的伪波动；后者为估计流量标准差与真流量之比。采集保持机制为实验假设，详细设置见补充材料。
 
-'''+f'''31点SG的恒定流量伪波动中位数为{100*e['formal_ripple']:.1f}%，11点SG虽提高短峰保留率，却使伪波动增至{100*e['SG11_ripple']:.1f}%。综合流量稳定性与累计量一致性，选取31点SG进行流量重构，十炉反积分相对误差绝对值均小于0.08%。反积分结果验证了重构流量与累计耗氧量的总量一致性，动态时序保真另由6.4节的受控对照检验。
+'''+f'''31点SG的恒定流量伪波动中位数为{100*e['formal_ripple']:.1f}%，低于11点方案的{100*e['SG11_ripple']:.1f}%；在另一组4 s脉冲试验中，两方案的峰值保留率分别为{100*e['formal_peak']:.1f}%和{100*e['SG11_peak']:.1f}%。缩短窗口改善短峰保留，同时增大恒定流量下的伪波动。综合流量稳定性与累计量一致性，选取31点SG进行流量重构，十炉反积分相对误差绝对值均小于0.08%。
 
 '''+r'''烟气累计排放量定义为
 
@@ -105,7 +107,7 @@ m_i=\operatorname{median}_{j\in\mathcal N_i}x_j,\qquad
 \frac{\widehat C_{g,h}(t_{j-1})+\widehat C_{g,h}(t_j)}{2}(t_j-t_{j-1}).
 \]
 
-累计量从记录起点计，单位为m³，十炉末端总量见表1。图1给出氧枪流量、累计耗氧量、CO与CO₂瞬时流量及累计排放量六类连续曲线；图2展示累计记录的更新结构和平滑导数的尺度差异。
+累计量从记录起点计，单位为m³。十炉CO累计排放量均高于CO₂，各炉末端总量见表1。图1给出氧枪流量、累计耗氧量、CO与CO₂瞬时流量及累计排放量六类连续曲线；图2展示累计记录的更新结构和平滑导数的尺度差异。
 
 ![六类连续工艺曲线](../figures/ten_heats_six_process_curves.png)
 
@@ -117,7 +119,7 @@ m_i=\operatorname{median}_{j\in\mathcal N_i}x_j,\qquad
 
 ## 6.3 累计耗氧量与四类烟气变量的关系
 
-以累计耗氧量为自变量，分别研究CO、CO₂瞬时流量及其累计排放量，依次考察全程相关、局部增量、阶段特征和跨炉趋势。统计以炉次为单位：相关系数逐炉计算后汇总，阶段区间采用2000次整炉Bootstrap，合并拟合各炉等权并以留一炉次法评价。耗氧进度使用末端耗氧总量归一化，趋势模型的适用范围为观测进度区间内的离线描述。
+以累计耗氧量为自变量，分别研究CO、CO₂瞬时流量及其累计排放量。先逐炉计算Pearson与Spearman相关系数并汇总炉间范围，再通过增量、阶段比较与趋势拟合分析四类关系的变化特征。
 
 为识别累计变量共同增长的影响，构造末端总排放量相同的恒定速率参照
 
@@ -151,7 +153,7 @@ p_h(t)=\frac{\widehat O_h(t)-\widehat O_h(0)}{\widehat O_h(T_h)-\widehat O_h(0)}
 表4 五个等耗氧阶段的烟气排放统计
 
 '''+t['t4']+r'''
-CO阶段平均流量中位数由第一阶段2.11 m³/s升至第三阶段42.61 m³/s，随后保持高位；CO₂在第二阶段达到19.58 m³/s，之后下降。CO₂的阶段转折使不同进程中的变化方向相互抵消，解释了其整炉线性相关较弱的现象。
+CO阶段平均流量中位数由第一阶段2.11 m³/s升至第三阶段42.61 m³/s，随后保持高位；CO₂在第二阶段达到19.58 m³/s，之后下降，呈先升后降的阶段特征。两种气体具有不同的耗氧进程形态，CO₂的阶段转折解释了其全程线性相关较弱的现象。
 
 在 \(p\in[0,1]\) 内，用线性与二次多项式描述上述进程：
 
@@ -164,7 +166,9 @@ f_1(p)=c_0+c_1p,\qquad f_2(p)=c_0+c_1p+c_2p^2.
 表5 线性与二次耗氧趋势的留一炉次验证
 
 '''+t['t6']+r'''
-CO瞬时流量的二次趋势将宏平均MAE由8.923降至6.204 m³/s，R²由0.596提高至0.792；CO₂的R²由−0.044提高至0.309，正R²炉数由2增至9。二次项有效刻画了CO₂阶段转折。累计CO₂的两种趋势MAE接近，增加二次项的跨炉收益较小。综合四类关系，CO表现为上升后维持高位，CO₂表现为先升后降；累计排放总量由6.2节的积分计算确定。
+CO瞬时流量的二次趋势将宏平均MAE由8.923降至6.204 m³/s，R²由0.596提高至0.792；CO₂的R²由−0.044提高至0.309，正R²炉数由2增至9。二次项有效刻画了CO₂阶段转折。累计CO₂的两种趋势MAE接近，增加二次项的跨炉收益较小。因此，以二次趋势刻画瞬时流量的阶段转折，以6.2节的积分结果确定累计排放总量。
+
+阶段置信区间采用2000次整炉Bootstrap；趋势拟合使各炉总权重相等，并以留一炉次法评价跨炉表现。耗氧进度由末端耗氧总量归一化，故上述趋势用于观测进度区间内的离线描述。
 
 ![耗氧阶段统计](../figures/oxygen_stage_statistics.png)
 
@@ -190,17 +194,13 @@ CO瞬时流量的二次趋势将宏平均MAE由8.923降至6.204 m³/s，R²由0.
 表6 不同氧枪流量下的候选烟气时滞
 
 '''+t['delaytable']+r'''
-表注：各项均为窗口级候选估计。
+表注：各项均为窗口级候选估计，重叠窗口不作为独立事件计数。
 
-CO的分层时滞呈先降后升：低流量组中位数为27.5 s，中流量组降至7.5 s，高流量组升至40.0 s。低流量组包含11个窗口、覆盖5炉，时滞分布为6.0–35.0 s；中、高流量组各有1个窗口。
+由表6可知，低、中、高流量区间内CO的候选时滞中位数分别为27.5、7.5和40.0 s，呈先减小后增大的非单调特征；CO₂的候选时滞中位数分别为7.5、15.0和36.5 s，表现为逐层增大。两种气体均未呈现题设所描述的流量—时滞递减关系。其中，高流量区间的两类烟气估计均来自炉次6C02057，炉次差异与流量效应尚未分离。
 
-CO₂的分层时滞中位数依次为7.5、15.0和36.5 s，呈随流量层级升高而增大的排序，与题设预期的递减方向相反。低流量组4个窗口的估计均为7.5 s，中流量组2个窗口分布于7.5–22.5 s，高流量组5个窗口分布于7.5–36.5 s，且全部来自6C02057炉。其中3个窗口的估计同为36.5 s，决定了该组中位数。
+'''+f'''进一步考察信号重构对时滞估计的影响。在相同烟气注入与清洗条件下，4 s供氧脉冲直接叠加至流量序列时，{e['direct_flow_conditions']}组配对受控条件中有{e['direct_flow_correct']}组正确恢复时滞；将脉冲积分为累计耗氧量并经过重构后，正确恢复数降至{e['raw_counter_chain_correct']}组。该结果表明，累计量重构过程对短时动态信息的保留能力是影响局部时滞辨识的重要因素。
 
-上述统计的解释范围由窗口支持与炉次覆盖共同确定：相邻窗口共享约95.9%的源数据，CO与CO₂分别形成7个和5个源重叠组，分组数量不作为独立事件样本量。表6描述给定炉次与阶段构成下的相关峰迟延；独立物理响应事件的确认需要操作记录与仪器时间校准。
-
-'''+f'''为检验信号重构对时滞辨识的影响，在相同烟气注入与清洗条件下比较两种输入入口。4 s已知供氧脉冲直接叠加至流量序列时，时滞正确恢复数为{e['direct_flow_correct']}/{e['direct_flow_conditions']}；先积分成累计耗氧量并经过重构链后，降至{e['raw_counter_chain_correct']}/{e['raw_counter_chain_conditions']}。这一对照量化了重构链对4 s动态信息的显著削弱，说明累计总量一致性与短时动态保真需要分别检验。
-
-本数据中的CO候选时滞非单调，CO₂候选时滞按流量层级递增，两者均与统一单调递减函数的描述不符。本文据此以表6的分层候选时滞作为最终统计结果，第三问采用原始时间轴建立预测基线。
+综合分层统计与受控验证结果，本文采用分流量区间的候选统计时滞描述烟气响应，不建立缺乏数据支持的统一递减函数。第三问以原始时间轴为基准，进一步利用炉口光谱与烟气信号的时间关联开展预测建模。
 '''
     supplement=r'''# 问题二补充统计与验证
 
@@ -266,11 +266,15 @@ def english_section():
 \subsection{Process variables and continuous reconstruction}
 We use ten heats sampled every 0.5 s. Cumulative oxygen $O_h$ is measured in $\mathrm{m^3}$ and the CO and CO$_2$ fields represent instantaneous volume rates $C_{g,h}$ in $\mathrm{m^3/s}$. A nine-point Hampel detector with threshold six removes isolated outliers, followed by nonnegative PCHIP reconstruction. Mean recall in 90 specified spike-injection trials is 96.5\%. For 2 s triangular gas responses of amplitude one-half of the record standard deviation, median peak retention after the stored-value grid is 86.9\% for CO and 87.5\% for CO$_2$; after cleaning it is 28.6\% and 37.7\%. A five-point detector preserves more short responses but detects only 15 of 20 strong logging spikes, versus 20 for the nine-point method. We retain the latter for process curves and cumulative quantities.
 \subsection{Flow and emission calculations}
-Oxygen flow is estimated using a nonnegative 31-point cubic Savitzky--Golay derivative, spanning 15 s. In separate controlled conditions, shortening the window to 11 points raises median 4 s pulse retention from 35.0\% to 77.3\%, but increases spurious variation for constant flow under hypothesized recorded holds from 1.6\% to 11.8\%. Reintegration errors for all ten heats are below 0.08\%. This supports total-volume consistency, while short-transient timing remains affected by smoothing. Gas emissions are evaluated by trapezoidal integration of $C_{g,h}$ from the record start.
+Oxygen flow is estimated using a nonnegative 31-point cubic Savitzky--Golay derivative, spanning 15 s. In separate controlled conditions, shortening the window to 11 points raises median 4 s pulse retention from 35.0\% to 77.3\%, but increases spurious variation for constant flow under hypothesized recorded holds from 1.6\% to 11.8\%. Reintegration errors for all ten heats are below 0.08\%. Together these results support the 31-point choice for stable flow reconstruction; short-pulse timing is evaluated in the delay experiment. Gas emissions are evaluated by trapezoidal integration of $C_{g,h}$ from the record start.
 \subsection{Four oxygen--emission relationships}
-Within-heat Pearson and Spearman coefficients, nonoverlapping increments, and five equal oxygen-progress stages distinguish overall progress from local dynamics. The normalized progress is $p_h=(O_h-O_h(0))/(O_h(T_h)-O_h(0))$. CO increases from a first-stage median of 2.11 to a third-stage median of 42.61 $\mathrm{m^3/s}$, then stays high. CO$_2$ peaks in stage two at 19.58 $\mathrm{m^3/s}$. Equal-heat-weight quadratic trends improve leave-one-heat-out $R^2$ from 0.596 to 0.792 for CO and from $-0.044$ to 0.309 for CO$_2$. A constant-emission comparator also has cumulative correlation above 0.997, so cumulative correlation alone does not identify a dynamic response. Progress uses the final oxygen total; validation therefore describes retrospective trends.
+Within-heat Pearson and Spearman coefficients, nonoverlapping increments, and five equal oxygen-progress stages distinguish overall progress from local dynamics. The normalized progress is $p_h=(O_h-O_h(0))/(O_h(T_h)-O_h(0))$. CO increases from a first-stage median of 2.11 to a third-stage median of 42.61 $\mathrm{m^3/s}$, then stays high. CO$_2$ peaks in stage two at 19.58 $\mathrm{m^3/s}$. Equal-heat-weight quadratic trends improve leave-one-heat-out $R^2$ from 0.596 to 0.792 for CO and from $-0.044$ to 0.309 for CO$_2$. A constant-emission comparator also has cumulative correlation above 0.997, illustrating the high correlation produced by common accumulation. Progress uses the final oxygen total; validation therefore describes retrospective trends.
 \subsection{Delay estimates at different oxygen flows}
-Local correlations of detrended first differences use 121-point windows, 2.5 s center spacing, and a 0--60 s lag search. Dynamic excitation, correlation at least 0.35, peak separation at least 0.05, and an interior optimum define acceptance. CO has 13 accepted windows and CO$_2$ has 11 out of 2241 centers. CO median lags decrease from 27.5 to 7.5 s and then rise to 40.0 s: the pattern is nonmonotone, with eleven low-flow windows and one window in each higher-flow group. CO$_2$ medians increase from 7.5 to 15.0 and 36.5 s, opposite to the expected decreasing ordering. Its high-flow group spans 7.5--36.5 s and all five windows come from heat 6C02057. These statistics describe overlapping correlation windows with unequal heat coverage; physical response delays require independent event and timing calibration. In paired 4 s pulse injections with the same gas input and cleaning, accepted delay recovery within 1 s falls from 1199/1200 for direct flow addition to 3/1200 after cumulative-oxygen reconstruction. This quantifies the loss of short dynamics through reconstruction and separates temporal fidelity from total-volume consistency. We report the flow-stratified candidate lags as the final descriptive results and retain the original time axis for the prediction baseline in Problem 3.
+Local correlations of detrended first differences use 121-point windows, 2.5 s center spacing, and a 0--60 s lag search. Dynamic excitation, correlation at least 0.35, peak separation at least 0.05, and an interior optimum define acceptance. CO has 13 accepted windows and CO$_2$ has 11 out of 2241 centers. CO median lags of 27.5, 7.5 and 40.0 s form a nonmonotone ordering; CO$_2$ medians of 7.5, 15.0 and 36.5 s increase across flow groups. Neither follows the expected decreasing relation. Both high-flow gas groups come from heat 6C02057, so heat differences and flow effects remain confounded. These statistics describe correlation windows rather than independent response events.
+
+With identical gas injection and cleaning, 1199 of 1200 paired controlled conditions recover the known delay when a 4 s oxygen pulse is added directly to flow. Recovery drops to 3 when the pulse is first integrated into cumulative oxygen and then reconstructed. This identifies preservation of short dynamics through cumulative reconstruction as an important factor in local delay identification.
+
+We report flow-stratified candidate delays as the final descriptive results rather than fitting an unsupported common decreasing function. Problem 3 retains the original time axis to model temporal associations between furnace-mouth spectra and gas signals.
 '''
 
 

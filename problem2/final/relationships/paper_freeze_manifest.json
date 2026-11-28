@@ -1,8 +1,8 @@
 {
   "review_base_commit": "8c8cea5",
   "editorial_base_commit": "94cb15f",
-  "execution_commit": "94cb15ff91b511bb77a8a5f36535d735bb33233c",
-  "previous_manifest_sha256": "543c01fed0d449e77bb760e59a7bae2a2c7911ed70cc9de4c99a06feafbaaf62",
+  "execution_commit": "709437b8dc901070548a0c11574837158acd13f2",
+  "previous_manifest_sha256": "6f25c809cc5a8bae70809b5fdbb2f0b2bef142fe2c0d46e1e9bab6a90556f6a4",
   "scope": "Editorial revision; current manuscript and supplement; existing scientific results unchanged",
   "files": [
     {
@@ -307,7 +307,7 @@
     },
     {
       "path": "problem2/final/relationships/provenance.json",
-      "sha256": "32cfacd617bd620619b478e2d30a223265132f5aed75f13b099b7abac2fd3c3b"
+      "sha256": "fd908d5be9fa752bd64e3ba9bd08fee63cc932b240c55fd4ef67666bfdc3f92d"
     },
     {
       "path": "problem2/final/relationships/q1_interface_identity.csv",
@@ -335,7 +335,7 @@
     },
     {
       "path": "problem2/final/reports/problem2_section.tex",
-      "sha256": "df43ac5005cdc08d068ff0655def110d50ce512e70a634abc690cfb9a5f947f8"
+      "sha256": "41b11cca23dc3cb0a86517398d4fa9ea12d12f7a759f1e9f381e93d21ff41d47"
     },
     {
       "path": "problem2/final/reports/完整图表清单.md",
@@ -363,7 +363,7 @@
     },
     {
       "path": "problem2/final/reports/第二问最终论文审查.md",
-      "sha256": "6acef01f565ecf238d6ce66b821e6c6bbaaed54722314f050dc3fa2da1fa7c68"
+      "sha256": "6f0c1a7da833edb119a3d3edb856b140962bcb69d0458ada0b64e859ca36ce1e"
     },
     {
       "path": "problem2/final/reports/第二问最终验收报告.md",
@@ -375,7 +375,7 @@
     },
     {
       "path": "problem2/final/reports/问题二_中文论文_正式章节版.md",
-      "sha256": "1e703e0fc5fff15b76502107486a1ce4c8d79b227b2cea02cb3375d3e4caa342"
+      "sha256": "bcf41e26ab712893724586c1a6efe65a8fa788d516168a07757f24f6f207314a"
     },
     {
       "path": "problem2/final/reports/问题二_补充统计与验证.md",
@@ -399,11 +399,11 @@
     },
     {
       "path": "problem2/src/final_manuscript.py",
-      "sha256": "161f519ce85522ed6701ab496369258d031fffa5b5729c2af0f349c8027c6c0b"
+      "sha256": "742ac71136223b61888784e92739f262eb9dc59a21b2546e67b0363c41cfe0ef"
     },
     {
       "path": "problem2/src/final_manuscript_review.py",
-      "sha256": "69237f8ca4e53aa6eefdc21591720dddd73a796b4bf206d13c272496045102fe"
+      "sha256": "6e4e755f3fc44d0260b6a70516eff866d58aeff7f28672bf48b9c4a7797d7536"
     },
     {
       "path": "problem2/src/final_review.py",
