@@ -8,4 +8,5 @@ supplement_table_S1,True,12 rows; every displayed cell matches pre-edit source
 supplement_table_S2,True,8 rows; every displayed cell matches pre-edit source
 supplement_table_S3,True,10 rows; every displayed cell matches pre-edit source
 main_table_2,True,Two metrics recomputed from separate explicitly defined controlled conditions
+measurement_chain_delay_recovery,True,"1200 matched controlled conditions per entry; accepted and error <=1 s: direct flow 1199, cumulative reconstruction 3"
 supplement_table_S4,True,"Paired recovery counts, short CI coverage and real-data rejection checked against saved experiment outputs"

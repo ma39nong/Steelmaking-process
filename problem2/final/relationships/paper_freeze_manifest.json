@@ -1,7 +1,7 @@
 {
   "review_base_commit": "8c8cea5",
-  "execution_commit": "8c8cea5a86452e14afdc635927addb6b374891ae",
-  "previous_manifest_sha256": "8e16327bfe7d5061f5a555aa7eb124a05c8b62c454c3ed4c06f7b6c00bd497fc",
+  "execution_commit": "dca02a1d7f3817173c1b33bb4e81dba86fd7d354",
+  "previous_manifest_sha256": "d6edaefe577ea44537ecb62f8aa0627b791c624c2649e0c74c8d2d7f3aa02d33",
   "scope": "Editorial revision; current manuscript and supplement; existing scientific results unchanged",
   "files": [
     {
@@ -286,11 +286,11 @@
     },
     {
       "path": "problem2/final/relationships/manuscript_evidence.csv",
-      "sha256": "d2f8a37b6bd8067dca56c8edba4a08c9468559f35c6cbaf1eaafdd182080066a"
+      "sha256": "46c27dcec2f0620ce533c0d759838053fd37d97896f2e8494fbf515a7af28abb"
     },
     {
       "path": "problem2/final/relationships/manuscript_review.csv",
-      "sha256": "3d884489450355ddf262f508c781aacc2f33d33feaba82e744de2a2d4c38e3e9"
+      "sha256": "c02e24372ab77134de8ed0da46f9213b0a8f25243c05a6fed8a65bd322158c53"
     },
     {
       "path": "problem2/final/relationships/paper_numeric_verification.csv",
@@ -298,7 +298,7 @@
     },
     {
       "path": "problem2/final/relationships/paper_review_checklist.json",
-      "sha256": "cd4cedc5f96619a4c5c8956e2b4ad1b0f45d328f99af8a21775a1d85e658e8c2"
+      "sha256": "23665a4dcf4dd72857584e27111f56dd077f25f3adab7348091ec03ccf55b4b2"
     },
     {
       "path": "problem2/final/relationships/pooled_trends.csv",
@@ -306,7 +306,7 @@
     },
     {
       "path": "problem2/final/relationships/provenance.json",
-      "sha256": "e7f6ea64575a469dbb9c858cb76ba3a65ab6247de9a1bca06ef195c8a8ed70fe"
+      "sha256": "a9a2775904e63b54a57d04209a2cfc4faf108b09e3aa7dd09b6493b4795905ef"
     },
     {
       "path": "problem2/final/relationships/q1_interface_identity.csv",
@@ -334,7 +334,7 @@
     },
     {
       "path": "problem2/final/reports/problem2_section.tex",
-      "sha256": "c4a5849fb9042a0fc3182c3bd5a544af41f88f774ac0e922b90f54788ff0e788"
+      "sha256": "43e9df3b8ea8c6128c43227b2104e0e0385546cc6b75533107f859c3c2ec090b"
     },
     {
       "path": "problem2/final/reports/完整图表清单.md",
@@ -362,7 +362,7 @@
     },
     {
       "path": "problem2/final/reports/第二问最终论文审查.md",
-      "sha256": "de7ac319927b46319c2ace0738fcbad6caf5ba976fe3c1111110d7cd9cb86fc7"
+      "sha256": "a8f1e16268855b986f791cc757154d809762f63d32f9177a28f2089a92df7182"
     },
     {
       "path": "problem2/final/reports/第二问最终验收报告.md",
@@ -374,11 +374,11 @@
     },
     {
       "path": "problem2/final/reports/问题二_中文论文_正式章节版.md",
-      "sha256": "9087d6c10092db5968bf707d2038c4452cf3c4a57aa0d2dd431c6f07efe6e96a"
+      "sha256": "0502d4e010a51311164c405937c2e601299fe4aa34d3a5ccd1da85cb08aa31b9"
     },
     {
       "path": "problem2/final/reports/问题二_补充统计与验证.md",
-      "sha256": "098ee945e25931090412ca37fe7c707d8c0df8a4b5339aa90ca1118cf7e4584e"
+      "sha256": "cc118c04161f47e312951262bcece41be9ce66a3a054ecd601b3732b854bedc1"
     },
     {
       "path": "problem2/src/delay_v2.py",
@@ -398,11 +398,11 @@
     },
     {
       "path": "problem2/src/final_manuscript.py",
-      "sha256": "448cddafeafbf9b7af319c736cbc2fc9a35ea4ce3534bede020011a2bde9c01c"
+      "sha256": "9c2e0ace4f4f4db807dd886264c64cef03b72cfe11afdbe670844a9a44188934"
     },
     {
       "path": "problem2/src/final_manuscript_review.py",
-      "sha256": "9f43ab82d2560ccbec98ff6ec5a39d25ecde295f92f23ff8dfab3a05e880532c"
+      "sha256": "1cbfbb6546dc07cb9fee35bea6052440096f643824cf4094e38299780e8102ba"
     },
     {
       "path": "problem2/src/final_review.py",
@@ -414,7 +414,7 @@
     },
     {
       "path": "problem2/src/final_text.py",
-      "sha256": "dfa9267e95cbb526b3e79d763bc72e7320423098d875668e004ab80f836cbfe8"
+      "sha256": "e0cc4e624976e4e6dfce21cf5d7f827269e8497bb77de553e3b698b48b0337e4"
     },
     {
       "path": "problem2/src/q2_pipeline.py",

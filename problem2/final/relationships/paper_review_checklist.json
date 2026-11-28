@@ -51,6 +51,11 @@
       "evidence": "Two metrics recomputed from separate explicitly defined controlled conditions"
     },
     {
+      "item": "measurement_chain_delay_recovery",
+      "pass_check": true,
+      "evidence": "1200 matched controlled conditions per entry; accepted and error <=1 s: direct flow 1199, cumulative reconstruction 3"
+    },
+    {
       "item": "supplement_table_S4",
       "pass_check": true,
       "evidence": "Paired recovery counts, short CI coverage and real-data rejection checked against saved experiment outputs"

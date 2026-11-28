@@ -38,7 +38,8 @@ def run():
     def compare(label,a,b):
         assert a==b,label
         checked.append(dict(item=label,pass_check=True,evidence=f'{len(a)-1} rows; every displayed cell matches pre-edit source'))
-    for new,old in [('1','1'),('3','2'),('4','4'),('5','6'),('6','8')]:compare('main_table_'+new,current[new],prior[old])
+    for new,old in [('1','1'),('3','2'),('4','4'),('5','6')]:compare('main_table_'+new,current[new],prior[old])
+    compare('main_table_6',current['6'],[r[:-1] for r in prior['8']])
     for new,old in [('S1','3'),('S2','5'),('S3','7')]:compare('supplement_table_'+new,appendix[new],prior[old])
     source=pd.read_csv(ROOT/'problem2/research/signal_fidelity/results/source_fidelity.csv')
     controls=pd.read_csv(ROOT/'problem2/research/signal_fidelity/results/negative_controls.csv')
@@ -47,6 +48,16 @@ def run():
         ripple=controls.query('signal=="oxygen" and acquisition=="empirical_hold" and method==@method').constant_flow_ripple_cv.median()
         assert current['2'][i][1:]==[f'{100*peak:.1f}',f'{100*ripple:.1f}']
     checked.append(dict(item='main_table_2',pass_check=True,evidence='Two metrics recomputed from separate explicitly defined controlled conditions'))
+    chain=pd.read_csv(ROOT/'problem2/research/measurement_chain/results/background_trials.csv')
+    chain=chain.query('scenario=="known_addition" and duration_s==4')
+    keys=['heat_id','gas','seed','center_index','duration_s','truth_s']
+    paired=chain.pivot(index=keys,columns='method',values='correct')
+    assert len(paired)==1200 and paired.notna().all().all()
+    assert int(paired.direct_flow.sum())==1199 and int(paired.raw_counter_chain.sum())==3
+    assert '1199/1200' in body and '3/1200' in body
+    assert '各项均为窗口级候选估计' in body and all(len(r)==7 for r in current['6'])
+    checked.append(dict(item='measurement_chain_delay_recovery',pass_check=True,evidence='1200 matched controlled conditions per entry; accepted and error <=1 s: direct flow 1199, cumulative reconstruction 3'))
+
     trials=pd.read_csv(ROOT/'problem2/research/weak_integral/results/trials.csv')
     q=trials.query('acquisition=="ideal" and gas_input=="raw"')
     counts={k:[int(q.query('kind==@k and method==@m and noise_std==.05').correct.sum()) for m in ['ordinary','weak']] for k in ['matched','short','slow']}
@@ -108,8 +119,8 @@ def run():
 
 | 核查项 | 结果 |
 |---|---|
-| 原统计表 | 保留的五张主表与三张补充表逐格匹配修改前正文；统计CSV未变 |
-| 新增方法依据 | 重算2 s烟气响应、4 s供氧脉冲和恒定流量对照；区分中位数与平均召回率 |
+| 原统计表 | 保留的五张主表与三张补充表数值匹配修改前正文；表6删除重复说明列并合并为表注，统计CSV未变 |
+| 新增方法依据 | 核对2 s烟气响应、SG窗口权衡及1200组测量链配对恢复数；区分中位数与平均召回率 |
 | 实验条件 | 脉冲保留与恒定流量伪波动分别标明条件；存储网格不解释为仪表分辨率 |
 | 时滞结论 | 保留24个窗口及流量分层；没有独立事件或递减物理函数的确认 |
 | 未采用方法 | 弱形式只在补充材料说明采用失败，不列为正文方法 |

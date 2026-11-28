@@ -36,6 +36,15 @@ def research_evidence():
     path=ROOT/'problem2/final/results/raw_injection_validation.json';r=json.loads(path.read_text());rows=[v for h in r for v in h['rows']]
     result['spike_recall']=float(np.mean([v['recall'] for v in rows]));assert len(rows)==90
     evidence.append(dict(metric='historical_spike_recall',aggregation='mean',value=result['spike_recall'],conditions=len(rows),condition='10 heats x 3 signals x 3 seeds; 20 spikes per trial',source=str(path.relative_to(ROOT)),sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
+    path=ROOT/'problem2/research/measurement_chain/results/background_trials.csv'
+    chain=pd.read_csv(path);selected=chain[(chain.scenario=='known_addition')&(chain.duration_s==4)]
+    for method in ['direct_flow','raw_counter_chain']:
+        q=selected[selected.method==method]
+        assert len(q)==1200 and np.array_equal(q.correct.to_numpy(),(q.accepted & (q.error_s.abs()<=1)).to_numpy())
+        result[method+'_correct']=int(q.correct.sum());result[method+'_conditions']=len(q)
+        evidence.append(dict(metric=method+'_4s_delay_correct',aggregation='count',value=result[method+'_correct'],conditions=len(q),
+                             condition='4 s triangular paired addition; same gas injection and cleaning; accepted and absolute delay error <=1 s; conditions are not independent physical events',
+                             source=str(path.relative_to(ROOT)),sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
     return result,evidence
 
 
@@ -64,7 +73,7 @@ m_i=\operatorname{median}_{j\in\mathcal N_i}x_j,\qquad
 
 当 \(|x_i-m_i|>6\sigma_i\) 时标记异常；局部尺度为零时，结合两侧平台和邻域尺度识别孤立尖峰，非有限值及负值同时剔除。利用其余观测构造PCHIP连续函数 \(\widehat O_h(t)\) 和 \(\widehat C_{g,h}(t)\)。该插值保持节点取值及局部单调形态，避免普通三次样条在平台和突变附近产生额外过冲，并对重构值施加非负约束。
 
-'''+f'''在十炉、三信号、三随机种子的90组孤立尖峰注入试验中，异常检测平均召回率为{100*e['spike_recall']:.1f}%。短时响应与异常尖峰却可能具有相似的局部形态：向十炉背景注入宽2 s、峰高为原序列标准差0.5倍的三角响应，仅施加0.01 m³/s存储网格时，CO和CO₂峰值保留中位数分别为{100*e['co_acquisition_only']:.1f}%和{100*e['co2_acquisition_only']:.1f}%；经过上述清洗后降为{100*e['co_formal']:.1f}%和{100*e['co2_formal']:.1f}%。缩小至5点窗口能保留更多短峰，但在另一组20个已知强孤立尖峰对照中仅标记{e['hampel_window5_spike_detected']}个，9点方案标记全部20个。因此，保留9点方案用于连续工艺曲线和累计排放分析，并将短响应损失纳入时滞结果的解释。
+'''+f'''90组孤立尖峰注入试验的平均召回率为{100*e['spike_recall']:.1f}%。在2 s低幅烟气响应试验中，CO与CO₂的峰值保留中位数由采集后的{100*e['co_acquisition_only']:.1f}%和{100*e['co2_acquisition_only']:.1f}%降至清洗后的{100*e['co_formal']:.1f}%和{100*e['co2_formal']:.1f}%。缩小至5点窗口虽能改善短峰保留，但另一组20个已知强孤立尖峰仅检出{e['hampel_window5_spike_detected']}个，9点窗口全部检出。故保留9点方案用于连续曲线与累计排放，并在时滞分析中考察短响应损失；具体注入条件见补充材料。
 
 '''+r'''## 6.2 氧枪流量与烟气排放量
 
@@ -79,9 +88,9 @@ m_i=\operatorname{median}_{j\in\mathcal N_i}x_j,\qquad
 表2 SG导数估计的短峰保留与伪波动权衡
 
 '''+compare+r'''
-峰值保留试验在十炉原始背景上加入4 s三角流量脉冲，先积分成累计量，再施加0.01 m³存储网格并完成重构；恒定流量对照则以5 m³/s真流量和各炉记录的非零更新时刻构造保持输入，伪波动定义为估计流量标准差与真流量之比。两列来自不同受控条件，分别衡量短峰衰减与采集保持假设下的波动，不将记录更新时刻视为已确认的仪表机制。
+表注：两项指标来自不同受控条件，分别衡量4 s脉冲峰值保留与恒定流量下的伪波动；后者为估计流量标准差与真流量之比。采集保持机制为实验假设，详细设置见补充材料。
 
-'''+f'''11点窗口提高了短峰保留率，也将恒定流量伪波动从{100*e['formal_ripple']:.1f}%增至{100*e['SG11_ripple']:.1f}%。因此选用31点窗口得到稳定的连续流量表示。对十炉逐一反积分，其耗氧增量相对误差绝对值均小于0.08%，最大为{100*t['maxrel']:.4f}%。这一结果检验总量一致性；短瞬态的幅值和时间位置仍受平滑影响。
+'''+f'''31点SG的恒定流量伪波动中位数为{100*e['formal_ripple']:.1f}%，11点SG虽提高短峰保留率，却使伪波动增至{100*e['SG11_ripple']:.1f}%。综合流量稳定性与累计量一致性，选取31点SG进行流量重构，十炉反积分相对误差绝对值均小于0.08%。该估计用于连续流量与总量分析，不保证短瞬态时序准确。
 
 '''+r'''烟气累计排放量定义为
 
@@ -179,13 +188,21 @@ CO瞬时流量的二次趋势将宏平均MAE由8.923降至6.204 m³/s，R²由0.
 表6 不同氧枪流量下的候选烟气时滞
 
 '''+t['delaytable']+r'''
-CO在低、中、高流量下的时滞中位数分别为27.5、7.5和40.0 s，CO₂分别为7.5、15.0和36.5 s，均未呈现一致的单调下降。中、高流量的CO各仅有1个窗口；高流量两种气体均只覆盖同一炉。相邻窗口共享约95.9%的源数据，24个合格窗口对应的7个CO与5个CO₂源重叠组也不能作为12次独立响应。
+表注：各项均为窗口级候选估计，尚未确认独立物理响应事件。
 
-短时供氧变化在累计记录、平滑求导和烟气清洗后会发生衰减；烟气响应展宽及相邻响应叠加又使相关峰偏离单一物理迟延。因此，表6给出的是当前信号表示下的窗口级候选时滞。现有十炉数据尚不能据此建立可靠的流量—时滞函数，也不支持将题设递减方向作为拟合约束。后续使用六类工艺量时保留原始时间轴，对缺乏可信对应关系的时段不作强制时滞修正。
+CO在低、中、高流量下的时滞中位数分别为27.5、7.5和40.0 s，CO₂分别为7.5、15.0和36.5 s。中、高流量的CO各仅有1个窗口；高流量两种气体均只覆盖同一炉。相邻窗口共享约95.9%的源数据，24个合格窗口对应的7个CO与5个CO₂源重叠组也不能作为12次独立响应。
+
+'''+f'''在相同烟气注入与清洗条件下，4 s已知供氧脉冲直接叠加至流量序列时，时滞正确恢复数为{e['direct_flow_correct']}/{e['direct_flow_conditions']}；先积分成累计耗氧量并经过重构链后，降至{e['raw_counter_chain_correct']}/{e['raw_counter_chain_conditions']}，表明短时动态信息的衰减显著影响时滞辨识。结合表6，CO与CO₂候选时滞均未呈现一致的单调递减关系。因此保留各流量区间的统计时滞估计，尚不建立统一的流量—时滞函数；第三问采用原始时间轴建立预测基线，避免不可靠的时滞修正引入额外误差。
 '''
     supplement=r'''# 问题二补充统计与验证
 
 以下结果补充正文中的方法选择和关系分析。正文仅保留直接回答题目所需的模型与主要结果。
+
+异常检测召回率来自十炉、三信号、三随机种子的90组孤立尖峰注入。短烟气响应试验向十炉背景注入宽2 s、峰高为原序列全程标准差0.5倍的三角响应，施加0.01 m³/s存储网格后比较清洗前后的峰值；强尖峰对照则向每炉、每种气体加入一个幅度为原序列标准差10倍的孤立记录尖峰。峰值保留统计为中位数，召回率统计为试验平均值。
+
+正文表2的峰值保留试验在十炉原始背景上加入4 s三角流量脉冲，幅值取各炉流量中位数，先积分成累计量，再施加0.01 m³存储网格并完成重构。恒定流量对照以5 m³/s真流量和各炉记录的非零更新时刻构造保持输入，伪波动为估计流量标准差与真流量之比。记录更新时刻仅用于构造保持假设，不据此认定仪表更新机制。
+
+正文6.4节的1200组配对条件覆盖十炉、两种气体、30个固定种子及15/30 s已知迟延。两入口使用相同供氧脉冲与烟气注入、清洗结果；正确恢复要求通过局部互相关筛选且迟延误差不超过1 s。累计量入口将已知流量先积分，再加到原始累计耗氧量并经过Hampel、PCHIP和31点SG。条件共享抽样背景，不代表1200个独立物理事件。完整数值见[测量链注入结果](../../research/measurement_chain/results/background_trials.csv)。
 
 表S1 四类关系的多尺度增量相关
 
@@ -245,7 +262,7 @@ Oxygen flow is estimated using a nonnegative 31-point cubic Savitzky--Golay deri
 \subsection{Four oxygen--emission relationships}
 Within-heat Pearson and Spearman coefficients, nonoverlapping increments, and five equal oxygen-progress stages distinguish overall progress from local dynamics. The normalized progress is $p_h=(O_h-O_h(0))/(O_h(T_h)-O_h(0))$. CO increases from a first-stage median of 2.11 to a third-stage median of 42.61 $\mathrm{m^3/s}$, then stays high. CO$_2$ peaks in stage two at 19.58 $\mathrm{m^3/s}$. Equal-heat-weight quadratic trends improve leave-one-heat-out $R^2$ from 0.596 to 0.792 for CO and from $-0.044$ to 0.309 for CO$_2$. A constant-emission comparator also has cumulative correlation above 0.997, so cumulative correlation alone does not identify a dynamic response. Progress uses the final oxygen total; validation therefore describes retrospective trends.
 \subsection{Delay estimates at different oxygen flows}
-Local correlations of detrended first differences use 121-point windows, 2.5 s center spacing, and a 0--60 s lag search. Dynamic excitation, correlation at least 0.35, peak separation at least 0.05, and an interior optimum define acceptance. CO has 13 accepted windows and CO$_2$ has 11 out of 2241 centers. Shared flow tertiles give CO median lags of 27.5, 7.5 and 40.0 s, and CO$_2$ medians of 7.5, 15.0 and 36.5 s. These are overlapping-window estimates: high-flow results come from one heat and the windows are not independent physical events. Short-response attenuation and broadened or overlapping gas responses limit the physical interpretation. The ten heats do not establish a reliable decreasing flow--delay function; subsequent analyses retain the original time axis where alignment is unsupported.
+Local correlations of detrended first differences use 121-point windows, 2.5 s center spacing, and a 0--60 s lag search. Dynamic excitation, correlation at least 0.35, peak separation at least 0.05, and an interior optimum define acceptance. CO has 13 accepted windows and CO$_2$ has 11 out of 2241 centers. Shared flow tertiles give CO median lags of 27.5, 7.5 and 40.0 s, and CO$_2$ medians of 7.5, 15.0 and 36.5 s. These are overlapping-window estimates: high-flow results come from one heat and the windows are not independent physical events. In paired 4 s pulse injections with the same gas input and cleaning, accepted delay recovery within 1 s falls from 1199/1200 for direct flow addition to 3/1200 after cumulative-oxygen reconstruction. Short-response attenuation therefore materially limits delay identification. The ten heats do not establish a reliable decreasing flow--delay function; subsequent analyses retain the original time axis where alignment is unsupported.
 '''
 
 

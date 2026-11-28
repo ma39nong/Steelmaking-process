@@ -39,8 +39,8 @@ def write_reports(heats,a,cfg,manuscript_only=False):
     delayrows=[]
     for r in a['delay_flow_summary']:
         interval=f"[{r['flow_min_m3_s']:.3f}, {r['flow_max_m3_s']:.3f}"+(']' if r['upper_inclusive'] else ')')
-        delayrows.append([bandnames[r['flow_band']],interval,r['gas'].upper(),r['delay_median_s'] if r['accepted_windows'] else '不可辨识',f"{r['delay_min_s']:.1f}–{r['delay_max_s']:.1f}" if r['accepted_windows'] else '—',r['accepted_windows'],r['contributing_heats'],'仅窗口级；物理事件未确认' if r['accepted_windows'] else '无合格窗口'])
-    delaytable=table(['流量层','中心流量区间 m³/s','气体','候选时滞中位数 s','范围 s','合格窗口数','覆盖炉数','证据范围'],delayrows)
+        delayrows.append([bandnames[r['flow_band']],interval,r['gas'].upper(),r['delay_median_s'] if r['accepted_windows'] else '不可辨识',f"{r['delay_min_s']:.1f}–{r['delay_max_s']:.1f}" if r['accepted_windows'] else '—',r['accepted_windows'],r['contributing_heats']])
+    delaytable=table(['流量层','中心流量区间 m³/s','气体','候选时滞中位数 s','范围 s','合格窗口数','覆盖炉数'],delayrows)
     maxrel=max(abs(r['endpoint_relative_error']) for r in flow)
     from .final_manuscript import render
     chapter,supplement,evidence=render(a,cfg,locals())
