@@ -200,7 +200,7 @@ CO瞬时流量的二次趋势将宏平均MAE由8.923降至6.204 m³/s，R²由0.
 
 '''+f'''进一步考察信号重构对时滞估计的影响。在相同烟气注入与清洗条件下，4 s供氧脉冲直接叠加至流量序列时，{e['direct_flow_conditions']}组配对受控条件中有{e['direct_flow_correct']}组正确恢复时滞；将脉冲积分为累计耗氧量并经过重构后，正确恢复数降至{e['raw_counter_chain_correct']}组。该结果表明，累计量重构过程对短时动态信息的保留能力是影响局部时滞辨识的重要因素。
 
-综合分层统计与受控验证结果，本文采用分流量区间的候选统计时滞描述烟气响应，不建立缺乏数据支持的统一递减函数。第三问以原始时间轴为基准，进一步利用炉口光谱与烟气信号的时间关联开展预测建模。
+综合上述分析，本文以流量分层统计表征CO与CO₂的候选响应时滞。两类烟气表现出不同的分层变化特征，且高流量区间存在明显的炉次集中现象。因此，本文在第三问进一步引入炉口光谱信息，在统一时间轴上建立烟气预测模型。
 '''
     supplement=r'''# 问题二补充统计与验证
 
@@ -274,7 +274,7 @@ Local correlations of detrended first differences use 121-point windows, 2.5 s c
 
 With identical gas injection and cleaning, 1199 of 1200 paired controlled conditions recover the known delay when a 4 s oxygen pulse is added directly to flow. Recovery drops to 3 when the pulse is first integrated into cumulative oxygen and then reconstructed. This identifies preservation of short dynamics through cumulative reconstruction as an important factor in local delay identification.
 
-We report flow-stratified candidate delays as the final descriptive results rather than fitting an unsupported common decreasing function. Problem 3 retains the original time axis to model temporal associations between furnace-mouth spectra and gas signals.
+Based on the above analysis, we characterize the candidate response delays of CO and CO$_2$ using flow-stratified statistics. The two gases exhibit different patterns across flow groups, and the high-flow estimates are concentrated in a single heat. Accordingly, Problem 3 incorporates furnace-mouth spectral information to build a gas prediction model on a unified time axis.
 '''
 
 

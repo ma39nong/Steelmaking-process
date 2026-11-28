@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 from .delay_audit import write_csv,write_json
 
+FINAL_TEXT_BASE='96aaec90cb75184682234dd8bb31d63d870ddfe3'
 ROOT=Path(__file__).resolve().parents[2];BASE='8c8cea5';EDITORIAL_BASE='94cb15f';OUT=ROOT/'problem2/final/relationships';REPORTS=ROOT/'problem2/final/reports'
 
 
@@ -39,7 +40,10 @@ def run():
     formulas=re.findall(r'\\\[(.*?)\\\]',body,re.S)
     assert len(formulas)==8 and formulas==re.findall(r'\\\[(.*?)\\\]',before,re.S), 'academic expression changed a model formula'
     assert re.findall(r'\\\((.*?)\\\)',body,re.S)==re.findall(r'\\\((.*?)\\\)',before,re.S), 'academic expression changed inline mathematics'
-    checked=[dict(item='expression_only_revision',pass_check=True,evidence='All six main tables and displayed mathematical formulas match 94cb15f exactly')]
+    approved=subprocess.check_output(['git','show',FINAL_TEXT_BASE+':'+str(chapter.relative_to(ROOT))],cwd=ROOT)
+    assert chapter.read_bytes()==approved, 'generated manuscript differs from approved 96aaec9 text'
+    checked=[dict(item='expression_only_revision',pass_check=True,evidence='All six main tables and displayed mathematical formulas match 94cb15f exactly'),
+             dict(item='approved_manuscript_sync',pass_check=True,evidence='Generated Markdown matches approved 96aaec9 byte for byte; LaTeX conclusion and generator synchronized')]
     def compare(label,a,b):
         assert a==b,label
         checked.append(dict(item=label,pass_check=True,evidence=f'{len(a)-1} rows; every displayed cell matches pre-edit source'))
@@ -125,7 +129,7 @@ def run():
         ('不同流量下烟气时滞','6.4；表6','给出分层候选数值；未建立可靠物理函数'),
         ('补充统计与复现','附录表S1至S4；独立交接和复现文档','移出主文的证据仍可追溯')]]
     write_csv(OUT/'statement_answer_mapping.csv',mapping)
-    metadata=dict(review_base_commit=BASE,editorial_base_commit=EDITORIAL_BASE,main_sections=4,main_tables=6,supplement_tables=4,embedded_core_figures=6,
+    metadata=dict(review_base_commit=BASE,editorial_base_commit=EDITORIAL_BASE,final_manuscript_commit=FINAL_TEXT_BASE,final_manuscript_sha256=sha(chapter),main_sections=4,main_tables=6,supplement_tables=4,embedded_core_figures=6,
                   table_checks=checked,preserved_statistical_csvs=preserved,protected_results_unchanged=True,
                   scientific_status='No validated physical flow-delay function',editorial_status='accepted',
                   note='Old numeric verification remains valid for unchanged statistical CSVs. New controlled summaries independently checked; no new model selected.')
@@ -152,7 +156,7 @@ def run():
     (REPORTS/'第二问最终论文审查.md').write_text(report)
     # Refresh provenance only for editorially changed outputs; preserve old execution identities.
     path=OUT/'provenance.json';prov=json.loads(path.read_text())
-    prov['editorial_revision']=dict(base_commit=EDITORIAL_BASE,source='python -m problem2.src.final_manuscript',review='python -m problem2.src.final_review',scope='Presentation only; numeric arrays, formal statistics and figures unchanged')
+    prov['editorial_revision']=dict(base_commit=FINAL_TEXT_BASE,approved_manuscript_sha256=sha(chapter),source='python -m problem2.src.final_manuscript',review='python -m problem2.src.final_review',scope='Synchronization only; approved 96aaec9 Markdown, numeric arrays, formal statistics and figures unchanged')
     for r in prov['outputs']:
         p=ROOT/r['path'];r['sha256']=sha(p)
     prov['sources'].update({str(p.relative_to(ROOT)):sha(p) for p in (ROOT/'problem2/src').glob('final_*.py')})
@@ -163,8 +167,8 @@ def run():
     manifest=OUT/'paper_freeze_manifest.json';old=json.loads(manifest.read_text())
     files={r['path'] for r in old['files']}
     files.update(str(p.relative_to(ROOT)) for p in [supp,OUT/'manuscript_evidence.csv',OUT/'manuscript_review.csv',ROOT/'problem2/src/final_manuscript.py',ROOT/'problem2/src/final_manuscript_review.py'])
-    write_json(manifest,dict(review_base_commit=BASE,editorial_base_commit=EDITORIAL_BASE,execution_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
-        previous_manifest_sha256=sha(manifest),scope='Editorial revision; current manuscript and supplement; existing scientific results unchanged',
+    write_json(manifest,dict(review_base_commit=BASE,editorial_base_commit=EDITORIAL_BASE,final_manuscript_commit=FINAL_TEXT_BASE,final_manuscript_sha256=sha(chapter),execution_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
+        previous_manifest_sha256=sha(manifest),scope='Final synchronization; approved 96aaec9 manuscript unchanged; LaTeX and generator aligned; existing scientific results unchanged',
         files=[dict(path=p,sha256=sha(ROOT/p)) for p in sorted(files) if (ROOT/p).is_file()]))
     print(f'Manuscript review passed: 4 sections; 6 main tables; 4 supplement tables; {len(preserved)} statistical CSVs unchanged; 6 figures unchanged.',flush=True)
 

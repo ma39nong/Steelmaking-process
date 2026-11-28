@@ -17,8 +17,8 @@
     "problem2/src/final_review.py": "598353632c1c7591a2056d59e5cc712e986cb6c120c308c9eaf4e1a3d525c793",
     "problem2/src/final_statistics.py": "727b9ecadb43a3528c59fd2acd88674ad0c7dc604459e27aca3a35c87cfc9bb8",
     "problem2/src/final_text.py": "e0cc4e624976e4e6dfce21cf5d7f827269e8497bb77de553e3b698b48b0337e4",
-    "problem2/src/final_manuscript_review.py": "6e4e755f3fc44d0260b6a70516eff866d58aeff7f28672bf48b9c4a7797d7536",
-    "problem2/src/final_manuscript.py": "742ac71136223b61888784e92739f262eb9dc59a21b2546e67b0363c41cfe0ef"
+    "problem2/src/final_manuscript_review.py": "7f1ad5aa1cdfc1eeb2fbb1cc5153d58c01002dc5fb975e9d62203cda2204456f",
+    "problem2/src/final_manuscript.py": "6f36e862aab6635bf88a01232ed6f7561fa03cf0c1df9bd5d4bda85f17132ba2"
   },
   "protected_sources": {
     "problem2/src/q2_pipeline.py": "729e3943b0bbf7d8eea4a5aefbcd362249dd3b6057e9a7957b9ad8ee4532e2fc",
@@ -329,7 +329,7 @@
     },
     {
       "path": "problem2/final/reports/problem2_section.tex",
-      "sha256": "41b11cca23dc3cb0a86517398d4fa9ea12d12f7a759f1e9f381e93d21ff41d47"
+      "sha256": "6fddafd73b9320d4f97d338ef5623baecc0e47de67d2152800b4706959bf6373"
     },
     {
       "path": "problem2/final/reports/完整图表清单.md",
@@ -361,7 +361,7 @@
     },
     {
       "path": "problem2/final/reports/问题二_中文论文_正式章节版.md",
-      "sha256": "bcf41e26ab712893724586c1a6efe65a8fa788d516168a07757f24f6f207314a"
+      "sha256": "1e8222da6534768380ca75cc2d2c4062dc5d9137d4b6cd88f25e090d89014579"
     },
     {
       "path": "problem2/final/results/artifact_manifest.json",
@@ -377,9 +377,10 @@
     }
   ],
   "editorial_revision": {
-    "base_commit": "94cb15f",
+    "base_commit": "96aaec90cb75184682234dd8bb31d63d870ddfe3",
+    "approved_manuscript_sha256": "1e8222da6534768380ca75cc2d2c4062dc5d9137d4b6cd88f25e090d89014579",
     "source": "python -m problem2.src.final_manuscript",
     "review": "python -m problem2.src.final_review",
-    "scope": "Presentation only; numeric arrays, formal statistics and figures unchanged"
+    "scope": "Synchronization only; approved 96aaec9 Markdown, numeric arrays, formal statistics and figures unchanged"
   }
 }

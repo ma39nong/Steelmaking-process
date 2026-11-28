@@ -1,6 +1,8 @@
 {
   "review_base_commit": "8c8cea5",
   "editorial_base_commit": "94cb15f",
+  "final_manuscript_commit": "96aaec90cb75184682234dd8bb31d63d870ddfe3",
+  "final_manuscript_sha256": "1e8222da6534768380ca75cc2d2c4062dc5d9137d4b6cd88f25e090d89014579",
   "main_sections": 4,
   "main_tables": 6,
   "supplement_tables": 4,
@@ -10,6 +12,11 @@
       "item": "expression_only_revision",
       "pass_check": true,
       "evidence": "All six main tables and displayed mathematical formulas match 94cb15f exactly"
+    },
+    {
+      "item": "approved_manuscript_sync",
+      "pass_check": true,
+      "evidence": "Generated Markdown matches approved 96aaec9 byte for byte; LaTeX conclusion and generator synchronized"
     },
     {
       "item": "main_table_1",
