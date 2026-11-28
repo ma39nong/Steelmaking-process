@@ -1,0 +1,67 @@
+{
+  "configuration": {
+    "fonts": [
+      {
+        "style": "normal",
+        "weight": "normal",
+        "family": "Times New Roman",
+        "file": "/home/user/.local/share/fonts/msttcore/Times.TTF",
+        "sha256": "4e98adeff8ccc8ef4e3ece8d4547e288ff85fdc9c7ca711a4599c234874bbe86"
+      },
+      {
+        "style": "normal",
+        "weight": "bold",
+        "family": "Times New Roman",
+        "file": "/home/user/.local/share/fonts/msttcore/Timesbd.TTF",
+        "sha256": "4357b63cef20c01661a53c5dae70ffd20cb4765503aaed6d38b17a57c5a90bff"
+      },
+      {
+        "style": "italic",
+        "weight": "normal",
+        "family": "Times New Roman",
+        "file": "/home/user/.local/share/fonts/msttcore/Timesi.TTF",
+        "sha256": "c25ae529b4cecdbca148b6ccb862ee0abad770af8b1fd29c8dba619d1b8da78a"
+      },
+      {
+        "style": "italic",
+        "weight": "bold",
+        "family": "Times New Roman",
+        "file": "/home/user/.local/share/fonts/msttcore/Timesbi.TTF",
+        "sha256": "192e1b0d18e90334e999a99f8c32808d6a2e74b3698b8cd90c943c2249a46549"
+      }
+    ],
+    "special_math_fallback": "STIX explicitly configured; audit figures use plain Latin text and digits",
+    "intended_width_inches": 7.2,
+    "svg_text": "editable; requires installed Times New Roman"
+  },
+  "pdf_checks": [
+    {
+      "figure": "source_peak_fidelity",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nCAZJVQ+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     23  0\n"
+    },
+    {
+      "figure": "source_waveforms",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nFRPAYC+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    {
+      "figure": "change_representation",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nCBKAKJ+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     21  0\n"
+    },
+    {
+      "figure": "gas_preservation_tradeoff",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBABYOU+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     21  0\n"
+    },
+    {
+      "figure": "volume_and_null_ripple",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDDMEUE+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     19  0\n"
+    },
+    {
+      "figure": "heat_heterogeneity",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nEVRAIT+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     19  0\n"
+    },
+    {
+      "figure": "integral_probe",
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nCSBOSN+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     15  0\n"
+    }
+  ]
+}

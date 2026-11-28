@@ -1,0 +1,157 @@
+{
+  "source": {
+    "formal": {
+      "source4_grid_median_peak_ratio": 0.35042742669861415,
+      "source4_grid_median_signed_volume_error": -4.348612898247284e-05,
+      "constant_flow_recorded_hold_median_ripple_cv": 0.016323001529337088,
+      "source4_recorded_hold_heat_median_peak_min": 0.34610277088722063,
+      "source4_recorded_hold_heat_median_peak_max": 0.3493755778804298
+    },
+    "SG11": {
+      "source4_grid_median_peak_ratio": 0.7728716982559005,
+      "source4_grid_median_signed_volume_error": -1.7865714250775433e-05,
+      "constant_flow_recorded_hold_median_ripple_cv": 0.11804602314039284,
+      "source4_recorded_hold_heat_median_peak_min": 0.7061686226516178,
+      "source4_recorded_hold_heat_median_peak_max": 0.7578717077134908
+    },
+    "secant_2s": {
+      "source4_grid_median_peak_ratio": 0.7467479199607046,
+      "source4_grid_median_signed_volume_error": -4.348612896620807e-05,
+      "constant_flow_recorded_hold_median_ripple_cv": 0.20021902154392984,
+      "source4_recorded_hold_heat_median_peak_min": 0.7344442018937942,
+      "source4_recorded_hold_heat_median_peak_max": 0.7616402113907661
+    },
+    "analytic_PCHIP_derivative": {
+      "source4_grid_median_peak_ratio": 1.3567518073707603,
+      "source4_grid_median_signed_volume_error": 0.5418260796808592,
+      "constant_flow_recorded_hold_median_ripple_cv": 0.29746921702550816,
+      "source4_recorded_hold_heat_median_peak_min": 0.0,
+      "source4_recorded_hold_heat_median_peak_max": 0.8110243964766369
+    }
+  },
+  "gas": [
+    {
+      "gas": "co",
+      "method": "acquisition_only",
+      "median_peak_ratio": 0.8693415089932993,
+      "minimum_heat_median_peak_ratio": 0.8420994171726655,
+      "maximum_heat_median_peak_ratio": 0.896538939711188
+    },
+    {
+      "gas": "co",
+      "method": "formal",
+      "median_peak_ratio": 0.28645473834291985,
+      "minimum_heat_median_peak_ratio": 0.08074924334599953,
+      "maximum_heat_median_peak_ratio": 0.7476537397328655
+    },
+    {
+      "gas": "co",
+      "method": "omit_gas_hampel",
+      "median_peak_ratio": 0.8693415089932993,
+      "minimum_heat_median_peak_ratio": 0.8420994171726655,
+      "maximum_heat_median_peak_ratio": 0.896538939711188
+    },
+    {
+      "gas": "co",
+      "method": "hampel_threshold12",
+      "median_peak_ratio": 0.6540783140676332,
+      "minimum_heat_median_peak_ratio": 0.34866869814717727,
+      "maximum_heat_median_peak_ratio": 0.7985851783522339
+    },
+    {
+      "gas": "co",
+      "method": "hampel_window5",
+      "median_peak_ratio": 0.8693415089932993,
+      "minimum_heat_median_peak_ratio": 0.8420994171726655,
+      "maximum_heat_median_peak_ratio": 0.896538939711188
+    },
+    {
+      "gas": "co",
+      "method": "linear_gas_interpolation",
+      "median_peak_ratio": 0.28190146453340453,
+      "minimum_heat_median_peak_ratio": 0.08074924334599953,
+      "maximum_heat_median_peak_ratio": 0.7476537397328655
+    },
+    {
+      "gas": "co2",
+      "method": "acquisition_only",
+      "median_peak_ratio": 0.8746340556558281,
+      "minimum_heat_median_peak_ratio": 0.8508771438121423,
+      "maximum_heat_median_peak_ratio": 0.9149279298913033
+    },
+    {
+      "gas": "co2",
+      "method": "formal",
+      "median_peak_ratio": 0.3770636335024743,
+      "minimum_heat_median_peak_ratio": 0.17699919773808503,
+      "maximum_heat_median_peak_ratio": 0.6029965415772148
+    },
+    {
+      "gas": "co2",
+      "method": "omit_gas_hampel",
+      "median_peak_ratio": 0.8746340556558281,
+      "minimum_heat_median_peak_ratio": 0.8508771438121423,
+      "maximum_heat_median_peak_ratio": 0.9149279298913033
+    },
+    {
+      "gas": "co2",
+      "method": "hampel_threshold12",
+      "median_peak_ratio": 0.7690167682431973,
+      "minimum_heat_median_peak_ratio": 0.624608844670429,
+      "maximum_heat_median_peak_ratio": 0.8358202062417506
+    },
+    {
+      "gas": "co2",
+      "method": "hampel_window5",
+      "median_peak_ratio": 0.8746340556558281,
+      "minimum_heat_median_peak_ratio": 0.8508771438121423,
+      "maximum_heat_median_peak_ratio": 0.9149279298913033
+    },
+    {
+      "gas": "co2",
+      "method": "linear_gas_interpolation",
+      "median_peak_ratio": 0.3770636335024743,
+      "minimum_heat_median_peak_ratio": 0.1744543406560799,
+      "maximum_heat_median_peak_ratio": 0.6029965415772148
+    }
+  ],
+  "known_gas_logging_spikes": [
+    {
+      "method": "formal",
+      "conditions": 20,
+      "flagged": 20,
+      "median_residual_ratio": 0.00020782029689968637,
+      "worst_residual_ratio": 0.0021933598945686836
+    },
+    {
+      "method": "omit_gas_hampel",
+      "conditions": 20,
+      "flagged": 0,
+      "median_residual_ratio": 1.0,
+      "worst_residual_ratio": 1.0000000000000002
+    },
+    {
+      "method": "hampel_threshold12",
+      "conditions": 20,
+      "flagged": 20,
+      "median_residual_ratio": 0.00020782029689968637,
+      "worst_residual_ratio": 0.0021933598945686836
+    },
+    {
+      "method": "hampel_window5",
+      "conditions": 20,
+      "flagged": 15,
+      "median_residual_ratio": 0.0008440420732946307,
+      "worst_residual_ratio": 1.0
+    },
+    {
+      "method": "linear_gas_interpolation",
+      "conditions": 20,
+      "flagged": 20,
+      "median_residual_ratio": 0.00020782029689962928,
+      "worst_residual_ratio": 0.0021127874902784455
+    }
+  ],
+  "automatic_selection": false,
+  "conditions_are_not_independent_industrial_events": true
+}

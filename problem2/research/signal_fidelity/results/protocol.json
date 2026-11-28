@@ -1,0 +1,31 @@
+{
+  "source_methods": {
+    "formal": "Hampel9 threshold6 + PCHIP + SG31 derivative poly3 + clip0",
+    "omit_oxygen_hampel": "only omit statistical Hampel; retain physical invalid-value mask",
+    "linear_oxygen_interpolation": "only replace PCHIP interpolation by linear",
+    "SG11": "only change derivative window 31 to 11",
+    "analytic_PCHIP_derivative": "only replace SG by exact PCHIP derivative evaluated on the 0.5 s output grid",
+    "secant_2s": "only replace SG by centered 2 s cumulative secant, with one-sided endpoint widths",
+    "omit_flow_clipping": "only omit derivative clipping; diagnostic, negative flows preclude automatic formal adoption"
+  },
+  "gas_methods": {
+    "formal": "Hampel9 threshold6 + PCHIP",
+    "omit_gas_hampel": "only omit statistical Hampel",
+    "hampel_threshold12": "only threshold6 to12",
+    "hampel_window5": "only window9 to5",
+    "linear_gas_interpolation": "only PCHIP tolinear",
+    "acquisition_only": "diagnostic, no cleaning; not a candidate"
+  },
+  "change_methods": {
+    "formal_median21": "difference minus centered21 median",
+    "difference_only": "only omit median subtraction",
+    "mean21": "only median to mean"
+  },
+  "no_composed_best_pipeline": true,
+  "injection": "M(background + analytic integral of flow pulse) and M(background) processed separately; gas uses M(background + gas pulse)",
+  "instrument_mechanism_identified": false,
+  "confidence_intervals_reported": false,
+  "paired_unit": "heat, signal, seed, event center; durations, doses, methods and hypotheses reuse that draw",
+  "known_nulls": "constant true flow under hypothetical acquisition; post-acquisition known one-sample logging spikes",
+  "actual_background_truth": "unknown; only added perturbations have known ground truth"
+}

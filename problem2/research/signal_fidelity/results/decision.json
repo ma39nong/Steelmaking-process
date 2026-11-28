@@ -1,0 +1,10 @@
+{
+  "automatic_selection": false,
+  "formal_model_changed": false,
+  "physical_events_confirmed": 0,
+  "matched_ideal_no_noise_trials": 6,
+  "matched_ideal_no_noise_correct": 6,
+  "two_stage_no_noise_estimated_delay_s": 16.5,
+  "two_stage_true_delay_s": 15,
+  "conclusion": "累计量、求导、变化去趋势、烟气清洗必须分别验收。候选处理在峰值保留、采集噪声、总量与记录尖峰抑制之间存在不同取舍。积分最小二乘原型在匹配条件下有效，但噪声和模型失配会破坏纯迟延解释。本轮不自动选优，不修改正式V2，不开展真实流量—时滞拟合。"
+}
