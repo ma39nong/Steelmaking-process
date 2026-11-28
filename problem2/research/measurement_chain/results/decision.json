@@ -1,0 +1,13 @@
+{
+  "adopt_new_formal_model": false,
+  "physical_events_confirmed": 0,
+  "physical_timing_accuracy_identified": false,
+  "SG31_window_span_s": 15.0,
+  "SG31_future_support_s": 7.5,
+  "maximum_actual_final_integral_relative_error": 0.0007978887814911936,
+  "short_triangle_peak_ratio": 0.18034220682913701,
+  "four_second_background_direct_correct": 1199,
+  "four_second_background_full_chain_correct": 3,
+  "four_second_background_conditions": 1200,
+  "conclusion": "测量链审计找到了明确的软件失真：同样的4秒已知供氧脉冲，在真实背景中直接叠加流量的正确恢复为1199/1200，从原始累计量重新重构则为3/1200。31点SG显著衰减和展宽短变化，21点变化去趋势能完全消除某些缓变三角供氧激励，Hampel也能误删构造的真实烟气尖峰。原始十炉还缺少设备时间戳、PLC事件及分析仪标定，因此不能给出物理时滞的校准精度，也不能拆分工艺、采样输送和时钟偏移。反积分一致性及0.5秒网格都不能证明时序准确。保留正式V2，不用候选窗口拟合物理流量—时滞函数。"
+}

@@ -1,0 +1,15 @@
+{
+  "paired_unit": "whole heat; all gas/seed/12 conditions retained together",
+  "clusters": 10,
+  "conditions": 7200,
+  "distinct_heat_gas_seed_draws": 600,
+  "caveat": "600 background draws need not be 600 distinct time indices; centers are sampled with replacement",
+  "gain_rate": 0.03625,
+  "percentile_95_lower": 0.008333333333333333,
+  "percentile_95_upper": 0.07416666666666667,
+  "interpretation": "descriptive heat-cluster bootstrap of this injection design; not a physical-event confidence interval",
+  "input": {
+    "path": "problem2/research/target_excitation/results/injection_by_heat.csv",
+    "sha256": "c25b59773272289e0f50533cc7e80b52f5e6980bc50d84bb0961ef2c24ca54a4"
+  }
+}

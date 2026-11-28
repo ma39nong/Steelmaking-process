@@ -1,0 +1,34 @@
+{
+  "formal_baseline": "d08f989",
+  "research_baseline": "3790d5f",
+  "dt_s": 0.5,
+  "seeds": [7101,7102,7103,7104,7105,7106,7107,7108,7109,7110,7111,7112,7113,7114,7115,7116,7117,7118,7119,7120,7121,7122,7123,7124,7125,7126,7127,7128,7129,7130],
+  "simulation": {
+    "samples": 1001,
+    "source_center_s": 200.0,
+    "shapes": ["rectangle", "triangle"],
+    "durations_s": [2.0,5.0,15.0,30.0],
+    "counter_update_periods_s": [0.5,1.0,2.0,5.0],
+    "counter_quanta_m3": [0.0,0.01],
+    "amplitude_m3_s": 5.0,
+    "gas_update_periods_s": [0.5,1.0,2.0],
+    "delays_s": [5.0,15.0,30.0],
+    "interpretation": "hypothetical sample-and-hold counter and gas acquisition; periods are stress conditions, not inferred device parameters"
+  },
+  "background": {
+    "durations_s": [4.0,16.0],
+    "delays_s": [15.0,30.0],
+    "source_amplitude": "median frozen flow per heat",
+    "gas_amplitude": "whole-record raw gas standard deviation",
+    "interpretation": "add integrated pulse to raw cumulative oxygen and shifted pulse to raw gas, then rerun unchanged Hampel/PCHIP/SG; no unknown instrument remeasurement is simulated"
+  },
+  "correct_error_s": 1.0,
+  "cluster_bootstrap": {"seed": 7200,"replicates": 10000,"unit": "heat", "paired": true},
+  "event_definition": {
+    "source": "independent PLC command or actual oxygen-flow record with calibrated timestamps",
+    "without_logs_status": "statistical_candidate",
+    "matching_states": ["unmatched","ambiguous","candidate","confirmed_by_independent_record"],
+    "delay_definitions": ["onset","peak","centroid"],
+    "onset_operational_fraction": 0.1
+  }
+}

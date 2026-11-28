@@ -1,0 +1,221 @@
+{
+  "execution_commit": "3790d5f2026d0593061fb8a43da75106de24ce2e",
+  "python": "3.12.3",
+  "formal_baseline": "d08f989",
+  "research_baseline": "3790d5f",
+  "numeric_execution_source_hashes": null,
+  "configuration_sha256": "67a7f20d01ed86186ea0223058ec1ac0ab6f9c6ebce5fd8e3c10694742debada",
+  "source_hashes": {
+    "problem2/research/measurement_chain/core.py": "94287d3b7304220dda1f9c7e67297763eccb50526ba810313d21360e8d905d9e",
+    "problem2/research/measurement_chain/__init__.py": "2a2c29534102829c527c7fa68860e8a22a975e81a9821015f851dbc021960079",
+    "problem2/research/measurement_chain/run.py": "4445e15839630e5c5a4eb24a19501200739d8ad3fee7387878a6a2afea4fcf86",
+    "problem2/research/measurement_chain/test_chain.py": "3dcddab1a5e7f235ce39081795b080dcd9f89236f9f26b2fd7bd2e68577b9652",
+    "problem2/research/measurement_chain/present.py": "c823fc33446eacc61043c76b7cb36ccee71b5a2cab380d98490947daca7203ad"
+  },
+  "outputs": [
+    {
+      "path": "REPORT.md",
+      "sha256": "a9fb601dc1cd41f23a4d5b0d86369e4c2a02a7cfd81b91d69666204c338f96f8"
+    },
+    {
+      "path": "background_by_heat.csv",
+      "sha256": "05731046b6452aefc4aab8cb08febadebce9546a8732d0e3d05a26907337481e"
+    },
+    {
+      "path": "background_source_timing.csv",
+      "sha256": "7852387c9efd68ac0b4c6a43279ddcfb84cd8e77f652dc333391a895c45a870d"
+    },
+    {
+      "path": "background_summary.csv",
+      "sha256": "7ed1b235c74fcbf2c2a8ed7e14a1470267a3a33b932f6f45d255d282e5e6e56d"
+    },
+    {
+      "path": "background_trials.csv",
+      "sha256": "5e24524305dba7153092b82eeedc5d49dbeb7bca32b4aaeecfdd250d2f598e66"
+    },
+    {
+      "path": "change_representation.csv",
+      "sha256": "7604998abce84db6f55a7e88299be75ebf59d0432c3ef9d2d7542acc1de5f5dc"
+    },
+    {
+      "path": "constant_runs.csv",
+      "sha256": "505a9becfed0be76773990a98625e4839ccdc38870ce2753b1b52d13a59dd070"
+    },
+    {
+      "path": "controlled_delay.csv",
+      "sha256": "dac4b467ae587afd736594c5a3e0b1ab179cb01c9a6fc0bb964d0fac72833872"
+    },
+    {
+      "path": "controlled_delay_summary.csv",
+      "sha256": "2eca3986ce4c4a0b30a215f7bb976ec1b6a5e3aedc103a6e7e5d205186059194"
+    },
+    {
+      "path": "controlled_feature_delay_summary.csv",
+      "sha256": "1d329ad39a6fc32fe34c99884a9f206f401c625817039fd606084a176dc32925"
+    },
+    {
+      "path": "controlled_gas_cleaning.csv",
+      "sha256": "fe82a4a2a965f200b7892688407d3657e32e29de09ade675e4936492e84c7bbb"
+    },
+    {
+      "path": "controlled_reconstruction.csv",
+      "sha256": "41f9f2d300413f5f7bb6b3c8f58cfdf49827fab06cc01fbb7cabf8d7262c945c"
+    },
+    {
+      "path": "controlled_timing_summary.csv",
+      "sha256": "3db5e2e6a7d95ce9922ff755ff90b95445c09c8a45f9c0e92d3df54a2bc9dd1e"
+    },
+    {
+      "path": "decision.json",
+      "sha256": "8dace976ef6ba95029a4390dc1218d345ad032b0ea14c797bfa64350deb08f50"
+    },
+    {
+      "path": "effective_config.json",
+      "sha256": "32ba0daeda64da53c93e9787abc9babee7fea0067f7037a32194b51d368cf960"
+    },
+    {
+      "path": "figure_captions.csv",
+      "sha256": "be216cdd779471378e2646a27fc63ee9190095b1b3d5fb83ad865277335d2ab7"
+    },
+    {
+      "path": "figures/background_chain.pdf",
+      "sha256": "2d0488fc5950fcab7ebd399a86bd90b0d4c570ed63b1e93df3f13b4a63de121d"
+    },
+    {
+      "path": "figures/background_chain.png",
+      "sha256": "47a5e9df3710d8572bdc9006bd6bff2619579c504837baa29b711d9bac0af40f"
+    },
+    {
+      "path": "figures/background_chain.svg",
+      "sha256": "b149e7090b7745ff220aa464e4424035ca67c253a4d4588e1b82210552c734b7"
+    },
+    {
+      "path": "figures/controlled_delay.pdf",
+      "sha256": "9fa72c1a56cac0ab54203d4fcef0852ce44f1bf7ecc38ec51e649734908a586a"
+    },
+    {
+      "path": "figures/controlled_delay.png",
+      "sha256": "2b7f2fdad97e92d8b9b9ff5fbb37f5953d4e23762eeae07f55d45608193ff7de"
+    },
+    {
+      "path": "figures/controlled_delay.svg",
+      "sha256": "3879f63c8317dce07fb2656f2c66115589f05d9b7bd706ce4cc749eba3a6a68f"
+    },
+    {
+      "path": "figures/controlled_flow.pdf",
+      "sha256": "441c970f71e371c2c5d5c02eeb17de1942cd329d018962532ca5faa075b3e356"
+    },
+    {
+      "path": "figures/controlled_flow.png",
+      "sha256": "70f6d82666d1277271b1bcbbb7e85a22acee78935e4c6b809fdb03a166fc88cd"
+    },
+    {
+      "path": "figures/controlled_flow.svg",
+      "sha256": "830a0e80ea0b920af793c9c82c296050f076f30950c2c463081470a4c2c67b10"
+    },
+    {
+      "path": "figures/prior_cluster_sensitivity.pdf",
+      "sha256": "65f9503e892c8b520f8a65bb8011412e7e6e5fd87954e2371bcdb7dff1454fff"
+    },
+    {
+      "path": "figures/prior_cluster_sensitivity.png",
+      "sha256": "c7400e6b7096c4623be8f300d4823466f9ae00383854196f44827f17fa779107"
+    },
+    {
+      "path": "figures/prior_cluster_sensitivity.svg",
+      "sha256": "87c0382aeea7b2ed260c72ac045312fecd60ed7322825cd992b678cd36ebaa04"
+    },
+    {
+      "path": "figures/raw_updates.pdf",
+      "sha256": "122a07fc586f90c4447e7a2e77eae1622c1b2af53a75a89b7e604a3cdfb79199"
+    },
+    {
+      "path": "figures/raw_updates.png",
+      "sha256": "1842a59ed74e4ad4b4c5caa535bbe7c29b08c8acbe97b56f60c613b6a8158a34"
+    },
+    {
+      "path": "figures/raw_updates.svg",
+      "sha256": "32cd07ee5407e3f832b3b7149a487dd43dcb5d2736d038887432e1c5f25b8b2b"
+    },
+    {
+      "path": "flow_integral.csv",
+      "sha256": "bf65921d3df83e9001658689bc663ee7bbc2492edba1faad6589702cd48963c3"
+    },
+    {
+      "path": "font_validation.json",
+      "sha256": "e42e675144dab19f60052dde873b73bbe74798c038f217f7ba67e8d7959fdaf1"
+    },
+    {
+      "path": "input_manifest.json",
+      "sha256": "8f2bcfe72c4fcaf406cbd2d024b872d97417aefeb45eb07d6a204eafaa6120d5"
+    },
+    {
+      "path": "layout_preview.png",
+      "sha256": "940fa95be2e77c562762de5d8d19dfcfc02b6f746477aaf55f00daaee90a0462"
+    },
+    {
+      "path": "measurement_evidence.json",
+      "sha256": "02470aa3c2cd03871186a2232d0d599606af489cb22c4324920941f831c77f28"
+    },
+    {
+      "path": "oxygen_increment_quantiles.json",
+      "sha256": "04adf1ce9980292cdfb0ece9d99959a6ad0f4a2b6a85d650e0cc79ea49d9654d"
+    },
+    {
+      "path": "prior_AB_by_heat.csv",
+      "sha256": "11a8fe7393d83b6a95ee1720d8058e35195f3743bdcfeba0ad267925dfaf74fb"
+    },
+    {
+      "path": "prior_AB_cluster_bootstrap.json",
+      "sha256": "1dfba1e400224086695735ae6376ac71f2aa3ecafc3f95ed5283bb8d5f6d70c1"
+    },
+    {
+      "path": "prior_AB_leave_one_heat_out.csv",
+      "sha256": "6afabe2058ce3697ecaa318bed253047c49c12794cab4428a48bc7d403360e33"
+    },
+    {
+      "path": "protection_check.json",
+      "sha256": "326c06c40dd4a9312d9080d718d54432a0436684b054a366b2703f708473a378"
+    },
+    {
+      "path": "raw_headers.json",
+      "sha256": "ada29ab7f0395e0e2ee5a99fe8ead2ad2463e3eb6f88d9b92acf2d003940c36f"
+    },
+    {
+      "path": "raw_increments.csv",
+      "sha256": "a950ab73828101f3dc4eed2b8a8f96c5116a51845a35b54781925025d271cd28"
+    },
+    {
+      "path": "raw_signal_summary.csv",
+      "sha256": "eb2ed4a89e40c8ae6f8a244d75a70879517af1046cf623e91cff33a42226429b"
+    },
+    {
+      "path": "reconstruction_replay.csv",
+      "sha256": "84f41851276b813e10720aef25a10f35ed07b1219857b782200e1c10c95dcd4c"
+    },
+    {
+      "path": "recorded_facts.json",
+      "sha256": "e2380e4f6850a2c35ee7831d9ff483b49492253b74957cf7935e485da5b3df83"
+    },
+    {
+      "path": "repair_spans.csv",
+      "sha256": "4c7cb71a43b8633d7db5d7e85fc5d8206249a0c166df47d485e7388987952247"
+    },
+    {
+      "path": "representation_grids.csv",
+      "sha256": "aad9a0459f17d6cea5e5a11bfd29e18782d0005a3c6a2fd394052b219f4b6532"
+    },
+    {
+      "path": "update_autocorrelation.csv",
+      "sha256": "a7f43ceb34af37f936187918945c30aced2361aa48a8c043e5f671fcf620d3b7"
+    },
+    {
+      "path": "update_coincidence.csv",
+      "sha256": "3c7e1eb3a90f6aebf3f74717f51d6315cae4405817b18f407807c4a902d1e98e"
+    },
+    {
+      "path": "update_intervals.csv",
+      "sha256": "fa78f4da4c6fd91039df648f5d8ac2af73c6e23ab9d1efa4b40053b58551f2ae"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "problem_statement": {
+    "path": "2026 APMCM Problem B.pdf",
+    "sha256": "d53b4fa89e7a77f3018f57e9e1febb56e394a2785019b2d444f08ec2557f947c",
+    "established": [
+      "nominal adjacent sample spacing 0.5 s",
+      "gas travels through sampling path before measurement",
+      "Raman gas analyzer described"
+    ],
+    "not_established": [
+      "pipe length / flow and calibrated transport delay",
+      "analyzer internal response time",
+      "independent acquisition timestamps / clock offset",
+      "PLC setpoints and commands"
+    ]
+  },
+  "local_original_inputs": [
+    "Data/Attachment 1. Heat No. 6B03205.xlsb",
+    "Data/Attachment 10. Heat No. 6C02108.xlsb",
+    "Data/Attachment 2. Heat No. 6B03206.xlsb",
+    "Data/Attachment 3. Heat No. 6B03270.xlsb",
+    "Data/Attachment 4. Heat No. 6B03271.xlsb",
+    "Data/Attachment 5. Heat No. 6C02057.xlsb",
+    "Data/Attachment 6. Heat No. 6C02058.xlsb",
+    "Data/Attachment 7. Heat No. 6C02059.xlsb",
+    "Data/Attachment 8. Heat No. 6C02060.xlsb",
+    "Data/Attachment 9. Heat No. 6C02107.xlsb"
+  ],
+  "tracked_operation_log_filename_matches": [],
+  "workbook_schema": "one sequence index, 2047 wavelength fields, cumulative oxygen, CO2, CO; no device timestamps or operator command fields",
+  "acquisition_mechanism": "unidentified: repeated values admit held acquisition, quantized smooth input, and genuine plateaus",
+  "physical_delay_identifiability": "transport, analyzer, reaction, and clock effects cannot be separately identified from these columns",
+  "precision": "0.5 s is the lag grid, not a validated 0.5 s physical timing accuracy",
+  "known_processing_support": {
+    "SG31_past_s": 7.5,
+    "SG31_future_s": 7.5,
+    "Hampel9_past_s": 2.0,
+    "Hampel9_future_s": 2.0,
+    "change_median21_past_s": 5.0,
+    "change_median21_future_s": 5.0
+  },
+  "support_interpretation": "centered SG has no automatic 7.5 s causal delay; symmetric smoothing can shift threshold crossings and broaden short pulses",
+  "independent_events_confirmed_by_this_audit": 0,
+  "event_protocol": {
+    "source": "independent PLC command or actual oxygen-flow record with calibrated timestamps",
+    "without_logs_status": "statistical_candidate",
+    "matching_states": [
+      "unmatched",
+      "ambiguous",
+      "candidate",
+      "confirmed_by_independent_record"
+    ],
+    "delay_definitions": [
+      "onset",
+      "peak",
+      "centroid"
+    ],
+    "onset_operational_fraction": 0.1
+  }
+}
